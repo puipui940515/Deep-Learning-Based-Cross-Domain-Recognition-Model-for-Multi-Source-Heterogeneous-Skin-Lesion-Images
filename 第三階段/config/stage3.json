@@ -1,0 +1,59 @@
+{
+  "dataset_root": "../Dataset/HAM10000",
+  "split_manifest": "data/fixed_split_with_site.csv",
+  "num_classes": 7,
+  "seeds": [17, 42, 2026],
+  "epochs": 30,
+  "num_workers": 0,
+  "base_learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "early_stopping_patience": 7,
+  "layer_decay": 0.7,
+  "logit_adjustment_tau": 1.0,
+  "site_labels": {
+    "enabled": true,
+    "groups": [
+      "head_neck",
+      "trunk",
+      "upper_extremity",
+      "lower_extremity",
+      "anogenital",
+      "unknown"
+    ],
+    "training_role": "batch_metadata_and_stratified_metrics",
+    "used_as_model_input": false,
+    "used_for_gradient": false,
+    "validation_min_support": 20,
+    "site_balanced_sampling": {
+      "enabled": false,
+      "activation_version": "v13a_label_only_control",
+      "power": 0.5,
+      "max_weight": 4.0,
+      "min_group_count": 10
+    }
+  },
+  "versions": {
+    "v10": {
+      "status": "waiting_for_v9_three_seed_results",
+      "backbone": "convnext_tiny",
+      "backbone_source": "../第二階段/checkpoints/v9_seed{seed}.pt",
+      "image_size": 384,
+      "batch_size": 1,
+      "gradient_accumulation": 32,
+      "loss": "logit_adjusted_ce",
+      "views": ["rgb", "rgb", "rgb", "rgb"],
+      "fusion": "concat_mlp",
+      "fusion_hidden_dim": 768,
+      "fusion_dropout": 0.1,
+      "gradient_checkpointing": true
+    },
+    "v11": {
+      "status": "locked_until_v10_decision",
+      "change_only": "branch_2_rgb_to_color_constancy"
+    },
+    "v12": {
+      "status": "locked_until_v11_decision",
+      "change_only": "branches_3_and_4_to_optical_and_bandpass_views"
+    }
+  }
+}

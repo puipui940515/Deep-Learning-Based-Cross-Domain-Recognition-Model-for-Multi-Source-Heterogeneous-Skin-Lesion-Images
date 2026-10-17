@@ -1,0 +1,284 @@
+[
+  {
+    "file": "01_NV_黑色素細胞痣_網狀痣.jpg",
+    "truth": "NV",
+    "truth_zh": "黑色素細胞痣",
+    "predicted": "NV",
+    "predicted_zh": "黑色素細胞痣",
+    "confidence": 0.99652,
+    "correct": true,
+    "elapsed_ms": 50.8,
+    "all_probabilities": [
+      {
+        "code": "NV",
+        "label": "黑色素細胞痣",
+        "probability": 0.9965195655822754
+      },
+      {
+        "code": "BKL",
+        "label": "良性角化症樣病灶",
+        "probability": 0.0016352622769773006
+      },
+      {
+        "code": "MEL",
+        "label": "黑色素瘤",
+        "probability": 0.0008622960303910077
+      },
+      {
+        "code": "AKIEC",
+        "label": "日光性角化症／表皮內癌",
+        "probability": 0.0006014138925820589
+      },
+      {
+        "code": "BCC",
+        "label": "基底細胞癌",
+        "probability": 0.00024535181000828743
+      },
+      {
+        "code": "DF",
+        "label": "皮膚纖維瘤",
+        "probability": 0.0001321695453952998
+      },
+      {
+        "code": "VASC",
+        "label": "血管性病灶",
+        "probability": 3.902707248926163E-06
+      }
+    ]
+  },
+  {
+    "file": "02_NV_黑色素細胞痣_皮內痣.jpg",
+    "truth": "NV",
+    "truth_zh": "黑色素細胞痣",
+    "predicted": "NV",
+    "predicted_zh": "黑色素細胞痣",
+    "confidence": 0.995031,
+    "correct": true,
+    "elapsed_ms": 178.6,
+    "all_probabilities": [
+      {
+        "code": "NV",
+        "label": "黑色素細胞痣",
+        "probability": 0.9950311183929443
+      },
+      {
+        "code": "MEL",
+        "label": "黑色素瘤",
+        "probability": 0.004692277871072292
+      },
+      {
+        "code": "BKL",
+        "label": "良性角化症樣病灶",
+        "probability": 0.00022516156604979187
+      },
+      {
+        "code": "DF",
+        "label": "皮膚纖維瘤",
+        "probability": 2.792469058476854E-05
+      },
+      {
+        "code": "VASC",
+        "label": "血管性病灶",
+        "probability": 1.5377714589703828E-05
+      },
+      {
+        "code": "BCC",
+        "label": "基底細胞癌",
+        "probability": 4.331745458330261E-06
+      },
+      {
+        "code": "AKIEC",
+        "label": "日光性角化症／表皮內癌",
+        "probability": 3.7912780044280225E-06
+      }
+    ]
+  },
+  {
+    "file": "03_BCC_基底細胞癌.png",
+    "truth": "BCC",
+    "truth_zh": "基底細胞癌",
+    "predicted": "BCC",
+    "predicted_zh": "基底細胞癌",
+    "confidence": 0.996794,
+    "correct": true,
+    "elapsed_ms": 76.4,
+    "all_probabilities": [
+      {
+        "code": "BCC",
+        "label": "基底細胞癌",
+        "probability": 0.9967941641807556
+      },
+      {
+        "code": "MEL",
+        "label": "黑色素瘤",
+        "probability": 0.0020115321967750788
+      },
+      {
+        "code": "NV",
+        "label": "黑色素細胞痣",
+        "probability": 0.0007997775683179498
+      },
+      {
+        "code": "BKL",
+        "label": "良性角化症樣病灶",
+        "probability": 0.0001929288264364004
+      },
+      {
+        "code": "AKIEC",
+        "label": "日光性角化症／表皮內癌",
+        "probability": 0.00016900355694815516
+      },
+      {
+        "code": "DF",
+        "label": "皮膚纖維瘤",
+        "probability": 2.560081338742748E-05
+      },
+      {
+        "code": "VASC",
+        "label": "血管性病灶",
+        "probability": 6.994469003984705E-06
+      }
+    ]
+  },
+  {
+    "file": "04_BCC_結節型基底細胞癌.jpg",
+    "truth": "BCC",
+    "truth_zh": "基底細胞癌",
+    "predicted": "BCC",
+    "predicted_zh": "基底細胞癌",
+    "confidence": 0.998747,
+    "correct": true,
+    "elapsed_ms": 64.1,
+    "all_probabilities": [
+      {
+        "code": "BCC",
+        "label": "基底細胞癌",
+        "probability": 0.9987471103668213
+      },
+      {
+        "code": "NV",
+        "label": "黑色素細胞痣",
+        "probability": 0.0010220952099189162
+      },
+      {
+        "code": "AKIEC",
+        "label": "日光性角化症／表皮內癌",
+        "probability": 0.0001683744485490024
+      },
+      {
+        "code": "BKL",
+        "label": "良性角化症樣病灶",
+        "probability": 4.04439888370689E-05
+      },
+      {
+        "code": "VASC",
+        "label": "血管性病灶",
+        "probability": 1.593856723047793E-05
+      },
+      {
+        "code": "MEL",
+        "label": "黑色素瘤",
+        "probability": 3.7590725696645677E-06
+      },
+      {
+        "code": "DF",
+        "label": "皮膚纖維瘤",
+        "probability": 2.3188479190139333E-06
+      }
+    ]
+  },
+  {
+    "file": "05_MEL_原位黑色素瘤.jpg",
+    "truth": "MEL",
+    "truth_zh": "黑色素瘤",
+    "predicted": "NV",
+    "predicted_zh": "黑色素細胞痣",
+    "confidence": 0.58214,
+    "correct": false,
+    "elapsed_ms": 46.5,
+    "all_probabilities": [
+      {
+        "code": "NV",
+        "label": "黑色素細胞痣",
+        "probability": 0.5821401476860046
+      },
+      {
+        "code": "BCC",
+        "label": "基底細胞癌",
+        "probability": 0.3159045875072479
+      },
+      {
+        "code": "AKIEC",
+        "label": "日光性角化症／表皮內癌",
+        "probability": 0.036843765527009964
+      },
+      {
+        "code": "MEL",
+        "label": "黑色素瘤",
+        "probability": 0.03648821637034416
+      },
+      {
+        "code": "VASC",
+        "label": "血管性病灶",
+        "probability": 0.013375509530305862
+      },
+      {
+        "code": "BKL",
+        "label": "良性角化症樣病灶",
+        "probability": 0.008745056577026844
+      },
+      {
+        "code": "DF",
+        "label": "皮膚纖維瘤",
+        "probability": 0.006502646021544933
+      }
+    ]
+  },
+  {
+    "file": "06_MEL_惡性黑色素瘤.jpg",
+    "truth": "MEL",
+    "truth_zh": "黑色素瘤",
+    "predicted": "AKIEC",
+    "predicted_zh": "日光性角化症／表皮內癌",
+    "confidence": 0.521088,
+    "correct": false,
+    "elapsed_ms": 63.1,
+    "all_probabilities": [
+      {
+        "code": "AKIEC",
+        "label": "日光性角化症／表皮內癌",
+        "probability": 0.5210877656936646
+      },
+      {
+        "code": "MEL",
+        "label": "黑色素瘤",
+        "probability": 0.4332476854324341
+      },
+      {
+        "code": "NV",
+        "label": "黑色素細胞痣",
+        "probability": 0.03923375904560089
+      },
+      {
+        "code": "BCC",
+        "label": "基底細胞癌",
+        "probability": 0.004565547686070204
+      },
+      {
+        "code": "DF",
+        "label": "皮膚纖維瘤",
+        "probability": 0.0011741421185433865
+      },
+      {
+        "code": "BKL",
+        "label": "良性角化症樣病灶",
+        "probability": 0.0005871608736924827
+      },
+      {
+        "code": "VASC",
+        "label": "血管性病灶",
+        "probability": 0.00010398864833405241
+      }
+    ]
+  }
+]

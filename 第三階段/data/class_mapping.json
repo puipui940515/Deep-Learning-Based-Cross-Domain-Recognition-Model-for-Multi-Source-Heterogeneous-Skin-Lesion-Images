@@ -1,0 +1,9 @@
+{
+  "0": {"code": "akiec", "zh_tw": "日光性角化症／表皮內癌", "total_images": 327},
+  "1": {"code": "bcc", "zh_tw": "基底細胞癌", "total_images": 514},
+  "2": {"code": "bkl", "zh_tw": "良性角化症樣病灶", "total_images": 1099},
+  "3": {"code": "df", "zh_tw": "皮膚纖維瘤", "total_images": 115},
+  "4": {"code": "nv", "zh_tw": "黑色素細胞痣", "total_images": 6705},
+  "5": {"code": "vasc", "zh_tw": "血管性病灶", "total_images": 142},
+  "6": {"code": "mel", "zh_tw": "黑色素瘤", "total_images": 1113}
+}

@@ -1,0 +1,27 @@
+source_dataset,anatomical_site_original,anatomical_site_canonical_code,anatomical_site_canonical_zh,mapping_confidence,note
+HAM10000,Trunk,trunk,軀幹,high,
+HAM10000,Lower extremity,lower_extremity,下肢,high,
+HAM10000,Upper extremity,upper_extremity,上肢,high,
+HAM10000,Head and neck,head_neck,頭頸部,high,
+HAM10000,Anogenital region,oral_anogenital,口腔／肛門生殖器區,high,
+BCN20000,anterior torso,trunk,軀幹,high,
+BCN20000,posterior torso,trunk,軀幹,high,
+BCN20000,head/neck,head_neck,頭頸部,high,
+BCN20000,lower extremity,lower_extremity,下肢,high,
+BCN20000,upper extremity,upper_extremity,上肢,high,
+BCN20000,palms/soles,acral,掌蹠部,high,
+BCN20000,oral/genital,oral_anogenital,口腔／肛門生殖器區,high,
+PAD-UFES-20,FACE,head_neck,頭頸部,medium,由細部位置合併至大區域
+PAD-UFES-20,NOSE,head_neck,頭頸部,medium,由細部位置合併至大區域
+PAD-UFES-20,NECK,head_neck,頭頸部,medium,由細部位置合併至大區域
+PAD-UFES-20,EAR,head_neck,頭頸部,medium,由細部位置合併至大區域
+PAD-UFES-20,SCALP,head_neck,頭頸部,medium,由細部位置合併至大區域
+PAD-UFES-20,LIP,head_neck,頭頸部,medium,無法由 region 判斷是否為黏膜
+PAD-UFES-20,CHEST,trunk,軀幹,medium,由細部位置合併至大區域
+PAD-UFES-20,BACK,trunk,軀幹,medium,由細部位置合併至大區域
+PAD-UFES-20,ABDOMEN,trunk,軀幹,medium,由細部位置合併至大區域
+PAD-UFES-20,FOREARM,upper_extremity,上肢,medium,由細部位置合併至大區域
+PAD-UFES-20,ARM,upper_extremity,上肢,medium,由細部位置合併至大區域
+PAD-UFES-20,HAND,upper_extremity,上肢,medium,無法由 region 判斷掌面或手背
+PAD-UFES-20,THIGH,lower_extremity,下肢,medium,由細部位置合併至大區域
+PAD-UFES-20,FOOT,lower_extremity,下肢,medium,無法由 region 判斷足底或足背

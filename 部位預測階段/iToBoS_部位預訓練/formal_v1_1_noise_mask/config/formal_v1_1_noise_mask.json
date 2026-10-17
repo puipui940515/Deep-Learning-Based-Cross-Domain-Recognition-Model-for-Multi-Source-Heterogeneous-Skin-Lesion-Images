@@ -1,0 +1,77 @@
+{
+  "status": "approved_for_training",
+  "approved_by_user": true,
+  "approved_date": "2026-08-23",
+  "experiment_name": "itobos_site_convnext_tiny_384_formal_v1_1_noise_mask",
+  "parent_experiment": "formal_v1",
+  "single_changed_factor": "training_only_gaussian_noise_and_random_erasing",
+  "downstream_match": "第二階段 v8",
+  "dataset_root": "../../../Dataset/iToBoS2024TBP/itobos2024data_v08052025_merged",
+  "metadata_file": "metadata.csv",
+  "images_directory": "images",
+  "training_source_split": "train",
+  "sealed_test_split": "test",
+  "dataset_version": 6,
+  "dataset_doi": "10.6084/m9.figshare.28452545.v6",
+  "site_classes": [
+    "torso",
+    "left_arm",
+    "right_arm",
+    "left_leg",
+    "right_leg"
+  ],
+  "exclude_unknown": true,
+  "architecture": "convnext_tiny",
+  "initialization": "imagenet",
+  "classifier": "LayerNorm -> Flatten -> Linear(768, 5)",
+  "image_size": 384,
+  "batch_size": 8,
+  "gradient_accumulation": 4,
+  "effective_batch_size": 32,
+  "num_workers": 4,
+  "max_development_epochs": 30,
+  "early_stopping_patience": 7,
+  "development_validation_fraction": 0.1,
+  "development_validation_is_subject_disjoint": false,
+  "refit_uses_all_official_train": true,
+  "official_test_is_subject_disjoint": true,
+  "official_test_single_use_gate": true,
+  "base_learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "layer_decay": 0.7,
+  "scheduler": "cosine_annealing",
+  "loss": "weighted_cross_entropy",
+  "class_weighting": "sqrt_inverse_frequency_normalized",
+  "horizontal_flip": {
+    "probability": 0.5,
+    "swap_left_right_label": true
+  },
+  "vertical_flip": false,
+  "rotation_degrees": 8,
+  "random_resized_crop_scale": [0.85, 1.0],
+  "color_jitter": 0.1,
+  "gaussian_noise": {
+    "training_only": true,
+    "probability": 0.5,
+    "mean": 0.0,
+    "standard_deviation": 0.025,
+    "clip_range": [0.0, 1.0]
+  },
+  "random_erasing": {
+    "training_only": true,
+    "probability": 0.35,
+    "area_scale": [0.01, 0.06],
+    "aspect_ratio": [0.3, 3.3],
+    "fill": "random"
+  },
+  "normalization": "ImageNet mean/std",
+  "seeds": [17, 42, 2026],
+  "required_label_modes": ["true", "shuffled"],
+  "development_primary_metric": "validation_balanced_accuracy",
+  "formal_target": {
+    "official_test_balanced_accuracy": 0.9,
+    "minimum_per_class_recall": 0.85
+  },
+  "official_test_used": false
+}
+

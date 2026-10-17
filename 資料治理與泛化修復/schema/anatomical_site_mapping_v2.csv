@@ -1,0 +1,7 @@
+source_dataset,anatomical_site_original,anatomical_site_canonical_code,anatomical_site_canonical_zh,mapping_confidence,note
+ISIC_Archive_Expanded,Trunk,trunk,軀幹,high,
+ISIC_Archive_Expanded,Lower extremity,lower_extremity,下肢,high,
+ISIC_Archive_Expanded,Upper extremity,upper_extremity,上肢,high,
+ISIC_Archive_Expanded,Head and neck,head_neck,頭頸部,high,
+ISIC_Archive_Expanded,Anogenital region,oral_anogenital,口腔／肛門生殖器區,high,
+ISIC_Archive_Expanded,,unknown,未知,missing,原始 metadata 未提供時保留未知

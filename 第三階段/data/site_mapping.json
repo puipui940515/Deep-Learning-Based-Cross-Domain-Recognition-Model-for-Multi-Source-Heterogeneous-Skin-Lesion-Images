@@ -1,0 +1,8 @@
+{
+  "0": {"group": "head_neck", "raw_ham_label": "Head and neck", "zh_tw": "頭頸"},
+  "1": {"group": "trunk", "raw_ham_label": "Trunk", "zh_tw": "軀幹"},
+  "2": {"group": "upper_extremity", "raw_ham_label": "Upper extremity", "zh_tw": "上肢"},
+  "3": {"group": "lower_extremity", "raw_ham_label": "Lower extremity", "zh_tw": "下肢"},
+  "4": {"group": "anogenital", "raw_ham_label": "Anogenital region", "zh_tw": "肛門生殖區"},
+  "5": {"group": "unknown", "raw_ham_label": "", "zh_tw": "未知"}
+}

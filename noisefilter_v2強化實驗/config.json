@@ -1,0 +1,223 @@
+{
+  "experiment_id": "gov_v1_noisefilter_v2",
+  "name_zh": "noisefilter v2 強化：治理 v1 三來源設定下重測",
+  "plan_reference": "開發歷程/CP-003_執行計畫_2026-09-08.md §6-2",
+  "baseline": {
+    "id": "governance_v1",
+    "result_root": "資料治理與泛化修復/results/formal_v1",
+    "seed_variance": "資料治理與泛化修復/reports/seed_variance_v1.json",
+    "trainer": "資料治理與泛化修復/scripts/train_regularized.py",
+    "config": "資料治理與泛化修復/config.json"
+  },
+  "manifest": "資料治理與泛化修復/data/unified_manifest_v1.csv",
+  "sources": [
+    "HAM10000",
+    "BCN20000",
+    "PAD-UFES-20"
+  ],
+  "seeds": [
+    17,
+    42,
+    2026
+  ],
+  "calibration_file": "noisefilter_v2強化實驗/results/calibration_v2.json",
+  "calibration": {
+    "split": "train",
+    "per_source": 800,
+    "image_size": 224,
+    "seed": 20260917
+  },
+  "filter": {
+    "version": "noisefilter_v2",
+    "stages": {
+      "tone": true,
+      "shading": true,
+      "white_balance": true
+    },
+    "alpha": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "stat_res": 96,
+    "wb_target": "canonical",
+    "apply_before_mixup": true,
+    "frozen": true,
+    "normalize_gamma": false
+  },
+  "runs": {
+    "N0": {
+      "stages": {
+        "tone": true,
+        "shading": true,
+        "white_balance": true
+      },
+      "alpha": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "seeds": [
+        17,
+        42,
+        2026
+      ],
+      "purpose": "完整 v2 鏈 vs 治理 v1 基線",
+      "normalize_gamma": false
+    },
+    "N1": {
+      "stages": {
+        "tone": false,
+        "shading": true,
+        "white_balance": true
+      },
+      "alpha": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "seeds": [
+        17
+      ],
+      "pilot": true,
+      "purpose": "拿掉 tone（最可能碰到診斷對比的一段）",
+      "normalize_gamma": false
+    },
+    "N2": {
+      "stages": {
+        "tone": true,
+        "shading": false,
+        "white_balance": true
+      },
+      "alpha": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "seeds": [
+        17
+      ],
+      "pilot": true,
+      "purpose": "拿掉 shading",
+      "normalize_gamma": false
+    },
+    "N3": {
+      "stages": {
+        "tone": true,
+        "shading": true,
+        "white_balance": false
+      },
+      "alpha": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "seeds": [
+        17
+      ],
+      "pilot": true,
+      "purpose": "拿掉 white balance（v1 的 GCC＋PR 合併段）",
+      "normalize_gamma": false
+    },
+    "N4": {
+      "stages": {
+        "tone": true,
+        "shading": true,
+        "white_balance": true
+      },
+      "alpha": [
+        0.25,
+        0.25,
+        0.25
+      ],
+      "seeds": [
+        17
+      ],
+      "pilot": true,
+      "purpose": "清單 E5 的低強度檔",
+      "normalize_gamma": false
+    },
+    "N5": {
+      "stages": {
+        "tone": true,
+        "shading": true,
+        "white_balance": true
+      },
+      "alpha": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "normalize_gamma": true,
+      "seeds": [
+        17
+      ],
+      "pilot": true,
+      "purpose": "tone 段加開 gamma 正規化（v1 LogContrast 的受約束版本）"
+    },
+    "N6": {
+      "preset": "strong",
+      "stages": {
+        "tone": true,
+        "shading": true,
+        "white_balance": true
+      },
+      "alpha": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "normalize_gamma": true,
+      "seeds": [
+        17
+      ],
+      "pilot": true,
+      "purpose": "strong preset：可見的強修正，檢驗「更大的來源差距縮減」能否換到跨來源增益"
+    },
+    "N7": {
+      "preset": "max",
+      "stages": {
+        "tone": true,
+        "shading": true,
+        "white_balance": true
+      },
+      "alpha": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "normalize_gamma": true,
+      "seeds": [
+        17
+      ],
+      "pilot": true,
+      "purpose": "max preset：極端點消融（灰色目標、放寬夾限）"
+    }
+  },
+  "gates": {
+    "G0_input_probe": {
+      "description": "訓練前、零成本：ImageNet ConvNeXt-Tiny 凍結特徵上的來源探針平衡準確率須下降，疾病探針不得明顯下降",
+      "source_probe_ba_drop_min": 0.03,
+      "disease_probe_ba_drop_max": 0.02
+    },
+    "G1_pilot": {
+      "description": "N0 seed 17：HAM BA 不得低於基線 seed 17 超過 HAM 的 1 個 sample std",
+      "ham_reference_std_key": "HAM10000_balanced_accuracy"
+    },
+    "G2_formal": {
+      "description": "N0 三 seed 平均 vs 基線三 seed 平均；差值須大於兩組中較大的 sample std（計畫書 §3.4），且在 2s 以上才稱為可區分",
+      "metrics": [
+        "mean_source_balanced_accuracy",
+        "BCN20000_balanced_accuracy",
+        "BCN_weighted_robust_score"
+      ]
+    }
+  },
+  "not_mounted": [
+    "InvarianceLoss",
+    "DomainAlign/CORAL/MMD",
+    "AlphaSampler/FiLMFromAlpha/AlphaTemperature",
+    "IlluminantBankPerturb"
+  ],
+  "test_used": false
+}

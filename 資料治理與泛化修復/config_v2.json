@@ -1,0 +1,76 @@
+{
+  "pipeline_id": "isic_expansion_governance_v2",
+  "release_id": "skindetect-governed-dataset-v2-20260911",
+  "ready_for_training_adapter": true,
+  "training_started": false,
+  "data_definition": {
+    "schema_version": "skindetect-data-contract-v2.0",
+    "training_manifest": "資料治理與泛化修復/data/unified_manifest_v2.csv",
+    "quarantine_manifest": "資料治理與泛化修復/data/quarantine_v2.csv",
+    "disease_mapping": "資料治理與泛化修復/schema/disease_mapping_v2.csv",
+    "anatomical_site_mapping": "資料治理與泛化修復/schema/anatomical_site_mapping_v2.csv",
+    "source_registry": "Dataset/SOURCE_REGISTRY.json",
+    "release_registry": "Dataset/DATA_RELEASE_REGISTRY_v2.json",
+    "data_gate": "資料治理與泛化修復/reports/data_gate_v2.json"
+  },
+  "class_names": ["AKIEC", "BCC", "BKL", "DF", "NV", "VASC", "MEL", "SCC"],
+  "class_ids": {
+    "AKIEC": 0,
+    "BCC": 1,
+    "BKL": 2,
+    "DF": 3,
+    "NV": 4,
+    "VASC": 5,
+    "MEL": 6,
+    "SCC": 7
+  },
+  "split_roles": {
+    "train": "model_fitting",
+    "validation": "historical_validation_kept_for_comparability",
+    "validation_ext": "new_grouped_external_validation",
+    "test": "not_present_in_v2_manifest_and_not_used"
+  },
+  "sources": {
+    "HAM10000": {
+      "default_modality": "dermoscopy",
+      "license": "CC BY-NC 4.0",
+      "supported_labels": [0, 1, 2, 3, 4, 5, 6]
+    },
+    "BCN20000": {
+      "default_modality": "dermoscopy",
+      "license": "CC BY 4.0",
+      "supported_labels": [0, 1, 2, 3, 4, 5, 6]
+    },
+    "PAD-UFES-20": {
+      "default_modality": "clinical_smartphone",
+      "license": "CC BY 4.0",
+      "supported_labels": [0, 1, 2, 4, 6]
+    },
+    "ISIC_Archive_Expanded": {
+      "default_modality": "per_image",
+      "license": "per_image",
+      "allowed_licenses": ["CC-0", "CC-BY", "CC-BY-NC"],
+      "supported_labels": [0, 1, 2, 3, 4, 5, 6, 7]
+    }
+  },
+  "leakage": {
+    "exact_hash": "sha256",
+    "near_duplicate_phash_distance": 1,
+    "near_duplicate_dhash_distance": 2,
+    "manual_review_phash_distance": 4,
+    "manual_review_dhash_distance": 8,
+    "group_priority": ["patient_id", "lesion_id", "image_id"],
+    "prefer_existing_source_on_cross_source_duplicate": true,
+    "prefer_validation_ext_on_cross_split_duplicate": true
+  },
+  "training_adapter_requirements": {
+    "output_classes": 8,
+    "accept_extensions": [".jpg", ".jpeg", ".png", ".tif", ".tiff"],
+    "read_only_training_eligible_true": true,
+    "fit_split": "train",
+    "selection_splits": ["validation", "validation_ext"],
+    "do_not_merge_validation_metrics": true,
+    "respect_recommended_sample_weight": true,
+    "preserve_per_image_license_and_attribution": true
+  }
+}

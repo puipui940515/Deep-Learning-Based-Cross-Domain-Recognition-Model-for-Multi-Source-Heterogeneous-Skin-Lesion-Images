@@ -1,0 +1,47 @@
+{
+  "experiment_id": "mixed_source_ham_bcn_pad_pilot_v2",
+  "research_question": "加入第三個臨床攝影來源 PAD-UFES-20 後，是否進一步改善跨來源泛化",
+  "model": "convnext_tiny",
+  "initialization": "imagenet",
+  "num_classes": 7,
+  "class_names": ["AKIEC", "BCC", "BKL", "DF", "NV", "VASC", "MEL"],
+  "image_size": 224,
+  "batch_size": 16,
+  "gradient_accumulation": 2,
+  "epochs": 8,
+  "early_stopping_patience": 4,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "layer_decay": 0.7,
+  "num_workers": 0,
+  "seed": 17,
+  "sampling": {
+    "method": "source_balanced_class_smoothed_weighted_sampler",
+    "class_balance_alpha": 0.5,
+    "samples_per_epoch": "manifest_train_size"
+  },
+  "selection_metric": "mean_source_balanced_accuracy_over_each_sources_supported_classes",
+  "manifest": "data/mixed_manifest.csv",
+  "sources": {
+    "HAM10000": {
+      "license": "CC BY-NC 4.0",
+      "supported_labels": [0, 1, 2, 3, 4, 5, 6],
+      "test_policy": "sealed_not_used"
+    },
+    "BCN20000": {
+      "license": "CC BY 4.0",
+      "supported_labels": [0, 1, 2, 3, 4, 5, 6],
+      "excluded_diagnoses": ["SCC"],
+      "test_policy": "official_unlabeled_test_not_used"
+    },
+    "PAD-UFES-20": {
+      "license": "CC BY 4.0",
+      "supported_labels": [0, 1, 2, 4, 6],
+      "excluded_diagnoses": ["SCC"],
+      "split": "StratifiedGroupKFold_by_patient_id_n5_fold0_seed20260901",
+      "test_policy": "no_test_split_created_in_this_pilot"
+    }
+  },
+  "external_evaluation_not_training": ["ISIC_Archive"],
+  "test_used": false
+}

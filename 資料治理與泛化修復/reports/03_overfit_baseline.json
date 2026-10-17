@@ -1,0 +1,30 @@
+{
+  "stage": 3,
+  "name": "過擬合基線",
+  "available": true,
+  "baseline_result": "多來源混合訓練_第二版/results/imagenet_seed17/result.json",
+  "best_epoch": 6,
+  "train_balanced_accuracy": 0.9579208182573862,
+  "validation_balanced_accuracy": {
+    "BCN20000": 0.5779353782327173,
+    "HAM10000": 0.7909998642953232,
+    "PAD-UFES-20": 0.7121444254075421
+  },
+  "train_validation_gap": {
+    "BCN20000": 0.37998544002466883,
+    "HAM10000": 0.16692095396206297,
+    "PAD-UFES-20": 0.2457763928498441
+  },
+  "largest_gap": 0.37998544002466883,
+  "overfit_signal": true,
+  "passed": false,
+  "remediation_in_training_script": [
+    "label smoothing",
+    "MixUp",
+    "更高 weight decay",
+    "梯度裁切",
+    "來源與類別平衡抽樣",
+    "以平均與最差來源共同選模",
+    "設備／構圖擾動增強"
+  ]
+}

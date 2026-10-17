@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-06T07:05:15.026604+00:00",
+  "steps": [
+    {
+      "command": [
+        "C:\\anaconda3\\python.exe",
+        "C:\\Users\\User\\Desktop\\test\\SkinDetect\\驗證\\scripts\\prepare_and_validate.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "C:\\anaconda3\\python.exe",
+        "C:\\Users\\User\\Desktop\\test\\SkinDetect\\驗證\\scripts\\sanity_check.py"
+      ],
+      "returncode": 0
+    },
+    {
+      "command": [
+        "C:\\anaconda3\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\User\\Desktop\\test\\SkinDetect\\驗證\\tests",
+        "-v"
+      ],
+      "returncode": 0
+    }
+  ]
+}

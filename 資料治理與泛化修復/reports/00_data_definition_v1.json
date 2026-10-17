@@ -1,0 +1,210 @@
+{
+  "schema_version": "skindetect-data-contract-v1.0",
+  "passed": true,
+  "total_rows": 22536,
+  "training_eligible_rows": 22536,
+  "metadata_missing_count": 0,
+  "metadata_missing": [],
+  "duplicate_record_id_count": 0,
+  "duplicate_record_ids": [],
+  "group_leakage_count": 0,
+  "group_leakage": [],
+  "family_level_mapping_rows": 4023,
+  "unknown_anatomical_site_rows": 359,
+  "unmapped_anatomical_site_rows": 0,
+  "rows_by_source": {
+    "BCN20000": 11933,
+    "HAM10000": 8511,
+    "PAD-UFES-20": 2092
+  },
+  "rows_by_source_and_class": [
+    {
+      "source": "BCN20000",
+      "class": "AKIEC",
+      "count": 729
+    },
+    {
+      "source": "BCN20000",
+      "class": "BCC",
+      "count": 2802
+    },
+    {
+      "source": "BCN20000",
+      "class": "BKL",
+      "count": 1124
+    },
+    {
+      "source": "BCN20000",
+      "class": "DF",
+      "count": 124
+    },
+    {
+      "source": "BCN20000",
+      "class": "MEL",
+      "count": 2847
+    },
+    {
+      "source": "BCN20000",
+      "class": "NV",
+      "count": 4196
+    },
+    {
+      "source": "BCN20000",
+      "class": "VASC",
+      "count": 111
+    },
+    {
+      "source": "HAM10000",
+      "class": "AKIEC",
+      "count": 278
+    },
+    {
+      "source": "HAM10000",
+      "class": "BCC",
+      "count": 437
+    },
+    {
+      "source": "HAM10000",
+      "class": "BKL",
+      "count": 934
+    },
+    {
+      "source": "HAM10000",
+      "class": "DF",
+      "count": 98
+    },
+    {
+      "source": "HAM10000",
+      "class": "MEL",
+      "count": 946
+    },
+    {
+      "source": "HAM10000",
+      "class": "NV",
+      "count": 5698
+    },
+    {
+      "source": "HAM10000",
+      "class": "VASC",
+      "count": 120
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "AKIEC",
+      "count": 724
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "BCC",
+      "count": 839
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "BKL",
+      "count": 234
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "MEL",
+      "count": 52
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "NV",
+      "count": 243
+    }
+  ],
+  "rows_by_source_and_site": [
+    {
+      "source": "BCN20000",
+      "site": "acral",
+      "count": 359
+    },
+    {
+      "source": "BCN20000",
+      "site": "head_neck",
+      "count": 3079
+    },
+    {
+      "source": "BCN20000",
+      "site": "lower_extremity",
+      "count": 2044
+    },
+    {
+      "source": "BCN20000",
+      "site": "oral_anogenital",
+      "count": 59
+    },
+    {
+      "source": "BCN20000",
+      "site": "trunk",
+      "count": 4981
+    },
+    {
+      "source": "BCN20000",
+      "site": "unknown",
+      "count": 152
+    },
+    {
+      "source": "BCN20000",
+      "site": "upper_extremity",
+      "count": 1259
+    },
+    {
+      "source": "HAM10000",
+      "site": "head_neck",
+      "count": 918
+    },
+    {
+      "source": "HAM10000",
+      "site": "lower_extremity",
+      "count": 2023
+    },
+    {
+      "source": "HAM10000",
+      "site": "oral_anogenital",
+      "count": 42
+    },
+    {
+      "source": "HAM10000",
+      "site": "trunk",
+      "count": 4271
+    },
+    {
+      "source": "HAM10000",
+      "site": "unknown",
+      "count": 207
+    },
+    {
+      "source": "HAM10000",
+      "site": "upper_extremity",
+      "count": 1050
+    },
+    {
+      "source": "PAD-UFES-20",
+      "site": "head_neck",
+      "count": 862
+    },
+    {
+      "source": "PAD-UFES-20",
+      "site": "lower_extremity",
+      "count": 72
+    },
+    {
+      "source": "PAD-UFES-20",
+      "site": "trunk",
+      "count": 524
+    },
+    {
+      "source": "PAD-UFES-20",
+      "site": "upper_extremity",
+      "count": 634
+    }
+  ],
+  "policy": {
+    "missing_values": "空字串代表原資料未提供；不得由影像推測患者屬性",
+    "disease_mapping": "保留 diagnosis_original；AKIEC/AK/ACK 與 BKL/SEK 使用家族級映射",
+    "split_group": "HAM10000、BCN20000 依病灶；PAD-UFES-20 依患者",
+    "unknown_site": "來源欄位空白可保留為 unknown；出現未定義新值則稽核失敗"
+  }
+}

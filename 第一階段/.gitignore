@@ -1,0 +1,6 @@
+checkpoints/*.pt
+results/*.json
+results/*_curves.csv
+__pycache__/
+*.pyc
+

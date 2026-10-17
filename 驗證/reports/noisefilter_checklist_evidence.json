@@ -1,0 +1,334 @@
+{
+  "status": "complete",
+  "overlap": {
+    "counts": {
+      "HAM10000_metadata": 10015,
+      "HAM10000_validation": 1504,
+      "ISIC_metadata_union": 7886,
+      "ISIC_actual_safe_subset": 7886,
+      "ISIC_actual_mapped": 6607,
+      "BCN_collection_249_metadata": 18946
+    },
+    "A1_HAM_vs_three_ISIC_metadata": {
+      "count": 0,
+      "ids": []
+    },
+    "A2_BCN_collection249_vs_ISIC_safe_subset": {
+      "count": 0,
+      "ids": [],
+      "method": "Collection 249 full metadata is a conservative superset reference; zero overlap proves the local BCN subset also has zero ID overlap."
+    },
+    "A3_HAM_validation_vs_ISIC_mapped": {
+      "count": 0,
+      "ids": []
+    },
+    "decision": {
+      "aggregate_rows_may_remain": true,
+      "incident_triggered": false,
+      "bootstrap_recalculation_required": false
+    }
+  },
+  "seed42_training": {
+    "stage1_v1_noisefilter_core_fixed": {
+      "source": "第一階段\\noisefilter搭載實驗\\results\\stage1_v1_noisefilter_core_fixed_seed42.json",
+      "epochs": 16,
+      "best_epoch": 9,
+      "validation_ba_first_max_last": [
+        0.1542961120180439,
+        0.27649562150667456,
+        0.2620099500937897
+      ],
+      "validation_loss_first_min_last": [
+        0.9951865482837596,
+        0.8465380719367493,
+        0.9039269264074082
+      ],
+      "best_validation_recall": [
+        0.3877551020408163,
+        0.2597402597402597,
+        0.10303030303030303,
+        0.0,
+        0.9443339960238568,
+        0.09090909090909091,
+        0.1497005988023952
+      ],
+      "zero_recall_classes_at_best": [
+        "DF"
+      ],
+      "finite_curve": true,
+      "classification": "No loss divergence and no complete majority-class collapse; the run is a lower optimum with persistent zero DF recall.",
+      "clean_ba_population_std": {
+        "baseline": 0.021707833452191662,
+        "mounted": 0.03306104065780598,
+        "mounted_to_baseline_ratio": 1.5230004749491977
+      },
+      "clean_ba_sample_std": {
+        "baseline": 0.02658655768959451,
+        "mounted": 0.04049133998851668,
+        "mounted_to_baseline_ratio": 1.5230004749491977
+      }
+    },
+    "stage2_v5_noisefilter_core_fixed": {
+      "source": "第二階段\\noisefilter搭載實驗\\results\\stage2_v5_noisefilter_core_fixed_seed42.json",
+      "epochs": 12,
+      "best_epoch": 5,
+      "validation_ba_first_max_last": [
+        0.256923824647168,
+        0.45854280923977614,
+        0.4273112143555134
+      ],
+      "validation_loss_first_min_last": [
+        0.8577349287398318,
+        0.6666808512775187,
+        0.6666808512775187
+      ],
+      "best_validation_recall": [
+        0.5102040816326531,
+        0.15584415584415584,
+        0.43636363636363634,
+        0.0,
+        0.7584493041749503,
+        0.6363636363636364,
+        0.7125748502994012
+      ],
+      "zero_recall_classes_at_best": [
+        "DF"
+      ],
+      "finite_curve": true,
+      "classification": "No loss divergence and no complete majority-class collapse; the run is a lower optimum with persistent zero DF recall.",
+      "clean_ba_population_std": {
+        "baseline": 0.007962757286831358,
+        "mounted": 0.035949149897129024,
+        "mounted_to_baseline_ratio": 4.514661015296922
+      },
+      "clean_ba_sample_std": {
+        "baseline": 0.00975234614918271,
+        "mounted": 0.04402853696739624,
+        "mounted_to_baseline_ratio": 4.514661015296922
+      }
+    }
+  },
+  "per_class_recall": {
+    "scope": "clean three-seed probability ensemble",
+    "csv": "驗證\\reports\\noisefilter_per_class_recall.csv",
+    "summary": {
+      "第一階段": {
+        "baseline:HAM10000_validation": {
+          "balanced_accuracy": 0.3411867160858488,
+          "multiple_of_seven_class_random_baseline": 2.3883070126009414,
+          "zero_recall_present_classes": [
+            "DF"
+          ],
+          "present_class_counts": {
+            "AKIEC": 49,
+            "BCC": 77,
+            "BKL": 165,
+            "DF": 18,
+            "NV": 1006,
+            "VASC": 22,
+            "MEL": 167
+          }
+        },
+        "baseline:BCN20000_train_mapped": {
+          "balanced_accuracy": 0.2226447342311329,
+          "multiple_of_seven_class_random_baseline": 1.5585131396179304,
+          "zero_recall_present_classes": [
+            "DF"
+          ],
+          "present_class_counts": {
+            "AKIEC": 737,
+            "BCC": 2809,
+            "BKL": 1138,
+            "DF": 124,
+            "NV": 4206,
+            "VASC": 111,
+            "MEL": 2857
+          }
+        },
+        "baseline:PAD-UFES-20_mapped": {
+          "balanced_accuracy": 0.2770851710985121,
+          "multiple_of_seven_class_random_baseline": 1.9395961976895848,
+          "zero_recall_present_classes": [],
+          "present_class_counts": {
+            "AKIEC": 730,
+            "BCC": 845,
+            "BKL": 235,
+            "NV": 244,
+            "MEL": 52
+          }
+        },
+        "baseline:ISIC_Archive_mapped": {
+          "balanced_accuracy": 0.22902890494360406,
+          "multiple_of_seven_class_random_baseline": 1.6032023346052284,
+          "zero_recall_present_classes": [],
+          "present_class_counts": {
+            "BCC": 3037,
+            "MEL": 3570
+          }
+        },
+        "mounted:HAM10000_validation": {
+          "balanced_accuracy": 0.3528468292112505,
+          "multiple_of_seven_class_random_baseline": 2.4699278044787536,
+          "zero_recall_present_classes": [
+            "DF"
+          ],
+          "present_class_counts": {
+            "AKIEC": 49,
+            "BCC": 77,
+            "BKL": 165,
+            "DF": 18,
+            "NV": 1006,
+            "VASC": 22,
+            "MEL": 167
+          }
+        },
+        "mounted:BCN20000_train_mapped": {
+          "balanced_accuracy": 0.20817286832621895,
+          "multiple_of_seven_class_random_baseline": 1.4572100782835327,
+          "zero_recall_present_classes": [
+            "DF"
+          ],
+          "present_class_counts": {
+            "AKIEC": 737,
+            "BCC": 2809,
+            "BKL": 1138,
+            "DF": 124,
+            "NV": 4206,
+            "VASC": 111,
+            "MEL": 2857
+          }
+        },
+        "mounted:PAD-UFES-20_mapped": {
+          "balanced_accuracy": 0.27152866232313955,
+          "multiple_of_seven_class_random_baseline": 1.900700636261977,
+          "zero_recall_present_classes": [],
+          "present_class_counts": {
+            "AKIEC": 730,
+            "BCC": 845,
+            "BKL": 235,
+            "NV": 244,
+            "MEL": 52
+          }
+        },
+        "mounted:ISIC_Archive_mapped": {
+          "balanced_accuracy": 0.21755251985548912,
+          "multiple_of_seven_class_random_baseline": 1.522867638988424,
+          "zero_recall_present_classes": [],
+          "present_class_counts": {
+            "BCC": 3037,
+            "MEL": 3570
+          }
+        }
+      },
+      "第二階段": {
+        "baseline:HAM10000_validation": {
+          "balanced_accuracy": 0.5860839165108137,
+          "multiple_of_seven_class_random_baseline": 4.102587415575696,
+          "zero_recall_present_classes": [],
+          "present_class_counts": {
+            "AKIEC": 49,
+            "BCC": 77,
+            "BKL": 165,
+            "DF": 18,
+            "NV": 1006,
+            "VASC": 22,
+            "MEL": 167
+          }
+        },
+        "baseline:BCN20000_train_mapped": {
+          "balanced_accuracy": 0.22106143958275393,
+          "multiple_of_seven_class_random_baseline": 1.5474300770792775,
+          "zero_recall_present_classes": [
+            "DF"
+          ],
+          "present_class_counts": {
+            "AKIEC": 737,
+            "BCC": 2809,
+            "BKL": 1138,
+            "DF": 124,
+            "NV": 4206,
+            "VASC": 111,
+            "MEL": 2857
+          }
+        },
+        "baseline:PAD-UFES-20_mapped": {
+          "balanced_accuracy": 0.28767202846216866,
+          "multiple_of_seven_class_random_baseline": 2.0137041992351805,
+          "zero_recall_present_classes": [],
+          "present_class_counts": {
+            "AKIEC": 730,
+            "BCC": 845,
+            "BKL": 235,
+            "NV": 244,
+            "MEL": 52
+          }
+        },
+        "baseline:ISIC_Archive_mapped": {
+          "balanced_accuracy": 0.23636070167283246,
+          "multiple_of_seven_class_random_baseline": 1.6545249117098273,
+          "zero_recall_present_classes": [],
+          "present_class_counts": {
+            "BCC": 3037,
+            "MEL": 3570
+          }
+        },
+        "mounted:HAM10000_validation": {
+          "balanced_accuracy": 0.5394381161678878,
+          "multiple_of_seven_class_random_baseline": 3.776066813175215,
+          "zero_recall_present_classes": [
+            "DF"
+          ],
+          "present_class_counts": {
+            "AKIEC": 49,
+            "BCC": 77,
+            "BKL": 165,
+            "DF": 18,
+            "NV": 1006,
+            "VASC": 22,
+            "MEL": 167
+          }
+        },
+        "mounted:BCN20000_train_mapped": {
+          "balanced_accuracy": 0.2508914069785047,
+          "multiple_of_seven_class_random_baseline": 1.756239848849533,
+          "zero_recall_present_classes": [
+            "DF"
+          ],
+          "present_class_counts": {
+            "AKIEC": 737,
+            "BCC": 2809,
+            "BKL": 1138,
+            "DF": 124,
+            "NV": 4206,
+            "VASC": 111,
+            "MEL": 2857
+          }
+        },
+        "mounted:PAD-UFES-20_mapped": {
+          "balanced_accuracy": 0.3154742875347054,
+          "multiple_of_seven_class_random_baseline": 2.208320012742938,
+          "zero_recall_present_classes": [],
+          "present_class_counts": {
+            "AKIEC": 730,
+            "BCC": 845,
+            "BKL": 235,
+            "NV": 244,
+            "MEL": 52
+          }
+        },
+        "mounted:ISIC_Archive_mapped": {
+          "balanced_accuracy": 0.26359202884314736,
+          "multiple_of_seven_class_random_baseline": 1.8451442019020314,
+          "zero_recall_present_classes": [],
+          "present_class_counts": {
+            "BCC": 3037,
+            "MEL": 3570
+          }
+        }
+      }
+    }
+  },
+  "mapping_check": {
+    "DF": "HAM label 3 and BCN diagnosis DF both map to class 3. Zero recall is therefore a model/rare-class result, not an observed mapping-code error."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "pipeline_id": "isic_expansion_governance_v2",
+  "passed": true,
+  "inventory_passed": true,
+  "source_image_integrity_passed_before_quarantine": false,
+  "source_decode_or_fingerprint_errors": 74,
+  "invalid_images_quarantined": 74,
+  "final_training_manifest_integrity_passed": true,
+  "dedup_and_split_passed": true,
+  "label_mapping_passed": true,
+  "schema": "schema/data_contract_v2.json",
+  "disease_mapping": "schema/disease_mapping_v2.csv",
+  "anatomical_site_mapping": "schema/anatomical_site_mapping_v2.csv",
+  "source_registry": "../Dataset/SOURCE_REGISTRY.json",
+  "unified_manifest": "data/unified_manifest_v2.csv",
+  "quarantine_manifest": "data/quarantine_v2.csv",
+  "clean_rows": 86534,
+  "quarantine_rows": 21684,
+  "class_count": 8,
+  "class_order": [
+    "AKIEC",
+    "BCC",
+    "BKL",
+    "DF",
+    "NV",
+    "VASC",
+    "MEL",
+    "SCC"
+  ],
+  "training_was_started": false
+}

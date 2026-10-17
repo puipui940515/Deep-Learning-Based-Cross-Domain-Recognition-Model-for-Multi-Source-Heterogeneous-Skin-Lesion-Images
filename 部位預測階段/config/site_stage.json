@@ -1,0 +1,29 @@
+{
+  "dataset_root": "../Dataset/HAM10000",
+  "manifest": "data/fixed_split_with_site.csv",
+  "site_classes": [
+    "head_neck",
+    "trunk",
+    "upper_extremity",
+    "lower_extremity",
+    "anogenital"
+  ],
+  "excluded_site_classes": ["unknown"],
+  "model": "resnet18",
+  "pretrained": true,
+  "image_size": 224,
+  "batch_size": 32,
+  "num_workers": 0,
+  "epochs": 20,
+  "early_stopping_patience": 5,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "class_weighting": {
+    "method": "sqrt_inverse_frequency",
+    "max_weight": 5.0,
+    "normalize_mean": true
+  },
+  "seeds": [17, 42, 2026],
+  "primary_metric": "validation_balanced_accuracy",
+  "test_split_used_for_training_or_selection": false
+}

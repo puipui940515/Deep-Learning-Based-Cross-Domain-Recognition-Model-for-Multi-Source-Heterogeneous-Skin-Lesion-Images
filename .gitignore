@@ -1,0 +1,37 @@
+Dataset/
+*.pt
+*.pth
+*.ckpt
+__pycache__/
+.pytest_cache/
+.venv*/
+發佈包/
+*.zip
+*.7z
+*.rar
+**/logs/
+**/pipeline.lock
+**/checkpoints/
+**/results/
+!模型改進/reports/
+模型改進/data/
+模型改進/smoke_results/
+
+# Local dependencies, credentials and publication/build scratch files.
+node_modules/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+_備份/
+.ppt_*/
+ppt_*/
+.chart-data-*/
+.patches/
+files_test/
+Claude outputs/
+UI訓練任務/
+UI使用手冊_圖片版/_素材/

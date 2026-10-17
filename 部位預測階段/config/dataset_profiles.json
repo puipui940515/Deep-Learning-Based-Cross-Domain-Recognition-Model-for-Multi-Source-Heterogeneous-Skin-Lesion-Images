@@ -1,0 +1,48 @@
+{
+  "recommended_next_profile": "bcn",
+  "target_schema": [
+    "head_neck",
+    "trunk",
+    "upper_extremity",
+    "lower_extremity",
+    "anogenital"
+  ],
+  "profiles": {
+    "ham": {
+      "manifest": "data/profiles/ham.csv",
+      "image_domain": "dermoscopy",
+      "status": "baseline_completed"
+    },
+    "bcn": {
+      "manifest": "data/profiles/bcn.csv",
+      "image_domain": "dermoscopy",
+      "status": "recommended_next"
+    },
+    "ham_bcn": {
+      "manifest": "data/profiles/ham_bcn.csv",
+      "image_domain": "dermoscopy",
+      "status": "after_bcn_only_control"
+    }
+  },
+  "conditional_candidates": {
+    "PAD-UFES-20": {
+      "status": "separate_clinical_branch",
+      "reason": "smartphone clinical images; region is single-label but image domain differs from dermoscopy"
+    },
+    "SCIN": {
+      "status": "separate_multilabel_clinical_branch",
+      "reason": "clinical images; body parts are self-reported multi-label and local images are incomplete"
+    },
+    "ISIC_Archive_diagnosis_queries": {
+      "status": "excluded_from_site_training",
+      "reason": "diagnosis-query sampling creates strong disease-site confounding; per-image license and overlap require a separate audit"
+    }
+  },
+  "bcn_rules": {
+    "internal_validation_lesion_fraction": 0.15,
+    "split_seed": 20260823,
+    "official_test_policy": "sealed",
+    "excluded_labels": ["", "palms/soles"],
+    "excluded_reason": "missing site or palms/soles cannot be mapped uniquely to upper versus lower extremity"
+  }
+}

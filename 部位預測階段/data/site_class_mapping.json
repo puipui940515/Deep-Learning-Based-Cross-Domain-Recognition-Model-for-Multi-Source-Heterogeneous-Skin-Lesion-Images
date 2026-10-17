@@ -1,0 +1,10 @@
+{
+  "0": "head_neck",
+  "1": "trunk",
+  "2": "upper_extremity",
+  "3": "lower_extremity",
+  "4": "anogenital",
+  "excluded": {
+    "5": "unknown"
+  }
+}

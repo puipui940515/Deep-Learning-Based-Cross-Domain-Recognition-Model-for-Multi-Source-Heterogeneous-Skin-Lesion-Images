@@ -1,0 +1,56 @@
+[
+  {
+    "file": "01_NV_黑色素細胞痣_網狀痣.jpg",
+    "truth": "NV",
+    "truth_zh": "黑色素細胞痣",
+    "author": "Philipp Tschandl",
+    "license": "CC BY-SA 4.0",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Dermatoscopy_Nevus_Reticular.jpg",
+    "bytes": 166326
+  },
+  {
+    "file": "02_NV_黑色素細胞痣_皮內痣.jpg",
+    "truth": "NV",
+    "truth_zh": "黑色素細胞痣",
+    "author": "Raimundo Pastor",
+    "license": "CC BY 4.0",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Nevus_melanoc%C3%ADtico_intrad%C3%A9rmico_(RPS_09-12-2019)_imagen_dermatosc%C3%B3pica.jpg",
+    "bytes": 5241728
+  },
+  {
+    "file": "03_BCC_基底細胞癌.png",
+    "truth": "BCC",
+    "truth_zh": "基底細胞癌",
+    "author": "Quleken",
+    "license": "CC BY 4.0",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Basal_cell_carcinoma_(BCC).png",
+    "bytes": 2137914
+  },
+  {
+    "file": "04_BCC_結節型基底細胞癌.jpg",
+    "truth": "BCC",
+    "truth_zh": "基底細胞癌",
+    "author": "David.moreno72",
+    "license": "CC BY-SA 4.0 / GFDL",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Dermoscopy_nodular_basal_cell_carcinoma.jpg",
+    "bytes": 558832
+  },
+  {
+    "file": "05_MEL_原位黑色素瘤.jpg",
+    "truth": "MEL",
+    "truth_zh": "黑色素瘤",
+    "author": "Dermanonymous",
+    "license": "CC BY-SA 4.0",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Melanoma_in_situ_Right_Forehead_dermatoscope.jpg",
+    "bytes": 86498
+  },
+  {
+    "file": "06_MEL_惡性黑色素瘤.jpg",
+    "truth": "MEL",
+    "truth_zh": "黑色素瘤",
+    "author": "Dermanonymous",
+    "license": "CC BY-SA 4.0",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Malignant_Melanoma_Left_Mid_Back_Dermatoscope.jpg",
+    "bytes": 69054
+  }
+]

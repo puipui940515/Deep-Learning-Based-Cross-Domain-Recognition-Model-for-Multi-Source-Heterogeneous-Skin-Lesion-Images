@@ -1,0 +1,580 @@
+{
+  "stage": "第二階段",
+  "sample_seed": 20260814,
+  "per_group": 32,
+  "test_used_for_model_selection": false,
+  "models": {
+    "17": {
+      "baseline": {
+        "BCN20000": {
+          "samples": 288,
+          "mapped_labeled_samples": 224,
+          "clean_balanced_accuracy": 0.21875,
+          "perturbed_balanced_accuracy": 0.23214285714285715,
+          "clean_accuracy": 0.21875,
+          "perturbed_accuracy": 0.23214285714285715,
+          "prediction_consistency": 0.6840277777777778,
+          "mean_probability_drift_l1": 0.5226841568946838,
+          "mean_clean_confidence": 0.7027658820152283
+        },
+        "HAM10000": {
+          "samples": 200,
+          "mapped_labeled_samples": 200,
+          "clean_balanced_accuracy": 0.5603354978354979,
+          "perturbed_balanced_accuracy": 0.41337481962481964,
+          "clean_accuracy": 0.575,
+          "perturbed_accuracy": 0.425,
+          "prediction_consistency": 0.6,
+          "mean_probability_drift_l1": 0.6028645038604736,
+          "mean_clean_confidence": 0.6373486518859863
+        },
+        "ISIC_Archive": {
+          "samples": 96,
+          "mapped_labeled_samples": 64,
+          "clean_balanced_accuracy": 0.203125,
+          "perturbed_balanced_accuracy": 0.21875,
+          "clean_accuracy": 0.203125,
+          "perturbed_accuracy": 0.21875,
+          "prediction_consistency": 0.6145833333333334,
+          "mean_probability_drift_l1": 0.5496010780334473,
+          "mean_clean_confidence": 0.6348512172698975
+        },
+        "PAD-UFES-20": {
+          "samples": 192,
+          "mapped_labeled_samples": 160,
+          "clean_balanced_accuracy": 0.2875,
+          "perturbed_balanced_accuracy": 0.3125,
+          "clean_accuracy": 0.2875,
+          "perturbed_accuracy": 0.3125,
+          "prediction_consistency": 0.65625,
+          "mean_probability_drift_l1": 0.5580050945281982,
+          "mean_clean_confidence": 0.6854791045188904
+        },
+        "SCIN": {
+          "samples": 148,
+          "mapped_labeled_samples": 0,
+          "clean_balanced_accuracy": null,
+          "perturbed_balanced_accuracy": null,
+          "clean_accuracy": null,
+          "perturbed_accuracy": null,
+          "prediction_consistency": 0.7162162162162162,
+          "mean_probability_drift_l1": 0.46195271611213684,
+          "mean_clean_confidence": 0.6864995360374451
+        },
+        "ALL": {
+          "samples": 924,
+          "mapped_labeled_samples": 648,
+          "clean_balanced_accuracy": 0.3296693121693122,
+          "perturbed_balanced_accuracy": 0.2960119047619048,
+          "clean_accuracy": 0.3441358024691358,
+          "perturbed_accuracy": 0.3101851851851852,
+          "prediction_consistency": 0.658008658008658,
+          "mean_probability_drift_l1": 0.5404476523399353,
+          "mean_clean_confidence": 0.6753527522087097
+        }
+      },
+      "mounted": {
+        "BCN20000": {
+          "samples": 288,
+          "mapped_labeled_samples": 224,
+          "clean_balanced_accuracy": 0.29910714285714285,
+          "perturbed_balanced_accuracy": 0.3169642857142857,
+          "clean_accuracy": 0.29910714285714285,
+          "perturbed_accuracy": 0.3169642857142857,
+          "prediction_consistency": 0.8125,
+          "mean_probability_drift_l1": 0.25778087973594666,
+          "mean_clean_confidence": 0.5761157274246216
+        },
+        "HAM10000": {
+          "samples": 200,
+          "mapped_labeled_samples": 200,
+          "clean_balanced_accuracy": 0.5385551948051949,
+          "perturbed_balanced_accuracy": 0.4496753246753246,
+          "clean_accuracy": 0.56,
+          "perturbed_accuracy": 0.465,
+          "prediction_consistency": 0.755,
+          "mean_probability_drift_l1": 0.31778019666671753,
+          "mean_clean_confidence": 0.5734124183654785
+        },
+        "ISIC_Archive": {
+          "samples": 96,
+          "mapped_labeled_samples": 64,
+          "clean_balanced_accuracy": 0.28125,
+          "perturbed_balanced_accuracy": 0.203125,
+          "clean_accuracy": 0.28125,
+          "perturbed_accuracy": 0.203125,
+          "prediction_consistency": 0.7395833333333334,
+          "mean_probability_drift_l1": 0.3342228829860687,
+          "mean_clean_confidence": 0.5007387399673462
+        },
+        "PAD-UFES-20": {
+          "samples": 192,
+          "mapped_labeled_samples": 160,
+          "clean_balanced_accuracy": 0.2875,
+          "perturbed_balanced_accuracy": 0.29375,
+          "clean_accuracy": 0.2875,
+          "perturbed_accuracy": 0.29375,
+          "prediction_consistency": 0.7916666666666666,
+          "mean_probability_drift_l1": 0.30399778485298157,
+          "mean_clean_confidence": 0.5043291449546814
+        },
+        "SCIN": {
+          "samples": 148,
+          "mapped_labeled_samples": 0,
+          "clean_balanced_accuracy": null,
+          "perturbed_balanced_accuracy": null,
+          "clean_accuracy": null,
+          "perturbed_accuracy": null,
+          "prediction_consistency": 0.8040540540540541,
+          "mean_probability_drift_l1": 0.22930671274662018,
+          "mean_clean_confidence": 0.500739574432373
+        },
+        "ALL": {
+          "samples": 924,
+          "mapped_labeled_samples": 648,
+          "clean_balanced_accuracy": 0.3578455687830688,
+          "perturbed_balanced_accuracy": 0.32948908730158727,
+          "clean_accuracy": 0.375,
+          "perturbed_accuracy": 0.345679012345679,
+          "prediction_consistency": 0.7867965367965368,
+          "mean_probability_drift_l1": 0.2837525010108948,
+          "mean_clean_confidence": 0.5407093167304993
+        }
+      }
+    },
+    "42": {
+      "baseline": {
+        "BCN20000": {
+          "samples": 288,
+          "mapped_labeled_samples": 224,
+          "clean_balanced_accuracy": 0.23214285714285715,
+          "perturbed_balanced_accuracy": 0.24107142857142858,
+          "clean_accuracy": 0.23214285714285715,
+          "perturbed_accuracy": 0.24107142857142858,
+          "prediction_consistency": 0.71875,
+          "mean_probability_drift_l1": 0.474054217338562,
+          "mean_clean_confidence": 0.655026376247406
+        },
+        "HAM10000": {
+          "samples": 200,
+          "mapped_labeled_samples": 200,
+          "clean_balanced_accuracy": 0.5806727994227995,
+          "perturbed_balanced_accuracy": 0.45156926406926406,
+          "clean_accuracy": 0.59,
+          "perturbed_accuracy": 0.46,
+          "prediction_consistency": 0.68,
+          "mean_probability_drift_l1": 0.4846247732639313,
+          "mean_clean_confidence": 0.6407853960990906
+        },
+        "ISIC_Archive": {
+          "samples": 96,
+          "mapped_labeled_samples": 64,
+          "clean_balanced_accuracy": 0.265625,
+          "perturbed_balanced_accuracy": 0.234375,
+          "clean_accuracy": 0.265625,
+          "perturbed_accuracy": 0.234375,
+          "prediction_consistency": 0.6770833333333334,
+          "mean_probability_drift_l1": 0.5260862708091736,
+          "mean_clean_confidence": 0.6351323127746582
+        },
+        "PAD-UFES-20": {
+          "samples": 192,
+          "mapped_labeled_samples": 160,
+          "clean_balanced_accuracy": 0.28125,
+          "perturbed_balanced_accuracy": 0.25625,
+          "clean_accuracy": 0.28125,
+          "perturbed_accuracy": 0.25625,
+          "prediction_consistency": 0.7083333333333334,
+          "mean_probability_drift_l1": 0.4801512658596039,
+          "mean_clean_confidence": 0.6521034836769104
+        },
+        "SCIN": {
+          "samples": 148,
+          "mapped_labeled_samples": 0,
+          "clean_balanced_accuracy": null,
+          "perturbed_balanced_accuracy": null,
+          "clean_accuracy": null,
+          "perturbed_accuracy": null,
+          "prediction_consistency": 0.7364864864864865,
+          "mean_probability_drift_l1": 0.4565885365009308,
+          "mean_clean_confidence": 0.6622803807258606
+        },
+        "ALL": {
+          "samples": 924,
+          "mapped_labeled_samples": 648,
+          "clean_balanced_accuracy": 0.3398892195767195,
+          "perturbed_balanced_accuracy": 0.29498842592592595,
+          "clean_accuracy": 0.35802469135802467,
+          "perturbed_accuracy": 0.3117283950617284,
+          "prediction_consistency": 0.7067099567099567,
+          "mean_probability_drift_l1": 0.4802175462245941,
+          "mean_clean_confidence": 0.6504315137863159
+        }
+      },
+      "mounted": {
+        "BCN20000": {
+          "samples": 288,
+          "mapped_labeled_samples": 224,
+          "clean_balanced_accuracy": 0.22321428571428573,
+          "perturbed_balanced_accuracy": 0.21875,
+          "clean_accuracy": 0.22321428571428573,
+          "perturbed_accuracy": 0.21875,
+          "prediction_consistency": 0.8194444444444444,
+          "mean_probability_drift_l1": 0.28548967838287354,
+          "mean_clean_confidence": 0.6281244158744812
+        },
+        "HAM10000": {
+          "samples": 200,
+          "mapped_labeled_samples": 200,
+          "clean_balanced_accuracy": 0.47930194805194803,
+          "perturbed_balanced_accuracy": 0.38352272727272724,
+          "clean_accuracy": 0.505,
+          "perturbed_accuracy": 0.4,
+          "prediction_consistency": 0.72,
+          "mean_probability_drift_l1": 0.38090041279792786,
+          "mean_clean_confidence": 0.5878473520278931
+        },
+        "ISIC_Archive": {
+          "samples": 96,
+          "mapped_labeled_samples": 64,
+          "clean_balanced_accuracy": 0.1875,
+          "perturbed_balanced_accuracy": 0.15625,
+          "clean_accuracy": 0.1875,
+          "perturbed_accuracy": 0.15625,
+          "prediction_consistency": 0.7395833333333334,
+          "mean_probability_drift_l1": 0.393378347158432,
+          "mean_clean_confidence": 0.544342577457428
+        },
+        "PAD-UFES-20": {
+          "samples": 192,
+          "mapped_labeled_samples": 160,
+          "clean_balanced_accuracy": 0.3375,
+          "perturbed_balanced_accuracy": 0.3125,
+          "clean_accuracy": 0.3375,
+          "perturbed_accuracy": 0.3125,
+          "prediction_consistency": 0.7083333333333334,
+          "mean_probability_drift_l1": 0.34000107645988464,
+          "mean_clean_confidence": 0.555060088634491
+        },
+        "SCIN": {
+          "samples": 148,
+          "mapped_labeled_samples": 0,
+          "clean_balanced_accuracy": null,
+          "perturbed_balanced_accuracy": null,
+          "clean_accuracy": null,
+          "perturbed_accuracy": null,
+          "prediction_consistency": 0.8040540540540541,
+          "mean_probability_drift_l1": 0.2385006994009018,
+          "mean_clean_confidence": 0.6184505820274353
+        },
+        "ALL": {
+          "samples": 924,
+          "mapped_labeled_samples": 648,
+          "clean_balanced_accuracy": 0.3097304894179894,
+          "perturbed_balanced_accuracy": 0.27137070105820105,
+          "clean_accuracy": 0.33487654320987653,
+          "perturbed_accuracy": 0.2916666666666667,
+          "prediction_consistency": 0.7640692640692641,
+          "mean_probability_drift_l1": 0.3211512267589569,
+          "mean_clean_confidence": 0.5939701199531555
+        }
+      }
+    },
+    "2026": {
+      "baseline": {
+        "BCN20000": {
+          "samples": 288,
+          "mapped_labeled_samples": 224,
+          "clean_balanced_accuracy": 0.23660714285714285,
+          "perturbed_balanced_accuracy": 0.22767857142857142,
+          "clean_accuracy": 0.23660714285714285,
+          "perturbed_accuracy": 0.22767857142857142,
+          "prediction_consistency": 0.7361111111111112,
+          "mean_probability_drift_l1": 0.47443240880966187,
+          "mean_clean_confidence": 0.7158889770507812
+        },
+        "HAM10000": {
+          "samples": 200,
+          "mapped_labeled_samples": 200,
+          "clean_balanced_accuracy": 0.5810786435786436,
+          "perturbed_balanced_accuracy": 0.4430465367965368,
+          "clean_accuracy": 0.595,
+          "perturbed_accuracy": 0.455,
+          "prediction_consistency": 0.64,
+          "mean_probability_drift_l1": 0.5500051975250244,
+          "mean_clean_confidence": 0.6777452230453491
+        },
+        "ISIC_Archive": {
+          "samples": 96,
+          "mapped_labeled_samples": 64,
+          "clean_balanced_accuracy": 0.140625,
+          "perturbed_balanced_accuracy": 0.171875,
+          "clean_accuracy": 0.140625,
+          "perturbed_accuracy": 0.171875,
+          "prediction_consistency": 0.7604166666666666,
+          "mean_probability_drift_l1": 0.45472970604896545,
+          "mean_clean_confidence": 0.6730706095695496
+        },
+        "PAD-UFES-20": {
+          "samples": 192,
+          "mapped_labeled_samples": 160,
+          "clean_balanced_accuracy": 0.275,
+          "perturbed_balanced_accuracy": 0.2875,
+          "clean_accuracy": 0.275,
+          "perturbed_accuracy": 0.2875,
+          "prediction_consistency": 0.8177083333333334,
+          "mean_probability_drift_l1": 0.4020850360393524,
+          "mean_clean_confidence": 0.7217205166816711
+        },
+        "SCIN": {
+          "samples": 148,
+          "mapped_labeled_samples": 0,
+          "clean_balanced_accuracy": null,
+          "perturbed_balanced_accuracy": null,
+          "clean_accuracy": null,
+          "perturbed_accuracy": null,
+          "prediction_consistency": 0.7837837837837838,
+          "mean_probability_drift_l1": 0.39432036876678467,
+          "mean_clean_confidence": 0.7324013710021973
+        },
+        "ALL": {
+          "samples": 924,
+          "mapped_labeled_samples": 648,
+          "clean_balanced_accuracy": 0.33344080687830685,
+          "perturbed_balanced_accuracy": 0.2922602513227513,
+          "clean_accuracy": 0.3472222222222222,
+          "perturbed_accuracy": 0.30709876543209874,
+          "prediction_consistency": 0.7424242424242424,
+          "mean_probability_drift_l1": 0.4608781039714813,
+          "mean_clean_confidence": 0.7070406079292297
+        }
+      },
+      "mounted": {
+        "BCN20000": {
+          "samples": 288,
+          "mapped_labeled_samples": 224,
+          "clean_balanced_accuracy": 0.23214285714285715,
+          "perturbed_balanced_accuracy": 0.24107142857142858,
+          "clean_accuracy": 0.23214285714285715,
+          "perturbed_accuracy": 0.24107142857142858,
+          "prediction_consistency": 0.8020833333333334,
+          "mean_probability_drift_l1": 0.30919012427330017,
+          "mean_clean_confidence": 0.6827478408813477
+        },
+        "HAM10000": {
+          "samples": 200,
+          "mapped_labeled_samples": 200,
+          "clean_balanced_accuracy": 0.5702561327561327,
+          "perturbed_balanced_accuracy": 0.45454545454545453,
+          "clean_accuracy": 0.59,
+          "perturbed_accuracy": 0.475,
+          "prediction_consistency": 0.685,
+          "mean_probability_drift_l1": 0.40868252515792847,
+          "mean_clean_confidence": 0.6379457712173462
+        },
+        "ISIC_Archive": {
+          "samples": 96,
+          "mapped_labeled_samples": 64,
+          "clean_balanced_accuracy": 0.21875,
+          "perturbed_balanced_accuracy": 0.171875,
+          "clean_accuracy": 0.21875,
+          "perturbed_accuracy": 0.171875,
+          "prediction_consistency": 0.75,
+          "mean_probability_drift_l1": 0.42882999777793884,
+          "mean_clean_confidence": 0.6037631034851074
+        },
+        "PAD-UFES-20": {
+          "samples": 192,
+          "mapped_labeled_samples": 160,
+          "clean_balanced_accuracy": 0.29375,
+          "perturbed_balanced_accuracy": 0.29375,
+          "clean_accuracy": 0.29375,
+          "perturbed_accuracy": 0.29375,
+          "prediction_consistency": 0.765625,
+          "mean_probability_drift_l1": 0.3652087152004242,
+          "mean_clean_confidence": 0.6649306416511536
+        },
+        "SCIN": {
+          "samples": 148,
+          "mapped_labeled_samples": 0,
+          "clean_balanced_accuracy": null,
+          "perturbed_balanced_accuracy": null,
+          "clean_accuracy": null,
+          "perturbed_accuracy": null,
+          "prediction_consistency": 0.7972972972972973,
+          "mean_probability_drift_l1": 0.26008617877960205,
+          "mean_clean_confidence": 0.6540396809577942
+        },
+        "ALL": {
+          "samples": 924,
+          "mapped_labeled_samples": 648,
+          "clean_balanced_accuracy": 0.3387582671957672,
+          "perturbed_balanced_accuracy": 0.30096726190476186,
+          "clean_accuracy": 0.35648148148148145,
+          "perturbed_accuracy": 0.3194444444444444,
+          "prediction_consistency": 0.762987012987013,
+          "mean_probability_drift_l1": 0.34693050384521484,
+          "mean_clean_confidence": 0.6565436720848083
+        }
+      }
+    }
+  },
+  "mounted": [
+    "LogContrast",
+    "IlluminationFlatten",
+    "GlobalColorConstancy",
+    "PeripheralReference"
+  ],
+  "alpha": [
+    0.25,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "mean_across_seeds": {
+    "ALL": {
+      "baseline": {
+        "samples": 924.0,
+        "mapped_labeled_samples": 648.0,
+        "clean_balanced_accuracy": 0.3343331128747795,
+        "perturbed_balanced_accuracy": 0.29442019400352737,
+        "clean_accuracy": 0.3497942386831275,
+        "perturbed_accuracy": 0.30967078189300407,
+        "prediction_consistency": 0.7023809523809524,
+        "mean_probability_drift_l1": 0.4938477675120036,
+        "mean_clean_confidence": 0.6776082913080851
+      },
+      "mounted": {
+        "samples": 924.0,
+        "mapped_labeled_samples": 648.0,
+        "clean_balanced_accuracy": 0.3354447751322751,
+        "perturbed_balanced_accuracy": 0.3006090167548501,
+        "clean_accuracy": 0.35545267489711935,
+        "perturbed_accuracy": 0.31893004115226337,
+        "prediction_consistency": 0.7712842712842712,
+        "mean_probability_drift_l1": 0.31727807720502216,
+        "mean_clean_confidence": 0.5970743695894877
+      }
+    },
+    "BCN20000": {
+      "baseline": {
+        "samples": 288.0,
+        "mapped_labeled_samples": 224.0,
+        "clean_balanced_accuracy": 0.22916666666666666,
+        "perturbed_balanced_accuracy": 0.23363095238095236,
+        "clean_accuracy": 0.22916666666666666,
+        "perturbed_accuracy": 0.23363095238095236,
+        "prediction_consistency": 0.7129629629629629,
+        "mean_probability_drift_l1": 0.49039026101430255,
+        "mean_clean_confidence": 0.6912270784378052
+      },
+      "mounted": {
+        "samples": 288.0,
+        "mapped_labeled_samples": 224.0,
+        "clean_balanced_accuracy": 0.2514880952380953,
+        "perturbed_balanced_accuracy": 0.25892857142857145,
+        "clean_accuracy": 0.2514880952380953,
+        "perturbed_accuracy": 0.25892857142857145,
+        "prediction_consistency": 0.8113425925925926,
+        "mean_probability_drift_l1": 0.2841535607973735,
+        "mean_clean_confidence": 0.6289959947268168
+      }
+    },
+    "HAM10000": {
+      "baseline": {
+        "samples": 200.0,
+        "mapped_labeled_samples": 200.0,
+        "clean_balanced_accuracy": 0.5740289802789803,
+        "perturbed_balanced_accuracy": 0.4359968734968735,
+        "clean_accuracy": 0.5866666666666667,
+        "perturbed_accuracy": 0.4466666666666667,
+        "prediction_consistency": 0.64,
+        "mean_probability_drift_l1": 0.5458314915498098,
+        "mean_clean_confidence": 0.651959757010142
+      },
+      "mounted": {
+        "samples": 200.0,
+        "mapped_labeled_samples": 200.0,
+        "clean_balanced_accuracy": 0.5293710918710919,
+        "perturbed_balanced_accuracy": 0.42924783549783546,
+        "clean_accuracy": 0.5516666666666666,
+        "perturbed_accuracy": 0.4466666666666666,
+        "prediction_consistency": 0.7200000000000001,
+        "mean_probability_drift_l1": 0.3691210448741913,
+        "mean_clean_confidence": 0.5997351805369059
+      }
+    },
+    "ISIC_Archive": {
+      "baseline": {
+        "samples": 96.0,
+        "mapped_labeled_samples": 64.0,
+        "clean_balanced_accuracy": 0.203125,
+        "perturbed_balanced_accuracy": 0.20833333333333334,
+        "clean_accuracy": 0.203125,
+        "perturbed_accuracy": 0.20833333333333334,
+        "prediction_consistency": 0.6840277777777778,
+        "mean_probability_drift_l1": 0.5101390182971954,
+        "mean_clean_confidence": 0.6476847132047018
+      },
+      "mounted": {
+        "samples": 96.0,
+        "mapped_labeled_samples": 64.0,
+        "clean_balanced_accuracy": 0.22916666666666666,
+        "perturbed_balanced_accuracy": 0.17708333333333334,
+        "clean_accuracy": 0.22916666666666666,
+        "perturbed_accuracy": 0.17708333333333334,
+        "prediction_consistency": 0.7430555555555557,
+        "mean_probability_drift_l1": 0.38547707597414654,
+        "mean_clean_confidence": 0.5496148069699606
+      }
+    },
+    "PAD-UFES-20": {
+      "baseline": {
+        "samples": 192.0,
+        "mapped_labeled_samples": 160.0,
+        "clean_balanced_accuracy": 0.28125,
+        "perturbed_balanced_accuracy": 0.28541666666666665,
+        "clean_accuracy": 0.28125,
+        "perturbed_accuracy": 0.28541666666666665,
+        "prediction_consistency": 0.7274305555555557,
+        "mean_probability_drift_l1": 0.4800804654757182,
+        "mean_clean_confidence": 0.6864343682924906
+      },
+      "mounted": {
+        "samples": 192.0,
+        "mapped_labeled_samples": 160.0,
+        "clean_balanced_accuracy": 0.30624999999999997,
+        "perturbed_balanced_accuracy": 0.3,
+        "clean_accuracy": 0.30624999999999997,
+        "perturbed_accuracy": 0.3,
+        "prediction_consistency": 0.7552083333333334,
+        "mean_probability_drift_l1": 0.3364025255044301,
+        "mean_clean_confidence": 0.5747732917467753
+      }
+    },
+    "SCIN": {
+      "baseline": {
+        "samples": 148.0,
+        "mapped_labeled_samples": 0.0,
+        "clean_balanced_accuracy": null,
+        "perturbed_balanced_accuracy": null,
+        "clean_accuracy": null,
+        "perturbed_accuracy": null,
+        "prediction_consistency": 0.7454954954954954,
+        "mean_probability_drift_l1": 0.43762054045995075,
+        "mean_clean_confidence": 0.6937270959218343
+      },
+      "mounted": {
+        "samples": 148.0,
+        "mapped_labeled_samples": 0.0,
+        "clean_balanced_accuracy": null,
+        "perturbed_balanced_accuracy": null,
+        "clean_accuracy": null,
+        "perturbed_accuracy": null,
+        "prediction_consistency": 0.8018018018018017,
+        "mean_probability_drift_l1": 0.242631196975708,
+        "mean_clean_confidence": 0.5910766124725342
+      }
+    }
+  }
+}

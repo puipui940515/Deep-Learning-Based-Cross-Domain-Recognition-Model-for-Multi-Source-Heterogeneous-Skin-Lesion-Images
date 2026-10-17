@@ -1,0 +1,67 @@
+{
+  "schema_version": "skindetect-data-contract-v2.0",
+  "generated_at": "2026-09-11",
+  "passed": true,
+  "checks": {
+    "manifest_nonempty": true,
+    "all_files_exist": true,
+    "all_rows_have_valid_fingerprint": true,
+    "record_ids_unique": true,
+    "sha256_content_unique": true,
+    "group_split_leakage_absent": true,
+    "labels_follow_v2_mapping": true,
+    "all_manifest_rows_training_eligible": true,
+    "dedup_report_passed": true
+  },
+  "clean_rows": 86534,
+  "quarantine_rows": 21684,
+  "source_decode_or_fingerprint_errors": 74,
+  "invalid_images_quarantined": 74,
+  "source_counts": {
+    "BCN20000": 11933,
+    "HAM10000": 8511,
+    "ISIC_Archive_Expanded": 63998,
+    "PAD-UFES-20": 2092
+  },
+  "split_counts": {
+    "train": 75945,
+    "validation": 3614,
+    "validation_ext": 6975
+  },
+  "class_counts": {
+    "AKIEC": 3791,
+    "BCC": 12739,
+    "BKL": 6613,
+    "DF": 759,
+    "MEL": 10556,
+    "NV": 49234,
+    "SCC": 2197,
+    "VASC": 645
+  },
+  "license_counts": {
+    "CC BY 4.0": 14025,
+    "CC BY-NC 4.0": 8511,
+    "CC-0": 18863,
+    "CC-BY": 20014,
+    "CC-BY-NC": 25121
+  },
+  "modality_counts": {
+    "clinical_closeup": 5508,
+    "clinical_overview": 422,
+    "clinical_smartphone": 2092,
+    "dermoscopy": 77445,
+    "rcm": 98,
+    "tbp_closeup": 968,
+    "unknown": 1
+  },
+  "problems": {
+    "missing_files": [],
+    "missing_fingerprints": [],
+    "duplicate_record_ids": [],
+    "duplicate_sha256_sets": [],
+    "cross_split_groups": [],
+    "label_errors": [],
+    "eligibility_errors": []
+  },
+  "training_was_started": false
+}

@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-08T11:19:45.446225+00:00",
+  "plan": "CP-003_stage_1",
+  "required_seeds": [
+    17,
+    42,
+    2026
+  ],
+  "metric_units": "fraction_0_to_1",
+  "selection_metric_name": "BCN 加權穩健分數",
+  "selection_metric_formula": "0.5 * mean_source_balanced_accuracy + 0.5 * BCN20000_balanced_accuracy",
+  "candidates": {
+    "governance_v1": {
+      "available_seeds": [
+        17,
+        42
+      ],
+      "runs": [
+        {
+          "seed": 17,
+          "best_epoch": 4,
+          "HAM10000_balanced_accuracy": 0.768258826020529,
+          "BCN20000_balanced_accuracy": 0.6282861075529178,
+          "PAD-UFES-20_balanced_accuracy": 0.7653713205183793,
+          "mean_source_balanced_accuracy": 0.720638751363942,
+          "BCN_weighted_robust_score": 0.6744624294584298
+        },
+        {
+          "seed": 42,
+          "best_epoch": 3,
+          "HAM10000_balanced_accuracy": 0.7180359876187842,
+          "BCN20000_balanced_accuracy": 0.6060583830802658,
+          "PAD-UFES-20_balanced_accuracy": 0.7323427036662331,
+          "mean_source_balanced_accuracy": 0.6854790247884277,
+          "BCN_weighted_robust_score": 0.6457687039343467
+        }
+      ],
+      "summary": {
+        "HAM10000_balanced_accuracy": {
+          "mean": 0.7431474068196566,
+          "sample_standard_deviation": 0.035512909604309896,
+          "two_s_threshold": 0.07102581920861979,
+          "values_by_seed": {
+            "17": 0.768258826020529,
+            "42": 0.7180359876187842
+          }
+        },
+        "BCN20000_balanced_accuracy": {
+          "mean": 0.6171722453165918,
+          "sample_standard_deviation": 0.01571737470495839,
+          "two_s_threshold": 0.03143474940991678,
+          "values_by_seed": {
+            "17": 0.6282861075529178,
+            "42": 0.6060583830802658
+          }
+        },
+        "PAD-UFES-20_balanced_accuracy": {
+          "mean": 0.7488570120923062,
+          "sample_standard_deviation": 0.023354758949364857,
+          "two_s_threshold": 0.046709517898729715,
+          "values_by_seed": {
+            "17": 0.7653713205183793,
+            "42": 0.7323427036662331
+          }
+        },
+        "mean_source_balanced_accuracy": {
+          "mean": 0.7030588880761848,
+          "sample_standard_deviation": 0.024861681086210993,
+          "two_s_threshold": 0.049723362172421987,
+          "values_by_seed": {
+            "17": 0.720638751363942,
+            "42": 0.6854790247884277
+          }
+        },
+        "BCN_weighted_robust_score": {
+          "mean": 0.6601155666963883,
+          "sample_standard_deviation": 0.02028952789558469,
+          "two_s_threshold": 0.04057905579116938,
+          "values_by_seed": {
+            "17": 0.6744624294584298,
+            "42": 0.6457687039343467
+          }
+        }
+      }
+    },
+    "explicit_feature_fusion": {
+      "available_seeds": [
+        17
+      ],
+      "runs": [
+        {
+          "seed": 17,
+          "best_epoch": 4,
+          "HAM10000_balanced_accuracy": 0.767560514189381,
+          "BCN20000_balanced_accuracy": 0.657881716699751,
+          "PAD-UFES-20_balanced_accuracy": 0.7214210868622634,
+          "mean_source_balanced_accuracy": 0.7156211059171319,
+          "BCN_weighted_robust_score": 0.6867514113084414
+        }
+      ],
+      "summary": {
+        "HAM10000_balanced_accuracy": {
+          "mean": 0.767560514189381,
+          "sample_standard_deviation": null,
+          "two_s_threshold": null,
+          "values_by_seed": {
+            "17": 0.767560514189381
+          }
+        },
+        "BCN20000_balanced_accuracy": {
+          "mean": 0.657881716699751,
+          "sample_standard_deviation": null,
+          "two_s_threshold": null,
+          "values_by_seed": {
+            "17": 0.657881716699751
+          }
+        },
+        "PAD-UFES-20_balanced_accuracy": {
+          "mean": 0.7214210868622634,
+          "sample_standard_deviation": null,
+          "two_s_threshold": null,
+          "values_by_seed": {
+            "17": 0.7214210868622634
+          }
+        },
+        "mean_source_balanced_accuracy": {
+          "mean": 0.7156211059171319,
+          "sample_standard_deviation": null,
+          "two_s_threshold": null,
+          "values_by_seed": {
+            "17": 0.7156211059171319
+          }
+        },
+        "BCN_weighted_robust_score": {
+          "mean": 0.6867514113084414,
+          "sample_standard_deviation": null,
+          "two_s_threshold": null,
+          "values_by_seed": {
+            "17": 0.6867514113084414
+          }
+        }
+      }
+    }
+  },
+  "comparison": null,
+  "missing": [
+    {
+      "candidate": "governance_v1",
+      "seed": 2026,
+      "path": "資料治理與泛化修復/results/formal_v1/regularized_seed2026/result.json"
+    },
+    {
+      "candidate": "explicit_feature_fusion",
+      "seed": 42,
+      "path": "資料治理與泛化修復/顯式影像特徵融合實驗/results/fusion_seed42/result.json"
+    },
+    {
+      "candidate": "explicit_feature_fusion",
+      "seed": 2026,
+      "path": "資料治理與泛化修復/顯式影像特徵融合實驗/results/fusion_seed2026/result.json"
+    }
+  ],
+  "formal_report_complete": false
+}

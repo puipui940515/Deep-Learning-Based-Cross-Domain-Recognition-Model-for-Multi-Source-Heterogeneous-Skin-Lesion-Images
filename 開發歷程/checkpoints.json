@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "project": "SkinDetect",
+  "current_checkpoint_id": "CP-002",
+  "checkpoints": [
+    {
+      "id": "CP-001",
+      "sequence": 1,
+      "name": "首次匯總",
+      "date": "2026-08-15",
+      "status": "superseded",
+      "previous_id": null,
+      "summary_document": "開發歷程/節點01_首次匯總_2026-08-15.md",
+      "scope": "專案起始至 noisefilter 清單首次完整稽核",
+      "dataset_snapshot": {
+        "HAM10000": 10015,
+        "SCIN": 820,
+        "PAD-UFES-20": 2298,
+        "ISIC_Archive_safe_subset": 7886,
+        "BCN20000": 18914,
+        "total_image_entries": 39933,
+        "formal_mapped_evaluation_images": 22199
+      },
+      "completed_model_baselines": {
+        "stage1_v1": {
+          "model": "MLP",
+          "seeds": [
+            17,
+            42,
+            2026
+          ],
+          "validation_balanced_accuracy_mean": 0.3537,
+          "validation_balanced_accuracy_sample_std": 0.0266
+        },
+        "stage2_v5": {
+          "model": "ResNet-18 random initialization",
+          "seeds": [
+            17,
+            42,
+            2026
+          ],
+          "validation_balanced_accuracy_mean": 0.5728,
+          "validation_balanced_accuracy_sample_std": 0.0098
+        }
+      },
+      "formal_test": {
+        "total_images": 39933,
+        "mapped_images": 22199,
+        "bootstrap_iterations": 1000,
+        "ham_test_labels_used": false,
+        "stage1_clean_ensemble_ba_delta": -0.0155,
+        "stage2_clean_ensemble_ba_delta": 0.0186,
+        "stage2_mounted_clean_seed_std": 0.0234,
+        "stage2_passes_seed_gate": false
+      },
+      "audit": {
+        "checklist_items": 45,
+        "completed_or_not_triggered": 31,
+        "pending": 14,
+        "A1_overlap": 0,
+        "A2_overlap": 0,
+        "A3_overlap": 0,
+        "GCC_Peripheral_delta_cosine": 0.9953
+      },
+      "next_checkpoint_trigger": "完成至少一組正式 ablation、獨立擾動族或 v6 三 seed，並更新下游結論",
+      "corrections": [
+        {
+          "id": "CP001-C01",
+          "date": "2026-09-08",
+          "target": "第八節 8.3 與第十一節證據位置：GCC vs PeripheralReference delta cosine 0.9953",
+          "reason": "驗證/reports/noisefilter_design/design_audit.json（及歸檔副本，MD5 828021774f7f255309aa19962391a581）不含任何 cosine 欄位",
+          "correction": "該數值實際只存在於 noisefilter_清單檢查報告.md，無機器可讀來源；違反節點規則第 4 條。數值本身內部一致（LogContrast 對兩者 cosine 約 -0.0155/-0.0143），但引用路徑須改標，並在執行 GCC/Peripheral ablation 時補寫入 design_audit.json",
+          "evidence": "noisefilter_清單檢查報告.md",
+          "original_text_modified": false
+        }
+      ]
+    },
+    {
+      "id": "CP-002",
+      "sequence": 2,
+      "name": "多來源泛化與資料治理匯總",
+      "date": "2026-09-08",
+      "status": "current",
+      "previous_id": "CP-001",
+      "summary_document": "開發歷程/節點02_多來源泛化與資料治理匯總_2026-09-08.md",
+      "scope": "部位預測線、多來源混合訓練、資料治理與泛化修復、基底模型篩選與可切換功能正式訓練",
+      "training_sources": [
+        "HAM10000",
+        "BCN20000",
+        "PAD-UFES-20"
+      ],
+      "formal_training_input": "資料治理與泛化修復/data/unified_manifest_v1.csv",
+      "data_governance": {
+        "schema_version": "skindetect-data-contract-v1.0",
+        "input_rows": 22600,
+        "clean_rows": 22536,
+        "quarantined_rows": 64,
+        "exact_duplicate_set_count": 56,
+        "exact_duplicate_label_conflict_set_count": 8,
+        "near_duplicate_manual_review_pending": 112,
+        "group_cross_split_count": 0,
+        "pipeline_gate_passed": true,
+        "train_rows": {
+          "HAM10000": 7007,
+          "BCN20000": 10221,
+          "PAD-UFES-20": 1694
+        },
+        "validation_rows": {
+          "HAM10000": 1504,
+          "BCN20000": 1712,
+          "PAD-UFES-20": 398
+        }
+      },
+      "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+      "comparable_runs_seed17": [
+        {
+          "id": "mixed_v2_convnext_pre_governance",
+          "mean_source_ba": 0.6937,
+          "worst_source_ba": 0.5779,
+          "robust_score": null,
+          "train_ba": 0.9579,
+          "note": "驗證清單為治理前版本，不可直接相減"
+        },
+        {
+          "id": "governance_formal_v1",
+          "mean_source_ba": 0.7206,
+          "worst_source_ba": 0.6283,
+          "robust_score": 0.6745,
+          "train_ba": 0.9159,
+          "sampling_method": "weighted_replacement"
+        },
+        {
+          "id": "governance_formal_v2_long",
+          "mean_source_ba": 0.7181,
+          "worst_source_ba": 0.6189,
+          "robust_score": 0.6685,
+          "train_ba": 0.9924,
+          "note": "multi-variable non-attributable：同時改 epochs / lr / mixup_alpha / patience（見 corrections C05）"
+        },
+        {
+          "id": "governance_formal_v3a_coverage",
+          "mean_source_ba": 0.7041,
+          "worst_source_ba": 0.5992,
+          "robust_score": 0.6516,
+          "train_ba": 0.9801,
+          "note": "改用 full_coverage_capped，同時失去 BCN 與 PAD 的類別平衡（見 corrections C02、C04）"
+        },
+        {
+          "id": "explicit_feature_fusion",
+          "mean_source_ba": 0.7156,
+          "worst_source_ba": 0.6579,
+          "robust_score": 0.6868,
+          "train_ba": 0.9119,
+          "note": "目前最佳 robust score；未歸檔至檔案室",
+          "sampling_method": "weighted_replacement"
+        },
+        {
+          "id": "base_resnet18_full_features_v13",
+          "mean_source_ba": 0.6439,
+          "worst_source_ba": 0.4795,
+          "robust_score": 0.5617,
+          "train_ba": 0.8794
+        }
+      ],
+      "closed_negative_results": {
+        "noisefilter_fixed_core": "CP-001 已判定不納入；12 號十張篩選分數 23.45/100，08 號後未再使用",
+        "densepose_frozen_linear_probe_pp": -17.16,
+        "densepose_parallel_teacher_pp": 0.1,
+        "densepose_full_finetune_pp": -8.89,
+        "densepose_summary_complete": false,
+        "itobos_formal_v1_validation_ba": 0.5753,
+        "itobos_v1_1_noise_mask_delta": -0.017,
+        "itobos_v1_2_label_smoothing_delta": -0.0113,
+        "longer_training_mean_source_delta": -0.0025,
+        "full_coverage_sampling_mean_source_delta": -0.0165
+      },
+      "bottlenecks": [
+        "跨來源泛化自治理 v1 起平台化，五次嘗試無一超越",
+        "train-validation 落差 25-40 個百分點，對正則化與訓練長度免疫",
+        "來源捷徑未切斷：GRL 開啟下來源探針仍達 86-96%；純顯式特徵 MLP 遠高於隨機基準",
+        "BCN20000 稀有類別崩潰：DF 9.1%、BKL 27.1%、AKIEC 35.4%、VASC 38.1%",
+        "自 08 號起連續六個實驗僅 seed 17，近期差異落在種子雜訊內",
+        "v13 同時變動八個因素無法歸因；PAD 實際抽樣占比 14.22% 與宣稱 1/3 不符",
+        "可解釋性與正則化反向：Grad-CAM 忠實度差由 0.613 降至 0.040-0.262",
+        "外部評估來源已消耗：PAD 進入訓練、BCN test 無標籤、HAM test 封存",
+        "缺少 lesion segmentation mask，ROI 與定位閘門雙雙阻塞（跨節點未解）",
+        "顯式特徵 fusion 與 formal_v3a_coverage 未歸檔，最佳結果未進入決策"
+      ],
+      "cp001_followup_status": {
+        "resolved": [
+          "v6 ImageNet ResNet-18 三 seed 完成，平均 0.7090",
+          "每個設定同時評估多來源已達成並升級為三來源選模",
+          "模型校準已完成（溫度校準 ECE 0.0433 -> 0.0285）"
+        ],
+        "partial": [
+          "獨立擾動族：訓練增強已含，評估用擾動族未建立",
+          "病人層級：僅 PAD 以 patient_id 分組",
+          "膚色分層：未做"
+        ],
+        "unresolved": [
+          "lesion segmentation mask 未取得（跨節點阻塞）",
+          "PeripheralReference 權重圖人工檢視",
+          "noisefilter 各項 ablation 與 alpha 補測"
+        ]
+      },
+      "sealed_test": {
+        "ham_test_images": 1503,
+        "ham_test_used": false,
+        "in_unified_manifest": false
+      },
+      "next_checkpoint_trigger": "至少一個候選模型完成三個 seed，或 v13 單開關消融完成並找出退步成因",
+      "corrections": [
+        {
+          "id": "C01",
+          "date": "2026-09-08",
+          "target": "bottlenecks[6] 熱力圖忠實度",
+          "reason": "heatmap_audit/summary.json 的 explicit_features_fixed_during_perturbation=true：遮擋不影響顯式分支，含該分支的模型忠實度被稀釋",
+          "correction": "含顯式分支的 v13 (0.262) 不可與無該分支的 mixed_resnet18 (0.613) 直接相比；治理 v1/v2/v3a 三者均無顯式分支，彼此仍可比，正則化與忠實度反向的趨勢不變",
+          "evidence": "基底模型發展_可切換正式訓練/results/base_resnet18_full_features_v1_seed17/heatmap_audit/summary.json",
+          "original_text_modified": false
+        },
+        {
+          "id": "C02",
+          "date": "2026-09-08",
+          "target": "bottlenecks[3] BCN 稀有類別、bottlenecks[5] 抽樣占比",
+          "reason": "coverage_sampler.py 的配額公式 size + min(largest-size, size*(max_repeats-1))，class_balance_alpha 只作用於額外配額",
+          "correction": "BCN20000 額外配額為 0（本身即 largest_size），類別平衡完全不生效；PAD 額外配額恰等於母體大小，rng.choice(replace=False) 必回傳全部，權重亦為空操作；class_balance_alpha=0.5 實際只影響 HAM10000",
+          "evidence": "資料治理與泛化修復/scripts/coverage_sampler.py",
+          "extras_per_source": {
+            "BCN20000": 0,
+            "PAD-UFES-20": 1694,
+            "HAM10000": 3214
+          },
+          "original_text_modified": false
+        },
+        {
+          "id": "C03",
+          "date": "2026-09-08",
+          "target": "bottlenecks[2] 來源捷徑",
+          "reason": "configurable_model.py 的 forward：source_head 只接 gradient_reverse(image_features)，disease_head 接 concat(image_features, explicit_side)",
+          "correction": "顯式特徵分支完全不經過梯度反轉，是繞開去偏機制直達疾病頭的通道；whole_branch_dropout_probability=0.25 不構成去偏。原本並列的兩項證據實為同一機制問題",
+          "evidence": "基底模型發展_可切換正式訓練/src/configurable_model.py",
+          "original_text_modified": false
+        },
+        {
+          "id": "C04",
+          "date": "2026-09-08",
+          "target": "corrections C02 本身",
+          "reason": "train_regularized.py 的 --sampling-method 有兩條路徑，各次正式訓練用的並不相同",
+          "correction": "C02 的缺陷只存在於 full_coverage_capped 路徑（治理 v3a、基底 v13）；治理 v1 與 v2 使用 weighted_replacement，三來源類別平衡皆正常運作。治理 v1→v3a 這次『只改抽樣』的單變因實驗，實際同時失去 BCN 與 PAD 的類別平衡",
+          "evidence": "資料治理與泛化修復/scripts/train_regularized.py",
+          "sampling_method_by_run": {
+            "formal_v1": "weighted_replacement",
+            "formal_v2_long": "weighted_replacement",
+            "formal_v3a_coverage": "full_coverage_capped",
+            "base_resnet18_full_features_v13": "full_coverage_capped"
+          },
+          "original_text_modified": false
+        },
+        {
+          "id": "C05",
+          "date": "2026-09-08",
+          "target": "第五節 5.4、comparable_runs_seed17 的 governance_formal_v2_long",
+          "reason": "formal_v2_long 與 formal_v1 的 regularization 區塊相差三項，不只訓練長度",
+          "correction": "治理 v2 同時變動 epochs(8->30)、learning_rate(1e-4->5e-5)、mixup_alpha(0.2->0.3)、early_stopping_patience(4->10)，屬 multi-variable non-attributable，不得作為『訓練長度無效』的證據",
+          "evidence": "資料治理與泛化修復/results/formal_v2_long/regularized_seed17/result.json",
+          "original_text_modified": false
+        },
+        {
+          "id": "C06",
+          "date": "2026-09-08",
+          "target": "bottlenecks[2] 第 3 項『來源在物理層面完全可分』",
+          "reason": "原文撰寫時只讀取 04_equipment_composition_audit.json 的前兩個 profile",
+          "correction": "長寬比只分 HAM(1.333) 與 {BCN,PAD}(皆 1.000)；飽和度分 BCN(0.168) 與 {HAM 0.292, PAD 0.306}。單一特徵皆無法三分，需兩者合併。PAD 尺寸離散度極大(147-3474px)但長寬比幾乎恆為 1.000",
+          "evidence": "資料治理與泛化修復/reports/04_equipment_composition_audit.json",
+          "source_profiles": {
+            "HAM10000": {
+              "ar_median": 1.333,
+              "brightness_median": 0.6142,
+              "saturation_median": 0.292
+            },
+            "BCN20000": {
+              "ar_median": 1.0,
+              "brightness_median": 0.5504,
+              "saturation_median": 0.1683
+            },
+            "PAD-UFES-20": {
+              "ar_median": 1.0,
+              "ar_std": 0.0075,
+              "brightness_median": 0.5586,
+              "saturation_median": 0.3061
+            }
+          },
+          "original_text_modified": false
+        },
+        {
+          "id": "C07",
+          "date": "2026-09-08",
+          "target": "第五節 5.2 的適用範圍",
+          "reason": "5.2 的三次證據測的是 DensePose 特徵/權重遷移，被誤引為關閉 site_auxiliary 多任務輔助頭的依據，屬範疇錯誤",
+          "correction": "部位輔助損失頭在本專案從未被測試過。第二階段/部位標籤搭載實驗亦不適用（其 README 明載『部位不是模型輸入，也不加入 loss』）。5.2 只適用於特徵/權重遷移，不得延伸為『部位資訊在任何形式下都無助』。CP-003 階段 3-3 為開放問題",
+          "evidence": "第二階段/部位標籤搭載實驗/README.md；基底模型發展_可切換正式訓練/src/configurable_model.py",
+          "original_text_modified": false
+        },
+        {
+          "id": "C08",
+          "date": "2026-09-08",
+          "target": "bottlenecks[9] 歸檔與決策脫節",
+          "reason": "2026-09-08 11:09 collect_chart_archive.py 已修改，11:10 重跑歸檔",
+          "correction": "檔案室現有 15 個任務，新增 14_完整覆蓋抽樣v3a 與 15_顯式影像特徵融合。瓶頸 10 前三項已處理；殘留：兩新任務圖表數皆為 0 需補繪；near_duplicate_review 的 112 筆與 8 組標籤衝突仍未裁決",
+          "evidence": "檔案室/圖表資料庫/README.md；檔案室/_工具/collect_chart_archive.py",
+          "original_text_modified": false
+        },
+        {
+          "id": "C09",
+          "date": "2026-09-08",
+          "target": "corrections C04 表格中『各 1/3』",
+          "reason": "sample_weights 使每來源權重總和相等，搭配 WeightedRandomSampler(replacement=True)",
+          "correction": "治理 v1/v2 的 1/3 是期望來源占比（result.json 的 sampling.expected_source_share），每 epoch 實現值有波動；full_coverage_capped 的 42.9/42.9/14.2 是確定性配額。兩者性質不同",
+          "evidence": "資料治理與泛化修復/scripts/train_regularized.py (sample_weights)",
+          "original_text_modified": false
+        }
+      ],
+      "forward_plan": "開發歷程/CP-003_執行計畫_2026-09-08.md"
+    }
+  ]
+}

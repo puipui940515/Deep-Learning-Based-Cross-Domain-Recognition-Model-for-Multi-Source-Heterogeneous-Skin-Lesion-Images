@@ -1,0 +1,25 @@
+{
+  "schema_version": "skindetect-data-contract-v1.0",
+  "primary_key": "record_id",
+  "record_id_format": "{source_dataset}::{image_id}",
+  "missing_value_policy": "CSV 中以空字串表示原始資料未提供；canonical 欄位才可使用 unknown；禁止由影像推測患者屬性",
+  "split_values": ["train", "validation"],
+  "source_values": ["HAM10000", "BCN20000", "PAD-UFES-20"],
+  "class_order": ["AKIEC", "BCC", "BKL", "DF", "NV", "VASC", "MEL"],
+  "class_names_zh": ["光化性角化症／表皮內癌光譜", "基底細胞癌", "良性角化病變群", "皮膚纖維瘤", "黑色素細胞痣", "血管性病變", "黑色素瘤"],
+  "anatomical_site_values": ["head_neck", "trunk", "upper_extremity", "lower_extremity", "acral", "oral_anogenital", "unknown"],
+  "image_modality_values": ["dermoscopy", "clinical_smartphone"],
+  "sex_values": ["male", "female", "unknown"],
+  "mapping_relation_values": ["exact", "family"],
+  "mapping_confidence_values": ["high", "medium"],
+  "split_group_policy": {
+    "HAM10000": "lesion_id",
+    "BCN20000": "lesion_id",
+    "PAD-UFES-20": "patient_id"
+  },
+  "required_training_columns": [
+    "schema_version", "record_id", "source", "split", "image_path", "image_id",
+    "group_id", "diagnosis_original", "diagnosis_canonical_code", "label", "label_name",
+    "training_eligible", "image_modality", "license", "leakage_status"
+  ]
+}

@@ -1,0 +1,16 @@
+device cuda torch 2.11.0+cu128
+checkpoint 模型改進/results/R0_b5839ad5_seed17/best.pt epoch 12 run R0_b5839ad5_seed17
+images 600 manifest sha 7754099ab667
+0/600 4s
+50/600 11s
+100/600 19s
+150/600 26s
+200/600 33s
+250/600 39s
+300/600 46s
+350/600 54s
+400/600 63s
+450/600 72s
+500/600 79s
+550/600 87s
+done 96s

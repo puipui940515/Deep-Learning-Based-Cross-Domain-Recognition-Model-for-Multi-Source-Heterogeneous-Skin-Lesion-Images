@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "total_overlap": 0,
+  "datasets": {
+    "basal_cell_carcinoma": {
+      "isic_subset_images": 3037,
+      "overlap_count": 0,
+      "overlap_ids": []
+    },
+    "squamous_cell_carcinoma": {
+      "isic_subset_images": 1279,
+      "overlap_count": 0,
+      "overlap_ids": []
+    },
+    "melanoma": {
+      "isic_subset_images": 3570,
+      "overlap_count": 0,
+      "overlap_ids": []
+    }
+  },
+  "action": "交集為 0，不需移除。"
+}

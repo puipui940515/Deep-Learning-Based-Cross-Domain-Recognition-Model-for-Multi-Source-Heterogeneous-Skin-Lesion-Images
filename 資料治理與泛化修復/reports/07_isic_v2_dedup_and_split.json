@@ -1,0 +1,3394 @@
+{
+  "schema_version": "skindetect-data-contract-v2.0",
+  "passed": true,
+  "input_candidate_rows": 99444,
+  "clean_rows": 86534,
+  "quarantine_rows_total": 21684,
+  "content_quarantine_rows": 12910,
+  "group_leakage_count": 0,
+  "duplicate_record_id_count": 0,
+  "exact_duplicate_sets": 0,
+  "exact_duplicate_label_conflict_sets": 0,
+  "strict_cross_source_near_duplicate_rows": 12616,
+  "strict_cross_split_near_duplicate_rows": 220,
+  "manual_review_cross_source_candidates": 1627,
+  "manual_review_cross_split_candidates": 123,
+  "strict_cross_source_examples": [
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053459",
+      "existing_record": "BCN20000::BCN_0000000006",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053464",
+      "existing_record": "BCN20000::BCN_0000000011",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053466",
+      "existing_record": "BCN20000::BCN_0000000013",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053482",
+      "existing_record": "BCN20000::BCN_0000000029",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053493",
+      "existing_record": "BCN20000::BCN_0000000040",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053497",
+      "existing_record": "BCN20000::BCN_0000000044",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053505",
+      "existing_record": "BCN20000::BCN_0000000052",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053521",
+      "existing_record": "BCN20000::BCN_0000000068",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053529",
+      "existing_record": "BCN20000::BCN_0000000076",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053530",
+      "existing_record": "BCN20000::BCN_0000000077",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053532",
+      "existing_record": "BCN20000::BCN_0000000079",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053539",
+      "existing_record": "BCN20000::BCN_0000000086",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053540",
+      "existing_record": "BCN20000::BCN_0000000087",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053544",
+      "existing_record": "BCN20000::BCN_0000000091",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053551",
+      "existing_record": "BCN20000::BCN_0000000098",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053554",
+      "existing_record": "BCN20000::BCN_0000000101",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053557",
+      "existing_record": "BCN20000::BCN_0000000104",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053564",
+      "existing_record": "BCN20000::BCN_0000000111",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053572",
+      "existing_record": "BCN20000::BCN_0000000121",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053574",
+      "existing_record": "BCN20000::BCN_0000000123",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053577",
+      "existing_record": "BCN20000::BCN_0000000126",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053579",
+      "existing_record": "BCN20000::BCN_0000000128",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053584",
+      "existing_record": "BCN20000::BCN_0000000133",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053588",
+      "existing_record": "BCN20000::BCN_0000000137",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053609",
+      "existing_record": "BCN20000::BCN_0000000158",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053618",
+      "existing_record": "BCN20000::BCN_0000000168",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053623",
+      "existing_record": "BCN20000::BCN_0000000173",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053629",
+      "existing_record": "BCN20000::BCN_0000000179",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053630",
+      "existing_record": "BCN20000::BCN_0000000180",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053634",
+      "existing_record": "BCN20000::BCN_0000000184",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053637",
+      "existing_record": "BCN20000::BCN_0000000187",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053641",
+      "existing_record": "BCN20000::BCN_0000000191",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053643",
+      "existing_record": "BCN20000::BCN_0000000193",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053645",
+      "existing_record": "BCN20000::BCN_0000000195",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053647",
+      "existing_record": "BCN20000::BCN_0000000197",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053652",
+      "existing_record": "BCN20000::BCN_0000000202",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053655",
+      "existing_record": "BCN20000::BCN_0000000206",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053665",
+      "existing_record": "BCN20000::BCN_0000000216",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053668",
+      "existing_record": "BCN20000::BCN_0000000219",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053673",
+      "existing_record": "BCN20000::BCN_0000000224",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053677",
+      "existing_record": "BCN20000::BCN_0000000228",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053681",
+      "existing_record": "BCN20000::BCN_0000000232",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053690",
+      "existing_record": "BCN20000::BCN_0000000241",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053694",
+      "existing_record": "BCN20000::BCN_0000000245",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053696",
+      "existing_record": "BCN20000::BCN_0000000247",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053710",
+      "existing_record": "BCN20000::BCN_0000000261",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053711",
+      "existing_record": "BCN20000::BCN_0000000262",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053713",
+      "existing_record": "BCN20000::BCN_0000000264",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053718",
+      "existing_record": "BCN20000::BCN_0000000269",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053720",
+      "existing_record": "BCN20000::BCN_0000000271",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053724",
+      "existing_record": "BCN20000::BCN_0000000275",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053729",
+      "existing_record": "BCN20000::BCN_0000000280",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053732",
+      "existing_record": "BCN20000::BCN_0000000284",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053739",
+      "existing_record": "BCN20000::BCN_0000000291",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053752",
+      "existing_record": "BCN20000::BCN_0000000304",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053753",
+      "existing_record": "BCN20000::BCN_0000000305",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053754",
+      "existing_record": "BCN20000::BCN_0000000306",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053755",
+      "existing_record": "BCN20000::BCN_0000000307",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053758",
+      "existing_record": "BCN20000::BCN_0000000310",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053759",
+      "existing_record": "BCN20000::BCN_0000000311",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053760",
+      "existing_record": "BCN20000::BCN_0000000312",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053773",
+      "existing_record": "BCN20000::BCN_0000000325",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053783",
+      "existing_record": "BCN20000::BCN_0000000335",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053786",
+      "existing_record": "BCN20000::BCN_0000000338",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053788",
+      "existing_record": "BCN20000::BCN_0000000340",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053797",
+      "existing_record": "BCN20000::BCN_0000000349",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053803",
+      "existing_record": "BCN20000::BCN_0000000355",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053807",
+      "existing_record": "BCN20000::BCN_0000000359",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053811",
+      "existing_record": "BCN20000::BCN_0000000363",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053821",
+      "existing_record": "BCN20000::BCN_0000000374",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053831",
+      "existing_record": "BCN20000::BCN_0000000384",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053833",
+      "existing_record": "BCN20000::BCN_0000000386",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053838",
+      "existing_record": "BCN20000::BCN_0000000391",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053842",
+      "existing_record": "BCN20000::BCN_0000000395",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053845",
+      "existing_record": "BCN20000::BCN_0000000398",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053851",
+      "existing_record": "BCN20000::BCN_0000000405",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053861",
+      "existing_record": "BCN20000::BCN_0000000415",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053870",
+      "existing_record": "BCN20000::BCN_0000000424",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053871",
+      "existing_record": "BCN20000::BCN_0000000425",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053874",
+      "existing_record": "BCN20000::BCN_0000000428",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053880",
+      "existing_record": "BCN20000::BCN_0000000434",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053881",
+      "existing_record": "BCN20000::BCN_0000000435",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053883",
+      "existing_record": "BCN20000::BCN_0000000437",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053886",
+      "existing_record": "BCN20000::BCN_0000000440",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053890",
+      "existing_record": "BCN20000::BCN_0000000444",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053894",
+      "existing_record": "BCN20000::BCN_0000000448",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053896",
+      "existing_record": "BCN20000::BCN_0000000450",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053915",
+      "existing_record": "BCN20000::BCN_0000000469",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053918",
+      "existing_record": "BCN20000::BCN_0000000472",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053920",
+      "existing_record": "BCN20000::BCN_0000000474",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053922",
+      "existing_record": "BCN20000::BCN_0000000476",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053929",
+      "existing_record": "BCN20000::BCN_0000000484",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053931",
+      "existing_record": "BCN20000::BCN_0000000486",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053937",
+      "existing_record": "BCN20000::BCN_0000000492",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053940",
+      "existing_record": "BCN20000::BCN_0000000495",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053948",
+      "existing_record": "BCN20000::BCN_0000000504",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053952",
+      "existing_record": "BCN20000::BCN_0000000508",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053959",
+      "existing_record": "BCN20000::BCN_0000000516",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053970",
+      "existing_record": "BCN20000::BCN_0000000527",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053975",
+      "existing_record": "BCN20000::BCN_0000000532",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053983",
+      "existing_record": "BCN20000::BCN_0000000541",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053992",
+      "existing_record": "BCN20000::BCN_0000000550",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0053998",
+      "existing_record": "BCN20000::BCN_0000000556",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054008",
+      "existing_record": "BCN20000::BCN_0000000566",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054012",
+      "existing_record": "BCN20000::BCN_0000000570",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054022",
+      "existing_record": "BCN20000::BCN_0000000580",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054023",
+      "existing_record": "BCN20000::BCN_0000000581",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054027",
+      "existing_record": "BCN20000::BCN_0000000585",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054039",
+      "existing_record": "BCN20000::BCN_0000000597",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054041",
+      "existing_record": "BCN20000::BCN_0000000599",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054044",
+      "existing_record": "BCN20000::BCN_0000000602",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054046",
+      "existing_record": "BCN20000::BCN_0000000604",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054050",
+      "existing_record": "BCN20000::BCN_0000000608",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054054",
+      "existing_record": "BCN20000::BCN_0000000612",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054066",
+      "existing_record": "BCN20000::BCN_0000000624",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054069",
+      "existing_record": "BCN20000::BCN_0000000627",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054071",
+      "existing_record": "BCN20000::BCN_0000000629",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054077",
+      "existing_record": "BCN20000::BCN_0000000636",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054083",
+      "existing_record": "BCN20000::BCN_0000000642",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054100",
+      "existing_record": "BCN20000::BCN_0000000659",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054104",
+      "existing_record": "BCN20000::BCN_0000000665",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 2
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054105",
+      "existing_record": "BCN20000::BCN_0000000666",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054107",
+      "existing_record": "BCN20000::BCN_0000000668",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054115",
+      "existing_record": "BCN20000::BCN_0000000676",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054119",
+      "existing_record": "BCN20000::BCN_0000000681",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054126",
+      "existing_record": "BCN20000::BCN_0000000688",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054134",
+      "existing_record": "BCN20000::BCN_0000000696",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054145",
+      "existing_record": "BCN20000::BCN_0000000707",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054148",
+      "existing_record": "BCN20000::BCN_0000000710",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054149",
+      "existing_record": "BCN20000::BCN_0000000711",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054157",
+      "existing_record": "BCN20000::BCN_0000000719",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054162",
+      "existing_record": "BCN20000::BCN_0000000724",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054166",
+      "existing_record": "BCN20000::BCN_0000000728",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054168",
+      "existing_record": "BCN20000::BCN_0000000730",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054176",
+      "existing_record": "BCN20000::BCN_0000000739",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054192",
+      "existing_record": "BCN20000::BCN_0000000755",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054211",
+      "existing_record": "BCN20000::BCN_0000000776",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054221",
+      "existing_record": "BCN20000::BCN_0000000786",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054230",
+      "existing_record": "BCN20000::BCN_0000000795",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054238",
+      "existing_record": "BCN20000::BCN_0000000803",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054245",
+      "existing_record": "BCN20000::BCN_0000000810",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054256",
+      "existing_record": "BCN20000::BCN_0000000821",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054258",
+      "existing_record": "BCN20000::BCN_0000000823",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054263",
+      "existing_record": "BCN20000::BCN_0000000828",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054268",
+      "existing_record": "BCN20000::BCN_0000000833",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054270",
+      "existing_record": "BCN20000::BCN_0000000835",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054273",
+      "existing_record": "BCN20000::BCN_0000000838",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054277",
+      "existing_record": "BCN20000::BCN_0000000842",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054278",
+      "existing_record": "BCN20000::BCN_0000000843",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054280",
+      "existing_record": "BCN20000::BCN_0000000845",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054281",
+      "existing_record": "BCN20000::BCN_0000000846",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054291",
+      "existing_record": "BCN20000::BCN_0000000856",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054298",
+      "existing_record": "BCN20000::BCN_0000000863",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054304",
+      "existing_record": "BCN20000::BCN_0000000869",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054305",
+      "existing_record": "BCN20000::BCN_0000000871",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054307",
+      "existing_record": "BCN20000::BCN_0000000873",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054308",
+      "existing_record": "BCN20000::BCN_0000000874",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054310",
+      "existing_record": "BCN20000::BCN_0000000876",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054318",
+      "existing_record": "BCN20000::BCN_0000000884",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054326",
+      "existing_record": "BCN20000::BCN_0000000892",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054327",
+      "existing_record": "BCN20000::BCN_0000000893",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054330",
+      "existing_record": "BCN20000::BCN_0000000896",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054348",
+      "existing_record": "BCN20000::BCN_0000000915",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054352",
+      "existing_record": "BCN20000::BCN_0000000919",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054356",
+      "existing_record": "BCN20000::BCN_0000000923",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054357",
+      "existing_record": "BCN20000::BCN_0000000924",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054369",
+      "existing_record": "BCN20000::BCN_0000000936",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054373",
+      "existing_record": "BCN20000::BCN_0000000941",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054381",
+      "existing_record": "BCN20000::BCN_0000000949",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054382",
+      "existing_record": "BCN20000::BCN_0000000951",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054387",
+      "existing_record": "BCN20000::BCN_0000000956",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054393",
+      "existing_record": "BCN20000::BCN_0000000963",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054398",
+      "existing_record": "BCN20000::BCN_0000000968",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054400",
+      "existing_record": "BCN20000::BCN_0000000970",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054403",
+      "existing_record": "BCN20000::BCN_0000000973",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054404",
+      "existing_record": "BCN20000::BCN_0000000974",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054406",
+      "existing_record": "BCN20000::BCN_0000000976",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054407",
+      "existing_record": "BCN20000::BCN_0000000977",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054414",
+      "existing_record": "BCN20000::BCN_0000000984",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054417",
+      "existing_record": "BCN20000::BCN_0000000987",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054421",
+      "existing_record": "BCN20000::BCN_0000000991",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054422",
+      "existing_record": "BCN20000::BCN_0000000992",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054428",
+      "existing_record": "BCN20000::BCN_0000000998",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054442",
+      "existing_record": "BCN20000::BCN_0000001012",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054446",
+      "existing_record": "BCN20000::BCN_0000001017",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054456",
+      "existing_record": "BCN20000::BCN_0000001027",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054475",
+      "existing_record": "BCN20000::BCN_0000001047",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054476",
+      "existing_record": "BCN20000::BCN_0000001048",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054478",
+      "existing_record": "BCN20000::BCN_0000001050",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054480",
+      "existing_record": "BCN20000::BCN_0000001052",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054483",
+      "existing_record": "BCN20000::BCN_0000001055",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054486",
+      "existing_record": "BCN20000::BCN_0000001058",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054494",
+      "existing_record": "BCN20000::BCN_0000001067",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054495",
+      "existing_record": "BCN20000::BCN_0000001068",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054499",
+      "existing_record": "BCN20000::BCN_0000001072",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054502",
+      "existing_record": "BCN20000::BCN_0000001075",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054508",
+      "existing_record": "BCN20000::BCN_0000001081",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054509",
+      "existing_record": "BCN20000::BCN_0000001082",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054514",
+      "existing_record": "BCN20000::BCN_0000001087",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "new_record": "ISIC_Archive_Expanded::ISIC_0054525",
+      "existing_record": "BCN20000::BCN_0000001098",
+      "existing_source": "BCN20000",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    }
+  ],
+  "strict_cross_split_examples": [
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0000435",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0023656",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001164",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001464",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001165",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001465",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001175",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001475",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001181",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001481",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001195",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001495",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001202",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001502",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001210",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001510",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001227",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001527",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001235",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001535",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001236",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001536",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001253",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001553",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001264",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001564",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001269",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001569",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001287",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001587",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001300",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001600",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001304",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001604",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001320",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001620",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001333",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001633",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001340",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001640",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001349",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001649",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001371",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001671",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001376",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001676",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001377",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001677",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001396",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001696",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001410",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001710",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001420",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001720",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001422",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001722",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001431",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001731",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001435",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001735",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001451",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001751",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001453",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001753",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001457",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001757",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001458",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001758",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001477",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001177",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001486",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001186",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001490",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001190",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001504",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001204",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001513",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001213",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001532",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001232",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001547",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001247",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001552",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001252",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001560",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001260",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001570",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001270",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001598",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001298",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001609",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001309",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001611",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001311",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001616",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001316",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001624",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001324",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001663",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001363",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001668",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001368",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001688",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001388",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001714",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001414",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001718",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001418",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001737",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001437",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0005250",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0005566",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0005564",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0005248",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0007187",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0006605",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0007452",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0006576",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0007921",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0007280",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0007932",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0006601",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0008069",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0006452",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0010124",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0036174",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0010130",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0021936",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0010147",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0023926",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0010173",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0023792",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 2
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0010420",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0022649",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0010818",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0023657",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0011208",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0022858",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0012122",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0012935",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0012140",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0013011",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0012271",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0016018",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0012456",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0014039",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0013095",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0012171",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0014299",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_3403329",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0020957",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010907",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021169",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010518",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021283",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0036303",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021342",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010336",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021592",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010970",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021679",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010435",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021702",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0036326",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021712",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0000407",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021909",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010734",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0022598",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0036340",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0022727",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010064",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0023024",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010570",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0023821",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0000397",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0023915",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010506",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0023942",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0036338",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0024134",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0000452",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0024138",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0036335",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0036235",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0022456",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_3575814",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0012526",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_7311296",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0012551",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_6804655",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0012523",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0566832",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0960303",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4317286",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0747873",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_8367640",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_2764403",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_5364904",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0349067",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_7156836",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_8343252",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_7110429",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_1322875",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_2195662",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_5992359",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_8822943",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_7581185",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_6741788",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_5310716",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_8633415",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_9079946",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_7057111",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4597372",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4951420",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_1970348",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_8969886",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4933159",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0001144",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0023124",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0013093",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0012169",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0036067",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0021833",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0011272",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0021721",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021412",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0011134",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021806",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010328",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021857",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010345",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0014235",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0012498",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_5507422",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4741649",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_5177514",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_1641722",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_1863799",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0997468",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_3857317",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0057319",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0057563",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0059767",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0064924",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0061357",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0071854",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_1643848",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_6221334",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_6524452",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_7099273",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_3268181",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4302835",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_3554529",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_3654266",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_1662811",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_7666188",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_6207529",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_5722692",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_9736101",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_7338869",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_9725780",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_9625520",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_5533390",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_3043690",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0968275",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_5597169",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_2258143",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0000280",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0000279",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0000404",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0021293",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0036090",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0022616",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0036260",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0021282",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0036287",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001105",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0009898",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0023769",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0010765",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0022083",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0010766",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0022286",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0011273",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0021728",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0014506",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_9353360",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0014518",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_9207777",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021440",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0036286",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0022255",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010809",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0023438",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0000429",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0023747",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0000395",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0023855",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0000446",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0024033",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0036276",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_8634483",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_3429122",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_9733341",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_6045985",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_2266761",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4237031",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_1550822",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_9875351",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4652160",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_3202818",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4184528",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_7277004",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0416344",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_4099804",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0320476",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0009886",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0023786",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0009916",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0023116",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0010852",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0022339",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0014091",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0012472",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0014513",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_3561065",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021188",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0001105",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021194",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0000402",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 0
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021442",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010486",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    },
+    {
+      "train_record": "ISIC_Archive_Expanded::ISIC_0021800",
+      "validation_record": "ISIC_Archive_Expanded::ISIC_0010533",
+      "same_label": true,
+      "phash_distance": 0,
+      "dhash_distance": 1
+    }
+  ],
+  "clean_rows_by_source_and_split": [
+    {
+      "source": "BCN20000",
+      "split": "train",
+      "count": 10221
+    },
+    {
+      "source": "BCN20000",
+      "split": "validation",
+      "count": 1712
+    },
+    {
+      "source": "HAM10000",
+      "split": "train",
+      "count": 7007
+    },
+    {
+      "source": "HAM10000",
+      "split": "validation",
+      "count": 1504
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "split": "train",
+      "count": 57023
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "split": "validation_ext",
+      "count": 6975
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "train",
+      "count": 1694
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "validation",
+      "count": 398
+    }
+  ],
+  "clean_rows_by_source_class_split": [
+    {
+      "source": "BCN20000",
+      "class": "AKIEC",
+      "split": "train",
+      "count": 616
+    },
+    {
+      "source": "BCN20000",
+      "class": "AKIEC",
+      "split": "validation",
+      "count": 113
+    },
+    {
+      "source": "BCN20000",
+      "class": "BCC",
+      "split": "train",
+      "count": 2448
+    },
+    {
+      "source": "BCN20000",
+      "class": "BCC",
+      "split": "validation",
+      "count": 354
+    },
+    {
+      "source": "BCN20000",
+      "class": "BKL",
+      "split": "train",
+      "count": 943
+    },
+    {
+      "source": "BCN20000",
+      "class": "BKL",
+      "split": "validation",
+      "count": 181
+    },
+    {
+      "source": "BCN20000",
+      "class": "DF",
+      "split": "train",
+      "count": 91
+    },
+    {
+      "source": "BCN20000",
+      "class": "DF",
+      "split": "validation",
+      "count": 33
+    },
+    {
+      "source": "BCN20000",
+      "class": "MEL",
+      "split": "train",
+      "count": 2519
+    },
+    {
+      "source": "BCN20000",
+      "class": "MEL",
+      "split": "validation",
+      "count": 328
+    },
+    {
+      "source": "BCN20000",
+      "class": "NV",
+      "split": "train",
+      "count": 3514
+    },
+    {
+      "source": "BCN20000",
+      "class": "NV",
+      "split": "validation",
+      "count": 682
+    },
+    {
+      "source": "BCN20000",
+      "class": "VASC",
+      "split": "train",
+      "count": 90
+    },
+    {
+      "source": "BCN20000",
+      "class": "VASC",
+      "split": "validation",
+      "count": 21
+    },
+    {
+      "source": "HAM10000",
+      "class": "AKIEC",
+      "split": "train",
+      "count": 229
+    },
+    {
+      "source": "HAM10000",
+      "class": "AKIEC",
+      "split": "validation",
+      "count": 49
+    },
+    {
+      "source": "HAM10000",
+      "class": "BCC",
+      "split": "train",
+      "count": 360
+    },
+    {
+      "source": "HAM10000",
+      "class": "BCC",
+      "split": "validation",
+      "count": 77
+    },
+    {
+      "source": "HAM10000",
+      "class": "BKL",
+      "split": "train",
+      "count": 769
+    },
+    {
+      "source": "HAM10000",
+      "class": "BKL",
+      "split": "validation",
+      "count": 165
+    },
+    {
+      "source": "HAM10000",
+      "class": "DF",
+      "split": "train",
+      "count": 80
+    },
+    {
+      "source": "HAM10000",
+      "class": "DF",
+      "split": "validation",
+      "count": 18
+    },
+    {
+      "source": "HAM10000",
+      "class": "MEL",
+      "split": "train",
+      "count": 779
+    },
+    {
+      "source": "HAM10000",
+      "class": "MEL",
+      "split": "validation",
+      "count": 167
+    },
+    {
+      "source": "HAM10000",
+      "class": "NV",
+      "split": "train",
+      "count": 4692
+    },
+    {
+      "source": "HAM10000",
+      "class": "NV",
+      "split": "validation",
+      "count": 1006
+    },
+    {
+      "source": "HAM10000",
+      "class": "VASC",
+      "split": "train",
+      "count": 98
+    },
+    {
+      "source": "HAM10000",
+      "class": "VASC",
+      "split": "validation",
+      "count": 22
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "AKIEC",
+      "split": "train",
+      "count": 1850
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "AKIEC",
+      "split": "validation_ext",
+      "count": 210
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "BCC",
+      "split": "train",
+      "count": 7700
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "BCC",
+      "split": "validation_ext",
+      "count": 961
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "BKL",
+      "split": "train",
+      "count": 3810
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "BKL",
+      "split": "validation_ext",
+      "count": 511
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "DF",
+      "split": "train",
+      "count": 393
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "DF",
+      "split": "validation_ext",
+      "count": 144
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "MEL",
+      "split": "train",
+      "count": 6029
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "MEL",
+      "split": "validation_ext",
+      "count": 682
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "NV",
+      "split": "train",
+      "count": 35006
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "NV",
+      "split": "validation_ext",
+      "count": 4091
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "SCC",
+      "split": "train",
+      "count": 1971
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "SCC",
+      "split": "validation_ext",
+      "count": 226
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "VASC",
+      "split": "train",
+      "count": 264
+    },
+    {
+      "source": "ISIC_Archive_Expanded",
+      "class": "VASC",
+      "split": "validation_ext",
+      "count": 150
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "AKIEC",
+      "split": "train",
+      "count": 588
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "AKIEC",
+      "split": "validation",
+      "count": 136
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "BCC",
+      "split": "train",
+      "count": 691
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "BCC",
+      "split": "validation",
+      "count": 148
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "BKL",
+      "split": "train",
+      "count": 179
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "BKL",
+      "split": "validation",
+      "count": 55
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "MEL",
+      "split": "train",
+      "count": 41
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "MEL",
+      "split": "validation",
+      "count": 11
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "NV",
+      "split": "train",
+      "count": 195
+    },
+    {
+      "source": "PAD-UFES-20",
+      "class": "NV",
+      "split": "validation",
+      "count": 48
+    }
+  ],
+  "outputs": {
+    "unified_manifest": "data/unified_manifest_v2.csv",
+    "quarantine": "data/quarantine_v2.csv",
+    "fingerprints": "data/image_fingerprints_v2.csv"
+  },
+  "training_was_started": false
+}

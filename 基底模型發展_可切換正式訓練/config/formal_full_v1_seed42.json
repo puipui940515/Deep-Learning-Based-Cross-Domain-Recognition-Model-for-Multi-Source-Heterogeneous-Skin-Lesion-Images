@@ -1,0 +1,109 @@
+{
+  "experiment_id": "base_resnet18_full_features_v1",
+  "seed": 42,
+  "data": {
+    "manifest": "資料治理與泛化修復/data/unified_manifest_v1.csv",
+    "governance_gate": "資料治理與泛化修復/reports/pipeline_gate.json",
+    "explicit_feature_cache": "資料治理與泛化修復/顯式影像特徵融合實驗/data/explicit_features_v1.csv",
+    "required_schema_version": "skindetect-data-contract-v1.0",
+    "roi": {
+      "enabled": false,
+      "mode": "manifest_bbox",
+      "coordinate_format": "normalized_xyxy",
+      "columns": ["roi_xmin", "roi_ymin", "roi_xmax", "roi_ymax"]
+    }
+  },
+  "model": {
+    "architecture": "resnet18",
+    "imagenet_pretrained": true,
+    "num_disease_classes": 7,
+    "dropout": 0.30,
+    "explicit_features": {
+      "enabled": true,
+      "hidden_dim": 32,
+      "dropout": 0.35,
+      "whole_branch_dropout_probability": 0.25
+    },
+    "site_auxiliary": {
+      "enabled": true,
+      "loss_weight": 0.10,
+      "classes": ["trunk", "head_neck", "lower_extremity", "upper_extremity", "acral", "oral_anogenital"],
+      "ignore_values": ["", "unknown"]
+    },
+    "source_adversarial": {
+      "enabled": true,
+      "loss_weight": 0.05,
+      "gradient_reversal_strength": 0.20,
+      "classes": ["HAM10000", "BCN20000", "PAD-UFES-20"]
+    }
+  },
+  "input": {
+    "image_size": 224,
+    "preserve_aspect_ratio": true,
+    "pad_mode": "edge",
+    "normalization": "imagenet"
+  },
+  "augmentation": {
+    "horizontal_flip": true,
+    "vertical_flip": true,
+    "rotation_degrees": 20,
+    "translation_fraction": 0.05,
+    "scale_range": [0.90, 1.10],
+    "color_jitter": true,
+    "brightness": 0.20,
+    "contrast": 0.20,
+    "saturation": 0.18,
+    "hue": 0.03,
+    "gaussian_blur": true,
+    "gaussian_blur_probability": 0.15,
+    "grayscale_probability": 0.04,
+    "autocontrast_probability": 0.10,
+    "gaussian_noise": true,
+    "gaussian_noise_probability": 0.20,
+    "gaussian_noise_std": 0.025,
+    "random_erasing": true,
+    "random_erasing_probability": 0.15,
+    "random_erasing_scale": [0.02, 0.08]
+  },
+  "sampling": {
+    "enabled": true,
+    "method": "full_coverage_capped",
+    "class_balance_alpha": 0.50,
+    "max_repeats_per_sample_per_epoch": 2
+  },
+  "training": {
+    "epochs": 18,
+    "early_stopping_patience": 5,
+    "batch_size": 32,
+    "gradient_accumulation": 1,
+    "learning_rate": 0.0002,
+    "backbone_learning_rate_multiplier": 0.20,
+    "weight_decay": 0.05,
+    "label_smoothing": 0.10,
+    "mixup_enabled": true,
+    "mixup_alpha": 0.20,
+    "gradient_clip_norm": 1.0,
+    "num_workers": 0,
+    "amp": true,
+    "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+    "monitor_train_samples": 1500
+  },
+  "post_training": {
+    "temperature_scaling": {
+      "enabled": true,
+      "max_iterations": 50
+    },
+    "heatmap_audit": {
+      "enabled": true,
+      "sample_manifest": "模型基底篩選_熱力圖10張測試/data/selected_samples.csv",
+      "top_fraction": 0.20,
+      "horizontal_flip_stability": true
+    },
+    "plot_history": true
+  },
+  "output": {
+    "root": "基底模型發展_可切換正式訓練/results",
+    "smoke_root": "基底模型發展_可切換正式訓練/smoke_results"
+  }
+}
+

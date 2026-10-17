@@ -1,0 +1,28 @@
+{
+  "experiment": "CP005",
+  "manifest": "模型改進/data/cp005_manifest_isolated_20261009.csv",
+  "split_report": "模型改進/reports/cp005_split_isolated_20261009.json",
+  "queue_session": "required_nf2_v2_isolated_20261009",
+  "seeds": [17, 42, 2026],
+  "classes": ["AKIEC", "BCC", "BKL", "DF", "NV", "VASC", "MEL", "SCC"],
+  "normalization": {"mean": [0.485, 0.456, 0.406], "std": [0.229, 0.224, 0.225]},
+  "preprocessing": {"mode": "letterbox", "fill": [124, 116, 104], "allow_upscale": true},
+  "training": {
+    "epochs": 12, "patience": 4, "lr": 0.0001, "weight_decay": 0.05,
+    "layer_decay": 0.75, "label_smoothing": 0.1, "mixup_alpha": 0.2,
+    "effective_batch": 32, "num_workers": 0, "selection": "worst_source_balanced_accuracy",
+    "crop_scale": [0.8, 1.0], "crop_ratio": [0.9, 1.1]
+  },
+  "runs": {
+    "R0": {"crop": "none", "k": 1.5, "size": 224, "batch_size": 16, "feature": "none", "held_out": null},
+    "R1": {"crop": "D0", "k": 1.5, "size": 224, "batch_size": 16, "feature": "none", "held_out": null},
+    "R2": {"crop": "D2", "k": 1.5, "size": 224, "batch_size": 16, "feature": "none", "held_out": null},
+    "R3": {"crop": "D2", "k": 1.2, "size": 224, "batch_size": 16, "feature": "none", "held_out": null},
+    "R4": {"crop": "D2", "k": 2.0, "size": 224, "batch_size": 16, "feature": "none", "held_out": null},
+    "R5": {"crop": "none", "k": 1.5, "size": 384, "batch_size": 8, "feature": "none", "held_out": null},
+    "R6": {"crop": "D2", "k": 1.5, "size": 384, "batch_size": 8, "feature": "none", "held_out": null},
+    "L-PAD": {"crop": "none", "k": 1.5, "size": 224, "batch_size": 16, "feature": "none", "held_out": "PAD-UFES-20"},
+    "L-BCN": {"crop": "none", "k": 1.5, "size": 224, "batch_size": 16, "feature": "none", "held_out": "BCN20000"},
+    "L-HAM": {"crop": "none", "k": 1.5, "size": 224, "batch_size": 16, "feature": "none", "held_out": "HAM10000"}
+  }
+}

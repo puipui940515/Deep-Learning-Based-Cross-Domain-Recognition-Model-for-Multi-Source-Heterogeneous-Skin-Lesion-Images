@@ -1,0 +1,52 @@
+{
+  "schema_version": "skindetect-index-v1",
+  "generated_at": "2026-10-06T06:24:05.125474+00:00",
+  "generator": "模型改進",
+  "_notice": "由腳本產生，請勿手動編輯",
+  "manifest_sha256": "462a5df97aff8a49b055225da5479b64fb8dc5f1af6810bd539d6cf235e85369",
+  "by_source": {
+    "HAM10000": {
+      "count": 8511,
+      "fallback_rate": 0.03137116672541417,
+      "area_quartiles": [
+        0.150054931640625,
+        0.2574717203776042,
+        0.415802001953125
+      ]
+    },
+    "BCN20000": {
+      "count": 11933,
+      "fallback_rate": 0.18520070393027738,
+      "area_quartiles": [
+        0.193115234375,
+        0.4358062744140625,
+        0.7201766967773438
+      ]
+    },
+    "PAD-UFES-20": {
+      "count": 2092,
+      "fallback_rate": 0.17590822179732313,
+      "area_quartiles": [
+        0.3268604278564453,
+        0.58203125,
+        0.7345657348632812
+      ]
+    },
+    "ISIC_Archive_Expanded": {
+      "count": 63998,
+      "fallback_rate": 0.1299884371386606,
+      "area_quartiles": [
+        0.13275146484375,
+        0.263671875,
+        0.4807472229003906
+      ]
+    }
+  },
+  "quantitative_passed": true,
+  "visual_review_approved": false,
+  "passed": false,
+  "review_list": "模型基底篩選_熱力圖10張測試/data/selected_samples.csv",
+  "note": "Requires human review of the original ten images; not localization accuracy.",
+  "visual_review_status": "not_passed_assistant_review",
+  "visual_review_evidence": "模型改進/reports/R0_visual_review.json"
+}

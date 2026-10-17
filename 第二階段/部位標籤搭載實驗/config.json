@@ -1,0 +1,18 @@
+{
+  "base_version": "v7",
+  "seeds": [17, 42, 2026],
+  "pilot_epochs": 1,
+  "manifest": "data/fixed_split_with_site.csv",
+  "dataset_root": "../../Dataset/HAM10000",
+  "branches": {
+    "control": "一般 shuffle，從相同 v7 最佳 checkpoint 再訓練",
+    "site_balanced": "疾病內部位平衡抽樣，其他條件與 control 相同"
+  },
+  "site_sampler": {
+    "power": 0.5,
+    "max_weight": 4.0,
+    "min_group_count": 10
+  },
+  "validation_min_site_support": 20,
+  "test_split_used": false
+}

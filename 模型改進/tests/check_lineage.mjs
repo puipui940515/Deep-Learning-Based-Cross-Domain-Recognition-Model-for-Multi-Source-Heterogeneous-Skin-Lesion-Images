@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+const html=fs.readFileSync(new URL('../../SkinDetect_實驗譜系.html',import.meta.url),'utf8');
+const script=html.match(/<script>([\s\S]*?)<\/script>/)[1];
+new Function(script);
+const data=script.split('/* ── 建圖')[0];
+const {N,E,COLS}=vm.runInNewContext(data+'; ({N,E,COLS})');
+for(const col of COLS) for(const id of col.ids) if(!N[id]) throw Error(`Missing column node ${id}`);
+for(const [a,b] of E) if(!N[a]||!N[b]) throw Error(`Missing edge ${a} ${b}`);
+if(N.nf2.st!=='failed'||N.cp5probe.st!=='done'||N.cp5train.st!=='active') throw Error('Incorrect current status');
+if(N.cp5crop.st!=='failed') throw Error('Crop gate must remain blocked after visual audit');
+console.log(`Lineage syntax and ${Object.keys(N).length} nodes / ${E.length} edges verified.`);

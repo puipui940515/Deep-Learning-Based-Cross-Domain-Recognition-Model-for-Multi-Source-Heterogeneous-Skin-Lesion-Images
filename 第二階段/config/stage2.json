@@ -1,0 +1,73 @@
+﻿{
+    "dataset_root":  "../Dataset/HAM10000",
+    "split_manifest":  "data/fixed_split.csv",
+    "num_classes":  7,
+    "seeds":  [
+                  17,
+                  42,
+                  2026
+              ],
+    "epochs":  30,
+    "num_workers":  0,
+    "base_learning_rate":  0.0003,
+    "weight_decay":  0.0001,
+    "early_stopping_patience":  7,
+    "layer_decay":  0.7,
+    "logit_adjustment_tau":  1.0,
+    "versions":  {
+                     "v5":  {
+                                "model":  "resnet18",
+                                "pretrained":  false,
+                                "image_size":  224,
+                                "batch_size":  32,
+                                "gradient_accumulation":  1,
+                                "loss":  "ce",
+                                "layer_decay":  false
+                            },
+                     "v6":  {
+                                "model":  "resnet18",
+                                "pretrained":  true,
+                                "image_size":  224,
+                                "batch_size":  32,
+                                "gradient_accumulation":  1,
+                                "loss":  "ce",
+                                "layer_decay":  false
+                            },
+                     "v7":  {
+                                "model":  "convnext_tiny",
+                                "pretrained":  true,
+                                "image_size":  224,
+                                "batch_size":  16,
+                                "gradient_accumulation":  2,
+                                "loss":  "ce",
+                                "layer_decay":  true
+                            },
+                     "v8":  {
+                                "model":  "convnext_tiny",
+                                "pretrained":  true,
+                                "image_size":  384,
+                                "batch_size":  8,
+                                "gradient_accumulation":  4,
+                                "loss":  "ce",
+                                "layer_decay":  true
+                            },
+                     "v9":  {
+                                "model":  "convnext_tiny",
+                                "pretrained":  true,
+                                "image_size":  384,
+                                "batch_size":  8,
+                                "gradient_accumulation":  4,
+                                "loss":  "logit_adjusted_ce",
+                                "layer_decay":  true
+                            },
+                     "v10":  {
+                                 "model":  "convnext_tiny",
+                                 "pretrained":  false,
+                                 "image_size":  224,
+                                 "batch_size":  16,
+                                 "gradient_accumulation":  2,
+                                 "loss":  "ce",
+                                 "layer_decay":  true
+                             }
+                 }
+}

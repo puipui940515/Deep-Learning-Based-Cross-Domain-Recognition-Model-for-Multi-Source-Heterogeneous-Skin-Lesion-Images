@@ -1,0 +1,18 @@
+{
+  "protocol": "快速篩選",
+  "purpose": "先判斷真實部位初始化是否出現值得擴充的提升訊號",
+  "conditions": ["imagenet_init", "densepose_true_init"],
+  "seeds": [17, 42],
+  "epochs": 6,
+  "dataset": "完整 HAM10000 固定 train/validation split",
+  "image_size": 224,
+  "full_backbone_finetune": true,
+  "negative_control_deferred": true,
+  "test_used": false,
+  "expansion_gate": {
+    "minimum_mean_balanced_accuracy_improvement_percentage_points": 0.5,
+    "require_same_improvement_direction_for_both_seeds": true,
+    "action_if_passed": "再訓練同訓練量 shuffled C 組，並將 A/B/C 擴充至三個 seeds",
+    "action_if_failed": "停止此路線，不投入 C 組與 30 epoch 正式訓練"
+  }
+}

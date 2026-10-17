@@ -1,0 +1,21 @@
+{
+  "total_eval_rows": 11933,
+  "groups": {
+    "HAM10000_validation": 1504,
+    "BCN20000_internal_validation_mapped": 1716,
+    "PAD-UFES-20_external_mapped_eval": 2106,
+    "ISIC_Archive_external_mapped_eval": 6607
+  },
+  "excluded": {
+    "HAM10000_test_not_evaluated": 1503,
+    "HAM10000_train_not_evaluated": 7008,
+    "BCN20000_val_unmapped_SCC": 66,
+    "PAD-UFES-20_unmapped_SCC": 192,
+    "ISIC_Archive_unmapped_SCC": 1279,
+    "SCIN_incompatible_with_HAM10000_7class": 820,
+    "DensePose_COCO_body_part_not_skin_disease": 1,
+    "iToBoS2024TBP_body_site_not_HAM10000_7class": 1
+  },
+  "test_used": false,
+  "training_performed": false
+}

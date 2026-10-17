@@ -1,0 +1,80 @@
+{
+  "source": "UI使用手冊.md",
+  "generated_at": "2026-10-13T10:43:02.600Z",
+  "width": 1440,
+  "height": 1920,
+  "pages": [
+    {
+      "number": 1,
+      "title": "SkinDetect UI 使用手冊",
+      "id": "page-1",
+      "file": "01_SkinDetect UI 使用手冊.png"
+    },
+    {
+      "number": 2,
+      "title": "1. 啟動與關閉",
+      "id": "page-2",
+      "file": "02_1. 啟動與關閉.png"
+    },
+    {
+      "number": 3,
+      "title": "2. 畫面導覽",
+      "id": "page-3",
+      "file": "03_2. 畫面導覽.png"
+    },
+    {
+      "number": 4,
+      "title": "3. 單張影像推論",
+      "id": "page-4",
+      "file": "04_3. 單張影像推論.png"
+    },
+    {
+      "number": 5,
+      "title": "3. 單張影像推論",
+      "id": "page-5",
+      "file": "05_3. 單張影像推論.png"
+    },
+    {
+      "number": 6,
+      "title": "4. 模型與檔案位置",
+      "id": "page-6",
+      "file": "06_4. 模型與檔案位置.png"
+    },
+    {
+      "number": 7,
+      "title": "5. 透過 UI 訓練",
+      "id": "page-7",
+      "file": "07_5. 透過 UI 訓練.png"
+    },
+    {
+      "number": 8,
+      "title": "5. 透過 UI 訓練",
+      "id": "page-8",
+      "file": "08_5. 透過 UI 訓練.png"
+    },
+    {
+      "number": 9,
+      "title": "6. 推論紀錄與實驗紀錄",
+      "id": "page-9",
+      "file": "09_6. 推論紀錄與實驗紀錄.png"
+    },
+    {
+      "number": 10,
+      "title": "7. 常見問題",
+      "id": "page-10",
+      "file": "10_7. 常見問題.png"
+    },
+    {
+      "number": 11,
+      "title": "7. 常見問題",
+      "id": "page-11",
+      "file": "11_7. 常見問題.png"
+    },
+    {
+      "number": 12,
+      "title": "8. 本次完善範圍",
+      "id": "page-12",
+      "file": "12_8. 本次完善範圍.png"
+    }
+  ]
+}

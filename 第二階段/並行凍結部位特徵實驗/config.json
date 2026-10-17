@@ -1,0 +1,33 @@
+{
+  "comparison_id": "stage2_parallel_frozen_teacher_v7_scale",
+  "dataset_root": "../../Dataset/HAM10000",
+  "split_manifest": "../data/fixed_split.csv",
+  "image_size": 224,
+  "batch_size": 16,
+  "gradient_accumulation": 2,
+  "epochs": 5,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "layer_decay": 0.7,
+  "num_workers": 0,
+  "num_classes": 7,
+  "seeds": [17, 42, 2026],
+  "conditions": [
+    "imagenet_teacher",
+    "densepose_true_teacher",
+    "densepose_shuffled_teacher"
+  ],
+  "assets": {
+    "densepose_true_teacher": {
+      "path": "../../重要資產/DensePose_五類部位Backbone_2026-08-24/densepose_true_seed17.pt",
+      "sha256": "D16B370302D0FC49CD40BBD2E94E2E96631F361623D8F339EFAE2A3AFC215C59",
+      "status": "primary"
+    },
+    "densepose_shuffled_teacher": {
+      "path": "../../重要資產/DensePose_五類部位Backbone_2026-08-24/densepose_shuffled_seed17.pt",
+      "sha256": "0EACADE4D4A0EBB990BF8AED8F1C34F95446530B708896902DC8F84CA8FA0566",
+      "status": "exploratory_pretrain_duration_mismatch"
+    }
+  },
+  "test_used": false
+}

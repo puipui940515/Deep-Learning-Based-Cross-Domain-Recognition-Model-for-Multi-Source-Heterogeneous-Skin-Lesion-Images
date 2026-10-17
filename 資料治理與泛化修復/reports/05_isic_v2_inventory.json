@@ -1,0 +1,82 @@
+{
+  "schema_version": "skindetect-data-contract-v2.0",
+  "generated_at": "2026-09-11",
+  "passed": true,
+  "base_v1_rows": 22536,
+  "expanded_metadata_rows": 85682,
+  "expanded_candidate_rows": 76908,
+  "candidate_total_rows": 99444,
+  "pre_manifest_quarantine_rows": 8774,
+  "problem_rows": 0,
+  "problems": [],
+  "overlap": {
+    "ham10000_isic_id_excluded": 8774,
+    "old_isic_safe_id_present_in_expanded": 7847,
+    "old_isic_policy": "不另行抽樣；擴充來源中的相同影像只保留一個 canonical record"
+  },
+  "new_rows_by_class": {
+    "AKIEC": 3370,
+    "BCC": 11935,
+    "BKL": 5574,
+    "DF": 658,
+    "MEL": 9494,
+    "NV": 43261,
+    "SCC": 2202,
+    "VASC": 414
+  },
+  "new_rows_by_modality": {
+    "clinical_closeup": 7332,
+    "clinical_overview": 422,
+    "dermoscopy": 67931,
+    "rcm": 254,
+    "tbp_closeup": 968,
+    "unknown": 1
+  },
+  "new_rows_by_license": {
+    "CC-0": 18993,
+    "CC-BY": 21998,
+    "CC-BY-NC": 35917
+  },
+  "new_rows_by_confirmation_confidence": {
+    "high": 41748,
+    "low": 483,
+    "medium": 18823,
+    "unknown": 15854
+  },
+  "identity_completeness": {
+    "image_only": 14359,
+    "lesion_only": 30147,
+    "patient_and_lesion": 16893,
+    "patient_only": 15509
+  },
+  "split": {
+    "groups": 35033,
+    "validation_groups": 3690,
+    "group_leakage_count": 0,
+    "targets": {
+      "NV": 4327,
+      "BKL": 558,
+      "DF": 150,
+      "VASC": 150,
+      "AKIEC": 337,
+      "BCC": 1194,
+      "MEL": 950,
+      "SCC": 221
+    },
+    "actual_validation_rows": {
+      "AKIEC": 340,
+      "BCC": 1288,
+      "BKL": 619,
+      "DF": 157,
+      "MEL": 953,
+      "NV": 4508,
+      "SCC": 226,
+      "VASC": 150
+    }
+  },
+  "outputs": {
+    "candidate_manifest": "data/candidate_manifest_v2.csv",
+    "pre_manifest_quarantine": "data/pre_manifest_quarantine_v2.csv"
+  },
+  "training_was_started": false
+}

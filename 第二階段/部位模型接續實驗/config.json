@@ -1,0 +1,16 @@
+{
+  "disease_base": "第二階段 v7 ConvNeXt-Tiny 224px",
+  "site_model": "部位預測階段 all_compatible ResNet-18 seed17 epoch3",
+  "disease_seeds": [17, 42, 2026],
+  "fusion_input": "frozen five-class site probabilities",
+  "branches": ["bias_control", "site_fusion", "shuffled_site"],
+  "fusion": {
+    "learning_rate": 0.01,
+    "weight_decay": 0.01,
+    "max_epochs": 300,
+    "early_stopping_patience": 30,
+    "batch_size": 512
+  },
+  "selection_metric": "validation_balanced_accuracy",
+  "test_used": false
+}

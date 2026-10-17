@@ -1,0 +1,28 @@
+{
+  "schema_version": "skindetect-data-contract-v2.0",
+  "created_at": "2026-09-11",
+  "primary_key": "record_id",
+  "record_id_format": "{source_dataset}::{image_id}",
+  "extends": "skindetect-data-contract-v1.0",
+  "source_values": ["HAM10000", "BCN20000", "PAD-UFES-20", "ISIC_Archive_Expanded"],
+  "class_order": ["AKIEC", "BCC", "BKL", "DF", "NV", "VASC", "MEL", "SCC"],
+  "class_names_zh": ["光化性角化症／表皮內癌光譜", "基底細胞癌", "良性角化病變群", "皮膚纖維瘤", "黑色素細胞痣", "血管性病變", "黑色素瘤", "鱗狀細胞癌"],
+  "split_values": ["train", "validation", "validation_ext"],
+  "new_source_split_policy": {
+    "group_priority": ["patient_id", "lesion_id", "image_id"],
+    "base_validation_fraction": 0.10,
+    "minimum_validation_rows": {"AKIEC": 200, "BCC": 300, "BKL": 300, "DF": 150, "NV": 300, "VASC": 150, "MEL": 300, "SCC": 200},
+    "seed": 20260911,
+    "note": "同一可辨識患者或病灶不跨 split；兩者皆缺時只能以 image_id 隔離並在限制中揭露。"
+  },
+  "image_modality_values": ["dermoscopy", "clinical_closeup", "clinical_overview", "tbp_closeup", "rcm", "unknown"],
+  "diagnosis_confirmation_confidence_values": ["high", "medium", "low", "unknown"],
+  "license_values": ["CC-0", "CC-BY", "CC-BY-NC", "CC BY 4.0", "CC BY-NC 4.0"],
+  "missing_value_policy": "原始欄位以空字串表示未提供；不可由影像推測患者屬性。",
+  "overlap_policy": {
+    "HAM10000": "ISIC_Archive_Expanded 中與 HAM10000 相同 isic_id 的影像一律隔離",
+    "old_isic_safe_subset": "舊 ISIC 安全子集不另行抽樣；重疊影像由擴充來源保留單一 canonical record",
+    "content": "SHA-256 相同與嚴格 pHash/dHash 近重複依來源優先權隔離"
+  },
+  "required_training_columns": ["schema_version", "record_id", "source", "split", "image_path", "image_id", "group_id", "diagnosis_canonical_code", "label", "label_name", "training_eligible", "image_modality", "diagnosis_confirmation_confidence", "recommended_sample_weight", "license", "leakage_status"]
+}

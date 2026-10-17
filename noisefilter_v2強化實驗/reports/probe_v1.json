@@ -1,0 +1,119 @@
+{
+  "D1_logcontrast_aperture": {
+    "no_aperture": {
+      "log_std_measured": 0.315,
+      "lesion_contrast_before": 0.91,
+      "lesion_contrast_after_alpha1": 0.915
+    },
+    "black_aperture": {
+      "log_std_measured": 3.422,
+      "lesion_contrast_before": 0.835,
+      "lesion_contrast_after_alpha1": -0.135
+    }
+  },
+  "D1_real_log_std": [
+    {
+      "image": "BCN__BCN_0000009536",
+      "dark_fraction": 0.361,
+      "log_std_all": 2.155,
+      "log_std_valid": 0.531
+    },
+    {
+      "image": "BCN__BCN_0000014405",
+      "dark_fraction": 0.357,
+      "log_std_all": 2.181,
+      "log_std_valid": 0.493
+    },
+    {
+      "image": "BCN__BCN_0000018987",
+      "dark_fraction": 0.047,
+      "log_std_all": 1.218,
+      "log_std_valid": 0.462
+    }
+  ],
+  "D2_illumflatten_lesion_scale": [
+    {
+      "lesion_radius_frac": 0.05,
+      "contrast_before": 0.88,
+      "contrast_after_alpha1": 0.569,
+      "retained_ratio": 0.646
+    },
+    {
+      "lesion_radius_frac": 0.1,
+      "contrast_before": 0.91,
+      "contrast_after_alpha1": 0.302,
+      "retained_ratio": 0.332
+    },
+    {
+      "lesion_radius_frac": 0.18,
+      "contrast_before": 0.91,
+      "contrast_after_alpha1": 0.155,
+      "retained_ratio": 0.17
+    },
+    {
+      "lesion_radius_frac": 0.28,
+      "contrast_before": 0.917,
+      "contrast_after_alpha1": 0.107,
+      "retained_ratio": 0.117
+    },
+    {
+      "lesion_radius_frac": 0.38,
+      "contrast_before": 0.928,
+      "contrast_after_alpha1": 0.105,
+      "retained_ratio": 0.114
+    }
+  ],
+  "D2_illumflatten_lesion_chroma": {
+    "rgb_share_before": [
+      0.2774,
+      0.3069,
+      0.4158
+    ],
+    "rgb_share_after": [
+      0.3625,
+      0.3178,
+      0.3198
+    ]
+  },
+  "D3_gcc_pr_redundancy": {
+    "delta_cosine_mean": 0.9847,
+    "delta_cosine_min": 0.8504,
+    "pr_mae_alone": 0.0508,
+    "pr_mae_after_gcc": 0.0083,
+    "note": "PR 疊在 GCC 之後的剩餘修正量 / 單獨修正量，比值越小越冗餘"
+  },
+  "D4_peripheral_contamination": [
+    {
+      "lesion_radius": 0.15,
+      "center": [
+        0,
+        0
+      ],
+      "skin_gray_deviation_after": 0.0001
+    },
+    {
+      "lesion_radius": 0.35,
+      "center": [
+        0,
+        0
+      ],
+      "skin_gray_deviation_after": 0.003
+    },
+    {
+      "lesion_radius": 0.3,
+      "center": [
+        0.45,
+        0.0
+      ],
+      "skin_gray_deviation_after": 0.0094
+    },
+    {
+      "lesion_radius": 0.45,
+      "center": [
+        0.3,
+        0.2
+      ],
+      "skin_gray_deviation_after": 0.0328
+    }
+  ]
+}

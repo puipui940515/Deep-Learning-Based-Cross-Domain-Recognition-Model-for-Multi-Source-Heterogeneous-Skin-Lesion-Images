@@ -1,0 +1,15 @@
+{
+  "pipeline_id": "source_leakage_overfit_device_v1",
+  "passed": true,
+  "clean_manifest": "data/clean_manifest.csv",
+  "input_rows": 22600,
+  "clean_rows": 22536,
+  "quarantined_rows": 64,
+  "near_duplicate_manual_review_count": 112,
+  "data_definition_schema": "skindetect-data-contract-v1.0",
+  "data_definition_passed": true,
+  "unified_manifest": "data/unified_manifest_v1.csv",
+  "overfit_signal_confirmed": true,
+  "domain_shift_confirmed": true,
+  "training_was_started": false
+}

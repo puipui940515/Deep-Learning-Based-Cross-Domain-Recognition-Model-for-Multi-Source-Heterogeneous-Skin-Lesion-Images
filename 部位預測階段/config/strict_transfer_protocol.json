@@ -1,0 +1,37 @@
+{
+  "protocol_version": "1.0",
+  "status": "frozen_before_dataset_download",
+  "research_question": "Does supervised anatomical-site pretraining improve downstream skin-disease classification?",
+  "primary_metric": "disease_balanced_accuracy",
+  "recommended_pretraining_dataset": "iToBoS_2024_3D_TBP",
+  "downstream_task": "seven_class_skin_disease_classification",
+  "required_arms": [
+    "imagenet_initialization",
+    "true_site_label_pretraining",
+    "shuffled_site_label_pretraining"
+  ],
+  "optional_arms": [
+    "image_only_self_supervised_pretraining"
+  ],
+  "required_seeds": 3,
+  "transfer_method": "remove_site_head_then_randomly_initialize_disease_head",
+  "forbidden_downstream_inputs": [
+    "site_label",
+    "site_probability",
+    "site_logits"
+  ],
+  "invariants": [
+    "same_backbone_architecture",
+    "same_downstream_split",
+    "same_transforms",
+    "same_optimizer_and_schedule",
+    "same_training_budget",
+    "same_checkpoint_selection_rule"
+  ],
+  "leakage_rules": [
+    "no_downstream_validation_or_test_image_in_site_pretraining",
+    "subject_disjoint_site_splits",
+    "sealed_downstream_test_until_protocol_freeze"
+  ],
+  "previous_site_probability_fusion_is_main_evidence": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "skindetect-index-v1",
+  "generated_at": "2026-10-09T02:11:16.188082+00:00",
+  "generator": "模型改進",
+  "_notice": "由腳本產生，請勿手動編輯",
+  "passed": true,
+  "manifest_sha256": "7754099ab667c23d912286f713918559304840b16f1637c244016a8f69efeb4d",
+  "original_manifest_sha256": "462a5df97aff8a49b055225da5479b64fb8dc5f1af6810bd539d6cf235e85369",
+  "audit_sha256": "e1326403720525324a973a3676ed4fdfa18f35d8dc564946f7b7feaffa0b8719",
+  "original_rows": 86534,
+  "retained_rows": 82495,
+  "excluded_rows": 4039,
+  "candidate_endpoint_images": 1767,
+  "excluded_groups": 1531,
+  "counts": {
+    "BCN20000": {
+      "train": 7850,
+      "val_select": 1100,
+      "val_assess": 921
+    },
+    "HAM10000": {
+      "train": 5984,
+      "val_select": 1477,
+      "val_assess": 981
+    },
+    "ISIC_Archive_Expanded": {
+      "train": 47912,
+      "val_select": 7794,
+      "val_assess": 6740
+    },
+    "PAD-UFES-20": {
+      "train": 1192,
+      "val_select": 377,
+      "val_assess": 167
+    }
+  },
+  "excluded_by_split": {
+    "train": 1842,
+    "val_assess": 843,
+    "val_select": 1354
+  },
+  "class_coverage_preserved": true,
+  "sealed_test_used": false,
+  "rule": "Exclude BOTH endpoints of every pending cross-split candidate plus their complete cp005_group. Do not change retained split assignments.",
+  "caveat": "Conservative exclusion, not confirmation that all candidate images are duplicates. Full content audit must be rerun. Historical comparisons use a different population."
+}

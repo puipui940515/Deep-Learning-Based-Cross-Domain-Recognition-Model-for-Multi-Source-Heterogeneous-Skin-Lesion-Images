@@ -1,0 +1,34 @@
+{
+  "task_id": "ham10000_single_image_7class_classification",
+  "task_name_zh_tw": "HAM10000 單張皮膚鏡影像七類單標籤分類",
+  "task_type": "supervised_single_label_multiclass_image_classification",
+  "input": {
+    "modality": "dermoscopic_rgb_image",
+    "channels": 3,
+    "v5_image_size": [224, 224]
+  },
+  "output": {
+    "num_logits": 7,
+    "activation_for_probability": "softmax",
+    "prediction_rule": "argmax"
+  },
+  "primary_selection_metric": "validation_balanced_accuracy",
+  "secondary_metrics": [
+    "validation_macro_f1",
+    "validation_accuracy",
+    "validation_ece_15_bins",
+    "validation_recall_per_class",
+    "validation_confusion_matrix",
+    "validation_cross_entropy_loss"
+  ],
+  "split_unit": "lesion_id",
+  "test_split_used": false,
+  "not_tasks": [
+    "object_detection",
+    "segmentation",
+    "binary_malignancy_classification",
+    "skin_tone_or_race_classification",
+    "clinical_diagnosis"
+  ],
+  "class_mapping_file": "../data/class_mapping.json"
+}

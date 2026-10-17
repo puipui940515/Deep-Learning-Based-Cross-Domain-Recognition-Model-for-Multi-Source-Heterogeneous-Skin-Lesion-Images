@@ -1,0 +1,120 @@
+{
+  "schema_version": "skindetect-index-v1",
+  "generated_at": "2026-10-06T05:53:35.558209+00:00",
+  "generator": "模型改進/scripts/prepare_s0.py",
+  "_notice": "由腳本產生，請勿手動編輯",
+  "manifest": "資料治理與泛化修復/data/unified_manifest_v2.csv",
+  "manifest_sha256": "5a01243a707460fdcd4af90d944fa18e6640522ececa7e9e5594f8c6737c0811",
+  "total": 86534,
+  "source_split_counts": {
+    "BCN20000": {
+      "train": 10221,
+      "validation": 1712,
+      "validation_ext": 0
+    },
+    "HAM10000": {
+      "train": 7007,
+      "validation": 1504,
+      "validation_ext": 0
+    },
+    "ISIC_Archive_Expanded": {
+      "train": 57023,
+      "validation": 0,
+      "validation_ext": 6975
+    },
+    "PAD-UFES-20": {
+      "train": 1694,
+      "validation": 398,
+      "validation_ext": 0
+    }
+  },
+  "source_split_supported_labels": {
+    "BCN20000": {
+      "train": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "validation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "validation_ext": []
+    },
+    "HAM10000": {
+      "train": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "validation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "validation_ext": []
+    },
+    "ISIC_Archive_Expanded": {
+      "train": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "validation": [],
+      "validation_ext": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "PAD-UFES-20": {
+      "train": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "validation": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "validation_ext": []
+    }
+  },
+  "cross_split_source_group_collisions": [],
+  "four_source_selection_possible": false,
+  "four_source_assessment_possible": false,
+  "sealed_test_used": false,
+  "status": "S0_COMPLETE_PROTOCOL_DECISION_REQUIRED"
+}

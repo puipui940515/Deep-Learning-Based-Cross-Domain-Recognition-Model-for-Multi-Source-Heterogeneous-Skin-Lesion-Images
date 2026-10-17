@@ -1,0 +1,13 @@
+# Windows / Python 3.12 / RTX 4060. Restore with C:\anaconda3\python.exe.
+# torch and torchvision match the recorded historical experiment environment.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+numpy==1.26.4
+Pillow==10.4.0
+scipy==1.13.1
+scikit-learn==1.5.1
+pandas==2.2.2
+matplotlib==3.9.2
+tqdm==4.66.5
+requests==2.32.3

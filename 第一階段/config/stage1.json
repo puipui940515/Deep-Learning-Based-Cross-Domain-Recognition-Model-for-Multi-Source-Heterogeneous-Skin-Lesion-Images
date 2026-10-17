@@ -1,0 +1,21 @@
+{
+  "dataset_root": "../Dataset/HAM10000",
+  "split_manifest": "data/fixed_split.csv",
+  "num_classes": 7,
+  "split_seed": 20260814,
+  "seeds": [17, 42, 2026],
+  "epochs": 30,
+  "batch_size": 64,
+  "num_workers": 2,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "early_stopping_patience": 7,
+  "versions": {
+    "v1": {"model": "mlp", "image_size": 64, "augmentation": false},
+    "v2": {"model": "small_cnn", "image_size": 64, "augmentation": false},
+    "v3": {"model": "small_cnn", "image_size": 64, "augmentation": true},
+    "v4": {"model": "small_cnn", "image_size": 224, "augmentation": true}
+  }
+}
+

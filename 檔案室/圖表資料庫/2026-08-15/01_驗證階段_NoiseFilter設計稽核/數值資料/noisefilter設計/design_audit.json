@@ -1,0 +1,207 @@
+{
+  "status": "complete",
+  "scope": "HAM10000 fixed validation split",
+  "validation_images": 1504,
+  "device": "cuda",
+  "checkpoint": "第二階段\\noisefilter搭載實驗\\checkpoints\\stage2_v5_noisefilter_core_fixed_seed42.pt",
+  "filter_description": {
+    "alpha": [
+      0.25,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "target_std": 0.317,
+    "target_mean": 0.598,
+    "sigma_frac": 0.05,
+    "p": 6.0,
+    "r0": 0.8
+  },
+  "peripheral_weight_maps": {
+    "sample_count": 40,
+    "selection": "deterministic class-round-robin from fixed HAM10000 validation split",
+    "statistics": {
+      "central_weight_mean_r_lt_0_5": {
+        "mean": 0.00616175209870562,
+        "std": 0.00046799345772539794,
+        "median": 0.006255251122638583,
+        "p05": 0.006058024987578392,
+        "p95": 0.0062571254326030615
+      },
+      "fraction_weight_gt_0_5": {
+        "mean": 0.5007214604591836,
+        "std": 0.003093543685721439,
+        "median": 0.5019929846938775,
+        "p05": 0.49579679528061227,
+        "p95": 0.5019929846938775
+      },
+      "peripheral_weight_mean_r_gt_0_8": {
+        "mean": 0.852369387447834,
+        "std": 0.006108800360907968,
+        "median": 0.8548555672168732,
+        "p05": 0.8453424096107482,
+        "p95": 0.8549667298793793
+      }
+    }
+  },
+  "correction_strengths": {
+    "GlobalColorConstancy.absolute_mean_brightness_shift": {
+      "mean": 0.0005875472372731081,
+      "std": 0.0005330799876166553,
+      "median": 0.0004433232097653672,
+      "p05": 6.088282498240006e-05,
+      "p95": 0.0016085680923424658
+    },
+    "GlobalColorConstancy.applied_pixel_mae": {
+      "mean": 0.043647381840855815,
+      "std": 0.021847081139298338,
+      "median": 0.03886408545076847,
+      "p05": 0.014521266566589475,
+      "p95": 0.07836444005370138
+    },
+    "GlobalColorConstancy.channel_differential_shift_l2": {
+      "mean": 0.08192034248706012,
+      "std": 0.03989616576577975,
+      "median": 0.07365495711565018,
+      "p05": 0.027868905290961265,
+      "p95": 0.1450696863234043
+    },
+    "GlobalColorConstancy.full_transform_pixel_mae": {
+      "mean": 0.08729476368171163,
+      "std": 0.043694162278596675,
+      "median": 0.07772817090153694,
+      "p05": 0.02904253313317895,
+      "p95": 0.15672888010740277
+    },
+    "IlluminationFlatten.absolute_mean_brightness_shift": {
+      "mean": 0.007846599483216662,
+      "std": 0.0062736655639235635,
+      "median": 0.00609861733391881,
+      "p05": 0.0015614100790116935,
+      "p95": 0.02179459137842059
+    },
+    "IlluminationFlatten.applied_pixel_mae": {
+      "mean": 0.039798177691409364,
+      "std": 0.017685429023831203,
+      "median": 0.035795630887150764,
+      "p05": 0.01757431644946337,
+      "p95": 0.07388663142919541
+    },
+    "IlluminationFlatten.channel_differential_shift_l2": {
+      "mean": 0.005423586076161921,
+      "std": 0.004207400928311381,
+      "median": 0.004215353634208441,
+      "p05": 0.0009244069049600512,
+      "p95": 0.013932862319052214
+    },
+    "IlluminationFlatten.full_transform_pixel_mae": {
+      "mean": 0.07959635538281873,
+      "std": 0.03537085804766241,
+      "median": 0.07159126177430153,
+      "p05": 0.03514863289892674,
+      "p95": 0.14777326285839082
+    },
+    "LogContrast.absolute_mean_brightness_shift": {
+      "mean": 0.015179348716420715,
+      "std": 0.011667918380672321,
+      "median": 0.01294166361913085,
+      "p05": 0.0011284307867754251,
+      "p95": 0.03681455161422489
+    },
+    "LogContrast.applied_pixel_mae": {
+      "mean": 0.01787711972173519,
+      "std": 0.010618943204832813,
+      "median": 0.01596038043498993,
+      "p05": 0.004210214596241713,
+      "p95": 0.03711105361580847
+    },
+    "LogContrast.channel_differential_shift_l2": {
+      "mean": 0.010547814530962162,
+      "std": 0.00863004215161328,
+      "median": 0.008736596442759037,
+      "p05": 0.0007478852552594617,
+      "p95": 0.027430223487317554
+    },
+    "LogContrast.full_transform_pixel_mae": {
+      "mean": 0.07150847888694076,
+      "std": 0.04247577281933125,
+      "median": 0.06384152173995972,
+      "p05": 0.01684085838496685,
+      "p95": 0.1484442144632339
+    },
+    "PeripheralReference.absolute_mean_brightness_shift": {
+      "mean": 0.0002941206784778891,
+      "std": 0.00029375464667817224,
+      "median": 0.00020456811762414873,
+      "p05": 1.0987961604769226e-05,
+      "p95": 0.0009094876935705538
+    },
+    "PeripheralReference.applied_pixel_mae": {
+      "mean": 0.022166744987268255,
+      "std": 0.010429930394000152,
+      "median": 0.020468061789870262,
+      "p05": 0.007353233615867793,
+      "p95": 0.038920946605503555
+    },
+    "PeripheralReference.channel_differential_shift_l2": {
+      "mean": 0.04159997211296441,
+      "std": 0.019076541767487964,
+      "median": 0.03856962360441685,
+      "p05": 0.014288002578541636,
+      "p95": 0.07229943312704563
+    },
+    "PeripheralReference.full_transform_pixel_mae": {
+      "mean": 0.04433348997453651,
+      "std": 0.020859860788000305,
+      "median": 0.040936123579740524,
+      "p05": 0.014706467231735586,
+      "p95": 0.07784189321100711
+    },
+    "combined.actual_GCC_contribution_mae": {
+      "mean": 0.021824233379912256,
+      "std": 0.010934622238814763,
+      "median": 0.019408068619668484,
+      "p05": 0.007247073203325272,
+      "p95": 0.03922070302069187
+    },
+    "combined.actual_PeripheralReference_contribution_mae": {
+      "mean": 0.022166744987268255,
+      "std": 0.010429930394000152,
+      "median": 0.020468061789870262,
+      "p05": 0.007353233615867793,
+      "p95": 0.038920946605503555
+    },
+    "combined.final_vs_input_mae": {
+      "mean": 0.0769468278827225,
+      "std": 0.028467235423767605,
+      "median": 0.0777275487780571,
+      "p05": 0.03374346066266298,
+      "p95": 0.12354173623025415
+    },
+    "overlap.cosine_GCC_vs_Peripheral_delta": {
+      "mean": 0.9952589458528351,
+      "std": 0.035825552100461434,
+      "median": 0.9996286034584045,
+      "p05": 0.9831438601016999,
+      "p95": 0.9999921828508377
+    },
+    "overlap.cosine_LogContrast_vs_GCC_delta": {
+      "mean": -0.015497738863620937,
+      "std": 0.4218765569278968,
+      "median": 0.021629242226481438,
+      "p05": -0.71973457634449,
+      "p95": 0.7010507404804229
+    },
+    "overlap.cosine_LogContrast_vs_Peripheral_delta": {
+      "mean": -0.014261095494707951,
+      "std": 0.4209680593813423,
+      "median": 0.02303231880068779,
+      "p05": -0.7194474905729293,
+      "p95": 0.7009221494197845
+    }
+  },
+  "limitations": [
+    "HAM10000 has no lesion segmentation masks in this project, so lesion-area contamination cannot be quantified reliably.",
+    "Weight maps show where the implementation samples; they do not prove that sampled pixels are normal skin."
+  ]
+}

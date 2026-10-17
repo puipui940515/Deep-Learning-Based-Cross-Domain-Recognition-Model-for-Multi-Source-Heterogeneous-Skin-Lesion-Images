@@ -1,0 +1,55 @@
+{
+  "comparison_id": "stage2_anatomy_weight_full_finetune_v1",
+  "research_question": "部位預訓練是否改善後續 HAM10000 七類疾病分類",
+  "dataset_root": "../../Dataset/HAM10000",
+  "split_manifest": "../data/fixed_split.csv",
+  "image_size": 224,
+  "batch_size": 16,
+  "gradient_accumulation": 2,
+  "epochs": 30,
+  "early_stopping_patience": 7,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "layer_decay": 0.7,
+  "num_workers": 0,
+  "num_classes": 7,
+  "seeds": [17, 42, 2026],
+  "conditions": [
+    "imagenet_init",
+    "densepose_true_init",
+    "densepose_shuffled_matched_init"
+  ],
+  "assets": {
+    "densepose_true_init": {
+      "path": "../../重要資產/DensePose_五類部位Backbone_2026-08-24/densepose_true_seed17.pt",
+      "sha256": "D16B370302D0FC49CD40BBD2E94E2E96631F361623D8F339EFAE2A3AFC215C59",
+      "pretraining_epochs": 8,
+      "label_mode": "true"
+    },
+    "densepose_shuffled_matched_init": {
+      "path": "../../重要資產/DensePose_五類部位Backbone_2026-08-24/densepose_shuffled_matched_final_seed17.pt",
+      "provenance": "../../重要資產/DensePose_五類部位Backbone_2026-08-24/densepose_shuffled_matched_final_seed17.json",
+      "pretraining_epochs": 8,
+      "label_mode": "shuffled",
+      "checkpoint_selection": "final_epoch"
+    }
+  },
+  "negative_control_pretraining": {
+    "manifest": "../../部位預測階段/DensePose_部位預訓練/data/part_crops.csv",
+    "images": "../../Dataset/DensePose_COCO/images",
+    "output": "../../重要資產/DensePose_五類部位Backbone_2026-08-24/densepose_shuffled_matched_final_seed17.pt",
+    "provenance": "../../重要資產/DensePose_五類部位Backbone_2026-08-24/densepose_shuffled_matched_final_seed17.json",
+    "seed": 17,
+    "sample_seed": 20260824,
+    "epochs": 8,
+    "image_size": 224,
+    "batch_size": 16,
+    "max_train_samples": 50000,
+    "max_val_samples": 10000,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001
+  },
+  "primary_metric": "validation_balanced_accuracy",
+  "minimum_mean_improvement_percentage_points": 1.0,
+  "test_used": false
+}

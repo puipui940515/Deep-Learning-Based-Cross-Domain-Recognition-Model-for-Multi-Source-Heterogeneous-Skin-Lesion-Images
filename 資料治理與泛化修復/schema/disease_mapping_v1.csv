@@ -1,0 +1,22 @@
+source_dataset,diagnosis_original,diagnosis_canonical_code,diagnosis_canonical_zh,label_id,mapping_relation,mapping_confidence,eligible_in_7class_v1,reason
+HAM10000,AKIEC,AKIEC,光化性角化症／表皮內癌光譜,0,family,medium,true,來源詞彙本身包含光化性角化症與表皮內癌
+HAM10000,BCC,BCC,基底細胞癌,1,exact,high,true,
+HAM10000,BKL,BKL,良性角化病變群,2,family,medium,true,BKL 是較廣的良性角化病變集合
+HAM10000,DF,DF,皮膚纖維瘤,3,exact,high,true,
+HAM10000,NV,NV,黑色素細胞痣,4,exact,high,true,
+HAM10000,VASC,VASC,血管性病變,5,exact,high,true,
+HAM10000,MEL,MEL,黑色素瘤,6,exact,high,true,
+BCN20000,AK,AKIEC,光化性角化症／表皮內癌光譜,0,family,medium,true,AK 的範圍窄於統一疾病家族
+BCN20000,BCC,BCC,基底細胞癌,1,exact,high,true,
+BCN20000,BKL,BKL,良性角化病變群,2,family,medium,true,BKL 是良性角化病變集合
+BCN20000,DF,DF,皮膚纖維瘤,3,exact,high,true,
+BCN20000,NV,NV,黑色素細胞痣,4,exact,high,true,
+BCN20000,VASC,VASC,血管性病變,5,exact,high,true,
+BCN20000,MEL,MEL,黑色素瘤,6,exact,high,true,
+BCN20000,SCC,SCC,鱗狀細胞癌,,exact,high,false,既有七分類輸出層沒有 SCC
+PAD-UFES-20,ACK,AKIEC,光化性角化症／表皮內癌光譜,0,family,medium,true,ACK 對應 actinic keratosis 且範圍窄於統一疾病家族
+PAD-UFES-20,BCC,BCC,基底細胞癌,1,exact,high,true,
+PAD-UFES-20,SEK,BKL,良性角化病變群,2,family,medium,true,SEK 是脂漏性角化症且範圍窄於 BKL 家族
+PAD-UFES-20,NEV,NV,黑色素細胞痣,4,exact,high,true,
+PAD-UFES-20,MEL,MEL,黑色素瘤,6,exact,high,true,
+PAD-UFES-20,SCC,SCC,鱗狀細胞癌,,exact,high,false,既有七分類輸出層沒有 SCC

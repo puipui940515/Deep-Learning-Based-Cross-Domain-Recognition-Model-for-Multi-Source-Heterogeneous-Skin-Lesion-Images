@@ -1,0 +1,22 @@
+{
+  "experiment_id": "mixed_source_ham_bcn_pad_resnet18_control",
+  "comparison_target": "多來源混合訓練_第二版 ConvNeXt-Tiny seed17",
+  "changed_variable": {"model": "resnet18"},
+  "fixed_conditions": {
+    "initialization": "imagenet",
+    "manifest": "多來源混合訓練_第二版/data/mixed_manifest.csv",
+    "sources": ["HAM10000", "BCN20000", "PAD-UFES-20"],
+    "image_size": 224,
+    "batch_size": 16,
+    "gradient_accumulation": 2,
+    "epochs": 8,
+    "early_stopping_patience": 4,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "layer_decay": 0.7,
+    "class_balance_alpha": 0.5,
+    "seed": 17,
+    "test_used": false
+  },
+  "selection_metric": "mean_source_balanced_accuracy_over_each_sources_supported_classes"
+}

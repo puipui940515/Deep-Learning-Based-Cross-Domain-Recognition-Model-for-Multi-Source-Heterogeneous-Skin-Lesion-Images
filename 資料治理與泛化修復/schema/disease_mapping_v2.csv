@@ -1,0 +1,39 @@
+source_dataset,diagnosis_original,diagnosis_canonical_code,diagnosis_canonical_zh,label_id,mapping_relation,mapping_confidence,eligible_in_8class_v2,reason
+HAM10000,AKIEC,AKIEC,光化性角化症／表皮內癌光譜,0,family,medium,true,沿用歷史七分類定義
+HAM10000,BCC,BCC,基底細胞癌,1,exact,high,true,
+HAM10000,BKL,BKL,良性角化病變群,2,family,medium,true,
+HAM10000,DF,DF,皮膚纖維瘤,3,exact,high,true,
+HAM10000,NV,NV,黑色素細胞痣,4,exact,high,true,
+HAM10000,VASC,VASC,血管性病變,5,family,medium,true,
+HAM10000,MEL,MEL,黑色素瘤,6,exact,high,true,
+BCN20000,AK,AKIEC,光化性角化症／表皮內癌光譜,0,family,medium,true,AK 的範圍窄於統一疾病家族
+BCN20000,BCC,BCC,基底細胞癌,1,exact,high,true,
+BCN20000,BKL,BKL,良性角化病變群,2,family,medium,true,
+BCN20000,DF,DF,皮膚纖維瘤,3,exact,high,true,
+BCN20000,NV,NV,黑色素細胞痣,4,exact,high,true,
+BCN20000,VASC,VASC,血管性病變,5,family,medium,true,
+BCN20000,MEL,MEL,黑色素瘤,6,exact,high,true,
+BCN20000,SCC,SCC,鱗狀細胞癌,7,exact,high,true,v2 新增獨立類別
+PAD-UFES-20,ACK,AKIEC,光化性角化症／表皮內癌光譜,0,family,medium,true,
+PAD-UFES-20,BCC,BCC,基底細胞癌,1,exact,high,true,
+PAD-UFES-20,SEK,BKL,良性角化病變群,2,family,medium,true,
+PAD-UFES-20,NEV,NV,黑色素細胞痣,4,exact,high,true,
+PAD-UFES-20,MEL,MEL,黑色素瘤,6,exact,high,true,
+PAD-UFES-20,SCC,SCC,鱗狀細胞癌,7,exact,high,true,v2 新增獨立類別
+ISIC_Archive_Expanded,Solar or actinic keratosis,AKIEC,光化性角化症／表皮內癌光譜,0,family,medium,true,光化性角化症屬 AKIEC 光譜
+ISIC_Archive_Expanded,Squamous cell carcinoma in situ,AKIEC,光化性角化症／表皮內癌光譜,0,family,medium,true,原位 SCC 保留於 AKIEC；不得與侵襲性 SCC 混同
+ISIC_Archive_Expanded,Basal cell carcinoma,BCC,基底細胞癌,1,exact,high,true,
+ISIC_Archive_Expanded,Seborrheic keratosis,BKL,良性角化病變群,2,family,medium,true,
+ISIC_Archive_Expanded,Solar lentigo,BKL,良性角化病變群,2,family,medium,true,
+ISIC_Archive_Expanded,Lichen planus like keratosis,BKL,良性角化病變群,2,family,medium,true,
+ISIC_Archive_Expanded,Dermatofibroma,DF,皮膚纖維瘤,3,exact,high,true,
+ISIC_Archive_Expanded,Nevus,NV,黑色素細胞痣,4,exact,high,true,
+ISIC_Archive_Expanded,Hemangioma,VASC,血管性病變,5,family,medium,true,
+ISIC_Archive_Expanded,Angiokeratoma,VASC,血管性病變,5,family,medium,true,
+ISIC_Archive_Expanded,Pyogenic granuloma,VASC,血管性病變,5,family,medium,true,
+ISIC_Archive_Expanded,Vascular spider,VASC,血管性病變,5,family,medium,true,
+ISIC_Archive_Expanded,Melanoma in situ,MEL,黑色素瘤,6,family,high,true,黑色素瘤子型
+ISIC_Archive_Expanded,Melanoma Invasive,MEL,黑色素瘤,6,family,high,true,黑色素瘤子型
+ISIC_Archive_Expanded,"Melanoma, NOS",MEL,黑色素瘤,6,family,high,true,黑色素瘤未另分類
+ISIC_Archive_Expanded,"Squamous cell carcinoma, Invasive",SCC,鱗狀細胞癌,7,family,high,true,侵襲性 SCC 為獨立第八類
+ISIC_Archive_Expanded,"Squamous cell carcinoma, NOS",SCC,鱗狀細胞癌,7,family,high,true,SCC 未另分類為獨立第八類

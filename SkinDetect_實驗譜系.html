@@ -1,0 +1,590 @@
+<title>SkinDetect 實驗譜系</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* 版面：橫向的「工作線」欄位，欄內垂直堆疊卡片；SVG 覆蓋層畫關係曲線；右側抽屜放細節 */
+:root{
+  --bg:#eef1f5; --surface:#ffffff; --surface-2:#f6f8fb; --surface-3:#e7ecf1;
+  --fg:#16202a; --fg-dim:#5a6a78; --fg-faint:#8b98a5;
+  --line:#ccd6df; --line-soft:#dde4ea;
+  --k-seq:#2f6fd0; --k-weight:#8a4ec4; --k-data:#0d8a76; --k-ref:#bc7318;
+  --st-done:#2d8a58; --st-neg:#b03f47; --st-warn:#b0741c; --st-idle:#7b8794; --st-active:#2f6fd0;
+  --shadow:0 1px 2px rgba(20,32,44,.06),0 6px 16px rgba(20,32,44,.07);
+  --f-display:'Noto Serif TC',"Songti TC",serif;
+  --f-body:'Noto Sans TC',"PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#131a21; --surface:#1b232c; --surface-2:#212b35; --surface-3:#2a353f;
+  --fg:#e9eef3; --fg-dim:#9cabb8; --fg-faint:#76848f;
+  --line:#2e3b47; --line-soft:#263139;
+  --k-seq:#74aaff; --k-weight:#c48df0; --k-data:#3fd0b3; --k-ref:#e5a94d;
+  --st-done:#5ec98a; --st-neg:#e8858c; --st-warn:#e3ad52; --st-idle:#8d99a5; --st-active:#74aaff;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 20px rgba(0,0,0,.3);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#131a21; --surface:#1b232c; --surface-2:#212b35; --surface-3:#2a353f;
+  --fg:#e9eef3; --fg-dim:#9cabb8; --fg-faint:#76848f;
+  --line:#2e3b47; --line-soft:#263139;
+  --k-seq:#74aaff; --k-weight:#c48df0; --k-data:#3fd0b3; --k-ref:#e5a94d;
+  --st-done:#5ec98a; --st-neg:#e8858c; --st-warn:#e3ad52; --st-idle:#8d99a5; --st-active:#74aaff;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 20px rgba(0,0,0,.3);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+
+/* ── 頁首 ───────────────────────────────── */
+.page{padding-inline:16px;padding-block:22px 10px;max-width:1700px;margin:0 auto}
+.masthead{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(22px,3.4vw,30px);margin:0 0 4px;letter-spacing:.01em;text-wrap:balance}
+.sub{margin:0;color:var(--fg-dim);max-width:62ch}
+.stamp{font-family:var(--f-mono);font-size:11.5px;color:var(--fg-faint);letter-spacing:.02em;text-align:right;white-space:nowrap}
+.stamp b{color:var(--fg-dim);font-weight:500}
+
+/* ── 控制列 ─────────────────────────────── */
+.controls{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;padding:14px 0 16px;border-bottom:1px solid var(--line-soft)}
+.ctl-group{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ctl-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-faint);font-weight:700}
+.kind{display:inline-flex;align-items:center;gap:7px;padding:5px 11px 5px 8px;border:1px solid var(--line);border-radius:999px;background:var(--surface);cursor:pointer;font-size:12.5px;color:var(--fg);user-select:none;transition:background .15s,border-color .15s,opacity .15s}
+.kind:hover{border-color:var(--fg-faint)}
+.kind input{appearance:none;margin:0;width:0;height:0;position:absolute}
+.kind .swatch{width:22px;height:3px;border-radius:2px;flex:none}
+.kind[data-off="1"]{opacity:.42}
+.kind[data-off="1"] .swatch{background:var(--fg-faint)!important}
+.btn{font:inherit;font-size:12.5px;padding:5px 12px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--fg);cursor:pointer;transition:background .15s,border-color .15s}
+.btn:hover{background:var(--surface-2);border-color:var(--fg-faint)}
+.btn:focus-visible,.kind:focus-within,.node:focus-visible{outline:2px solid var(--st-active);outline-offset:2px}
+
+/* ── 圖例 ───────────────────────────────── */
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;padding:12px 0 16px;color:var(--fg-dim);font-size:12px}
+.lg{display:inline-flex;align-items:center;gap:6px}
+.chip{display:inline-block;width:10px;height:10px;border-radius:3px;flex:none}
+.chip.hatch{background:repeating-linear-gradient(135deg,var(--fg-faint) 0 2px,transparent 2px 4px);border:1px solid var(--fg-faint)}
+
+/* ── 畫布 ───────────────────────────────── */
+.scroller{overflow-x:auto;overflow-y:hidden;padding-bottom:10px}
+#canvas{position:relative;display:flex;gap:26px;align-items:flex-start;padding:18px 2px 40px;min-width:max-content}
+#wires{position:absolute;inset:0;pointer-events:none;overflow:visible}
+#wires path{fill:none;stroke-linecap:round;transition:opacity .18s,stroke-width .18s}
+.col{width:246px;flex:none;display:flex;flex-direction:column;gap:11px}
+.col-head{border-top:2px solid var(--fg);padding-top:8px;margin-bottom:2px}
+.col-head .n{font-family:var(--f-mono);font-size:11px;color:var(--fg-faint)}
+.col-head .t{font-family:var(--f-display);font-weight:600;font-size:15px;line-height:1.3;margin-top:1px}
+.col-head .d{font-family:var(--f-mono);font-size:11px;color:var(--fg-dim);margin-top:3px}
+
+/* ── 節點卡 ─────────────────────────────── */
+.node{position:relative;z-index:2;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--st-idle);border-radius:9px;padding:9px 11px 10px;box-shadow:var(--shadow);cursor:pointer;text-align:left;font:inherit;color:inherit;width:100%;display:block;transition:opacity .18s,transform .12s,border-color .15s,box-shadow .15s}
+.node:hover{transform:translateY(-1px)}
+.node .tag{display:flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-faint)}
+.node .nm{display:block;font-weight:500;font-size:13.5px;line-height:1.38;margin:3px 0 0;text-wrap:balance}
+.node .mt{display:block;font-family:var(--f-mono);font-size:11.5px;color:var(--fg-dim);margin-top:5px;font-variant-numeric:tabular-nums}
+.node .flag{display:inline-block;margin-top:6px;font-size:10.5px;letter-spacing:.04em;padding:1.5px 7px;border-radius:999px;border:1px solid currentColor;font-weight:500}
+.node[data-st="done"]{border-left-color:var(--st-done)}
+.node[data-st="live"]{border-left-color:var(--st-done);box-shadow:var(--shadow),0 0 0 1.5px var(--st-done) inset}
+.node[data-st="active"]{border-left-color:var(--st-active)}
+.node[data-st="closed"]{border-left-color:var(--st-neg)}
+.node[data-st="failed"]{border-left-color:var(--st-warn)}
+.node[data-st="locked"],.node[data-st="notstarted"]{border-left-color:var(--st-idle);border-style:dashed;background:var(--surface-2);box-shadow:none}
+.node[data-st="locked"] .nm,.node[data-st="notstarted"] .nm{color:var(--fg-dim)}
+.f-done{color:var(--st-done)} .f-neg{color:var(--st-neg)} .f-warn{color:var(--st-warn)}
+.f-idle{color:var(--st-idle)} .f-active{color:var(--st-active)}
+.kidcount{margin-left:auto;display:inline-flex;align-items:center;gap:3px;font-family:var(--f-mono);font-size:10px;color:var(--fg-dim);background:var(--surface-3);border-radius:999px;padding:1px 7px}
+.kidcount::after{content:"▸";font-size:9px;transition:transform .18s}
+.node[aria-expanded="true"] .kidcount::after{transform:rotate(90deg)}
+.kids[hidden]{display:none!important}
+.kids{display:flex;flex-direction:column;gap:8px;margin:-2px 0 2px 14px;padding-left:12px;border-left:1px dashed var(--line)}
+.kids .node{padding:7px 9px 8px;border-radius:7px}
+.kids .node .nm{font-size:12.5px}
+
+/* 互斥狀態：聚焦時其餘淡化 */
+#canvas.focusing .node{opacity:.3}
+#canvas.focusing .node.lit{opacity:1;border-color:var(--fg-faint)}
+#canvas.focusing .col-head{opacity:.5}
+
+/* ── 抽屜 ───────────────────────────────── */
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(400px,92vw);background:var(--surface);border-left:1px solid var(--line);box-shadow:-14px 0 40px rgba(0,0,0,.18);z-index:40;display:flex;flex-direction:column;transform:translateX(102%);transition:transform .24s cubic-bezier(.3,.8,.3,1);padding-top:env(safe-area-inset-top,0px)}
+.drawer[data-open="1"]{transform:none}
+.dr-top{display:flex;align-items:flex-start;gap:10px;padding:16px 16px 12px;border-bottom:1px solid var(--line-soft)}
+.dr-top .tag{font-family:var(--f-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--fg-faint)}
+.dr-top h2{font-family:var(--f-display);font-weight:600;font-size:17px;margin:3px 0 0;line-height:1.35}
+.close{margin-left:auto;flex:none;background:none;border:1px solid var(--line);border-radius:7px;width:30px;height:30px;font-size:16px;line-height:1;color:var(--fg-dim);cursor:pointer}
+.close:hover{background:var(--surface-2)}
+.dr-body{overflow-y:auto;padding:14px 16px calc(26px + env(safe-area-inset-bottom,0px))}
+.dr-body dl{display:grid;grid-template-columns:auto 1fr;gap:5px 12px;margin:0 0 14px}
+.dr-body dt{font-size:11.5px;color:var(--fg-faint);letter-spacing:.04em;white-space:nowrap}
+.dr-body dd{margin:0;font-size:13px}
+.dr-body dd.mono{font-family:var(--f-mono);font-size:11.5px;word-break:break-all;color:var(--fg-dim)}
+.dr-note{font-size:13px;color:var(--fg);background:var(--surface-2);border-left:2px solid var(--line);padding:10px 12px;border-radius:0 7px 7px 0;margin:0 0 14px}
+.dr-h{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-faint);font-weight:700;margin:16px 0 7px}
+.rel{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.rel li{display:flex;gap:8px;align-items:baseline;font-size:12.5px}
+.rel .bar{width:14px;height:3px;border-radius:2px;flex:none;transform:translateY(-3px)}
+.rel .who{color:var(--fg)}
+.rel .kd{color:var(--fg-faint);font-size:11px;white-space:nowrap}
+.scrim{position:fixed;inset:0;background:rgba(10,16,22,.4);z-index:39;opacity:0;pointer-events:none;transition:opacity .22s}
+.scrim[data-open="1"]{opacity:1;pointer-events:auto}
+
+.foot{color:var(--fg-faint);font-size:12px;border-top:1px solid var(--line-soft);margin-top:4px;padding:14px 0 6px;max-width:78ch}
+.foot code{font-family:var(--f-mono);font-size:11.5px}
+
+@media (max-width:760px){
+  #canvas{flex-direction:column;gap:22px;min-width:0}
+  .col{width:100%}
+  .scroller{overflow-x:visible}
+  .drawer{width:100%;height:82%;top:auto;bottom:0;border-left:none;border-top:1px solid var(--line);border-radius:14px 14px 0 0;transform:translateY(102%)}
+  .drawer[data-open="1"]{transform:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="page">
+  <header class="masthead">
+    <div>
+      <h1>SkinDetect 實驗譜系</h1>
+      <p class="sub">從單來源七類分類走到多來源跨域泛化的完整過程。每一塊是一個階段、模型、資料快照或評估；曲線是它們之間的真實關係。負結果與未通過的閘門一併標出——它們決定了後面往哪走。</p>
+    </div>
+    <div class="stamp">
+      整理日期 <b>2026-10-06</b><br>
+      匯總節點 <b>CP-002</b>（2026-09-08）<br>
+      納入規則 <b>Δ &lt; seed std ⇒ 不採納</b>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="ctl-group">
+      <span class="ctl-label">關係</span>
+      <label class="kind" data-kind="seq"><input type="checkbox" checked><span class="swatch" style="background:var(--k-seq)"></span>前後／版本推進</label>
+      <label class="kind" data-kind="weight"><input type="checkbox" checked><span class="swatch" style="background:var(--k-weight)"></span>權重繼承</label>
+      <label class="kind" data-kind="data"><input type="checkbox" checked><span class="swatch" style="background:var(--k-data)"></span>資料供給</label>
+      <label class="kind" data-kind="ref"><input type="checkbox" checked><span class="swatch" style="background:var(--k-ref);background-image:repeating-linear-gradient(90deg,transparent 0 3px,var(--surface) 3px 5px)"></span>對照／參考</label>
+    </div>
+    <div class="ctl-group">
+      <button class="btn" id="expandAll">展開全部子實驗</button>
+      <button class="btn" id="collapseAll">收合全部</button>
+    </div>
+  </div>
+
+  <div class="legend">
+    <span class="lg"><span class="chip" style="background:var(--st-done)"></span>已完成／納入</span>
+    <span class="lg"><span class="chip" style="background:var(--st-active)"></span>進行中</span>
+    <span class="lg"><span class="chip" style="background:var(--st-neg)"></span>已結案（負結果，正式停止投入）</span>
+    <span class="lg"><span class="chip" style="background:var(--st-warn)"></span>未通過閘門</span>
+    <span class="lg"><span class="chip hatch"></span>已鎖定／未開始</span>
+    <span class="lg" style="color:var(--fg-faint)">欄位是工作線分組，不是嚴格時間軸；每塊的實際日期寫在卡片與側欄。</span>
+  </div>
+
+  <div class="scroller">
+    <div id="canvas"><svg id="wires" aria-hidden="true"></svg></div>
+  </div>
+
+  <p class="foot">指標以各資料夾 <code>README.md</code> 的狀態區與 <code>result.json</code> 為準；本圖不自行換算。<strong>v10 是重複代號</strong>：第二階段的 v10 指 ConvNeXt 隨機初始化純淨版，第三階段的 v10 指多視角融合空對照，兩者是不同實驗。</p>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="false" aria-labelledby="drTitle">
+  <div class="dr-top">
+    <div><div class="tag" id="drTag"></div><h2 id="drTitle"></h2></div>
+    <button class="close" id="drClose" aria-label="關閉">×</button>
+  </div>
+  <div class="dr-body" id="drBody"></div>
+</aside>
+
+<script>
+/* ── 資料模型 ─────────────────────────────────────────────── */
+const TYPE={stage:"階段",model:"模型",data:"資料",eval:"評估",gate:"閘門",doc:"文件"};
+const ST={
+  done:{t:"已完成",c:"f-done"}, live:{t:"現役",c:"f-done"}, active:{t:"進行中",c:"f-active"},
+  closed:{t:"已結案（負結果）",c:"f-neg"}, failed:{t:"未通過閘門",c:"f-warn"},
+  locked:{t:"已鎖定",c:"f-idle"}, notstarted:{t:"未開始",c:"f-idle"}
+};
+const KIND={
+  seq:{t:"前後／版本推進",v:"--k-seq",dash:null},
+  weight:{t:"權重繼承",v:"--k-weight",dash:null},
+  data:{t:"資料供給",v:"--k-data",dash:"1 7"},
+  ref:{t:"對照／參考",v:"--k-ref",dash:"7 5"}
+};
+
+const COLS=[
+ {n:"01",t:"資料與閘門",d:"2026-08-13 ～ 08-14",ids:["dataset","gate","split"]},
+ {n:"02",t:"第一階段 v1–v4",d:"2026-08-14 ～ 08-18",ids:["v1","nf1a"]},
+ {n:"03",t:"第二階段 v5–v9",d:"2026-08-14 ～ 08-21",ids:["v5","v6","v7","v8","v9","nf1b","v10pure"]},
+ {n:"04",t:"全量推論評估",d:"2026-08-14 ～ 08-15",ids:["fastall","fullall"]},
+ {n:"05",t:"部位辨識線",d:"2026-08-23 ～ 08-25",ids:["siteham","itobos","densepose","transfer","matched","ch06","threeline"]},
+ {n:"06",t:"第三階段（鎖定）",d:"2026-08-22",ids:["s3"]},
+ {n:"07",t:"多來源混合",d:"2026-09-01",ids:["mix1","mix2","mixr18"]},
+ {n:"08",t:"資料治理與基底",d:"2026-09-06 ～ 09-08",ids:["gov1","gov1t","screen","base","cur"]},
+ {n:"09",t:"治理 v2（八類）",d:"2026-09-09 ～ 09-11",ids:["isicx","gov2"]},
+ {n:"10",t:"工程化與介面",d:"2026-09-17 ～ 09-21",ids:["nf2","env","reg","ui","pack"]},
+ {n:"11",t:"報告與規劃",d:"2026-09-22 ～ 10-06",ids:["deck","params","cp4","map"]},
+ {n:"12",t:"CP-005 模型改進",d:"2026-10-06",ids:["cp5","cp5split","cp5probe","cp5crop","cp5train","cp5assess","cp5loso","cp5dg"]}
+];
+
+const N={
+ dataset:{ty:"data",st:"active",nm:"五來源資料盤點",mt:"39,933 張",date:"2026-08-13 ～ 08-14",
+   note:"Dataset 第一層只代表來源。疾病、膚色、授權與切分全部由來源內 metadata 表示，不為同一張影像建疾病式副本。",
+   ev:"Dataset/DATA_PROVENANCE.md",
+   kids:["d_ham","d_scin","d_pad","d_isic","d_bcn"]},
+ d_ham:{ty:"data",st:"done",nm:"HAM10000",mt:"10,015 張",date:"2026-08-13",note:"第一、第二階段的主實驗資料。CC BY-NC 4.0，只作非商業學術研究。",ev:"Dataset/HAM10000/"},
+ d_scin:{ty:"data",st:"closed",nm:"SCIN",mt:"820 張",date:"2026-08-13",note:"臨床鑑別診斷語意與七類不相容，全程只做推論穩定性，不算分類指標。",ev:"Dataset/SCIN/"},
+ d_pad:{ty:"data",st:"done",nm:"PAD-UFES-20",mt:"2,298 張",date:"2026-08-13",note:"手機臨床照片。唯一不依賴 ISIC ID 稽核、來源結構上獨立的集合。",ev:"Dataset/PAD-UFES-20/"},
+ d_isic:{ty:"data",st:"done",nm:"ISIC Archive 授權篩選子集",mt:"7,886 張",date:"2026-08-13",note:"自建的低授權風險子集：病理確認 + CC-0／CC-BY，排除 NC 與授權不明。BCC 3,037／SCC 1,279／MEL 3,570。",ev:"Dataset/ISIC_Archive/"},
+ d_bcn:{ty:"data",st:"done",nm:"BCN20000",mt:"18,914 張可用",date:"2026-08-13",note:"Figshare 獨立發布版。可用 train 12,413、test 6,501；官方 test 無診斷標籤，只能做推論輸出。",ev:"Dataset/BCN20000/"},
+
+ gate:{ty:"gate",st:"done",nm:"驗證閘門",mt:"majority BA = 1/7",date:"2026-08-14",
+   note:"正式訓練前的硬性前置：影像 ID 無重複、切分接近 70/15/15、三個 split 的 lesion_id 交集為 0、HAM 與 ISIC 子集 isic_id 交集檢查、多數類退化模型的 BA 必須正好等於 1/7。",
+   ev:"驗證/reports/validation_gate.json"},
+ split:{ty:"data",st:"done",nm:"HAM 固定切分",mt:"7,008 / 1,504 / 1,503",date:"2026-08-14",
+   note:"依 lesion_id 分組，同一病灶不跨 split。test 全程封存，只在架構與超參數完全確定後評估一次。第一～三階段共用同一份切分雜湊。",
+   ev:"第一階段/data/fixed_split.csv"},
+
+ v1:{ty:"model",st:"closed",nm:"v1 MLP 基線",mt:"BA 35.37% ±2.66（3 seeds）",date:"2026-08-14",
+   note:"6,425,095 參數、64×64 攤平輸入、無資料增強。它的作用是確立「沒有歸納偏置能走到哪」這條地板線。v2–v4 從未執行，第一階段因主線轉向而結案。",
+   ev:"第一階段/results/experiment_log.csv", kids:["v2","v3","v4"]},
+ v2:{ty:"model",st:"notstarted",nm:"v2 小型 CNN",mt:"未執行",date:"—",note:"計畫中唯一變更是 MLP 改為卷積網路。沒有跑過，所以 v1→v2 的歸納偏置增益在本專案裡沒有數字。",ev:"第一階段/config/stage1.json"},
+ v3:{ty:"model",st:"notstarted",nm:"v3 加入資料增強",mt:"未執行",date:"—",note:"計畫中加入翻轉、90 度旋轉、隨機裁切。未執行。",ev:"第一階段/config/stage1.json"},
+ v4:{ty:"model",st:"notstarted",nm:"v4 解析度 224",mt:"未執行",date:"—",note:"未執行，因此第二階段的 README 明確寫著：在 v4 完成前不宣稱 v4→v5 的正式增益。",ev:"第一階段/config/stage1.json"},
+ nf1a:{ty:"eval",st:"failed",nm:"noisefilter v1 搭載（第一階段）",mt:"32.27%（−3.09pp）",date:"2026-08-18",
+   note:"固定核心四段濾鏡 α=[0.25,0.5,0.5,0.5]。只有 seed 17 上升，另兩個下降；平均差 −3.09pp 的絕對值小於搭載組 sample std 4.05，依計畫書 §3.4 判定未通過。這是方向為負且未過種子變異門檻，不等於「穩定的效能下降量」。",
+   ev:"第一階段/noisefilter搭載實驗/搭載實驗記錄.md"},
+
+ v5:{ty:"model",st:"done",nm:"v5 ResNet-18 隨機初始化",mt:"BA 57.28% ±0.98",date:"2026-08-14",
+   note:"11,180,103 參數。唯一變更是把小型 CNN 換成深層殘差網路。這一格之後的每一步都只動一個旋鈕。",ev:"第二階段/results/version_summary.csv"},
+ v6:{ty:"model",st:"done",nm:"v6 ResNet-18 ImageNet 初始化",mt:"BA 70.90% ±2.88",date:"2026-08-16",
+   note:"只換初始化，+13.62pp。全專案單一變更帶來的最大跳升——預訓練權重比架構本身更關鍵。",ev:"第二階段/results/version_summary.csv"},
+ v7:{ty:"model",st:"done",nm:"v7 ConvNeXt-Tiny 224",mt:"BA 77.30% ±0.51",date:"2026-08-17",
+   note:"27,825,511 參數，逐層學習率衰減 0.7、batch 16＋梯度累積 2（有效 batch 仍為 32）。注意：第二階段 README 狀態區把這格寫成 77.78%，與 version_summary.csv 算出的 77.30% 不符，以後者為準。",
+   ev:"第二階段/results/version_summary.csv"},
+ v8:{ty:"model",st:"done",nm:"v8 ConvNeXt-Tiny 384",mt:"BA 80.97% ±1.17",date:"2026-08-21",
+   note:"只提高輸入解析度，batch 8＋梯度累積 4。HAM 單來源上的最佳成績，也是「單來源分數好 ≠ 能用」的那個高點。",ev:"第二階段/results/version_summary.csv"},
+ v9:{ty:"model",st:"notstarted",nm:"v9 logit-adjusted CE",mt:"0 / 3 seeds",date:"—",
+   note:"程式與設定已建立，正式訓練從未完成。它同時是第三階段的解鎖條件，所以第三階段跟著停住。",ev:"第二階段/config/stage2.json"},
+ nf1b:{ty:"eval",st:"failed",nm:"noisefilter v1 搭載（第二階段）",mt:"未通過",date:"2026-08-18",
+   note:"同一組固定濾鏡搭在 v5 上的三 seed 對照。BCN20000 未加入訓練或對齊，test split 未使用，v5 原始結果未被覆寫。",ev:"第二階段/noisefilter搭載實驗/"},
+ v10pure:{ty:"model",st:"done",nm:"ConvNeXt 隨機初始化純淨版",mt:"BA 46.04%（3 seeds）",date:"2026-08-23",
+   note:"第二階段內部編號 v10，和第三階段的 v10 不是同一件事。它是三線比較裡的 pure_convnext_tiny，用來隔離「現代骨幹」與「ImageNet 權重」兩個因素。",
+   ev:"第二階段/results/v10_seed17.json"},
+
+ fastall:{ty:"eval",st:"done",nm:"全資料集快速測試",mt:"五來源抽樣，3 seeds",date:"2026-08-14",
+   note:"不重新訓練，用既有 v1、v5 與各自的 noisefilter checkpoint 對五個本地來源做固定分層抽樣推論，每類最多 32 張、種子 20260814。這是快速外部分布測試，不等同全量外部驗證。",
+   ev:"全資料集快速測試/第二階段/results.json"},
+ fullall:{ty:"eval",st:"failed",nm:"全資料集正式測試",mt:"39,933 張；+1.86pp < std 2.34",date:"2026-08-15",
+   note:"22,199 張可做相容疾病分類評估，其餘只做乾淨／擾動穩定性。三 seed＋分層 bootstrap 1,000 次。第二階段乾淨 BA 差值 +1.86pp 的信賴區間雖不跨 0，但小於搭載組 seed std 2.34，依計畫書 §3.4 不納入架構。HAM validation 本身反而由 58.61% 降到 53.94%。",
+   ev:"全資料集正式測試/總結論.md"},
+
+ siteham:{ty:"model",st:"closed",nm:"HAM 部位五類基線",mt:"BA ≈ 50.1%",date:"2026-08-23",
+   note:"ResNet-18／ImageNet，只預測解剖部位不預測疾病。unknown 241 張不入訓練。anogenital 只有 31 張訓練影像，該類指標必須連 support 一起報。五類 50% 太弱，所以改找專用部位資料集。",
+   ev:"部位預測階段/results/summary.json"},
+ itobos:{ty:"data",st:"closed",nm:"iToBoS 部位預訓練線",mt:"已改選資料集",date:"2026-08-23",
+   note:"部位資料集重新篩選時的另一個候選。最後採用免簽約的 DensePose-COCO，這條線停止投入。",ev:"部位預測階段/iToBoS_部位預訓練/"},
+ densepose:{ty:"model",st:"done",nm:"DensePose 部位辨識模型",mt:"真標籤 91.48%／亂標籤 20.00%",date:"2026-08-24",
+   note:"ConvNeXt-Tiny、ImageNet 初始化後在 DensePose-COCO 上學五類部位。亂標籤對照掉到 20.00%（正好是五類亂猜），證明 91.48% 是真的學到部位而不是記住資料集。這是後面所有「部位權重」的來源。",
+   ev:"重要資產/DensePose_五類部位Backbone_2026-08-24/"},
+ transfer:{ty:"stage",st:"closed",nm:"部位權重轉移：三種接法",mt:"三種皆為負",date:"2026-08-24 ～ 08-25",
+   note:"部位任務本身做得起來，但把部位權重轉到疾病分類，三種接法都沒有正收益。這是整個專案最大的一次方向否定。",
+   ev:"檔案室/圖表資料庫/2026-08-24/", kids:["parallel","frozen","fullft","sitelabel","siteresume"]},
+ parallel:{ty:"model",st:"closed",nm:"並行凍結雙路",mt:"部位 76.13／ImageNet 76.04／亂標籤 75.39",date:"2026-08-24",
+   note:"第二路是凍結的部位教師，第一路是可訓練的 ImageNet 學生，768+768→1536→7。三組只差 0.74pp，而且亂標籤教師幾乎一樣好——說明增益來自「多一條特徵路」而不是部位知識。只跑 5 epochs。",
+   ev:"第二階段/並行凍結部位特徵實驗/"},
+ frozen:{ty:"model",st:"closed",nm:"凍結 Backbone 短訓練",mt:"線性探針式",date:"2026-08-24",note:"把部位 backbone 整個凍住，只訓練分類頭。用來看部位特徵本身對疾病的線性可分性。",ev:"第二階段/凍結部位Backbone短訓練/"},
+ fullft:{ty:"model",st:"closed",nm:"部位權重完整微調正式對照",mt:"68.61% vs ImageNet 78.13%（差 9.52pp）",date:"2026-08-24",
+   note:"同一個 seed 17、同樣 30 epochs、layer decay 0.7。用部位權重當起點比用 ImageNet 差 9.52pp。這是三種接法裡條件最乾淨、結論最明確的一組。",
+   ev:"第二階段/部位權重完整微調正式對照/"},
+ sitelabel:{ty:"model",st:"closed",nm:"部位標籤搭載",mt:"標籤只當輔助訊號",date:"2026-08-24",note:"不用部位權重，改把部位標籤當輔助分類目標。unknown 不計部位損失但保留疾病訓練。",ev:"第二階段/部位標籤搭載實驗/"},
+ siteresume:{ty:"model",st:"closed",nm:"部位模型接續",mt:"以部位權重續訓",date:"2026-08-24",note:"直接從部位 checkpoint 接續疾病訓練的最直觀做法。",ev:"第二階段/部位模型接續實驗/"},
+ matched:{ty:"eval",st:"done",nm:"同 epoch 重新比對",mt:"雙路 76.13 vs 單路 74.75 ±1.71",date:"2026-08-25",
+   note:"並行雙路只跑 5 epochs，而單路正式線跑 30 epochs——原始比較有 epoch 預算的混淆。把單路限制在前 5 epochs 內的最佳值後，方向反轉成雙路較高，但差距 1.38pp 小於 std 1.71。實驗記錄的原文只敢說「可能提升早期學習速度」。",
+   ev:"第二階段/並行凍結部位特徵實驗/實驗記錄與結論.md"},
+ ch06:{ty:"model",st:"done",nm:"ImageNet 完整微調正式線",mt:"BA 77.50% ±0.60；MEL recall 57.9%",date:"2026-08-24",
+   note:"與 v7 同一組設定（layer decay 0.7、batch 16、累積 2）再跑一次，0.2pp 差距落在兩邊的標準差內。逐類 recall：NV 93.7、BCC 84.4、VASC 83.3、DF 79.6、AKIEC 72.8、BKL 70.7、MEL 57.9。最該抓到的 MEL 最差，這個缺口一路延伸到 CP-004。",
+   ev:"第二階段/部位權重完整微調正式對照/"},
+ threeline:{ty:"eval",st:"done",nm:"ConvNeXt 三線跨資料集推論",mt:"HAM 74.83% → BCN 34.85%",date:"2026-08-25",
+   note:"只推論不訓練。三條線（隨機初始化／ImageNet／部位預訓練）在 HAM validation、BCN 內部 validation、PAD 與 ISIC 外部集上的輸出。ImageNet 線從 HAM 的 74.83% 掉到 BCN 的 34.85%——這一格是整個專案的轉折點：單來源分數完全不代表跨來源能力。",
+   ev:"全資料集驗證推論_ConvNeXt三線/metrics_summary_by_condition.csv"},
+
+ s3:{ty:"stage",st:"locked",nm:"第三階段 v10–v12 多視角融合",mt:"0 seeds；等待 v9",date:"2026-08-22",
+   note:"v10 是四分支共享 ConvNeXt-Tiny 骨幹、全部輸入同一張 RGB 的空對照，用來分離「融合架構收益」與「不同視角資訊收益」。解鎖條件是第二階段 v9 完成三 seed，而主線已經離開 v 編號那條路——這格實際上是停滯，不是排程中。",
+   ev:"第三階段/README.md"},
+
+ mix1:{ty:"model",st:"done",nm:"混合訓練第一版 HAM+BCN",mt:"BCN 35.50% → 60.07%（+24.57pp）",date:"2026-09-01",
+   note:"ConvNeXt-Tiny／ImageNet，兩來源各約 50% 抽樣機率，來源內用平方根緩和類別不平衡。BCN 的 AK 映射為 AKIEC、SCC 排除。只有 seed 17。直接回答了三線推論暴露的問題：把來源加進訓練就能補回跨來源表現。",
+   ev:"多來源混合訓練_第一版/results/imagenet_seed17/result.json"},
+ mix2:{ty:"model",st:"live",nm:"混合訓練第二版 ＋PAD",mt:"三來源平均 69.37%",date:"2026-09-01",
+   note:"加入 PAD-UFES-20 手機臨床影像。逐來源 HAM 79.1／BCN 57.8／PAD 71.2；ECE 9.71／18.13／16.54——平均看得過去，但 BCN 的機率校準很糟，train-val 落差 38.00pp。只有 seed 17。這是 UI 目前載入的疾病模型。",
+   ev:"多來源混合訓練_第二版/results/imagenet_seed17/result.json"},
+ mixr18:{ty:"model",st:"done",nm:"ResNet-18 對照",mt:"66.23%（ConvNeXt 69.37%）",date:"2026-09-01",
+   note:"只把第二版的骨幹換成 ResNet-18，其餘條件完全相同。用來確認骨幹選擇在多來源設定下還值不值那 2.5 倍參數量。",
+   ev:"多來源混合訓練_ResNet18對照/results/imagenet_seed17/result.json"},
+
+ gov1:{ty:"data",st:"done",nm:"治理 v1 統一 manifest",mt:"22,536 張，七類",date:"2026-09-06",
+   note:"跨來源統一的起點：授權與標籤映射、部位統一、影像存在性、pHash≤1／dHash≤2 近重複移除、依 patient／lesion 群組切分。缺失欄位保持 unknown，不從影像外觀推測。",
+   ev:"資料治理與泛化修復/data/unified_manifest_v1.csv"},
+ gov1t:{ty:"model",st:"active",nm:"治理後正式訓練 v1",mt:"3 seeds 70.78% ±1.94；ECE 7.39／3.26／5.74",date:"2026-09-06",
+   note:"label smoothing 0.1、mixup 0.2、grad clip 1.0、ImageNet mean/std、選模用 0.5×平均＋0.5×最差來源。seed 17 為 72.06%（76.83／62.83／76.54）。平均 BA 比混合第二版高一點，真正的差別在 ECE——BCN 從 18.13% 降到 3.26%，三個來源同方向大幅改善。這是目前最可靠的一組 checkpoint。",
+   ev:"資料治理與泛化修復/results/formal_v1/", kids:["v3a","explicit"]},
+ v3a:{ty:"eval",st:"done",nm:"V3A 完整覆蓋抽樣",mt:"每輪每張 train 圖至少一次",date:"2026-09-07",
+   note:"來源與類別平衡抽樣會讓大來源的多數影像整輪沒被看到。V3A 改成全覆蓋有限補抽，保證覆蓋率。",ev:"資料治理與泛化修復/V3A_完整覆蓋抽樣.md"},
+ explicit:{ty:"model",st:"done",nm:"顯式影像特徵融合",mt:"58 維色彩／紋理分支",date:"2026-09-08",
+   note:"在影像分支外再接 58 維手工特徵，並用整分支 dropout 避免模型完全依賴來源色調。",ev:"資料治理與泛化修復/顯式影像特徵融合實驗/"},
+ screen:{ty:"eval",st:"done",nm:"10 張影像熱力圖快篩",mt:"24 個模型；第一名 93.81",date:"2026-09-08",
+   note:"同樣 10 張治理後 validation 影像（涵蓋三來源、七類）篩 24 個模型。除了分類指標，還量 Grad-CAM 忠實度差（高熱區遮擋降幅 − 低熱區降幅）與翻轉熱區 IoU。暫定第一名是混合 V2 ResNet18。10 張只夠做相對排序，不是效能估計。",
+   ev:"模型基底篩選_熱力圖10張測試/results/model_summary.csv"},
+ base:{ty:"model",st:"done",nm:"可切換功能正式訓練",mt:"64.39%；最差來源 47.95%（−7.67pp）",date:"2026-09-08",
+   note:"把所有候選功能做成可逐項開關：顯式特徵、部位輔助、來源去偏（梯度反轉）、MixUp、溫度校準、熱力圖稽核。全部打開反而比治理 v1 退步 7.67pp——這是「完整功能探索版不保證優於乾淨基準」的實證，每個開關都為後續單開關消融而保留。",
+   ev:"基底模型發展_可切換正式訓練/results/base_resnet18_full_features_v1_seed17/result.json"},
+ cur:{ty:"model",st:"closed",nm:"關卡式課程學習",mt:"第一關 74.91% < 80% 門檻",date:"2026-09-08",
+   note:"依序加入 HAM → +BCN → +PAD，每關要連續三輪同時達到 BA≥80%、Top-2≥90%、最低類別 recall≥60%、ECE≤8% 才前進。第一關就達到最大輪數而未達標，流程如設計般明確標記失敗並停止，沒有自行降低門檻。",
+   ev:"關卡式課程學習/results/curriculum_probability_v1_seed17/result.json"},
+
+ isicx:{ty:"data",st:"done",nm:"ISIC Archive 擴充",mt:"85,682 → 治理後 63,998",date:"2026-09-09 ～ 09-10",
+   note:"隔離 21,684 張：與 HAM 同 isic_id 8,774、嚴格近重複 12,616、train↔validation_ext 近重複 220、超大 TIFF 無法在安全限制內解碼 74。隔離不等於刪除，原檔全部保留。",
+   ev:"Dataset/ISIC擴充集_來源與處理紀錄_2026-09-11.md"},
+ gov2:{ty:"data",st:"active",nm:"治理 v2 正式 manifest",mt:"86,534 張，八類（＋SCC）",date:"2026-09-11",
+   note:"train 75,945／validation 3,614／validation_ext 6,975。舊 validation 保留不動以便與既有實驗比較，新驗證集依 patient／lesion 群組切分——兩者不得混成一個數字回報。來源組成 HAM 8,511／BCN 11,933／PAD 2,092／ISIC 63,998。資料面已通過閘門，但<strong>尚未訓練</strong>：現有腳本是七分類，輸出頭必須先改成 8 類。",
+   ev:"資料治理與泛化修復/data/unified_manifest_v2.csv"},
+
+ nf2:{ty:"stage",st:"failed",nm:"noisefilter v2 強化實驗",mt:"G0 未通過；尚未進入 N0",date:"2026-09-17 ～ 10-06",
+   note:"校準與 G0 已執行。三來源 train 的來源探針 BA：97.44% → 96.72%，僅下降 0.72pp，未達 3pp；疾病探針 51.28% → 50.46%，下降 0.83pp，符合最多下降 2pp 的限制。管道依預先登記條件停止，不能解讀為分類模型已訓練或 v2 已改善泛化。CP-005 P0 使用不同的四來源分割，兩者不得直接相減。",
+   ev:"noisefilter_v2強化實驗/results/G0_input_probe_convnext.json"},
+ env:{ty:"gate",st:"done",nm:"環境修復與檢查",mt:"19 項全通過",date:"2026-09-18",
+   note:"電腦重設後兩套 Anaconda 都缺 torch。固定為 C:\\anaconda3\\python.exe（3.12.7、PyTorch 2.11.0+cu128、RTX 4060）。檢查涵蓋套件匯入、pip 衝突、GPU 前向反向、5 個入口 --help、真實權重單張推論與 Grad-CAM。只驗證執行環境，不代表歷史模型都逐一驗證過。",
+   ev:"環境檢查/after_repair_2026-09-18.json"},
+ reg:{ty:"doc",st:"active",nm:"實驗紀錄庫／模型資產庫",mt:"27 個實驗、286 檔",date:"2026-09-05",
+   note:"UI 讀取的兩個固定入口，都由腳本產生、不手改。實驗紀錄庫只收 json／csv／md／png 的唯讀快照；模型資產庫用 NTFS 硬連結指向原始權重，只登錄能確認類別順序、架構與前處理的模型。",
+   ev:"實驗紀錄庫/registry.json"},
+ ui:{ty:"doc",st:"active",nm:"UI 原型 A／B／C",mt:"Grad-CAM 已接上",date:"2026-09-05",
+   note:"A 實驗工作台、B 單張檢測流程、C 研究審查台。疾病模型與部位模型都在第一次使用時才載入。紅黃區域只代表對所選類別分數影響較大，不是病灶分割或病理證據。推論紀錄只存在記憶體，一次一張，尚無登入、權限與資料庫。",
+   ev:"ui_prototype/server.py"},
+ pack:{ty:"doc",st:"done",nm:"發佈包",mt:"216 MB／10 MB 兩版",date:"2026-09-21",
+   note:"UI 的可攜打包，含模型與無模型兩個版本。無模型版的展示模式會把輸出明確標示為假資料，且不產生假熱力圖。",ev:"發佈包/"},
+
+ deck:{ty:"doc",st:"done",nm:"專題完整簡報 v11",mt:"25 頁、14 張圖表",date:"2026-09-23",
+   note:"把模型架構與整體架構分開呈現：整體架構在前段，模型架構放在研究過程裡。全篇統一名詞，負結果照實寫。",ev:"檔案室/簡報/皮膚病偵測_專題完整簡報_v11_2026-09-23.pptx"},
+ params:{ty:"doc",st:"done",nm:"模型參數速查",mt:"逐模型結構與機制",date:"2026-09-24",
+   note:"MLP 6,425,095／ResNet-18 11.18M／ConvNeXt-Tiny 27.83M 的逐層結構、layer decay 的實際算式、梯度累積與 AMP 設定。附帶一個陷阱：ResNet-18 的參數名沒有 features. 前綴，所以 layer decay 對它實際上是空操作。",
+   ev:"README_模型參數速查.md"},
+ cp4:{ty:"doc",st:"active",nm:"輸出層改造計畫 CP-004",mt:"惡性敏感度 67.6%／特異度 94.74%",date:"2026-10-05",
+   note:"不新增資料集、不重訓骨幹。先量過才定方向：把七類收成三群只讓 BA 從 77.50 動到 78.19，收成二分是 81.18，因為主要錯誤（MEL→NV 161、NV→MEL 106）正好落在良惡邊界上，換粒度吸收不掉。真正的問題是每三個惡性漏掉一個而特異度還有 94.74% 的讓步空間。改做校準、代價敏感閾值、多候選、拒答與三 seed 集成。",
+   ev:"README_輸出層改造計畫.md"},
+ cp5:{ty:"stage",st:"active",nm:"CP-005 八類模型改進",mt:"舊 R0 單種子完成；新版安全對照待跑",date:"2026-10-08",
+   note:"建立八類統一 metrics、來源等權抽樣、最差來源 BA 選模、固定有效 batch 32、不可覆寫 run_id 與三 seed 統計。原計畫的分割與依賴已按實際資料修訂；實作完成不代表正式實驗完成。現役 UI 不替換，第三階段仍鎖定。",ev:"模型改進/README.md"},
+ cp5split:{ty:"data",st:"done",nm:"CP-005 四來源專用分割",mt:"64,780 / 12,102 / 9,652",date:"2026-10-06",
+   note:"使用者批准新增群組切分。依序為 train／val_select／val_assess，皆涵蓋四來源；總量仍為 86,534。S0 發現原 validation 無 ISIC、validation_ext 僅 ISIC。病人／病灶連通群組不跨分割，PAD 原 train 的部分同病人影像移入選模分割。舊 manifest 保留，封存測試集未使用。這是對 CP-005 保留的評估，不能宣稱影像未被任何歷史模型看過。",ev:"模型改進/reports/cp005_split.json"},
+ cp5probe:{ty:"eval",st:"done",nm:"P0 四來源特徵探針",mt:"來源 BA 85.42%（2,400 張）",date:"2026-10-06",
+   note:"各來源從新 val_select 取 600 張，凍結 ImageNet ConvNeXt-Tiny，群組分層五折線性探針。四來源隨機參考為 25%。本項不設通過条件；來源辨識結果不等於疾病分類結果，也不能直接對比原三來源 G0。沒有更新骨幹權重。",ev:"模型改進/reports/P0_source_probe.json"},
+ cp5crop:{ty:"gate",st:"failed",nm:"G-R0 病灶框品質",mt:"量化通過；目視未通過",date:"2026-10-06",
+   note:"已完成 86,534 張估計。回退率 HAM 3.14%、BCN 18.52%、PAD 17.59%、ISIC 13.00%，皆低於 20%。但固定十張的 S04 選到右側暗角、S06 選到左側背景、S09 選到上方陰影；助理目視未通過，沒有人工批准。D2 與相依訓練保持鎖定，未放寬閘門；R0 整圖基準可獨立執行。框不是分割真值。",ev:"模型改進/reports/R0_visual_review.json"},
+ cp5train:{ty:"model",st:"active",nm:"R0–R6 八類疾病模型",mt:"舊 R0 seed17 完成；其餘非已完成",date:"2026-10-08",
+   note:"2026-10-09使用者授權隔離950對候選及完整群組，排除4039張但不刪原圖，保留82495張且原類別覆蓋不變。新切分重查錯誤／完全重複／跨split近似候選皆0，84項測試通過。背景排程PID22664已啟動於資料復核階段，之後短訓練、捷徑測試、必跑NoiseFilter v2三種子對照；尚非訓練完成。舊模型／資料保留，val_assess延後。",ev:"模型改進/README_隔離版掛機_2026-10-09.md"},
+ cp5assess:{ty:"eval",st:"locked",nm:"P1 校準／TTA／集成",mt:"等待八類 checkpoint",date:"2026-10-06",
+   note:"入口已備妥。溫度只在 val_select 擬合、在 val_assess 回報。單一溫度不能改變 argmax；八方位 TTA 在同張裁切圖上執行；集成需要同設定三 seed。代價敏感曲線只作描述，不宣告醫療建議閾值。",ev:"模型改進/scripts/assess.py"},
+ cp5loso:{ty:"eval",st:"notstarted",nm:"P4 留一來源 pilot",mt:"L-PAD／L-BCN／L-HAM",date:"2026-10-06",
+   note:"入口已備妥；留出來源同時排除於 train 與 val_select。先以 R0 整圖設定作對照，尚未執行，不能宣稱已完成跨來源外推驗證。",ev:"模型改進/config.json"},
+ cp5dg:{ty:"stage",st:"active",nm:"NoiseFilter v2 必跑對照準備",mt:"補邊前濾波；效果分數不再跳過",date:"2026-10-09",
+   note:"使用本機noisefilter_v2 2.0.0，不是v1。改在真實矩形像素處理、之後補邊，校準／訓練／推論一致。使用者要求必跑完整與移除色調對照；撤回助理擅自加入的效果門檻跳過規則。77項測試通過，新校準與多日實驗待使用者啟動；保留舊失敗測量，不能宣稱v2已有效。",ev:"模型改進/README_必跑NoiseFilter_v2排程.md"},
+ map:{ty:"doc",st:"done",nm:"專案架構地圖",mt:"45＋ 資料夾現況",date:"2026-10-06",
+   note:"重寫版的 PROJECT_STRUCTURE.md：每個資料夾一行寫明是什麼／什麼狀態／還活著還是封存，四個紀錄型資料夾的職責切分，以及已知文件缺陷清單。沒有刪除或搬動任何檔案。",
+   ev:"PROJECT_STRUCTURE.md"}
+};
+
+const E=[
+ ["gov2","cp5split","data"],["cp4","cp5","ref"],["nf2","cp5","ref"],
+ ["cp5","cp5split","seq"],["cp5split","cp5probe","data"],["cp5split","cp5train","data"],
+ ["cp5split","cp5crop","data"],["cp5crop","cp5train","seq"],["cp5probe","cp5train","ref"],
+ ["cp5train","cp5assess","weight"],["cp5train","cp5loso","ref"],["cp5train","cp5dg","ref"],
+ ["dataset","gate","data"],["gate","split","seq"],
+ ["split","v1","data"],["split","v5","data"],["split","siteham","data"],["split","s3","data"],
+ ["v1","nf1a","seq"],["v1","v5","seq"],
+ ["v5","v6","seq"],["v6","v7","seq"],["v7","v8","seq"],["v8","v9","seq"],
+ ["v5","nf1b","seq"],["v7","v10pure","ref"],
+ ["v1","fastall","weight"],["v5","fastall","weight"],
+ ["nf1a","fullall","weight"],["nf1b","fullall","weight"],
+ ["siteham","densepose","seq"],["itobos","densepose","ref"],
+ ["densepose","transfer","weight"],["v7","ch06","seq"],
+ ["ch06","fullft","ref"],["parallel","matched","seq"],["ch06","matched","ref"],
+ ["v10pure","threeline","weight"],["ch06","threeline","weight"],["fullft","threeline","weight"],
+ ["threeline","mix1","seq"],["mix1","mix2","seq"],["mix2","mixr18","ref"],
+ ["dataset","mix1","data"],["d_pad","mix2","data"],
+ ["mix2","gov1","seq"],["mix2","screen","weight"],["mix2","ui","weight"],
+ ["gov1","gov1t","data"],["gov1","cur","data"],["gov1","base","data"],["gov1","nf2","data"],
+ ["gov1t","screen","weight"],["screen","base","seq"],
+ ["gov1t","gov2","seq"],["isicx","gov2","data"],["dataset","isicx","seq"],
+ ["gov1t","nf2","weight"],["gov1t","cp4","weight"],["ch06","cp4","ref"],
+ ["reg","ui","data"],["env","ui","seq"],["ui","pack","seq"],
+ ["gov1t","deck","ref"],["ch06","deck","ref"],["gov2","map","ref"],["s3","map","ref"]
+];
+
+/* ── 建圖 ─────────────────────────────────────────────────── */
+const canvas=document.getElementById("canvas"),svg=document.getElementById("wires");
+const parentOf={};
+for(const id in N) (N[id].kids||[]).forEach(k=>parentOf[k]=id);
+
+function nodeEl(id){
+  const n=N[id],s=ST[n.st];
+  const b=document.createElement("button");
+  b.className="node";b.dataset.id=id;b.dataset.st=n.st;b.type="button";
+  if(n.kids) b.setAttribute("aria-expanded","false");
+  const kc=n.kids?`<span class="kidcount">${n.kids.length} 子實驗</span>`:"";
+  b.innerHTML=`<span class="tag">${TYPE[n.ty]}<span style="color:var(--line)">·</span>${n.date.split(" ")[0]}${kc}</span>
+    <span class="nm">${n.nm}</span>
+    <span class="mt">${n.mt}</span>
+    <span class="flag ${s.c}">${s.t}</span>`;
+  return b;
+}
+
+COLS.forEach(c=>{
+  const col=document.createElement("div");col.className="col";
+  col.innerHTML=`<div class="col-head"><div class="n">${c.n}</div><div class="t">${c.t}</div><div class="d">${c.d}</div></div>`;
+  c.ids.forEach(id=>{
+    col.appendChild(nodeEl(id));
+    if(N[id].kids){
+      const kw=document.createElement("div");kw.className="kids";kw.dataset.for=id;kw.hidden=true;
+      N[id].kids.forEach(k=>kw.appendChild(nodeEl(k)));
+      col.appendChild(kw);
+    }
+  });
+  canvas.appendChild(col);
+});
+
+/* ── 曲線 ─────────────────────────────────────────────────── */
+const NS="http://www.w3.org/2000/svg";
+svg.innerHTML=`<defs>${Object.entries(KIND).map(([k,v])=>
+ `<marker id="ar-${k}" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0 0.8 L7.4 4 L0 7.2 Z" fill="var(${v.v})"></path></marker>`).join("")}</defs>`;
+const paths={};
+function visible(id){
+  let cur=id;
+  while(parentOf[cur]){
+    const w=canvas.querySelector(`.kids[data-for="${parentOf[cur]}"]`);
+    if(w&&w.hidden) cur=parentOf[cur]; else break;
+  }
+  return cur;
+}
+E.forEach((e,i)=>{
+  const p=document.createElementNS(NS,"path");
+  const k=KIND[e[2]];
+  p.setAttribute("stroke",`var(${k.v})`);
+  p.setAttribute("stroke-width","1.7");
+  p.setAttribute("opacity",".52");
+  if(k.dash) p.setAttribute("stroke-dasharray",k.dash);
+  p.setAttribute("marker-end",`url(#ar-${e[2]})`);
+  p.dataset.kind=e[2];p.dataset.i=i;
+  svg.appendChild(p);paths[i]=p;
+});
+
+function draw(){
+  const cb=canvas.getBoundingClientRect();
+  svg.setAttribute("width",canvas.scrollWidth);svg.setAttribute("height",canvas.scrollHeight);
+  svg.setAttribute("viewBox",`0 0 ${canvas.scrollWidth} ${canvas.scrollHeight}`);
+  const side={};
+  const geo=id=>{const el=canvas.querySelector(`.node[data-id="${id}"]`);if(!el)return null;
+    const r=el.getBoundingClientRect();
+    return{l:r.left-cb.left,r:r.right-cb.left,t:r.top-cb.top,b:r.bottom-cb.top,cy:r.top-cb.top+r.height/2,cx:r.left-cb.left+r.width/2};};
+  E.forEach((e,i)=>{
+    const a=geo(visible(e[0])),z=geo(visible(e[1])),p=paths[i];
+    if(!a||!z||visible(e[0])===visible(e[1])){p.setAttribute("d","");p.dataset.hidden="1";return;}
+    delete p.dataset.hidden;
+    const key=s=>{side[s]=(side[s]||0)+1;return side[s];};
+    let d;
+    if(z.l>a.r+6){
+      const o1=(key(e[0]+"R")-1)*5,o2=(key(e[1]+"L")-1)*5;
+      const x1=a.r,y1=a.cy+o1-4,x2=z.l-4,y2=z.cy+o2-4,dx=Math.max(46,(x2-x1)*.5);
+      d=`M${x1} ${y1} C${x1+dx} ${y1},${x2-dx} ${y2},${x2} ${y2}`;
+    }else if(z.r<a.l-6){
+      const o1=(key(e[0]+"L")-1)*5,o2=(key(e[1]+"R")-1)*5;
+      const x1=a.l,y1=a.cy+o1-4,x2=z.r+4,y2=z.cy+o2-4,dx=Math.max(46,(x1-x2)*.5);
+      d=`M${x1} ${y1} C${x1-dx} ${y1},${x2+dx} ${y2},${x2} ${y2}`;
+    }else{
+      const down=z.t>=a.t;
+      const o=(key(e[0]+"V")-1)*7;
+      const x1=a.cx+o-6,y1=down?a.b:a.t,x2=z.cx+o-6,y2=down?z.t-4:z.b+4,dy=Math.max(22,Math.abs(y2-y1)*.45)*(down?1:-1);
+      d=`M${x1} ${y1} C${x1} ${y1+dy},${x2} ${y2-dy},${x2} ${y2}`;
+    }
+    p.setAttribute("d",d);
+  });
+  applyKindFilter();
+}
+function applyKindFilter(){
+  document.querySelectorAll(".kind").forEach(l=>{
+    const on=l.querySelector("input").checked;
+    l.dataset.off=on?"0":"1";
+    Object.values(paths).forEach(p=>{if(p.dataset.kind===l.dataset.kind) p.style.display=on?"":"none";});
+  });
+}
+
+/* ── 互動 ─────────────────────────────────────────────────── */
+function lit(id){
+  const base=visible(id);
+  canvas.classList.add("focusing");
+  const keep=new Set([base,id]);
+  E.forEach((e,i)=>{
+    const p=paths[i];if(p.dataset.hidden){p.setAttribute("opacity",".08");return;}
+    const a=visible(e[0]),z=visible(e[1]);
+    if(a===base||z===base){p.setAttribute("opacity","1");p.setAttribute("stroke-width","2.6");keep.add(a);keep.add(z);}
+    else{p.setAttribute("opacity",".07");p.setAttribute("stroke-width","1.7");}
+  });
+  canvas.querySelectorAll(".node").forEach(el=>el.classList.toggle("lit",keep.has(el.dataset.id)));
+}
+function unlit(){
+  canvas.classList.remove("focusing");
+  canvas.querySelectorAll(".node.lit").forEach(el=>el.classList.remove("lit"));
+  Object.values(paths).forEach(p=>{p.setAttribute("opacity",p.dataset.hidden?"0":".52");p.setAttribute("stroke-width","1.7");});
+}
+canvas.addEventListener("mouseover",e=>{const n=e.target.closest(".node");if(n)lit(n.dataset.id);});
+canvas.addEventListener("mouseleave",unlit);
+canvas.addEventListener("focusin",e=>{const n=e.target.closest(".node");if(n)lit(n.dataset.id);});
+
+const drawer=document.getElementById("drawer"),scrim=document.getElementById("scrim");
+function rels(id){
+  const out=[];
+  E.forEach(e=>{
+    if(e[0]===id) out.push([e[2],"→",N[e[1]].nm]);
+    else if(e[1]===id) out.push([e[2],"←",N[e[0]].nm]);
+  });
+  return out;
+}
+function open(id){
+  const n=N[id],s=ST[n.st],par=parentOf[id];
+  document.getElementById("drTag").textContent=`${TYPE[n.ty]} · ${n.date}`;
+  document.getElementById("drTitle").textContent=n.nm;
+  const r=rels(id);
+  document.getElementById("drBody").innerHTML=
+   `<dl>
+      <dt>狀態</dt><dd><span class="flag ${s.c}" style="margin:0">${s.t}</span></dd>
+      <dt>主要指標</dt><dd style="font-family:var(--f-mono);font-variant-numeric:tabular-nums">${n.mt}</dd>
+      ${par?`<dt>隸屬</dt><dd>${N[par].nm}</dd>`:""}
+      <dt>證據路徑</dt><dd class="mono">${n.ev}</dd>
+    </dl>
+    <p class="dr-note">${n.note}</p>
+    ${n.kids?`<div class="dr-h">子實驗</div><ul class="rel">${n.kids.map(k=>`<li><span class="bar" style="background:var(--line)"></span><span class="who">${N[k].nm}</span><span class="kd">${ST[N[k].st].t}</span></li>`).join("")}</ul>`:""}
+    ${r.length?`<div class="dr-h">關係（${r.length}）</div><ul class="rel">${r.map(x=>
+      `<li><span class="bar" style="background:var(${KIND[x[0]].v})"></span><span class="who">${x[1]} ${x[2]}</span><span class="kd">${KIND[x[0]].t}</span></li>`).join("")}</ul>`:""}`;
+  drawer.dataset.open="1";scrim.dataset.open="1";
+}
+function close(){delete drawer.dataset.open;delete scrim.dataset.open;}
+canvas.addEventListener("click",e=>{
+  const n=e.target.closest(".node");if(!n)return;
+  const id=n.dataset.id;
+  if(N[id].kids&&e.target.closest(".kidcount")){
+    const w=canvas.querySelector(`.kids[data-for="${id}"]`);
+    w.hidden=!w.hidden;n.setAttribute("aria-expanded",String(!w.hidden));draw();return;
+  }
+  open(id);
+});
+document.getElementById("drClose").addEventListener("click",close);
+scrim.addEventListener("click",close);
+document.addEventListener("keydown",e=>{if(e.key==="Escape")close();});
+document.getElementById("expandAll").addEventListener("click",()=>{
+  canvas.querySelectorAll(".kids").forEach(w=>{w.hidden=false;
+    canvas.querySelector(`.node[data-id="${w.dataset.for}"]`).setAttribute("aria-expanded","true");});draw();});
+document.getElementById("collapseAll").addEventListener("click",()=>{
+  canvas.querySelectorAll(".kids").forEach(w=>{w.hidden=true;
+    canvas.querySelector(`.node[data-id="${w.dataset.for}"]`).setAttribute("aria-expanded","false");});draw();});
+document.querySelectorAll(".kind input").forEach(i=>i.addEventListener("change",applyKindFilter));
+
+draw();
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(draw);
+new ResizeObserver(draw).observe(canvas);
+addEventListener("resize",draw);
+</script>

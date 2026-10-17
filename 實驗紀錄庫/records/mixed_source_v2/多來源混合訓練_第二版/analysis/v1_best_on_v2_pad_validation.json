@@ -1,0 +1,102 @@
+{
+  "evaluation_only": true,
+  "training_performed": false,
+  "checkpoint": "多來源混合訓練_第一版/results/imagenet_seed17/best.pt",
+  "checkpoint_epoch": 4,
+  "training_sources": [
+    "HAM10000",
+    "BCN20000"
+  ],
+  "evaluation_source": "PAD-UFES-20",
+  "manifest": "多來源混合訓練_第二版/data/mixed_manifest.csv",
+  "split": "validation",
+  "metrics": {
+    "balanced_accuracy": 0.39764409289543834,
+    "macro_f1": 0.35703848984688874,
+    "accuracy": 0.4488778054862843,
+    "ece": 0.32532830111415934,
+    "recall_per_class": [
+      0.23357664233576642,
+      0.5973154362416108,
+      0.38181818181818183,
+      0.0,
+      0.7755102040816326,
+      0.0,
+      0.0
+    ],
+    "confusion_matrix": [
+      [
+        32,
+        23,
+        29,
+        6,
+        37,
+        1,
+        9
+      ],
+      [
+        19,
+        89,
+        19,
+        4,
+        9,
+        4,
+        5
+      ],
+      [
+        3,
+        8,
+        21,
+        0,
+        21,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        2,
+        1,
+        38,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        8,
+        1,
+        0
+      ]
+    ],
+    "metric_labels": [
+      0,
+      1,
+      2,
+      4,
+      6
+    ],
+    "samples": 401
+  },
+  "test_used": false
+}

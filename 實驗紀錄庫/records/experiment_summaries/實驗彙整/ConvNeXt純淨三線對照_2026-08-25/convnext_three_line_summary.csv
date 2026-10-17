@@ -1,0 +1,15 @@
+﻿圖表版本,條件,seed,最佳週期,最佳Validation BA,最佳macro-F1,最佳accuracy,來源
+paired_seed17_42,純淨版,17,16,0.478310,0.502527,0.726064,第二階段/results/v10_seed17.json
+paired_seed17_42,純淨版,42,18,0.443302,0.446447,0.716090,第二階段/results/v10_seed42.json
+paired_seed17_42,ImageNet,17,16,0.781305,0.764988,0.847074,第二階段/部位權重完整微調正式對照/results/imagenet_init/seed17/result.json
+paired_seed17_42,ImageNet,42,11,0.774385,0.787475,0.870346,第二階段/部位權重完整微調正式對照/results/imagenet_init/seed42/result.json
+paired_seed17_42,部位辨識,17,18,0.686119,0.689994,0.823803,第二階段/部位權重完整微調正式對照/results/densepose_true_init/seed17/result.json
+paired_seed17_42,部位辨識,42,23,0.706668,0.715781,0.825798,第二階段/部位權重完整微調正式對照/results/densepose_true_init/seed42/last.pt
+all_available,純淨版,17,16,0.478310,0.502527,0.726064,第二階段/results/v10_seed17.json
+all_available,純淨版,42,18,0.443302,0.446447,0.716090,第二階段/results/v10_seed42.json
+all_available,純淨版,2026,12,0.459635,0.431255,0.716090,第二階段/results/v10_seed2026.json
+all_available,ImageNet,17,11,0.774318,0.783569,0.865691,第二階段/results/v7_seed17.json
+all_available,ImageNet,42,19,0.777258,0.789276,0.860372,第二階段/results/v7_seed42.json
+all_available,ImageNet,2026,8,0.767310,0.737845,0.838431,第二階段/results/v7_seed2026.json
+all_available,部位辨識,17,18,0.686119,0.689994,0.823803,第二階段/部位權重完整微調正式對照/results/densepose_true_init/seed17/result.json
+all_available,部位辨識,42,23,0.706668,0.715781,0.825798,第二階段/部位權重完整微調正式對照/results/densepose_true_init/seed42/last.pt

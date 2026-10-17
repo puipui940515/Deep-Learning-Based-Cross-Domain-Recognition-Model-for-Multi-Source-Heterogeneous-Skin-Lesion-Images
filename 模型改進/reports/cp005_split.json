@@ -1,0 +1,42 @@
+{
+  "schema_version": "skindetect-index-v1",
+  "generated_at": "2026-10-06T05:55:22.071285+00:00",
+  "generator": "模型改進",
+  "_notice": "由腳本產生，請勿手動編輯",
+  "passed": true,
+  "manifest_sha256": "462a5df97aff8a49b055225da5479b64fb8dc5f1af6810bd539d6cf235e85369",
+  "original_manifest_sha256": "5a01243a707460fdcd4af90d944fa18e6640522ececa7e9e5594f8c6737c0811",
+  "seed": 20261006,
+  "sources": [
+    "BCN20000",
+    "HAM10000",
+    "ISIC_Archive_Expanded",
+    "PAD-UFES-20"
+  ],
+  "counts": {
+    "BCN20000": {
+      "train": 8759,
+      "val_select": 1712,
+      "val_assess": 1462
+    },
+    "HAM10000": {
+      "train": 6013,
+      "val_select": 1504,
+      "val_assess": 994
+    },
+    "ISIC_Archive_Expanded": {
+      "train": 48750,
+      "val_select": 8273,
+      "val_assess": 6975
+    },
+    "PAD-UFES-20": {
+      "train": 1258,
+      "val_select": 613,
+      "val_assess": 221
+    }
+  },
+  "patient_lesion_group_disjoint": true,
+  "sealed_test_used": false,
+  "caveat": "Some source images have appeared in historical model training; CP005 assessment is held out from CP005 only.",
+  "rule": "Keep existing holdouts; reserve first class-complete StratifiedGroupKFold(7) fold from train for missing source roles."
+}

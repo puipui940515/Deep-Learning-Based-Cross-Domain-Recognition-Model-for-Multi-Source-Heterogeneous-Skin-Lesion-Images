@@ -1,0 +1,132 @@
+{
+  "experiment_id": "curriculum_probability_v1",
+  "seed": 17,
+  "data": {
+    "manifest": "資料治理與泛化修復/data/unified_manifest_v1.csv",
+    "governance_gate": "資料治理與泛化修復/reports/pipeline_gate.json",
+    "explicit_feature_cache": "資料治理與泛化修復/顯式影像特徵融合實驗/data/explicit_features_v1.csv",
+    "required_schema_version": "skindetect-data-contract-v1.0",
+    "roi": {
+      "enabled": false,
+      "mode": "manifest_bbox",
+      "coordinate_format": "normalized_xyxy",
+      "columns": ["roi_xmin", "roi_ymin", "roi_xmax", "roi_ymax"]
+    }
+  },
+  "model": {
+    "architecture": "resnet18",
+    "imagenet_pretrained": true,
+    "num_disease_classes": 7,
+    "dropout": 0.30,
+    "explicit_features": {
+      "enabled": true,
+      "hidden_dim": 32,
+      "dropout": 0.35,
+      "whole_branch_dropout_probability": 0.25
+    },
+    "site_auxiliary": {
+      "enabled": true,
+      "loss_weight": 0.10,
+      "classes": ["trunk", "head_neck", "lower_extremity", "upper_extremity", "acral", "oral_anogenital"],
+      "ignore_values": ["", "unknown"]
+    },
+    "source_adversarial": {
+      "enabled": true,
+      "loss_weight": 0.05,
+      "gradient_reversal_strength": 0.20,
+      "classes": ["HAM10000", "BCN20000", "PAD-UFES-20"]
+    }
+  },
+  "input": {
+    "image_size": 224,
+    "preserve_aspect_ratio": true,
+    "pad_mode": "edge",
+    "normalization": "imagenet"
+  },
+  "augmentation": {
+    "horizontal_flip": true,
+    "vertical_flip": true,
+    "rotation_degrees": 20,
+    "translation_fraction": 0.05,
+    "scale_range": [0.90, 1.10],
+    "color_jitter": true,
+    "brightness": 0.20,
+    "contrast": 0.20,
+    "saturation": 0.18,
+    "hue": 0.03,
+    "gaussian_blur": true,
+    "gaussian_blur_probability": 0.15,
+    "grayscale_probability": 0.04,
+    "autocontrast_probability": 0.10,
+    "gaussian_noise": true,
+    "gaussian_noise_probability": 0.20,
+    "gaussian_noise_std": 0.025,
+    "random_erasing": true,
+    "random_erasing_probability": 0.15,
+    "random_erasing_scale": [0.02, 0.08]
+  },
+  "sampling": {
+    "enabled": true,
+    "method": "full_coverage_capped",
+    "class_balance_alpha": 0.50,
+    "max_repeats_per_sample_per_epoch": 2
+  },
+  "training": {
+    "batch_size": 32,
+    "gradient_accumulation": 1,
+    "learning_rate": 0.0002,
+    "backbone_learning_rate_multiplier": 0.20,
+    "weight_decay": 0.05,
+    "label_smoothing": 0.05,
+    "brier_weight": 0.075,
+    "class_balanced_loss": {"enabled": true, "alpha": 0.50},
+    "mixup_enabled": true,
+    "mixup_alpha": 0.20,
+    "gradient_clip_norm": 1.0,
+    "num_workers": 0,
+    "amp": true
+  },
+  "curriculum": {
+    "stop_if_gate_fails": true,
+    "gate": {
+      "balanced_accuracy": 0.80,
+      "balanced_top2_accuracy": 0.90,
+      "minimum_class_recall": 0.60,
+      "maximum_ece": 0.08,
+      "consecutive_epochs": 3
+    },
+    "stages": [
+      {
+        "id": "stage1_ham",
+        "name": "第一關：HAM10000",
+        "train_sources": ["HAM10000"],
+        "gate_source": "HAM10000",
+        "max_epochs": 20,
+        "plateau_patience": 5,
+        "source_adversarial_loss_weight": 0.0
+      },
+      {
+        "id": "stage2_bcn",
+        "name": "第二關：加入 BCN20000",
+        "train_sources": ["HAM10000", "BCN20000"],
+        "gate_source": "BCN20000",
+        "max_epochs": 25,
+        "plateau_patience": 6,
+        "source_adversarial_loss_weight": 0.05
+      },
+      {
+        "id": "stage3_pad",
+        "name": "第三關：加入 PAD-UFES-20",
+        "train_sources": ["HAM10000", "BCN20000", "PAD-UFES-20"],
+        "gate_source": "PAD-UFES-20",
+        "max_epochs": 20,
+        "plateau_patience": 5,
+        "source_adversarial_loss_weight": 0.05
+      }
+    ]
+  },
+  "output": {
+    "root": "關卡式課程學習/results",
+    "smoke_root": "關卡式課程學習/smoke_results"
+  }
+}

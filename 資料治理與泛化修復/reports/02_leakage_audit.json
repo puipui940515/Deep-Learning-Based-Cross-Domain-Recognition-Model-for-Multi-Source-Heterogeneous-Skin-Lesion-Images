@@ -1,0 +1,2390 @@
+{
+  "stage": 2,
+  "name": "資料重複與切分洩漏",
+  "input_rows": 22600,
+  "clean_rows": 22536,
+  "quarantined_rows": 64,
+  "group_cross_split_count": 0,
+  "exact_duplicate_set_count": 56,
+  "exact_duplicate_label_conflict_set_count": 8,
+  "conservative_near_duplicate_removed_count": 0,
+  "near_duplicate_review_count": 112,
+  "group_cross_split": [],
+  "exact_duplicate_sets": [
+    {
+      "sha256": "B8B37D24E294C5182A1884741C109D8B3BC58EDAA993E8C331BD2A15E3E603E6",
+      "rows": [
+        "1469",
+        "4096"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "HAM10000"
+      ],
+      "labels": [
+        "4"
+      ],
+      "groups": [
+        "HAM10000:IL_3323234"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "B0D5E8B0D28E2B4952037489509C898F42453F480C59AB15E6830CB7F565A4D8",
+      "rows": [
+        "8682",
+        "20455"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "0"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001154"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "188C197D8D15A592F92028F314E0501F791630694F8545F5830EC788E789796F",
+      "rows": [
+        "8729",
+        "19178"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0004135"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "C65AC4AA969E2D2372EAC7E6A09A828632337EE7DFAD443977B77F731B327281",
+      "rows": [
+        "8841",
+        "15172"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002049",
+        "BCN20000:BCN_0002919"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "6F7514FE782E1F1473BFC6FB0C8541EA824C2EBD6706D9D4CC293FBB859A1716",
+      "rows": [
+        "8870",
+        "19468"
+      ],
+      "splits": [
+        "validation"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "1"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001424"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "DA1E10A8E4B724E0841E486C485DF08A4E1F06B6B46E4F51238321DE02586A39",
+      "rows": [
+        "8871",
+        "13556"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "1"
+      ],
+      "groups": [
+        "BCN20000:BCN_0000650"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "243F7285D969CB5F05ED9684EE96580393A049B885ED8479DA987CBAB24012B8",
+      "rows": [
+        "8890",
+        "18732"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "1"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001300"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "19AD81697145FC821EEA69DC3ABDEB7097196FFC595E30FB576370D76C2DD6E0",
+      "rows": [
+        "8893",
+        "10479"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "0"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001154"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "D5C6922EEE79D2ACE987B32CA32F97282A1A3F842A06B506475B79C6635A36B0",
+      "rows": [
+        "9022",
+        "10104"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002989"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "922A921C8476DCDFA67EF128CC60ED8E9B332AED881966CFBFD311AEE638872C",
+      "rows": [
+        "9286",
+        "9310"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002989"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "0DF3BF026E6C40EC426CD9B4E03350B1712308BB23BEE3017CF984565EF67C90",
+      "rows": [
+        "9303",
+        "19894"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4"
+      ],
+      "groups": [
+        "BCN20000:BCN_0003820"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "7AA1055A4E69878259D8E4FCD950317F7DFFBC9D2AE084D3988584033EEF8367",
+      "rows": [
+        "9376",
+        "13869"
+      ],
+      "splits": [
+        "validation"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002557"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "655CA6A8ABB8B3C9D9D99D9F57DC699B4646E9E48A5EA43232A9932551086D67",
+      "rows": [
+        "9426",
+        "16881"
+      ],
+      "splits": [
+        "validation"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "1"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001424"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "09592AAAD157DAEABF076D5FBD95E744277846332FCB16C274A6197EA22F72F6",
+      "rows": [
+        "9811",
+        "15710"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0004135"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "66E1F63BDD1A200986351BC6477D0B2AFA6CF2FBB935F86836AB744010826BD0",
+      "rows": [
+        "10460",
+        "17494"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0004135"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "3E8BD1F9D722591F62132DCCF716024116B442FAB2BFD00B783D77CA88D68D55",
+      "rows": [
+        "10661",
+        "16188"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "0"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001154"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "95277898CE8A39D286E13EDE8DBDEEF0A7A307E1497EED58EC959920CBBA2854",
+      "rows": [
+        "10791",
+        "19745"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001604",
+        "BCN20000:BCN_0004816"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "30463FB3BC7F2F04903F6A26BF97A1987090A19A105730DD0CF3BF2966C63C20",
+      "rows": [
+        "10915",
+        "13226"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "0"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001154"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "CAADDC4C7681A53EA3F245B88A598E93D08AA86F203B3DD5FA5E34BB5BFFA0E7",
+      "rows": [
+        "11679",
+        "20444"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002989"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "3A293F92E7AF35EA505EE12C6932C18DB348AAE97B98082B9A85662DD4C6A3AB",
+      "rows": [
+        "11834",
+        "12960"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001629"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "22C8787F9A26EDD86ED6768BAC45C4F9F96B97D991C2752B006A2A158025937D",
+      "rows": [
+        "12039",
+        "19624"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4"
+      ],
+      "groups": [
+        "BCN20000:BCN_0003820"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "5987A33A67363646FAC9C0DB40625FAB7AA4F90534265D4263BEDB5DCEF8C5F0",
+      "rows": [
+        "12230",
+        "16250"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4"
+      ],
+      "groups": [
+        "BCN20000:BCN_0003820"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "8167DA65F3D1F475A9B87DDB36BF66B51375F53D4E1464471EB601840C12E985",
+      "rows": [
+        "12508",
+        "17502"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "0"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001154"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "DA1371FD534C4D2CBA500410D3B9D8FBDC7B3D849AA5CBE68417F87DDEE49234",
+      "rows": [
+        "12731",
+        "13872"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001629"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "47AA7DD36C4390745F3C9BA39F9270DC6D5FE9D38BAB1EF791B8F15151BDA456",
+      "rows": [
+        "12809",
+        "13694"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001629"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "452FA99D942EC7196CC9F93E51D824AA857A300A03898AC20CE9F7CE10AA7DD8",
+      "rows": [
+        "13048",
+        "19768"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002049",
+        "BCN20000:BCN_0002919"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "36F35FAE249E17705CAE0C1307151EB3805739B5809CF6AB05A9E8B2E78ED545",
+      "rows": [
+        "13099",
+        "17439"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001629"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "D3D3578946FEFE088956E8FFFFC2471B7FB08ED5F9608DEDEB902E270E7B0287",
+      "rows": [
+        "13118",
+        "14013"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "0"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001154"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "4301193EA647CDFDCC716D682140E908661757963771F5E47E32E3B17ED49E7E",
+      "rows": [
+        "13274",
+        "17969"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001629"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "138F504D35E971111C3B77B2C89321F7043037569029CD87EDF83E06FE0B92DD",
+      "rows": [
+        "13298",
+        "14649"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "1"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002646"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "0984BA616FE559A6F5D74406033986C6186749EBEEA8AC70A407F5893A6084B8",
+      "rows": [
+        "13471",
+        "20345"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0004135"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "B532E544C7CA2895D2DDB4D4FC46DFA037C30CEE9853195BE0FBE7FE0A2D0CB1",
+      "rows": [
+        "13521",
+        "20394"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001629"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "BB3C2F71997EC9FB6184F491082EDD6EEF678AA216CBAB566499175085FB32BD",
+      "rows": [
+        "13581",
+        "18272"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001629"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "89C1771D792F51E4F264623C3B587F8EF88B2019797E7463BA71B7BDF2049A17",
+      "rows": [
+        "13802",
+        "14389"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002049",
+        "BCN20000:BCN_0002919"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "95FFDF6205E98BDBA4D1A783C3C9951B9B46B6EB0AFDD16B5F0A65C6F1A73001",
+      "rows": [
+        "13865",
+        "18426"
+      ],
+      "splits": [
+        "validation"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002557"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "05EAD71E0B37D218FF6AC90026D6E8D80B170A28ED586E8220BD4C81F7815639",
+      "rows": [
+        "14239",
+        "15053"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0004135"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "769F0B4D80DD1F01EDCCA77635053767FA50B43047D4B347C5A99DC443DFED03",
+      "rows": [
+        "14438",
+        "15020"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001604",
+        "BCN20000:BCN_0004816"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "96332E512671F4BED75BCA58945011ED4734A587FDD2D9AF6196D04173B9855E",
+      "rows": [
+        "14638",
+        "19162"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002049",
+        "BCN20000:BCN_0002919"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "4653972726CE6E130A1FAD524C31BBDF1601FCF03A7173401FC741C67232F737",
+      "rows": [
+        "14855",
+        "19623"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4"
+      ],
+      "groups": [
+        "BCN20000:BCN_0002049",
+        "BCN20000:BCN_0002919"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "5C785EBE9645D31EF8F634F6566C51D84F77294DA278A9C5EE98BF25BCAA74EB",
+      "rows": [
+        "15027",
+        "16129"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "1"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001300"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "C85C75AADC0A8D0231E8D101648258B3F844C1FF49A219920781EECC1A66BA2A",
+      "rows": [
+        "15245",
+        "19968"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001629"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "6DC74A50D593E444B16DC9B6D05DA45E54832005E74DCD80AD7B0CDED0FEF899",
+      "rows": [
+        "15525",
+        "20329"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "1"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001300"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "8D0E36551E5275FE04C3DFD5C870C53BCD46D1A0F0CCB70FA96E43F4C0E401E8",
+      "rows": [
+        "15812",
+        "15849"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001604",
+        "BCN20000:BCN_0004816"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "5591071944BA56DA87A4060D9E866DB4EE16FAC900C36E563D7E0F7BBCB8FACC",
+      "rows": [
+        "16448",
+        "17042"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001629"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "33D39335EECC56D338AAFB996CDDADFACC26CD92384F2C4A36212E47AB8659C6",
+      "rows": [
+        "16983",
+        "17268"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4",
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0000237",
+        "BCN20000:BCN_0003560"
+      ],
+      "label_conflict": true
+    },
+    {
+      "sha256": "758852057D2DD98CD2BF9AF5FB8CEFA3CF7CBED84107201784CBFD26F4630ABA",
+      "rows": [
+        "17165",
+        "19230"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "0"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001154"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "D541D12DDC9CC7783ECF20E0C565E811E682634BE5D8BE9DECCA0032039F8FF8",
+      "rows": [
+        "17906",
+        "19130"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "4",
+        "6"
+      ],
+      "groups": [
+        "BCN20000:BCN_0000237",
+        "BCN20000:BCN_0003560"
+      ],
+      "label_conflict": true
+    },
+    {
+      "sha256": "D59C8FF4CAC5B695DB9B4DD1089736246A8810AFC618BB754E7AB243CCBA20CB",
+      "rows": [
+        "18944",
+        "19480"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "BCN20000"
+      ],
+      "labels": [
+        "0"
+      ],
+      "groups": [
+        "BCN20000:BCN_0001154"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "8148753ACBBFD6921B5D03283ECD53AAD435BAD72F85C9E9796A2A4513EEEAB2",
+      "rows": [
+        "20511",
+        "21305"
+      ],
+      "splits": [
+        "validation"
+      ],
+      "sources": [
+        "PAD-UFES-20"
+      ],
+      "labels": [
+        "1",
+        "4"
+      ],
+      "groups": [
+        "PAD-UFES-20:PAT_759"
+      ],
+      "label_conflict": true
+    },
+    {
+      "sha256": "1CA244D7C5A0284765818989163BD91AB0C82A3A0C22A2BEEB7E669B35591165",
+      "rows": [
+        "20564",
+        "21738"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "PAD-UFES-20"
+      ],
+      "labels": [
+        "2"
+      ],
+      "groups": [
+        "PAD-UFES-20:PAT_701"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "41FCC309522EFDB7D6B1D81B44BFC995F22352EB361C62A718389D54FDCF99CC",
+      "rows": [
+        "20746",
+        "21277"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "PAD-UFES-20"
+      ],
+      "labels": [
+        "0",
+        "1"
+      ],
+      "groups": [
+        "PAD-UFES-20:PAT_691"
+      ],
+      "label_conflict": true
+    },
+    {
+      "sha256": "68F38859EB5A32CAFFDB7F38F23B21301DFC811B22ECAD038B9FADB629594EB0",
+      "rows": [
+        "20929",
+        "20985"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "PAD-UFES-20"
+      ],
+      "labels": [
+        "0",
+        "1"
+      ],
+      "groups": [
+        "PAD-UFES-20:PAT_38"
+      ],
+      "label_conflict": true
+    },
+    {
+      "sha256": "64EB82D804E7BDF3940184FCD6126D65F2A0590805CDD9E94C843B01E805D038",
+      "rows": [
+        "21043",
+        "22522"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "PAD-UFES-20"
+      ],
+      "labels": [
+        "0",
+        "1"
+      ],
+      "groups": [
+        "PAD-UFES-20:PAT_202"
+      ],
+      "label_conflict": true
+    },
+    {
+      "sha256": "13116B2842E7A82E36AED54D823D384357ED370D564EAFD7F886D05914C1DE42",
+      "rows": [
+        "21368",
+        "21397"
+      ],
+      "splits": [
+        "validation"
+      ],
+      "sources": [
+        "PAD-UFES-20"
+      ],
+      "labels": [
+        "0"
+      ],
+      "groups": [
+        "PAD-UFES-20:PAT_528"
+      ],
+      "label_conflict": false
+    },
+    {
+      "sha256": "D409BCC6321C69A4B7A301A37CCD4A360230F3DC0D1F528F110B766B75C12B50",
+      "rows": [
+        "21406",
+        "22195"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "PAD-UFES-20"
+      ],
+      "labels": [
+        "0",
+        "1"
+      ],
+      "groups": [
+        "PAD-UFES-20:PAT_38"
+      ],
+      "label_conflict": true
+    },
+    {
+      "sha256": "0A8D541F072A4694923B0F286FA43E47C7C083EE66D847AE1AF917E27B42FA50",
+      "rows": [
+        "21701",
+        "21720"
+      ],
+      "splits": [
+        "train"
+      ],
+      "sources": [
+        "PAD-UFES-20"
+      ],
+      "labels": [
+        "0",
+        "1"
+      ],
+      "groups": [
+        "PAD-UFES-20:PAT_691"
+      ],
+      "label_conflict": true
+    }
+  ],
+  "near_duplicates_removed": [],
+  "near_duplicates_for_manual_review": [
+    {
+      "train_row_id": "351",
+      "validation_row_id": "8213",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0027819.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0033018.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "794",
+      "validation_row_id": "7209",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0027027.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0029036.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "1690",
+      "validation_row_id": "8012",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0024876.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0031064.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "2095",
+      "validation_row_id": "8213",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0025713.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0033018.jpg",
+      "same_label": true,
+      "phash_distance": 2,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "3057",
+      "validation_row_id": "8123",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0027757.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0032082.jpg",
+      "same_label": true,
+      "phash_distance": 2,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "3674",
+      "validation_row_id": "7382",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0028951.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0025000.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "3683",
+      "validation_row_id": "7382",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0028963.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0025000.jpg",
+      "same_label": true,
+      "phash_distance": 2,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "4159",
+      "validation_row_id": "7382",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0029975.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0025000.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "4207",
+      "validation_row_id": "7705",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0030061.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0028139.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "5078",
+      "validation_row_id": "7382",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0031838.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0025000.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "5133",
+      "validation_row_id": "7382",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0031933.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0025000.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "5133",
+      "validation_row_id": "8012",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0031933.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0031064.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "5355",
+      "validation_row_id": "8213",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0032405.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0033018.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "5384",
+      "validation_row_id": "8012",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0032475.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0031064.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "6359",
+      "validation_row_id": "7189",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0026516.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0027151.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "6449",
+      "validation_row_id": "8012",
+      "train_source": "HAM10000",
+      "validation_source": "HAM10000",
+      "train_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0027797.jpg",
+      "validation_path": "Dataset/HAM10000/HAM10000_all_images/ISIC_0031064.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "8628",
+      "validation_row_id": "15686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000000198.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012264.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "8720",
+      "validation_row_id": "15686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000000351.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012264.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "8739",
+      "validation_row_id": "9263",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000000381.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001310.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "8931",
+      "validation_row_id": "19074",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000000741.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000017975.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "9063",
+      "validation_row_id": "20453",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000000970.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000020292.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "9238",
+      "validation_row_id": "15686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000001274.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012264.jpg",
+      "same_label": false,
+      "phash_distance": 2,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "9522",
+      "validation_row_id": "9263",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000001768.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001310.jpg",
+      "same_label": true,
+      "phash_distance": 2,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "9851",
+      "validation_row_id": "9471",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000002326.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001669.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "10058",
+      "validation_row_id": "8528",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000002670.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000000031.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "10058",
+      "validation_row_id": "12394",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000002670.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006649.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "10058",
+      "validation_row_id": "16686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000002670.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000013963.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "10131",
+      "validation_row_id": "15686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000002805.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012264.jpg",
+      "same_label": true,
+      "phash_distance": 2,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "10133",
+      "validation_row_id": "19765",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000002807.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000019148.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "10402",
+      "validation_row_id": "10599",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000003277.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003600.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "10715",
+      "validation_row_id": "12394",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000003801.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006649.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "10771",
+      "validation_row_id": "15686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000003897.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012264.jpg",
+      "same_label": false,
+      "phash_distance": 2,
+      "dhash_distance": 2
+    },
+    {
+      "train_row_id": "10832",
+      "validation_row_id": "11396",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000004002.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000004999.jpg",
+      "same_label": true,
+      "phash_distance": 2,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "10961",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000004236.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "11417",
+      "validation_row_id": "10599",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000005035.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003600.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "11617",
+      "validation_row_id": "13314",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000005366.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000008255.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 2
+    },
+    {
+      "train_row_id": "11893",
+      "validation_row_id": "15686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000005809.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012264.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "12296",
+      "validation_row_id": "9441",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000006477.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001609.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "12296",
+      "validation_row_id": "18225",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000006477.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000016517.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "12296",
+      "validation_row_id": "19470",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000006477.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000018655.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "12488",
+      "validation_row_id": "8528",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000006815.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000000031.jpg",
+      "same_label": false,
+      "phash_distance": 0,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "12488",
+      "validation_row_id": "16686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000006815.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000013963.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "12554",
+      "validation_row_id": "18477",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000006914.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000016943.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "12740",
+      "validation_row_id": "10599",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000007245.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003600.jpg",
+      "same_label": false,
+      "phash_distance": 2,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "12806",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000007357.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "12918",
+      "validation_row_id": "18066",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000007543.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000016263.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "12918",
+      "validation_row_id": "13432",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000007543.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000008445.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 2
+    },
+    {
+      "train_row_id": "13172",
+      "validation_row_id": "10250",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000007994.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003005.jpg",
+      "same_label": true,
+      "phash_distance": 2,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "13172",
+      "validation_row_id": "13236",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000007994.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000008102.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "13408",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000008409.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": false,
+      "phash_distance": 2,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "13628",
+      "validation_row_id": "13314",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000008782.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000008255.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "13879",
+      "validation_row_id": "15475",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000009201.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000011925.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "13984",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000009375.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "14006",
+      "validation_row_id": "9263",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000009413.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001310.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "14023",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000009447.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "14223",
+      "validation_row_id": "10766",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000009783.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003891.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "14333",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000009960.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "14458",
+      "validation_row_id": "13314",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000010171.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000008255.jpg",
+      "same_label": true,
+      "phash_distance": 2,
+      "dhash_distance": 1
+    },
+    {
+      "train_row_id": "14581",
+      "validation_row_id": "9471",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000010400.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001669.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "14683",
+      "validation_row_id": "18225",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000010567.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000016517.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "14683",
+      "validation_row_id": "19470",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000010567.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000018655.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "15065",
+      "validation_row_id": "11286",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000011218.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000004817.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "15272",
+      "validation_row_id": "16901",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000011572.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000014314.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "15295",
+      "validation_row_id": "14197",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000011615.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000009741.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "15359",
+      "validation_row_id": "17723",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000011720.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000015686.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "15359",
+      "validation_row_id": "11286",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000011720.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000004817.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "15379",
+      "validation_row_id": "9420",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000011751.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001570.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "15469",
+      "validation_row_id": "15686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000011917.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012264.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "15469",
+      "validation_row_id": "14731",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000011917.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000010648.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "15619",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000012169.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": false,
+      "phash_distance": 2,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "15638",
+      "validation_row_id": "18477",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000012191.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000016943.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "15716",
+      "validation_row_id": "8528",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000012310.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000000031.jpg",
+      "same_label": false,
+      "phash_distance": 2,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "15914",
+      "validation_row_id": "17052",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000012648.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000014569.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "16087",
+      "validation_row_id": "16040",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000012950.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012866.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "16277",
+      "validation_row_id": "10599",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000013269.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003600.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "16439",
+      "validation_row_id": "9500",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000013540.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001723.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "16528",
+      "validation_row_id": "14466",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000013681.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000010190.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "16905",
+      "validation_row_id": "9263",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000014326.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001310.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 2
+    },
+    {
+      "train_row_id": "17132",
+      "validation_row_id": "14687",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000014690.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000010573.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "17246",
+      "validation_row_id": "12394",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000014895.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006649.jpg",
+      "same_label": false,
+      "phash_distance": 2,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "17280",
+      "validation_row_id": "8528",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000014948.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000000031.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "17467",
+      "validation_row_id": "10599",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000015259.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003600.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "17546",
+      "validation_row_id": "12217",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000015381.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006356.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 2
+    },
+    {
+      "train_row_id": "17546",
+      "validation_row_id": "18582",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000015381.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000017126.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "17623",
+      "validation_row_id": "12217",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000015523.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006356.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 2
+    },
+    {
+      "train_row_id": "17665",
+      "validation_row_id": "9263",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000015593.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001310.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "17873",
+      "validation_row_id": "9938",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000015943.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000002473.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "18001",
+      "validation_row_id": "8707",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000016165.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000000323.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "18196",
+      "validation_row_id": "17640",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000016474.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000015550.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "18295",
+      "validation_row_id": "14143",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000016633.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000009645.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "18420",
+      "validation_row_id": "16542",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000016856.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000013702.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "18420",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000016856.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "18495",
+      "validation_row_id": "15686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000016969.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012264.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "18824",
+      "validation_row_id": "10599",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000017558.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003600.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "18847",
+      "validation_row_id": "10599",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000017591.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003600.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "18885",
+      "validation_row_id": "16007",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000017658.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000012805.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "18954",
+      "validation_row_id": "10599",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000017762.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003600.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "19039",
+      "validation_row_id": "15475",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000017920.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000011925.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "19318",
+      "validation_row_id": "18582",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000018403.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000017126.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 3
+    },
+    {
+      "train_row_id": "19389",
+      "validation_row_id": "19765",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000018517.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000019148.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 6
+    },
+    {
+      "train_row_id": "19625",
+      "validation_row_id": "9263",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000018930.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000001310.jpg",
+      "same_label": true,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "19631",
+      "validation_row_id": "8528",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000018938.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000000031.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 7
+    },
+    {
+      "train_row_id": "19662",
+      "validation_row_id": "12513",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000018976.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006855.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 5
+    },
+    {
+      "train_row_id": "19680",
+      "validation_row_id": "16686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000019009.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000013963.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "19713",
+      "validation_row_id": "19765",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000019069.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000019148.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "19751",
+      "validation_row_id": "16645",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000019128.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000013892.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "19789",
+      "validation_row_id": "13314",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000019178.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000008255.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "19888",
+      "validation_row_id": "16542",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000019348.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000013702.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 8
+    },
+    {
+      "train_row_id": "19888",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000019348.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "19888",
+      "validation_row_id": "10792",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000019348.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000003931.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 2
+    },
+    {
+      "train_row_id": "20113",
+      "validation_row_id": "16686",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000019738.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000013963.jpg",
+      "same_label": false,
+      "phash_distance": 4,
+      "dhash_distance": 4
+    },
+    {
+      "train_row_id": "20295",
+      "validation_row_id": "12431",
+      "train_source": "BCN20000",
+      "validation_source": "BCN20000",
+      "train_path": "Dataset/BCN20000/images/train/BCN_0000020027.jpg",
+      "validation_path": "Dataset/BCN20000/images/train/BCN_0000006717.jpg",
+      "same_label": true,
+      "phash_distance": 2,
+      "dhash_distance": 2
+    }
+  ],
+  "passed": true,
+  "policy": "驗證集保留不動；跨切分的訓練重複圖移入 quarantine；近重複只自動處理同標籤且雙雜湊極相近者。"
+}

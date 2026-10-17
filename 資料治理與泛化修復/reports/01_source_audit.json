@@ -1,0 +1,302 @@
+{
+  "stage": 1,
+  "name": "來源差異與欄位一致性",
+  "passed": true,
+  "total_rows": 22600,
+  "missing_columns": [],
+  "missing_files": 0,
+  "duplicate_row_ids": [],
+  "duplicate_source_image_ids": [],
+  "errors": [],
+  "sources": [
+    {
+      "source": "HAM10000",
+      "modality": "dermoscopy",
+      "modality_zh": "皮膚鏡影像",
+      "license": "CC BY-NC 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "rows": 8512,
+      "train_rows": 7008,
+      "validation_rows": 1504,
+      "unique_train_groups": 5232,
+      "unique_validation_groups": 1118
+    },
+    {
+      "source": "BCN20000",
+      "modality": "dermoscopy",
+      "modality_zh": "皮膚鏡影像",
+      "license": "CC BY 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "rows": 11982,
+      "train_rows": 10266,
+      "validation_rows": 1716,
+      "unique_train_groups": 2956,
+      "unique_validation_groups": 498
+    },
+    {
+      "source": "PAD-UFES-20",
+      "modality": "clinical_smartphone",
+      "modality_zh": "智慧型手機臨床影像",
+      "license": "CC BY 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "rows": 2106,
+      "train_rows": 1705,
+      "validation_rows": 401,
+      "unique_train_groups": 1039,
+      "unique_validation_groups": 258
+    }
+  ],
+  "counts": [
+    {
+      "source": "BCN20000",
+      "split": "train",
+      "label": "AKIEC",
+      "count": 624
+    },
+    {
+      "source": "BCN20000",
+      "split": "train",
+      "label": "BCC",
+      "count": 2453
+    },
+    {
+      "source": "BCN20000",
+      "split": "train",
+      "label": "BKL",
+      "count": 955
+    },
+    {
+      "source": "BCN20000",
+      "split": "train",
+      "label": "DF",
+      "count": 91
+    },
+    {
+      "source": "BCN20000",
+      "split": "train",
+      "label": "MEL",
+      "count": 2529
+    },
+    {
+      "source": "BCN20000",
+      "split": "train",
+      "label": "NV",
+      "count": 3524
+    },
+    {
+      "source": "BCN20000",
+      "split": "train",
+      "label": "VASC",
+      "count": 90
+    },
+    {
+      "source": "BCN20000",
+      "split": "validation",
+      "label": "AKIEC",
+      "count": 113
+    },
+    {
+      "source": "BCN20000",
+      "split": "validation",
+      "label": "BCC",
+      "count": 356
+    },
+    {
+      "source": "BCN20000",
+      "split": "validation",
+      "label": "BKL",
+      "count": 183
+    },
+    {
+      "source": "BCN20000",
+      "split": "validation",
+      "label": "DF",
+      "count": 33
+    },
+    {
+      "source": "BCN20000",
+      "split": "validation",
+      "label": "MEL",
+      "count": 328
+    },
+    {
+      "source": "BCN20000",
+      "split": "validation",
+      "label": "NV",
+      "count": 682
+    },
+    {
+      "source": "BCN20000",
+      "split": "validation",
+      "label": "VASC",
+      "count": 21
+    },
+    {
+      "source": "HAM10000",
+      "split": "train",
+      "label": "AKIEC",
+      "count": 229
+    },
+    {
+      "source": "HAM10000",
+      "split": "train",
+      "label": "BCC",
+      "count": 360
+    },
+    {
+      "source": "HAM10000",
+      "split": "train",
+      "label": "BKL",
+      "count": 769
+    },
+    {
+      "source": "HAM10000",
+      "split": "train",
+      "label": "DF",
+      "count": 80
+    },
+    {
+      "source": "HAM10000",
+      "split": "train",
+      "label": "MEL",
+      "count": 779
+    },
+    {
+      "source": "HAM10000",
+      "split": "train",
+      "label": "NV",
+      "count": 4693
+    },
+    {
+      "source": "HAM10000",
+      "split": "train",
+      "label": "VASC",
+      "count": 98
+    },
+    {
+      "source": "HAM10000",
+      "split": "validation",
+      "label": "AKIEC",
+      "count": 49
+    },
+    {
+      "source": "HAM10000",
+      "split": "validation",
+      "label": "BCC",
+      "count": 77
+    },
+    {
+      "source": "HAM10000",
+      "split": "validation",
+      "label": "BKL",
+      "count": 165
+    },
+    {
+      "source": "HAM10000",
+      "split": "validation",
+      "label": "DF",
+      "count": 18
+    },
+    {
+      "source": "HAM10000",
+      "split": "validation",
+      "label": "MEL",
+      "count": 167
+    },
+    {
+      "source": "HAM10000",
+      "split": "validation",
+      "label": "NV",
+      "count": 1006
+    },
+    {
+      "source": "HAM10000",
+      "split": "validation",
+      "label": "VASC",
+      "count": 22
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "train",
+      "label": "AKIEC",
+      "count": 593
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "train",
+      "label": "BCC",
+      "count": 696
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "train",
+      "label": "BKL",
+      "count": 180
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "train",
+      "label": "MEL",
+      "count": 41
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "train",
+      "label": "NV",
+      "count": 195
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "validation",
+      "label": "AKIEC",
+      "count": 137
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "validation",
+      "label": "BCC",
+      "count": 149
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "validation",
+      "label": "BKL",
+      "count": 55
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "validation",
+      "label": "MEL",
+      "count": 11
+    },
+    {
+      "source": "PAD-UFES-20",
+      "split": "validation",
+      "label": "NV",
+      "count": 49
+    }
+  ],
+  "confirmed_source_difference": true
+}
