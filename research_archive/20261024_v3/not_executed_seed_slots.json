@@ -1,0 +1,30 @@
+[
+  {
+    "round": "v2_optimization_20261020_v1",
+    "experiment": "v2in_ld09",
+    "seed": 3,
+    "status": "not_present",
+    "result_path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_ld09\\regularized_seed3\\result.json"
+  },
+  {
+    "round": "v2_optimization_20261020_v1",
+    "experiment": "v2in_lr5e5",
+    "seed": 3,
+    "status": "not_present",
+    "result_path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_lr5e5\\regularized_seed3\\result.json"
+  },
+  {
+    "round": "v2_optimization_round2_20261020_v1",
+    "experiment": "v2in_r2_bcn50",
+    "seed": 3,
+    "status": "not_present",
+    "result_path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed3\\result.json"
+  },
+  {
+    "round": "v2_optimization_round2_20261020_v1",
+    "experiment": "v2in_r2_re0",
+    "seed": 3,
+    "status": "not_present",
+    "result_path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_re0\\regularized_seed3\\result.json"
+  }
+]

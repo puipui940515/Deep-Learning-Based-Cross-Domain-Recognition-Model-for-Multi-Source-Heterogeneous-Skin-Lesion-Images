@@ -1,0 +1,37 @@
+{
+  "suite_id": "five_model_baseline_20261019_v1",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "profiles": [
+    {
+      "id": "mlp_pixels_random",
+      "config": "mlp_pixels_random.json",
+      "sha256": "c488d486154dcc2cb3f0bb9e68c886ce862a342af2aca31a62952cb9ae7c67b4"
+    },
+    {
+      "id": "resnet18_random",
+      "config": "resnet18_random.json",
+      "sha256": "79e4d8d7007936433389a261ef9e44d84d665ac8ee79586a955cf8d95e6456a1"
+    },
+    {
+      "id": "resnet18_imagenet",
+      "config": "resnet18_imagenet.json",
+      "sha256": "a0874b616268ab8c0a999f3a9c8f6baabd0aafe0d76a47593400452e83bc6989"
+    },
+    {
+      "id": "convnextv2_tiny_random",
+      "config": "convnextv2_tiny_random.json",
+      "sha256": "88fce3f8f259c6d14fd2d0e05cf5910c8e6dd1bbdb8ab4751a2ebce9912c2c38"
+    },
+    {
+      "id": "convnextv2_tiny_imagenet",
+      "config": "convnextv2_tiny_imagenet.json",
+      "sha256": "4982675565cbd7641846b5865e4c30cea2a9efdfa20265505f8c05ee69c99940"
+    }
+  ],
+  "formal_training_authorized": true,
+  "authorization": "User explicitly authorized five arms x seeds [1,2,3], after small GPU/resume acceptance and resource checks. 2026-10-19 Asia/Taipei."
+}

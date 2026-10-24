@@ -1,0 +1,6 @@
+{
+  "best_pt_relative": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed1\\best.pt",
+  "best_pt_bytes_historical": null,
+  "checkpoint_generations_historical": [],
+  "warning": "Existing historical hashes/sizes only; weights not read or rehashed; no invented best.pt SHA"
+}

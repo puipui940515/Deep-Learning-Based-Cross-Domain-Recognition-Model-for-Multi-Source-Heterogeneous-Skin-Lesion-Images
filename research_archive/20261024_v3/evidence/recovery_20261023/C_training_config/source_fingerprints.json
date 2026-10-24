@@ -1,0 +1,450 @@
+[
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\ACCEPTANCE.json",
+    "sha256": "b4c83364944d59197ededf79f4be76c09833d1c11178dbf762e8a416c5777b09"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\convnextv2_tiny_imagenet.json",
+    "sha256": "4982675565cbd7641846b5865e4c30cea2a9efdfa20265505f8c05ee69c99940"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\convnextv2_tiny_random.json",
+    "sha256": "88fce3f8f259c6d14fd2d0e05cf5910c8e6dd1bbdb8ab4751a2ebce9912c2c38"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\launch_20261019_132130.json",
+    "sha256": "a4c5e31bb96ffb1490327b324d0feff47c0b04c92ea474269840461f0ec43ae2"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\launch_20261019_183607.json",
+    "sha256": "4370922984451569535ac7a18335fc3874764db1bebed920656740a3f1e18290"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\mlp_pixels_random.json",
+    "sha256": "c488d486154dcc2cb3f0bb9e68c886ce862a342af2aca31a62952cb9ae7c67b4"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\resnet18_imagenet.json",
+    "sha256": "a0874b616268ab8c0a999f3a9c8f6baabd0aafe0d76a47593400452e83bc6989"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\resnet18_random.json",
+    "sha256": "79e4d8d7007936433389a261ef9e44d84d665ac8ee79586a955cf8d95e6456a1"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\suite.json",
+    "sha256": "22bd389d284ed8e9e8ce1e7932f7d2442a6f93962ea47803d87ae6ee9cedcce3"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\TRAINING_PLAN.txt",
+    "sha256": "f8d95e891ddef5bd7e4156c712b8aca8e54ec3c286dff507dc288646918144cb"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\ACCEPTANCE.json",
+    "sha256": "a18e0245c1a7300a3275eb0c7ac80a24ecced726479f80d135c7c6be384bdb7f"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\AUTHORIZATION.md",
+    "sha256": "53785e991a528a146d17bc4748d9152ba3792d307a42c0f35bf623b035d445a5"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\PREFLIGHT.json",
+    "sha256": "10d45b913959689f4fec396f4e0ace58577d7a9cc10132e4b0e17bc1247bccca"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\suite.json",
+    "sha256": "3b8fca91fe322cbff079f4003734319a93f7651508fd1ee1eaee003bc5a7e1ec"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\v2in_ld09.json",
+    "sha256": "2f17b8996132fa65057598c33125e4b878b4ffd80bb1a2555f878ac75b6cd545"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\v2in_lr5e5.json",
+    "sha256": "5c1717eee3b431f109e2a02d4ebad577477b8e6437b686debe7cca265edcbd84"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\ACCEPTANCE.json",
+    "sha256": "caad4a9bf55bdc989140b69d4abd5e676b9d55e3ac38d62ea968e5be0fa169cc"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\AUTHORIZATION.md",
+    "sha256": "7dcbbee9429a3ca1f446fe741e5883c605ed155111852bd6ffc2acac9d6e844e"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\PREFLIGHT.json",
+    "sha256": "064caef7f8478d545b3704e8c4f59a621cdb531cf1290c3213fa9654326b9859"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\suite.json",
+    "sha256": "6ab40b99b778c7bfa5f7639a1d457073468ee3a57106926806b0df11deb699b3"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\v2in_r2_bcn50.json",
+    "sha256": "96989a2da4f79e29abf7f71f780b5392c52d328e39dae5252675edd43375e551"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\v2in_r2_re0.json",
+    "sha256": "fb892e905efdf96c7e555de2892b5f97c54349ac51fc2624271a95b0eac53c47"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\ACCEPTANCE.json",
+    "sha256": "ea68a477d70c4cd8c1e0dfbc78779217e97fec68a0382d92e5411dc7895a7798"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\AUTHORIZATION.md",
+    "sha256": "a946ba701ceaf6ad5bddf1461f57a38a894a52d511d9de0ddb4d3389ce25e703"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\GPU_ACCEPTANCE_STATE.json",
+    "sha256": "ed7bf95efc364bed0dba95f6ff14fd6ea3d380c358988c9d5f4f29fa94442476"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\GPU_ACCEPTANCE.json",
+    "sha256": "9b69f1b4f2d412d471ac955aa63d64dadf30148e0cd1c819ab77fdd531fdb389"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\GPU_RECEIPT_v2in_res320.json",
+    "sha256": "264e97ad55d5f5c9405f1f840d3d1242521676568837e0c47054a015fc8021e0"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\GPU_RECEIPT_v2in_res512.json",
+    "sha256": "64c82f6f4488dfee362034693359b23fada7325d2429c602e6bce7644514c2c6"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\GPU_SCHEDULE_v2in_res320_resume.json",
+    "sha256": "ee15a3ab2a4c2cbde90d16635640a6ca6cf7db1d7f7535c23778472c6307cca1"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\GPU_SCHEDULE_v2in_res320_start.json",
+    "sha256": "b4b8905374c8984f4acdcb071754741b899504603bb3d79b47bb1fe532cc4b64"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\GPU_SCHEDULE_v2in_res512_resume.json",
+    "sha256": "d8ff01a7e2f73733efbe996369f7619822154ce437416dafd09121eeee402e08"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\GPU_SCHEDULE_v2in_res512_start.json",
+    "sha256": "794a3fb581d7856a893e21455236bef0c1adb03ce36506ba999c1193cd8fd381"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\PREFLIGHT.json",
+    "sha256": "9116c06904adc334debb9f30621af4c64c02778bbe5ced02c4c2b04577d94536"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\suite.json",
+    "sha256": "e9d6637c0e532b173e55dfcd7aff21e26f6eadad50ea8ca5a074410bdfa7433b"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\v2in_res320.json",
+    "sha256": "6d34cb3ccd295568692cd28c2749252bacf41bd54ff503e2800daf06f7d0271f"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\v2in_res512.json",
+    "sha256": "190dab3b13fe74ce325077d902bca2619c91f0505c64dc213c888f4b37916aa9"
+  },
+  {
+    "path": "資料治理與泛化修復\\data\\governed_18979_20261018_v1\\README.md",
+    "sha256": "7c5ef3b606713e23c5a33cab13bca8b54c10886ad2c895c5bb4792cc15e79461"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed1\\result.json",
+    "sha256": "7350ef872b9d41440d5bcf74beb03674cdd91aabe405cf4519285bba7bd153e1"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed1\\run_inputs.json",
+    "sha256": "65af1d14a980eda5fd7d771efa2a0bbbfe4538cd12fa963ffba4be1a75555405"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed2\\result.json",
+    "sha256": "5acab4974d123cc42d8c37a91e2793c3c525ace3b1bcbc5b929dd0987980d8a1"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed2\\run_inputs.json",
+    "sha256": "8497cf623a0801be70e9eea452e9dbd607ebd538d245eb45a48ae52ac6b75813"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed3\\result.json",
+    "sha256": "e5b01b8e0e22686ee71a2a1ceda67fc653e456ae344dec201670ca25d5d536ab"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed3\\run_inputs.json",
+    "sha256": "52450254a781b2d8a4094438a603bb11e1f270d362dad8cb288efa5696dd0d7a"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed1\\result.json",
+    "sha256": "a32c4521295eb532f3e63e8dea88e485015f1a569130f0aae3da1102548e1178"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed1\\run_inputs.json",
+    "sha256": "e9aee1e6609a752d0fa5fdb4ec567f34995d04f42b4bcc09ed08d623994703f0"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed2\\result.json",
+    "sha256": "f6eb11837287203609a4ea72934be7b445a8d6d3528be6bf8cf37f1e2578247e"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed2\\run_inputs.json",
+    "sha256": "ad4b6756cf59ef204d09f6c70772ab06c5c13f03bdc222e9f7f410fae02ddf60"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed3\\result.json",
+    "sha256": "abf58f82d8a887062bf04e2a79bcd52033cb9122d533edc8c7b6aea3a5a95dc9"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed3\\run_inputs.json",
+    "sha256": "ee59c94df79f295caf646fffb4d5408413971eaa3b8faa6c42888991ea287a74"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed1\\result.json",
+    "sha256": "b6136086f2355a5f8dab7a675aa269c9231d207907b728674aae52500922d060"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed1\\run_inputs.json",
+    "sha256": "7dc5c56064db01b3394c5ec2f96ad63d6e0eac51299c527aa618c640cfe98c1c"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed2\\result.json",
+    "sha256": "24465c5c5403236f967849f01955c9461b4faee2de3837ac407f496694c1f18a"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed2\\run_inputs.json",
+    "sha256": "08969c70ff11787e6df56acb30da4ea7a9c1c50036b749d2268ffa2e4d2e6051"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed3\\result.json",
+    "sha256": "e18523fb5f96f97ff2b18538fc48adb5e38e0ab4f6590fb827ab60f94e35966f"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed3\\run_inputs.json",
+    "sha256": "7e1ec01c9f2e7f28a5a4aa544638b6a2f8826df41ed93015bb0d4e02d79aa616"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed1\\result.json",
+    "sha256": "777e5eb9dc1677a617b4e11b554d570c8f8c3a04cb49e51b4ca767bea6ba12d1"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed1\\run_inputs.json",
+    "sha256": "0cb444c43e0c81eac54ffeed0e9e0b5beae64071553179660f3910c739c7685d"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed2\\result.json",
+    "sha256": "f09659e6d90a0ca75878d1589c7b529c252d5e6a521f38545d76ca5a1b570073"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed2\\run_inputs.json",
+    "sha256": "5706c0632b2440cf23aba559379e1204f159f519731e10cc0227b75276d11ce9"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed3\\result.json",
+    "sha256": "0d0b32534b4894d2075da79fa2b16f1feb965c7d69bbf737936af23b92ba611a"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed3\\run_inputs.json",
+    "sha256": "f004997f322645650be6012fd1db9539b7ee9884fd358a876aecfc52aa004f85"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed1\\result.json",
+    "sha256": "c4e6b4c8174ea0f72b03c2b78647d582e940e5643bcd1180a81654fa6529bd19"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed1\\run_inputs.json",
+    "sha256": "67ec2fc668f64421ed920a50d99a1e1241e205b4cf7bdb67e87cf2e3aad6d387"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed2\\result.json",
+    "sha256": "6799d72b7ccf0a9cf122633377b9c113f473e38157865e4cc5f9b464f0a3292e"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed2\\run_inputs.json",
+    "sha256": "5a60f1bbdb24307bd74c3abccfc704348e07f53554dcc69eab69cfc0d3014d45"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed3\\result.json",
+    "sha256": "6746ae06c9b625dd0449fc533978af9c3fec916bc85f6cb01f1cb11ecbebf730"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed3\\run_inputs.json",
+    "sha256": "ceeb224bf09a309f20f2be3db4bcabd4bfabbba5267067f74775aee47f6dc2ab"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\decisions\\v2in_ld09_screen.json",
+    "sha256": "1002a913de5b92003deaafe8c5894153cda4a5d2c13b44799b60df8d3afb93c8"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\decisions\\v2in_lr5e5_screen.json",
+    "sha256": "50fd166b431143061388026bf7ad446ab5d3c51f7a6bea46ed25490a9cfcbf95"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_ld09\\regularized_seed1\\result.json",
+    "sha256": "c1bc1dc8b93f188e5bd8dffff5db8a2c3bb8f51cd7892a1bb4ab18c581d916e8"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_ld09\\regularized_seed1\\run_inputs.json",
+    "sha256": "7617b431374f27799a840781f3b64667aa6539077ac9e5b06d74cb0c27deb34d"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_ld09\\regularized_seed2\\result.json",
+    "sha256": "56fff22dc6d642d36777c329771de3d7253a7404e03bcb4b82c8059f734993c1"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_ld09\\regularized_seed2\\run_inputs.json",
+    "sha256": "11d7231006485eb21fd7b8f8aa298d5bb8e0be611aa40040fdc39b45b2047563"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_lr5e5\\regularized_seed1\\result.json",
+    "sha256": "66ade69f79e7bc2f8d1d99484c387f90bf373c2fb42ccdf4ca3bf9ed935c71bc"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_lr5e5\\regularized_seed1\\run_inputs.json",
+    "sha256": "538943982dc0b7fca821a4bada18ca15f08c62347d97aab7e08fed440ca7d6b3"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_lr5e5\\regularized_seed2\\result.json",
+    "sha256": "6ffb1f53ba35bc27afbc0d2ff292bd4ceaa46e62e98fc4983806939f74e8a575"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_lr5e5\\regularized_seed2\\run_inputs.json",
+    "sha256": "197bc5adc331bc10e125e950ba667440cac1c1ac6b6ae841f295cd49f8b4cef4"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\decisions\\v2in_r2_bcn50_screen.json",
+    "sha256": "2e3fa48c838f7fe8d270e6ff2eca0de37af2e9f3e24b385ef2fbaca7711e1f1a"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\decisions\\v2in_r2_re0_screen.json",
+    "sha256": "90e0dc954bf8b617f6359ba0ad7b7b24d3552788bc43a8e4e78f32bb65700211"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed1\\result.json",
+    "sha256": "894ef2cf73694221b5e990010edecf86f6dce1aa72033c06bfac556c0169ff2c"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed1\\run_inputs.json",
+    "sha256": "64e8348a42f7dcc59747adc19f6df240c7fd4f2418e8e24f2aef53bbe39afc13"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed2\\result.json",
+    "sha256": "d0c1170e080bd83cdbd9f443d22518ea02783179dce2ab87fdd914abf333ad85"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed2\\run_inputs.json",
+    "sha256": "75f1e8a49ea9ad2c51aecd5db8f934fc883474e66cb2629e1427040b4ea0c096"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_re0\\regularized_seed1\\result.json",
+    "sha256": "828adf234b36d3a41b9c168753f12c0f7cb984ddc3341775819254f005491261"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_re0\\regularized_seed1\\run_inputs.json",
+    "sha256": "93727764856ee4313257681fbd668b599051e55b27e507441ce3204c65e014ff"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_re0\\regularized_seed2\\result.json",
+    "sha256": "2e70dd6f6dd452edc05d0dc28f23a7ec6d4ff92f83ea11a9df3b10ef0680e65a"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_re0\\regularized_seed2\\run_inputs.json",
+    "sha256": "96343e9abb3301888863f3d6e99d32d453a969f3ac24dfdaca416240cbe2a345"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed1\\result.json",
+    "sha256": "87a76e296259269af495858db0be4f1ec981cd337bee1d2c2c46fedb70c56c80"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed1\\run_inputs.json",
+    "sha256": "21f6d76aaef7d9aa040586b297811c0f30b4e67c5d4199827bd112b38efe19a5"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed2\\result.json",
+    "sha256": "3b72e3a45d950149495d6ee7d01032ebc005475753a2146410be683fa6c854f5"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed2\\run_inputs.json",
+    "sha256": "5e7e61e134e1026a5c7c0d969a2104021a82cd149409859fe3f1afe268ca095c"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed3\\result.json",
+    "sha256": "a734c458859b8542ddc78e18cd34216e78cd5ab36b29d6f8bb00199986cdd6c0"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed3\\run_inputs.json",
+    "sha256": "c5a9150f1cd3486c32113b24a8efb3a443b47997ddbc4727f1f3317d324ab4bb"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\result.json",
+    "sha256": "3d7f4c4d7c8d5f789abad945d223d7e881053260bae2d637a35c988a57e60839"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\run_inputs.json",
+    "sha256": "8366c03079ba04242593656ca4dc8052d53b174d67a9118c8c45c84ddd8cd057"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\result.json",
+    "sha256": "c2c25759b90b0131ae256524df73f8f6ba525674ca9a41e34c63cf85f6325daa"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\run_inputs.json",
+    "sha256": "f13838dbb89b5a35d6a398fc1aff8e213ca22202c85a6582bd3f20ddd47675d0"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\result.json",
+    "sha256": "e33bd7d7dd8d8f93db5e5887b1bcbe9e446d9cafb134196496f832bc95bbb494"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\run_inputs.json",
+    "sha256": "e316e656a8c3c3e2019bdc0aa5bc546529dc0d2b3046c063290eb7ab40f0822a"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+    "sha256": "064a0b7720b7b3d5c17bc99a25d27b24ad3bba0b2d02bb626967551a514f21df"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\run_formal_seeds.py",
+    "sha256": "6c3ac2981e3f985d50ce8b9e2a900296794f35b4f5f9d459f3ae9954bb11a8b3"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\run_v2_optimization.py",
+    "sha256": "826ecd1e9070f274e1d6ba932ae4aa3f176b1bfa0a3f74b571f4436a5eee5702"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\run_v2_resolution.py",
+    "sha256": "0e4e222b2aefd21af1fd91d9e1f7a5c351b88e372dff212be6495ed6f2f3f634"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\run_v2_round2.py",
+    "sha256": "aa75c35f13f641e0879ae7d7947a5d6f210ed209c83b89e1477d96d04e110727"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+    "sha256": "5307539f6128219aa5cd9998fc74288f95eac1062b4206ba8b3480c349203610"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\training_state.py",
+    "sha256": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\v2_opt_contract.py",
+    "sha256": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\v2_resolution_contract.py",
+    "sha256": "412af64f771bf62af4c3be24bcbefccc1fc4a7c54cbd8c34d9fc7d070267ab0b"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\v2_round2_contract.py",
+    "sha256": "9c5449112eb496491b08ddc97cb1197dd16b9e9cd7d2b0264117527c952753aa"
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "ccd3d531029fbbd3881ea29a6483b532854c8112ad83271429439d49f34d2162"
+  },
+  {
+    "path": "docs\\PROJECT_STATE.md",
+    "sha256": "17c0321826d50f30a19abb842de6bbeafa767e92166aee1097dc9e857fceafaa"
+  },
+  {
+    "path": "docs\\V2_EXPERIMENT_HISTORY.md",
+    "sha256": "f77942590f6662762b3b62cc7c67cd1f03002fca7120d5a074d0f94de05f76c7"
+  }
+]

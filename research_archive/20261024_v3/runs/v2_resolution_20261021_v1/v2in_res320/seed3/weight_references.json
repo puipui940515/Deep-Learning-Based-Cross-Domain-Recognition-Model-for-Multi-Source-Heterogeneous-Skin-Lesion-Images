@@ -1,0 +1,21 @@
+{
+  "best_pt_relative": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed3\\best.pt",
+  "best_pt_bytes_historical": 111550063,
+  "checkpoint_generations_historical": [
+    {
+      "file": "epoch-0012-ca03cea05b884b389e9612c7bf0dfe13.pt",
+      "epoch": 12,
+      "sha256": "86364575719ac43e2743fcb4f616f6cfd4e5d0c2f61251ecaf1db443debaeba6",
+      "exists": true,
+      "bytes": 446333159
+    },
+    {
+      "file": "epoch-0011-9fc64e944907438ea0cfcf138168727f.pt",
+      "epoch": 11,
+      "sha256": "45ebd2a7b9c9c3dc5d8d597ec7a899c548baadc0cb0566732913062fc5051e82",
+      "exists": true,
+      "bytes": 446331367
+    }
+  ],
+  "warning": "Existing historical hashes/sizes only; weights not read or rehashed; no invented best.pt SHA"
+}

@@ -1,0 +1,134 @@
+{
+  "data_definition": {
+    "schema_version": "skindetect-data-contract-v1.0",
+    "training_manifest": "資料治理與泛化修復/data/unified_manifest_v1.csv",
+    "disease_mapping": "資料治理與泛化修復/schema/disease_mapping_v1.csv",
+    "anatomical_site_mapping": "資料治理與泛化修復/schema/anatomical_site_mapping_v1.csv"
+  },
+  "class_names": [
+    "AKIEC",
+    "BCC",
+    "BKL",
+    "DF",
+    "NV",
+    "VASC",
+    "MEL"
+  ],
+  "sources": {
+    "HAM10000": {
+      "modality": "dermoscopy",
+      "modality_zh": "皮膚鏡影像",
+      "license": "CC BY-NC 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "BCN20000": {
+      "modality": "dermoscopy",
+      "modality_zh": "皮膚鏡影像",
+      "license": "CC BY 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "PAD-UFES-20": {
+      "modality": "clinical_smartphone",
+      "modality_zh": "智慧型手機臨床影像",
+      "license": "CC BY 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ]
+    }
+  },
+  "leakage": {
+    "near_duplicate_phash_distance": 1,
+    "near_duplicate_dhash_distance": 2,
+    "review_phash_distance": 4,
+    "review_dhash_distance": 8
+  },
+  "profile_version": 1,
+  "pipeline_id": "five_model_baseline_20261019_v1",
+  "training": {
+    "model": "convnextv2_tiny",
+    "initialization": "imagenet",
+    "normalization": "imagenet_mean_std",
+    "image_size": 224,
+    "batch_size": 32,
+    "gradient_accumulation": 2,
+    "epochs": 30,
+    "early_stopping_patience": 5,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.05,
+    "layer_decay": 1.0,
+    "label_smoothing": 0.1,
+    "mixup_alpha": 0.2,
+    "gradient_clip_norm": 1.0,
+    "class_balance_alpha": 0.5,
+    "num_workers": 4,
+    "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+    "min_epochs": 12,
+    "early_stopping": true,
+    "min_delta": 0.0,
+    "optimizer": "AdamW",
+    "loss": "cross_entropy",
+    "effective_batch_size": 64,
+    "amp": true,
+    "transform": "regularized_native",
+    "optimizer_grouping": "layer_decay",
+    "scheduler": {
+      "name": "cosine",
+      "eta_min": 1e-06
+    },
+    "sampling_method": "weighted_replacement",
+    "source_sampling_shares": {
+      "HAM10000": 0.25,
+      "BCN20000": 0.5,
+      "PAD-UFES-20": 0.25
+    }
+  },
+  "experiment": {
+    "id": "v2in_r2_bcn50",
+    "approval_status": "approved",
+    "weights": {
+      "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+      "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+      "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+      "revision": "508caf1bc24fd02c69d15778b994e808670dbc28"
+    },
+    "native_setting_sources": {
+      "資料治理與泛化修復/config.json": "3b8c5c1f788a5f0d51ef49f66d6d3ce2eeb81e5e537237759d7b330691dfccaf",
+      "benchmarks/convnextv2_batch_20261018_v1/REPORT.md": "3d7146d9744dc2f980d6f1af5d25edb48d3772d52d8a573b70f8be94dcf53082"
+    },
+    "confirmation_note": "Approved first-round controlled initialization baseline, 2026-10-19; native MLP/ResNet hyperparameters retained; V2 layer_decay=1.0; workers=4, AMP=True subject to GPU acceptance."
+  },
+  "formal_suite": {
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "manifest_release": "資料治理與泛化修復/data/governed_18979_20261018_v1",
+    "manifest_sha256": "5c501ef3cb6c8a73b3a9395383d199212e070abfbc67c782fcfc010576243284",
+    "baseline_config_sha256": "3b8c5c1f788a5f0d51ef49f66d6d3ce2eeb81e5e537237759d7b330691dfccaf"
+  },
+  "optimization": {
+    "version": "v2_optimization_round2_20261020_v1",
+    "authorization_sha256": "7dcbbee9429a3ca1f446fe741e5883c605ed155111852bd6ffc2acac9d6e844e"
+  }
+}

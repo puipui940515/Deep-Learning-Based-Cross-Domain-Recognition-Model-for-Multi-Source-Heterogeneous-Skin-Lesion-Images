@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks_count": 701,
+  "report_exists": true,
+  "three_resolutions_nine_runs": 9,
+  "PAD_NA_preserved": true,
+  "source_files_unchanged": true,
+  "outputs_sha256": {
+    "COMPARISON.json": "4a96030b64781bbcba0875d9dfdb101ef236f675e11c1bdd55bd0e9b848ee0ab",
+    "prepare_comparison.py": "3f300ce69a2694d6a09eaa8197152c23ec04fda62087f67928f1665c64801f47",
+    "REPORT.md": "ba87575a6001f657d4a3cc40ca26689991f57ff53921c5ebab2561b35703087d",
+    "SOURCES_METHOD_QA.json": "66e99ee5ce28e9d545bf94330aacccac37d343f57d2850b63ad30f6ab8a623be"
+  },
+  "limitations": [
+    "No predictions/metrics/confusion matrices recomputed; values cited from saved JSON.",
+    "ALL full-class recall not rederived from matrices; all source-supported classes included and combined MEL cited.",
+    "No per-image corrected/new errors or group transitions can be recovered from aggregate counts.",
+    "Three training Seeds share fixed Validation; not 10833 independent cases.",
+    "512 micro-batch8x8 versus 224/320 32x2; equal nominal effective batch does not isolate resolution alone.",
+    "No p-values/significance, Test/external/generalization claim, new ensemble or model adoption.",
+    "Only existing C audit reused; current runtime/resources not reaccepted."
+  ]
+}

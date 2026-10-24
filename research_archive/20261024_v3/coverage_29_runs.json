@@ -1,0 +1,439 @@
+[
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "convnextv2_tiny_imagenet",
+    "seed": 1,
+    "run_id": "2f10e3e3408242d5ab5e7fc325c228ad",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_767b2e7affc943f48fb4ac6279df03c4.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "convnextv2_tiny_imagenet",
+    "seed": 2,
+    "run_id": "89dcc59db128411d9d02c884e6f5a067",
+    "status": "completed",
+    "epochs": 15,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_25fd64433cd047d9a81f8e18c65acab1.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "convnextv2_tiny_imagenet",
+    "seed": 3,
+    "run_id": "224f04b5f8294cd993f1cc371c84a4e1",
+    "status": "completed",
+    "epochs": 13,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_8dc31a1b33f04d8abce1ac688fadbe3a.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "convnextv2_tiny_random",
+    "seed": 1,
+    "run_id": "a15e5996a9eb40dfb3bf6475c9198577",
+    "status": "completed",
+    "epochs": 16,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_701a2cbc3ff049f8ac647180d8a0633d.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "convnextv2_tiny_random",
+    "seed": 2,
+    "run_id": "fc259a00e0474fe8afdc0414e11bf140",
+    "status": "completed",
+    "epochs": 20,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_a6c91d8142ce4d6a98f0bc3086218185.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "convnextv2_tiny_random",
+    "seed": 3,
+    "run_id": "43e4529c59a4491c8a5592decab2d88a",
+    "status": "completed",
+    "epochs": 21,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_f62afbb7610c4177a00ace5229f6e35d.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "mlp_pixels_random",
+    "seed": 1,
+    "run_id": "64cb4dedf756464b84dfec629e2f200b",
+    "status": "completed",
+    "epochs": 26,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_136295565b76484c86c192c9aaec395b.jsonl",
+      "metrics_df84f49eaa23440398cb0aefab513a5b.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "mlp_pixels_random",
+    "seed": 2,
+    "run_id": "5df6907ca28d4ac29a7e94f873cb0d5a",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_3fa0d02b2b474f0e858799d2e488c753.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "mlp_pixels_random",
+    "seed": 3,
+    "run_id": "21ec6022f7654fa2b51363e1aab6d1ca",
+    "status": "completed",
+    "epochs": 14,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_e827c82d063e444f9096f151849ddb4c.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "resnet18_imagenet",
+    "seed": 1,
+    "run_id": "322c3ade422e4174acd21f7e33fb3c57",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_abb29be28d1341978a0917ed9c801af9.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "resnet18_imagenet",
+    "seed": 2,
+    "run_id": "cbaabb9e6e6b42388c015f3edb7b177c",
+    "status": "completed",
+    "epochs": 18,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_937e54e631764289a1a399408bb071b9.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "resnet18_imagenet",
+    "seed": 3,
+    "run_id": "351c4dee11a94caa9a88b0ef1f7894e0",
+    "status": "completed",
+    "epochs": 21,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_bdde8a6de761459685ba1795c3048fff.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "resnet18_random",
+    "seed": 1,
+    "run_id": "a8dce0a2e68746fa9fecfe9e6fd0b0d4",
+    "status": "completed",
+    "epochs": 30,
+    "stop_reason": "max_epochs",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_092f9d2284cc40e2ae0c17960cd2dba1.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "resnet18_random",
+    "seed": 2,
+    "run_id": "249e7ce923784b1eb300445c71c65d48",
+    "status": "completed",
+    "epochs": 30,
+    "stop_reason": "max_epochs",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_7240dfe7facd41ffb007085552f4aa22.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "baseline_20261019_v1",
+    "experiment": "resnet18_random",
+    "seed": 3,
+    "run_id": "a45b0ee0993746399bae2f1a3bb7efbd",
+    "status": "completed",
+    "epochs": 16,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_d06527851f544439b5697c7dac360e99.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_optimization_20261020_v1",
+    "experiment": "v2in_ld09",
+    "seed": 1,
+    "run_id": "11a15619f2fc4b278f4406993cedba6e",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_b79098060a5d420dbacb3309e739ae61.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_optimization_20261020_v1",
+    "experiment": "v2in_ld09",
+    "seed": 2,
+    "run_id": "12f1133a410c4e76a0857f4b3caf9772",
+    "status": "completed",
+    "epochs": 15,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_cabb2b98d025469f87dc752efa4333fa.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_optimization_20261020_v1",
+    "experiment": "v2in_lr5e5",
+    "seed": 1,
+    "run_id": "462f4ff2c69a465fbaf7d387374f62f0",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_d04c513bb4854accbd8eb300f740ec70.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_optimization_20261020_v1",
+    "experiment": "v2in_lr5e5",
+    "seed": 2,
+    "run_id": "c93e4b2009064909af10435cb289eb75",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_0aebe9b5a59c4ce8999c1003b955868f.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_optimization_round2_20261020_v1",
+    "experiment": "v2in_r2_bcn50",
+    "seed": 1,
+    "run_id": "ed6080eac8864954a10ea27ac249fce3",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_e8caaf65b60a47eb95613473993a58a3.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_optimization_round2_20261020_v1",
+    "experiment": "v2in_r2_bcn50",
+    "seed": 2,
+    "run_id": "ce448a1354ae45f6831dbdcb01fad493",
+    "status": "completed",
+    "epochs": 13,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_7a2274eb57a1481696bc73cdec6527d1.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_optimization_round2_20261020_v1",
+    "experiment": "v2in_r2_re0",
+    "seed": 1,
+    "run_id": "bd39c9613e7740ac80dcd0388e62fbb0",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_ccf5b8e390eb4103bc5fe0ec97f7671e.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_optimization_round2_20261020_v1",
+    "experiment": "v2in_r2_re0",
+    "seed": 2,
+    "run_id": "aa1e89397c5a49b1ab2d92722e134ba4",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_2c8dfb49f5a146da9476ad23113579cf.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_resolution_20261021_v1",
+    "experiment": "v2in_res320",
+    "seed": 1,
+    "run_id": "c7e29f0e5a974d4a9dc62f59273e307f",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_f1f6a78c0ebc4c28ac372f8d685d13b2.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_resolution_20261021_v1",
+    "experiment": "v2in_res320",
+    "seed": 2,
+    "run_id": "ca7fe019570f45109279ed9d89e71441",
+    "status": "completed",
+    "epochs": 17,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_4b29e8a38be04b0e8e4ba7897af59d73.jsonl",
+      "metrics_c84e108d855e47648ad4669cb9868e7f.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_resolution_20261021_v1",
+    "experiment": "v2in_res320",
+    "seed": 3,
+    "run_id": "c5e6be6d38dc4e22b25c25c68b79c39c",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_240972740d4a457eb6003218c037e6dd.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_resolution_20261021_v1",
+    "experiment": "v2in_res512",
+    "seed": 1,
+    "run_id": "1e32c15f7f13453983d2552608333e39",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_cdf336445b6448829f98c1cb04d2814c.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_resolution_20261021_v1",
+    "experiment": "v2in_res512",
+    "seed": 2,
+    "run_id": "596afe643c5e4362bb8332fcad252f9f",
+    "status": "completed",
+    "epochs": 15,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_f7177addef3c430eb8d4afadcad3c9b9.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  },
+  {
+    "round": "v2_resolution_20261021_v1",
+    "experiment": "v2in_res512",
+    "seed": 3,
+    "run_id": "16f68c2066fd44b4b280ed9e3760410c",
+    "status": "completed",
+    "epochs": 12,
+    "stop_reason": "early_stopping",
+    "epoch_history_included": true,
+    "metrics_logs": [
+      "metrics_e47f5f4359554236ad57a451b2e33520.jsonl"
+    ],
+    "weight_payload": "Drive only",
+    "curves": "numeric history included; no regenerated or medical image plot"
+  }
+]

@@ -1,0 +1,102 @@
+SkinDetect 第一輪完整基線比較：5 組、15 次獨立訓練
+日期：2026-10-19（Asia/Taipei）
+
+一、核定配置
+資料：去重正式 Manifest；Train=18,919、Validation=3,611；Test=1,502 封存。
+Manifest SHA256：5c501ef3cb6c8a73b3a9395383d199212e070abfbc67c782fcfc010576243284
+每組 Seeds=[1,2,3]；Min Epoch=12、Max Epoch=30、Early Stopping=True、Patience=5、Min Delta=0。
+選模：Robust Score = 0.5 × 三來源 BA 平均 + 0.5 × 三來源 BA 最低值。
+BA=該來源支援類別的 Recall 平均；HAM/BCN 七類，PAD 為 AKIEC/BCC/BKL/NV/MEL 五類。
+類別順序：AKIEC、BCC、BKL、DF、NV、VASC、MEL。Test 不參與訓練、選模、停止或彙整 Validation 成績。
+每個 Seed 從獨立初始化與空 Optimizer 開始；正式工作不讀取 Smoke 權重。
+改善必須 score > best_score；相等亦屬未改善。Patience 自第 1 輪累計並在改善時歸零，
+但第 12 輪前不得停止；第 12 輪起若 bad_epochs >= 5 即停止；達第 30 輪記為 max_epochs。
+最佳模型取首次達到最高 Validation Robust Score 的 best.pt。
+
+模型／初始化                    Input    Batch×Accum  Effective  LR      WD      LayerDecay  LS   MixUp  Clip  Scheduler
+mlp_pixels_random                64×64  64×1       64       0.001  0.0001  None        0.0  0.0   None  {'name': 'none'}
+resnet18_random                  224×224  32×1       32       0.0003  0.0001  None        0.0  0.0   None  {'name': 'none'}
+resnet18_imagenet                224×224  32×1       32       0.0003  0.0001  None        0.0  0.0   None  {'name': 'none'}
+convnextv2_tiny_random           224×224  32×2       64       0.0001  0.05  1.0        0.1  0.2   1.0  {'name': 'cosine', 'eta_min': 1e-06}
+convnextv2_tiny_imagenet         224×224  32×2       64       0.0001  0.05  1.0        0.1  0.2   1.0  {'name': 'cosine', 'eta_min': 1e-06}
+
+所有模型：AdamW，betas=(0.9,0.999)、eps=1e-8（原始預設），CrossEntropyLoss。
+Workers=4、AMP=True、CUDA pin_memory=True、persistent_workers=True、prefetch_factor=4。
+Workers=4 為每個 DataLoader；訓練／監測／三來源 Validation 共五個 Loader，持續存在時最多 20 個 Worker。
+MLP：沿用原生 Pixels MLP，Flatten→512/ReLU/Dropout(0.3)→256/ReLU→7；64×64，無增強，Normalize(0.5,0.5)。
+MLP：uniform AdamW，含 bias/norm 統一 WD=0.0001；無 Scheduler、無 MixUp、無梯度裁剪；shuffle 不放回。
+ResNet-18：沿用原生 7 類模型；正反初始化均採原生翻轉、0/90/180/270 旋轉及 RandomResizedCrop，
+輸入 224×224，Normalize mean/std 均 [0.5,0.5,0.5]；Validation 為 Resize，無隨機增強。
+ResNet：uniform AdamW，含 bias/norm 統一 WD=0.0001；無 Scheduler、無 MixUp、無梯度裁剪；shuffle 不放回。
+V2：真正的 ConvNeXt V2-Tiny，18 個 GRN，depths=[3,3,9,3]，7 類 head；並非 ConvNeXt V1。
+V2：保留 regularized_native 影像增強與 ImageNet Normalize；Random/ImageNet 均相同。
+V2：來源等機率、類別次方平滑 alpha=0.5 的加權有放回抽樣，每 Epoch 抽 18,919 次，非每張必取一次。
+V2：18 個參數群組，Layer Decay=1.0，初始 LR 全部 0.0001；一維參數與 bias 不做 WD。
+V2：CosineAnnealingLR T_max=30、eta_min=1e-6；所有群組 30 輪皆不增加 LR。
+effective_batch_size 為完整累積步的名目值，末批不足時保留原訓練器的末批更新方式。
+跨架構沿用各自基線；資料、類別與評估相同，前處理和抽樣依各模型原設定，故初始化差異以同架構內比較。
+
+二、初始化與權重來源
+mlp_pixels_random: Random，無預訓練檔案
+resnet18_random: Random，無預訓練檔案
+resnet18_imagenet: {"path": ".venv-skindetect/torch_cache/hub/checkpoints/resnet18-f37072fd.pth", "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec", "source": "torchvision/ResNet18_Weights.IMAGENET1K_V1", "url": "https://download.pytorch.org/models/resnet18-f37072fd.pth"}
+convnextv2_tiny_random: Random，無預訓練檔案
+convnextv2_tiny_imagenet: {"path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors", "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5", "source": "timm/convnextv2_tiny.fcmae_ft_in1k", "revision": "508caf1bc24fd02c69d15778b994e808670dbc28"}
+
+ImageNet 僅載入相符 backbone；七類 head 由該 Seed 初始化，與 Random 配對 head 相同。
+各 Seed head 不同，Optimizer 起始狀態皆為空；完整設定見 baseline_effective_configurations_20261019.json。
+
+三、Checkpoint／Resume
+沿用已驗收 training_state.py：model、Optimizer、Scheduler、AMP scaler、epoch、history、best metric/model、
+Patience、停止原因、Python/NumPy/Torch CPU/CUDA RNG、sampler 與各 Loader generator 狀態。
+Checkpoint 先寫暫存檔、fsync，再原子替換；SHA256 index 指向最近及上一個完整版本。
+最近版本損毀可回退上一完整版本；index 本身損毀或兩份皆壞則明確失敗，需要人工處理，絕不默默從頭跑。
+Resume 嚴格比對 Seed、模型、初始化、Manifest、完整訓練設定、程式及環境版本。
+best.pt 為推論模型，完整恢復使用 checkpoints/index.json 指定的 .pt，不直接拿 best.pt 接續。
+限制：Epoch 級恢復；中斷當輪會重跑。persistent workers 內部增強 RNG 不保證逐位元重播；
+主 RNG、抽樣及 Loader generator 均保存。AMP 可因非有限梯度跳過更新，GradScaler 狀態會接續。
+
+四、驗收證據
+資料／配置／15 個獨立起始狀態／V2 LR 分組：passed=True；[USER_HOME]\Documents\Codex\2026-10-18\skindetect-d-skindetect-base-agents-md-2\outputs\baseline_preflight_20261019.json
+五分支實際 GPU 與跨程序 Resume：passed=True；[USER_HOME]\Documents\Codex\2026-10-18\skindetect-d-skindetect-base-agents-md-2\outputs\baseline_gpu_resume_acceptance_20261019.json
+Windows 工作排程器獨立 Python 程序：passed=completed；[USER_HOME]\Documents\Codex\2026-10-18\skindetect-d-skindetect-base-agents-md-2\outputs\baseline_detached_probe_20261019.json
+回歸：既有 Resume 5 項、模型相容性 5 項皆通過；彙整工具合成測試亦通過。
+小型 GPU 指標只驗證流程，不能視為正式效能或模型排名。
+
+五、獨立啟動及監控
+正式新工作（先檢查 ACCEPTANCE.json 與凍結指紋，再由 Windows 工作排程器啟動）：
+& '資料治理與泛化修復\scripts\Start-Baseline.ps1'
+恢復同一工作（先移除 STOP；不會建立新 Seed 或套用 Smoke 權重）：
+& '資料治理與泛化修復\scripts\Start-Baseline.ps1' -Resume
+實際 Python 入口：
+& '.venv-skindetect\Scripts\python.exe' -B -u '資料治理與泛化修復\scripts\baseline_job.py' --suite '資料治理與泛化修復\configs\five_model_baseline_20261019_v1\suite.json' --output-root '資料治理與泛化修復\results\baseline_20261019_v1'
+主工作目錄：資料治理與泛化修復\results\baseline_20261019_v1
+每 15 秒更新 PROGRESS.txt 與 job.json；runs/<experiment>/regularized_seed<seed>/ 保存獨立配置身分、
+每 15 秒另更新主工作 MONITORING.md（15 次總表）及各 Seed/MONITORING.md（逐輪表）；
+包括即時 GPU Util／MiB／W 與 Train／Evaluation／Checkpoint 區段耗時。
+純 GPU 運算時間與純資料載入時間目前未獨立量測，表中列 N/A，不將整輪耗時冒充 GPU 時間。
+逐輪 metrics_*.jsonl、best.pt、checkpoints、result.json；runs/<experiment>/logs/ 保存各次 stdout/stderr。
+每輪記錄 Epoch、Train/Validation Loss、各來源 BA/Macro-F1/Accuracy/各類 Recall、Robust、耗時與 Patience。
+安全暫停：在主工作目錄建立空 STOP 檔；目前輪完成保存後停止，不啟動後續 Seed。
+Windows 必須保持開機、登入且不休眠；關閉 Codex 不影響 Task Scheduler 的 Python 工作。
+斷電／重新開機後需人工執行同一工作的 -Resume。程式／配置／Manifest 不可在執行期間修改。
+
+六、完整結果
+工作完成或停止時自動產生 reports/baseline_runs.csv、baseline_results.json、baseline_summary.md。
+每個 Seed 記錄最佳 Epoch、Robust、HAM/BCN/PAD BA、各來源 Macro-F1/Accuracy/Recall（含 MEL）、
+最佳輪 Train/Validation Loss、總訓練耗時、Early Stopping 原因、最佳模型與完整恢復 Checkpoint 路徑。
+耗時為累計訓練迴圈時間（含驗證及 Checkpoint，排除模型初始化及中斷停機）；程序起訖另見 Runner 紀錄。
+Validation 整體 Macro-F1／Accuracy 另由三來源混淆矩陣合併計算，Loss 按樣本數加權。
+五組各計三個 Seed 平均及樣本標準差（ddof=1）；ImageNet−Random 依相同 Seed 配對，差值×100 為百分點。
+未完成三個 Seed 時明確標示完成數，不冒充三個 Seed 的結果。完成後不再對 MLP/ResNet 調參。
+資料限制沿用發布文件：HAM/BCN 缺 patient ID 的範圍僅能保證既有 lesion/group 隔離；
+精確 SHA256 去重不等於全部近似影像去重；尚未逐一完整解碼所有圖片。
+
+七、本次修改範圍
+既有檔案：train_regularized.py（實驗 ID／全佇列 STOP）、run_formal_seeds.py（Smoke 取兩個有效 Batch／STOP）、
+suite_runner.py（正式授權門檻／STOP）。已驗收 training_state.py 與模型計算未重新開發。
+新增：baseline_job.py（獨立工作／監控）、summarize_baseline.py（結果彙整）、
+check_baseline_gate.py（凍結指紋檢查）、Start-Baseline.ps1（Windows 獨立啟動）。
+另存五份核定配置、suite.json、ACCEPTANCE.json 及驗收紀錄；原始圖片／正式 Manifest／原基線 JSON 未修改。
+
+目前正式工作狀態：{"job_id": "63498f14919145d595541e2b88ff0e92", "status": "running", "completed_runs": 0, "wrapper_pid": 30576, "child_pid": 31948, "updated_utc": "2026-10-19T05:23:31.262472+00:00"}

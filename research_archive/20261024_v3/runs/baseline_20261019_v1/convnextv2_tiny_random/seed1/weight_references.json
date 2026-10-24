@@ -1,0 +1,21 @@
+{
+  "best_pt_relative": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed1\\best.pt",
+  "best_pt_bytes_historical": 111550063,
+  "checkpoint_generations_historical": [
+    {
+      "file": "epoch-0016-893ad7b7669a4202a4e4c64a533971c2.pt",
+      "epoch": 16,
+      "sha256": "2551f63c1d1fc70462cef1f65970f1dbfa6718fbadbe8c47dbcc678dac87716b",
+      "exists": true,
+      "bytes": 446334247
+    },
+    {
+      "file": "epoch-0015-d6fa24c1a82f4a45946c2af92370b6ca.pt",
+      "epoch": 15,
+      "sha256": "dd2c888d035b81a04ec38a4ab83052d08adbd13c0a6f13a868d036d8a3535a8d",
+      "exists": true,
+      "bytes": 446332583
+    }
+  ],
+  "warning": "Existing historical hashes/sizes only; weights not read or rehashed; no invented best.pt SHA"
+}

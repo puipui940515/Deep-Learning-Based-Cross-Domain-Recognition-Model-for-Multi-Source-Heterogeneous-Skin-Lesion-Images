@@ -1,0 +1,2822 @@
+{
+  "status": "passed",
+  "sources_sha256": {
+    "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\FINAL_RESULTS.json": "9d7d6308befc4fc82941418ae1ab8ab3fc8b2feaebf215e9e8773d6c0081c4ff",
+    "資料治理與泛化修復\\results\\baseline_20261019_v1\\reports\\baseline_results.json": "41dd83026f8934de6e60cde658dc8b1857b89d889c8d17e301de80afee5b440f",
+    "recovery_20261023\\C_training_config\\run_config_audit.json": "77f4f2deb38dcf94d307d8fd7dcd6b06c72dbfd1c2f70155c386c1c285ed2cce",
+    "recovery_20261023\\C_training_config\\verification.json": "cea2b32f079c0e3d4be8b9ba99141889b778fd28c779760afc36ee31e1afd9eb"
+  },
+  "checks": [
+    {
+      "name": "resolution_completed_no_test_no_automatic_adoption",
+      "passed": true
+    },
+    {
+      "name": "six_complete_unique_runs",
+      "passed": true
+    },
+    {
+      "name": "baseline_report_complete_no_test",
+      "passed": true
+    },
+    {
+      "name": "existing_C_audit_reused_not_rerun",
+      "passed": true
+    },
+    {
+      "name": "contract_compatible_224_1",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_224_1_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_224_1_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_1_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "combined_MEL_support_224_1",
+      "passed": true
+    },
+    {
+      "name": "contract_compatible_224_2",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_224_2_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_224_2_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_2_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "combined_MEL_support_224_2",
+      "passed": true
+    },
+    {
+      "name": "contract_compatible_224_3",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_224_3_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_224_3_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_224_3_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "combined_MEL_support_224_3",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_224_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "contract_compatible_320_1",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_320_1_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_320_1_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_1_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "combined_MEL_support_320_1",
+      "passed": true
+    },
+    {
+      "name": "contract_compatible_320_2",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_320_2_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_320_2_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_2_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "combined_MEL_support_320_2",
+      "passed": true
+    },
+    {
+      "name": "contract_compatible_320_3",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_320_3_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_320_3_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_320_3_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "combined_MEL_support_320_3",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_320_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "contract_compatible_512_1",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_512_1_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_512_1_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_1_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "combined_MEL_support_512_1",
+      "passed": true
+    },
+    {
+      "name": "contract_compatible_512_2",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_512_2_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_512_2_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_2_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "combined_MEL_support_512_2",
+      "passed": true
+    },
+    {
+      "name": "contract_compatible_512_3",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_512_3_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "unsupported_only_PAD_DF_VASC_512_3_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "stored_recall_consistency_512_3_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "combined_MEL_support_512_3",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "support_constant_across_seeds_512_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_robust",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_accuracy",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_macro_f1",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_combined_mel",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_1_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_1_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_robust",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_accuracy",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_macro_f1",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_combined_mel",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_2_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_2_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_robust",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_accuracy",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_macro_f1",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_combined_mel",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_320-224_3_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_320-224_3_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_robust",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_accuracy",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_macro_f1",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_combined_mel",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_1_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_1_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_robust",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_accuracy",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_macro_f1",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_combined_mel",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_2_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_2_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_robust",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_accuracy",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_macro_f1",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_combined_mel",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-224_3_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-224_3_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_robust",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_accuracy",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_macro_f1",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_combined_mel",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_1_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_1_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_robust",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_accuracy",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_macro_f1",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_combined_mel",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_2_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_2_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_robust",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_accuracy",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_macro_f1",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_combined_mel",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "name": "paired_algebra_512-320_3_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_HAM10000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_HAM10000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_HAM10000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_HAM10000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_HAM10000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_HAM10000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_HAM10000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_BCN20000_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_BCN20000_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_BCN20000_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_BCN20000_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_BCN20000_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_BCN20000_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_BCN20000_MEL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_PAD-UFES-20_AKIEC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_PAD-UFES-20_BCC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_PAD-UFES-20_BKL",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_PAD-UFES-20_DF",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_PAD-UFES-20_NV",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_PAD-UFES-20_VASC",
+      "passed": true
+    },
+    {
+      "name": "paired_support_512-320_3_PAD-UFES-20_MEL",
+      "passed": true
+    },
+    {
+      "name": "nine_run_audit_records",
+      "passed": true
+    },
+    {
+      "name": "existing_train_val_membership_fingerprints_common",
+      "passed": true
+    },
+    {
+      "name": "before_after_source_sha_unchanged",
+      "passed": true
+    }
+  ],
+  "method": {
+    "cited": "Saved per-Seed metrics/disease TP/support/Recall, aggregate means/SD, paired deltas and mean paired deltas vs224.",
+    "derived": "512-320 same-Seed differences; missing paired SD, TP/count mean/SD and count differences; no metrics recalculation.",
+    "confusion_matrix_use": "Direct read of existing MEL->NV/DF->BCC cells only, not matrix reconstruction or metric computation.",
+    "ddof": 1,
+    "NA": "PAD DF/VASC recall and TP null, support0; excluded, not zero scores.",
+    "units": "Raw fractions retained full precision in JSON; report x100 for percentages/pp. Supports per Seed, no pooled Seed sample counts.",
+    "scope": "CPU standard-library JSON only"
+  },
+  "command": ".\\tools\\Python312\\python.exe -B -X utf8 .\\資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\prepare_comparison.py",
+  "working_directory": "D:\\SkinDetect_base"
+}

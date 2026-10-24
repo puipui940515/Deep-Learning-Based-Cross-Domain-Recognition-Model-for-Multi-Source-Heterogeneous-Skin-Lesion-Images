@@ -1,0 +1,1448 @@
+{
+  "version": "20261024_v3",
+  "status": "review_only_not_pushed",
+  "scope": "29 completed runs; source bounded read; no medical images/Test/weights",
+  "files": [
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed1\\result.json",
+      "source_sha256": "c645cda2a2cbe814d1de73d529fa6e85cff509201659d883d4cc94d0d337cdee",
+      "published_sha256": "b17a55a6bed7c5ac4b05ebdcab42dcefaf26b963ff7762d439e680871098dc56",
+      "bytes": 106592,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "297e89bc07ca4bd6440646745a78832cd3e578f690d576c94f4ec558cdffcc73",
+      "published_sha256": "d6500685573fbcfde1c5aab0168c8108e86b2c5b9e6a135e5302f7a855b506f8",
+      "bytes": 7095,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed1/metrics_767b2e7affc943f48fb4ac6279df03c4.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed1\\metrics_767b2e7affc943f48fb4ac6279df03c4.jsonl",
+      "source_sha256": "31d5670c5301521b24133ede603fad95130e46399a39983751ad24048929b79f",
+      "published_sha256": "adea9566b26eff12c4b2d5ae20d6673c3d0c6f1000ca6ac6103548dee0aa2ac4",
+      "bytes": 91458,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "0db5ba0f322d6535b7f2cabee0ea3657a557fe9a48dc691cd5626c61f603be87",
+      "published_sha256": "845d4cca090ec6d9874efa7b4a01b15e42f8226244ef33a5fac35a4ddb4dd765",
+      "bytes": 817,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed2\\result.json",
+      "source_sha256": "4b4a58a4814a4a0390e551f2f75e26d5f620b14adc9bb3468fc40a22b0eda81f",
+      "published_sha256": "5f677500a14f72cec306271c9ed496e8dcadf48a849139d174a7a3cc6fb719f0",
+      "bytes": 130393,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "c0427cd28348827a5105598367884aa41e77e3b0614230e09e30c4862e92e0a1",
+      "published_sha256": "8d901810369fa6c2a663b437a837732a324602ec713f8290752a35816823a3c0",
+      "bytes": 7096,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed2/metrics_25fd64433cd047d9a81f8e18c65acab1.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed2\\metrics_25fd64433cd047d9a81f8e18c65acab1.jsonl",
+      "source_sha256": "55c2c55dcb212e690783c66c4fc18431882321cc55a4470b77ea9d1f05298a16",
+      "published_sha256": "53528d2ceb4c808089f63ccd65140b4879fc30b50caf31641daae9ef8a2b2554",
+      "bytes": 114303,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "23dea3bc69dff36245a19c976a262a6f0c63a3c0c1b36129fd5120e540bab4f2",
+      "published_sha256": "2151106c53027e49d22f3b0d451017e928414937efb39e20b36957e8173119c8",
+      "bytes": 817,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed3/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed3\\result.json",
+      "source_sha256": "1924a8e5894b7c21699ca4a036741a92ef0f9219636701c81da6ed274085819b",
+      "published_sha256": "4986ad2cf3433dc6c320f7c2f59c381b78e1c98cbe5a8b23de534904769d07e3",
+      "bytes": 114488,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed3/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "087778ced86f139b4055325aa58606829c0c16678234bc211a968c4d93e5330d",
+      "published_sha256": "20b271e6204d468dde14d3db75a628e6a5ed8b0cbdbca887e740175ed727d1aa",
+      "bytes": 7095,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed3/metrics_8dc31a1b33f04d8abce1ac688fadbe3a.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed3\\metrics_8dc31a1b33f04d8abce1ac688fadbe3a.jsonl",
+      "source_sha256": "ca782bc4319b248c155bc0c7fabea4269142b04134470d3318b42357563e6ec8",
+      "published_sha256": "d82724bd384425c409c265f15925902b9dcb6105c81c1f5ffc7cb640db83a10d",
+      "bytes": 99071,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_imagenet/seed3/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "b5cb17976f068a47de5da3cc54b70f042791e31c8c9b492a3276d57f31eb5747",
+      "published_sha256": "092715bc6eec601b4abe49ba77703ff924920aeb330aa074ef29465612210097",
+      "bytes": 817,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed1\\result.json",
+      "source_sha256": "236fd811f3eed0a61037aadbbb2682451226b4957dba12bc97c436cdcf61c96a",
+      "published_sha256": "ad07b30bb4bffcafed1d744acf54c9138befc81452833d0547667c73d86abc06",
+      "bytes": 138622,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "f0a9d9c58e5fadbc44b16f1c921e97e722503a200a32b6d90f3a5f425af76c8f",
+      "published_sha256": "cb58c4bf6d2c5b377bdd31283d6b6eadd72a93a3f072834f1607d4d0b8c4ae04",
+      "bytes": 6549,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed1/metrics_701a2cbc3ff049f8ac647180d8a0633d.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed1\\metrics_701a2cbc3ff049f8ac647180d8a0633d.jsonl",
+      "source_sha256": "6b360f6d63b5d0a1994217c2ded48dfd62bd4da39e7c9b437624cc2fdeb40da7",
+      "published_sha256": "24e7c9e1a5f472b00599456a2976e9e3d63d39407f04fee6868bd618bf1f132e",
+      "bytes": 122187,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "599e492d17080fdc9365aee8757a0cac07e25c953e849ae6a9792501075dd029",
+      "published_sha256": "d196b4956b58dd0a010594d893f66fb9e87b27e713e89c385c182e70fd75e530",
+      "bytes": 815,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed2\\result.json",
+      "source_sha256": "cd0aad2f2d08155cebf2fb2437eac8d59d76513d20db71b4794892ab62b0bbbf",
+      "published_sha256": "3326b96f697bec899887d50a0d152907d6057953dce32adbc615fdbf09408275",
+      "bytes": 170491,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "86f549f38ce88c22ce88048c40eb2fd98bae331ff34809ae9b8ce5b815924228",
+      "published_sha256": "6dce26a14a211f36cb8dd863af2fcc1ba03243e22f9e6ee00f1149d22f899798",
+      "bytes": 6549,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed2/metrics_a6c91d8142ce4d6a98f0bc3086218185.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed2\\metrics_a6c91d8142ce4d6a98f0bc3086218185.jsonl",
+      "source_sha256": "e7e6cfcdfeb45a3c7519e8fdb95c3199dfb931e2453d34f947b6e3a6df438639",
+      "published_sha256": "967ef80fcbbeeff15444d0981b99c77458507e4378fdc2217075f5487ca756f7",
+      "bytes": 152745,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "cd08e422682e0abf6ba62573e8fdf651694e7dec9119775016b1ea4bda0202b1",
+      "published_sha256": "7b0b2a506bf94ffd3bdf0aefc09d7e816f2fdb0692039fdc0429700081106df8",
+      "bytes": 815,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed3/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed3\\result.json",
+      "source_sha256": "d7d3de597ab529f80eac1b23f9071ea907923d9bd94af021924a36de4512b025",
+      "published_sha256": "59e9662aa7f4023a065d62f1b0b3b2f5e2c61fa821d661c4a3230f140f422a42",
+      "bytes": 178406,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed3/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "3d398bf321e4d3f381dfff0a22be88d25d14e12cc3d5cb0158c9e1d6e12323d1",
+      "published_sha256": "beff2b5aa15620515c9826a2270bcc9a2b95233728fe550226ff0fd9cc1ff3ea",
+      "bytes": 6549,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed3/metrics_f62afbb7610c4177a00ace5229f6e35d.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_random\\regularized_seed3\\metrics_f62afbb7610c4177a00ace5229f6e35d.jsonl",
+      "source_sha256": "d41757a64607941c81d17a2269d683fc5414838be0bff5a65eb81cdec7e9e8c3",
+      "published_sha256": "94b6d6d049345a1ce8ad4bf0e1c9b715e06b8e960f43c9a6170f6adadcdc5640",
+      "bytes": 160366,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/convnextv2_tiny_random/seed3/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "912be0612a44bfdf76f6aa6b0718bddbdb20d28665fde4b2728323b009a110f0",
+      "published_sha256": "72f622366a2879ed283a38aceca9e3907badb8d6595a6b21a2d0a71a3e993eeb",
+      "bytes": 815,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed1\\result.json",
+      "source_sha256": "e6de4233178b9411a2a362bbf61edf554f65af109ce6624ac2856aca37b92acc",
+      "published_sha256": "086738dfc2d3de45dd0250e899862cccba825d37b9951eaa9a6f9ddeb4f53c25",
+      "bytes": 216112,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "77e0155bfb0cb3c8cb508799fb1dc11fa040039fceb433f9843dc113e5c1646c",
+      "published_sha256": "e0a4fde4ae79deaee8dc2e525cb8e19476c817a9181ab1c269e4969741911d4c",
+      "bytes": 5604,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed1/metrics_136295565b76484c86c192c9aaec395b.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed1\\metrics_136295565b76484c86c192c9aaec395b.jsonl",
+      "source_sha256": "a26b784f7b57debc8e32eecf7c1ad35bcfc824a1d0351ed4173e43129fe1499c",
+      "published_sha256": "40c62f942549eb1811a94523025c564d72dde1d385f25d4b19197a454c1b71a6",
+      "bytes": 83290,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed1/metrics_df84f49eaa23440398cb0aefab513a5b.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed1\\metrics_df84f49eaa23440398cb0aefab513a5b.jsonl",
+      "source_sha256": "18fb348862f94db82555cc5a4b2e07573937629eabe2a501364d740642c479d9",
+      "published_sha256": "642cda23bd00eb48d4a9309d8876592a9f98d5df5cf314f93bc9805b9dd86e3c",
+      "bytes": 114040,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "b28acb0d6c4c723797ec0a5f7b85ee3de3fecf50134d03df85a6df9c66577b89",
+      "published_sha256": "226e1ab445112de0e302fce1ddbadfea72be9702add880aa14c9c3919cb9a474",
+      "bytes": 334,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed2\\result.json",
+      "source_sha256": "fff88fc1e2010c6be4172b1ebfb064760535b44d1c895fe635e371d09e45ef59",
+      "published_sha256": "505b2a5491b01656f31e0e8acc8b76421ada4e847a235f88978e54adafcdb23f",
+      "bytes": 105119,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "79b03d5c1f180d5e18d642b0aa5257a13e6f2511cc602e97c4592c4ed2b17bc4",
+      "published_sha256": "2a674202d860c8ca337cf7cbd1458e209399112c53075c13a1df93b951d5c7bb",
+      "bytes": 5603,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed2/metrics_3fa0d02b2b474f0e858799d2e488c753.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed2\\metrics_3fa0d02b2b474f0e858799d2e488c753.jsonl",
+      "source_sha256": "baf1ccee4f558d74fc036993acbc953ecc4e29c93870631c2265957b73e2a064",
+      "published_sha256": "c2cce87ea1b9c1e3b372e8c0be5a1b7027315e0c25fa9d2ea00bcb38f5bdaebc",
+      "bytes": 90894,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "c2da9b4d2e4dddb21ce31e15fe266aca094d357c01fae33005102051f95fffd7",
+      "published_sha256": "dc8f2f374abd13d3984c4f8ec4d0413387b9b7839d815210e4062f3fff08cfc6",
+      "bytes": 334,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed3/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed3\\result.json",
+      "source_sha256": "c92c9aff4e812cba2a35ad467753884014e86ca6d0eb0a0381ffafe81f93042b",
+      "published_sha256": "f0a9ab3dbc18a3053508b1f625ef1f4e2bdf7913105abb3e9335f88b842c3ca7",
+      "bytes": 120897,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed3/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "dbe7f43e9be765c0b9053cb6d923918c94d6aeff54194fbef36efde6219f6c76",
+      "published_sha256": "25e255eef7b21d83d33b3f43492446df282b16ebfd0defef30340c3dcb9e973b",
+      "bytes": 5603,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed3/metrics_e827c82d063e444f9096f151849ddb4c.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\mlp_pixels_random\\regularized_seed3\\metrics_e827c82d063e444f9096f151849ddb4c.jsonl",
+      "source_sha256": "27bb6259deacb251a5a0517f63983f70c85569e66f7e451fab2740ac396c2e18",
+      "published_sha256": "a321f8ba162ad2f478329e881cedfb163616c4b7c3346895973c64dfb015e2d1",
+      "bytes": 105991,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/mlp_pixels_random/seed3/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "19a9480051e4d91338b00623ee64bb5e0fbf6839e20cc877546de8d4208a627c",
+      "published_sha256": "9ee17a958af7b955aa18dcf3ff04ee972665b6500edc157da52babb3ec42503c",
+      "bytes": 334,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed1\\result.json",
+      "source_sha256": "23380fdd399a4511dc2a80b953a3359cbd7be9d03035f719cc51948521971406",
+      "published_sha256": "bc26eddfd3e79fdcadb1c72e207baf99a9c32f8e1c9513e4ee7159c1a0c9c0f1",
+      "bytes": 105787,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "c5b096191292bb6689ef6de2229379f6c46d85fa5d3efcc8c4fc4878eb4a76ac",
+      "published_sha256": "cb49dca10f8115f3b9435ea903d93805eaa4c8484a7e69003d0824f63b28f9de",
+      "bytes": 6004,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed1/metrics_abb29be28d1341978a0917ed9c801af9.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed1\\metrics_abb29be28d1341978a0917ed9c801af9.jsonl",
+      "source_sha256": "3203bd46cdfa1cfc1b92bd7be9765a86d1724e8ce9f79299cb39d1680eec0e39",
+      "published_sha256": "3cded5b541eb9ece14d702e5c9f364d27a417edb4fb52e548d90609e8f5a14db",
+      "bytes": 91521,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "d1d5a1a9428e47de2ab1f42605546dbb153220bb07f3a0cc3d39179b733ded6d",
+      "published_sha256": "43dcaf68006b0e94c938f20e76aa44d08fa7ba6ac7c3a3bb763673d27aed5a2b",
+      "bytes": 334,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed2\\result.json",
+      "source_sha256": "e33cc8deb35bd282fd95dd7cb986551b936d0b65ebfd16d58b98c4d352b2de4d",
+      "published_sha256": "4f3352a2ae2a73b37a6c2d8ee8db27c39b3de3cabaaed3f9b00eaf39fd4030c4",
+      "bytes": 153456,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "ef7c8d0c89b056656d4102bd74f5582e3fa32dd2d6c8c0d062aadbaa94c7e6c5",
+      "published_sha256": "c6986a44593b5812a67183c769703c3c5d7ee9ed2ec84a0e7d838b9428a395d1",
+      "bytes": 6005,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed2/metrics_937e54e631764289a1a399408bb071b9.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed2\\metrics_937e54e631764289a1a399408bb071b9.jsonl",
+      "source_sha256": "0d734fb87bc170097fde4e80cc507df771ea8d4c725a8f228f732a7b2ab1eb65",
+      "published_sha256": "b55ba5e5134c722cdcf83591dd97dd087b1d69522ce0da7314b9537ed1ff972c",
+      "bytes": 137235,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "1ce4e1283b5ba0ec5ec892fb1eef298330f53c565c656c56034a07adf3f4f148",
+      "published_sha256": "4f67335abf1b94ab1da75286622d1143fc55ba70ff0edbd4441bd65ae49cb892",
+      "bytes": 334,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed3/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed3\\result.json",
+      "source_sha256": "a559bbb98b736b4284e4451395af88bd368561064c27529fb89d4f676e8d5d86",
+      "published_sha256": "b7bae10c21d8a9468acb86f36416699bf5e7fc5ccadb8aecc1e02dfaabbe2433",
+      "bytes": 177394,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed3/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "8c21d86c477c367659f132f67d10c68e6d7d4db1d26f36b6bb2c285efadca5eb",
+      "published_sha256": "5110261884412119ea2386236eb6e3601846129c04f49c1ea0ae806c15de47d2",
+      "bytes": 6005,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed3/metrics_bdde8a6de761459685ba1795c3048fff.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_imagenet\\regularized_seed3\\metrics_bdde8a6de761459685ba1795c3048fff.jsonl",
+      "source_sha256": "cae35d37bb30628d59903dbf5898f31334530bd64cdd4da0df23426d71e6fbc1",
+      "published_sha256": "64609f7ecb7a7ffa171e9dc52dc1255dd7d49faea31fc3b8219277f193130971",
+      "bytes": 160216,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_imagenet/seed3/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "4ca27578aa0d8ab7f3af546c5b458412ad3245562d6ab50d8fcd3ad844547c05",
+      "published_sha256": "78417eb12334c531247a79590311bb5ee43233e6db13653a15f5b790d143371e",
+      "bytes": 334,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed1\\result.json",
+      "source_sha256": "85067af3a484738f1d699715194db232061d53f12d50bd58bd9018f85293cd33",
+      "published_sha256": "b6d9d7db1967a4f4fd282bb941565640fc5613403fbdf6f58362253777a4fbbd",
+      "bytes": 248595,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "d67866c028dcf1ca3480e1ecef848a5998cc1b3e049d11e73ec5676553d51976",
+      "published_sha256": "df50b399947b3154a30f96ac2d2fffb1041417b3fbd1e8828918ce6b4315f4cb",
+      "bytes": 5588,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed1/metrics_092f9d2284cc40e2ae0c17960cd2dba1.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed1\\metrics_092f9d2284cc40e2ae0c17960cd2dba1.jsonl",
+      "source_sha256": "71ada8a1ee743497fedf6a3e16f475e8d50ff79db3961a8b0c7889850d240f9b",
+      "published_sha256": "6354c8987bee7429a392ca23379ed03fe30ea138f70c3a9d43799a8a2d1ef06f",
+      "bytes": 228516,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "51482cb36e69983290ba66e37e0c6d88a215cf9488a01a5020ffd97c662f90b1",
+      "published_sha256": "556ee63d779c9c5bd2d4070ab38bc72de2a87bf9be0fa2e8c696ebb3e36f72b6",
+      "bytes": 332,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed2\\result.json",
+      "source_sha256": "252b07105f060ec941b95ac13ebcf0c29ee0970dfdec309b82d5e035ee874290",
+      "published_sha256": "2656cd258067233428f02d6e9ada6347cb3ec1a74e864405632ba2e83f89e2d7",
+      "bytes": 248412,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "0dfcf185fbf58ca6e45616948a769f1a93a89d8e8c546a15fb6226df46da6927",
+      "published_sha256": "eebbe9cb85ab1d7bfe4dd9d690eb96842d2698fa8d9f3e1766e9fa12cab16702",
+      "bytes": 5588,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed2/metrics_7240dfe7facd41ffb007085552f4aa22.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed2\\metrics_7240dfe7facd41ffb007085552f4aa22.jsonl",
+      "source_sha256": "01ad2c5eb85c46bad0034668da3c9a4754ff77b309393643c68caeced08ad73a",
+      "published_sha256": "11eb3fb85a23f58faec5e8c09c13b2651bd8a902b1ed38a8ca99254b3390d57f",
+      "bytes": 228316,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "7d62fdb96f7d37484a5f8fcfcf9f3f094ed9f712a2fe63521393a0094f9b62da",
+      "published_sha256": "b983f788a9faf6c355801c4083dd95061b443511118fce5a517b5c39251545ee",
+      "bytes": 332,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed3/result.json",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed3\\result.json",
+      "source_sha256": "b735b6a830634e032809e27f6d31d3f3e160fe46b1a547c1225fb4e3a93b733a",
+      "published_sha256": "6c910cc0357df74585f726fbfe433b43e90271cc5ebf6c04d5e4bc67c87a9797",
+      "bytes": 137102,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed3/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "4754b9bfb52813d1898900ddc4ff692fd8eca7636dafd086d3bea73106938213",
+      "published_sha256": "91e18993de1b182daecb1514eaec13b89e0d3e0d9622c236a3fe3f8fd8ffa73a",
+      "bytes": 5592,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed3/metrics_d06527851f544439b5697c7dac360e99.jsonl",
+      "source": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\resnet18_random\\regularized_seed3\\metrics_d06527851f544439b5697c7dac360e99.jsonl",
+      "source_sha256": "9d67e98bf28783b264a81a87cdc54f3a67a3806580bdc8bd3f01767afb32a556",
+      "published_sha256": "bdea831b4734eee1c7395d353245f705f3e5d95fb1f5c02dd43dc87d2dd7ac28",
+      "bytes": 121523,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/baseline_20261019_v1/resnet18_random/seed3/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "3c4664eda93c39bcd2a5a4480edde52375d8a7a1a7a5e5c3b11c6c3037a5aba8",
+      "published_sha256": "0fb7183ac274becb11cec22e6eeb99eff93b397cd5f97c96e6701616e9eb48a9",
+      "bytes": 332,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_ld09/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_ld09\\regularized_seed1\\result.json",
+      "source_sha256": "6e0b122542f5e3f21f530f8cfe18af5f35de841e2a9c4a661498a1486d0dd495",
+      "published_sha256": "9c13373a86f32a560c13706ed68f9af3756def065d1bfd707447c778dd379e7a",
+      "bytes": 114416,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_ld09/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "2b27e1235bb211cd218db35f9c83aece83d5ff5eaf8d14f778615112509b64e9",
+      "published_sha256": "ff60628d9ef935f0c63606e3d6ae9520909617e4e4beef8f9e5d5c5622810221",
+      "bytes": 8418,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_ld09/seed1/metrics_b79098060a5d420dbacb3309e739ae61.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_ld09\\regularized_seed1\\metrics_b79098060a5d420dbacb3309e739ae61.jsonl",
+      "source_sha256": "6b3632f3848f046fa0e0552a6bd8bf881064f5b20db03a132e554869e489b0c0",
+      "published_sha256": "6d6b1202095404328f6cdc1f31cc8a10f42374671e385c5fc07fd1fdd3dceb54",
+      "bytes": 98248,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_ld09/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "4e30977485ad18debe0552655720894d3a237900a917c6fb4998cea96377a48e",
+      "published_sha256": "fd9cf3463fceb84139ea4b8f0157fb0ed86d5d07083794fe429fd80fa7025dce",
+      "bytes": 333,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_ld09/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_ld09\\regularized_seed2\\result.json",
+      "source_sha256": "d1cc85627d2de7166f755b1986eef37fff442c44a1a935aa263d969c9eb3d670",
+      "published_sha256": "8926a7038ad9810cd56daac27f1fb7646d36a610fb2f016d799ef5bac1ba37c0",
+      "bytes": 140085,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_ld09/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "d88850e8f2356c6a278d01b47815b876bfac0c0e179eb09966b5a8c31ab52ed7",
+      "published_sha256": "176e50cfe6afa44b0bcd2fb177cd09238dbd704299b074dcdc7859fe13a89804",
+      "bytes": 8419,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_ld09/seed2/metrics_cabb2b98d025469f87dc752efa4333fa.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_ld09\\regularized_seed2\\metrics_cabb2b98d025469f87dc752efa4333fa.jsonl",
+      "source_sha256": "66dd59d7f7dc3348369984790bbe86030ab524014416a55c40d0433a612b1199",
+      "published_sha256": "9cc2550e0ae125cf0bdc3ba2de5f1f1283e5af9e7373a6f630944839a6c9a5e3",
+      "bytes": 122846,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_ld09/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "18d2e6aaa17f0ab99f0dec6a8fe2c483881d6390e6f9f9817fcb16235531bd10",
+      "published_sha256": "909db638fdbf903ef6b315076cda5bdc996e9547d8855df5240d3978827d82b6",
+      "bytes": 333,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_lr5e5/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_lr5e5\\regularized_seed1\\result.json",
+      "source_sha256": "5936eb7e5207a6056cf6572ad6116b43659460c00346dd0eb110eb4d60d46b83",
+      "published_sha256": "ca1aa3384267c4f50de184829417dfe2ee5bafebcf06243b4c9fbfbcd829f790",
+      "bytes": 114167,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_lr5e5/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "890e1c4a3d341a674c986e25a26fb00c28af9884224820311eb1131e04f3b9f0",
+      "published_sha256": "1a151aa998887896103537b036ee97917a988d44920eb6a6336da2f6ce7bc7f8",
+      "bytes": 8422,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_lr5e5/seed1/metrics_d04c513bb4854accbd8eb300f740ec70.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_lr5e5\\regularized_seed1\\metrics_d04c513bb4854accbd8eb300f740ec70.jsonl",
+      "source_sha256": "fa682609f43bee0dfbdf9b98ba0688f686f8e17ce5bb15578cc03be98bc49125",
+      "published_sha256": "95527248ab23aa9c3b16ac4bb5f9d88ed3368232d4690c4938cecd2355e86f1f",
+      "bytes": 97935,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_lr5e5/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "9ce63055c70528b3986b52624ae20269b746032269cec01e94db7198a0df77da",
+      "published_sha256": "2393bf9297416ced636deec387e351edd659de242543ddfcfa149a3757f04a3b",
+      "bytes": 334,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_lr5e5/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_lr5e5\\regularized_seed2\\result.json",
+      "source_sha256": "81d5f34652f786c7da3f9f41cbc22fdc154e59f0701bd41fe6138ececda9054c",
+      "published_sha256": "fb44d0767f88ded82fbf486822e5d5ea42a5b76813fa0524dbfbc7ffa9157f3b",
+      "bytes": 114139,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_lr5e5/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "715c9ad74e0a510cb1dab5b8a4879c3226d55827f34c7279b3db64f6a9dc5fb3",
+      "published_sha256": "4f5141eba46a120d055ef8d664ba05e28e7324d678f6cb9bd179eeb47b408277",
+      "bytes": 8422,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_lr5e5/seed2/metrics_0aebe9b5a59c4ce8999c1003b955868f.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_20261020_v1\\runs\\v2in_lr5e5\\regularized_seed2\\metrics_0aebe9b5a59c4ce8999c1003b955868f.jsonl",
+      "source_sha256": "43e875917cb858d1937246958b17dd1dfb3d077a6803507f1242cd88bf448e2d",
+      "published_sha256": "b9be17da71f4b3a7317c7df085f003760afd3716e083f2eab65313df80d86625",
+      "bytes": 97953,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_20261020_v1/v2in_lr5e5/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "7b01b6b7f20c63dcbb5f94c49b0cf4f3934ef68db631ba57f02e62e829db8473",
+      "published_sha256": "575ade310a18a65d0a02b3dcb6965b049f7a9c04082878d9fb9583057753d778",
+      "bytes": 334,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_bcn50/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed1\\result.json",
+      "source_sha256": "b5895801b0eedc6dc1cec772961a4ec4ee32347cdf70f25183e9c8655f6f68bd",
+      "published_sha256": "75befc0aafb79f3652af0f58b01fb944fe4ce62c5b800263fb235e72fdac22f7",
+      "bytes": 116211,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_bcn50/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "69fd202d66746a60cb17aba75c2de27d87cd8742639a6163d29be6f0d26c2df4",
+      "published_sha256": "4183c88c0e0851d8e449f2c60ea2ae67f459c70d10e815f5edc30b91cdb29910",
+      "bytes": 10729,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_bcn50/seed1/metrics_e8caaf65b60a47eb95613473993a58a3.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed1\\metrics_e8caaf65b60a47eb95613473993a58a3.jsonl",
+      "source_sha256": "89351e54838a1ba6fb5fad4f247ec571022348840798bbef54f50b7b4e6906ae",
+      "published_sha256": "256e0d784d2452cc2d5ce87fcccfff47a9b4426065b8f4f0aaf4b1163f1d436a",
+      "bytes": 98049,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_bcn50/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "2d8a62a54414c63e526311accd95f0acab220f2e56d93fb7716355eb6651bda8",
+      "published_sha256": "1b8196a5ed1caf165d8c215b1c3c317ae32dfd26459e439c13bd3cd29dad0cbd",
+      "bytes": 344,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_bcn50/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed2\\result.json",
+      "source_sha256": "c51a12912502562f54937c968260a73349102f3a2b258ac86ba8541920b6c18f",
+      "published_sha256": "792f855311538daf275bcac706f522af1a17e09112ce37bf2275231800249843",
+      "bytes": 124741,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_bcn50/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "a0c6e8429079ee7ca282031e30a6847e2c1f795f1bcedd1cec11c9ddab6b87b6",
+      "published_sha256": "a606751c3db14b9d7843ed0444f7257b6bf856d71ad67ad0f9fd515bd4c3cfc0",
+      "bytes": 10729,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_bcn50/seed2/metrics_7a2274eb57a1481696bc73cdec6527d1.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_bcn50\\regularized_seed2\\metrics_7a2274eb57a1481696bc73cdec6527d1.jsonl",
+      "source_sha256": "97af6a63e8968f32b6d95e0a9a4b2a0b58a1ef70dd902b9285ed6af667303e1d",
+      "published_sha256": "8788f8466b5a2e30f1cee23e927e5b4cfda0f1c8215ad54ea6e10c57f0598be2",
+      "bytes": 106218,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_bcn50/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "e4a4f6ffd8e49dca2e1a64fb0ab9088d2464abd475e79e4113333aac0086ad33",
+      "published_sha256": "2094fe57179faacb9fc843359037c8da4a241713444624e94bc9f4b52971c316",
+      "bytes": 344,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_re0/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_re0\\regularized_seed1\\result.json",
+      "source_sha256": "6c223139120bce79766b9f6ec1038e86261639a8e89c49391ca40f44d8c7d400",
+      "published_sha256": "e6098a851aac145279de18a7266fac15ad661d2dcfa41363ea1a30abd0363857",
+      "bytes": 116250,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_re0/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "eef85abd7b1cfbd997b0a2395e72aff43bdfff6d923e2ac36494c1e2cf9a9635",
+      "published_sha256": "8152d8aca73a5b190575bfd4d8e7627cf78525dc3db8ef374519d57f5fcef9d4",
+      "bytes": 10664,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_re0/seed1/metrics_ccf5b8e390eb4103bc5fe0ec97f7671e.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_re0\\regularized_seed1\\metrics_ccf5b8e390eb4103bc5fe0ec97f7671e.jsonl",
+      "source_sha256": "6b2aff535e62c68ee31a336dd361a8496be7cdb51ec215b5430eec95fbc3e6e9",
+      "published_sha256": "793e3a028681fe0df80949198f874bc5eed751ea64bf5d82fe3f90c760d785f1",
+      "bytes": 98081,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_re0/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "3e966ef1dfa2775e1869d402ba119ee7d5c998ae909d5a21f1d20554c13573e8",
+      "published_sha256": "5df989dffb8f66ec7d7472f4c5616e444e5f08d86bad0d5e22d5644030746694",
+      "bytes": 342,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_re0/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_re0\\regularized_seed2\\result.json",
+      "source_sha256": "8d9b6c47ce92facb95337a8ce9684b42f4c7204a47387318397bc3fd58c9b046",
+      "published_sha256": "32f2881a8055b5d5aa22d3483f572f501ed26980407a58f2b70f24a817906f23",
+      "bytes": 116175,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_re0/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "a43ed5a3aab4f02cbc0efc0431e3211f3f7513fd778bdbdb00d7807bb64f5c3e",
+      "published_sha256": "7f689bda6669d9564759edf5053bc5a9fa34c18d0fad996de1c956adc282e2c7",
+      "bytes": 10664,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_re0/seed2/metrics_2c8dfb49f5a146da9476ad23113579cf.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\runs\\v2in_r2_re0\\regularized_seed2\\metrics_2c8dfb49f5a146da9476ad23113579cf.jsonl",
+      "source_sha256": "cea36c133ed36343ebf08a188664d7b598d6b532881fd4fce7d540d188e57718",
+      "published_sha256": "19a1551c8790cd4a2cb0bc2606658490ee1c7c8a4c77464ed8346ea58838f54e",
+      "bytes": 98001,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_optimization_round2_20261020_v1/v2in_r2_re0/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "0cd4e2d963dd89b0acd7df8ad8eebc32b9fedb563f7f8db3c20635c3addb9e75",
+      "published_sha256": "de32e9deb575aae12ddea64dc5d7c96d5c99665b3f37bdf330d5c521ab721327",
+      "bytes": 342,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed1\\result.json",
+      "source_sha256": "736d934751acefacb0081e28cbba6a25069b2570ce29890fa5cbe6898f2872d0",
+      "published_sha256": "9f4a5833c4a1126023c8c4deaf39eea8f050bf29dbf9308418abe3f024dde360",
+      "bytes": 115398,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "14f448fff8ae77a1087fc7f688d34d2e5ab22acbc7e033ab57f7576e3a84c267",
+      "published_sha256": "09214c2205cfdfd834e148512abff496621000ddf7b209bfd04501da06242ad9",
+      "bytes": 8689,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed1/metrics_f1f6a78c0ebc4c28ac372f8d685d13b2.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed1\\metrics_f1f6a78c0ebc4c28ac372f8d685d13b2.jsonl",
+      "source_sha256": "3967e2f289bb8fc8b8205ac4dbaaa2c13c4a88fc31774b6d720517701df6068b",
+      "published_sha256": "dd5175fb624954d3403b1604354a281e56fc578dedf6f844ec22988ab18a6b20",
+      "bytes": 99077,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "a9cdfafce01211503ca77d31e63805e17c3e27bca2cb4bce81fbb19b43231c55",
+      "published_sha256": "715d156504762c98c01bf9a409f5c9ff9a4af4fdd6937c115ea37198308226a9",
+      "bytes": 809,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed2\\result.json",
+      "source_sha256": "63a74f50785b30471519d3c296551d962f73e0096090a0e42be03371793beb48",
+      "published_sha256": "98ac5e8bb673bbf13ea1a5316e8ca0c1e9c300f3f302740843035591f9f795c3",
+      "bytes": 158233,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "17084d89d783da25c008f1f53d9c8a75cd630f8f619fecd3dd062d3fe3581dd3",
+      "published_sha256": "4ad1621df505a02438bde8bc9adf8f397472c5a5661163dabeb34f1def747a0b",
+      "bytes": 8690,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed2/metrics_4b29e8a38be04b0e8e4ba7897af59d73.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed2\\metrics_4b29e8a38be04b0e8e4ba7897af59d73.jsonl",
+      "source_sha256": "fc23950606466d360998d8136c66ff4e67850b7753e385487204d442a29b44c3",
+      "published_sha256": "bb037879cd6e62e9d802251a21b884b4809d789e2142a8f4187b576e6e4ae6f3",
+      "bytes": 82384,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed2/metrics_c84e108d855e47648ad4669cb9868e7f.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed2\\metrics_c84e108d855e47648ad4669cb9868e7f.jsonl",
+      "source_sha256": "596cbbd316a26dd25e6fb8445279d58c3ae3d7dd893ce7f639c84c807440f300",
+      "published_sha256": "c394aa58a7b2a291384637ad40cc4886c41ffbd4c95018e738c0bf919a2aedf7",
+      "bytes": 57757,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "c0288c9cf2c903de330c3a7d8ca7060bdddaa6b1b97ca69a20125406184cca9d",
+      "published_sha256": "9be646d19583d989016a8439e52b0a5d07ad5f9fb7854a19aa63a916dde6705f",
+      "bytes": 809,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed3/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed3\\result.json",
+      "source_sha256": "33f16dd7295db196763a0a2d2ff2ca3000ed0e1d1a84e376654f1483ee3d037f",
+      "published_sha256": "8cf589b6d0248aaa2a6693a04c2643404bdc4df08386c6656305a0ce38deb731",
+      "bytes": 115382,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed3/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "9d20d4898d411457f2e667e6aada84e9923e5531d4e356eede20f222b23bfc27",
+      "published_sha256": "57ee39e297e4ca3edda4cb658a7fb494a1b56f6c82788a725ad3c316d04ee36e",
+      "bytes": 8689,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed3/metrics_240972740d4a457eb6003218c037e6dd.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res320\\regularized_seed3\\metrics_240972740d4a457eb6003218c037e6dd.jsonl",
+      "source_sha256": "a30b5c2c0eafd6993325d11fae8910db1d23004ebf64acf84c01b55733ea7a69",
+      "published_sha256": "1ec3c02e6c4482e89d15cb4c4a1c53260ad7ae1f023706312be5ae5a43d07cda",
+      "bytes": 99078,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res320/seed3/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "6893f7eb364937ba73d3b3c97656968a322387b99fa923bad19d4ec4b63ff2f6",
+      "published_sha256": "45199860a599526dbc1b3bbf40e225632b33d87a462bedb115994a9a0e6b0ad8",
+      "bytes": 809,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed1/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\result.json",
+      "source_sha256": "1c140136faa5959395288973b40c2c3a4c9d5de3b6f3fcb3116695b727087630",
+      "published_sha256": "cefbba12e16556e8ff833fbe42ec0513ddd8099b88be285946e454ae89399ed0",
+      "bytes": 115379,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed1/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "3a9fc1319ddb41c2680f74dea7083f8df44fc98d49461e92686f7b101fa4a7b7",
+      "published_sha256": "91985eac25b6b9a9c9f58d0381fd0d8dfe84b19163bb73d100bd675042c35287",
+      "bytes": 8687,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed1/metrics_cdf336445b6448829f98c1cb04d2814c.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\metrics_cdf336445b6448829f98c1cb04d2814c.jsonl",
+      "source_sha256": "fa052ddde99002131b51e67a075d546fa326316b2765f8cf8ac6fb7c9e5c2d60",
+      "published_sha256": "b6370a02e9f949cebda0373eb25095216b2407d3a68fb13eb5e35436a8700d30",
+      "bytes": 99069,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed1/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "34bac9384db65dbee0c5b3fe0b3462947ed58ccf2c6a12b4885138b6edca354e",
+      "published_sha256": "951423553419a3803567c78ac73a6f393cb647f6f7861afd32baf667da66a49d",
+      "bytes": 809,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed2/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\result.json",
+      "source_sha256": "1a5038567a2afcdb14e298ec3e27791d65aa7e568440b8bf4d0192513fa74b5e",
+      "published_sha256": "822d8110b0373c05c9b6223e880fc9a8a9042fd5e940ff40b2a04f4765931ada",
+      "bytes": 141184,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed2/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "e0836cfbc35b1b02b275ea71a66df6337eb1ba3617207331453f06520e48ed6a",
+      "published_sha256": "c8f53db674180719e0aa21ca86c299b474fc3bb76be0f1ce726f31f1df6b0936",
+      "bytes": 8688,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed2/metrics_f7177addef3c430eb8d4afadcad3c9b9.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\metrics_f7177addef3c430eb8d4afadcad3c9b9.jsonl",
+      "source_sha256": "9fee8ea23ba261cf0d318db92ec20d36477e7fdc1dec15154b4297fe7bda145d",
+      "published_sha256": "cc8df12fc5bf7caf55540063782f2d48dd64ff359ab3a07a797e23826658329d",
+      "bytes": 123809,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed2/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "2dad2d74fda8ae067c7d916a4d2ac05f44da2309086741e1bf0615ce06f81ec4",
+      "published_sha256": "6985ecb3afdcf4cdd95cd19633b352ba41f96874482912d35ebdc46df266d856",
+      "bytes": 809,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed3/result.json",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\result.json",
+      "source_sha256": "0b7f70c19406382dc117c0a0eddff90c1f87a74e34775009400c66fe9517d2ab",
+      "published_sha256": "2286c653f7fedd11026c8fbe40388a884759c9a8aa493d3e07f3a8478f228482",
+      "bytes": 115434,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed3/effective_contract.json",
+      "source": "recovery_20261023/C_training_config/run_config_audit.json",
+      "source_sha256": "c6c7a5253a05230c5563f5994f9d263c12f521d6fc787084fa7f5345f7dafce1",
+      "published_sha256": "9463bf4df39826a984ff2f321e96b34c2d9a00df57d1de5f55cbb5c4c7dde411",
+      "bytes": 8687,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed3/metrics_e47f5f4359554236ad57a451b2e33520.jsonl",
+      "source": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\metrics_e47f5f4359554236ad57a451b2e33520.jsonl",
+      "source_sha256": "c13d8159ee9e87695b3f655f3ab33b2f67e4d3906916fad02f569227121e96e3",
+      "published_sha256": "8655161472cd7b0b3419f86344ee544f25ee2eccf2d847176125359a093af73b",
+      "bytes": 99151,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "runs/v2_resolution_20261021_v1/v2in_res512/seed3/weight_references.json",
+      "source": "recovery_20261024/training_run_audit.json",
+      "source_sha256": "28c4215ff1353f244a025e994ed125ee30d4fd6a6e4402eb203297125f36a85a",
+      "published_sha256": "af25be3d8b7791dd17b758c5d766d70bc842f58a2920d7ec613002443acf281c",
+      "bytes": 809,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "coverage_29_runs.json",
+      "source": "existing C audit and result history",
+      "source_sha256": "033d967cb36563e75ce8733a1a5a621716eb491d40b77b26f3fdc3dd35a05922",
+      "published_sha256": "a72a44d4488911d79f74082437434e4584bdbaa328d071f0f336c63a4d97d7c4",
+      "bytes": 14147,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/configs/v2_optimization_20261020_v1/sources_before/資料治理與泛化修復/scripts/train_regularized.py",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\sources_before\\資料治理與泛化修復\\scripts\\train_regularized.py",
+      "source_sha256": "6175dc0008b41c8ae57b0f90e0f5a27c20358fc7492d4d7ec34cf739feaf58ed",
+      "published_sha256": "30a6cb64c60038f616a7623314c8fcd1338cc6a9cb99259308c1d3798a30ee6d",
+      "bytes": 39042,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/training_state.py",
+      "source": "資料治理與泛化修復\\scripts\\training_state.py",
+      "source_sha256": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498",
+      "published_sha256": "c044d01ce1a67ff527bc99a5c433b900b9b83e8a419777b640083177c6076daa",
+      "bytes": 8538,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/coverage_sampler.py",
+      "source": "資料治理與泛化修復\\scripts\\coverage_sampler.py",
+      "source_sha256": "bceed257aa8891eee279324f3335cc3aea6464fe5c1e840472657493f005b7d9",
+      "published_sha256": "e6cc2601ff61a4886e3f53792a704e3b09fd3d41e70725ea72c45547bac27945",
+      "bytes": 4731,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/第二階段/src/stage2/models.py",
+      "source": "第二階段\\src\\stage2\\models.py",
+      "source_sha256": "5d23c92718c2539ba16195b24065b8eb7f08b7fd07a2bfe41dd2d4bf8f999657",
+      "published_sha256": "bb21ea349e972989b490015df5e6cb7647c6df6f55c49151e573c8d279d7d725",
+      "bytes": 2363,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/第二階段/src/stage2/engine.py",
+      "source": "第二階段\\src\\stage2\\engine.py",
+      "source_sha256": "19f265519880588537ea0f97a27810e922e2c7cc79c6e3cf82cfbb9b1f0b6c4b",
+      "published_sha256": "fca8a8e7fbb2ca20f6c7f00381ef495c91fd6f4c57887ad9c88d1cd33a602f53",
+      "bytes": 2253,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/第二階段/src/stage2/metrics.py",
+      "source": "第二階段\\src\\stage2\\metrics.py",
+      "source_sha256": "0bfa691ac0431db6e7bd8fc59d702b558f014e11cbaf30bc3f3c7ba3448d7ec1",
+      "published_sha256": "6138cdfafa0a047269bd1f83fe7d0096d28eb3882d5fac33025dd511a5ee82d1",
+      "bytes": 1511,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/configs/v2_optimization_20261020_v1/sources_before/資料治理與泛化修復/scripts/model_profiles.py",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\sources_before\\資料治理與泛化修復\\scripts\\model_profiles.py",
+      "source_sha256": "4d532b56eb611b5a1de5afb7a8becb93b8f7139c80ad70f72f2839f9c5ea0096",
+      "published_sha256": "03dd847d67c95f1b21faae7a56299a451d758f52726fe2f1dcff77b0be42dbef",
+      "bytes": 7623,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/第一階段/src/stage1/models.py",
+      "source": "第一階段\\src\\stage1\\models.py",
+      "source_sha256": "8a416325013ecfa1870616fd5a65f6ae7b743a1432f39e29c7801e7fb4ab90d1",
+      "published_sha256": "62ed47ebf7c881e2d0450dc9f50afd5870c2a4bd951dfa596c572dd54a6055bc",
+      "bytes": 2316,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/第一階段/src/stage1/data.py",
+      "source": "第一階段\\src\\stage1\\data.py",
+      "source_sha256": "85403d44f3928bbed8e5d1154ad5e7ef28ea31e0ce13bc1c4abe0c6542f0eb50",
+      "published_sha256": "227ef5450fd74558ca74e3b21908fdb9c6cad17538bf3300ba0d25dccea46f02",
+      "bytes": 2388,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/第二階段/src/stage2/data.py",
+      "source": "第二階段\\src\\stage2\\data.py",
+      "source_sha256": "22ed956a71225abaac72849d089993fe364a878f950d1401bee7a38cb6a0ada6",
+      "published_sha256": "dbff275bbb528e031600aed315a48be9da0060f317fa8523a27d36fc2677a1c9",
+      "bytes": 1815,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/configs/v2_optimization_20261020_v1/sources_runtime/資料治理與泛化修復/scripts/train_regularized.py",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\train_regularized.py",
+      "source_sha256": "ac13a7e9786fd4340b2ff87e30cc3d122d691e0fccce8d1dd7dcb09e22345872",
+      "published_sha256": "d5f01589f65f3ce644237c30b9eda83e4e16b41640389c24202b66ea7b6f74e9",
+      "bytes": 40412,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/configs/v2_optimization_20261020_v1/sources_runtime/資料治理與泛化修復/scripts/model_profiles.py",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\model_profiles.py",
+      "source_sha256": "cf9c85935870fc7abee6cf84604d3bf700f2215c2560d8541ecba941e2eaae40",
+      "published_sha256": "9d7d5f4095758f42e8f4d6a22a838aa814a5c5ddece18e33516f6a7f1fb24146",
+      "bytes": 8015,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/v2_opt_contract.py",
+      "source": "資料治理與泛化修復\\scripts\\v2_opt_contract.py",
+      "source_sha256": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1",
+      "published_sha256": "e68226d495e27a67efadf679fc12b79ae456d96666c2f96905f0125073534be4",
+      "bytes": 12343,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/run_v2_optimization.py",
+      "source": "資料治理與泛化修復\\scripts\\run_v2_optimization.py",
+      "source_sha256": "826ecd1e9070f274e1d6ba932ae4aa3f176b1bfa0a3f74b571f4436a5eee5702",
+      "published_sha256": "066770336008f2135139569c3beb7c0fd73f0ab558ee05d5b998a74c462a082e",
+      "bytes": 20451,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/configs/v2_optimization_round2_20261020_v1/sources_runtime/資料治理與泛化修復/scripts/train_regularized.py",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\train_regularized.py",
+      "source_sha256": "1858d934a59d3d23cdb7f3d829f1dfff84d612a5791d0d50b18e012dd214ce4d",
+      "published_sha256": "c63f0edcd73bec7b735c948791e35b03b89b3de070e7bcdfc3ae78e6da650817",
+      "bytes": 42292,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/configs/v2_optimization_round2_20261020_v1/sources_runtime/資料治理與泛化修復/scripts/model_profiles.py",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\model_profiles.py",
+      "source_sha256": "1e8d42f783ee809b2f27d497c9de449b9815d36baed9c19aa19cdf49c91a24af",
+      "published_sha256": "afa4d284fee92fffc7733c5d7a8eee314adb27cd7bf7e3387cd663dbab92015d",
+      "bytes": 8452,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/v2_round2_contract.py",
+      "source": "資料治理與泛化修復\\scripts\\v2_round2_contract.py",
+      "source_sha256": "9c5449112eb496491b08ddc97cb1197dd16b9e9cd7d2b0264117527c952753aa",
+      "published_sha256": "8d8a32b38fb47d17a0c762101bd3ea551d3dc1268ec7ce66a09869099367c6a2",
+      "bytes": 15235,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/run_v2_round2.py",
+      "source": "資料治理與泛化修復\\scripts\\run_v2_round2.py",
+      "source_sha256": "aa75c35f13f641e0879ae7d7947a5d6f210ed209c83b89e1477d96d04e110727",
+      "published_sha256": "f23e0d76d3d9e2aec1cbf51007389f57bd3b94074ac64a7979fe4a73e367d129",
+      "bytes": 21005,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/train_regularized.py",
+      "source": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "source_sha256": "5307539f6128219aa5cd9998fc74288f95eac1062b4206ba8b3480c349203610",
+      "published_sha256": "33a74cbaa870840a0955a11874822da63f5def798ed9d621e684173c727c01c3",
+      "bytes": 42894,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/model_profiles.py",
+      "source": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "source_sha256": "064a0b7720b7b3d5c17bc99a25d27b24ad3bba0b2d02bb626967551a514f21df",
+      "published_sha256": "1595243595d7a5fe78b64defd0983461e3c06d8e4bc19213cddc4eb9449d3085",
+      "bytes": 9105,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/v2_resolution_contract.py",
+      "source": "資料治理與泛化修復\\scripts\\v2_resolution_contract.py",
+      "source_sha256": "412af64f771bf62af4c3be24bcbefccc1fc4a7c54cbd8c34d9fc7d070267ab0b",
+      "published_sha256": "f4496f5fa99602b86ef5b3fd197a1a291f32950becda60b92af017b3df22b2d2",
+      "bytes": 13111,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "sources/資料治理與泛化修復/scripts/run_v2_resolution.py",
+      "source": "資料治理與泛化修復\\scripts\\run_v2_resolution.py",
+      "source_sha256": "0e4e222b2aefd21af1fd91d9e1f7a5c351b88e372dff212be6495ed6f2f3f634",
+      "published_sha256": "d23753bb428a79e79c9af38a5c3baf7c6986e8f1db817f43ad07742cd8814973",
+      "bytes": 17066,
+      "mode": "historical_source_checked_against_existing_C_hash"
+    },
+    {
+      "path": "configs/five_model_baseline_20261019_v1/convnextv2_tiny_imagenet.json",
+      "source": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\convnextv2_tiny_imagenet.json",
+      "source_sha256": "de0ed8cf7ddf94f4689614b93a839317a5ed049319be972aea89f66d1a2d699f",
+      "published_sha256": "4982675565cbd7641846b5865e4c30cea2a9efdfa20265505f8c05ee69c99940",
+      "bytes": 3827,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/five_model_baseline_20261019_v1/convnextv2_tiny_random.json",
+      "source": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\convnextv2_tiny_random.json",
+      "source_sha256": "0c0d39817d344cfe23121811f84508769beba90c718666123798f5ebc4b4c9cd",
+      "published_sha256": "88fce3f8f259c6d14fd2d0e05cf5910c8e6dd1bbdb8ab4751a2ebce9912c2c38",
+      "bytes": 3456,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/five_model_baseline_20261019_v1/mlp_pixels_random.json",
+      "source": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\mlp_pixels_random.json",
+      "source_sha256": "3f54df184c28de27a9bad59c182a64217fc0513292e995012d04f7110a56ae43",
+      "published_sha256": "c488d486154dcc2cb3f0bb9e68c886ce862a342af2aca31a62952cb9ae7c67b4",
+      "bytes": 3368,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/five_model_baseline_20261019_v1/resnet18_imagenet.json",
+      "source": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\resnet18_imagenet.json",
+      "source_sha256": "6d601515f36afba8a683b91dc397cec0acdbfe84d2ab651f3147195bcec6fbaa",
+      "published_sha256": "a0874b616268ab8c0a999f3a9c8f6baabd0aafe0d76a47593400452e83bc6989",
+      "bytes": 3681,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/five_model_baseline_20261019_v1/resnet18_random.json",
+      "source": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\resnet18_random.json",
+      "source_sha256": "9be467db48e92a5960497f2dafd4a14a73960de134ac245c308f0ced13d80d93",
+      "published_sha256": "79e4d8d7007936433389a261ef9e44d84d665ac8ee79586a955cf8d95e6456a1",
+      "bytes": 3366,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/five_model_baseline_20261019_v1/suite.json",
+      "source": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\suite.json",
+      "source_sha256": "68186d1aa9fd3aebeb8b40d898f4ac13f363008efe5ec6ff1068392ad5a27fc6",
+      "published_sha256": "22bd389d284ed8e9e8ce1e7932f7d2442a6f93962ea47803d87ae6ee9cedcce3",
+      "bytes": 1215,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/five_model_baseline_20261019_v1/TRAINING_PLAN.txt",
+      "source": "資料治理與泛化修復\\configs\\five_model_baseline_20261019_v1\\TRAINING_PLAN.txt",
+      "source_sha256": "f8d95e891ddef5bd7e4156c712b8aca8e54ec3c286dff507dc288646918144cb",
+      "published_sha256": "fb17c238641685a19833b7c14f912c27cb8de3f536f23aee2ad1b32729e417f5",
+      "bytes": 10174,
+      "mode": "sanitized_text"
+    },
+    {
+      "path": "configs/v2_optimization_20261020_v1/AUTHORIZATION.md",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\AUTHORIZATION.md",
+      "source_sha256": "53785e991a528a146d17bc4748d9152ba3792d307a42c0f35bf623b035d445a5",
+      "published_sha256": "cd7fa6b3e0a812bf2049f6b285737702623fd7ac3743a00dc7c63e91f4374da4",
+      "bytes": 3639,
+      "mode": "sanitized_text"
+    },
+    {
+      "path": "configs/v2_optimization_20261020_v1/suite.json",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\suite.json",
+      "source_sha256": "693343418eac649adfc5bed8b52cf1809caf0be059a90c7d08ede4f85eafe86d",
+      "published_sha256": "f4f6a55289a489a3e70c886ceea1b10d7bdf1afb6156b1fc2a7e05021d7cd879",
+      "bytes": 14247,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/v2_optimization_20261020_v1/v2in_ld09.json",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\v2in_ld09.json",
+      "source_sha256": "c6fd24873507e879effde9d3ecd29a8f85048fdd02cee14eedf16ae36793bf1a",
+      "published_sha256": "2f17b8996132fa65057598c33125e4b878b4ffd80bb1a2555f878ac75b6cd545",
+      "bytes": 3982,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/v2_optimization_20261020_v1/v2in_lr5e5.json",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_20261020_v1\\v2in_lr5e5.json",
+      "source_sha256": "607b605b4dc1816c07003db1bc8e5c4d7fdd9baa2e7e6dde8c9a9d32dc9ee361",
+      "published_sha256": "5c1717eee3b431f109e2a02d4ebad577477b8e6437b686debe7cca265edcbd84",
+      "bytes": 3982,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/v2_optimization_round2_20261020_v1/AUTHORIZATION.md",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\AUTHORIZATION.md",
+      "source_sha256": "7dcbbee9429a3ca1f446fe741e5883c605ed155111852bd6ffc2acac9d6e844e",
+      "published_sha256": "d944ce0697bbac5bc875525076284e0441a1fe8c263e62e9166c7fd09bd371cf",
+      "bytes": 3492,
+      "mode": "sanitized_text"
+    },
+    {
+      "path": "configs/v2_optimization_round2_20261020_v1/suite.json",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\suite.json",
+      "source_sha256": "19b9092f8d88a59ec142d0edb5e4ab65499fe11f5213553476a83b2c25cf67a5",
+      "published_sha256": "53bb6ebf312013cf7ea456e82014e758921394f24fe86170bf84249e3441951c",
+      "bytes": 22891,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/v2_optimization_round2_20261020_v1/v2in_r2_bcn50.json",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\v2in_r2_bcn50.json",
+      "source_sha256": "4b1707e9c13149768fab5481a6a99e0220db85d8d902f3810a780b06ca7f9834",
+      "published_sha256": "96989a2da4f79e29abf7f71f780b5392c52d328e39dae5252675edd43375e551",
+      "bytes": 4110,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/v2_optimization_round2_20261020_v1/v2in_r2_re0.json",
+      "source": "資料治理與泛化修復\\configs\\v2_optimization_round2_20261020_v1\\v2in_r2_re0.json",
+      "source_sha256": "c8b53d6912dc27934ad1daca36d2a7bba535b0318c9dd599d83561b5b9bbb253",
+      "published_sha256": "fb892e905efdf96c7e555de2892b5f97c54349ac51fc2624271a95b0eac53c47",
+      "bytes": 4063,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/v2_resolution_20261021_v1/AUTHORIZATION.md",
+      "source": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\AUTHORIZATION.md",
+      "source_sha256": "a946ba701ceaf6ad5bddf1461f57a38a894a52d511d9de0ddb4d3389ce25e703",
+      "published_sha256": "5375a781be81b81d1e046c0705bb417c4e42246df4e76ca1744257db773de7ce",
+      "bytes": 1437,
+      "mode": "sanitized_text"
+    },
+    {
+      "path": "configs/v2_resolution_20261021_v1/suite.json",
+      "source": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\suite.json",
+      "source_sha256": "77a64a647d9e1835e4778367ee78119d969cd1166f628cd810d0d84a0de020a9",
+      "published_sha256": "1322faec510726dc01d3a4dc9a98fa1165942509e771e356cf4056738de3180a",
+      "bytes": 13108,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/v2_resolution_20261021_v1/v2in_res320.json",
+      "source": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\v2in_res320.json",
+      "source_sha256": "c908d3948a8e7d90f07a58e6e2c229f1ff9d4cff32317e6fb6ab7985eb86a628",
+      "published_sha256": "22bc794d968d8655e184cb064b2004acaf0ebe3fbbd9a9f8d291a84bb460b9b5",
+      "bytes": 3982,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "configs/v2_resolution_20261021_v1/v2in_res512.json",
+      "source": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\v2in_res512.json",
+      "source_sha256": "f1130fb4acf7475ca9e59c2cedb7bf31d0de94424505409694248a371d3c9662",
+      "published_sha256": "d3ce6df52ec72633ab52fadac3adb7e08a53e0fed1d08a2b847c2c993ec80705",
+      "bytes": 3981,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "evidence/docs/PROJECT_STATE.md",
+      "source": "docs\\PROJECT_STATE.md",
+      "source_sha256": "66893565462c295c9d007929706c7829e7411ea31406770c801ea7ea3cbdb74c",
+      "published_sha256": "111797a426620be13f366593face7d7cc7d4dbac0b337c35367b96e38882dd81",
+      "bytes": 87424,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "evidence/docs/V2_EXPERIMENT_HISTORY.md",
+      "source": "docs\\V2_EXPERIMENT_HISTORY.md",
+      "source_sha256": "c24dd42e49a89e5a5c27d86c4e69fbc164d97cf35589a784ad120848335895b8",
+      "published_sha256": "dbb9d3784d614262b6ac829ce9f7ed660359811320a98b107af3c90fe3701f38",
+      "bytes": 104765,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "evidence/recovery_20261023/C_training_config/RECOVERY_REPORT.md",
+      "source": "recovery_20261023\\C_training_config\\RECOVERY_REPORT.md",
+      "source_sha256": "2d708347cd5a7907144049680566d2bf8c07a59161f6c3ae1fec1400770dd3e4",
+      "published_sha256": "6a3dd8ecf1c4a4c51ecf8c6b9102c00ab66c52ebfdf3a9111cdb029408b3b26a",
+      "bytes": 11799,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "evidence/recovery_20261023/C_training_config/run_summary.csv",
+      "source": "recovery_20261023\\C_training_config\\run_summary.csv",
+      "source_sha256": "b6bc20c78e37bf43a9d9d7bf9120c720eee106565bd5b8a09e4fd211750a7046",
+      "published_sha256": "c7ae429fa2862edc62ae7380ce254a3c94db7f0b74a538b3a3cd3f5f24992059",
+      "bytes": 3867,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "evidence/recovery_20261023/C_training_config/existing_decisions.json",
+      "source": "recovery_20261023\\C_training_config\\existing_decisions.json",
+      "source_sha256": "cd95c8884f5c11fb9a6a8b18a22e27e18fe367b864e0488bee3828f4ca8bb7c9",
+      "published_sha256": "191113d1fd01b2ab468f222482507753bacca644ab27bbb4a4da7b57f148874b",
+      "bytes": 125984,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "evidence/recovery_20261023/C_training_config/source_version_checks.json",
+      "source": "recovery_20261023\\C_training_config\\source_version_checks.json",
+      "source_sha256": "8f035d20436dd95caf701a2fade73e7811f1e6bf8559162bf84e45ff4dcef161",
+      "published_sha256": "4ba7e3227cfe43bc2730cfcd4565791279d4de6f28fdf5dfd949d2130a821dc8",
+      "bytes": 168432,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "evidence/recovery_20261023/C_training_config/source_fingerprints.json",
+      "source": "recovery_20261023\\C_training_config\\source_fingerprints.json",
+      "source_sha256": "06cb1ee2f39d88e56d9820fdfcf4f5e45be159e9e1925a5948f7de029059aff6",
+      "published_sha256": "4ada102d9178e166d1c95ca18ca6af921d1d1f5c8495cd35938ffd24ddb6beea",
+      "bytes": 23536,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "evidence/recovery_20261023/D_v2_analysis/resolution_decision_20261024_v1/DECISION.md",
+      "source": "recovery_20261023\\D_v2_analysis\\resolution_decision_20261024_v1\\DECISION.md",
+      "source_sha256": "a3676d1c234e154111aadab9037de09ae2bc30af48f653b5168da008f9d06e41",
+      "published_sha256": "9a0e68b01bb6d59f1f18f6a91c6ffbfc1c8c546d0d0b9f56706fb45ae09ef1f6",
+      "bytes": 21681,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "evidence/recovery_20261023/C_training_config/recovery_closeout_20261024_v1.md",
+      "source": "recovery_20261023\\C_training_config\\recovery_closeout_20261024_v1.md",
+      "source_sha256": "745d01269994632df47015269a2c810e438321148ab2e9e017fe6d5a9e7e2ecf",
+      "published_sha256": "4393a709a586be6593601cdfa395ed3a17f53d41afc1bb93ad19729824d3c9df",
+      "bytes": 8821,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "evidence/requirements.txt",
+      "source": "requirements.txt",
+      "source_sha256": "63548d18e09feef06cc18d3fd74d392b532c2e8f5fddf446773c083a5922ac5e",
+      "published_sha256": "60debad17cda0ab8584309e2ba5abc5848df0f170f60769ff9b7862e4a222757",
+      "bytes": 406,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "evidence/requirements-convnextv2.txt",
+      "source": "requirements-convnextv2.txt",
+      "source_sha256": "5171c432c7fb0b8ac86e38e3f0656d9e1135f94c9f322fa7b2d9e96fef3aa41c",
+      "published_sha256": "e9b9f113893ffac19244c76771f2b1e3c79144eef373fa4e4f58f8de7ef03db0",
+      "bytes": 99,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "evidence/資料治理與泛化修復/results/resolution_decision_20261024_v1/REPORT.md",
+      "source": "資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\REPORT.md",
+      "source_sha256": "ba87575a6001f657d4a3cc40ca26689991f57ff53921c5ebab2561b35703087d",
+      "published_sha256": "b780bd3c804addf0545ed81e7b6fbe0287ba8416057086db118489baf134c6f5",
+      "bytes": 8016,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "evidence/資料治理與泛化修復/results/resolution_decision_20261024_v1/COMPARISON.json",
+      "source": "資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\COMPARISON.json",
+      "source_sha256": "7ab920fd9793c568e46a0d354a66de4e70eb2be6f7acfaa60115733430c6260d",
+      "published_sha256": "354217e6d48b0b5a6700f68852d00b5f05c35e2cf05f23ed4cf68fc209dceea8",
+      "bytes": 453097,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "evidence/資料治理與泛化修復/results/resolution_decision_20261024_v1/SOURCES_METHOD_QA.json",
+      "source": "資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\SOURCES_METHOD_QA.json",
+      "source_sha256": "182e2047f2d0fcc5d74ef1a16cdd074ab62613e38b5b001e499bb29e532f856d",
+      "published_sha256": "01d2c7091995e305481ec2cbbe66c305cf2e5e657599f14385730db438a46d15",
+      "bytes": 68946,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "evidence/資料治理與泛化修復/results/resolution_decision_20261024_v1/DELIVERY_QA.json",
+      "source": "資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\DELIVERY_QA.json",
+      "source_sha256": "058f55e950bad62df0a45aca638fc4b8cb3a0c0773df9b4ced7b9b8b1a565d6f",
+      "published_sha256": "6d172d318c92bd753abf3bd2380c2f768b96fe705ca81532bc2e896d3177d406",
+      "bytes": 1300,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "evidence/資料治理與泛化修復/results/resolution_decision_20261024_v1/prepare_comparison.py",
+      "source": "資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\prepare_comparison.py",
+      "source_sha256": "3f300ce69a2694d6a09eaa8197152c23ec04fda62087f67928f1665c64801f47",
+      "published_sha256": "cdffdca0957be07cec8a4e4005cd9beb01a129081422acd736c35b2be8b8dced",
+      "bytes": 21105,
+      "mode": "sanitized_text_not_original"
+    },
+    {
+      "path": "not_executed_seed_slots.json",
+      "source": "existing C audit",
+      "source_sha256": "59d871df2342f28effdfe267b0285c4894b4dac56510816c21580ff8c9e77ccf",
+      "published_sha256": "d8a0829be66a83ebe64d6caf0de5d48ca6ce193af7f7f541a3488fd19f88c2be",
+      "bytes": 1131,
+      "mode": "sanitized_projection_not_original"
+    },
+    {
+      "path": "README.md",
+      "source": "H publication explanation",
+      "source_sha256": "713ae7aa0ea32900a8809505a1776b181cb1a39421af9e69d960b8d31ccc9b88",
+      "published_sha256": "e0bd3a211a77acbbedfe0d9436557ce0486d9dab4c8fdb0b267de60d2d82f842",
+      "bytes": 1262,
+      "mode": "new_explanation"
+    }
+  ],
+  "file_count_excluding_manifest": 178,
+  "total_bytes_excluding_manifest": 9445746,
+  "source_read_bytes": 7484048,
+  "coverage_groups": {
+    "baseline_20261019_v1": 15,
+    "v2_optimization_20261020_v1": 4,
+    "v2_optimization_round2_20261020_v1": 4,
+    "v2_resolution_20261021_v1": 6
+  },
+  "coverage_epochs": 456,
+  "held": [],
+  "destination_repo": "existing origin candidate; privacy/auth/write access not verified",
+  "destination_branch": "proposal codex/research-archive-20261024; not created",
+  "history_unreviewed": true,
+  "drive_folder_id": "1Bt9xFPhIehbyaJASbDQvAL1KtKhrSYci",
+  "drive_available_gb_user_reported_approx": 390,
+  "uploaded": false
+}
