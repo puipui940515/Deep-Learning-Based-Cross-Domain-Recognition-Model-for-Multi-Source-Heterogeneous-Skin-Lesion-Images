@@ -1,0 +1,19 @@
+{
+  "id": "576a7163c45940e6a662397635cc6050",
+  "candidate": "v2in_scale512_base_confirm",
+  "seed": 2,
+  "run_id": "cpu_fixture",
+  "epoch": 1,
+  "pid": 19244,
+  "started_utc": "2026-10-25T17:21:30.802476+00:00",
+  "started_unix": 1792948890.8024764,
+  "status": "completed",
+  "committed": true,
+  "seconds": 0.006643100001383573,
+  "ended_utc": "2026-10-25T17:21:30.808477+00:00",
+  "checkpoint": {
+    "epoch": 1,
+    "file": "fixture_only",
+    "sha256": "fixture"
+  }
+}

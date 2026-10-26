@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "captured_taipei": "2026-10-26T03:35:25+08:00",
+  "source_results": 34,
+  "closed_complete_epochs": 529,
+  "included_live_state_updated": "2026-10-25T19:35:23.327767+00:00",
+  "current_status": "running",
+  "source_files": 20,
+  "report_characters": 25771,
+  "required_robust_and_mel_tradeoff_present": true,
+  "sources_exist": true,
+  "copies_identical": true,
+  "sha256": "5bc8505d2bf92b1b4ba4d9bab53e3f8fc152043e76efa9390e05dc2b9b97c76d",
+  "d_path": "recovery_20261024\\training_status_20261026_v1\\SkinDetect_訓練現況_方法結果與問題總整理_20261026_v1.md",
+  "user_md_path": "[USER_HOME]\\OneDrive\\桌面\\專題檔案\\md\\SkinDetect_訓練現況_方法結果與問題總整理_20261026_v1.md",
+  "test_members_read": false,
+  "model_loaded": false,
+  "new_training_or_inference": false,
+  "cloud_sync_verified": false,
+  "docx_created": false,
+  "state_time_taipei": "2026-10-26T03:35:23+08:00（臺北）",
+  "editorial_fix": "Display state timestamp in Asia/Taipei; original raw timestamp preserved in source snapshot."
+}

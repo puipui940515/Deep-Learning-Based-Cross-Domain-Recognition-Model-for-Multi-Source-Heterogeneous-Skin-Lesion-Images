@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-25T02:42:33.1494214+08:00",
+  "formal_state": "completed",
+  "known_historical_own_pids": [
+    5232,
+    10272,
+    14076,
+    15388,
+    19316,
+    21756,
+    23976,
+    26444
+  ],
+  "matching_alpha025_processes": [],
+  "historical_pid_current_matches": [],
+  "current_python_summary": [
+    {
+      "pid": 15544,
+      "parent_pid": 22612,
+      "name": "python.exe",
+      "is_formal_training": false,
+      "is_multiprocessing_worker": false,
+      "is_api": true,
+      "device_flag_cpu": true
+    },
+    {
+      "pid": 21688,
+      "parent_pid": 15544,
+      "name": "python.exe",
+      "is_formal_training": false,
+      "is_multiprocessing_worker": false,
+      "is_api": true,
+      "device_flag_cpu": true
+    }
+  ],
+  "gpu_metadata_csv": "NVIDIA GeForce RTX 5070, 7, 1814, 12227, 10130",
+  "gpu_compute_apps_csv": [
+    "1708, [Insufficient Permissions], [N/A]",
+    "2096, C:\\Windows\\System32\\ShellHost.exe, [N/A]",
+    "1820, C:\\Windows\\explorer.exe, [N/A]",
+    "6080, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe, [N/A]",
+    "7872, C:\\Windows\\SystemApps\\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\\StartMenuExperienceHost.exe, [N/A]",
+    "7848, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe, [N/A]",
+    "9608, C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\156.0.4314.42\\msedgewebview2.exe, [N/A]",
+    "11496, C:\\Windows\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\TextInputHost.exe, [N/A]",
+    "1868, [USER_HOME]\\AppData\\Local\\Discord\\app-1.0.9265\\Discord.exe, [N/A]",
+    "7256, D:\\Opera\\opera.exe, [N/A]",
+    "14820, D:\\Opera\\opera.exe, [N/A]",
+    "18220, C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe, [N/A]",
+    "20544, C:\\Windows\\SystemApps\\Microsoft.AccountsControl_cw5n1h2txyewy\\AccountsControlHost.exe, [N/A]",
+    "10524, C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe, [N/A]",
+    "23396, [Insufficient Permissions], [N/A]",
+    "21028, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]",
+    "7016, [USER_HOME]\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\1fb7137c46617d50\\bin\\node_modules\\@oai\\sky\\bin\\windows\\swift\\x64\\codex-computer-use-swift.exe, [N/A]",
+    "21380, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]",
+    "22052, C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1021.3705.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe, [N/A]",
+    "14088, C:\\Program Files\\Riot Vanguard\\vgtray.exe, [N/A]",
+    "24316, C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE, [N/A]",
+    "27552, C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe, [N/A]",
+    "736, C:\\Windows\\System32\\ApplicationFrameHost.exe, [N/A]",
+    "17824, C:\\Windows\\ImmersiveControlPanel\\SystemSettings.exe, [N/A]"
+  ],
+  "actions": "read-only CIM and nvidia-smi metadata; no process termination; other services untouched"
+}

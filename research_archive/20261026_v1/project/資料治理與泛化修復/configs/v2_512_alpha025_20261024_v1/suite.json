@@ -1,0 +1,33 @@
+{
+  "version": "v2_512_alpha025_20261024_v1",
+  "candidates": [
+    "v2in_res512_alpha025"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "execution_policy": "all_three_seeds_no_quality_screen_termination",
+  "limits": {
+    "candidates": 1,
+    "runs": 3,
+    "max_epochs_per_run": 30,
+    "max_complete_epoch_segments": 90,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload",
+    "record_elapsed_seconds_including_failed_attempts": true,
+    "reuse_old_budget_or_authorization": false,
+    "automatic_retries": false
+  },
+  "configuration_approved": true,
+  "formal_training_authorized": false,
+  "formal_training_authorized_meaning": "This C task is configuration-only; B needs applicable execution instruction, current resources, new compatibility/gate evidence. Recipe is approved.",
+  "authorization_sha256": "83eecd31687be5e48fa704155bab4a7358b61a9e94aaf2f7c3b8a81773d21ee9",
+  "D_spec_sha256": "6374cb686c07fa2c3033e84c4a3245c609541bed35758ddc7a81636bb219954d",
+  "acceptance_nonce": null,
+  "compatibility_status": "pending_B",
+  "planned_results_root": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1",
+  "evaluation_contract": "EVALUATION_CONTRACT.json",
+  "sampling_contract": "SAMPLING_EXPOSURE.json"
+}

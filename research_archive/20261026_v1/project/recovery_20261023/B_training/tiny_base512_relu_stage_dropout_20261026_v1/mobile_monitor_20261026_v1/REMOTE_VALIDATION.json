@@ -1,0 +1,20 @@
+{
+  "checked_local": "2026-10-26T15:48:29.507661+08:00",
+  "url": "https://b02e24fabee0a0.lhr.life/fpbz5xX-h0jjm5f1fDHdOo7QEoP53XPq/",
+  "http_status": 200,
+  "known_run_id_present": true,
+  "protected_unlisted_paths": {
+    "/": 404,
+    "/AGENTS.md": 404,
+    "/MONITOR.md": 404
+  },
+  "https_public_roundtrip_passed": true,
+  "physical_phone_mobile_network_verified": false,
+  "refresh_seconds": 15,
+  "tunnel_pid": 17180,
+  "origin_monitor_pid": 3608,
+  "read_only": true,
+  "temporary_domain_may_change": true,
+  "windows_firewall_router_unchanged": true,
+  "no_package_install_or_download": true
+}

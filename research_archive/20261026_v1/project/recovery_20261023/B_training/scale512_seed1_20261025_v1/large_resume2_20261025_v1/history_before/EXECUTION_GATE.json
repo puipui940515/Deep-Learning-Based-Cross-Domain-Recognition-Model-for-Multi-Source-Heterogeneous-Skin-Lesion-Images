@@ -1,0 +1,156 @@
+{
+  "version": "v2_scale512_seed1_20261025_v1",
+  "execution_authorized": true,
+  "cpu_passed": true,
+  "limits": {
+    "runs": 3,
+    "epochs": 90,
+    "max_epochs_per_run": 30,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "timm": "1.0.30",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0"
+  },
+  "python": "3.12.10",
+  "frozen_files": {
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\train_regularized.py": "006eac866efe4d4fff35288d6aee96fdc6f7a353e85a13067dd9a1f66bddba37",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\model_profiles.py": "15c9e88352592782e1b8e0a603fbf37358e22c937a1838a366ad791f2a1b0659",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\v2_scale_contract.py": "2821a9decebfaf49bda2c260f2db7dafcf8f1d4370b19dea4dbe2ba93c4db73a",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\run_v2_scale512.py": "d81d8a61b05a48d3298f6de245499da061014b91b901ee655ce4c71c88bce2be",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\run_v2_alpha025.py": "ee5dfdea45235d58c629373cbc1e710d7776ae571bdc649efc95aee85dd0f88c",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\training_state.py": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\v2_opt_contract.py": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\coverage_sampler.py": "bceed257aa8891eee279324f3335cc3aea6464fe5c1e840472657493f005b7d9",
+    "D:\\SkinDetect_base\\第二階段\\src\\stage2\\models.py": "050d43578075d314b00ba09f4f034a67563ae6dcdbc5ccaa5ebba9ae95f1f595",
+    "D:\\SkinDetect_base\\第二階段\\src\\stage2\\engine.py": "19f265519880588537ea0f97a27810e922e2c7cc79c6e3cf82cfbb9b1f0b6c4b",
+    "D:\\SkinDetect_base\\第二階段\\src\\stage2\\metrics.py": "0bfa691ac0431db6e7bd8fc59d702b558f014e11cbaf30bc3f3c7ba3448d7ec1",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\Start-V2Scale512.ps1": "fa3625fd34fa5a68d83586b27b4ca5f40b87d684fa783e0d158fa4a0e0e3e04d",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\v2in_res512.json": "190dab3b13fe74ce325077d902bca2619c91f0505c64dc213c888f4b37916aa9",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\config.json": "3b8c5c1f788a5f0d51ef49f66d6d3ce2eeb81e5e537237759d7b330691dfccaf",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\SELECTION.json": "05eb63f127f1adcf402522ad564b2e9f1516c8b666c00f74988035fb760450ca",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\FINAL_CPU_CHECKS.json": "0752172cca6a92ca93771842eb301b3d6c2b6e675c30e1b2d5d09c06f8735f5d",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\CPU_CHECKS.json": "980c6625d3fc91bc3a9d9230e3903ed3b65f683b259b7bd66eaed659786b44e0",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_scale512_seed1_20261025_v1\\AUTHORIZATION.md": "759a0a34c1c665d04131514e65b63228b8303d30c34db153b87f8de158bb7fac",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_scale512_seed1_20261025_v1\\v2in_scale512_base.json": "8851ac898566de4b9e36c3ff54c5e1b4a156fd04fdd03e17329b3448f36b1c3a",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_scale512_seed1_20261025_v1\\v2in_scale512_huge.json": "ab8de2f20cbec2e1262a9c5713f5d8a116192361c4c34e2b5eceac28fa0c7e8d",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_scale512_seed1_20261025_v1\\v2in_scale512_large.json": "77c7891561e366a40bc62fe3c140b0fc9f3966243a19d24a7d20c979a71b42ce",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_scale512_seed1_20261025_v1\\WEIGHT_SPECS.json": "5d8308c0eba86efe692419a9bb524232eac0e9ee31bb27252f6b433fbcedcd32",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\base_micro2.json": "516c4b2722be568a187b7466b2a72fd0481038c84ba80266251c6df2a1c10feb",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\large_micro1.json": "cb7472472bb88e61fe0770e37dd64a64ab881fe7abb952c2b6e585590368a994"
+  },
+  "accepted_preflight": {
+    "huge": {
+      "status": "skipped_infeasible_estimate",
+      "reason": "AdamW CUDA foreach static/transient lower bound exceeds currently free VRAM even before activations/autocast/context",
+      "lower_bound_gib": 11.399553880095482,
+      "free_vram_gib": 10.89453125,
+      "minimum_micro_batch": 1,
+      "physical_total_mib": 12227.0,
+      "actual_gpu_oom_test": false,
+      "downloaded": false,
+      "pinned_source": {
+        "repo": "timm/convnextv2_huge.fcmae_ft_in1k",
+        "revision": "79144cc49b295e1bb236f0c49be7747ddeecdde0",
+        "sha256": "1330efa75dc4187aaed54f14a77a1faa424d51114bcd7df1cf774fb617525024",
+        "bytes": 2641197850,
+        "url": "https://huggingface.co/timm/convnextv2_huge.fcmae_ft_in1k/resolve/79144cc49b295e1bb236f0c49be7747ddeecdde0/model.safetensors",
+        "model_config": {
+          "architecture": "convnextv2_huge",
+          "num_classes": 1000,
+          "num_features": 2816,
+          "pretrained_cfg": {
+            "tag": "fcmae_ft_in1k",
+            "custom_load": false,
+            "input_size": [
+              3,
+              224,
+              224
+            ],
+            "test_input_size": [
+              3,
+              288,
+              288
+            ],
+            "fixed_input_size": false,
+            "interpolation": "bicubic",
+            "crop_pct": 0.875,
+            "test_crop_pct": 1.0,
+            "crop_mode": "center",
+            "mean": [
+              0.485,
+              0.456,
+              0.406
+            ],
+            "std": [
+              0.229,
+              0.224,
+              0.225
+            ],
+            "num_classes": 1000,
+            "pool_size": [
+              7,
+              7
+            ],
+            "first_conv": "stem.0",
+            "classifier": "head.fc",
+            "license": "cc-by-nc-4.0",
+            "origin_url": "https://github.com/facebookresearch/ConvNeXt-V2",
+            "paper_name": "ConvNeXt-V2: Co-designing and Scaling ConvNets with Masked Autoencoders",
+            "paper_ids": "arXiv:2301.00808"
+          }
+        },
+        "parameters_seven_class": 657492359,
+        "largest_optimizer_group_numel": 430075008,
+        "fp32_param_grad_two_moments_gib": 9.797399625182152,
+        "adamw_foreach_step_lower_bound_gib": 11.399553880095482,
+        "estimate_excludes_activations_autocast_cuda_and_desktop": true,
+        "depths": [
+          3,
+          3,
+          27,
+          3
+        ],
+        "grn_count": 36,
+        "provenance": "Official timm FCMAE ImageNet1K model card/API; no 22K or random substitute",
+        "adamw_basis": "Existing AdamW defaults to CUDA foreach; exp_avg_sq sqrt TensorList while params/grads/two moments reside; local torch/optim/adam.py"
+      },
+      "new_memory_strategy_used": false
+    },
+    "base": {
+      "status": "passed",
+      "micro_batch": 2,
+      "accumulation": 32,
+      "initial_classifier_sha256": "6271a799a429a3b0e82de648cb5c3547e2acceebb3f960b3f7e6ba82ad793afe",
+      "measured_steady_images_per_second": 24.11663134542566,
+      "peak_allocated_bytes": 4047823360,
+      "peak_reserved_bytes": 4057989120,
+      "evidence": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\base_micro2.json",
+      "selection_rule": "maximum observed second-cycle throughput among compatible approved options; peak VRAM recorded, no GPU100% objective",
+      "mixup_note": "Original microbatch-local randperm; pairing pool differs from Tiny8 when microbatch differs",
+      "short_sample_not_full_benchmark": true
+    },
+    "large": {
+      "status": "passed",
+      "micro_batch": 1,
+      "accumulation": 64,
+      "initial_classifier_sha256": "e396e1331184ae8e83a68771938696fe134cb37501af3df0b635af1c298674c2",
+      "measured_steady_images_per_second": 15.061956416375528,
+      "peak_allocated_bytes": 5445977600,
+      "peak_reserved_bytes": 5561647104,
+      "evidence": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\large_micro1.json",
+      "selection_rule": "maximum observed second-cycle throughput among compatible approved options; peak VRAM recorded, no GPU100% objective",
+      "mixup_note": "Original microbatch-local randperm; micro1 pairs with itself and makes MixUp ineffective",
+      "short_sample_not_full_benchmark": true
+    }
+  },
+  "resource_policy": "original startup-only; no runtime resource thresholds",
+  "formal_initialization": "new pinned ImageNet1K FCMAE backbone + independent Seed1 7-class head; never preflight state or old best",
+  "screen_limitations": "single Seed; microbatch changes local MixUp pairing; Large micro1 has self pairing",
+  "test_used": false,
+  "automatic_model_adoption": false
+}

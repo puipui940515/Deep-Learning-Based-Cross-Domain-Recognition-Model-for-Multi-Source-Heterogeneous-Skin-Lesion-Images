@@ -1,0 +1,15 @@
+{
+  "id": "bf0aafbe471840bc82422890fd860dc6",
+  "candidate": "v2in_res512_alpha025",
+  "seed": 1,
+  "run_id": "d87cb2eef21d47fc8a408aa16b70e641",
+  "epoch": 1,
+  "pid": 18628,
+  "started_utc": "2026-10-24T11:30:16.038341+00:00",
+  "started_unix": 1792841416.038341,
+  "status": "interrupted",
+  "committed": false,
+  "ended_utc": "2026-10-24T11:30:29.799793+00:00",
+  "seconds": 13.761452436447144,
+  "reason": "resource_guard_commit8_or_ram4"
+}

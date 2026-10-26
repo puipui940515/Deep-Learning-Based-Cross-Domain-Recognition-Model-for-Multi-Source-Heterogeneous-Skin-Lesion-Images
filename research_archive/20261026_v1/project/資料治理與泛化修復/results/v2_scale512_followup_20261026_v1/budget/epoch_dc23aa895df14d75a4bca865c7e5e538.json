@@ -1,0 +1,19 @@
+{
+  "id": "dc23aa895df14d75a4bca865c7e5e538",
+  "candidate": "v2in_scale512_base_confirm",
+  "seed": 3,
+  "run_id": "8001e75b4f034432bd4750a9cac48d4b",
+  "epoch": 13,
+  "pid": 14068,
+  "started_utc": "2026-10-25T22:46:16.670871+00:00",
+  "started_unix": 1792968376.670871,
+  "status": "completed",
+  "committed": true,
+  "seconds": 726.8037381000177,
+  "ended_utc": "2026-10-25T22:58:23.490115+00:00",
+  "checkpoint": {
+    "file": "epoch-0013-9f755801a85d40deabc94f6010adf2d4.pt",
+    "epoch": 13,
+    "sha256": "7f8a4899078061cfbedc5f34cd4f9a6d54aee2303ecd2b96bde3f6f59f556988"
+  }
+}

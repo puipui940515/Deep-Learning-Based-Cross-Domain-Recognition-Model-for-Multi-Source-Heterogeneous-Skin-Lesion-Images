@@ -1,0 +1,73 @@
+{
+  "version": "v2_tiny_base512_relu_stage_dropout_20261026_v1",
+  "status": "failed_preflight",
+  "rows": {
+    "tiny_seed1": {
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 1,
+      "model": "tiny",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 8,
+      "accumulation": 8
+    },
+    "tiny_seed2": {
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 2,
+      "model": "tiny",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 8,
+      "accumulation": 8
+    },
+    "tiny_seed3": {
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 3,
+      "model": "tiny",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 8,
+      "accumulation": 8
+    },
+    "base_seed1": {
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 1,
+      "model": "base",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 2,
+      "accumulation": 32
+    },
+    "base_seed2": {
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 2,
+      "model": "base",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 2,
+      "accumulation": 32
+    },
+    "base_seed3": {
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 3,
+      "model": "base",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 2,
+      "accumulation": 32
+    }
+  },
+  "formal_complete_epochs": 0,
+  "total_formal_attempt_seconds": 0,
+  "CPU_attempt_seconds": 8.498143600008916,
+  "GPU_prechecks_performed": 0,
+  "stopped_receipt": "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\STOPPED_RECEIPT.json",
+  "test_used": false,
+  "automatic_model_adoption": false
+}

@@ -1,0 +1,56 @@
+{
+  "status": "prepared_not_started",
+  "at": "2026-10-25T17:21:30.927468+00:00",
+  "jobs": [
+    [
+      "base_seed2",
+      "v2in_scale512_base_confirm",
+      2,
+      "base"
+    ],
+    [
+      "base_seed3",
+      "v2in_scale512_base_confirm",
+      3,
+      "base"
+    ],
+    [
+      "large_micro2_seed1",
+      "v2in_scale512_large_micro2",
+      1,
+      "large"
+    ]
+  ],
+  "gate_sha256": "468a5cc6b9d0bb21bbb306e88ec370007f299b02a2e14fd08215d4d06c0321d5",
+  "config_diff": {
+    "v2in_scale512_base_confirm": {
+      "scientific_training_changes": {},
+      "new_seed_list": [
+        2,
+        3
+      ],
+      "weight_spec_unchanged": true
+    },
+    "v2in_scale512_large_micro2": {
+      "scientific_training_changes": {
+        "batch_size": {
+          "before": 1,
+          "after": 2
+        },
+        "gradient_accumulation": {
+          "before": 64,
+          "after": 32
+        }
+      },
+      "new_seed_list": [
+        1
+      ],
+      "weight_spec_unchanged": true
+    }
+  },
+  "checks": 12,
+  "command": [
+    "recovery_20261023\\B_training\\scale512_followup_20261026_v1\\prepare_batch.py"
+  ],
+  "python": ".venv-skindetect-recovery-20261023\\Scripts\\python.exe"
+}

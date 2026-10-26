@@ -1,0 +1,16 @@
+{
+  "id": "d059a051b2bc4fa8a8d64a042a734265",
+  "candidate": "v2in_scale512_large",
+  "seed": 1,
+  "run_id": "7c6b140d4ed442389852be8707d8e2c6",
+  "epoch": 14,
+  "pid": 14916,
+  "started_utc": "2026-10-25T13:37:46.449766+00:00",
+  "started_unix": 1792935466.4497666,
+  "status": "interrupted",
+  "committed": false,
+  "seconds": 1431.6197786331177,
+  "ended_utc": "2026-10-25T14:01:38.070548+00:00",
+  "reason": "authorized_resume_exception",
+  "measurement": "wall_time_to_observed_failure_conservative_upper_bound"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "f3bbb82aa077467ba9bc3297cde9a01b",
+  "candidate": "v2in_scale512_large",
+  "seed": 1,
+  "run_id": "7c6b140d4ed442389852be8707d8e2c6",
+  "epoch": 14,
+  "pid": 6640,
+  "started_utc": "2026-10-25T12:55:56.437095+00:00",
+  "started_unix": 1792932956.4370956,
+  "status": "interrupted",
+  "committed": false,
+  "seconds": 1281.7619881629944,
+  "ended_utc": "2026-10-25T13:17:18.205093+00:00",
+  "reason": "trainer_exception",
+  "measurement": "wall_time_to_observed_failure_conservative_upper_bound"
+}

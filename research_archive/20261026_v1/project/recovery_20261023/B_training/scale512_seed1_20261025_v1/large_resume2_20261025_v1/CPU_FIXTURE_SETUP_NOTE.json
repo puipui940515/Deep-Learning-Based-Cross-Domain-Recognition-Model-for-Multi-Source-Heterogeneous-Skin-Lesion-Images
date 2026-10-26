@@ -1,0 +1,8 @@
+{
+  "status": "CPU_fixture_setup_error",
+  "error": "KeyError: 'data' during export_best on tiny synthetic contract",
+  "scope": "CPU test fixture omitted data provenance; no production checkpoint/model/data or GPU was used",
+  "evidence": "cpu_checkpoint_fixture retained",
+  "correction": "add explicit fixture data provenance and rerun only this narrow CPU regression using a new tiny fixture directory",
+  "at": "2026-10-25T23:00:46.3519730+08:00"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "new_gate_ready",
+  "configuration_approved": true,
+  "execution_authorized": true,
+  "training_started": false,
+  "CUDA_test_repeated": false,
+  "gate_sha256": "8ca2f1353aec40b455dd91ab6e42bb5bfc37caac0dd86ab015e49759400b9b0f",
+  "C_files_verified": 10,
+  "candidate": "v2in_res512_alpha025",
+  "limits": {
+    "runs": 3,
+    "epochs": 90,
+    "max_epochs_per_run": 30,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+  }
+}

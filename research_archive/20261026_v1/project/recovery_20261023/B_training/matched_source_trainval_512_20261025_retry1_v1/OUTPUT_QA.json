@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-25T12:59:17.139660+08:00",
+  "status": "passed",
+  "scope": "saved outputs only; no second inference",
+  "unique_non_test_images": 342,
+  "same_locked_order_both_models": true,
+  "scored_predictions": 684,
+  "diagnostic_forwards": 684,
+  "warmup_forwards": 6,
+  "total_forwards": 690,
+  "complete_source_class_pairs": 24,
+  "probability_finiteness_and_normalization_passed": true,
+  "group_and_split_isolation_passed": true,
+  "saved_stratum_tp_n_matches_predictions": true,
+  "original_failure_files_unchanged": 13,
+  "original_failure_lock_untouched": true,
+  "elapsed_seconds": 75.45299999999406,
+  "original_failed_attempt_seconds": 0.9529999999940628,
+  "model_loaded": false,
+  "images_opened": false,
+  "large_weights_hashed": false,
+  "automatic_retry": false
+}

@@ -1,0 +1,20 @@
+{
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "timm": "1.0.30",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0"
+  },
+  "python": "3.12.10",
+  "driver": "616.92",
+  "reused_micro2": [
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\base_micro2.json",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\large_micro2.json"
+  ],
+  "prior_successful_driver_evidence": "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume2_20261025_v1\\RESTORED_STATE.json",
+  "scientific_math_AST_unchanged": true,
+  "no_new_preflight_benchmark_install_download": true,
+  "old_study_closed": true,
+  "old_gate_sha256": "56794f3e02bd1387e85e5992444c1cea86a61c1719183b7684f96f2cc8493051"
+}

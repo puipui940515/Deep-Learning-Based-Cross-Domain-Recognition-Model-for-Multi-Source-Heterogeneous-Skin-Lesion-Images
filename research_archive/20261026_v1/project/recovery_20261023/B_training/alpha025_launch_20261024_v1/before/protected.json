@@ -1,0 +1,26 @@
+[
+  {
+    "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+    "sha256": "064A0B7720B7B3D5C17BC99A25D27B24AD3BBA0B2D02BB626967551A514F21DF"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+    "sha256": "5307539F6128219AA5CD9998FC74288F95EAC1062B4206BA8B3480C349203610"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\training_state.py",
+    "sha256": "13B3EBDB3B43C4FFB8DD202912E035A4BFE745F44488B58EE242FD0928964498"
+  },
+  {
+    "path": "start_ui.ps1",
+    "sha256": "F507D7C2A066371FFA519299BE311EB06937063513966A17A4EF72CC5DEB7C44"
+  },
+  {
+    "path": "第二階段\\src\\stage2\\models.py",
+    "sha256": "5D23C92718C2539BA16195B24065B8EB7F08B7FD07A2BFE41DD2D4BF8F999657"
+  },
+  {
+    "path": "資料治理與泛化修復\\config.json",
+    "sha256": "3B8C5C1F788A5F0D51EF49F66D6D3CE2EEB81E5E537237759D7B330691DFCCAF"
+  }
+]

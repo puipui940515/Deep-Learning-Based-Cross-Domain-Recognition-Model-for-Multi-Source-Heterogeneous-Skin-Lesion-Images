@@ -1,0 +1,4 @@
+{"at": "2026-10-26T16:51:07.333724+08:00", "status": "monitor_reachable"}
+{"at": "2026-10-26T16:52:08.829253+08:00", "status": "monitor_reachable"}
+{"at": "2026-10-26T16:53:10.535861+08:00", "status": "monitor_reachable"}
+{"at": "2026-10-26T16:54:12.190156+08:00", "status": "health_failed_no_restart", "error": "HTTP Error 502: Bad Gateway"}

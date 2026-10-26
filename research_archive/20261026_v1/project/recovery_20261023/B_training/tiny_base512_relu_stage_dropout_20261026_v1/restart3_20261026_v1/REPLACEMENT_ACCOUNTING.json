@@ -1,0 +1,33 @@
+{
+  "prior_failed_formal_run": {
+    "run_id": "9b38f8536746431b84a42f25d307569b",
+    "result_root": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart2_20261026_v1",
+    "formal_attempt_seconds": 534.1421076999977,
+    "committed_epochs": 0,
+    "uncommitted_epoch_segments": [
+      {
+        "id": "14c70a89f5184ef78fef06d6ddb6b8ac",
+        "candidate": "v2in_tiny512_relu_stage_dropout",
+        "seed": 1,
+        "run_id": "9b38f8536746431b84a42f25d307569b",
+        "epoch": 1,
+        "pid": 11640,
+        "started_utc": "2026-10-26T04:53:58.717942+00:00",
+        "started_unix": 1792990438.717942,
+        "status": "interrupted",
+        "committed": false,
+        "seconds": 425.7672619819641,
+        "ended_utc": "2026-10-26T05:01:04.485204+00:00",
+        "reason": "trainer_exception",
+        "measurement": "wall_time_to_observed_failure_conservative_upper_bound"
+      }
+    ],
+    "resume_available": false
+  },
+  "explicitly_authorized_additional_replacement_start": 1,
+  "current_execution_model_seed_tasks": 6,
+  "current_execution_start_limit": 6,
+  "maximum_total_formal_starts_with_preserved_failure": 7,
+  "max_total_committed_epochs": 180,
+  "wall_clock_cap_seconds": null
+}

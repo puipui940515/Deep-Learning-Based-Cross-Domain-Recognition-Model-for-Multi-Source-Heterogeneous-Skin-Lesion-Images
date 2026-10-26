@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "micro_CPU_only": true,
+  "no_images_or_models_or_GPU": true,
+  "cases": [
+    {
+      "job": "relu_seed1",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\runs\\v2in_tiny224_relu_only\\regularized_seed1",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\io_validation\\runs\\v2in_tiny224_relu_only\\regularized_seed1",
+      "formal_checkpoint_directory_chars": 176,
+      "isolated_checkpoint_directory_chars": 190,
+      "max_temp_path_chars": 235,
+      "temporary_write_replace_and_fsync": true,
+      "index_readback": true,
+      "generations": [
+        3,
+        2
+      ],
+      "best_export_replace_readback": true,
+      "full_state_readback": true
+    },
+    {
+      "job": "relu_seed2",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\runs\\v2in_tiny224_relu_only\\regularized_seed2",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\io_validation\\runs\\v2in_tiny224_relu_only\\regularized_seed2",
+      "formal_checkpoint_directory_chars": 176,
+      "isolated_checkpoint_directory_chars": 190,
+      "max_temp_path_chars": 235,
+      "temporary_write_replace_and_fsync": true,
+      "index_readback": true,
+      "generations": [
+        3,
+        2
+      ],
+      "best_export_replace_readback": true,
+      "full_state_readback": true
+    },
+    {
+      "job": "relu_seed3",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\runs\\v2in_tiny224_relu_only\\regularized_seed3",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\io_validation\\runs\\v2in_tiny224_relu_only\\regularized_seed3",
+      "formal_checkpoint_directory_chars": 176,
+      "isolated_checkpoint_directory_chars": 190,
+      "max_temp_path_chars": 235,
+      "temporary_write_replace_and_fsync": true,
+      "index_readback": true,
+      "generations": [
+        3,
+        2
+      ],
+      "best_export_replace_readback": true,
+      "full_state_readback": true
+    },
+    {
+      "job": "dropout_seed1",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\runs\\v2in_tiny224_stage_dropout01_only\\regularized_seed1",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\io_validation\\runs\\v2in_tiny224_stage_dropout01_only\\regularized_seed1",
+      "formal_checkpoint_directory_chars": 187,
+      "isolated_checkpoint_directory_chars": 201,
+      "max_temp_path_chars": 246,
+      "temporary_write_replace_and_fsync": true,
+      "index_readback": true,
+      "generations": [
+        3,
+        2
+      ],
+      "best_export_replace_readback": true,
+      "full_state_readback": true
+    },
+    {
+      "job": "dropout_seed2",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\runs\\v2in_tiny224_stage_dropout01_only\\regularized_seed2",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\io_validation\\runs\\v2in_tiny224_stage_dropout01_only\\regularized_seed2",
+      "formal_checkpoint_directory_chars": 187,
+      "isolated_checkpoint_directory_chars": 201,
+      "max_temp_path_chars": 246,
+      "temporary_write_replace_and_fsync": true,
+      "index_readback": true,
+      "generations": [
+        3,
+        2
+      ],
+      "best_export_replace_readback": true,
+      "full_state_readback": true
+    },
+    {
+      "job": "dropout_seed3",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\runs\\v2in_tiny224_stage_dropout01_only\\regularized_seed3",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\executions\\repair1_20261026_v1\\io_validation\\runs\\v2in_tiny224_stage_dropout01_only\\regularized_seed3",
+      "formal_checkpoint_directory_chars": 187,
+      "isolated_checkpoint_directory_chars": 201,
+      "max_temp_path_chars": 246,
+      "temporary_write_replace_and_fsync": true,
+      "index_readback": true,
+      "generations": [
+        3,
+        2
+      ],
+      "best_export_replace_readback": true,
+      "full_state_readback": true
+    }
+  ],
+  "case_count": 6,
+  "actual_fsync_calls": 54,
+  "actual_atomic_replace_calls": 54,
+  "max_temporary_chars": 246,
+  "original_checksum_fallback_contract_rejection_and_write_failure_protection_reused": "restart3/IO_VALIDATION.json; training_state.py byte-identical",
+  "seconds": 1.7670931000029668,
+  "command": [
+    "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\validate_checkpoint_io.py"
+  ],
+  "training_state_sha256": "b07c6b4882703ae27e784f9aeb3db8fea3fc8744b34b4401ac59c0cdc5729fec"
+}

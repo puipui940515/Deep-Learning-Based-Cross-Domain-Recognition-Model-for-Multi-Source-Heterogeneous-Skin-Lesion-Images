@@ -1,0 +1,70 @@
+{
+  "size": "tiny",
+  "status": "failed",
+  "pid": 25852,
+  "formal_training": false,
+  "seed": 1,
+  "micro_batch": 8,
+  "real_train_images": 8,
+  "model_forwards": 1,
+  "optimizer_updates": 0,
+  "weights_reused_for_formal": false,
+  "benchmark": false,
+  "initial_classifier_sha256": "2e363c2d895d83b871e758a532cd2181b8f9fab65fcc621e6094387d59dfdf43",
+  "architecture_audit": {
+    "variant": {
+      "block_activation": "relu",
+      "relu_inplace": false,
+      "stage_output_dropout": 0.1,
+      "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+      "dropout_type": "elementwise",
+      "block_dropout": 0.0,
+      "head_dropout": 0.0,
+      "drop_path": 0.0
+    },
+    "stage_depths": [
+      3,
+      3,
+      9,
+      3
+    ],
+    "relu_count": 18,
+    "grn_count": 18,
+    "stage_dropout_names": [
+      "stages.0.blocks.post_stage_dropout",
+      "stages.1.blocks.post_stage_dropout",
+      "stages.2.blocks.post_stage_dropout",
+      "stages.3.blocks.post_stage_dropout"
+    ],
+    "stage_dropout_count": 4,
+    "head_output_features": 7,
+    "feature_channels": [
+      96,
+      192,
+      384,
+      768
+    ],
+    "trainable_parameters": 27871879,
+    "parameter_keys_unchanged": true,
+    "state_key_sha256": "4845aaf2b472075c235fc6948bd7b6ddcbd4e76f59cfeb8eadb840525698c975"
+  },
+  "data_version": "governed_18979_20261018_v1",
+  "precheck_image_read_workers": 0,
+  "formal_workers_unchanged": 4,
+  "input_shape": [
+    8,
+    3,
+    512,
+    512
+  ],
+  "device": "NVIDIA GeForce RTX 5070",
+  "train_transform": "Compose(\n    RandomResizedCrop(size=(512, 512), scale=(0.7, 1.0), ratio=(0.75, 1.33), interpolation=bilinear, antialias=True)\n    RandomHorizontalFlip(p=0.5)\n    RandomVerticalFlip(p=0.5)\n    RandomRotation(degrees=[-25.0, 25.0], interpolation=nearest, expand=False, fill=0)\n    RandomApply(\n    p=0.8\n    ColorJitter(brightness=(0.78, 1.22), contrast=(0.78, 1.22), saturation=(0.8, 1.2), hue=(-0.03, 0.03))\n)\n    RandomGrayscale(p=0.05)\n    RandomApply(\n    p=0.15\n    GaussianBlur(kernel_size=(3, 3), sigma=(0.1, 1.5))\n)\n    RandomAutocontrast(p=0.1)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n    RandomErasing(p=0.15, scale=(0.02, 0.1), ratio=(0.3, 3.3), value=random, inplace=False)\n)",
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\restart1_20261026_v1\\gpu_compatibility.py\", line 46, in main\n    assert all(torch.isfinite(p.grad).all() for p in model.parameters() if p.grad is not None)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "seconds": 11.852585599990562,
+  "command": [
+    "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\restart1_20261026_v1\\gpu_compatibility.py",
+    "--size",
+    "tiny"
+  ]
+}

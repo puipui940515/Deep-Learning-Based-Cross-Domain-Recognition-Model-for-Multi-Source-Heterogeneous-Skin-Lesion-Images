@@ -1,0 +1,50 @@
+{
+  "job": "large_micro2_seed1",
+  "candidate": "v2in_scale512_large_micro2",
+  "seed": 1,
+  "command": [
+    ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "-X",
+    "utf8",
+    "資料治理與泛化修復\\scripts\\train_regularized.py",
+    "--config",
+    "資料治理與泛化修復\\configs\\v2_scale512_followup_20261026_v1\\v2in_scale512_large_micro2.json",
+    "--seed",
+    "1",
+    "--manifest-release",
+    "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+    "--output-root",
+    "資料治理與泛化修復\\results\\v2_scale512_followup_20261026_v1\\runs\\v2in_scale512_large_micro2",
+    "--require-cuda",
+    "--formal"
+  ],
+  "schedule": {
+    "memory": {
+      "at": "2026-10-25T22:58:28.119764+00:00",
+      "commit_headroom_gib": 66.99152755737305,
+      "commit_limit_gib": 79.11309814453125,
+      "commit_used_gib": 12.121570587158203,
+      "available_ram_gib": 21.646358489990234
+    },
+    "gpu": {
+      "name": "NVIDIA GeForce RTX 5070",
+      "utilization_percent": 0.0,
+      "used_mib": 445.0,
+      "total_mib": 12227.0,
+      "free_mib": 11782.0,
+      "power_w": 23.79
+    },
+    "conflicts": [],
+    "free_disk_gib": 393.80326080322266
+  },
+  "resume": false,
+  "status": "exited",
+  "started_utc": "2026-10-25T22:58:28.741450+00:00",
+  "pid": 27572,
+  "exit_code": 0,
+  "reason": null,
+  "seconds": 14910.372965499992,
+  "ended_utc": "2026-10-26T03:06:59.124310+00:00"
+}

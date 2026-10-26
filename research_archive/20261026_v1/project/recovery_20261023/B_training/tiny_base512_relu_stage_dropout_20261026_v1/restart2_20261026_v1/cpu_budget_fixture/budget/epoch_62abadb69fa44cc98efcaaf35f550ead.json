@@ -1,0 +1,19 @@
+{
+  "id": "62abadb69fa44cc98efcaaf35f550ead",
+  "candidate": "v2in_tiny512_relu_stage_dropout",
+  "seed": 1,
+  "run_id": "cpu_fixture_run",
+  "epoch": 1,
+  "pid": 1484,
+  "started_utc": "2026-10-26T04:50:19.475823+00:00",
+  "started_unix": 1792990219.4758232,
+  "status": "completed",
+  "committed": true,
+  "seconds": 0.005740299995522946,
+  "ended_utc": "2026-10-26T04:50:19.481589+00:00",
+  "checkpoint": {
+    "epoch": 1,
+    "file": "fixture",
+    "sha256": "fixture"
+  }
+}

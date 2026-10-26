@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-24T21:31:40.0991449+08:00",
+  "controller_launcher_pid": 5232,
+  "python": ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+  "arguments": [
+    "-B",
+    "-u",
+    "-X",
+    "utf8",
+    "\"資料治理與泛化修復\\scripts\\run_v2_alpha025.py\""
+  ],
+  "working_directory": "D:\\SkinDetect_base",
+  "execution_revision": "retry1_20261024_v1",
+  "resume": false,
+  "parent_failed_run_id": "d87cb2eef21d47fc8a408aa16b70e641",
+  "wall_clock_cap_seconds": null
+}

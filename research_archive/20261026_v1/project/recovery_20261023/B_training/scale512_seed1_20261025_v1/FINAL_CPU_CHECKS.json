@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checks": [
+    "base_measured_choice_optimizer_allocation_backbone_update_and_VRAM",
+    "large_measured_choice_optimizer_allocation_backbone_update_and_VRAM",
+    "huge_estimated_before_GPU_no_forced_run",
+    "train_epoch_calculation_unchanged",
+    "evaluate_calculation_unchanged",
+    "supported_source_metrics_calculation_unchanged",
+    "build_transform_calculation_unchanged",
+    "all_integrated_sources_syntax",
+    "baseline_config_identity",
+    "existing_unrelated_files_retained",
+    "passive_monitor_and_validation_timing_only"
+  ],
+  "no_new_GPU_work": true,
+  "old_CPU_checks": "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\CPU_CHECKS.json"
+}

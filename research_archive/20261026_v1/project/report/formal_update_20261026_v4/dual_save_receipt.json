@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "completed_taipei": "2026-10-26T03:38:03+08:00",
+  "logical_document": "v4",
+  "source_path": "report\\formal_update_20261026_v4\\SkinDetect_正式專題報告書_更新_v4.docx",
+  "copy_path": "[USER_HOME]\\OneDrive\\桌面\\專題檔案\\word\\SkinDetect_正式專題報告書_更新_v4.docx",
+  "sha256": "2db99a91b7151a937b6308557e28c39f26442da92851d2bcc049929989df8e82",
+  "bytes": 5201718,
+  "copies_byte_identical": true,
+  "copy_action": "created_new_without_overwrite",
+  "originals_v3_and_user_md_unchanged": true,
+  "cloud_sync_verified": false,
+  "pages": 55,
+  "visual_review": "passed_all_55_pages",
+  "caption_page_caches_verified": 36,
+  "research_execution": false
+}

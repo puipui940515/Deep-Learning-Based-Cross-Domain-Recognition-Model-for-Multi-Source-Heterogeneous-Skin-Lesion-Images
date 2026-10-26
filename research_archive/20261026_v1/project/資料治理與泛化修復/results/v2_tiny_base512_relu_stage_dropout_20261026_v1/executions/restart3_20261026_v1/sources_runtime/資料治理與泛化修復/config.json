@@ -1,0 +1,87 @@
+{
+  "pipeline_id": "source_leakage_overfit_device_v1",
+  "input_manifest": "多來源混合訓練_第二版/data/mixed_manifest.csv",
+  "data_definition": {
+    "schema_version": "skindetect-data-contract-v1.0",
+    "training_manifest": "資料治理與泛化修復/data/unified_manifest_v1.csv",
+    "disease_mapping": "資料治理與泛化修復/schema/disease_mapping_v1.csv",
+    "anatomical_site_mapping": "資料治理與泛化修復/schema/anatomical_site_mapping_v1.csv"
+  },
+  "baseline_result": "多來源混合訓練_第二版/results/imagenet_seed17/result.json",
+  "class_names": [
+    "AKIEC",
+    "BCC",
+    "BKL",
+    "DF",
+    "NV",
+    "VASC",
+    "MEL"
+  ],
+  "sources": {
+    "HAM10000": {
+      "modality": "dermoscopy",
+      "modality_zh": "皮膚鏡影像",
+      "license": "CC BY-NC 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "BCN20000": {
+      "modality": "dermoscopy",
+      "modality_zh": "皮膚鏡影像",
+      "license": "CC BY 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "PAD-UFES-20": {
+      "modality": "clinical_smartphone",
+      "modality_zh": "智慧型手機臨床影像",
+      "license": "CC BY 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ]
+    }
+  },
+  "leakage": {
+    "near_duplicate_phash_distance": 1,
+    "near_duplicate_dhash_distance": 2,
+    "review_phash_distance": 4,
+    "review_dhash_distance": 8
+  },
+  "training": {
+    "model": "convnext_tiny",
+    "initialization": "imagenet",
+    "normalization": "imagenet_mean_std",
+    "image_size": 224,
+    "batch_size": 16,
+    "gradient_accumulation": 2,
+    "epochs": 12,
+    "early_stopping_patience": 4,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.05,
+    "layer_decay": 0.75,
+    "label_smoothing": 0.1,
+    "mixup_alpha": 0.2,
+    "gradient_clip_norm": 1.0,
+    "class_balance_alpha": 0.5,
+    "num_workers": 4,
+    "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy"
+  }
+}

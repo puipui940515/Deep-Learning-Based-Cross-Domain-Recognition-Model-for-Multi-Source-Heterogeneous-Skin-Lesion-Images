@@ -1,0 +1,48 @@
+{
+  "status": "resumed",
+  "run_id": "7c6b140d4ed442389852be8707d8e2c6",
+  "pid": 14916,
+  "resume": true,
+  "start_epoch": 13,
+  "next_epoch": 14,
+  "restored_components": {
+    "model": true,
+    "optimizer": true,
+    "scheduler": true,
+    "scaler": true,
+    "rng": true,
+    "sampler": true,
+    "loader_generators": true,
+    "history": true,
+    "best": true,
+    "early_stopping": true
+  },
+  "source_files_unchanged": true,
+  "persistent_worker_bitwise_replay_guaranteed": false,
+  "cuda_minimum_check": {
+    "elements": 4,
+    "passed": true,
+    "device": "NVIDIA GeForce RTX 5070",
+    "torch_version": "2.11.0+cu128",
+    "driver_after": "616.92",
+    "model_forward_calls": 0
+  },
+  "checkpoint": {
+    "file": "epoch-0013-81822a02ce1649848ae54c11b4aac6f0.pt",
+    "epoch": 13,
+    "sha256": "32457b3e0c75c43c7874ea5cab06a83ebf9207b3730ff8393efb98f87d2d11a9"
+  },
+  "checksum_and_full_contract_valid": true,
+  "loaded_best_epoch": 11,
+  "loaded_bad_epochs": 2,
+  "loaded_history_epochs": 13,
+  "loaded_current_lr": 6.079162869547907e-05,
+  "loaded_scaler": {
+    "scale": 16384.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000,
+    "_growth_tracker": 1840
+  },
+  "all_required_state_restored": true
+}

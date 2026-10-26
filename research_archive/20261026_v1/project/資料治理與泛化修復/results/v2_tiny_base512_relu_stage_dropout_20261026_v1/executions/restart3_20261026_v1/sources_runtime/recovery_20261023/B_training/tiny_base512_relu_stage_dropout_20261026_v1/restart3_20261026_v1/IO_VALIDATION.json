@@ -1,0 +1,153 @@
+{
+  "status": "passed",
+  "no_images": true,
+  "no_models": true,
+  "no_GPU": true,
+  "no_formal_checkpoints_overwritten": true,
+  "cases": [
+    {
+      "job": "tiny_seed1",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\io_validation\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1",
+      "formal_checkpoint_dir_chars": 182,
+      "isolated_checkpoint_dir_chars": 196,
+      "original_formal_temporary_chars": 266,
+      "max_new_isolated_temporary_chars": 241,
+      "atomic_write_replace": true,
+      "failed_writer_preserves_old_target": true,
+      "two_generations_retained": [
+        3,
+        2
+      ],
+      "oldest_removed_after_index": true,
+      "index_readback": true,
+      "best_export_and_replace": true,
+      "full_CPU_payload_readback": true,
+      "original_contract_mismatch_rejected": true,
+      "original_checksum_fallback_verified": true,
+      "fixture_latest_restored": true
+    },
+    {
+      "job": "tiny_seed2",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\io_validation\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2",
+      "formal_checkpoint_dir_chars": 182,
+      "isolated_checkpoint_dir_chars": 196,
+      "original_formal_temporary_chars": 266,
+      "max_new_isolated_temporary_chars": 241,
+      "atomic_write_replace": true,
+      "failed_writer_preserves_old_target": true,
+      "two_generations_retained": [
+        3,
+        2
+      ],
+      "oldest_removed_after_index": true,
+      "index_readback": true,
+      "best_export_and_replace": true,
+      "full_CPU_payload_readback": true,
+      "original_contract_mismatch_rejected": true,
+      "original_checksum_fallback_verified": true,
+      "fixture_latest_restored": true
+    },
+    {
+      "job": "tiny_seed3",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed3",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\io_validation\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed3",
+      "formal_checkpoint_dir_chars": 182,
+      "isolated_checkpoint_dir_chars": 196,
+      "original_formal_temporary_chars": 266,
+      "max_new_isolated_temporary_chars": 241,
+      "atomic_write_replace": true,
+      "failed_writer_preserves_old_target": true,
+      "two_generations_retained": [
+        3,
+        2
+      ],
+      "oldest_removed_after_index": true,
+      "index_readback": true,
+      "best_export_and_replace": true,
+      "full_CPU_payload_readback": true,
+      "original_contract_mismatch_rejected": true,
+      "original_checksum_fallback_verified": true,
+      "fixture_latest_restored": true
+    },
+    {
+      "job": "base_seed1",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_base512_relu_stage_dropout\\regularized_seed1",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\io_validation\\runs\\v2in_base512_relu_stage_dropout\\regularized_seed1",
+      "formal_checkpoint_dir_chars": 182,
+      "isolated_checkpoint_dir_chars": 196,
+      "original_formal_temporary_chars": 266,
+      "max_new_isolated_temporary_chars": 241,
+      "atomic_write_replace": true,
+      "failed_writer_preserves_old_target": true,
+      "two_generations_retained": [
+        3,
+        2
+      ],
+      "oldest_removed_after_index": true,
+      "index_readback": true,
+      "best_export_and_replace": true,
+      "full_CPU_payload_readback": true,
+      "original_contract_mismatch_rejected": true,
+      "original_checksum_fallback_verified": true,
+      "fixture_latest_restored": true
+    },
+    {
+      "job": "base_seed2",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_base512_relu_stage_dropout\\regularized_seed2",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\io_validation\\runs\\v2in_base512_relu_stage_dropout\\regularized_seed2",
+      "formal_checkpoint_dir_chars": 182,
+      "isolated_checkpoint_dir_chars": 196,
+      "original_formal_temporary_chars": 266,
+      "max_new_isolated_temporary_chars": 241,
+      "atomic_write_replace": true,
+      "failed_writer_preserves_old_target": true,
+      "two_generations_retained": [
+        3,
+        2
+      ],
+      "oldest_removed_after_index": true,
+      "index_readback": true,
+      "best_export_and_replace": true,
+      "full_CPU_payload_readback": true,
+      "original_contract_mismatch_rejected": true,
+      "original_checksum_fallback_verified": true,
+      "fixture_latest_restored": true
+    },
+    {
+      "job": "base_seed3",
+      "formal_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_base512_relu_stage_dropout\\regularized_seed3",
+      "isolated_folder": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\io_validation\\runs\\v2in_base512_relu_stage_dropout\\regularized_seed3",
+      "formal_checkpoint_dir_chars": 182,
+      "isolated_checkpoint_dir_chars": 196,
+      "original_formal_temporary_chars": 266,
+      "max_new_isolated_temporary_chars": 241,
+      "atomic_write_replace": true,
+      "failed_writer_preserves_old_target": true,
+      "two_generations_retained": [
+        3,
+        2
+      ],
+      "oldest_removed_after_index": true,
+      "index_readback": true,
+      "best_export_and_replace": true,
+      "full_CPU_payload_readback": true,
+      "original_contract_mismatch_rejected": true,
+      "original_checksum_fallback_verified": true,
+      "fixture_latest_restored": true
+    }
+  ],
+  "case_count": 6,
+  "all_six_formal_paths_covered": true,
+  "actual_fsync_calls": 78,
+  "same_directory_atomic_replace_calls": 78,
+  "maximum_formal_legacy_temporary_chars": 266,
+  "maximum_isolated_new_temporary_chars": 241,
+  "seconds": 1.8492707000114024,
+  "command": [
+    "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\restart3_20261026_v1\\validate_checkpoint_io.py"
+  ],
+  "python": ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+  "training_state_sha256": "b07c6b4882703ae27e784f9aeb3db8fea3fc8744b34b4401ac59c0cdc5729fec"
+}

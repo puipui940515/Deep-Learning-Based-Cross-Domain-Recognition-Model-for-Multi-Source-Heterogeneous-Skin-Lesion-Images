@@ -1,0 +1,17 @@
+test_90_complete_epoch_limit (__main__.ContractTests.test_90_complete_epoch_limit) ... ok
+test_active_lease_must_stop (__main__.ContractTests.test_active_lease_must_stop) ... ok
+test_approved_new_profile (__main__.ContractTests.test_approved_new_profile) ... ok
+test_batch_size_and_lr_changes_rejected (__main__.ContractTests.test_batch_size_and_lr_changes_rejected) ... ok
+test_changed_files_parse_without_importing_trainer (__main__.ContractTests.test_changed_files_parse_without_importing_trainer) ... ok
+test_completed_epoch_no_replay (__main__.ContractTests.test_completed_epoch_no_replay) ... ok
+test_explicit_time_unbounded (__main__.ContractTests.test_explicit_time_unbounded) ... ok
+test_original_512_profile_still_valid (__main__.ContractTests.test_original_512_profile_still_valid) ... ok
+test_seed_cannot_be_reinitialized (__main__.ContractTests.test_seed_cannot_be_reinitialized) ... ok
+test_seed_epoch_limits (__main__.ContractTests.test_seed_epoch_limits) ... ok
+test_unapproved_alpha_rejected (__main__.ContractTests.test_unapproved_alpha_rejected) ... ok
+test_unknown_id_rejected (__main__.ContractTests.test_unknown_id_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.027s
+
+OK

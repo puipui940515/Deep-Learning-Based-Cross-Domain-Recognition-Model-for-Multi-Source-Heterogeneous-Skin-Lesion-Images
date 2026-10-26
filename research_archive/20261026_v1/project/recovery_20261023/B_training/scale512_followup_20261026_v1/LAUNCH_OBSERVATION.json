@@ -1,0 +1,43 @@
+{
+  "observed_local": "2026-10-26T01:26:03.820833+08:00",
+  "status": "running",
+  "controller_pid": 11500,
+  "controller_outer_pid": 7752,
+  "trainer_actual_pid": 25964,
+  "trainer_outer_pid": 16856,
+  "run_id": "5e4892aab71a4cdab15858051da413f2",
+  "seed": 2,
+  "device": "cuda",
+  "initial_optimizer_state_entries": 0,
+  "initial_classifier_sha256": "3bb296b97954e314899dcc23c489db6ad7646ffef3d5e0118a589b117bfb31e5",
+  "completed_epochs": 0,
+  "monitor": "資料治理與泛化修復\\results\\v2_scale512_followup_20261026_v1\\MONITOR.md",
+  "monitor_update_seconds": 15,
+  "last_monitor_update": "2026-10-25T17:25:57.004862+00:00",
+  "progress": "訓練:  18%|█▊        | 1739/9460 [03:06<11:35, 11.10batch/s]",
+  "command": [
+    ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "-X",
+    "utf8",
+    "資料治理與泛化修復\\scripts\\train_regularized.py",
+    "--config",
+    "資料治理與泛化修復\\configs\\v2_scale512_followup_20261026_v1\\v2in_scale512_base_confirm.json",
+    "--seed",
+    "2",
+    "--manifest-release",
+    "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+    "--output-root",
+    "資料治理與泛化修復\\results\\v2_scale512_followup_20261026_v1\\runs\\v2in_scale512_base_confirm",
+    "--require-cuda",
+    "--formal"
+  ],
+  "stdout": "資料治理與泛化修復\\results\\v2_scale512_followup_20261026_v1\\logs\\base_seed2_5deee3989e614ed7a7667bd67b13186e.stdout.log",
+  "stderr": "資料治理與泛化修復\\results\\v2_scale512_followup_20261026_v1\\logs\\base_seed2_5deee3989e614ed7a7667bd67b13186e.stderr.log",
+  "pending_jobs": [
+    "base_seed3",
+    "large_micro2_seed1"
+  ],
+  "first_complete_epoch_checkpoint_verified": false
+}

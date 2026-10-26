@@ -1,0 +1,63 @@
+{
+  "recorded_taipei": "2026-10-26T22:56:11.837590+08:00",
+  "status": "stopped_after_GPU_actual_update_acceptance_failure",
+  "formal_runs_started": 0,
+  "formal_complete_epochs": 0,
+  "cpu_IO_receipt": "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\IO_VALIDATION_fix1.json",
+  "cpu_IO_passed": true,
+  "all_six_formal_paths_covered": true,
+  "max_isolated_temporary_chars": 246,
+  "CPU_fixture_has_valid_capture_rng_and_CPU_Generator_states": true,
+  "cpu_architecture_receipts_reused": {
+    "relu": {
+      "path": "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\CPU_relu.json",
+      "sha256": "fe99144501ae5e05c0a882e61204c9a0427750bbf5bcb6bd01e85f4626d1e769"
+    },
+    "dropout": {
+      "path": "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\CPU_dropout.json",
+      "sha256": "2796b94f90a915dafc9d296e7cd440cd7c4e5d39764d18e84b75f3aa5b981ff2"
+    }
+  },
+  "gpu_receipt": "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\repair1_20261026_v1\\GPU_relu.json",
+  "observed": {
+    "status": "failed",
+    "model_forwards": 2,
+    "optimizer_updates": 0,
+    "loss": 1.9535214304924011,
+    "amp_scale_before": 65536.0,
+    "amp_scale_after": 32768.0,
+    "optimizer_state_entries": 0,
+    "required_optimizer_state_entries": 200,
+    "output_shape": [
+      32,
+      7
+    ],
+    "output_finite": true,
+    "output_device": "cuda:0",
+    "peak_allocated_bytes": 3349759488,
+    "peak_reserved_bytes": 3783262208,
+    "seconds": 10.855855100002373,
+    "pid": 9420,
+    "error": "RuntimeError('Native AMP did not complete the required actual AdamW update; no fake success or retry')"
+  },
+  "interpretation": "One native train_epoch call completed two real224 microbatches at32xaccum2; GradScaler reduced65536to32768 and actual AdamW updates/state entries remained0. This minimal window did not establish required update/state allocation. Not evidence of permanent hardware/CUDA failure or an OOM; no preAMP gradient stop was added.",
+  "native_train_epoch_unchanged": true,
+  "original_AMPloss_division_and_clipping_used": true,
+  "dropout_GPU_not_executed_after_stop": true,
+  "no_retry_or_resume": true,
+  "no_AMP_scale_batch_or_science_changes": true,
+  "process_matches_after_exit": [],
+  "gpu_after_precheck_exit": "NVIDIA GeForce RTX 5070, 4 %, 1753 MiB, 12227 MiB",
+  "preserved_failed_root_STOP_and_state": true,
+  "old512_paused_STOP_and_no_Base_start": true,
+  "no_new_formal_gate_created": true,
+  "no_Test_install_download_windows_or_F_change": true,
+  "accounting": {
+    "CPU_IO_fix_seconds": 1.7670931000029668,
+    "GPU_relu_precheck_seconds": 10.855855100002373,
+    "formal_attempt_seconds": 0,
+    "formal_epoch_seconds": 0,
+    "original_CPU_IO_failed_seconds_separate": 1.714624999993248
+  },
+  "next": "Wait for explicit next instruction. Do not rerun formal entrypoints or GPU acceptance automatically. Need a bounded native AMP validation policy that actually demonstrates optimizer state/update before any formal start; no acceptance-standard lowering."
+}

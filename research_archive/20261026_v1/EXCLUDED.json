@@ -1,0 +1,321 @@
+[
+  {
+    "source": "資料治理與泛化修復/scripts/__pycache__",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "第二階段/src/stage2/__pycache__",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "ui_prototype/demo_assets",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "ui_prototype/external_test_2026-09-05",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "ui_prototype/validation",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "ui_prototype/static/showcase_v1/qa",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_512_alpha025_20261024_v1/executions/retry1_20261024_v1/runs/v2in_res512_alpha025/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_512_alpha025_20261024_v1/executions/retry1_20261024_v1/runs/v2in_res512_alpha025/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 111550063
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_512_alpha025_20261024_v1/executions/retry1_20261024_v1/runs/v2in_res512_alpha025/regularized_seed2/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_512_alpha025_20261024_v1/executions/retry1_20261024_v1/runs/v2in_res512_alpha025/regularized_seed2/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 111550063
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_512_alpha025_20261024_v1/executions/retry1_20261024_v1/runs/v2in_res512_alpha025/regularized_seed3/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_512_alpha025_20261024_v1/executions/retry1_20261024_v1/runs/v2in_res512_alpha025/regularized_seed3/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 111550063
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_seed1_20261025_v1/runs/v2in_scale512_base/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_seed1_20261025_v1/runs/v2in_scale512_base/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 350917959
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_seed1_20261025_v1/runs/v2in_scale512_large/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_seed1_20261025_v1/runs/v2in_scale512_large/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 785840455
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_followup_20261026_v1/runs/v2in_scale512_base_confirm/regularized_seed2/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_followup_20261026_v1/runs/v2in_scale512_base_confirm/regularized_seed2/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 350917959
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_followup_20261026_v1/runs/v2in_scale512_base_confirm/regularized_seed3/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_followup_20261026_v1/runs/v2in_scale512_base_confirm/regularized_seed3/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 350917959
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_followup_20261026_v1/runs/v2in_scale512_large_micro2/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_scale512_followup_20261026_v1/runs/v2in_scale512_large_micro2/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 785840455
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart2_20261026_v1/runs/v2in_tiny512_relu_stage_dropout/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_base512_relu_stage_dropout/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_base512_relu_stage_dropout/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_base512_relu_stage_dropout/regularized_seed2/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_base512_relu_stage_dropout/regularized_seed2/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_base512_relu_stage_dropout/regularized_seed3/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_base512_relu_stage_dropout/regularized_seed3/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_tiny512_relu_stage_dropout/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_tiny512_relu_stage_dropout/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_tiny512_relu_stage_dropout/regularized_seed2/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_tiny512_relu_stage_dropout/regularized_seed2/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_tiny512_relu_stage_dropout/regularized_seed3/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/io_validation/runs/v2in_tiny512_relu_stage_dropout/regularized_seed3/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/runs/v2in_tiny512_relu_stage_dropout/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/runs/v2in_tiny512_relu_stage_dropout/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 111550063
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/runs/v2in_tiny512_relu_stage_dropout/regularized_seed2/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/runs/v2in_tiny512_relu_stage_dropout/regularized_seed2/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 111550063
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/runs/v2in_tiny512_relu_stage_dropout/regularized_seed3/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny_base512_relu_stage_dropout_20261026_v1/executions/restart3_20261026_v1/runs/v2in_tiny512_relu_stage_dropout/regularized_seed3/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 111550063
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/ampwin1_20261026_v1",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_relu_only/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_relu_only/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_relu_only/regularized_seed2/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_relu_only/regularized_seed2/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_relu_only/regularized_seed3/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_relu_only/regularized_seed3/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_stage_dropout01_only/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_stage_dropout01_only/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_stage_dropout01_only/regularized_seed2/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_stage_dropout01_only/regularized_seed2/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_stage_dropout01_only/regularized_seed3/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/executions/repair1_20261026_v1/io_validation/runs/v2in_tiny224_stage_dropout01_only/regularized_seed3/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/io_validation/runs/v2in_tiny224_relu_only/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "資料治理與泛化修復/results/v2_tiny224_activation_dropout_ablation_20261026_v1/io_validation/runs/v2in_tiny224_relu_only/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 1833
+  },
+  {
+    "source": "recovery_20261023/B_training/scale512_seed1_20261025_v1/large_resume1_20261025_v1/history_before/runs/v2in_scale512_large/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "recovery_20261023/B_training/scale512_seed1_20261025_v1/large_resume1_20261025_v1/history_before/runs/v2in_scale512_large/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 785840455
+  },
+  {
+    "source": "recovery_20261023/B_training/scale512_seed1_20261025_v1/large_resume2_20261025_v1/cpu_checkpoint_fixture/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "recovery_20261023/B_training/scale512_seed1_20261025_v1/large_resume2_20261025_v1/cpu_checkpoint_fixture_complete/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "recovery_20261023/B_training/scale512_seed1_20261025_v1/large_resume2_20261025_v1/cpu_checkpoint_fixture_complete/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 2213
+  },
+  {
+    "source": "recovery_20261023/B_training/scale512_seed1_20261025_v1/large_resume2_20261025_v1/history_before/runs/v2in_scale512_large/regularized_seed1/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "recovery_20261023/B_training/scale512_seed1_20261025_v1/large_resume2_20261025_v1/history_before/runs/v2in_scale512_large/regularized_seed1/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 785840455
+  },
+  {
+    "source": "recovery_20261023/B_training/tiny_base512_relu_stage_dropout_20261026_v1/restart1_20261026_v1/cpu_checkpoint_base/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "recovery_20261023/B_training/tiny_base512_relu_stage_dropout_20261026_v1/restart1_20261026_v1/cpu_checkpoint_base/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 350939335
+  },
+  {
+    "source": "recovery_20261023/B_training/tiny_base512_relu_stage_dropout_20261026_v1/restart1_20261026_v1/cpu_checkpoint_tiny/checkpoints",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "recovery_20261023/B_training/tiny_base512_relu_stage_dropout_20261026_v1/restart1_20261026_v1/cpu_checkpoint_tiny/best.pt",
+    "reason": "weight_payload_excluded_no_read",
+    "bytes": 111560751
+  },
+  {
+    "source": "recovery_20261023/B_training/tiny224_activation_dropout_ablation_20261026_v1/ampwin1_20261026_v1",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "recovery_20261023/D_v2_analysis/root_cause_20261025_v1/images",
+    "reason": "excluded_payload_or_private_or_QA_directory_not_traversed"
+  },
+  {
+    "source": "report/formal_update_20261026_v4/SkinDetect_正式專題報告書_更新_v4.docx",
+    "reason": "native_office_with_unreviewed_embedded_media_and_personal_cover_metadata",
+    "bytes": 5201718,
+    "media_items": 41,
+    "media_payload_read": false
+  },
+  {
+    "source": "report/meeting_20261020_v1/SkinDetect_Meeting_進度簡報_20261020_v1.pptx",
+    "reason": "native_office_with_unreviewed_embedded_media_and_personal_cover_metadata",
+    "bytes": 119492,
+    "media_items": 1,
+    "media_payload_read": false
+  }
+]

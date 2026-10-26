@@ -1,0 +1,152 @@
+{
+  "date_taipei": "2026-10-26",
+  "source_word_identity": true,
+  "markdown_nonempty_paragraphs_matched": 259,
+  "source_conflicts": [],
+  "historical_source_gaps": "C-slot complete E224/per-image outputs missing; use formal history with explicit limitation",
+  "figure_reused_unmodified": "recovery_20261023\\D_v2_analysis\\scale512_review_20261026_v1\\comparison.png",
+  "new_tables": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "formatting_only_not_reanalysis": true,
+  "no_inference_API_Test_training": true,
+  "followup": {
+    "status": "running",
+    "active_job": "base_seed2",
+    "version": "v2_scale512_followup_20261026_v1",
+    "created_utc": "2026-10-25T17:22:39.021388+00:00",
+    "observed_snapshot": "2026-10-26; no intermediate quality included"
+  },
+  "sources": [
+    {
+      "path": "report\\formal_update_20261025_v3\\SkinDetect_正式專題報告書_更新_v3.docx",
+      "bytes": 4957656,
+      "sha256": "9255269c7ef1b7a8e29a4fd6880015d986ebf1ba4fd375ca4881d97069c9cdd6"
+    },
+    {
+      "path": "[USER_HOME]\\OneDrive\\桌面\\專題檔案\\word\\SkinDetect_正式專題報告書_更新_v3.docx",
+      "bytes": 4957656,
+      "sha256": "9255269c7ef1b7a8e29a4fd6880015d986ebf1ba4fd375ca4881d97069c9cdd6"
+    },
+    {
+      "path": "[USER_HOME]\\OneDrive\\桌面\\專題檔案\\md\\SkinDetect_正式專題報告書_更新_v3.md",
+      "bytes": 57471,
+      "sha256": "15e38331473f2dbac079ad0c90ed38a7ccd384d3d2da7ea5a55faaf5f58cb555"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 16556,
+      "sha256": "9bc582483c998174290852714f6484b986bfc5c58d0c144528f9ca8c102b1d9a"
+    },
+    {
+      "path": "docs\\PROJECT_STATE.md",
+      "bytes": 124353,
+      "sha256": "26b18b4c28bfa2689638a2edc96f3efa4458aa8c205bd465d1a04a03d8e96b51"
+    },
+    {
+      "path": "docs\\V2_EXPERIMENT_HISTORY.md",
+      "bytes": 135530,
+      "sha256": "a742c9015c1e48dfef0cab65497bb6251e089b496c74dbde47e5c71c4e57c1bd"
+    },
+    {
+      "path": "recovery_20261023\\D_v2_analysis\\scale512_review_20261026_v1\\REPORT.md",
+      "bytes": 21101,
+      "sha256": "85fec7c87d484827b43c851289a7d761fc6bedd6e3f9004cf8d42a958835cc06"
+    },
+    {
+      "path": "recovery_20261023\\D_v2_analysis\\scale512_review_20261026_v1\\NUMERIC_ANALYSIS.json",
+      "bytes": 21597,
+      "sha256": "e075709e2c9e6ed4d1ba31125b98e2479048d5d4bd06aa68631adfe8ca27d860"
+    },
+    {
+      "path": "recovery_20261023\\D_v2_analysis\\scale512_review_20261026_v1\\DELIVERY_QA.json",
+      "bytes": 2855,
+      "sha256": "2cc9dd73d5f8bcc50eb190639f77938547f3bda52768acd0d5d5a537db248fe5"
+    },
+    {
+      "path": "recovery_20261023\\D_v2_analysis\\scale512_review_20261026_v1\\NUMERIC_QA.json",
+      "bytes": 19811,
+      "sha256": "d52bc10bd64f7145876bb24e4f1efb068afacd7407bd4d6420ff5e6893da7b43"
+    },
+    {
+      "path": "recovery_20261023\\D_v2_analysis\\scale512_review_20261026_v1\\comparison.png",
+      "bytes": 253812,
+      "sha256": "436ed24794dcdd0710d8771c6ee870865678cece524de5ef1c8d4e86e50967b7"
+    },
+    {
+      "path": "recovery_20261023\\D_v2_analysis\\root_cause_20261025_v1\\REPORT.md",
+      "bytes": 19477,
+      "sha256": "7c3c40ba5498f70918e13e9ef8483d26c8e99b83214e87c4a754a529710ccc57"
+    },
+    {
+      "path": "recovery_20261023\\D_v2_analysis\\root_cause_20261025_v1\\NUMERIC_ANALYSIS.json",
+      "bytes": 71041,
+      "sha256": "65c168a2d63b765eeae6d9b3b5947fd488f7c6f09d4c36b26ccb8dc8f5ff96a0"
+    },
+    {
+      "path": "recovery_20261023\\B_training\\matched_source_trainval_512_20261025_retry1_v1\\REPORT.md",
+      "bytes": 6670,
+      "sha256": "271d2ff12b0b0be2d1a0d7ed169c864476452e84fee81147180070fe5b671ab8"
+    },
+    {
+      "path": "recovery_20261023\\B_training\\matched_source_trainval_512_20261025_retry1_v1\\OUTPUT_QA.json",
+      "bytes": 812,
+      "sha256": "08ed31603d7df29416a671626ff54e51b3e375a0472c4a6d0bffe700e1695001"
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\REPORT.md",
+      "bytes": 7925,
+      "sha256": "ba87575a6001f657d4a3cc40ca26689991f57ff53921c5ebab2561b35703087d"
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\COMPARISON.json",
+      "bytes": 453095,
+      "sha256": "4a96030b64781bbcba0875d9dfdb101ef236f675e11c1bdd55bd0e9b848ee0ab"
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\v2_optimization_round2_20261020_v1\\FINAL_RESULTS.json",
+      "bytes": 152122,
+      "sha256": "f6e0f097684d8059555992149e9178b47b672dd54a149bcbf490b2c4ab615be0"
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\FINAL_RESULTS.json",
+      "bytes": 37016,
+      "sha256": "61357ee612f28869cd8f0f205d1db594ae5a30a78bb77bb0a35f5b6246ea51cd"
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\B_HANDOFF.md",
+      "bytes": 487,
+      "sha256": "c113f16dae86014fb05fd48aadf844aa3fb5ef916faa5c8a8d6735713774a714"
+    }
+  ],
+  "delivery": {
+    "status": "completed",
+    "completed_taipei": "2026-10-26T03:38:03+08:00",
+    "logical_document": "v4",
+    "source_path": "report\\formal_update_20261026_v4\\SkinDetect_正式專題報告書_更新_v4.docx",
+    "copy_path": "[USER_HOME]\\OneDrive\\桌面\\專題檔案\\word\\SkinDetect_正式專題報告書_更新_v4.docx",
+    "sha256": "2db99a91b7151a937b6308557e28c39f26442da92851d2bcc049929989df8e82",
+    "bytes": 5201718,
+    "copies_byte_identical": true,
+    "copy_action": "created_new_without_overwrite",
+    "originals_v3_and_user_md_unchanged": true,
+    "cloud_sync_verified": false,
+    "pages": 55,
+    "visual_review": "passed_all_55_pages",
+    "caption_page_caches_verified": 36,
+    "research_execution": false
+  },
+  "final_qa": {
+    "status": "completed",
+    "pages": 55,
+    "visual_review": "passed",
+    "sha256": "2db99a91b7151a937b6308557e28c39f26442da92851d2bcc049929989df8e82"
+  }
+}

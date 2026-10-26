@@ -1,0 +1,65 @@
+{
+  "version": "v2_tiny224_activation_dropout_ablation_20261026_v1",
+  "status": "failed_preflight",
+  "failure_classification": "new_CPU_fixture_schema_error_not_formal_training_failure",
+  "created_taipei": "2026-10-26T21:58:59.955538+08:00",
+  "updated_taipei": "2026-10-26T21:58:59.955538+08:00",
+  "active": null,
+  "controller_pid": null,
+  "runs": {
+    "relu_seed1": {
+      "candidate": "v2in_tiny224_relu_only",
+      "seed": 1,
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "relu_seed2": {
+      "candidate": "v2in_tiny224_relu_only",
+      "seed": 2,
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "relu_seed3": {
+      "candidate": "v2in_tiny224_relu_only",
+      "seed": 3,
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "dropout_seed1": {
+      "candidate": "v2in_tiny224_stage_dropout01_only",
+      "seed": 1,
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "dropout_seed2": {
+      "candidate": "v2in_tiny224_stage_dropout01_only",
+      "seed": 2,
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "dropout_seed3": {
+      "candidate": "v2in_tiny224_stage_dropout01_only",
+      "seed": 3,
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    }
+  },
+  "formal_attempts": 0,
+  "formal_complete_epochs": 0,
+  "gpu_validation_attempts": 0,
+  "error": "RuntimeError('Checkpoint has incomplete training state')",
+  "stop_preserved": true,
+  "automatic_retry": false
+}

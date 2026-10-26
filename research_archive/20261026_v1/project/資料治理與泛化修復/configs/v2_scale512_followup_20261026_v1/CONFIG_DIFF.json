@@ -1,0 +1,26 @@
+{
+  "v2in_scale512_base_confirm": {
+    "scientific_training_changes": {},
+    "new_seed_list": [
+      2,
+      3
+    ],
+    "weight_spec_unchanged": true
+  },
+  "v2in_scale512_large_micro2": {
+    "scientific_training_changes": {
+      "batch_size": {
+        "before": 1,
+        "after": 2
+      },
+      "gradient_accumulation": {
+        "before": 64,
+        "after": 32
+      }
+    },
+    "new_seed_list": [
+      1
+    ],
+    "weight_spec_unchanged": true
+  }
+}

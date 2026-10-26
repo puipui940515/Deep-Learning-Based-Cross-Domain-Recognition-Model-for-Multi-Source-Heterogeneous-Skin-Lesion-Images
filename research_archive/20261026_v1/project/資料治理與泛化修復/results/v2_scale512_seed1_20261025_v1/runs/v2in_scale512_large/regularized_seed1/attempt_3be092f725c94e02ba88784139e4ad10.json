@@ -1,0 +1,22 @@
+{
+  "run_id": "7c6b140d4ed442389852be8707d8e2c6",
+  "seed": 1,
+  "resume": true,
+  "start_epoch": 13,
+  "command": [
+    "資料治理與泛化修復\\scripts\\train_regularized.py",
+    "--config",
+    "資料治理與泛化修復\\configs\\v2_scale512_seed1_20261025_v1\\v2in_scale512_large.json",
+    "--seed",
+    "1",
+    "--manifest-release",
+    "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+    "--output-root",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_large",
+    "--require-cuda",
+    "--formal",
+    "--resume"
+  ],
+  "started_utc": "2026-10-25T15:01:51.922161+00:00",
+  "recovery_warning": null
+}

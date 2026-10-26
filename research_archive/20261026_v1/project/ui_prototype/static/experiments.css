@@ -1,0 +1,97 @@
+.experiment-library {
+  margin: 20px 28px 100px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.library-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.library-heading h2 { margin: 3px 0 6px; font-size: 23px; }
+.library-heading p { margin: 0; }
+.eyebrow { color: var(--blue); font-size: 12px; font-weight: 800; letter-spacing: .05em; }
+
+.library-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(82px, 1fr));
+  gap: 8px;
+  min-width: 310px;
+}
+
+.library-stats span {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--soft);
+  color: var(--muted);
+  text-align: center;
+  font-size: 12px;
+}
+
+.library-stats strong { display: block; color: var(--ink); font-size: 20px; }
+
+.library-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  margin: 20px 0 14px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.library-toolbar label { display: grid; gap: 5px; font-size: 12px; color: var(--muted); }
+.library-toolbar select { min-width: 180px; }
+
+.experiment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.experiment-card {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fbfdff;
+}
+
+.experiment-card-top { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.experiment-card h3 { margin: 11px 0 7px; font-size: 17px; }
+.experiment-card > p { min-height: 42px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.stage-pill { padding: 4px 8px; border-radius: 999px; background: #e8f2f8; color: var(--blue-deep); font-size: 11px; font-weight: 800; }
+
+.metric-chips { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin: 13px 0; }
+.metric-chips span { min-width: 0; padding: 8px; border-radius: 9px; background: white; border: 1px solid var(--line); }
+.metric-chips small, .metric-chips strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.metric-chips small { color: var(--muted); font-size: 10px; }
+.metric-chips strong { margin-top: 3px; font-size: 13px; }
+
+.experiment-card details { margin-top: 13px; }
+.experiment-card summary { cursor: pointer; color: var(--blue-deep); font-size: 13px; font-weight: 800; }
+.artifact-list { display: grid; gap: 6px; max-height: 310px; overflow: auto; margin-top: 10px; }
+.artifact-link { display: grid; grid-template-columns: 42px minmax(0,1fr) auto; gap: 8px; align-items: center; padding: 8px; border: 1px solid var(--line); border-radius: 9px; background: white; color: var(--ink); text-decoration: none; }
+.artifact-link:hover { border-color: var(--blue); background: #f5faff; }
+.artifact-link strong, .artifact-link small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.artifact-link strong { font-size: 12px; }
+.artifact-link small { margin-top: 2px; color: var(--muted); font-size: 9px; }
+.artifact-kind { color: var(--blue); font-size: 10px; font-weight: 900; }
+.artifact-size { color: var(--muted); font-size: 10px; white-space: nowrap; }
+
+@media (max-width: 1080px) {
+  .experiment-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 720px) {
+  .experiment-library { margin: 16px 16px 96px; padding: 16px; }
+  .library-heading, .library-toolbar { display: grid; }
+  .library-stats { min-width: 0; width: 100%; }
+  .experiment-grid { grid-template-columns: 1fr; }
+}

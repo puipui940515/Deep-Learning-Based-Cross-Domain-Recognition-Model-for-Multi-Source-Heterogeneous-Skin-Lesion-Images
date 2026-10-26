@@ -1,0 +1,77 @@
+{
+  "version": "v2_tiny_base512_relu_stage_dropout_20261026_v1",
+  "status": "failed_preflight",
+  "updated_utc": "2026-10-26T03:34:16.381933+00:00",
+  "active": null,
+  "controller_pid": null,
+  "limits": {
+    "runs": 6,
+    "epochs": 180,
+    "max_epochs_per_run": 30,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+  },
+  "runs": {
+    "tiny_seed1": {
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 1,
+      "model": "tiny",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 8,
+      "accumulation": 8
+    },
+    "tiny_seed2": {
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 2,
+      "model": "tiny",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 8,
+      "accumulation": 8
+    },
+    "tiny_seed3": {
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 3,
+      "model": "tiny",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 8,
+      "accumulation": 8
+    },
+    "base_seed1": {
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 1,
+      "model": "base",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 2,
+      "accumulation": 32
+    },
+    "base_seed2": {
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 2,
+      "model": "base",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 2,
+      "accumulation": 32
+    },
+    "base_seed3": {
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 3,
+      "model": "base",
+      "status": "not_started_due_preflight_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "micro_batch": 2,
+      "accumulation": 32
+    }
+  },
+  "error": "CPU validation assumed torch.nn.GELU, but local timm GELU is its own nn.Module subclass. CPU test and candidate replacement helper share this incorrect assumption."
+}

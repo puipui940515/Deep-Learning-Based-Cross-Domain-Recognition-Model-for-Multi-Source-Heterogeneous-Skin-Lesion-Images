@@ -1,0 +1,131 @@
+{
+  "recorded_taipei": "2026-10-26T21:58:59.955538+08:00",
+  "status": "stopped_after_CPU_IO_preflight_failure",
+  "version": "v2_tiny224_activation_dropout_ablation_20261026_v1",
+  "authorization_source": "資料治理與泛化修復\\configs\\v2_tiny224_activation_dropout_ablation_20261026_v1\\AUTHORIZATION.md",
+  "formal_runs_started": 0,
+  "formal_committed_epochs": 0,
+  "new_GPU_work_started": false,
+  "GPU_compatibility_not_yet_executed": true,
+  "cpu_architecture_passed": {
+    "relu": {
+      "status": "passed",
+      "seconds": 13.49246530001983,
+      "architecture_audit": {
+        "variant": {
+          "block_activation": "relu",
+          "relu_inplace": false,
+          "stage_output_dropout": 0.0,
+          "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+          "dropout_type": "elementwise",
+          "block_dropout": 0.0,
+          "head_dropout": 0.0,
+          "drop_path": 0.0
+        },
+        "stage_depths": [
+          3,
+          3,
+          9,
+          3
+        ],
+        "relu_count": 18,
+        "gelu_count": 0,
+        "grn_count": 18,
+        "stage_dropout_names": [],
+        "stage_dropout_count": 0,
+        "head_output_features": 7,
+        "feature_channels": [
+          96,
+          192,
+          384,
+          768
+        ],
+        "trainable_parameters": 27871879,
+        "parameter_keys_unchanged": true,
+        "state_key_sha256": "4845aaf2b472075c235fc6948bd7b6ddcbd4e76f59cfeb8eadb840525698c975"
+      },
+      "all_pretrained_backbone_values_match_pinned_file": true,
+      "parameter_keys_shapes_unchanged": true,
+      "native_training_and_data_functions_AST_unchanged": true
+    },
+    "dropout": {
+      "status": "passed",
+      "seconds": 4.332191599998623,
+      "architecture_audit": {
+        "variant": {
+          "block_activation": "gelu",
+          "relu_inplace": false,
+          "stage_output_dropout": 0.1,
+          "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+          "dropout_type": "elementwise",
+          "block_dropout": 0.0,
+          "head_dropout": 0.0,
+          "drop_path": 0.0
+        },
+        "stage_depths": [
+          3,
+          3,
+          9,
+          3
+        ],
+        "relu_count": 0,
+        "gelu_count": 18,
+        "grn_count": 18,
+        "stage_dropout_names": [
+          "stages.0.blocks.post_stage_dropout",
+          "stages.1.blocks.post_stage_dropout",
+          "stages.2.blocks.post_stage_dropout",
+          "stages.3.blocks.post_stage_dropout"
+        ],
+        "stage_dropout_count": 4,
+        "head_output_features": 7,
+        "feature_channels": [
+          96,
+          192,
+          384,
+          768
+        ],
+        "trainable_parameters": 27871879,
+        "parameter_keys_unchanged": true,
+        "state_key_sha256": "4845aaf2b472075c235fc6948bd7b6ddcbd4e76f59cfeb8eadb840525698c975"
+      },
+      "all_pretrained_backbone_values_match_pinned_file": true,
+      "parameter_keys_shapes_unchanged": true,
+      "native_training_and_data_functions_AST_unchanged": true
+    }
+  },
+  "io_status": "failed_before_six_paths_completed",
+  "io_error": "RuntimeError('Checkpoint has incomplete training state')",
+  "confirmed_root_cause": "New tiny CPU fixture omitted sampler_generator_state and loader_generator_states required by unchanged CheckpointStore.load; readback correctly rejected incomplete state. Not evidence of Windows path failure.",
+  "failed_program": "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\validate_checkpoint_io.py",
+  "failed_receipt": "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\IO_VALIDATION.json",
+  "io_seconds": 1.714624999993248,
+  "failed_fixture_isolated_under": "資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\io_validation",
+  "formal_checkpoint_overwritten": false,
+  "scientific_training_dict_unchanged": true,
+  "training_state_byte_identical_to_before": true,
+  "preparation_completed": [
+    "two separate candidates/configuration diff/comparison contract",
+    "new finite six-job dispatch contract/controller",
+    "old trainer loss/AMP/optimizer core unchanged",
+    "two CPU architecture/backbone loading/eval checks passed"
+  ],
+  "not_completed": [
+    "micro CPU Checkpoint readback covering all six paths",
+    "new candidate GPU native train_epoch update acceptance",
+    "execution gate/source freeze",
+    "formal six runs and their live15second monitor/comparisons"
+  ],
+  "source_snapshot_hashes": {
+    "model_profiles.py": "f3a32158b85c69da25f6c26b952eef19a12fb52975d41eca10ac7519071e0315",
+    "run_v2_tiny224_ablation.py": "a84f9542e2dedd514b7637ed35e1f51cc207766cea6968262767c29ac815519f",
+    "training_state.py": "b07c6b4882703ae27e784f9aeb3db8fea3fc8744b34b4401ac59c0cdc5729fec",
+    "train_regularized.py": "886cdc248374ac812db0917c8d05d25c2bc372d8178e996b08909a46c66c1ad0",
+    "v2_tiny224_ablation.py": "371ce8b2e3c26ff473e39a2254dc5743d9f9868d37a238a899474b0843dd4d62",
+    "v2_tiny224_ablation_contract.py": "55c3afd51d0114597ad680b9998525fe2240d8ef9547e3624ad9c997c0360a05"
+  },
+  "old512_paused_state_and_STOP_unchanged": true,
+  "no_other_thread_contact_or_shared_index_update": true,
+  "no_install_download_Test_windows_or_F_changes": true,
+  "next_minimal_action": "Correct CPU fixture by adding both required generator-state fields, retain failed source/receipt/STOP and fixture; verify under a distinct explicitly authorized attempt, then GPU/gate/formal starts only if all pass. No automatic rerun performed."
+}

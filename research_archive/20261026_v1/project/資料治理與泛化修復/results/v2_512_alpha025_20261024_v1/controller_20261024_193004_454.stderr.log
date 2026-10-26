@@ -1,0 +1,33 @@
+Exception in thread Thread-3 (_readerthread):
+Traceback (most recent call last):
+  File "tools\Python312\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "tools\Python312\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "tools\Python312\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb8 in position 177: invalid start byte
+Exception in thread Thread-7 (_readerthread):
+Traceback (most recent call last):
+  File "tools\Python312\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "tools\Python312\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "tools\Python312\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb8 in position 177: invalid start byte
+Exception in thread Thread-11 (_readerthread):
+Traceback (most recent call last):
+  File "tools\Python312\Lib\threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "tools\Python312\Lib\threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "tools\Python312\Lib\subprocess.py", line 1599, in _readerthread
+    buffer.append(fh.read())
+                  ^^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb8 in position 177: invalid start byte

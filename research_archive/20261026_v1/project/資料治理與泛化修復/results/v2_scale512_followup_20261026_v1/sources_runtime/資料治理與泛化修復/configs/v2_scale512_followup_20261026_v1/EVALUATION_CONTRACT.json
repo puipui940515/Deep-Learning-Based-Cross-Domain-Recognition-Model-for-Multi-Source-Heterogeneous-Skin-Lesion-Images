@@ -1,0 +1,113 @@
+{
+  "version": "v2_scale512_followup_20261026_v1",
+  "status": "prospective_user_approved_before_new_training",
+  "draft_source": "recovery_20261023\\D_v2_analysis\\scale512_review_20261026_v1\\B_NEXT_BATCH_DRAFT.md",
+  "draft_sha256": "3c176777cd571ea6f5457424e060956fb64d5225f3c1a5be2c29c4cd7069813d",
+  "historical_numeric_source": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\EVALUATION_CONTRACT.json",
+  "historical_numeric_sha256": "8d327ff8a0c6f81c44abe3db60b28e376469e818734927552d14092d56ab80b1",
+  "base_confirmation": {
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "all_three_required": true,
+    "mean_and_sample_sd_ddof": 1,
+    "delta_units": "fractions; 0.01 = 1 pp",
+    "combine_conditions": "ALL must pass; evaluate only after all three completed, no quality cancellation of Seed3",
+    "robust": {
+      "formula": "0.5 * mean(source BA) + 0.5 * min(source BA)",
+      "mean_delta_min": 0.01,
+      "strictly_positive_delta_seed_count_min": 2,
+      "each_seed_delta_min": -0.01
+    },
+    "mean_delta_min": {
+      "macro_f1": 0.0,
+      "accuracy": 0.0,
+      "BCN20000:ba": 0.0,
+      "HAM10000:ba": -0.01,
+      "PAD-UFES-20:ba": -0.01,
+      "HAM10000:NV": 0.0,
+      "BCN20000:NV": 0.0,
+      "PAD-UFES-20:NV": 0.0,
+      "BCN20000:DF": -0.03,
+      "BCN20000:BKL": -0.03,
+      "BCN20000:MEL": -0.03,
+      "BCN20000:VASC": -0.03,
+      "combined_mel": -0.01
+    },
+    "NV_strict_improvement": {
+      "at_least_one_strictly_positive_mean_delta_in": [
+        "HAM10000:NV",
+        "BCN20000:NV"
+      ],
+      "PAD_does_not_satisfy_this_OR": true,
+      "all_three_NV_mean_deltas_nonnegative": true
+    },
+    "other_supported_disease_mean_delta_min": -0.05,
+    "other_supported_disease_keys": [
+      "HAM10000:AKIEC",
+      "HAM10000:BCC",
+      "HAM10000:BKL",
+      "HAM10000:DF",
+      "HAM10000:VASC",
+      "HAM10000:MEL",
+      "BCN20000:AKIEC",
+      "BCN20000:BCC",
+      "PAD-UFES-20:AKIEC",
+      "PAD-UFES-20:BCC",
+      "PAD-UFES-20:BKL",
+      "PAD-UFES-20:MEL"
+    ],
+    "PAD_DF_VASC": "N/A; never zero Recall",
+    "validation_usage": "exploratory repeatedly used fixed Validation; no Test/external generalization or significance claims",
+    "primary_contrast": "new Base seeds1/2/3 minus original Tiny512 same seeds; Base1 reused",
+    "prospective_for_new_candidate": true,
+    "retrospective_seed1_already_observed": true,
+    "not_rewriting_old_scale_or_alpha_decision": true
+  },
+  "large_micro2_diagnostic": {
+    "primary_contrast": "new Large Seed1 micro2 minus saved Large Seed1 micro1 best epoch11",
+    "auxiliary_comparisons": [
+      "saved Base Seed1 micro2",
+      "saved Tiny512 Seed1"
+    ],
+    "seed": 1,
+    "robust_signal_min": 0.01,
+    "robust_nonpositive_not_supporting": true,
+    "delta_min": {
+      "macro_f1": 0.0,
+      "accuracy": 0.0,
+      "BCN20000:ba": 0.0,
+      "HAM10000:ba": -0.01,
+      "PAD-UFES-20:ba": -0.01,
+      "HAM10000:NV": 0.0,
+      "BCN20000:NV": 0.0,
+      "PAD-UFES-20:NV": 0.0,
+      "BCN20000:DF": -0.03,
+      "BCN20000:BKL": -0.03,
+      "BCN20000:MEL": -0.03,
+      "BCN20000:VASC": -0.03,
+      "combined_mel": -0.01,
+      "HAM10000:AKIEC": -0.05,
+      "HAM10000:BCC": -0.05,
+      "HAM10000:BKL": -0.05,
+      "HAM10000:DF": -0.05,
+      "HAM10000:VASC": -0.05,
+      "HAM10000:MEL": -0.05,
+      "BCN20000:AKIEC": -0.05,
+      "BCN20000:BCC": -0.05,
+      "PAD-UFES-20:AKIEC": -0.05,
+      "PAD-UFES-20:BCC": -0.05,
+      "PAD-UFES-20:BKL": -0.05,
+      "PAD-UFES-20:MEL": -0.05
+    },
+    "NV_strict_OR_required": false,
+    "between_0_and_1pp_or_guard_loss": "small benefit/tradeoff/undetermined; D interprets",
+    "formal_adoption": false,
+    "pure_mixup_causality": false,
+    "automatic_large_seed2_3": false
+  },
+  "automatic_model_or_website_adoption": false,
+  "test_used": false
+}

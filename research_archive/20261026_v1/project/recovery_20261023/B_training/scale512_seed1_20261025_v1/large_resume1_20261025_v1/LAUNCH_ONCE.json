@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-25T13:37:25.644742+00:00",
+  "controller_pid": 4576,
+  "run_id": "7c6b140d4ed442389852be8707d8e2c6",
+  "command": [
+    ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "-X",
+    "utf8",
+    "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume1_20261025_v1\\resume_worker.py"
+  ],
+  "permit_sha256": "b4695a2f15459eb44cded6dd25cc73173976c60e9063894753d2a23fc1a1acc6"
+}

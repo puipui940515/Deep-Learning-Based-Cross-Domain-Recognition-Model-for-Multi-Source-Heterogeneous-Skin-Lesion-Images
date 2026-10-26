@@ -1,0 +1,19 @@
+{
+  "memory": {
+    "at": "2026-10-24T11:30:03.673775+00:00",
+    "commit_headroom_gib": 17.79110336303711,
+    "commit_limit_gib": 36.11309814453125,
+    "commit_used_gib": 18.32199478149414,
+    "available_ram_gib": 17.450225830078125
+  },
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 5070",
+    "utilization_percent": 0.0,
+    "used_mib": 1873.0,
+    "total_mib": 12227.0,
+    "free_mib": 10354.0,
+    "power_w": 6.59
+  },
+  "conflicts": [],
+  "free_disk_gib": 420.94897079467773
+}

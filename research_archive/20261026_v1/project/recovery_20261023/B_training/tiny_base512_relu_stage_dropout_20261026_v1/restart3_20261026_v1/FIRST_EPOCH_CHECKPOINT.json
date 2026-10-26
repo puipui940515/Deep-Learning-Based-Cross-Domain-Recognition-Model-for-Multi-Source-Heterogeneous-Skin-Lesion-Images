@@ -1,0 +1,40 @@
+{
+  "observed_local": "2026-10-26T13:38:57.132241+08:00",
+  "status": "first_formal_epoch_storage_verified_training_continues",
+  "execution": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1",
+  "run_id": "f49f7c0aa4644917839363f44e3d1d3d",
+  "trainer_pid": 5336,
+  "controller_pid": 23192,
+  "completed_epoch": 1,
+  "next_epoch_started": true,
+  "checkpoint_index": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\checkpoints\\index.json",
+  "checkpoint_descriptor": {
+    "file": "epoch-0001-cbb3f914ef814c8c8c502a5573a02174.pt",
+    "epoch": 1,
+    "sha256": "8a48c4e7b4b8bf10b2743b7a164e38f8d11c4ba929ec36587c7edd1f56a336dc"
+  },
+  "checkpoint_bytes": 446314471,
+  "best_path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\best.pt",
+  "best_bytes": 111550063,
+  "metrics_path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\metrics_fa5145475e5146c5b2c274817fe631a0.jsonl",
+  "budget_path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\budget\\epoch_6053f5a04de54be7a64c87912e399e4b.json",
+  "descriptor_metrics_budget_agree": true,
+  "large_weight_rehash_or_reload_performed": false,
+  "timing_seconds": {
+    "train_seconds": 366.6850969000079,
+    "train_monitor_seconds": 18.723440800007666,
+    "validation_seconds": 50.11141139999381,
+    "checkpoint_seconds": 0.8112495000241324,
+    "epoch_seconds": 436.36028170000645
+  },
+  "batch_timing": {
+    "data_wait_including_iterator_tqdm_seconds": 12.494302599603543,
+    "batch_processing_seconds_with_existing_loss_sync": 354.18946110040997,
+    "batches": 2365
+  },
+  "cuda_allocated_peak_bytes": 4506350080,
+  "cuda_reserved_peak_bytes": 4785700864,
+  "first_epoch_only_not_six_runs_complete": true,
+  "remaining_jobs": "Tiny Seed2/3 then Base Seed1/2/3 in existing controller; no retry",
+  "verification_method": "Read saved state/index/epoch JSONL/budget and file metadata only; no model load, inference, benchmark or large weight hash."
+}

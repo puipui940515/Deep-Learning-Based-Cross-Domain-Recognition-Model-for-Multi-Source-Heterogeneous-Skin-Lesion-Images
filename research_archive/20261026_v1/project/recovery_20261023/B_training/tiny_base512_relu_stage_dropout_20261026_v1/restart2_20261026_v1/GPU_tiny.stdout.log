@@ -1,0 +1,1 @@
+{"size": "tiny", "status": "passed", "model_forwards": 1, "optimizer_updates": 1, "amp_scale_before": 65536.0, "amp_scale_after": 65536.0, "error": null}

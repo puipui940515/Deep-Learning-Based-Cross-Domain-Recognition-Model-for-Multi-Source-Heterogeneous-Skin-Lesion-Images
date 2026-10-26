@@ -1,0 +1,105 @@
+{
+  "huge": {
+    "status": "skipped_infeasible_estimate",
+    "reason": "AdamW CUDA foreach static/transient lower bound exceeds currently free VRAM even before activations/autocast/context",
+    "lower_bound_gib": 11.399553880095482,
+    "free_vram_gib": 10.89453125,
+    "minimum_micro_batch": 1,
+    "physical_total_mib": 12227.0,
+    "actual_gpu_oom_test": false,
+    "downloaded": false,
+    "pinned_source": {
+      "repo": "timm/convnextv2_huge.fcmae_ft_in1k",
+      "revision": "79144cc49b295e1bb236f0c49be7747ddeecdde0",
+      "sha256": "1330efa75dc4187aaed54f14a77a1faa424d51114bcd7df1cf774fb617525024",
+      "bytes": 2641197850,
+      "url": "https://huggingface.co/timm/convnextv2_huge.fcmae_ft_in1k/resolve/79144cc49b295e1bb236f0c49be7747ddeecdde0/model.safetensors",
+      "model_config": {
+        "architecture": "convnextv2_huge",
+        "num_classes": 1000,
+        "num_features": 2816,
+        "pretrained_cfg": {
+          "tag": "fcmae_ft_in1k",
+          "custom_load": false,
+          "input_size": [
+            3,
+            224,
+            224
+          ],
+          "test_input_size": [
+            3,
+            288,
+            288
+          ],
+          "fixed_input_size": false,
+          "interpolation": "bicubic",
+          "crop_pct": 0.875,
+          "test_crop_pct": 1.0,
+          "crop_mode": "center",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "num_classes": 1000,
+          "pool_size": [
+            7,
+            7
+          ],
+          "first_conv": "stem.0",
+          "classifier": "head.fc",
+          "license": "cc-by-nc-4.0",
+          "origin_url": "https://github.com/facebookresearch/ConvNeXt-V2",
+          "paper_name": "ConvNeXt-V2: Co-designing and Scaling ConvNets with Masked Autoencoders",
+          "paper_ids": "arXiv:2301.00808"
+        }
+      },
+      "parameters_seven_class": 657492359,
+      "largest_optimizer_group_numel": 430075008,
+      "fp32_param_grad_two_moments_gib": 9.797399625182152,
+      "adamw_foreach_step_lower_bound_gib": 11.399553880095482,
+      "estimate_excludes_activations_autocast_cuda_and_desktop": true,
+      "depths": [
+        3,
+        3,
+        27,
+        3
+      ],
+      "grn_count": 36,
+      "provenance": "Official timm FCMAE ImageNet1K model card/API; no 22K or random substitute",
+      "adamw_basis": "Existing AdamW defaults to CUDA foreach; exp_avg_sq sqrt TensorList while params/grads/two moments reside; local torch/optim/adam.py"
+    },
+    "new_memory_strategy_used": false
+  },
+  "base": {
+    "status": "passed",
+    "micro_batch": 2,
+    "accumulation": 32,
+    "initial_classifier_sha256": "6271a799a429a3b0e82de648cb5c3547e2acceebb3f960b3f7e6ba82ad793afe",
+    "measured_steady_images_per_second": 24.11663134542566,
+    "peak_allocated_bytes": 4047823360,
+    "peak_reserved_bytes": 4057989120,
+    "evidence": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\base_micro2.json",
+    "selection_rule": "maximum observed second-cycle throughput among compatible approved options; peak VRAM recorded, no GPU100% objective",
+    "mixup_note": "Original microbatch-local randperm; pairing pool differs from Tiny8 when microbatch differs",
+    "short_sample_not_full_benchmark": true
+  },
+  "large": {
+    "status": "passed",
+    "micro_batch": 1,
+    "accumulation": 64,
+    "initial_classifier_sha256": "e396e1331184ae8e83a68771938696fe134cb37501af3df0b635af1c298674c2",
+    "measured_steady_images_per_second": 15.061956416375528,
+    "peak_allocated_bytes": 5445977600,
+    "peak_reserved_bytes": 5561647104,
+    "evidence": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\large_micro1.json",
+    "selection_rule": "maximum observed second-cycle throughput among compatible approved options; peak VRAM recorded, no GPU100% objective",
+    "mixup_note": "Original microbatch-local randperm; micro1 pairs with itself and makes MixUp ineffective",
+    "short_sample_not_full_benchmark": true
+  }
+}

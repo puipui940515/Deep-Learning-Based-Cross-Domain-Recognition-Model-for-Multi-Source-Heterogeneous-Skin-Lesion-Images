@@ -1,0 +1,24 @@
+/* 全部樣式限獨立固定圖層；不更動既有元件的盒模型、字體、尺寸或內容。 */
+#text-locator { position:fixed; inset:0; z-index:2147483000; pointer-events:none; font:12px/1.5 system-ui,"Microsoft JhengHei",sans-serif; color:#18362c; }
+#text-locator * { box-sizing:border-box; }
+#text-locator .tl-layer { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+#text-locator .tl-outline { position:fixed; border:1px dashed #91642c99; pointer-events:none; }
+#text-locator .tl-selected { border:2px solid #a34618; background:#f4bd5c14; }
+#text-locator .tl-badge { position:fixed; width:54px; height:19px; min-height:19px; padding:0 3px; background:#fff3c4; color:#603c0f; border:1px solid #9c7238; border-radius:4px; font:bold 10px/17px monospace; cursor:pointer; pointer-events:auto; box-shadow:0 1px 3px #0002; }
+#text-locator .tl-toolbar { position:absolute; right:12px; bottom:12px; width:330px; max-width:calc(100vw - 24px); max-height:46vh; overflow:auto; padding:12px; background:#fffffff5; border:1px solid #557b65; border-radius:10px; box-shadow:0 3px 18px #0002; pointer-events:auto; }
+#text-locator .tl-toolbar > strong { display:block; margin:0 0 6px; }
+#text-locator button, #text-locator input { font:inherit; border:1px solid #658473; border-radius:5px; min-height:32px; padding:4px 8px; color:#18362c; background:#f2f7ef; }
+#text-locator .tl-toolbar > button { width:100%; cursor:pointer; }
+#text-locator .tl-search { display:flex; gap:6px; margin:8px 0 0; }
+#text-locator input { width:0; min-width:0; flex:1; background:white; }
+#text-locator .tl-search button { cursor:pointer; }
+#text-locator p { margin:6px 0 0; font-size:12px; line-height:1.5; overflow-wrap:anywhere; }
+#text-locator .tl-hint { font-size:11px; color:#5a6c60; }
+#text-locator #tl-detail { margin-top:8px; padding-top:8px; border-top:1px solid #dce4da; }
+#text-locator #tl-selected-id { font:700 16px monospace; color:#963d14; }
+#text-locator #tl-source { font-family:monospace; font-size:11px; }
+#text-locator [hidden] { display:none !important; }
+@media (max-width:480px) {
+  #text-locator .tl-toolbar { right:8px; bottom:8px; width:290px; max-width:calc(100vw - 16px); max-height:40vh; padding:9px; }
+}
+@media print { #text-locator { display:none !important; } }

@@ -1,0 +1,139 @@
+{
+  "data_definition": {
+    "schema_version": "skindetect-data-contract-v1.0",
+    "training_manifest": "資料治理與泛化修復/data/unified_manifest_v1.csv",
+    "disease_mapping": "資料治理與泛化修復/schema/disease_mapping_v1.csv",
+    "anatomical_site_mapping": "資料治理與泛化修復/schema/anatomical_site_mapping_v1.csv"
+  },
+  "class_names": [
+    "AKIEC",
+    "BCC",
+    "BKL",
+    "DF",
+    "NV",
+    "VASC",
+    "MEL"
+  ],
+  "sources": {
+    "HAM10000": {
+      "modality": "dermoscopy",
+      "modality_zh": "皮膚鏡影像",
+      "license": "CC BY-NC 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "BCN20000": {
+      "modality": "dermoscopy",
+      "modality_zh": "皮膚鏡影像",
+      "license": "CC BY 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "PAD-UFES-20": {
+      "modality": "clinical_smartphone",
+      "modality_zh": "智慧型手機臨床影像",
+      "license": "CC BY 4.0",
+      "supported_labels": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ]
+    }
+  },
+  "leakage": {
+    "near_duplicate_phash_distance": 1,
+    "near_duplicate_dhash_distance": 2,
+    "review_phash_distance": 4,
+    "review_dhash_distance": 8
+  },
+  "profile_version": 1,
+  "pipeline_id": "v2_tiny_base512_relu_stage_dropout_20261026_v1",
+  "training": {
+    "model": "convnextv2_base",
+    "initialization": "imagenet",
+    "normalization": "imagenet_mean_std",
+    "image_size": 512,
+    "batch_size": 2,
+    "gradient_accumulation": 32,
+    "epochs": 30,
+    "early_stopping_patience": 5,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.05,
+    "layer_decay": 1.0,
+    "label_smoothing": 0.1,
+    "mixup_alpha": 0.2,
+    "gradient_clip_norm": 1.0,
+    "class_balance_alpha": 0.5,
+    "num_workers": 4,
+    "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+    "min_epochs": 12,
+    "early_stopping": true,
+    "min_delta": 0.0,
+    "optimizer": "AdamW",
+    "loss": "cross_entropy",
+    "effective_batch_size": 64,
+    "amp": true,
+    "transform": "regularized_native",
+    "optimizer_grouping": "layer_decay",
+    "scheduler": {
+      "name": "cosine",
+      "eta_min": 1e-06
+    },
+    "sampling_method": "weighted_replacement"
+  },
+  "experiment": {
+    "id": "v2in_base512_relu_stage_dropout",
+    "approval_status": "approved",
+    "weights": {
+      "path": "weights/v2_scale512_seed1_20261025_v1/base/7b29800e499fdc06de5b612970f3384dc8d29ca5/model.safetensors",
+      "sha256": "ec152f1e375edc2b3dfac7a81155a449b4c5cbb7c5cf0b9494838f6c87518d73",
+      "source": "timm/convnextv2_base.fcmae_ft_in1k",
+      "revision": "7b29800e499fdc06de5b612970f3384dc8d29ca5"
+    },
+    "native_setting_sources": {
+      "資料治理與泛化修復/config.json": "3b8c5c1f788a5f0d51ef49f66d6d3ce2eeb81e5e537237759d7b330691dfccaf",
+      "benchmarks/convnextv2_batch_20261018_v1/REPORT.md": "3d7146d9744dc2f980d6f1af5d25edb48d3772d52d8a573b70f8be94dcf53082"
+    },
+    "confirmation_note": "Human authorized Tiny then Base three Seeds, ReLU plus stage Dropout .1; dispatch b50f4300ecad404296042f725603fd2f"
+  },
+  "formal_suite": {
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "manifest_release": "資料治理與泛化修復/data/governed_18979_20261018_v1",
+    "manifest_sha256": "5c501ef3cb6c8a73b3a9395383d199212e070abfbc67c782fcfc010576243284",
+    "baseline_config_sha256": "3b8c5c1f788a5f0d51ef49f66d6d3ce2eeb81e5e537237759d7b330691dfccaf"
+  },
+  "optimization": {
+    "version": "v2_tiny_base512_relu_stage_dropout_20261026_v1",
+    "authorization_sha256": "ded6dd90a3ca808c52e901557b8b6e1f5b058628bb30d8be0e9fff507b180c35"
+  },
+  "architecture_modification": {
+    "block_activation": "relu",
+    "relu_inplace": false,
+    "stage_output_dropout": 0.1,
+    "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+    "dropout_type": "elementwise",
+    "block_dropout": 0.0,
+    "head_dropout": 0.0,
+    "drop_path": 0.0
+  }
+}

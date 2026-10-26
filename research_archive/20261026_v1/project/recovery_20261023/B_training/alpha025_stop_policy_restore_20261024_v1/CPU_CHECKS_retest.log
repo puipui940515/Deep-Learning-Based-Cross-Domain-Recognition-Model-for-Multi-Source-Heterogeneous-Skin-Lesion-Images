@@ -1,0 +1,6 @@
+test_train_epoch_calculations_equal_before_excluding_passive_timing (__main__.RestoreTests.test_train_epoch_calculations_equal_before_excluding_passive_timing) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.013s
+
+OK

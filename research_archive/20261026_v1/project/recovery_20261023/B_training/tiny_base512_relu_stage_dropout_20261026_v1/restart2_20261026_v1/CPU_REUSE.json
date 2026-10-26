@@ -1,0 +1,106 @@
+{
+  "status": "passed_reused",
+  "at": "2026-10-26T04:48:28.864806+00:00",
+  "evidence": {
+    "tiny": {
+      "receipt": "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\restart1_20261026_v1\\CPU_tiny.json",
+      "sha256": "04eba3802daa15cc486d1bef4814909e2def288d7ffb5e3d4baa9102e02ce5ea",
+      "architecture_audit": {
+        "variant": {
+          "block_activation": "relu",
+          "relu_inplace": false,
+          "stage_output_dropout": 0.1,
+          "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+          "dropout_type": "elementwise",
+          "block_dropout": 0.0,
+          "head_dropout": 0.0,
+          "drop_path": 0.0
+        },
+        "stage_depths": [
+          3,
+          3,
+          9,
+          3
+        ],
+        "relu_count": 18,
+        "grn_count": 18,
+        "stage_dropout_names": [
+          "stages.0.blocks.post_stage_dropout",
+          "stages.1.blocks.post_stage_dropout",
+          "stages.2.blocks.post_stage_dropout",
+          "stages.3.blocks.post_stage_dropout"
+        ],
+        "stage_dropout_count": 4,
+        "head_output_features": 7,
+        "feature_channels": [
+          96,
+          192,
+          384,
+          768
+        ],
+        "trainable_parameters": 27871879,
+        "parameter_keys_unchanged": true,
+        "state_key_sha256": "4845aaf2b472075c235fc6948bd7b6ddcbd4e76f59cfeb8eadb840525698c975"
+      },
+      "reexecuted": false
+    },
+    "base": {
+      "receipt": "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\restart1_20261026_v1\\CPU_base.json",
+      "sha256": "3ebdb712e08a2afe32d252a274e79c27fffce53342f90b10a22d9a0c4827bef6",
+      "architecture_audit": {
+        "variant": {
+          "block_activation": "relu",
+          "relu_inplace": false,
+          "stage_output_dropout": 0.1,
+          "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+          "dropout_type": "elementwise",
+          "block_dropout": 0.0,
+          "head_dropout": 0.0,
+          "drop_path": 0.0
+        },
+        "stage_depths": [
+          3,
+          3,
+          27,
+          3
+        ],
+        "relu_count": 36,
+        "grn_count": 36,
+        "stage_dropout_names": [
+          "stages.0.blocks.post_stage_dropout",
+          "stages.1.blocks.post_stage_dropout",
+          "stages.2.blocks.post_stage_dropout",
+          "stages.3.blocks.post_stage_dropout"
+        ],
+        "stage_dropout_count": 4,
+        "head_output_features": 7,
+        "feature_channels": [
+          128,
+          256,
+          512,
+          1024
+        ],
+        "trainable_parameters": 87699975,
+        "parameter_keys_unchanged": true,
+        "state_key_sha256": "496cf52a87167d0dfb3d487b0894dad643b12ab40addfefe59e097a8576fcf5a"
+      },
+      "reexecuted": false
+    }
+  },
+  "unchanged_functions": {
+    "train_epoch": true,
+    "evaluate": true,
+    "build_transform": true,
+    "load_governed_release": true
+  },
+  "architecture_and_optimizer_sources_unchanged": true,
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "timm": "1.0.30",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0"
+  },
+  "python": "3.12.10",
+  "no_model_reconstruction_or_GPU_test": true
+}

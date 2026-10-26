@@ -1,0 +1,148 @@
+{
+  "version": "original_v2_imagenet_ensemble_20261021_v1",
+  "class_order": [
+    "AKIEC",
+    "BCC",
+    "BKL",
+    "DF",
+    "NV",
+    "VASC",
+    "MEL"
+  ],
+  "manifest_sha256": "5c501ef3cb6c8a73b3a9395383d199212e070abfbc67c782fcfc010576243284",
+  "config": {
+    "path": "資料治理與泛化修復/configs/five_model_baseline_20261019_v1/convnextv2_tiny_imagenet.json",
+    "sha256": "4982675565cbd7641846b5865e4c30cea2a9efdfa20265505f8c05ee69c99940"
+  },
+  "preprocessing": {
+    "color": "RGB",
+    "resize": [
+      224,
+      224
+    ],
+    "interpolation": "bilinear",
+    "antialias": true,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "exif_transpose": false,
+    "tta": false,
+    "amp_cuda": true,
+    "softmax": "float32 CPU logits.softmax(-1)",
+    "web_batch": 1,
+    "reference_batch": 32
+  },
+  "members": {
+    "1": {
+      "run_id": "2f10e3e3408242d5ab5e7fc325c228ad",
+      "best_epoch": 5,
+      "run_inputs": {
+        "path": "資料治理與泛化修復/results/baseline_20261019_v1/runs/convnextv2_tiny_imagenet/regularized_seed1/run_inputs.json",
+        "sha256": "65af1d14a980eda5fd7d771efa2a0bbbfe4538cd12fa963ffba4be1a75555405",
+        "size_bytes": 730019
+      },
+      "result": {
+        "path": "資料治理與泛化修復/results/baseline_20261019_v1/runs/convnextv2_tiny_imagenet/regularized_seed1/result.json",
+        "sha256": "7350ef872b9d41440d5bcf74beb03674cdd91aabe405cf4519285bba7bd153e1",
+        "size_bytes": 101511
+      },
+      "checkpoint": {
+        "path": "資料治理與泛化修復/results/baseline_20261019_v1/runs/convnextv2_tiny_imagenet/regularized_seed1/best.pt",
+        "sha256": "6e0fe206d4503195816795efb35fe9f1fa78ddfae483e0632753aac176c66c52",
+        "size_bytes": 111550063
+      }
+    },
+    "2": {
+      "run_id": "89dcc59db128411d9d02c884e6f5a067",
+      "best_epoch": 10,
+      "run_inputs": {
+        "path": "資料治理與泛化修復/results/baseline_20261019_v1/runs/convnextv2_tiny_imagenet/regularized_seed2/run_inputs.json",
+        "sha256": "8497cf623a0801be70e9eea452e9dbd607ebd538d245eb45a48ae52ac6b75813",
+        "size_bytes": 730019
+      },
+      "result": {
+        "path": "資料治理與泛化修復/results/baseline_20261019_v1/runs/convnextv2_tiny_imagenet/regularized_seed2/result.json",
+        "sha256": "5acab4974d123cc42d8c37a91e2793c3c525ace3b1bcbc5b929dd0987980d8a1",
+        "size_bytes": 124163
+      },
+      "checkpoint": {
+        "path": "資料治理與泛化修復/results/baseline_20261019_v1/runs/convnextv2_tiny_imagenet/regularized_seed2/best.pt",
+        "sha256": "0dcefb718915d9a37da9ae58b183a0488c24f2a81d8bdbf15fdb9f545806a039",
+        "size_bytes": 111550063
+      }
+    },
+    "3": {
+      "run_id": "224f04b5f8294cd993f1cc371c84a4e1",
+      "best_epoch": 8,
+      "run_inputs": {
+        "path": "資料治理與泛化修復/results/baseline_20261019_v1/runs/convnextv2_tiny_imagenet/regularized_seed3/run_inputs.json",
+        "sha256": "52450254a781b2d8a4094438a603bb11e1f270d362dad8cb288efa5696dd0d7a",
+        "size_bytes": 730019
+      },
+      "result": {
+        "path": "資料治理與泛化修復/results/baseline_20261019_v1/runs/convnextv2_tiny_imagenet/regularized_seed3/result.json",
+        "sha256": "e5b01b8e0e22686ee71a2a1ceda67fc653e456ae344dec201670ca25d5d536ab",
+        "size_bytes": 109024
+      },
+      "checkpoint": {
+        "path": "資料治理與泛化修復/results/baseline_20261019_v1/runs/convnextv2_tiny_imagenet/regularized_seed3/best.pt",
+        "sha256": "0fb3190362575fc8873476f14a05279fde139f24ed51949c0d8bd9efdee32ab5",
+        "size_bytes": 111550063
+      }
+    }
+  },
+  "source_contracts": [
+    {
+      "path": "資料治理與泛化修復/scripts/train_regularized.py",
+      "function": "build_transform",
+      "validation_branch": true,
+      "ast_sha256": "5377f32f27bca578bba62d2f001a163fed2a053a3742246e2c4748cbdc987c49"
+    },
+    {
+      "path": "資料治理與泛化修復/scripts/model_profiles.py",
+      "function": "construct_model",
+      "validation_branch": false,
+      "ast_sha256": "c6442c07c86dad0684a1df2439512f20024cba2a70b5e2296300e24e1443c7d4"
+    },
+    {
+      "path": "第二階段/src/stage2/models.py",
+      "function": "build_model",
+      "validation_branch": false,
+      "ast_sha256": "715414f969fd415f59ce802a75efda28ad58dba119cf8a971a8ab45a712b8c33"
+    },
+    {
+      "path": "第二階段/src/stage2/engine.py",
+      "function": "seed_everything",
+      "validation_branch": false,
+      "ast_sha256": "9c9fa211648bdc1c7ad250c378fe444907489a4bf36208ff476884b10f5a3c58"
+    }
+  ],
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0",
+    "timm": "1.0.30"
+  },
+  "references": {
+    "seed_predictions": {
+      "path": "[USER_HOME]\\Documents\\Codex\\2026-10-18\\skindetect-d-skindetect-base-agents-md-2\\outputs\\V2_ImageNet_逐張Validation_20261021_v1\\all_seeds_validation_predictions.csv",
+      "sha256": "ee16157c73b40b795a511093bbd1c3853c93bc0612b05cf9a8739ab23d751fe1"
+    },
+    "ensemble_predictions": {
+      "path": "[USER_HOME]\\Documents\\Codex\\2026-10-18\\new-chat\\outputs\\SkinDetect_C_V2等權Ensemble評估_20261021_v1\\Ensemble_逐張Validation預測.csv",
+      "sha256": "31eb9ebd23037c40d388fc1acccd974ef459314e3ceebbe2123690731663ff14"
+    },
+    "seed_provenance": {
+      "path": "[USER_HOME]\\Documents\\Codex\\2026-10-18\\skindetect-d-skindetect-base-agents-md-2\\outputs\\V2_ImageNet_逐張Validation_20261021_v1\\provenance.json",
+      "sha256": "40be8dd67b82fefca644e3021cdb70942d6a4924a40e6f0628d2c56c42adbd67"
+    }
+  }
+}

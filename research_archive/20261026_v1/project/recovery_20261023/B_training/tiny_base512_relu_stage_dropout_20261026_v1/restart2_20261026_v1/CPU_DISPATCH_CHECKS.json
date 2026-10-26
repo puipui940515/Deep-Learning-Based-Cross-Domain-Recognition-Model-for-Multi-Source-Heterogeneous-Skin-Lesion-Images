@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": [
+    "exactly one native train_epoch call; no custom backward, clipping, unscale or preAMP gradient policy",
+    "new dispatch and precheck syntax passed",
+    "tiny_seed1: exact seed/revision/token/output; fresh head/empty optimizer; Resume and wrong execution rejected",
+    "tiny_seed2: exact seed/revision/token/output; fresh head/empty optimizer; Resume and wrong execution rejected",
+    "tiny_seed3: exact seed/revision/token/output; fresh head/empty optimizer; Resume and wrong execution rejected",
+    "base_seed1: exact seed/revision/token/output; fresh head/empty optimizer; Resume and wrong execution rejected",
+    "base_seed2: exact seed/revision/token/output; fresh head/empty optimizer; Resume and wrong execution rejected",
+    "base_seed3: exact seed/revision/token/output; fresh head/empty optimizer; Resume and wrong execution rejected",
+    "180 complete epoch cap, single active lease, sequence/repeat protection and STOP in CPU-only fixture"
+  ],
+  "no_models_or_GPU_reexecuted": true,
+  "CPU_architecture_reused": true
+}

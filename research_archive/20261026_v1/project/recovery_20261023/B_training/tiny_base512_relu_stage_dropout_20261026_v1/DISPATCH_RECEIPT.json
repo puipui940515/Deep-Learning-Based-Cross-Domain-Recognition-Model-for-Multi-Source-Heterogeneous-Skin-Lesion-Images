@@ -1,0 +1,47 @@
+{
+  "status": "accepted_not_launched",
+  "at": "2026-10-26T03:30:53.894003+00:00",
+  "source_thread": "01a16a74-3356-7701-acf2-12096d5c2599",
+  "task": "recovery_20261023\\B_training\\model512_relu_stage_dropout_queue_20261026_v2\\B_NEXT_TASK.md",
+  "task_sha256": "ece3cb71b27278217346edd8bdc347ec344d45a6f8c550442d9af6f27d09f725",
+  "old_state": "completed",
+  "old_complete_epochs": 37,
+  "jobs": [
+    [
+      "tiny_seed1",
+      "v2in_tiny512_relu_stage_dropout",
+      1,
+      "tiny"
+    ],
+    [
+      "tiny_seed2",
+      "v2in_tiny512_relu_stage_dropout",
+      2,
+      "tiny"
+    ],
+    [
+      "tiny_seed3",
+      "v2in_tiny512_relu_stage_dropout",
+      3,
+      "tiny"
+    ],
+    [
+      "base_seed1",
+      "v2in_base512_relu_stage_dropout",
+      1,
+      "base"
+    ],
+    [
+      "base_seed2",
+      "v2in_base512_relu_stage_dropout",
+      2,
+      "base"
+    ],
+    [
+      "base_seed3",
+      "v2in_base512_relu_stage_dropout",
+      3,
+      "base"
+    ]
+  ]
+}

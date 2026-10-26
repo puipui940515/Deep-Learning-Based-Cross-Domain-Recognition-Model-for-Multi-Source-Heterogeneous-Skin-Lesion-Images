@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "size": "tiny",
+  "no_images": true,
+  "no_gpu": true,
+  "error": "AssertionError()",
+  "traceback": "Traceback (most recent call last):\n  File \"recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\cpu_architecture.py\", line 27, in main\n    assert sum(isinstance(m,torch.nn.GELU) for m in original.modules())==sum(depths)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "seconds": 8.498143600008916,
+  "command": [
+    "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\cpu_architecture.py",
+    "--size",
+    "tiny"
+  ]
+}

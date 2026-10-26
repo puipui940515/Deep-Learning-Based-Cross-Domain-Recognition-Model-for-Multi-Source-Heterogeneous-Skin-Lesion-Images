@@ -1,0 +1,15 @@
+{
+  "format_version": 1,
+  "generations": [
+    {
+      "file": "epoch-0003-755ac5f80136469b86b86248164dc03a.pt",
+      "epoch": 3,
+      "sha256": "67ece0dd02767a8a7fb5ec7575622ea59462735d3a14f281618d48d7e7872dd5"
+    },
+    {
+      "file": "epoch-0002-6ffaca8fc9ba4f0fb841b4cabf6ac40b.pt",
+      "epoch": 2,
+      "sha256": "b280f78d17c716dc4e8b3eec1ef5ea344b169d0ab98d2f17681402c60c733f8d"
+    }
+  ]
+}

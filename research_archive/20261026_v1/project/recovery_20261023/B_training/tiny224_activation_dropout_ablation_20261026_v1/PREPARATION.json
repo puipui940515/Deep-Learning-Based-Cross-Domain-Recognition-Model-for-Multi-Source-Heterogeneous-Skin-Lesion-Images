@@ -1,0 +1,52 @@
+{
+  "status": "prepared_not_validated_not_launched",
+  "authorization_id": "a8bee58861fd4878b48135c851f8aa90",
+  "version": "v2_tiny224_activation_dropout_ablation_20261026_v1",
+  "jobs": [
+    [
+      "relu_seed1",
+      "v2in_tiny224_relu_only",
+      1,
+      "relu"
+    ],
+    [
+      "relu_seed2",
+      "v2in_tiny224_relu_only",
+      2,
+      "relu"
+    ],
+    [
+      "relu_seed3",
+      "v2in_tiny224_relu_only",
+      3,
+      "relu"
+    ],
+    [
+      "dropout_seed1",
+      "v2in_tiny224_stage_dropout01_only",
+      1,
+      "dropout"
+    ],
+    [
+      "dropout_seed2",
+      "v2in_tiny224_stage_dropout01_only",
+      2,
+      "dropout"
+    ],
+    [
+      "dropout_seed3",
+      "v2in_tiny224_stage_dropout01_only",
+      3,
+      "dropout"
+    ]
+  ],
+  "limits": {
+    "runs": 6,
+    "epochs": 180,
+    "max_epochs_per_run": 30,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+  },
+  "baseline_sha256": "4982675565cbd7641846b5865e4c30cea2a9efdfa20265505f8c05ee69c99940",
+  "scientific_training_dict_unchanged": true
+}

@@ -1,0 +1,15 @@
+/* Ensemble v1：只新增推論選擇與狀態，不覆蓋使用者的原淺色系樣式。 */
+.model-selector { margin-bottom:18px; }
+.model-selector label { display:block; font-size:12px; font-weight:600; margin-bottom:7px; }
+.model-selector select { width:100%; min-height:44px; border:1px solid var(--line); border-radius:8px; background:var(--white); color:var(--ink); font:inherit; font-size:12px; padding:9px 11px; }
+.model-selector select:focus-visible { outline:3px solid #819565; outline-offset:3px; }
+.mode-help { font-size:10px; line-height:1.8; margin-top:8px; }
+.service-tag { background:#edf1e5; color:#657c53; }
+.service-tag.pending { background:#f4ebdb; color:#8a6838; }
+.result-model-info { font-size:10px; padding:0 0 13px; color:var(--muted); line-height:1.8; }
+.sample-row { flex-wrap:wrap; }
+
+/* 七分類第一版驗收：上傳前清楚呈現輸入限制，不變更既有版面與配色。 */
+.input-scope { margin:0 0 16px; padding:13px 15px; border:1px solid var(--line); border-radius:12px; background:var(--paper); font-size:12px; line-height:1.8; }
+.input-scope strong { display:block; color:var(--green-dark); }
+.input-scope p { margin:5px 0 0; color:var(--muted); overflow-wrap:anywhere; }

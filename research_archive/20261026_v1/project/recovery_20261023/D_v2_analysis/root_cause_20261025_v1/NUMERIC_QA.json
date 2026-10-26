@@ -1,0 +1,416 @@
+{
+  "checks": [
+    {
+      "name": "new completed, no Test, no automatic adoption",
+      "passed": true
+    },
+    {
+      "name": "three unique completed Seeds",
+      "passed": true
+    },
+    {
+      "name": "seed1 recorded epoch/status",
+      "passed": true
+    },
+    {
+      "name": "old512 s1 Robust arithmetic agrees",
+      "passed": true
+    },
+    {
+      "name": "old512 s1 BCN worst",
+      "passed": true
+    },
+    {
+      "name": "alpha025 s1 Robust arithmetic agrees",
+      "passed": true
+    },
+    {
+      "name": "alpha025 s1 BCN worst",
+      "passed": true
+    },
+    {
+      "name": "seed2 recorded epoch/status",
+      "passed": true
+    },
+    {
+      "name": "old512 s2 Robust arithmetic agrees",
+      "passed": true
+    },
+    {
+      "name": "old512 s2 BCN worst",
+      "passed": true
+    },
+    {
+      "name": "alpha025 s2 Robust arithmetic agrees",
+      "passed": true
+    },
+    {
+      "name": "alpha025 s2 BCN worst",
+      "passed": true
+    },
+    {
+      "name": "seed3 recorded epoch/status",
+      "passed": true
+    },
+    {
+      "name": "old512 s3 Robust arithmetic agrees",
+      "passed": true
+    },
+    {
+      "name": "old512 s3 BCN worst",
+      "passed": true
+    },
+    {
+      "name": "alpha025 s3 Robust arithmetic agrees",
+      "passed": true
+    },
+    {
+      "name": "alpha025 s3 BCN worst",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 AKIEC seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 AKIEC seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 AKIEC seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 AKIEC fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 BCC seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 BCC seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 BCC seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 BCC fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 BKL seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 BKL seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 BKL seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 BKL fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 DF seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 DF seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 DF seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 DF fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 NV seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 NV seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 NV seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 NV fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 VASC seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 VASC seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 VASC seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 VASC fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 MEL seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 MEL seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 MEL seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "HAM10000 MEL fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 AKIEC seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 AKIEC seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 AKIEC seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 AKIEC fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 BCC seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 BCC seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 BCC seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 BCC fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 BKL seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 BKL seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 BKL seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 BKL fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 DF seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 DF seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 DF seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 DF fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 NV seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 NV seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 NV seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 NV fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 VASC seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 VASC seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 VASC seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 VASC fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 MEL seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 MEL seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 MEL seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "BCN20000 MEL fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 AKIEC seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 AKIEC seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 AKIEC seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 AKIEC fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 BCC seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 BCC seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 BCC seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 BCC fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 BKL seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 BKL seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 BKL seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 BKL fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 NV seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 NV seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 NV seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 NV fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 MEL seed1 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 MEL seed2 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 MEL seed3 support unchanged",
+      "passed": true
+    },
+    {
+      "name": "PAD-UFES-20 MEL fixed N across Seeds",
+      "passed": true
+    },
+    {
+      "name": "disease contributions exactly reconcile Robust delta",
+      "passed": true
+    },
+    {
+      "name": "source contributions reconcile",
+      "passed": true
+    },
+    {
+      "name": "unchanged 資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\executions\\retry1_20261024_v1\\FINAL_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged 資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\FINAL_RESULTS.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged 資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\EVALUATION_CONTRACT.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged 資料治理與泛化修復\\results\\baseline_20261019_v1\\reports\\baseline_results.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged 資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\COMPARISON.json",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "count": 100,
+  "sources_sha256": {
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\executions\\retry1_20261024_v1\\FINAL_RESULTS.json": "80b122dab3b342b35728e92eb988a07a8ed6b2f902e8eafebef6600e72de3045",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\FINAL_RESULTS.json": "9d7d6308befc4fc82941418ae1ab8ab3fc8b2feaebf215e9e8773d6c0081c4ff",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\EVALUATION_CONTRACT.json": "8d327ff8a0c6f81c44abe3db60b28e376469e818734927552d14092d56ab80b1",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\baseline_20261019_v1\\reports\\baseline_results.json": "41dd83026f8934de6e60cde658dc8b1857b89d889c8d17e301de80afee5b440f",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\resolution_decision_20261024_v1\\COMPARISON.json": "4a96030b64781bbcba0875d9dfdb101ef236f675e11c1bdd55bd0e9b848ee0ab"
+  },
+  "no_predictions_recomputed": true,
+  "no_models_images_Test_accessed": true,
+  "rules_evaluated_without_modification": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\EVALUATION_CONTRACT.json"
+}

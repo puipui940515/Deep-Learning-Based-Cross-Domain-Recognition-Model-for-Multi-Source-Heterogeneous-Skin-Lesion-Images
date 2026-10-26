@@ -1,0 +1,34 @@
+{
+  "revision": "alpha025_stop_policy_restore_20261024_v1",
+  "at": "2026-10-24T20:59:17.7766937+08:00",
+  "scope": "restore original startup-only resource policy and batch loss/gradient behavior; UTF8 compatibility only",
+  "training_started": false,
+  "retry_authorized": false,
+  "retry_executed": false,
+  "resume_executed": false,
+  "windows_changed": false,
+  "wall_clock_cap_seconds": null,
+  "C_configuration_unchanged": true,
+  "failed_run_id": "d87cb2eef21d47fc8a408aa16b70e641",
+  "failed_state_preserved": "failed",
+  "historical_gate_sha256": "8CA2F1353AEC40B455DD91AB6E42BB5BFC37CAAC0DD86AB015E49759400B9B0F",
+  "historical_gate_rebound": false,
+  "source_files": [
+    {
+      "path": "資料治理與泛化修復\\scripts\\run_v2_alpha025.py",
+      "sha256": "CFCA63F3555CA6EFA9CF01591E0A08032E7C280AE4C3F21EA0B5E432229DDD52"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "sha256": "16B10D1F47601C5E79A3413CF2A6F3DE56003C759AA99E23ED28C24006131509"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\v2_alpha025_contract.py",
+      "sha256": "5254061907D25D55574BEEE56FFCEF883B9F0AEEAF7CF5BA376F7C6E1DFB8C88"
+    }
+  ],
+  "logical_CPU_checks_passed": 12,
+  "first_run_passed": 11,
+  "targeted_retest_passed": 1,
+  "protected_small_files_unchanged": 44
+}

@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "size": "base",
+  "no_images": true,
+  "no_gpu": true,
+  "architecture_audit": {
+    "variant": {
+      "block_activation": "relu",
+      "relu_inplace": false,
+      "stage_output_dropout": 0.1,
+      "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+      "dropout_type": "elementwise",
+      "block_dropout": 0.0,
+      "head_dropout": 0.0,
+      "drop_path": 0.0
+    },
+    "stage_depths": [
+      3,
+      3,
+      27,
+      3
+    ],
+    "relu_count": 36,
+    "grn_count": 36,
+    "stage_dropout_names": [
+      "stages.0.blocks.post_stage_dropout",
+      "stages.1.blocks.post_stage_dropout",
+      "stages.2.blocks.post_stage_dropout",
+      "stages.3.blocks.post_stage_dropout"
+    ],
+    "stage_dropout_count": 4,
+    "head_output_features": 7,
+    "feature_channels": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "trainable_parameters": 87699975,
+    "parameter_keys_unchanged": true,
+    "state_key_sha256": "496cf52a87167d0dfb3d487b0894dad643b12ab40addfefe59e097a8576fcf5a"
+  },
+  "native_candidate_unchanged": true,
+  "all_backbone_keys_shapes_matched": true,
+  "original_activation_type": "timm.layers.activations.GELU",
+  "state_keys_shapes_unchanged": true,
+  "stage_output_shapes": [
+    [
+      1,
+      128,
+      16,
+      16
+    ],
+    [
+      1,
+      256,
+      8,
+      8
+    ],
+    [
+      1,
+      512,
+      4,
+      4
+    ],
+    [
+      1,
+      1024,
+      2,
+      2
+    ]
+  ],
+  "head_shape": [
+    1,
+    7
+  ],
+  "stage_execution_order": [
+    "block_end_0",
+    "dropout_0",
+    "downsample_1",
+    "block_end_1",
+    "dropout_1",
+    "downsample_2",
+    "block_end_2",
+    "dropout_2",
+    "downsample_3",
+    "block_end_3",
+    "dropout_3",
+    "original_head_pool"
+  ],
+  "dropout_train_active_eval_disabled": true,
+  "eval_deterministic": true,
+  "checkpoint_roundtrip": true,
+  "checkpoint": {
+    "file": "epoch-0001-ac58ef3ec090437487473049eac87e7e.pt",
+    "epoch": 1,
+    "sha256": "5c1e4b3b86995ebe0d066def6a24e40e01bdc14ed6802e34298bdf09fba78dd9"
+  },
+  "model_state_only_no_method_overrides": true,
+  "initial_classifier_sha256": "6271a799a429a3b0e82de648cb5c3547e2acceebb3f960b3f7e6ba82ad793afe",
+  "seconds": 5.114852200000314,
+  "command": [
+    "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\restart1_20261026_v1\\cpu_architecture.py",
+    "--size",
+    "base"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "authorized_preparing",
+  "at": "2026-10-26T04:22:18.224798+00:00",
+  "execution_revision": "restart1_20261026_v1",
+  "prior_failure_hashes": {
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\STOP": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\state.json": "18825a5eb926b75fd174cbb2e89d0baf19cf140e3febbedd0ecfaad50ef7031d",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\CPU_tiny.json": "6efcb8c75bc600e0408327984ace399e2591d4943989dfcf208e0285a97f1837",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\STOPPED_RECEIPT.json": "709680e516f2d16bf8b49c42e3198187b3f5e5d1394798b696adc5b8998cf66d",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\EXECUTION_GATE.json": "ca303508f1decfb73c03a622177f70d37c01ba23e7486eb2611ebfb5cbf41664"
+  },
+  "original_STOP_preserved": true,
+  "authorization_sha256": "fa4f0fe4875a3ab8624baf80cf70e1aef3fc9ab605e5c7033d29d296ed511e88",
+  "results": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart1_20261026_v1"
+}

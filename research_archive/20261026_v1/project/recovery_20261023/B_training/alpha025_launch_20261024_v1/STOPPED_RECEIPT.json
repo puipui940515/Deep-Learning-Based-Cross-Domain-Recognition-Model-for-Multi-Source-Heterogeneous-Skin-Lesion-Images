@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-24T19:32:25.8198488+08:00",
+  "status": "failed",
+  "error": "resource_guard_commit8_or_ram4",
+  "controller_pid": 3592,
+  "run_id": "d87cb2eef21d47fc8a408aa16b70e641",
+  "seed": 1,
+  "alpha": 0.25,
+  "initial_optimizer_state_entries": 0,
+  "initial_head_sha": "2e363c2d895d83b871e758a532cd2181b8f9fab65fcc621e6094387d59dfdf43",
+  "checkpoint_available": false,
+  "attempt": {
+    "seed": 1,
+    "candidate": "v2in_res512_alpha025",
+    "status": "failed",
+    "started_utc": "2026-10-24T19:30:05.021024+08:00",
+    "started_unix": 1792841405.021025,
+    "command": [
+      ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+      "-B",
+      "-u",
+      "-X",
+      "utf8",
+      "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "--config",
+      "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\v2in_res512_alpha025.json",
+      "--seed",
+      "1",
+      "--manifest-release",
+      "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+      "--output-root",
+      "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\runs\\v2in_res512_alpha025",
+      "--require-cuda",
+      "--formal"
+    ],
+    "schedule": {
+      "memory": {
+        "at": "2026-10-24T19:30:04.669113+08:00",
+        "commit_headroom_gib": 17.7742919921875,
+        "commit_limit_gib": 36.11309814453125,
+        "commit_used_gib": 18.33880615234375,
+        "available_ram_gib": 17.45871353149414
+      },
+      "gpu": {
+        "name": "NVIDIA GeForce RTX 5070",
+        "utilization_percent": 0.0,
+        "used_mib": 1877.0,
+        "total_mib": 12227.0,
+        "free_mib": 10350.0,
+        "power_w": 6.73
+      },
+      "conflicts": [],
+      "free_disk_gib": 420.94895935058594
+    },
+    "resume": false,
+    "pid": 12628,
+    "exit_code": 1,
+    "ended_utc": "2026-10-24T19:30:29.800793+08:00",
+    "seconds": 24.779381000000285,
+    "reason": "resource_guard_commit8_or_ram4"
+  },
+  "post_stop_processes": [],
+  "commit_headroom_gib": 17.719127655029297,
+  "stop_preserved": true,
+  "wall_clock_cap_seconds": null
+}

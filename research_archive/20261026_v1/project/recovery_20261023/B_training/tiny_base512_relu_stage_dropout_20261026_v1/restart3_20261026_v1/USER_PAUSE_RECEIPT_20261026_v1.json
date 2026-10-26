@@ -1,0 +1,245 @@
+{
+  "observed_taipei": "2026-10-26T19:57:57.762737+08:00",
+  "classification": "user_requested_pause_not_program_failure_not_six_run_completion",
+  "native_execution_status": "paused",
+  "native_active": null,
+  "trainer_attempt_exited_taipei": "2026-10-26T19:56:33.701583+08:00",
+  "controller_terminal_state_taipei": "2026-10-26T19:56:33.708127+08:00",
+  "controller_workers_first_observed_absent_taipei": "2026-10-26T19:56:55.964159+08:00",
+  "stop_request_taipei": "2026-10-26T19:52:37.334389+08:00",
+  "stop_path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\STOP",
+  "stop_preserved": true,
+  "forced_process_termination": false,
+  "run_rows": [
+    {
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 1,
+      "status": "completed",
+      "run_id": "f49f7c0aa4644917839363f44e3d1d3d",
+      "epochs_completed": 30,
+      "best_epoch": 28,
+      "best_robust": 0.4826634148220117,
+      "job": "tiny_seed1",
+      "native_stop_reason": "max_epochs",
+      "human_stop_reason": "max_epochs",
+      "result": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\result.json",
+      "run_inputs": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\run_inputs.json",
+      "metrics": [
+        "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\metrics_fa5145475e5146c5b2c274817fe631a0.jsonl"
+      ],
+      "checkpoint_index": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\checkpoints\\index.json",
+      "checkpoint_generations": [
+        {
+          "file": "epoch-0030-ea7348642a2e4ce1b534aeaa03b7cf74.pt",
+          "epoch": 30,
+          "sha256": "cbf8807c1e3300260431105b3371aaa3ea0bc2093e261119e7976f233c8b2eb9",
+          "path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\checkpoints\\epoch-0030-ea7348642a2e4ce1b534aeaa03b7cf74.pt",
+          "bytes": 446368615
+        },
+        {
+          "file": "epoch-0029-786d43bd51d0445f956bce5ebbd0c82f.pt",
+          "epoch": 29,
+          "sha256": "d72701ddbd9d1b8e7f4dceed6a4ec69c91f0bdc15bff469c0acdda2e5cf59b70",
+          "path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\checkpoints\\epoch-0029-786d43bd51d0445f956bce5ebbd0c82f.pt",
+          "bytes": 446366759
+        }
+      ],
+      "best_path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\best.pt",
+      "best_bytes": 111550063,
+      "trainer_elapsed_seconds": 10815.489752399997,
+      "last_committed_epoch": 30,
+      "last_epoch_seconds": 353.8642796999775
+    },
+    {
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 2,
+      "status": "completed",
+      "run_id": "951d46aece144af2a7aa9dc6b0b0f145",
+      "epochs_completed": 30,
+      "best_epoch": 28,
+      "best_robust": 0.5576580270910849,
+      "job": "tiny_seed2",
+      "native_stop_reason": "max_epochs",
+      "human_stop_reason": "max_epochs",
+      "result": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2\\result.json",
+      "run_inputs": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2\\run_inputs.json",
+      "metrics": [
+        "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2\\metrics_a704a45b041c482f928d2b47ad71d665.jsonl"
+      ],
+      "checkpoint_index": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2\\checkpoints\\index.json",
+      "checkpoint_generations": [
+        {
+          "file": "epoch-0030-b56f8494caa6400eac578e1df931eb2f.pt",
+          "epoch": 30,
+          "sha256": "26d22ce1d48cd0be6e03b13b60928607dc6e906ed15626df1d727f9f7fba6424",
+          "path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2\\checkpoints\\epoch-0030-b56f8494caa6400eac578e1df931eb2f.pt",
+          "bytes": 446368679
+        },
+        {
+          "file": "epoch-0029-994b71915cb7451681ab8ce520139d72.pt",
+          "epoch": 29,
+          "sha256": "d9ef37dffd118e2b33e6b10560bc26dec69cc4a4f49b9fdbcc9c7e92878f6822",
+          "path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2\\checkpoints\\epoch-0029-994b71915cb7451681ab8ce520139d72.pt",
+          "bytes": 446366823
+        }
+      ],
+      "best_path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2\\best.pt",
+      "best_bytes": 111550063,
+      "trainer_elapsed_seconds": 10799.166879700002,
+      "last_committed_epoch": 30,
+      "last_epoch_seconds": 357.6380267999775
+    },
+    {
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 3,
+      "status": "paused",
+      "run_id": "d920dd58fbc144ea96ab652d8eac526c",
+      "epochs_completed": 4,
+      "best_epoch": 1,
+      "best_robust": 0.1523809523809524,
+      "job": "tiny_seed3",
+      "native_stop_reason": null,
+      "human_stop_reason": "user_requested_pause_at_complete_epoch",
+      "result": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed3\\result.json",
+      "run_inputs": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed3\\run_inputs.json",
+      "metrics": [
+        "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed3\\metrics_5dda3c417ad84208a065cd2db6472d64.jsonl"
+      ],
+      "checkpoint_index": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed3\\checkpoints\\index.json",
+      "checkpoint_generations": [
+        {
+          "file": "epoch-0004-f7faf5468f844578b8cd48e4f4ea4d5a.pt",
+          "epoch": 4,
+          "sha256": "60c07664aee5a672f6f652788c666295cb8d77c4126d3b869998062c8ec84a12",
+          "path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed3\\checkpoints\\epoch-0004-f7faf5468f844578b8cd48e4f4ea4d5a.pt",
+          "bytes": 446320103
+        },
+        {
+          "file": "epoch-0003-ebbfded624e54c48b3e8eb34a0ecb8b7.pt",
+          "epoch": 3,
+          "sha256": "3c9980ccec525229a83b5d74e49d35cc157639a50beaa22d5c975a3703926486",
+          "path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed3\\checkpoints\\epoch-0003-ebbfded624e54c48b3e8eb34a0ecb8b7.pt",
+          "bytes": 446318247
+        }
+      ],
+      "best_path": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed3\\best.pt",
+      "best_bytes": 111550063,
+      "trainer_elapsed_seconds": 1490.9775547000172,
+      "last_committed_epoch": 4,
+      "last_epoch_seconds": 359.2896260000125
+    },
+    {
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 1,
+      "status": "pending",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null,
+      "best_robust": null,
+      "job": "base_seed1",
+      "run_folder_exists": false,
+      "effective_status": "not_started_dispatch_authorization_withdrawn"
+    },
+    {
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 2,
+      "status": "pending",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null,
+      "best_robust": null,
+      "job": "base_seed2",
+      "run_folder_exists": false,
+      "effective_status": "not_started_dispatch_authorization_withdrawn"
+    },
+    {
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 3,
+      "status": "pending",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null,
+      "best_robust": null,
+      "job": "base_seed3",
+      "run_folder_exists": false,
+      "effective_status": "not_started_dispatch_authorization_withdrawn"
+    }
+  ],
+  "prior_controller_trainer_and_workers_remaining": [],
+  "gpu_after_exit": "NVIDIA GeForce RTX 5070, 0 %, 1115 MiB, 12227 MiB",
+  "cuda_model_load_or_weight_rehash_performed": false,
+  "resume_validity_not_tested": true,
+  "formal_committed_epochs": 64,
+  "active_epoch_segments": 0,
+  "uncommitted_epoch_segments": 0,
+  "uncommitted_seconds": 0,
+  "epoch_segment_seconds_included_in_attempts": 23105.01829310003,
+  "attempts": [
+    {
+      "job": "tiny_seed2",
+      "pid": 15684,
+      "status": "exited",
+      "reason": null,
+      "exit_code": 0,
+      "seconds": 10812.039768999995,
+      "started_utc": "2026-10-26T08:31:12.403160+00:00",
+      "ended_utc": "2026-10-26T11:31:24.452035+00:00"
+    },
+    {
+      "job": "tiny_seed3",
+      "pid": 25688,
+      "status": "exited",
+      "reason": null,
+      "exit_code": 0,
+      "seconds": 1508.3517951999966,
+      "started_utc": "2026-10-26T11:31:25.337053+00:00",
+      "ended_utc": "2026-10-26T11:56:33.701583+00:00"
+    },
+    {
+      "job": "tiny_seed1",
+      "pid": 7532,
+      "status": "exited",
+      "reason": null,
+      "exit_code": 0,
+      "seconds": 10827.3719882,
+      "started_utc": "2026-10-26T05:30:44.055547+00:00",
+      "ended_utc": "2026-10-26T08:31:11.431493+00:00"
+    }
+  ],
+  "current_execution_formal_attempt_seconds": 23147.763552399992,
+  "current_execution_failed_attempt_seconds_native": 0,
+  "prior_failed_formal_run_preserved_separately": {
+    "run_id": "9b38f8536746431b84a42f25d307569b",
+    "result_root": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart2_20261026_v1",
+    "formal_attempt_seconds": 534.1421076999977,
+    "committed_epochs": 0,
+    "uncommitted_epoch_segments": [
+      {
+        "id": "14c70a89f5184ef78fef06d6ddb6b8ac",
+        "candidate": "v2in_tiny512_relu_stage_dropout",
+        "seed": 1,
+        "run_id": "9b38f8536746431b84a42f25d307569b",
+        "epoch": 1,
+        "pid": 11640,
+        "started_utc": "2026-10-26T04:53:58.717942+00:00",
+        "started_unix": 1792990438.717942,
+        "status": "interrupted",
+        "committed": false,
+        "seconds": 425.7672619819641,
+        "ended_utc": "2026-10-26T05:01:04.485204+00:00",
+        "reason": "trainer_exception",
+        "measurement": "wall_time_to_observed_failure_conservative_upper_bound"
+      }
+    ],
+    "resume_available": false
+  },
+  "combined_historical_attempt_seconds": 23681.90566009999,
+  "accounting_note": "Phase/epoch seconds are included in attempt totals and must not be added twice. Previous failed attempt remains separate. Tiny3 paused before Min12; its best is an incomplete-run observation.",
+  "final_results": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\FINAL_RESULTS.json",
+  "b_handoff": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\B_HANDOFF.md",
+  "monitor": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\MONITOR.md",
+  "monitor_is_terminal_snapshot_not_live_15s_updating": true,
+  "f_service_interference": false,
+  "source_config_windows_and_shared_indices_unchanged": true,
+  "next_action": "Wait for direct new user instruction. Do not delete STOP, Resume, restart, retry, dispatch Base, or run extra analysis/inference."
+}

@@ -1,0 +1,259 @@
+{
+  "created_local": "2026-10-26T21:51:40.397012+08:00",
+  "authorization_id": "a8bee58861fd4878b48135c851f8aa90",
+  "version": "v2_tiny224_activation_dropout_ablation_20261026_v1",
+  "baseline_config_sha256": "4982675565cbd7641846b5865e4c30cea2a9efdfa20265505f8c05ee69c99940",
+  "references": {
+    "1": {
+      "folder": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed1",
+      "run_id": "2f10e3e3408242d5ab5e7fc325c228ad",
+      "epochs_completed": 12,
+      "best_epoch": 5,
+      "robust": 0.6629459454118025,
+      "result_sha256": "7350ef872b9d41440d5bcf74beb03674cdd91aabe405cf4519285bba7bd153e1",
+      "inputs_sha256": "65af1d14a980eda5fd7d771efa2a0bbbfe4538cd12fa963ffba4be1a75555405",
+      "data_contract": {
+        "release_id": "governed_18979_20261018_v1",
+        "manifest": "資料治理與泛化修復\\data\\governed_18979_20261018_v1\\mixed_manifest.csv",
+        "manifest_sha256": "5c501ef3cb6c8a73b3a9395383d199212e070abfbc67c782fcfc010576243284",
+        "summary_sha256": "492e044263f7f26a8a9dd63b4bb18bfe5f1a133d5aee09516d6b8804a7d5eec8",
+        "class_names": [
+          "AKIEC",
+          "BCC",
+          "BKL",
+          "DF",
+          "NV",
+          "VASC",
+          "MEL"
+        ],
+        "limitations": [
+          "Byte-exact SHA-256 duplication and provided group identifiers audited; perceptual/decoded-pixel near-duplicates not audited.",
+          "HAM and BCN lack patient identifiers; their isolation is lesion-level, not verified patient-level.",
+          "Image decoding was sampled (9 images), not a full-image decode audit.",
+          "Raw HAM localization preserved in original_site_value/original_metadata_json; no new anatomical mapping inferred. Existing normalized HAM anatomical site remains unknown when absent in its expected input schema.",
+          "Training settings and gates are unchanged; a training entry must explicitly select this version. The accurate leakage status is not the old pipeline's release approval."
+        ]
+      },
+      "training": {
+        "model": "convnextv2_tiny",
+        "initialization": "imagenet",
+        "normalization": "imagenet_mean_std",
+        "image_size": 224,
+        "batch_size": 32,
+        "gradient_accumulation": 2,
+        "epochs": 30,
+        "early_stopping_patience": 5,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.05,
+        "layer_decay": 1.0,
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.2,
+        "gradient_clip_norm": 1.0,
+        "class_balance_alpha": 0.5,
+        "num_workers": 4,
+        "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+        "min_epochs": 12,
+        "early_stopping": true,
+        "min_delta": 0.0,
+        "optimizer": "AdamW",
+        "loss": "cross_entropy",
+        "effective_batch_size": 64,
+        "amp": true,
+        "transform": "regularized_native",
+        "optimizer_grouping": "layer_decay",
+        "scheduler": {
+          "name": "cosine",
+          "eta_min": 1e-06
+        },
+        "sampling_method": "weighted_replacement"
+      },
+      "input_keys": [
+        "contract",
+        "run_id",
+        "initial_classifier_sha256",
+        "initial_optimizer_state_entries",
+        "data",
+        "effective_training_config",
+        "seed",
+        "device",
+        "command",
+        "test_used",
+        "selected_train_record_ids",
+        "selected_validation_record_ids"
+      ],
+      "initial_classifier_sha256": "2e363c2d895d83b871e758a532cd2181b8f9fab65fcc621e6094387d59dfdf43"
+    },
+    "2": {
+      "folder": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed2",
+      "run_id": "89dcc59db128411d9d02c884e6f5a067",
+      "epochs_completed": 15,
+      "best_epoch": 10,
+      "robust": 0.6396726370895002,
+      "result_sha256": "5acab4974d123cc42d8c37a91e2793c3c525ace3b1bcbc5b929dd0987980d8a1",
+      "inputs_sha256": "8497cf623a0801be70e9eea452e9dbd607ebd538d245eb45a48ae52ac6b75813",
+      "data_contract": {
+        "release_id": "governed_18979_20261018_v1",
+        "manifest": "資料治理與泛化修復\\data\\governed_18979_20261018_v1\\mixed_manifest.csv",
+        "manifest_sha256": "5c501ef3cb6c8a73b3a9395383d199212e070abfbc67c782fcfc010576243284",
+        "summary_sha256": "492e044263f7f26a8a9dd63b4bb18bfe5f1a133d5aee09516d6b8804a7d5eec8",
+        "class_names": [
+          "AKIEC",
+          "BCC",
+          "BKL",
+          "DF",
+          "NV",
+          "VASC",
+          "MEL"
+        ],
+        "limitations": [
+          "Byte-exact SHA-256 duplication and provided group identifiers audited; perceptual/decoded-pixel near-duplicates not audited.",
+          "HAM and BCN lack patient identifiers; their isolation is lesion-level, not verified patient-level.",
+          "Image decoding was sampled (9 images), not a full-image decode audit.",
+          "Raw HAM localization preserved in original_site_value/original_metadata_json; no new anatomical mapping inferred. Existing normalized HAM anatomical site remains unknown when absent in its expected input schema.",
+          "Training settings and gates are unchanged; a training entry must explicitly select this version. The accurate leakage status is not the old pipeline's release approval."
+        ]
+      },
+      "training": {
+        "model": "convnextv2_tiny",
+        "initialization": "imagenet",
+        "normalization": "imagenet_mean_std",
+        "image_size": 224,
+        "batch_size": 32,
+        "gradient_accumulation": 2,
+        "epochs": 30,
+        "early_stopping_patience": 5,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.05,
+        "layer_decay": 1.0,
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.2,
+        "gradient_clip_norm": 1.0,
+        "class_balance_alpha": 0.5,
+        "num_workers": 4,
+        "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+        "min_epochs": 12,
+        "early_stopping": true,
+        "min_delta": 0.0,
+        "optimizer": "AdamW",
+        "loss": "cross_entropy",
+        "effective_batch_size": 64,
+        "amp": true,
+        "transform": "regularized_native",
+        "optimizer_grouping": "layer_decay",
+        "scheduler": {
+          "name": "cosine",
+          "eta_min": 1e-06
+        },
+        "sampling_method": "weighted_replacement"
+      },
+      "input_keys": [
+        "contract",
+        "run_id",
+        "initial_classifier_sha256",
+        "initial_optimizer_state_entries",
+        "data",
+        "effective_training_config",
+        "seed",
+        "device",
+        "command",
+        "test_used",
+        "selected_train_record_ids",
+        "selected_validation_record_ids"
+      ],
+      "initial_classifier_sha256": "50c04b7d001aa5a6a1432e7b360f0c65e12415dc124f10693aaa6f24df788a02"
+    },
+    "3": {
+      "folder": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet\\regularized_seed3",
+      "run_id": "224f04b5f8294cd993f1cc371c84a4e1",
+      "epochs_completed": 13,
+      "best_epoch": 8,
+      "robust": 0.6323413824483057,
+      "result_sha256": "e5b01b8e0e22686ee71a2a1ceda67fc653e456ae344dec201670ca25d5d536ab",
+      "inputs_sha256": "52450254a781b2d8a4094438a603bb11e1f270d362dad8cb288efa5696dd0d7a",
+      "data_contract": {
+        "release_id": "governed_18979_20261018_v1",
+        "manifest": "資料治理與泛化修復\\data\\governed_18979_20261018_v1\\mixed_manifest.csv",
+        "manifest_sha256": "5c501ef3cb6c8a73b3a9395383d199212e070abfbc67c782fcfc010576243284",
+        "summary_sha256": "492e044263f7f26a8a9dd63b4bb18bfe5f1a133d5aee09516d6b8804a7d5eec8",
+        "class_names": [
+          "AKIEC",
+          "BCC",
+          "BKL",
+          "DF",
+          "NV",
+          "VASC",
+          "MEL"
+        ],
+        "limitations": [
+          "Byte-exact SHA-256 duplication and provided group identifiers audited; perceptual/decoded-pixel near-duplicates not audited.",
+          "HAM and BCN lack patient identifiers; their isolation is lesion-level, not verified patient-level.",
+          "Image decoding was sampled (9 images), not a full-image decode audit.",
+          "Raw HAM localization preserved in original_site_value/original_metadata_json; no new anatomical mapping inferred. Existing normalized HAM anatomical site remains unknown when absent in its expected input schema.",
+          "Training settings and gates are unchanged; a training entry must explicitly select this version. The accurate leakage status is not the old pipeline's release approval."
+        ]
+      },
+      "training": {
+        "model": "convnextv2_tiny",
+        "initialization": "imagenet",
+        "normalization": "imagenet_mean_std",
+        "image_size": 224,
+        "batch_size": 32,
+        "gradient_accumulation": 2,
+        "epochs": 30,
+        "early_stopping_patience": 5,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.05,
+        "layer_decay": 1.0,
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.2,
+        "gradient_clip_norm": 1.0,
+        "class_balance_alpha": 0.5,
+        "num_workers": 4,
+        "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+        "min_epochs": 12,
+        "early_stopping": true,
+        "min_delta": 0.0,
+        "optimizer": "AdamW",
+        "loss": "cross_entropy",
+        "effective_batch_size": 64,
+        "amp": true,
+        "transform": "regularized_native",
+        "optimizer_grouping": "layer_decay",
+        "scheduler": {
+          "name": "cosine",
+          "eta_min": 1e-06
+        },
+        "sampling_method": "weighted_replacement"
+      },
+      "input_keys": [
+        "contract",
+        "run_id",
+        "initial_classifier_sha256",
+        "initial_optimizer_state_entries",
+        "data",
+        "effective_training_config",
+        "seed",
+        "device",
+        "command",
+        "test_used",
+        "selected_train_record_ids",
+        "selected_validation_record_ids"
+      ],
+      "initial_classifier_sha256": "0e3ce1e836b32f2664930fdb20a880f59431165638fbb514b60e3db18d243a56"
+    }
+  },
+  "paused512": {
+    "state": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\state.json",
+    "state_sha256": "0b6ecc74fe4a3dc81c953c5c64a35da560277669163632c48cae395df124f139",
+    "stop": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\STOP",
+    "stop_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "before_sources": {
+    "model_profiles.py": "1bf61244f9a666961c5207b3af428d73a3ca744d2a3297f33b56183a529a1beb",
+    "run_v2_relu_dropout.py": "009eeff7402da6f513e79a3894a0c96317a1589513ddb66cc7cc9972eb85d207",
+    "training_state.py": "b07c6b4882703ae27e784f9aeb3db8fea3fc8744b34b4401ac59c0cdc5729fec",
+    "train_regularized.py": "4a2a1512a4e05b5c316512d784d7b9179c6fd6590a34c51a49e6e6546386f2b4",
+    "v2_relu_dropout_contract.py": "240de1b26ea3072c4ef4e324097ec2fb318d29c43433a4f7aaabbc6528d04dd6",
+    "v2_relu_stage_dropout.py": "4ea72d511c5d6512d4d001e4f9cfb2e0132a92ab8082d4607055fb1a35369240"
+  }
+}

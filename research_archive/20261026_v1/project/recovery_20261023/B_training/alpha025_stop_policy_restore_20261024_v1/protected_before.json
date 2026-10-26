@@ -1,0 +1,178 @@
+[
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\.run.lock",
+    "sha256": "5FECEB66FFC86F38D952786C6D696C79C2DBC239DD4E91B46729D73A27FB57E9"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\controller_20261024_193004_454.stderr.log",
+    "sha256": "11208B3BDB51BD01BB37425F83F48E723F8D1D8BC4AD334C22BEE62DEC8ADF27"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\controller_20261024_193004_454.stdout.log",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\EXECUTION_GATE.json",
+    "sha256": "8CA2F1353AEC40B455DD91AB6E42BB5BFC37CAAC0DD86AB015E49759400B9B0F"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\EXPERIMENT_STATE.md",
+    "sha256": "C69BEC9E11D9E84D0ADFA476B99D14CDD3998D94854E40D001320B4EC93FB897"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\launch_20261024_193004_454.json",
+    "sha256": "34207EAAC78774B05F3860403C2D3105373E8371D7568B315918F73F7ACE6BD0"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\resource_samples.jsonl",
+    "sha256": "6D7ED72C05016E65D4489CEE1088A2AA0F7928A3239025DAF744F5FD97A62EC3"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\RESOURCE_STOP.json",
+    "sha256": "13CAF55152DDF3D2C107365DE638C3ABB5D73201F4B32275ACFD5EB06C4BCD72"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\state.json",
+    "sha256": "EF9D55CEBFCB8D008F2CD2AFA28D7D40195A85E1D59D419D402D041A699AA650"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\STOP",
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\attempts\\attempt_1dc91e11abe04c90ac01adc6a07d0855.json",
+    "sha256": "51616D2496D8B54B3FE41CF43B2BDA2BFC2546E2869195D2E2855F7C9039F9A7"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\budget\\epoch_bf0aafbe471840bc82422890fd860dc6.json",
+    "sha256": "7F432C721BF8BB6C12E66A02B6F4B424B595FDF93FEEEFA01426E7BB7971F007"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\logs\\seed1_1dc91e11abe04c90ac01adc6a07d0855.stderr.log",
+    "sha256": "CF44601B23DD2F5E40096E682B88E1F3569ECD8B6C20D4C0416E57C74019CA51"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\logs\\seed1_1dc91e11abe04c90ac01adc6a07d0855.stdout.log",
+    "sha256": "35A3A769038C339F1F923338E15C8A22942F3C8C4357A7344E4055E01C8BAE38"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\runs\\v2in_res512_alpha025\\regularized_seed1\\.run.lock",
+    "sha256": "5FECEB66FFC86F38D952786C6D696C79C2DBC239DD4E91B46729D73A27FB57E9"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\runs\\v2in_res512_alpha025\\regularized_seed1\\attempt_691ffe24bec24ae69f81566d9cda73e3.json",
+    "sha256": "A2DD0A7AE272A253545D1051BB04185E1E779CD7095F8E923E0BA2205EC0EDC6"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\runs\\v2in_res512_alpha025\\regularized_seed1\\run_inputs.json",
+    "sha256": "DBDEBF599C845208D7107C669FF9169266B17B5F406E6EEB8E9994DB31104C5D"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\第二階段\\src\\stage2\\engine.py",
+    "sha256": "19F265519880588537EA0F97A27810E922E2C7CC79C6E3CF82CFBB9B1F0B6C4B"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\第二階段\\src\\stage2\\metrics.py",
+    "sha256": "0BFA691AC0431DB6E7BD8FC59D702B558F014E11CBAF30BC3F3C7BA3448D7EC1"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\第二階段\\src\\stage2\\models.py",
+    "sha256": "5D23C92718C2539BA16195B24065B8EB7F08B7FD07A2BFE41DD2D4BF8F999657"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\coverage_sampler.py",
+    "sha256": "BCEED257AA8891EEE279324F3335CC3AEA6464FE5C1E840472657493F005B7D9"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\model_profiles.py",
+    "sha256": "9645AB66505BF0C7458090E4B0DAD5FDE70A020C7F7E65EC0CE14AFDF8461B29"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\run_v2_alpha025.py",
+    "sha256": "2F7DFAC278D9E6AB4C45F89C7EA675CAAFAFBED73413F01F5E4F981F82604974"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\Start-V2Alpha025.ps1",
+    "sha256": "7CFB4037636A67ED1737B38C1F71368DD45B75E82CDBF8131CDB04193C994C72"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\train_regularized.py",
+    "sha256": "869160E9AB94BADCA37542927BF45ED4EDA5256B67DDB7B5B411F7C773D99B71"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\training_state.py",
+    "sha256": "13B3EBDB3B43C4FFB8DD202912E035A4BFE745F44488B58EE242FD0928964498"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\v2_alpha025_contract.py",
+    "sha256": "5254061907D25D55574BEEE56FFCEF883B9F0AEEAF7CF5BA376F7C6E1DFB8C88"
+  },
+  {
+    "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\sources_runtime\\資料治理與泛化修復\\scripts\\v2_opt_contract.py",
+    "sha256": "8F71BA8BFD7924E2B01CBFB58AED58B3818E2D9D4ED18B42C67CEDBBA50A07D1"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\AUTHORIZATION.md",
+    "sha256": "83EECD31687BE5E48FA704155BAB4A7358B61A9E94AAF2F7C3B8A81773D21EE9"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\D_SPEC_GOVERNING_v2.md",
+    "sha256": "8A5A4A3EA4C9474959172BF452FAF696FD27D7EBF36AA584DBD3EC9C14D9D03E"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\DIFF_AND_SOURCES.json",
+    "sha256": "BAF11917219BDB034753FE7225C1BA4EE5A83C07059C34E0AAD0CB6AF5E1A586"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\EVALUATION_CONTRACT.json",
+    "sha256": "8D327FF8A0C6F81C44ABE3DB60B28E376469E818734927552D14092D56AB80B1"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\HANDOFF_B.md",
+    "sha256": "5D901CC2994DC86833E6D4033BCCBE9442C706E656488B7BF00AEB82FD8A2B2C"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\PLANNED_EFFECTIVE_CONTRACT.json",
+    "sha256": "D8DF9611EEAD03716B14448F83D2BD18A68D0DBDE94B7CA6482A7C4EC41D1EB2"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\SAMPLING_EXPOSURE.json",
+    "sha256": "1C19F63C973E9FF882F63809C170E64CB280AFEF37361250F86936E0B8FC661D"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\SAMPLING_SOURCE.txt",
+    "sha256": "8EFDA465112AC6ACD4C4C654C16337647D5333D2B48DA00BF1B29B561D36D7BC"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\STATIC_QA.json",
+    "sha256": "1CFC706389AB3C7750E9F4462758805A9CD1CDA5C5695FE26D3F78DCAF6F41FF"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\suite.json",
+    "sha256": "7F8CB857BE5FA8881E26F4594674DCE8ED1824930C5B88C70680C1AF95543E18"
+  },
+  {
+    "path": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\v2in_res512_alpha025.json",
+    "sha256": "F670C37EFF1980D388DA3A85BEDFA8851B3E034C4F41ED043C1975C9C5B3F222"
+  },
+  {
+    "path": "start_ui.ps1",
+    "sha256": "F507D7C2A066371FFA519299BE311EB06937063513966A17A4EF72CC5DEB7C44"
+  },
+  {
+    "path": "第二階段\\src\\stage2\\models.py",
+    "sha256": "5D23C92718C2539BA16195B24065B8EB7F08B7FD07A2BFE41DD2D4BF8F999657"
+  },
+  {
+    "path": "資料治理與泛化修復\\config.json",
+    "sha256": "3B8C5C1F788A5F0D51EF49F66D6D3CE2EEB81E5E537237759D7B330691DFCCAF"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\training_state.py",
+    "sha256": "13B3EBDB3B43C4FFB8DD202912E035A4BFE745F44488B58EE242FD0928964498"
+  },
+  {
+    "path": "資料治理與泛化修復\\scripts\\run_v2_resolution.py",
+    "sha256": "0E4E222B2AEFD21AF1FD91D9E1F7A5C351B88E372DFF212BE6495ED6F2F3F634"
+  }
+]

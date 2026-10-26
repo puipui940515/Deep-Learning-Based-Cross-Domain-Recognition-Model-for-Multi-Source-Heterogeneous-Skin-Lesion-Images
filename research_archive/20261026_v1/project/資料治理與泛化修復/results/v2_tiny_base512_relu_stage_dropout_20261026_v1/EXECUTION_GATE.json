@@ -1,0 +1,53 @@
+{
+  "version": "v2_tiny_base512_relu_stage_dropout_20261026_v1",
+  "human_execution_authorized": true,
+  "execution_authorized": false,
+  "cpu_passed": false,
+  "gpu_passed": false,
+  "limits": {
+    "runs": 6,
+    "epochs": 180,
+    "max_epochs_per_run": 30,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+  },
+  "jobs": [
+    [
+      "tiny_seed1",
+      "v2in_tiny512_relu_stage_dropout",
+      1,
+      "tiny"
+    ],
+    [
+      "tiny_seed2",
+      "v2in_tiny512_relu_stage_dropout",
+      2,
+      "tiny"
+    ],
+    [
+      "tiny_seed3",
+      "v2in_tiny512_relu_stage_dropout",
+      3,
+      "tiny"
+    ],
+    [
+      "base_seed1",
+      "v2in_base512_relu_stage_dropout",
+      1,
+      "base"
+    ],
+    [
+      "base_seed2",
+      "v2in_base512_relu_stage_dropout",
+      2,
+      "base"
+    ],
+    [
+      "base_seed3",
+      "v2in_base512_relu_stage_dropout",
+      3,
+      "base"
+    ]
+  ],
+  "reason": "CPU validation assumed torch.nn.GELU, but local timm GELU is its own nn.Module subclass. CPU test and candidate replacement helper share this incorrect assumption."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "micro_CPU_only": true,
+  "no_images_or_models_or_GPU": true,
+  "cases": [],
+  "error": "RuntimeError('Checkpoint has incomplete training state')",
+  "traceback": "Traceback (most recent call last):\n  File \"recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\validate_checkpoint_io.py\", line 43, in main\n    readback=ts.CheckpointStore(folder).load(contract);assert readback['epoch']==3\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"資料治理與泛化修復\\scripts\\training_state.py\", line 161, in load\n    raise RuntimeError('Checkpoint has incomplete training state')\nRuntimeError: Checkpoint has incomplete training state\n",
+  "seconds": 1.714624999993248,
+  "command": [
+    "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\validate_checkpoint_io.py"
+  ],
+  "training_state_sha256": "b07c6b4882703ae27e784f9aeb3db8fea3fc8744b34b4401ac59c0cdc5729fec"
+}

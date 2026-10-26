@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-26T13:30:43.5084028+08:00",
+  "execution_revision": "restart3_20261026_v1",
+  "user_authorization": "One IO repair and one new Tiny Seed1 replacement, then remaining five jobs",
+  "replacement_for_run": "9b38f8536746431b84a42f25d307569b",
+  "resume": false,
+  "command": [
+    ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "-X",
+    "utf8",
+    "資料治理與泛化修復\\scripts\\run_v2_relu_dropout.py"
+  ]
+}

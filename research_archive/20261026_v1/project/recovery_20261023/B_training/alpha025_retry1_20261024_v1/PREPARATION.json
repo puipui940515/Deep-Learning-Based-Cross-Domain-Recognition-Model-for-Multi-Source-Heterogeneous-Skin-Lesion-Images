@@ -1,0 +1,135 @@
+{
+  "status": "retry1_gate_prepared",
+  "execution_revision": "retry1_20261024_v1",
+  "root": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\executions\\retry1_20261024_v1",
+  "checks": [
+    {
+      "name": "parent_failed_zero_complete_epochs",
+      "passed": true
+    },
+    {
+      "name": "parent_STOP_preserved",
+      "passed": true
+    },
+    {
+      "name": "parent_gate_unchanged",
+      "passed": true
+    },
+    {
+      "name": "exactly_one_parent_failed_attempt",
+      "passed": true
+    },
+    {
+      "name": "no_parent_completed_epoch_or_active_lease",
+      "passed": true
+    },
+    {
+      "name": "execution_is_distinct",
+      "passed": true
+    },
+    {
+      "name": "arbitrary_retry_root_rejected",
+      "passed": true
+    },
+    {
+      "name": "C_file:AUTHORIZATION.md",
+      "passed": true
+    },
+    {
+      "name": "C_file:DIFF_AND_SOURCES.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:D_SPEC_GOVERNING_v2.md",
+      "passed": true
+    },
+    {
+      "name": "C_file:EVALUATION_CONTRACT.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:HANDOFF_B.md",
+      "passed": true
+    },
+    {
+      "name": "C_file:PLANNED_EFFECTIVE_CONTRACT.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:SAMPLING_EXPOSURE.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:SAMPLING_SOURCE.txt",
+      "passed": true
+    },
+    {
+      "name": "C_file:suite.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:v2in_res512_alpha025.json",
+      "passed": true
+    },
+    {
+      "name": "C_training_matches",
+      "passed": true
+    },
+    {
+      "name": "restored_trainer_unmodified",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:schedule_check",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:process_conflicts",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:run_seed",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:memory",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:gpu_metadata",
+      "passed": true
+    },
+    {
+      "name": "finite_workload_unbounded_time",
+      "passed": true
+    },
+    {
+      "name": "no_torch_import",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:torch",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:torchvision",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:timm",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:numpy",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:Pillow",
+      "passed": true
+    }
+  ],
+  "gate_sha256": "81f5323ee2c847c4ba360f01438d9f177ba4aa170c27344e98eae8ffdaef7d3c",
+  "training_started": false,
+  "resume": false,
+  "additional_CPU_suite_or_GPU_tests": false
+}

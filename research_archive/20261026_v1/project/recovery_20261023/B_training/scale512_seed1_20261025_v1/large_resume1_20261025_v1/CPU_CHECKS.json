@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "resume_worker.py: syntax passed",
+    "run_resume.py: syntax passed",
+    "prepare_resume.py: syntax passed",
+    "one same-run admission only; original validator receives all unchanged arguments except explicit resume admission",
+    "fresh, other Seed and other Run ID rejected"
+  ],
+  "no_model_import": true,
+  "no_old_preflight_repeated": true
+}

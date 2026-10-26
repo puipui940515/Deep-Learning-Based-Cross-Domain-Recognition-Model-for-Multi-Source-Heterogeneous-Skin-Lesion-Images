@@ -1,0 +1,77 @@
+{
+  "status": "skipped_infeasible_estimate",
+  "reason": "AdamW CUDA foreach static/transient lower bound exceeds currently free VRAM even before activations/autocast/context",
+  "lower_bound_gib": 11.399553880095482,
+  "free_vram_gib": 10.89453125,
+  "minimum_micro_batch": 1,
+  "physical_total_mib": 12227.0,
+  "actual_gpu_oom_test": false,
+  "downloaded": false,
+  "pinned_source": {
+    "repo": "timm/convnextv2_huge.fcmae_ft_in1k",
+    "revision": "79144cc49b295e1bb236f0c49be7747ddeecdde0",
+    "sha256": "1330efa75dc4187aaed54f14a77a1faa424d51114bcd7df1cf774fb617525024",
+    "bytes": 2641197850,
+    "url": "https://huggingface.co/timm/convnextv2_huge.fcmae_ft_in1k/resolve/79144cc49b295e1bb236f0c49be7747ddeecdde0/model.safetensors",
+    "model_config": {
+      "architecture": "convnextv2_huge",
+      "num_classes": 1000,
+      "num_features": 2816,
+      "pretrained_cfg": {
+        "tag": "fcmae_ft_in1k",
+        "custom_load": false,
+        "input_size": [
+          3,
+          224,
+          224
+        ],
+        "test_input_size": [
+          3,
+          288,
+          288
+        ],
+        "fixed_input_size": false,
+        "interpolation": "bicubic",
+        "crop_pct": 0.875,
+        "test_crop_pct": 1.0,
+        "crop_mode": "center",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "num_classes": 1000,
+        "pool_size": [
+          7,
+          7
+        ],
+        "first_conv": "stem.0",
+        "classifier": "head.fc",
+        "license": "cc-by-nc-4.0",
+        "origin_url": "https://github.com/facebookresearch/ConvNeXt-V2",
+        "paper_name": "ConvNeXt-V2: Co-designing and Scaling ConvNets with Masked Autoencoders",
+        "paper_ids": "arXiv:2301.00808"
+      }
+    },
+    "parameters_seven_class": 657492359,
+    "largest_optimizer_group_numel": 430075008,
+    "fp32_param_grad_two_moments_gib": 9.797399625182152,
+    "adamw_foreach_step_lower_bound_gib": 11.399553880095482,
+    "estimate_excludes_activations_autocast_cuda_and_desktop": true,
+    "depths": [
+      3,
+      3,
+      27,
+      3
+    ],
+    "grn_count": 36,
+    "provenance": "Official timm FCMAE ImageNet1K model card/API; no 22K or random substitute",
+    "adamw_basis": "Existing AdamW defaults to CUDA foreach; exp_avg_sq sqrt TensorList while params/grads/two moments reside; local torch/optim/adam.py"
+  },
+  "new_memory_strategy_used": false
+}

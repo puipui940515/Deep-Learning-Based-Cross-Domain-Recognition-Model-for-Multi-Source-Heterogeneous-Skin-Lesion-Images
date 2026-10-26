@@ -1,0 +1,62 @@
+[
+  {
+    "group": "alpha050",
+    "seed": 1,
+    "epoch": 4,
+    "monitor_BKL": 0.9053497942386831,
+    "monitor_VASC": 0.9814814814814815,
+    "monitor_NV": 0.9259259259259259,
+    "monitor_MEL": 0.8374384236453202,
+    "BCN_BKL": 0.5580110497237569
+  },
+  {
+    "group": "alpha050",
+    "seed": 2,
+    "epoch": 10,
+    "monitor_BKL": 0.9753086419753086,
+    "monitor_VASC": 1.0,
+    "monitor_NV": 0.934156378600823,
+    "monitor_MEL": 0.9605911330049262,
+    "BCN_BKL": 0.5911602209944752
+  },
+  {
+    "group": "alpha050",
+    "seed": 3,
+    "epoch": 7,
+    "monitor_BKL": 0.9753086419753086,
+    "monitor_VASC": 1.0,
+    "monitor_NV": 0.8930041152263375,
+    "monitor_MEL": 0.9064039408866995,
+    "BCN_BKL": 0.6022099447513812
+  },
+  {
+    "group": "alpha025",
+    "seed": 1,
+    "epoch": 8,
+    "monitor_BKL": 0.8765432098765432,
+    "monitor_VASC": 0.9938271604938271,
+    "monitor_NV": 0.9629629629629629,
+    "monitor_MEL": 0.9408866995073891,
+    "BCN_BKL": 0.3812154696132597
+  },
+  {
+    "group": "alpha025",
+    "seed": 2,
+    "epoch": 15,
+    "monitor_BKL": 0.9917695473251029,
+    "monitor_VASC": 1.0,
+    "monitor_NV": 0.9753086419753086,
+    "monitor_MEL": 0.9852216748768473,
+    "BCN_BKL": 0.5193370165745856
+  },
+  {
+    "group": "alpha025",
+    "seed": 3,
+    "epoch": 5,
+    "monitor_BKL": 0.8888888888888888,
+    "monitor_VASC": 0.9753086419753086,
+    "monitor_NV": 0.9382716049382716,
+    "monitor_MEL": 0.9014778325123153,
+    "BCN_BKL": 0.39779005524861877
+  }
+]

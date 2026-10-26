@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <!-- 【01 網頁基本設定】編碼、手機 viewport、頁籤標題與檔案載入；通常先改 title 與 description。 -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-text-id="F-001" data-text-attribute="content" name="description" content="SkinDetect 皮膚影像辨識研究展示：探索影像、七分類分布與模型研究流程。第一版使用明確標示的模擬資料。">
+    <meta name="theme-color" content="#f6f7f2">
+    <!-- 【本機 API】僅允許同源連線；真實推論須明確開啟，預設不占用 GPU。 -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title data-text-id="F-002">SkinDetect｜皮膚影像研究展示</title>
+    <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./inference.css">
+    <!-- 【載入順序】先準備 mock 資料，再載入互動程式；defer 讓 HTML 建立完成後才依序執行。 -->
+    <script src="./mock-predictor.js" defer></script>
+    <script src="./inference-client.js" defer></script>
+    <script src="./app.js" defer></script>
+    <script src="./text-locator.js" defer></script>
+  </head>
+  <body>
+    <!-- 【鍵盤操作】Tab 可跳過導覽，直接前往主要內容。 -->
+    <a data-text-id="F-003" class="skip-link" href="#main">跳到主要內容</a>
+    <!-- 【02 頁首】品牌圖示、網站名稱與導覽；href 的 #about 等對應下方區塊 id。 -->
+    <header class="site-header">
+      <a data-text-id="F-135" class="brand" href="#" aria-label="SkinDetect 首頁"><img src="./assets/mark.svg" alt="" width="36" height="36"><span>SkinDetect<small>皮膚影像辨識研究</small></span></a>
+      <nav aria-label="主要導覽">
+        <a data-text-id="F-004" href="#about">關於專題</a><a data-text-id="F-005" href="#workspace">影像展示</a><a data-text-id="F-006" href="#model">模型與流程</a>
+      </nav>
+      <span data-text-id="F-007" class="header-note"><i></i> RESEARCH PROJECT</span>
+    </header>
+    <main id="main">
+      <!-- 【03 首頁 Hero】主標題、介紹、跳轉按鈕；文字可直接修改，外觀由 styles.css 控制。 -->
+      <section class="hero page-width" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p data-text-id="F-008" class="eyebrow"><span class="tiny-line"></span> SKIN IMAGE RESEARCH / 01</p>
+          <h1 data-text-id="F-009" id="hero-title">從一張影像，<br>看見模型<span>如何判讀。</span></h1>
+          <p data-text-id="F-010" class="hero-intro">讓皮膚影像辨識的過程更清楚。<br>從分類分布到研究方法，一起理解模型的判斷與限制。</p>
+          <div class="hero-actions">
+            <a data-text-id="F-011" class="button primary" href="#workspace">探索影像展示 <span aria-hidden="true">↗</span></a><a data-text-id="F-012" class="text-link" href="#workflow">看看研究流程 <span aria-hidden="true">→</span></a>
+          </div>
+          <p data-text-id="F-013" class="hero-footnote">學生專題・研究展示用途・不提供醫療診斷</p>
+        </div>
+        <!-- 【Hero 概念板】純展示圖解；study.svg 是自製示意圖，九宮格由 CSS 上色，不是模型輸出。 -->
+        <div class="research-board" aria-label="研究概念圖：從影像特徵到分類分布，非實際模型輸出">
+          <div class="board-heading">
+            <span data-text-id="F-014">研究觀察筆記</span><span data-text-id="F-015" class="tag white-tag">概念圖解</span>
+          </div>
+          <div class="board-diagram">
+            <div class="image-study">
+              <span data-text-id="F-016" class="diagram-index">01 / IMAGE</span><img data-text-id="F-017" data-text-attribute="alt" src="./assets/study.svg" alt="抽象皮膚影像示意，非臨床影像"><span data-text-id="F-018" class="study-caption">觀察影像特徵</span>
+            </div>
+            <span class="diagram-arrow" aria-hidden="true">→</span>
+            <div class="feature-study">
+              <span data-text-id="F-019" class="diagram-index">02 / PATTERNS</span>
+              <div class="feature-grid" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <span data-text-id="F-020" class="study-caption">學習特徵表示</span>
+            </div>
+          </div>
+          <div class="board-bottom">
+            <div>
+              <span data-text-id="F-021" class="mini-label">從特徵，到可讀的輸出</span><strong data-text-id="F-022">辨識之外，也理解限制。</strong>
+            </div>
+            <span class="round-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div data-text-id="F-023" class="board-sticker">
+            <span class="dot"></span> ConvNeXt V2-Tiny <small data-text-id="F-024">本專題目前主模型</small>
+          </div>
+        </div>
+      </section>
+      <!-- 【04 專題介紹】三張研究資訊卡；每個 article 是一張卡片，可分別修改標題與內文。 -->
+      <section class="about-section page-width" id="about" aria-labelledby="about-title">
+        <div class="section-label">
+          <span data-text-id="F-025" class="eyebrow">THE RESEARCH</span>
+          <h2 data-text-id="F-026" id="about-title">我們關注的，不只是一個答案。</h2>
+        </div>
+        <div class="research-cards">
+          <article class="info-card">
+            <span data-text-id="F-027" class="card-number">01</span>
+            <h3 data-text-id="F-028">辨識什麼？</h3>
+            <p data-text-id="F-029">以 HAM 七分類為研究範圍，觀察不同皮膚病灶影像的分類分布。</p>
+            <span data-text-id="F-030" class="card-caption">7 個研究類別</span>
+          </article>
+          <article class="info-card">
+            <span data-text-id="F-031" class="card-number">02</span>
+            <h3 data-text-id="F-032">換個來源，還可靠嗎？</h3>
+            <p data-text-id="F-033">比較 HAM、BCN、PAD 不同來源的表現，研究資料差異對模型的影響。</p>
+            <span data-text-id="F-034" class="card-caption">跨資料來源泛化</span>
+          </article>
+          <article class="info-card">
+            <span data-text-id="F-035" class="card-number">03</span>
+            <h3 data-text-id="F-036">怎麼讀懂判斷？</h3>
+            <p data-text-id="F-037">用機率條與簡短說明呈現輸出，並預留後續視覺解釋的位置。</p>
+            <span data-text-id="F-038" class="card-caption">讓結果更容易理解</span>
+          </article>
+        </div>
+      </section>
+      <!-- 【05 互動展示】桌面左右兩欄、手機上下排列；可選原 Seed1、三 Seed 等權集成或明確標示的 mock。 -->
+      <section class="workspace-section page-width" id="workspace" aria-labelledby="workspace-title">
+        <div class="section-heading">
+          <div>
+            <p data-text-id="F-039" class="eyebrow">INTERACTIVE DEMO</p>
+            <h2 data-text-id="F-040" id="workspace-title">一張影像，一次探索。</h2>
+            <p data-text-id="F-041">上傳影像或載入示意圖，體驗完整的結果閱讀流程。</p>
+          </div>
+          <span data-text-id="F-042" class="tag service-tag pending" id="service-badge">研究推論 · 檢查服務</span>
+        </div>
+        <div class="workspace-card">
+          <!-- 【05-1 上傳面板】選檔、拖放、圖片預覽與清除。HTML 的 id 會被 app.js 使用，改名時要同步修改。 -->
+          <section class="upload-panel" aria-labelledby="upload-title">
+            <div class="panel-title">
+              <span data-text-id="F-043" class="step">01</span>
+              <h3 data-text-id="F-044" id="upload-title">準備一張影像</h3>
+              <span data-text-id="F-045" class="mini-label">INPUT</span>
+            </div>
+            <!-- 【模型版本切換】真實模式與 mock 明確區分；服務預設關閉模型，等待 B 釋放 GPU。 -->
+            <div class="model-selector">
+              <label data-text-id="F-046" for="model-select">選擇模型版本</label>
+              <select data-text-id="F-047" id="model-select">
+                <option data-text-id="F-048" value="v2_imagenet_seed1">原 V2／224 ImageNet · Seed 1</option>
+                <option data-text-id="F-049" value="v2_imagenet_ensemble123" selected>原 V2／224 · Seed 1／2／3 等權 Ensemble</option>
+                <option data-text-id="F-050" value="demo">Mock · 固定示範資料</option>
+              </select>
+              <p data-text-id="F-051" class="mode-help" id="mode-help" role="status">正在確認本機服務；不會載入模型。</p>
+            </div>
+            <!-- 【輸入適用性】只告知條件與限制，並非已做正常／異常或疾病範圍辨識。 -->
+            <aside class="input-scope" id="input-scope" aria-label="上傳條件與判讀限制">
+              <strong data-text-id="F-052">請選擇清楚的人類皮膚病灶近照</strong>
+              <p data-text-id="F-053">單張、單一病灶為主，避免模糊、遮擋或過暗。符合檔案格式，不代表已確認適合模型。</p>
+              <p data-text-id="F-054">本版只能檢查檔案是否可讀；無法可靠辨識正常皮膚、非皮膚或七類以外疾病，也不能據此排除疾病。</p>
+            </aside>
+            <!-- 【真正的檔案欄位】由可見的 dropzone 按鈕觸發；accept 只限制選檔提示，app.js 還會驗證格式與大小。 -->
+            <input data-text-id="F-055" data-text-attribute="aria-label" class="visually-hidden" id="file-input" type="file" accept="image/jpeg,image/png,image/webp" aria-label="選擇皮膚影像" tabindex="-1">
+            <button type="button" class="dropzone" id="dropzone" aria-describedby="upload-help input-scope">
+            <span id="upload-placeholder"><svg class="upload-symbol" viewBox="0 0 56 56" fill="none" aria-hidden="true"><rect x="7" y="11" width="42" height="36" rx="10"/><path d="M18 35l8-9 8 9 5-5 6 7M34 12V4m-5 5 5-5 5 5"/><circle cx="18" cy="21" r="3"/></svg><strong>將影像拖曳到這裡</strong><span>或點擊選擇檔案 <b aria-hidden="true">↗</b></span><small>JPG、PNG、WebP · 單張最多 20 MB</small></span>
+            <img data-text-id="F-056" data-text-attribute="alt" id="image-preview" alt="已選擇的影像預覽" hidden>
+            <span class="preview-action" id="preview-action" hidden>點擊或拖曳以更換影像</span>
+          </button>
+            <!-- 【選檔後資訊】檔名、尺寸與容量由 app.js 寫入；hidden 代表一開始不顯示。 -->
+            <div class="file-info" id="file-info" hidden>
+              <div>
+                <strong data-text-id="F-057" id="file-name"></strong><span data-text-id="F-058" id="file-meta"></span>
+              </div>
+              <button data-text-id="F-059" type="button" id="clear-button" class="icon-button" aria-label="移除影像與結果">×</button>
+            </div>
+            <p class="upload-help" id="upload-help"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="5" y="9" width="10" height="8" rx="2"/><path d="M7 9V6a3 3 0 016 0v3"/></svg><span data-text-id="F-060" id="privacy-text">真實推論時才傳至本機服務；不保存影像。</span></p>
+            <!-- 【錯誤提示】由 showError() 更新；role alert 供輔助工具通知使用者。 -->
+            <p data-text-id="F-061" class="error-message" id="upload-error" role="alert" hidden></p>
+            <!-- 【執行按鈕】真實模式需本機服務開啟模型；mock 則不呼叫 API。 -->
+            <button data-text-id="F-062" type="button" id="run-button" class="button primary run-button" disabled>執行研究推論 <span aria-hidden="true">→</span></button>
+            <div class="sample-row">
+              <span data-text-id="F-063">還沒有影像？</span>
+              <button data-text-id="F-064" type="button" class="text-link" id="sample-button">載入示意影像（Mock） <span aria-hidden="true">↗</span></button>
+            </div>
+            <p data-text-id="F-065" class="status-message" id="status" role="status" aria-live="polite">等待選擇影像</p>
+          </section>
+          <!-- 【05-2 結果面板】包含尚無結果、最高分類、機率分布、解釋與視覺化預留區。 -->
+          <section class="result-panel" id="result-panel" aria-labelledby="result-title" aria-busy="false">
+            <div class="panel-title">
+              <span data-text-id="F-066" class="step">02</span>
+              <h3 data-text-id="F-067" id="result-title">閱讀預測結果</h3>
+              <span data-text-id="F-068" class="mini-label">OUTPUT</span>
+            </div>
+            <!-- 【空白狀態】尚未產生結果時顯示；結果完成後由 app.js 隱藏。 -->
+            <div class="result-empty" id="result-empty">
+              <div class="empty-chart" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <h4 data-text-id="F-069">結果，會從這裡開始。</h4>
+              <p data-text-id="F-070">選擇模型與影像後，執行研究推論。<br>你將看到分類分布、簡短解釋與視覺化預留區。</p>
+              <span data-text-id="F-071" class="tag">目前尚無結果</span>
+            </div>
+            <!-- 【完成狀態】預留的空元素由 renderResult() 填入，不需要在這裡手寫分數。 -->
+            <div id="result-content" hidden>
+              <div class="prediction-summary">
+                <div>
+                  <p data-text-id="F-072">七類中最高分 <span data-text-id="F-073" class="tag mock-tag" id="result-kind">待推論</span></p>
+                  <h4 data-text-id="F-074" id="prediction-label"></h4>
+                  <span data-text-id="F-075" id="prediction-code" class="mini-label"></span>
+                </div>
+                <div class="prediction-score">
+                  <strong data-text-id="F-076" id="prediction-score"></strong><span data-text-id="F-077" id="score-kind">未校準分數</span>
+                </div>
+              </div>
+              <p data-text-id="F-078" class="result-model-info" id="result-model-info"></p>
+              <!-- 【結果頁籤】aria-controls 指向面板 id；app.js 管理選取狀態與方向鍵操作。 -->
+              <div class="result-tabs" role="tablist" aria-label="結果檢視">
+                <button data-text-id="F-079" type="button" role="tab" id="tab-probabilities" aria-controls="probabilities-panel" aria-selected="true" tabindex="0">分類分布</button>
+                <button data-text-id="F-080" type="button" role="tab" id="tab-visual" aria-controls="visual-panel" aria-selected="false" tabindex="-1">視覺解釋 <span class="tab-note">預留</span></button>
+              </div>
+              <!-- 【機率條容器】七列由 app.js 動態建立；真實模式來自同源 API，mock 才來自 mock-predictor.js。 -->
+              <div role="tabpanel" id="probabilities-panel" aria-labelledby="tab-probabilities">
+                <div class="distribution-head">
+                  <span data-text-id="F-081">研究類別</span><span data-text-id="F-082" id="distribution-kind">相對機率（未校準）</span>
+                </div>
+                <div id="probability-bars" class="probability-bars">
+                </div>
+                <p data-text-id="F-083" class="distribution-note">七類分數總和為 100% · 不等於疾病確診機率</p>
+              </div>
+              <!-- 【Grad-CAM 預留】目前只有說明與示意圖示，尚無真正熱力圖；不代表功能已串接。 -->
+              <div role="tabpanel" id="visual-panel" aria-labelledby="tab-visual" hidden>
+                <div class="visual-placeholder">
+                  <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="6" y="6" width="36" height="36" rx="9"/><circle cx="24" cy="24" r="10"/><path d="M24 10v8m0 12v8M10 24h8m12 0h8"/></svg>
+                  <h4 data-text-id="F-084">讓模型關注的區域，也能被看見。</h4>
+                  <p data-text-id="F-085">這裡預留 Grad-CAM 疊圖與原圖比較。<br>尚未串接，不以模擬熱力圖代替實際解釋。</p>
+                  <span data-text-id="F-086" class="tag">後續擴充 · GRAD-CAM</span>
+                </div>
+              </div>
+              <!-- 【結果解釋】explanation-text 的文字在 app.js 的 renderResult() 中設定。 -->
+              <div class="explanation">
+                <span class="explanation-icon" aria-hidden="true">i</span>
+                <div>
+                  <strong data-text-id="F-087">如何閱讀這個結果？</strong>
+                  <p data-text-id="F-088" id="explanation-text"></p>
+                </div>
+              </div>
+            </div>
+            <p data-text-id="F-089" class="result-notice" id="result-notice">研究用途；分數尚未校準，不代表醫療診斷機率。真實模型執行預設關閉，請依本機服務狀態啟用。</p>
+          </section>
+        </div>
+        <!-- 【無 JavaScript 時的提示】介紹仍可閱讀，但選圖預覽與 mock 互動需要 JavaScript。 -->
+        <noscript>
+          <p data-text-id="F-090" class="notice-box">請啟用 JavaScript 以使用本機影像預覽及 mock 展示；專題介紹與流程仍可閱讀。</p>
+        </noscript>
+      </section>
+      <!-- 【06 模型資訊】這裡是展示文字；修改 ConvNeXt V2-Tiny 名稱不會切換實際模型或權重。 -->
+      <section class="model-section page-width" id="model" aria-labelledby="model-title">
+        <div class="section-heading">
+          <div>
+            <p data-text-id="F-091" class="eyebrow">BEHIND THE MODEL</p>
+            <h2 data-text-id="F-092" id="model-title">目前的主模型。</h2>
+          </div>
+          <span data-text-id="F-093" class="section-aside">先了解模型，再理解它的輸出。</span>
+        </div>
+        <div class="model-layout">
+          <article class="model-card">
+            <div class="model-card-top">
+              <span data-text-id="F-094" class="tag white-tag">研究主模型</span><span data-text-id="F-095" class="mini-label">MODEL / 01</span>
+            </div>
+            <h3 data-text-id="F-096">ConvNeXt<br><span>V2-Tiny</span></h3>
+            <p data-text-id="F-097">ImageNet 預訓練初始化</p>
+            <div class="model-facts">
+              <div>
+                <span data-text-id="F-098">研究任務</span><strong data-text-id="F-099">皮膚病灶七分類</strong>
+              </div>
+              <div>
+                <span data-text-id="F-100">網站連接狀態</span><strong data-text-id="F-101" id="model-connection"><i class="dot"></i> 待 GPU 驗證</strong>
+              </div>
+            </div>
+            <p data-text-id="F-102" class="model-note">已建立原 Seed1／三 Seed 等權推論介面；權重只由本機服務依核定模式載入。</p>
+          </article>
+          <div class="model-details">
+            <article class="detail-card">
+              <span class="detail-icon" aria-hidden="true">07</span>
+              <div>
+                <h3 data-text-id="F-103">七個類別，是研究範圍。</h3>
+                <p data-text-id="F-104">AKIEC、BCC、BKL、DF、NV、VASC、MEL。未納入的疾病與正常皮膚，也可能被分到既有類別。</p>
+              </div>
+            </article>
+            <article class="detail-card">
+              <span class="detail-icon peach" aria-hidden="true">↗</span>
+              <div>
+                <h3 data-text-id="F-105">預訓練，是學習的起點。</h3>
+                <p data-text-id="F-106">先從 ImageNet 學習通用影像特徵，再進行本專題的分類訓練；不代表已具備臨床診斷能力。</p>
+              </div>
+            </article>
+            <article class="detail-card">
+              <span class="detail-icon lavender" aria-hidden="true">≠</span>
+              <div>
+                <h3 data-text-id="F-107">信心高，不等於判斷正確。</h3>
+                <p data-text-id="F-108">影像品質、資料來源與類別涵蓋範圍都會影響輸出。這個展示頁不提供臨床效能主張。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- 【07 研究流程】ol 中每個 li 是一個步驟；只介紹流程，不提供訓練啟動功能。 -->
+      <section class="workflow-section page-width" id="workflow" aria-labelledby="workflow-title">
+        <div class="section-heading">
+          <div>
+            <p data-text-id="F-109" class="eyebrow">THE RESEARCH PROCESS</p>
+            <h2 data-text-id="F-110" id="workflow-title">SkinDetect，實際怎麼訓練？</h2>
+            <p data-text-id="F-111">把資料、學習與評估分開，讓每一步都有清楚的用途。</p>
+          </div>
+        </div>
+        <ol class="workflow">
+          <li>
+            <span class="workflow-top"><span data-text-id="F-112">01</span><span aria-hidden="true">→</span></span>
+            <h3 data-text-id="F-113">整理與切分資料</h3>
+            <p data-text-id="F-114">統一類別、檢查重複影像，區分 Train、Validation 與 Test。</p>
+            <span data-text-id="F-115" class="workflow-caption">資料治理</span>
+          </li>
+          <li>
+            <span class="workflow-top"><span data-text-id="F-116">02</span><span aria-hidden="true">→</span></span>
+            <h3 data-text-id="F-117">用訓練集學習</h3>
+            <p data-text-id="F-118">模型從訓練影像更新參數，學習影像特徵與類別之間的關係。</p>
+            <span data-text-id="F-119" class="workflow-caption">模型訓練</span>
+          </li>
+          <li>
+            <span class="workflow-top"><span data-text-id="F-120">03</span><span aria-hidden="true">→</span></span>
+            <h3 data-text-id="F-121">用驗證集選模</h3>
+            <p data-text-id="F-122">依驗證表現選擇模型，觀察跨來源差異；Test 保留作最終評估。</p>
+            <span data-text-id="F-123" class="workflow-caption">Validation ≠ Test</span>
+          </li>
+          <li>
+            <span class="workflow-top"><span data-text-id="F-124">04</span><span aria-hidden="true">↗</span></span>
+            <h3 data-text-id="F-125">呈現與理解輸出</h3>
+            <p data-text-id="F-126">顯示七類分布與限制，支援原 Seed1 及三 Seed 等權集成；GPU 一致性驗證另行記錄。</p>
+            <span data-text-id="F-127" class="workflow-caption">本版展示位置</span>
+          </li>
+        </ol>
+      </section>
+      <!-- 【08 注意事項】研究與醫療用途界線、去識別化及本機暫存說明。 -->
+      <aside class="disclaimer page-width" aria-labelledby="disclaimer-title">
+        <div class="notice-symbol" aria-hidden="true">
+          !
+        </div>
+        <div>
+          <p data-text-id="F-128" class="eyebrow">A NOTE BEFORE YOU GO</p>
+          <h2 data-text-id="F-129" id="disclaimer-title">用來理解研究，不能代替診斷。</h2>
+          <p data-text-id="F-130">SkinDetect 是學生專題與研究展示，輸出不構成醫療建議。若對皮膚狀況有疑慮，請諮詢合格醫療專業人員。</p>
+          <p data-text-id="F-131">請使用有權使用且已去識別化的影像。Mock 影像留在瀏覽器；真實推論才傳至這台電腦的本機服務，不保存影像或個案紀錄。分數尚未校準，不代表醫療診斷機率。</p>
+        </div>
+      </aside>
+    </main>
+    <!-- 【09 頁尾】品牌短句、版本文字與回到頂端連結。 -->
+    <footer class="site-footer page-width">
+      <a data-text-id="F-132" class="footer-brand" href="#">SkinDetect<span>讓研究，被清楚看見。</span></a><span data-text-id="F-133">學生專題 / FRONTEND V1</span><a data-text-id="F-134" class="text-link" href="#main">回到頂端 ↑</a>
+    </footer>
+  </body>
+</html>

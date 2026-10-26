@@ -1,0 +1,200 @@
+{
+  "version": "v2_512_alpha025_20261024_v1",
+  "execution_revision": "retry1_20261024_v1",
+  "at": "2026-10-24T21:28:56.571594+08:00",
+  "execution_authorized": true,
+  "fresh_initializations_per_seed": {
+    "1": 1,
+    "2": 1,
+    "3": 1
+  },
+  "parent_failed_run_id": "d87cb2eef21d47fc8a408aa16b70e641",
+  "parent_failed_attempt_seconds": 24.779381000000285,
+  "parent_failed_results_root": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1",
+  "parent_gate_sha256": "8ca2f1353aec40b455dd91ab6e42bb5bfc37caac0dd86ab015e49759400b9b0f",
+  "B_authorization_source": "recovery_20261023\\B_training\\alpha025_retry1_20261024_v1\\AUTHORIZATION.md",
+  "limits": {
+    "runs": 3,
+    "epochs": 90,
+    "max_epochs_per_run": 30,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+  },
+  "cpu_compatibility_passed": true,
+  "cpu_basis": "reuse restoration verification; only current authorization/source/retry checks added",
+  "narrow_checks": [
+    {
+      "name": "parent_failed_zero_complete_epochs",
+      "passed": true
+    },
+    {
+      "name": "parent_STOP_preserved",
+      "passed": true
+    },
+    {
+      "name": "parent_gate_unchanged",
+      "passed": true
+    },
+    {
+      "name": "exactly_one_parent_failed_attempt",
+      "passed": true
+    },
+    {
+      "name": "no_parent_completed_epoch_or_active_lease",
+      "passed": true
+    },
+    {
+      "name": "execution_is_distinct",
+      "passed": true
+    },
+    {
+      "name": "arbitrary_retry_root_rejected",
+      "passed": true
+    },
+    {
+      "name": "C_file:AUTHORIZATION.md",
+      "passed": true
+    },
+    {
+      "name": "C_file:DIFF_AND_SOURCES.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:D_SPEC_GOVERNING_v2.md",
+      "passed": true
+    },
+    {
+      "name": "C_file:EVALUATION_CONTRACT.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:HANDOFF_B.md",
+      "passed": true
+    },
+    {
+      "name": "C_file:PLANNED_EFFECTIVE_CONTRACT.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:SAMPLING_EXPOSURE.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:SAMPLING_SOURCE.txt",
+      "passed": true
+    },
+    {
+      "name": "C_file:suite.json",
+      "passed": true
+    },
+    {
+      "name": "C_file:v2in_res512_alpha025.json",
+      "passed": true
+    },
+    {
+      "name": "C_training_matches",
+      "passed": true
+    },
+    {
+      "name": "restored_trainer_unmodified",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:schedule_check",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:process_conflicts",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:run_seed",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:memory",
+      "passed": true
+    },
+    {
+      "name": "restored_policy_unchanged:gpu_metadata",
+      "passed": true
+    },
+    {
+      "name": "finite_workload_unbounded_time",
+      "passed": true
+    },
+    {
+      "name": "no_torch_import",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:torch",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:torchvision",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:timm",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:numpy",
+      "passed": true
+    },
+    {
+      "name": "version_continuity:Pillow",
+      "passed": true
+    }
+  ],
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "timm": "1.0.30",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0"
+  },
+  "python_version": "3.12.10",
+  "python": ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+  "frozen_files": {
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\train_regularized.py": "16b10d1f47601c5e79a3413cf2a6f3de56003c759aa99e23ed28c24006131509",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\model_profiles.py": "9645ab66505bf0c7458090e4b0dad5fde70a020c7f7e65ec0ce14afdf8461b29",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\v2_alpha025_contract.py": "2c9821df667f301c608ae3fa4072e66f311b2b3075e0e748145ad5818f54db05",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\run_v2_alpha025.py": "ee5dfdea45235d58c629373cbc1e710d7776ae571bdc649efc95aee85dd0f88c",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\training_state.py": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\coverage_sampler.py": "bceed257aa8891eee279324f3335cc3aea6464fe5c1e840472657493f005b7d9",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\v2_opt_contract.py": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1",
+    "D:\\SkinDetect_base\\第二階段\\src\\stage2\\models.py": "5d23c92718c2539ba16195b24065b8eb7f08b7fd07a2bfe41dd2d4bf8f999657",
+    "D:\\SkinDetect_base\\第二階段\\src\\stage2\\engine.py": "19f265519880588537ea0f97a27810e922e2c7cc79c6e3cf82cfbb9b1f0b6c4b",
+    "D:\\SkinDetect_base\\第二階段\\src\\stage2\\metrics.py": "0bfa691ac0431db6e7bd8fc59d702b558f014e11cbaf30bc3f3c7ba3448d7ec1",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\Start-V2Alpha025.ps1": "7cfb4037636a67ed1737b38c1f71368dd45b75e82cdbf8131cdb04193c994c72",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\AUTHORIZATION.md": "83eecd31687be5e48fa704155bab4a7358b61a9e94aaf2f7c3b8a81773d21ee9",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\DIFF_AND_SOURCES.json": "baf11917219bdb034753fe7225c1ba4ee5a83c07059c34e0aad0cb6af5e1a586",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\D_SPEC_GOVERNING_v2.md": "8a5a4a3ea4c9474959172bf452faf696fd27d7ebf36aa584dbd3ec9c14d9d03e",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\EVALUATION_CONTRACT.json": "8d327ff8a0c6f81c44abe3db60b28e376469e818734927552d14092d56ab80b1",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\HANDOFF_B.md": "5d901cc2994dc86833e6d4033bccbe9442c706e656488b7bf00aeb82fd8a2b2c",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\PLANNED_EFFECTIVE_CONTRACT.json": "d8df9611eead03716b14448f83d2bd18a68d0dbde94b7ca6482a7c4ec41d1eb2",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\SAMPLING_EXPOSURE.json": "1c19f63c973e9ff882f63809c170e64cb280afef37361250f86936e0b8fc661d",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\SAMPLING_SOURCE.txt": "8efda465112ac6acd4c4c654c16337647d5333d2b48da00bf1b29b561d36d7bc",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\STATIC_QA.json": "1cfc706389ab3c7750e9f4462758805a9cd1cda5c5695fe26d3f78dcaf6f41ff",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\suite.json": "7f8cb857be5fa8881e26f4594674dce8ed1824930c5b88c70680c1af95543e18",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\v2in_res512_alpha025.json": "f670c37eff1980d388da3a85bedfa8851b3e034c4f41ed043c1975c9c5b3f222",
+    "D:\\SkinDetect_base\\recovery_20261023\\D_v2_analysis\\resolution_decision_20261024_v1\\DECISION.md": "6374cb686c07fa2c3033e84c4a3245c609541bed35758ddc7a81636bb219954d",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\v2in_res512.json": "190dab3b13fe74ce325077d902bca2619c91f0505c64dc213c888f4b37916aa9",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\alpha025_launch_20261024_v1\\B_EXECUTION_AUTHORIZATION.md": "62b8ebcec727274821b2221586bb3a1e588928a290a21cde4db8c6afcbecf2be",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\alpha025_launch_20261024_v1\\CPU_TESTS.log": "b89545c5935e966b9c51a46c40e6ef8c683649eee3c8af549cf5fb6cf3cd014d",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\alpha025_launch_20261024_v1\\prepare_gate.py": "8dbc752da2819256008636805254950e95e52c65f8ed79e61ca835840ca84bbb",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\run_inputs.json": "8366c03079ba04242593656ca4dc8052d53b174d67a9118c8c45c84ddd8cd057",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\run_inputs.json": "f13838dbb89b5a35d6a398fc1aff8e213ca22202c85a6582bd3f20ddd47675d0",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\run_inputs.json": "e316e656a8c3c3e2019bdc0aa5bc546529dc0d2b3046c063290eb7ab40f0822a",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\Start-V2Alpha025Retry1.ps1": "1114a2624c54628d659f09571bbcf5f8fcbbf10db38e59c569379f8dbdf6ac8c",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\alpha025_retry1_20261024_v1\\AUTHORIZATION.md": "6417a40e3da97965201fc08c11c69e30e3ce90dada537d1e44debdbee9ca2c06",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\alpha025_retry1_20261024_v1\\prepare_retry1.py": "77411e3107d840f3f4ace060e5f0d0822470eafd8ba16799c0a5ff8a601634d5",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\EXECUTION_GATE.json": "8ca2f1353aec40b455dd91ab6e42bb5bfc37caac0dd86ab015e49759400b9b0f",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\state.json": "ef9d55cebfcb8d008f2cd2afa28d7d40195a85e1d59d419d402d041a699aa650",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\STOP": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\attempts\\attempt_1dc91e11abe04c90ac01adc6a07d0855.json": "51616d2496d8b54b3fe41cf43b2bda2bfc2546e2869195d2e2855f7c9039f9a7",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\budget\\epoch_bf0aafbe471840bc82422890fd860dc6.json": "7f432c721bf8bb6c12e66a02b6f4b424b595fdf93feeefa01426e7bb7971f007"
+  }
+}

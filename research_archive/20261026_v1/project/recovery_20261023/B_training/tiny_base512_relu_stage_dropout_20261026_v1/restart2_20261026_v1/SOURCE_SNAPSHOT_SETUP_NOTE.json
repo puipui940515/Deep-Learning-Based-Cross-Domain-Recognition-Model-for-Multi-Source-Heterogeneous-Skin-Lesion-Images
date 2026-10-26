@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-26T12:53:27.6272276+08:00",
+  "stage": "source snapshot copy before gate publication; no formal launch",
+  "error": "shutil.copy2 WinError 3 while copying into deeply nested sources_runtime",
+  "correction": "use Windows extended-length path prefixes for file snapshot IO; retain already-copied files only if SHA matches",
+  "GPU_prechecks_repeated": false,
+  "Windows_settings_changed": false
+}

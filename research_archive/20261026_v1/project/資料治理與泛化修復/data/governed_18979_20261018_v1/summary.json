@@ -1,0 +1,167 @@
+{
+  "release_id": "governed_18979_20261018_v1",
+  "date": "2026-10-18",
+  "data_preparation_completed": true,
+  "historical_manifest_directory": "資料治理與泛化修復\\data\\historical_18979_20261018_v1",
+  "governed_manifest_directory": "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+  "historical_identity_sha256": "e1d994cf3904fc6cf93b0f994d0b1b9b0b2c44888348c734f5a669a648164d7e",
+  "historical_reference_verified": true,
+  "before_counts": {
+    "HAM10000": {
+      "train": 7008,
+      "validation": 1504,
+      "test": 1503
+    },
+    "BCN20000": {
+      "train": 10266,
+      "validation": 1716,
+      "test": 0
+    },
+    "PAD-UFES-20": {
+      "train": 1705,
+      "validation": 401,
+      "test": 0
+    }
+  },
+  "after_counts": {
+    "HAM10000": {
+      "train": 7007,
+      "validation": 1504,
+      "test": 1502
+    },
+    "BCN20000": {
+      "train": 10221,
+      "validation": 1712,
+      "test": 0
+    },
+    "PAD-UFES-20": {
+      "train": 1691,
+      "validation": 395,
+      "test": 0
+    }
+  },
+  "after_totals": {
+    "train": 18919,
+    "validation": 3611,
+    "test": 1502
+  },
+  "historical_rows_excluded": 71,
+  "all_source_rows_excluded_including_SCC": 694,
+  "exclusion_reason_counts_overlapping": {
+    "outside_approved_7class_mapping": 623,
+    "exact_duplicate_diagnosis_conflict_pending_review": 28,
+    "same_label_exact_duplicate_noncanonical": 50
+  },
+  "before_group_checks": {
+    "split_group_cross_split": 0,
+    "available_patient_id_cross_split": 0,
+    "scoped_lesion_key_cross_split": 0
+  },
+  "after_group_checks": {
+    "split_group_cross_split": 0,
+    "available_patient_id_cross_split": 0,
+    "scoped_lesion_key_cross_split": 0
+  },
+  "split_assignments_preserved": true,
+  "exact_duplicate_content_cross_split": 0,
+  "same_content_remaining_after_dedup": 0,
+  "available_patient_and_scoped_lesion_isolation_passed": true,
+  "PAD_split_group": "patient_id",
+  "PAD_lesion_record_key": [
+    "patient_id",
+    "lesion_id"
+  ],
+  "PAD_cross_patient_standalone_lesion_id_reuse_extra_exclusions": 0,
+  "test_excluded_from_training_manifest": true,
+  "lightweight_image_samples": [
+    {
+      "size": [
+        600,
+        450
+      ],
+      "readable": true
+    },
+    {
+      "size": [
+        600,
+        450
+      ],
+      "readable": true
+    },
+    {
+      "size": [
+        600,
+        450
+      ],
+      "readable": true
+    },
+    {
+      "size": [
+        1024,
+        1024
+      ],
+      "readable": true
+    },
+    {
+      "size": [
+        1024,
+        1024
+      ],
+      "readable": true
+    },
+    {
+      "size": [
+        1024,
+        1024
+      ],
+      "readable": true
+    },
+    {
+      "size": [
+        609,
+        609
+      ],
+      "readable": true
+    },
+    {
+      "size": [
+        578,
+        599
+      ],
+      "readable": true
+    },
+    {
+      "size": [
+        1189,
+        1190
+      ],
+      "readable": true
+    }
+  ],
+  "all_manifest_image_paths_exist": true,
+  "original_metadata_and_mapping_hashes_unchanged": true,
+  "original_ZIP_unchanged": true,
+  "source_reproduction_script_unchanged": true,
+  "models_training_code_and_hyperparameters_modified": false,
+  "training_started": false,
+  "runtime": {
+    "python": "C:\\Program Files\\Python312\\python.exe",
+    "dependency_directory": "[USER_HOME]\\Documents\\Codex\\2026-10-18\\skindetect-d-skindetect-base-agents-md\\work\\split-audit-deps"
+  },
+  "limitations": [
+    "Byte-exact SHA-256 duplication and provided group identifiers audited; perceptual/decoded-pixel near-duplicates not audited.",
+    "HAM and BCN lack patient identifiers; their isolation is lesion-level, not verified patient-level.",
+    "Image decoding was sampled (9 images), not a full-image decode audit.",
+    "Raw HAM localization preserved in original_site_value/original_metadata_json; no new anatomical mapping inferred. Existing normalized HAM anatomical site remains unknown when absent in its expected input schema.",
+    "Training settings and gates are unchanged; a training entry must explicitly select this version. The accurate leakage status is not the old pipeline's release approval."
+  ],
+  "input_hashes": {
+    "dataSets/BCN20000/bcn_20k_test.csv": "703f7f81c09f9e1dcb870e8cd92929993ebe1d66116d8b4029e461c75c4a04f9",
+    "dataSets/BCN20000/bcn_20k_train.csv": "0f219633f49c07b0a1c844c4faa0fa1fc26690743f2c44dc7337a7a4135bc40b",
+    "dataSets/HAM10000/HAM10000_metadata.csv": "06aee5e603d313ba69de38263053c792a1dff030eb9c44a96ceb477ceefb99a5",
+    "dataSets/PAD-UFES-20/metadata.csv": "14d145235cedb022548257acb0d84dcd949e2c916f65d2baa7c38ed5339e9527",
+    "資料治理與泛化修復/schema/disease_mapping_v1.csv": "acb1643a54743d222335b3c529e2411c9c210deb0081a9d921cd917f618a62cb",
+    "資料治理與泛化修復/schema/disease_mapping_v2.csv": "4eaf26efb0584b6a961fb9ad582a43ff2af26a0508552f6ea72a1942e014119c"
+  },
+  "provenance_code_sha256": "c782b35db222cbfb73309f0dd62ea258eb748695a8270009e710014e7bd589f1"
+}

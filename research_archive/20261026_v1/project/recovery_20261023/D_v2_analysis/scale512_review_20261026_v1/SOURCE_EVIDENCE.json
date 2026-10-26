@@ -1,0 +1,28 @@
+{
+  "method": "Small saved text/JSON/JSONL SHA256 only, no PT/safetensors or raw images read",
+  "inputs": {
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\FINAL_RESULTS.json": "61357ee612f28869cd8f0f205d1db594ae5a30a78bb77bb0a35f5b6246ea51cd",
+    "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\result.json": "3d7f4c4d7c8d5f789abad945d223d7e881053260bae2d637a35c988a57e60839",
+    "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\run_inputs.json": "8366c03079ba04242593656ca4dc8052d53b174d67a9118c8c45c84ddd8cd057",
+    "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\metrics_cdf336445b6448829f98c1cb04d2814c.jsonl": "607ae7ee110d605b33136634ed872041aeddb385e00070a959fae5c0d2e99e23",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_base\\regularized_seed1\\result.json": "173d360444c82099a1c3d66d9a936ab81348c5b1459eb262c9c67bf16dadacaa",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_base\\regularized_seed1\\run_inputs.json": "d72dcd1646e0714dee2985fb64ca98fbd263ba41f3dfbd70521a49544bc2ba18",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_base\\regularized_seed1\\metrics_940124154cce4f67be1909557255f03f.jsonl": "eba4b07694197c8048d1866ac919635af825cf3d08ba1e619021c4c945f9d9ad",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_large\\regularized_seed1\\result.json": "6ee85b0aea858449dd0a9846bea574325e0e67fb320762ab9aeb1176d5250e7d",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_large\\regularized_seed1\\run_inputs.json": "f6f87ef47a33930352d789d5efddc4f1cda5aecb858ef3f711894d3a408338a9",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_large\\regularized_seed1\\metrics_0cfb50334d064c44bac84b50ee5cde2b.jsonl": "8b2aca1539b76aac54ac57eb2370de8ec6d57687c0ade34b72b50b3a1082425e",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_large\\regularized_seed1\\metrics_3be092f725c94e02ba88784139e4ad10.jsonl": "04c6a4656319998ecc4b68cb38e41f9db73cbc7ac953947ba980c82ffabe2c22",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\attempts\\attempt_72bf60c4a3894c9f8c454294a5abecde.json": "099ac04fe0e6918991db0683dba9ff9cb7ca86f42c722e4c4d937fe482164c5a",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\attempts\\attempt_789aef49399b4f5e87c7c0dda06d7620.json": "045ae3d089c896219b4c85977143894f3a36e249396bfc3c565f8696bf64f408",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\attempts\\attempt_974582d409d444d9a4f4bf6df064718b.json": "f44d07005f3fd534b1d2dcc76c9a7d967a00311ee80d5470183a29d84ca4a9d5",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\attempts\\attempt_fbfead3177fe420d8d8923bb0819e1dc.json": "9f15ffacc582bebfd1227e72c1b3b8a8b7ec04d6448fbdb896dc1976cb7bdd58",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\base_micro2.json": "516c4b2722be568a187b7466b2a72fd0481038c84ba80266251c6df2a1c10feb",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\large_micro1.json": "cb7472472bb88e61fe0770e37dd64a64ab881fe7abb952c2b6e585590368a994",
+    "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\preflight\\large_micro2.json": "3e0a115681492bf0e76a2c9160f7dc268663f58dfbb8ec6a51af4bf7962d7439",
+    "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume2_20261025_v1\\RESTORED_STATE.json": "989f03859b123e08ed1cba556e3513a3d997dd4e9f0a50a3f7fb5fd6ca5dff61",
+    "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume2_20261025_v1\\WORKER_RECEIPT.json": "157ff41aa97b672db69aa8357931a2e64da3e4567b99086419f7ec6696ab9d5e",
+    "資料治理與泛化修復\\configs\\v2_scale512_seed1_20261025_v1\\v2in_scale512_base.json": "8851ac898566de4b9e36c3ff54c5e1b4a156fd04fdd03e17329b3448f36b1c3a",
+    "資料治理與泛化修復\\configs\\v2_scale512_seed1_20261025_v1\\v2in_scale512_large.json": "77c7891561e366a40bc62fe3c140b0fc9f3966243a19d24a7d20c979a71b42ce",
+    "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\EVALUATION_CONTRACT.json": "8d327ff8a0c6f81c44abe3db60b28e376469e818734927552d14092d56ab80b1"
+  }
+}

@@ -1,0 +1,16 @@
+device=cuda train=18919 monitor=1500 seed=3
+抽樣設定={"expected_source_share": {"BCN20000": 0.3333333333333333, "HAM10000": 0.3333333333333333, "PAD-UFES-20": 0.3333333333333333}, "source_class_counts": {"BCN20000:0": 616, "BCN20000:1": 2448, "BCN20000:2": 943, "BCN20000:3": 91, "BCN20000:4": 3514, "BCN20000:5": 90, "BCN20000:6": 2519, "HAM10000:0": 229, "HAM10000:1": 360, "HAM10000:2": 769, "HAM10000:3": 80, "HAM10000:4": 4692, "HAM10000:5": 98, "HAM10000:6": 779, "PAD-UFES-20:0": 588, "PAD-UFES-20:1": 688, "PAD-UFES-20:2": 179, "PAD-UFES-20:4": 195, "PAD-UFES-20:6": 41}, "method": "source_balanced_class_smoothed_weighted_replacement", "unique_samples": 18919, "samples_per_epoch": 18919, "coverage_guarantee": "無；有放回抽樣", "max_repeats_per_sample_per_epoch": null}
+
+Epoch 1/30
+train_loss=1.8133 monitor_BA=0.1429 HAM10000_BA=0.1429 BCN20000_BA=0.1429 PAD-UFES-20_BA=0.2000 robust=0.1524 bad_epochs=0 epoch_seconds=416.29
+
+Epoch 2/30
+train_loss=1.8037 monitor_BA=0.1429 HAM10000_BA=0.1429 BCN20000_BA=0.1429 PAD-UFES-20_BA=0.2000 robust=0.1524 bad_epochs=1 epoch_seconds=357.65
+
+Epoch 3/30
+train_loss=1.8012 monitor_BA=0.1429 HAM10000_BA=0.1429 BCN20000_BA=0.1429 PAD-UFES-20_BA=0.2000 robust=0.1524 bad_epochs=2 epoch_seconds=357.69
+
+Epoch 4/30
+train_loss=1.7995 monitor_BA=0.1429 HAM10000_BA=0.1429 BCN20000_BA=0.1429 PAD-UFES-20_BA=0.2000 robust=0.1524 bad_epochs=3 epoch_seconds=359.29
+暫停於完整 epoch；使用 --resume 接續同一實驗
+已儲存：資料治理與泛化修復\results\v2_tiny_base512_relu_stage_dropout_20261026_v1\executions\restart3_20261026_v1\runs\v2in_tiny512_relu_stage_dropout\regularized_seed3\result.json

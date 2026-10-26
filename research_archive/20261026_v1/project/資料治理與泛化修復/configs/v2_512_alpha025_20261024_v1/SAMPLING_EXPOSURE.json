@@ -1,0 +1,385 @@
+{
+  "status": "analytical_expectation_not_sampled_or_quality_result",
+  "source_counts_origin": "original 512 result.json#/sampling/source_class_counts; three saved Seeds identical",
+  "samples_per_epoch": 18919,
+  "source_share_each_alpha": {
+    "HAM10000": 0.3333333333333333,
+    "BCN20000": 0.3333333333333333,
+    "PAD-UFES-20": 0.3333333333333333
+  },
+  "formula": "w_i = n_sc^(-alpha) / sum_c n_sc^(1-alpha); P(s)=1/3; P(c|s)=n_sc^(1-alpha)/sum_c n_sc^(1-alpha); expected draws per epoch=18919*P(s)*P(c|s)",
+  "sampling": "replacement=True, num_samples=18919; expectation not realized count, no full-coverage guarantee",
+  "by_source": {
+    "HAM10000": {
+      "train_samples": 7007,
+      "classes": {
+        "AKIEC": {
+          "train_count": 229,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.08545239826166345,
+            "global_draw_share": 0.02848413275388782,
+            "expected_draws_per_epoch": 538.8913075708036,
+            "normalized_per_image_draw_probability": 0.00012438485918728304
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.05554541716237717,
+            "global_draw_share": 0.01851513905412572,
+            "expected_draws_per_epoch": 350.2879157650045,
+            "normalized_per_image_draw_probability": 8.085213560753592e-05
+          },
+          "global_share_delta_pp": -0.9968993699762098,
+          "expected_draws_delta_per_epoch": -188.6033918057991
+        },
+        "BCC": {
+          "train_count": 360,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.10714151056892958,
+            "global_draw_share": 0.03571383685630986,
+            "expected_draws_per_epoch": 675.6700794845262,
+            "normalized_per_image_draw_probability": 9.92051023786385e-05
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.07798274110153362,
+            "global_draw_share": 0.02599424703384454,
+            "expected_draws_per_epoch": 491.7851596333049,
+            "normalized_per_image_draw_probability": 7.220624176067927e-05
+          },
+          "global_share_delta_pp": -0.9719589822465322,
+          "expected_draws_delta_per_epoch": -183.88491985122135
+        },
+        "BKL": {
+          "train_count": 769,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.15659204098279714,
+            "global_draw_share": 0.05219734699426571,
+            "expected_draws_per_epoch": 987.521607784513,
+            "normalized_per_image_draw_probability": 6.787691416679547e-05
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.13778957985316106,
+            "global_draw_share": 0.04592985995105369,
+            "expected_draws_per_epoch": 868.9470204139848,
+            "normalized_per_image_draw_probability": 5.972673595715695e-05
+          },
+          "global_share_delta_pp": -0.6267487043212019,
+          "expected_draws_delta_per_epoch": -118.5745873705282
+        },
+        "DF": {
+          "train_count": 80,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.05050699244657351,
+            "global_draw_share": 0.016835664148857836,
+            "expected_draws_per_epoch": 318.5139300322414,
+            "normalized_per_image_draw_probability": 0.00021044580186072294
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.025239986093318043,
+            "global_draw_share": 0.008413328697772681,
+            "expected_draws_per_epoch": 159.17176563316136,
+            "normalized_per_image_draw_probability": 0.00010516660872215851
+          },
+          "global_share_delta_pp": -0.8422335451085154,
+          "expected_draws_delta_per_epoch": -159.34216439908002
+        },
+        "NV": {
+          "train_count": 4692,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.3867991548255973,
+            "global_draw_share": 0.12893305160853244,
+            "expected_draws_per_epoch": 2439.284403381825,
+            "normalized_per_image_draw_probability": 2.747933751247494e-05
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.5349215860481685,
+            "global_draw_share": 0.17830719534938952,
+            "expected_draws_per_epoch": 3373.3938288151003,
+            "normalized_per_image_draw_probability": 3.800238605059453e-05
+          },
+          "global_share_delta_pp": 4.937414374085708,
+          "expected_draws_delta_per_epoch": 934.1094254332752
+        },
+        "VASC": {
+          "train_count": 98,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.05590099686363237,
+            "global_draw_share": 0.01863366562121079,
+            "expected_draws_per_epoch": 352.53031988768697,
+            "normalized_per_image_draw_probability": 0.0001901394451143958
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.029389430993408454,
+            "global_draw_share": 0.009796476997802818,
+            "expected_draws_per_epoch": 185.33954832143152,
+            "normalized_per_image_draw_probability": 9.996405099798793e-05
+          },
+          "global_share_delta_pp": -0.883718862340797,
+          "expected_draws_delta_per_epoch": -167.19077156625545
+        },
+        "MEL": {
+          "train_count": 779,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.15760690605080666,
+            "global_draw_share": 0.05253563535026889,
+            "expected_draws_per_epoch": 993.9216851917371,
+            "normalized_per_image_draw_probability": 6.74398399875082e-05
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.13913125874803317,
+            "global_draw_share": 0.04637708624934439,
+            "expected_draws_per_epoch": 877.4080947513465,
+            "normalized_per_image_draw_probability": 5.95341286897874e-05
+          },
+          "global_share_delta_pp": -0.6158549100924497,
+          "expected_draws_delta_per_epoch": -116.51359044039054
+        }
+      }
+    },
+    "BCN20000": {
+      "train_samples": 10221,
+      "classes": {
+        "AKIEC": {
+          "train_count": 616,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.10629280504699258,
+            "global_draw_share": 0.035430935015664196,
+            "expected_draws_per_epoch": 670.3178595613509,
+            "normalized_per_image_draw_probability": 5.75177516488055e-05
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.08175058782758413,
+            "global_draw_share": 0.027250195942528043,
+            "expected_draws_per_epoch": 515.546457036688,
+            "normalized_per_image_draw_probability": 4.423733107553253e-05
+          },
+          "global_share_delta_pp": -0.8180739073136153,
+          "expected_draws_delta_per_epoch": -154.7714025246629
+        },
+        "BCC": {
+          "train_count": 2448,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.21189427294577826,
+            "global_draw_share": 0.07063142431525941,
+            "expected_draws_per_epoch": 1336.275916620393,
+            "normalized_per_image_draw_probability": 2.885270601113539e-05
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.2300985649480198,
+            "global_draw_share": 0.07669952164933994,
+            "expected_draws_per_epoch": 1451.0782500838623,
+            "normalized_per_image_draw_probability": 3.133150394172382e-05
+          },
+          "global_share_delta_pp": 0.6068097334080522,
+          "expected_draws_delta_per_epoch": 114.80233346346927
+        },
+        "BKL": {
+          "train_count": 943,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.1315132040040603,
+            "global_draw_share": 0.0438377346680201,
+            "expected_draws_per_epoch": 829.3661021842722,
+            "normalized_per_image_draw_probability": 4.648752350797466e-05
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.11250948054758887,
+            "global_draw_share": 0.037503160182529624,
+            "expected_draws_per_epoch": 709.522287493278,
+            "normalized_per_image_draw_probability": 3.977005321583205e-05
+          },
+          "global_share_delta_pp": -0.6334574485490476,
+          "expected_draws_delta_per_epoch": -119.84381469099424
+        },
+        "DF": {
+          "train_count": 91,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.04085396459867946,
+            "global_draw_share": 0.01361798819955982,
+            "expected_draws_per_epoch": 257.63871874747224,
+            "normalized_per_image_draw_probability": 0.00014964822197318484
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.019479885250010546,
+            "global_draw_share": 0.006493295083336848,
+            "expected_draws_per_epoch": 122.84664968164985,
+            "normalized_per_image_draw_probability": 7.135489102567965e-05
+          },
+          "global_share_delta_pp": -0.7124693116222971,
+          "expected_draws_delta_per_epoch": -134.79206906582237
+        },
+        "NV": {
+          "train_count": 3514,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.25387175814116764,
+            "global_draw_share": 0.08462391938038921,
+            "expected_draws_per_epoch": 1600.9999307575836,
+            "normalized_per_image_draw_probability": 2.4081934940349805e-05
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.30175652367483025,
+            "global_draw_share": 0.10058550789161008,
+            "expected_draws_per_epoch": 1902.977223801371,
+            "normalized_per_image_draw_probability": 2.8624219661812766e-05
+          },
+          "global_share_delta_pp": 1.596158851122087,
+          "expected_draws_delta_per_epoch": 301.97729304378754
+        },
+        "VASC": {
+          "train_count": 90,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.040628872171670126,
+            "global_draw_share": 0.013542957390556708,
+            "expected_draws_per_epoch": 256.2192108719424,
+            "normalized_per_image_draw_probability": 0.000150477304339519
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.01931911519548617,
+            "global_draw_share": 0.006439705065162057,
+            "expected_draws_per_epoch": 121.83278012780096,
+            "normalized_per_image_draw_probability": 7.155227850180064e-05
+          },
+          "global_share_delta_pp": -0.7103252325394651,
+          "expected_draws_delta_per_epoch": -134.38643074414142
+        },
+        "MEL": {
+          "train_count": 2519,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.21494512309165162,
+            "global_draw_share": 0.07164837436388387,
+            "expected_draws_per_epoch": 1355.515594590319,
+            "normalized_per_image_draw_probability": 2.8443181565654576e-05
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.23508584255648024,
+            "global_draw_share": 0.07836194751882675,
+            "expected_draws_per_epoch": 1482.5296851086832,
+            "normalized_per_image_draw_probability": 3.110835550568748e-05
+          },
+          "global_share_delta_pp": 0.6713573154942878,
+          "expected_draws_delta_per_epoch": 127.01409051836413
+        }
+      }
+    },
+    "PAD-UFES-20": {
+      "train_samples": 1691,
+      "classes": {
+        "AKIEC": {
+          "train_count": 588,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.2879042440943058,
+            "global_draw_share": 0.0959680813647686,
+            "expected_draws_per_epoch": 1815.6201313400572,
+            "normalized_per_image_draw_probability": 0.00016321102272919832
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.3217967358674889,
+            "global_draw_share": 0.1072655786224963,
+            "expected_draws_per_epoch": 2029.3574819590076,
+            "normalized_per_image_draw_probability": 0.00018242445343961958
+          },
+          "global_share_delta_pp": 1.1297497257727704,
+          "expected_draws_delta_per_epoch": 213.73735061895036
+        },
+        "BCC": {
+          "train_count": 688,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.31142510753875663,
+            "global_draw_share": 0.10380836917958554,
+            "expected_draws_per_epoch": 1963.9505365085788,
+            "normalized_per_image_draw_probability": 0.00015088425752846738
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.36202617240556084,
+            "global_draw_share": 0.12067539080185362,
+            "expected_draws_per_epoch": 2283.0577185802686,
+            "normalized_per_image_draw_probability": 0.00017540027732827561
+          },
+          "global_share_delta_pp": 1.686702162226808,
+          "expected_draws_delta_per_epoch": 319.10718207168975
+        },
+        "BKL": {
+          "train_count": 179,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.15884952461383828,
+            "global_draw_share": 0.052949841537946095,
+            "expected_draws_per_epoch": 1001.7580520564021,
+            "normalized_per_image_draw_probability": 0.0002958091706030508
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.13188287717850614,
+            "global_draw_share": 0.04396095905950204,
+            "expected_draws_per_epoch": 831.6973844467192,
+            "normalized_per_image_draw_probability": 0.00024559195005308403
+          },
+          "global_share_delta_pp": -0.8988882478444051,
+          "expected_draws_delta_per_epoch": -170.06066760968292
+        },
+        "DF": {
+          "train_count": 0,
+          "supported": false,
+          "alpha_050": null,
+          "alpha_025": null,
+          "note": "PAD unsupported class; N/A"
+        },
+        "NV": {
+          "train_count": 195,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.16579701590838244,
+            "global_draw_share": 0.05526567196946081,
+            "expected_draws_per_epoch": 1045.5712479902293,
+            "normalized_per_image_draw_probability": 0.0002834137024074913
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.14062890608086584,
+            "global_draw_share": 0.04687630202695528,
+            "expected_draws_per_epoch": 886.8527580479669,
+            "normalized_per_image_draw_probability": 0.0002403912924459245
+          },
+          "global_share_delta_pp": -0.8389369942505532,
+          "expected_draws_delta_per_epoch": -158.7184899422624
+        },
+        "VASC": {
+          "train_count": 0,
+          "supported": false,
+          "alpha_050": null,
+          "alpha_025": null,
+          "note": "PAD unsupported class; N/A"
+        },
+        "MEL": {
+          "train_count": 41,
+          "supported": true,
+          "alpha_050": {
+            "conditional_class_share_within_source": 0.07602410784471682,
+            "global_draw_share": 0.02534136928157227,
+            "expected_draws_per_epoch": 479.4333654380658,
+            "normalized_per_image_draw_probability": 0.0006180821775993239
+          },
+          "alpha_025": {
+            "conditional_class_share_within_source": 0.043665308467578184,
+            "global_draw_share": 0.014555102822526061,
+            "expected_draws_per_epoch": 275.36799029937055,
+            "normalized_per_image_draw_probability": 0.00035500250786648936
+          },
+          "global_share_delta_pp": -1.078626645904621,
+          "expected_draws_delta_per_epoch": -204.06537513869523
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,629 @@
+{
+  "contract": {
+    "version": 1,
+    "run_id": "951d46aece144af2a7aa9dc6b0b0f145",
+    "seed": 2,
+    "architecture": "convnextv2_tiny_relu_stage_dropout01_7_class",
+    "initialization": "imagenet",
+    "data": {
+      "release_id": "governed_18979_20261018_v1",
+      "manifest": "資料治理與泛化修復\\data\\governed_18979_20261018_v1\\mixed_manifest.csv",
+      "manifest_sha256": "5c501ef3cb6c8a73b3a9395383d199212e070abfbc67c782fcfc010576243284",
+      "summary_sha256": "492e044263f7f26a8a9dd63b4bb18bfe5f1a133d5aee09516d6b8804a7d5eec8",
+      "class_names": [
+        "AKIEC",
+        "BCC",
+        "BKL",
+        "DF",
+        "NV",
+        "VASC",
+        "MEL"
+      ],
+      "limitations": [
+        "Byte-exact SHA-256 duplication and provided group identifiers audited; perceptual/decoded-pixel near-duplicates not audited.",
+        "HAM and BCN lack patient identifiers; their isolation is lesion-level, not verified patient-level.",
+        "Image decoding was sampled (9 images), not a full-image decode audit.",
+        "Raw HAM localization preserved in original_site_value/original_metadata_json; no new anatomical mapping inferred. Existing normalized HAM anatomical site remains unknown when absent in its expected input schema.",
+        "Training settings and gates are unchanged; a training entry must explicitly select this version. The accurate leakage status is not the old pipeline's release approval."
+      ]
+    },
+    "training": {
+      "model": "convnextv2_tiny",
+      "initialization": "imagenet",
+      "normalization": "imagenet_mean_std",
+      "image_size": 512,
+      "batch_size": 8,
+      "gradient_accumulation": 8,
+      "epochs": 30,
+      "early_stopping_patience": 5,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.05,
+      "layer_decay": 1.0,
+      "label_smoothing": 0.1,
+      "mixup_alpha": 0.2,
+      "gradient_clip_norm": 1.0,
+      "class_balance_alpha": 0.5,
+      "num_workers": 4,
+      "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+      "min_epochs": 12,
+      "early_stopping": true,
+      "min_delta": 0.0,
+      "optimizer": "AdamW",
+      "loss": "cross_entropy",
+      "effective_batch_size": 64,
+      "amp": true,
+      "transform": "regularized_native",
+      "optimizer_grouping": "layer_decay",
+      "scheduler": {
+        "name": "cosine",
+        "eta_min": 1e-06
+      },
+      "sampling_method": "weighted_replacement"
+    },
+    "class_names": [
+      "AKIEC",
+      "BCC",
+      "BKL",
+      "DF",
+      "NV",
+      "VASC",
+      "MEL"
+    ],
+    "sources": {
+      "HAM10000": {
+        "modality": "dermoscopy",
+        "modality_zh": "皮膚鏡影像",
+        "license": "CC BY-NC 4.0",
+        "supported_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "BCN20000": {
+        "modality": "dermoscopy",
+        "modality_zh": "皮膚鏡影像",
+        "license": "CC BY 4.0",
+        "supported_labels": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "PAD-UFES-20": {
+        "modality": "clinical_smartphone",
+        "modality_zh": "智慧型手機臨床影像",
+        "license": "CC BY 4.0",
+        "supported_labels": [
+          0,
+          1,
+          2,
+          4,
+          6
+        ]
+      }
+    },
+    "config_sha256": "e4a4c68dfeb37bea521faf8de05a8f9b0d58f360d3e5ad8052bc2c87b1c23837",
+    "sampling_method": "weighted_replacement",
+    "max_repeats": 2,
+    "max_train_samples": null,
+    "max_val_samples_per_source": null,
+    "prefetch_factor": 4,
+    "device_type": "cuda",
+    "source_hashes": {
+      "資料治理與泛化修復\\scripts\\train_regularized.py": "4a2a1512a4e05b5c316512d784d7b9179c6fd6590a34c51a49e6e6546386f2b4",
+      "資料治理與泛化修復\\scripts\\training_state.py": "b07c6b4882703ae27e784f9aeb3db8fea3fc8744b34b4401ac59c0cdc5729fec",
+      "資料治理與泛化修復\\scripts\\coverage_sampler.py": "bceed257aa8891eee279324f3335cc3aea6464fe5c1e840472657493f005b7d9",
+      "第二階段\\src\\stage2\\models.py": "050d43578075d314b00ba09f4f034a67563ae6dcdbc5ccaa5ebba9ae95f1f595",
+      "第二階段\\src\\stage2\\engine.py": "19f265519880588537ea0f97a27810e922e2c7cc79c6e3cf82cfbb9b1f0b6c4b",
+      "第二階段\\src\\stage2\\metrics.py": "0bfa691ac0431db6e7bd8fc59d702b558f014e11cbaf30bc3f3c7ba3448d7ec1",
+      "資料治理與泛化修復\\scripts\\model_profiles.py": "1bf61244f9a666961c5207b3af428d73a3ca744d2a3297f33b56183a529a1beb",
+      "資料治理與泛化修復\\scripts\\v2_relu_stage_dropout.py": "4ea72d511c5d6512d4d001e4f9cfb2e0132a92ab8082d4607055fb1a35369240",
+      "資料治理與泛化修復\\scripts\\v2_relu_dropout_contract.py": "240de1b26ea3072c4ef4e324097ec2fb318d29c43433a4f7aaabbc6528d04dd6",
+      "資料治理與泛化修復\\scripts\\run_v2_relu_dropout.py": "009eeff7402da6f513e79a3894a0c96317a1589513ddb66cc7cc9972eb85d207",
+      "資料治理與泛化修復\\scripts\\v2_opt_contract.py": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1"
+    },
+    "versions": {
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "numpy": "1.26.4",
+      "Pillow": "10.4.0",
+      "timm": "1.0.30"
+    },
+    "python": "3.12.10",
+    "pretrained_sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+    "weight_identity": {
+      "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+      "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+      "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+      "revision": "508caf1bc24fd02c69d15778b994e808670dbc28",
+      "resolved_path": ".venv-skindetect\\hf_cache\\hub\\models--timm--convnextv2_tiny.fcmae_ft_in1k\\snapshots\\508caf1bc24fd02c69d15778b994e808670dbc28\\model.safetensors"
+    },
+    "worker_rng_policy": "native_persistent_workers_not_bitwise_replayable_v1",
+    "experiment_id": "v2in_tiny512_relu_stage_dropout",
+    "profile_approval_status": "approved",
+    "optimization": {
+      "version": "v2_tiny_base512_relu_stage_dropout_20261026_v1",
+      "authorization_sha256": "ded6dd90a3ca808c52e901557b8b6e1f5b058628bb30d8be0e9fff507b180c35",
+      "execution_gate_sha256": "1769708696f2673eaa253de60c926dc1df77c9c1c4c02ccaf46e14b7922c74f3",
+      "evaluation_contract_sha256": "04a53e55f2d0c1974d19a6f0573f8edb294da8b53de1cea65e7e2feef776b18e",
+      "limits": {
+        "runs": 6,
+        "epochs": 180,
+        "max_epochs_per_run": 30,
+        "wall_clock_cap_seconds": null,
+        "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+      },
+      "execution_revision": "restart3_20261026_v1",
+      "restart_authorization_sha256": "731e7b121d16921bf702a4bf580f89cba95e8f56e8c45468fca739f94f3f67e5",
+      "architecture_modification": {
+        "block_activation": "relu",
+        "relu_inplace": false,
+        "stage_output_dropout": 0.1,
+        "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+        "dropout_type": "elementwise",
+        "block_dropout": 0.0,
+        "head_dropout": 0.0,
+        "drop_path": 0.0
+      },
+      "allowed_seeds": [
+        1,
+        2,
+        3
+      ],
+      "fresh_only": true,
+      "wall_clock_cap_seconds": null
+    },
+    "effective_transforms": {
+      "train": "Compose(\n    RandomResizedCrop(size=(512, 512), scale=(0.7, 1.0), ratio=(0.75, 1.33), interpolation=bilinear, antialias=True)\n    RandomHorizontalFlip(p=0.5)\n    RandomVerticalFlip(p=0.5)\n    RandomRotation(degrees=[-25.0, 25.0], interpolation=nearest, expand=False, fill=0)\n    RandomApply(\n    p=0.8\n    ColorJitter(brightness=(0.78, 1.22), contrast=(0.78, 1.22), saturation=(0.8, 1.2), hue=(-0.03, 0.03))\n)\n    RandomGrayscale(p=0.05)\n    RandomApply(\n    p=0.15\n    GaussianBlur(kernel_size=(3, 3), sigma=(0.1, 1.5))\n)\n    RandomAutocontrast(p=0.1)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n    RandomErasing(p=0.15, scale=(0.02, 0.1), ratio=(0.3, 3.3), value=random, inplace=False)\n)",
+      "validation": "Compose(\n    Resize(size=(512, 512), interpolation=bilinear, max_size=None, antialias=True)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)"
+    }
+  },
+  "run_id": "951d46aece144af2a7aa9dc6b0b0f145",
+  "initial_classifier_sha256": "50c04b7d001aa5a6a1432e7b360f0c65e12415dc124f10693aaa6f24df788a02",
+  "initial_optimizer_state_entries": 0,
+  "data": {
+    "release_id": "governed_18979_20261018_v1",
+    "manifest": "資料治理與泛化修復\\data\\governed_18979_20261018_v1\\mixed_manifest.csv",
+    "manifest_sha256": "5c501ef3cb6c8a73b3a9395383d199212e070abfbc67c782fcfc010576243284",
+    "summary_sha256": "492e044263f7f26a8a9dd63b4bb18bfe5f1a133d5aee09516d6b8804a7d5eec8",
+    "class_names": [
+      "AKIEC",
+      "BCC",
+      "BKL",
+      "DF",
+      "NV",
+      "VASC",
+      "MEL"
+    ],
+    "limitations": [
+      "Byte-exact SHA-256 duplication and provided group identifiers audited; perceptual/decoded-pixel near-duplicates not audited.",
+      "HAM and BCN lack patient identifiers; their isolation is lesion-level, not verified patient-level.",
+      "Image decoding was sampled (9 images), not a full-image decode audit.",
+      "Raw HAM localization preserved in original_site_value/original_metadata_json; no new anatomical mapping inferred. Existing normalized HAM anatomical site remains unknown when absent in its expected input schema.",
+      "Training settings and gates are unchanged; a training entry must explicitly select this version. The accurate leakage status is not the old pipeline's release approval."
+    ]
+  },
+  "effective_training_config": {
+    "model": "convnextv2_tiny",
+    "initialization": "imagenet",
+    "normalization": "imagenet_mean_std",
+    "image_size": 512,
+    "batch_size": 8,
+    "gradient_accumulation": 8,
+    "epochs": 30,
+    "early_stopping_patience": 5,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.05,
+    "layer_decay": 1.0,
+    "label_smoothing": 0.1,
+    "mixup_alpha": 0.2,
+    "gradient_clip_norm": 1.0,
+    "class_balance_alpha": 0.5,
+    "num_workers": 4,
+    "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+    "min_epochs": 12,
+    "early_stopping": true,
+    "min_delta": 0.0,
+    "optimizer": "AdamW",
+    "loss": "cross_entropy",
+    "effective_batch_size": 64,
+    "amp": true,
+    "transform": "regularized_native",
+    "optimizer_grouping": "layer_decay",
+    "scheduler": {
+      "name": "cosine",
+      "eta_min": 1e-06
+    },
+    "sampling_method": "weighted_replacement"
+  },
+  "seed": 2,
+  "device": "cuda",
+  "command": [
+    "資料治理與泛化修復\\scripts\\train_regularized.py",
+    "--config",
+    "資料治理與泛化修復\\configs\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\v2in_tiny512_relu_stage_dropout.json",
+    "--seed",
+    "2",
+    "--manifest-release",
+    "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+    "--output-root",
+    "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout",
+    "--require-cuda",
+    "--formal"
+  ],
+  "test_used": false,
+  "optimizer_groups": [
+    {
+      "group": 0,
+      "parameter_names": [
+        "stem.0.weight"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.05
+    },
+    {
+      "group": 1,
+      "parameter_names": [
+        "stem.0.bias",
+        "stem.1.weight",
+        "stem.1.bias"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.0
+    },
+    {
+      "group": 2,
+      "parameter_names": [
+        "stages.0.blocks.0.conv_dw.weight",
+        "stages.0.blocks.0.mlp.fc1.weight",
+        "stages.0.blocks.0.mlp.fc2.weight",
+        "stages.0.blocks.1.conv_dw.weight",
+        "stages.0.blocks.1.mlp.fc1.weight",
+        "stages.0.blocks.1.mlp.fc2.weight",
+        "stages.0.blocks.2.conv_dw.weight",
+        "stages.0.blocks.2.mlp.fc1.weight",
+        "stages.0.blocks.2.mlp.fc2.weight"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.05
+    },
+    {
+      "group": 3,
+      "parameter_names": [
+        "stages.0.blocks.0.conv_dw.bias",
+        "stages.0.blocks.0.norm.weight",
+        "stages.0.blocks.0.norm.bias",
+        "stages.0.blocks.0.mlp.fc1.bias",
+        "stages.0.blocks.0.mlp.grn.weight",
+        "stages.0.blocks.0.mlp.grn.bias",
+        "stages.0.blocks.0.mlp.fc2.bias",
+        "stages.0.blocks.1.conv_dw.bias",
+        "stages.0.blocks.1.norm.weight",
+        "stages.0.blocks.1.norm.bias",
+        "stages.0.blocks.1.mlp.fc1.bias",
+        "stages.0.blocks.1.mlp.grn.weight",
+        "stages.0.blocks.1.mlp.grn.bias",
+        "stages.0.blocks.1.mlp.fc2.bias",
+        "stages.0.blocks.2.conv_dw.bias",
+        "stages.0.blocks.2.norm.weight",
+        "stages.0.blocks.2.norm.bias",
+        "stages.0.blocks.2.mlp.fc1.bias",
+        "stages.0.blocks.2.mlp.grn.weight",
+        "stages.0.blocks.2.mlp.grn.bias",
+        "stages.0.blocks.2.mlp.fc2.bias"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.0
+    },
+    {
+      "group": 4,
+      "parameter_names": [
+        "stages.1.downsample.0.weight",
+        "stages.1.downsample.0.bias",
+        "stages.1.downsample.1.bias"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.0
+    },
+    {
+      "group": 5,
+      "parameter_names": [
+        "stages.1.downsample.1.weight"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.05
+    },
+    {
+      "group": 6,
+      "parameter_names": [
+        "stages.1.blocks.0.conv_dw.weight",
+        "stages.1.blocks.0.mlp.fc1.weight",
+        "stages.1.blocks.0.mlp.fc2.weight",
+        "stages.1.blocks.1.conv_dw.weight",
+        "stages.1.blocks.1.mlp.fc1.weight",
+        "stages.1.blocks.1.mlp.fc2.weight",
+        "stages.1.blocks.2.conv_dw.weight",
+        "stages.1.blocks.2.mlp.fc1.weight",
+        "stages.1.blocks.2.mlp.fc2.weight"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.05
+    },
+    {
+      "group": 7,
+      "parameter_names": [
+        "stages.1.blocks.0.conv_dw.bias",
+        "stages.1.blocks.0.norm.weight",
+        "stages.1.blocks.0.norm.bias",
+        "stages.1.blocks.0.mlp.fc1.bias",
+        "stages.1.blocks.0.mlp.grn.weight",
+        "stages.1.blocks.0.mlp.grn.bias",
+        "stages.1.blocks.0.mlp.fc2.bias",
+        "stages.1.blocks.1.conv_dw.bias",
+        "stages.1.blocks.1.norm.weight",
+        "stages.1.blocks.1.norm.bias",
+        "stages.1.blocks.1.mlp.fc1.bias",
+        "stages.1.blocks.1.mlp.grn.weight",
+        "stages.1.blocks.1.mlp.grn.bias",
+        "stages.1.blocks.1.mlp.fc2.bias",
+        "stages.1.blocks.2.conv_dw.bias",
+        "stages.1.blocks.2.norm.weight",
+        "stages.1.blocks.2.norm.bias",
+        "stages.1.blocks.2.mlp.fc1.bias",
+        "stages.1.blocks.2.mlp.grn.weight",
+        "stages.1.blocks.2.mlp.grn.bias",
+        "stages.1.blocks.2.mlp.fc2.bias"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.0
+    },
+    {
+      "group": 8,
+      "parameter_names": [
+        "stages.2.downsample.0.weight",
+        "stages.2.downsample.0.bias",
+        "stages.2.downsample.1.bias"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.0
+    },
+    {
+      "group": 9,
+      "parameter_names": [
+        "stages.2.downsample.1.weight"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.05
+    },
+    {
+      "group": 10,
+      "parameter_names": [
+        "stages.2.blocks.0.conv_dw.weight",
+        "stages.2.blocks.0.mlp.fc1.weight",
+        "stages.2.blocks.0.mlp.fc2.weight",
+        "stages.2.blocks.1.conv_dw.weight",
+        "stages.2.blocks.1.mlp.fc1.weight",
+        "stages.2.blocks.1.mlp.fc2.weight",
+        "stages.2.blocks.2.conv_dw.weight",
+        "stages.2.blocks.2.mlp.fc1.weight",
+        "stages.2.blocks.2.mlp.fc2.weight",
+        "stages.2.blocks.3.conv_dw.weight",
+        "stages.2.blocks.3.mlp.fc1.weight",
+        "stages.2.blocks.3.mlp.fc2.weight",
+        "stages.2.blocks.4.conv_dw.weight",
+        "stages.2.blocks.4.mlp.fc1.weight",
+        "stages.2.blocks.4.mlp.fc2.weight",
+        "stages.2.blocks.5.conv_dw.weight",
+        "stages.2.blocks.5.mlp.fc1.weight",
+        "stages.2.blocks.5.mlp.fc2.weight",
+        "stages.2.blocks.6.conv_dw.weight",
+        "stages.2.blocks.6.mlp.fc1.weight",
+        "stages.2.blocks.6.mlp.fc2.weight",
+        "stages.2.blocks.7.conv_dw.weight",
+        "stages.2.blocks.7.mlp.fc1.weight",
+        "stages.2.blocks.7.mlp.fc2.weight",
+        "stages.2.blocks.8.conv_dw.weight",
+        "stages.2.blocks.8.mlp.fc1.weight",
+        "stages.2.blocks.8.mlp.fc2.weight"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.05
+    },
+    {
+      "group": 11,
+      "parameter_names": [
+        "stages.2.blocks.0.conv_dw.bias",
+        "stages.2.blocks.0.norm.weight",
+        "stages.2.blocks.0.norm.bias",
+        "stages.2.blocks.0.mlp.fc1.bias",
+        "stages.2.blocks.0.mlp.grn.weight",
+        "stages.2.blocks.0.mlp.grn.bias",
+        "stages.2.blocks.0.mlp.fc2.bias",
+        "stages.2.blocks.1.conv_dw.bias",
+        "stages.2.blocks.1.norm.weight",
+        "stages.2.blocks.1.norm.bias",
+        "stages.2.blocks.1.mlp.fc1.bias",
+        "stages.2.blocks.1.mlp.grn.weight",
+        "stages.2.blocks.1.mlp.grn.bias",
+        "stages.2.blocks.1.mlp.fc2.bias",
+        "stages.2.blocks.2.conv_dw.bias",
+        "stages.2.blocks.2.norm.weight",
+        "stages.2.blocks.2.norm.bias",
+        "stages.2.blocks.2.mlp.fc1.bias",
+        "stages.2.blocks.2.mlp.grn.weight",
+        "stages.2.blocks.2.mlp.grn.bias",
+        "stages.2.blocks.2.mlp.fc2.bias",
+        "stages.2.blocks.3.conv_dw.bias",
+        "stages.2.blocks.3.norm.weight",
+        "stages.2.blocks.3.norm.bias",
+        "stages.2.blocks.3.mlp.fc1.bias",
+        "stages.2.blocks.3.mlp.grn.weight",
+        "stages.2.blocks.3.mlp.grn.bias",
+        "stages.2.blocks.3.mlp.fc2.bias",
+        "stages.2.blocks.4.conv_dw.bias",
+        "stages.2.blocks.4.norm.weight",
+        "stages.2.blocks.4.norm.bias",
+        "stages.2.blocks.4.mlp.fc1.bias",
+        "stages.2.blocks.4.mlp.grn.weight",
+        "stages.2.blocks.4.mlp.grn.bias",
+        "stages.2.blocks.4.mlp.fc2.bias",
+        "stages.2.blocks.5.conv_dw.bias",
+        "stages.2.blocks.5.norm.weight",
+        "stages.2.blocks.5.norm.bias",
+        "stages.2.blocks.5.mlp.fc1.bias",
+        "stages.2.blocks.5.mlp.grn.weight",
+        "stages.2.blocks.5.mlp.grn.bias",
+        "stages.2.blocks.5.mlp.fc2.bias",
+        "stages.2.blocks.6.conv_dw.bias",
+        "stages.2.blocks.6.norm.weight",
+        "stages.2.blocks.6.norm.bias",
+        "stages.2.blocks.6.mlp.fc1.bias",
+        "stages.2.blocks.6.mlp.grn.weight",
+        "stages.2.blocks.6.mlp.grn.bias",
+        "stages.2.blocks.6.mlp.fc2.bias",
+        "stages.2.blocks.7.conv_dw.bias",
+        "stages.2.blocks.7.norm.weight",
+        "stages.2.blocks.7.norm.bias",
+        "stages.2.blocks.7.mlp.fc1.bias",
+        "stages.2.blocks.7.mlp.grn.weight",
+        "stages.2.blocks.7.mlp.grn.bias",
+        "stages.2.blocks.7.mlp.fc2.bias",
+        "stages.2.blocks.8.conv_dw.bias",
+        "stages.2.blocks.8.norm.weight",
+        "stages.2.blocks.8.norm.bias",
+        "stages.2.blocks.8.mlp.fc1.bias",
+        "stages.2.blocks.8.mlp.grn.weight",
+        "stages.2.blocks.8.mlp.grn.bias",
+        "stages.2.blocks.8.mlp.fc2.bias"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.0
+    },
+    {
+      "group": 12,
+      "parameter_names": [
+        "stages.3.downsample.0.weight",
+        "stages.3.downsample.0.bias",
+        "stages.3.downsample.1.bias"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.0
+    },
+    {
+      "group": 13,
+      "parameter_names": [
+        "stages.3.downsample.1.weight"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.05
+    },
+    {
+      "group": 14,
+      "parameter_names": [
+        "stages.3.blocks.0.conv_dw.weight",
+        "stages.3.blocks.0.mlp.fc1.weight",
+        "stages.3.blocks.0.mlp.fc2.weight",
+        "stages.3.blocks.1.conv_dw.weight",
+        "stages.3.blocks.1.mlp.fc1.weight",
+        "stages.3.blocks.1.mlp.fc2.weight",
+        "stages.3.blocks.2.conv_dw.weight",
+        "stages.3.blocks.2.mlp.fc1.weight",
+        "stages.3.blocks.2.mlp.fc2.weight"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.05
+    },
+    {
+      "group": 15,
+      "parameter_names": [
+        "stages.3.blocks.0.conv_dw.bias",
+        "stages.3.blocks.0.norm.weight",
+        "stages.3.blocks.0.norm.bias",
+        "stages.3.blocks.0.mlp.fc1.bias",
+        "stages.3.blocks.0.mlp.grn.weight",
+        "stages.3.blocks.0.mlp.grn.bias",
+        "stages.3.blocks.0.mlp.fc2.bias",
+        "stages.3.blocks.1.conv_dw.bias",
+        "stages.3.blocks.1.norm.weight",
+        "stages.3.blocks.1.norm.bias",
+        "stages.3.blocks.1.mlp.fc1.bias",
+        "stages.3.blocks.1.mlp.grn.weight",
+        "stages.3.blocks.1.mlp.grn.bias",
+        "stages.3.blocks.1.mlp.fc2.bias",
+        "stages.3.blocks.2.conv_dw.bias",
+        "stages.3.blocks.2.norm.weight",
+        "stages.3.blocks.2.norm.bias",
+        "stages.3.blocks.2.mlp.fc1.bias",
+        "stages.3.blocks.2.mlp.grn.weight",
+        "stages.3.blocks.2.mlp.grn.bias",
+        "stages.3.blocks.2.mlp.fc2.bias"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.0
+    },
+    {
+      "group": 16,
+      "parameter_names": [
+        "head.norm.weight",
+        "head.norm.bias",
+        "head.fc.bias"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.0
+    },
+    {
+      "group": 17,
+      "parameter_names": [
+        "head.fc.weight"
+      ],
+      "initial_lr": 0.0001,
+      "weight_decay": 0.05
+    }
+  ],
+  "architecture_audit": {
+    "variant": {
+      "block_activation": "relu",
+      "relu_inplace": false,
+      "stage_output_dropout": 0.1,
+      "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+      "dropout_type": "elementwise",
+      "block_dropout": 0.0,
+      "head_dropout": 0.0,
+      "drop_path": 0.0
+    },
+    "stage_depths": [
+      3,
+      3,
+      9,
+      3
+    ],
+    "relu_count": 18,
+    "grn_count": 18,
+    "stage_dropout_names": [
+      "stages.0.blocks.post_stage_dropout",
+      "stages.1.blocks.post_stage_dropout",
+      "stages.2.blocks.post_stage_dropout",
+      "stages.3.blocks.post_stage_dropout"
+    ],
+    "stage_dropout_count": 4,
+    "head_output_features": 7,
+    "feature_channels": [
+      96,
+      192,
+      384,
+      768
+    ],
+    "trainable_parameters": 27871879,
+    "parameter_keys_unchanged": true,
+    "state_key_sha256": "4845aaf2b472075c235fc6948bd7b6ddcbd4e76f59cfeb8eadb840525698c975"
+  }
+}

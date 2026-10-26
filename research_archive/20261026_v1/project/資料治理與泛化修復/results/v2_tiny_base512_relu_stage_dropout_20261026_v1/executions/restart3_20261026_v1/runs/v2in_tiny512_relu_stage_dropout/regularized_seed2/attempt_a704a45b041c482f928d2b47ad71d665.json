@@ -1,0 +1,21 @@
+{
+  "run_id": "951d46aece144af2a7aa9dc6b0b0f145",
+  "seed": 2,
+  "resume": false,
+  "start_epoch": 0,
+  "command": [
+    "資料治理與泛化修復\\scripts\\train_regularized.py",
+    "--config",
+    "資料治理與泛化修復\\configs\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\v2in_tiny512_relu_stage_dropout.json",
+    "--seed",
+    "2",
+    "--manifest-release",
+    "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+    "--output-root",
+    "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout",
+    "--require-cuda",
+    "--formal"
+  ],
+  "started_utc": "2026-10-26T08:31:21.737244+00:00",
+  "recovery_warning": null
+}

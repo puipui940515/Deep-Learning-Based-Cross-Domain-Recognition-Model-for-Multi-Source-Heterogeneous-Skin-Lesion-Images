@@ -1,0 +1,73 @@
+{
+  "at": "2026-10-25T02:45:55.800113+08:00",
+  "formal_completed": true,
+  "runs": 3,
+  "completed_epochs": 45,
+  "missing_artifacts": [],
+  "each_seed_has_two_checkpoint_files": true,
+  "existing_record_identity_checks": {
+    "1": {
+      "effective_config": true,
+      "class_order": true,
+      "manifest": true,
+      "val_ids": true,
+      "initialization_head": true,
+      "initialization_backbone": true,
+      "empty_optimizer": true,
+      "transforms": true,
+      "recorded_versions": true,
+      "python_version": true,
+      "worker_rng_policy": true
+    },
+    "2": {
+      "effective_config": true,
+      "class_order": true,
+      "manifest": true,
+      "val_ids": true,
+      "initialization_head": true,
+      "initialization_backbone": true,
+      "empty_optimizer": true,
+      "transforms": true,
+      "recorded_versions": true,
+      "python_version": true,
+      "worker_rng_policy": true
+    },
+    "3": {
+      "effective_config": true,
+      "class_order": true,
+      "manifest": true,
+      "val_ids": true,
+      "initialization_head": true,
+      "initialization_backbone": true,
+      "empty_optimizer": true,
+      "transforms": true,
+      "recorded_versions": true,
+      "python_version": true,
+      "worker_rng_policy": true
+    }
+  },
+  "scientific_training_diff": {
+    "class_balance_alpha": [
+      0.5,
+      0.25
+    ]
+  },
+  "new_attempt_seconds": 16968.87516699999,
+  "parent_failed_attempt_seconds": 24.779381000000285,
+  "parent_STOP_preserved": true,
+  "saved_metric_timing_totals": {
+    "train_seconds": 15497.520524799998,
+    "evaluation_seconds": 1396.389598099995,
+    "checkpoint_seconds": 34.03212709999934,
+    "epoch_seconds": 16928.537302700017,
+    "data_wait_seconds": 129.66301540087443,
+    "batch_processing_seconds": 15367.804890199157
+  },
+  "budget_epoch_seconds": 16928.657845999987,
+  "own_process_matches": [],
+  "test_used": false,
+  "model_or_checkpoint_loaded": false,
+  "large_weights_hashed": false,
+  "quality_metrics_recomputed": false,
+  "adopted": false
+}

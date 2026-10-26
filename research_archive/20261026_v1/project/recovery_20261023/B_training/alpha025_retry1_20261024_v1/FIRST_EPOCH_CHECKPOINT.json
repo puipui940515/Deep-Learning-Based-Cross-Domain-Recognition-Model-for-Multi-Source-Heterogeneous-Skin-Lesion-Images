@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-24T21:40:48.6856516+08:00",
+  "job_id": "5f2f84e88ba748688d8a18ce339ec496",
+  "execution_revision": "retry1_20261024_v1",
+  "run_id": "21d2aaccb9e5490faba534f6b752fa98",
+  "seed": 1,
+  "status": "running_epoch2",
+  "checkpoint_index": {
+    "format_version": 1,
+    "generations": [
+      {
+        "file": "epoch-0001-14fa3acc9c0d43cd97d8c95cb916dd46.pt",
+        "epoch": 1,
+        "sha256": "923ad31fef622e560b668402202af6b9dab3ae8f8e80622dad8e24b6522023e3"
+      }
+    ]
+  },
+  "checkpoint_file_exists": true,
+  "best_pt": {
+    "FullName": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\executions\\retry1_20261024_v1\\runs\\v2in_res512_alpha025\\regularized_seed1\\best.pt",
+    "Length": 111550063,
+    "LastWriteTime": "2026-10-24T21:40:07.5039287+08:00"
+  },
+  "committed_epoch_receipts": [
+    {
+      "id": "19f2fd50ebe0490ea6a54ddf005b2745",
+      "candidate": "v2in_res512_alpha025",
+      "seed": 1,
+      "run_id": "21d2aaccb9e5490faba534f6b752fa98",
+      "epoch": 1,
+      "pid": 15388,
+      "started_utc": "2026-10-24T21:31:51.078983+08:00",
+      "started_unix": 1792848711.0789833,
+      "status": "completed",
+      "committed": true,
+      "ended_utc": "2026-10-24T21:40:07.535177+08:00",
+      "seconds": 496.4563949999865,
+      "checkpoint": {
+        "file": "epoch-0001-14fa3acc9c0d43cd97d8c95cb916dd46.pt",
+        "epoch": 1,
+        "sha256": "923ad31fef622e560b668402202af6b9dab3ae8f8e80622dad8e24b6522023e3"
+      },
+      "measurement": "epoch_including_validation_checkpoint_metric_fsync"
+    }
+  ],
+  "complete_epoch_count": 1,
+  "epoch1_log_summary": "train_loss=1.2265 monitor_BA=0.5932 HAM10000_BA=0.5247 BCN20000_BA=0.4514 PAD-UFES-20_BA=0.6893 robust=0.5032 bad_epochs=0 epoch_seconds=496.45",
+  "seeds2_3": "pending",
+  "three_seeds_completed": false,
+  "checkpoint_load_or_additional_hash_performed": false,
+  "formal_state_path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\executions\\retry1_20261024_v1\\state.json"
+}

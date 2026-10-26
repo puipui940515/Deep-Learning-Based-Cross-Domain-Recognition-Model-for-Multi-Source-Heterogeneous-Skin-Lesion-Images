@@ -1,0 +1,1 @@
+本批狀態：completed。三job進度、Run ID／最佳輪／完成輪／停止與完整指標見FINAL_RESULTS及run result。Base同SeedTiny三Seedmean/sampleSD、TP/N/Recall與31項機械核對在BASE_CONFIRMATION_SUMMARY（若已齊全）；Large新2×32減舊1×64及輔助對照在LARGE_MICRO2_DIAGNOSTIC（若已完成）。均待總控交D判讀，尚未判定採納，不自動換網站／追加研究。命令、來源、初始化、metrics、best及雙代完整Checkpoint在各run；原失敗與STOP／attempt／budget保留，未提交輪不計完整，分項耗時不重複加總。

@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "checked_taipei": "2026-10-26T23:21:23.958086+08:00",
+  "payload_hashes_checked": 1198,
+  "completed_small_weights": 9,
+  "weights_metadata_checks": [
+    {
+      "path": "weights/資料治理與泛化修復/results/baseline_20261019_v1/runs/mlp_pixels_random/regularized_seed1/best.pt",
+      "metadata_bytes_checked": 1988,
+      "tensor_payload_deserialized": false,
+      "sensitive_string_matches": 0
+    },
+    {
+      "path": "weights/資料治理與泛化修復/results/baseline_20261019_v1/runs/mlp_pixels_random/regularized_seed2/best.pt",
+      "metadata_bytes_checked": 1988,
+      "tensor_payload_deserialized": false,
+      "sensitive_string_matches": 0
+    },
+    {
+      "path": "weights/資料治理與泛化修復/results/baseline_20261019_v1/runs/mlp_pixels_random/regularized_seed3/best.pt",
+      "metadata_bytes_checked": 1988,
+      "tensor_payload_deserialized": false,
+      "sensitive_string_matches": 0
+    },
+    {
+      "path": "weights/資料治理與泛化修復/results/baseline_20261019_v1/runs/resnet18_imagenet/regularized_seed1/best.pt",
+      "metadata_bytes_checked": 13857,
+      "tensor_payload_deserialized": false,
+      "sensitive_string_matches": 0
+    },
+    {
+      "path": "weights/資料治理與泛化修復/results/baseline_20261019_v1/runs/resnet18_imagenet/regularized_seed2/best.pt",
+      "metadata_bytes_checked": 13857,
+      "tensor_payload_deserialized": false,
+      "sensitive_string_matches": 0
+    },
+    {
+      "path": "weights/資料治理與泛化修復/results/baseline_20261019_v1/runs/resnet18_imagenet/regularized_seed3/best.pt",
+      "metadata_bytes_checked": 13857,
+      "tensor_payload_deserialized": false,
+      "sensitive_string_matches": 0
+    },
+    {
+      "path": "weights/資料治理與泛化修復/results/baseline_20261019_v1/runs/resnet18_random/regularized_seed1/best.pt",
+      "metadata_bytes_checked": 13855,
+      "tensor_payload_deserialized": false,
+      "sensitive_string_matches": 0
+    },
+    {
+      "path": "weights/資料治理與泛化修復/results/baseline_20261019_v1/runs/resnet18_random/regularized_seed2/best.pt",
+      "metadata_bytes_checked": 13855,
+      "tensor_payload_deserialized": false,
+      "sensitive_string_matches": 0
+    },
+    {
+      "path": "weights/資料治理與泛化修復/results/baseline_20261019_v1/runs/resnet18_random/regularized_seed3/best.pt",
+      "metadata_bytes_checked": 13855,
+      "tensor_payload_deserialized": false,
+      "sensitive_string_matches": 0
+    }
+  ],
+  "numeric_pngs_visually_reviewed": 2,
+  "native_docx_pptx_uploaded": false,
+  "active_224_execution_uploaded": false,
+  "dataset_or_test_payload_uploaded": false,
+  "source_worktree_modified": false,
+  "checks": "Exact whitelist SHA, JSON/complete JSONL parsing, 100MiB size guard, sensitive credential/private path pattern guard, 9 PyTorch ZIP metadata pickle opcode inspection without execution",
+  "limitation": "Not a full privacy/legal audit or cross-machine environment/restore test; no full weight tensor deserialization"
+}

@@ -1,0 +1,2 @@
+# Optional true ConvNeXt V2 support; existing environment versions stay unchanged.
+timm==1.0.30

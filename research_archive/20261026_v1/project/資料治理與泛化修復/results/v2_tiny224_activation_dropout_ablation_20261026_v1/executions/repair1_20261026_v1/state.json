@@ -1,0 +1,68 @@
+{
+  "version": "v2_tiny224_activation_dropout_ablation_20261026_v1",
+  "execution_revision": "repair1_20261026_v1",
+  "status": "failed_preflight",
+  "classification": "native_AMP_update_not_demonstrated_in_minimal_GPU_check",
+  "active": null,
+  "controller_pid": null,
+  "updated_taipei": "2026-10-26T22:56:11.837590+08:00",
+  "runs": {
+    "relu_seed1": {
+      "candidate": "v2in_tiny224_relu_only",
+      "seed": 1,
+      "status": "not_started_due_GPU_update_acceptance_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "relu_seed2": {
+      "candidate": "v2in_tiny224_relu_only",
+      "seed": 2,
+      "status": "not_started_due_GPU_update_acceptance_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "relu_seed3": {
+      "candidate": "v2in_tiny224_relu_only",
+      "seed": 3,
+      "status": "not_started_due_GPU_update_acceptance_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "dropout_seed1": {
+      "candidate": "v2in_tiny224_stage_dropout01_only",
+      "seed": 1,
+      "status": "not_started_due_GPU_update_acceptance_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "dropout_seed2": {
+      "candidate": "v2in_tiny224_stage_dropout01_only",
+      "seed": 2,
+      "status": "not_started_due_GPU_update_acceptance_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    },
+    "dropout_seed3": {
+      "candidate": "v2in_tiny224_stage_dropout01_only",
+      "seed": 3,
+      "status": "not_started_due_GPU_update_acceptance_failure",
+      "run_id": null,
+      "epochs_completed": 0,
+      "best_epoch": null
+    }
+  },
+  "cpu_architecture": "passed_reused",
+  "cpu_IO": "passed_six_paths",
+  "gpu_relu": "failed_actual_update_zero",
+  "gpu_dropout": "not_started_after_stop",
+  "formal_attempts": 0,
+  "formal_complete_epochs": 0,
+  "error": "RuntimeError('Native AMP did not complete the required actual AdamW update; no fake success or retry')",
+  "stop_preserved": true,
+  "automatic_retry": false
+}

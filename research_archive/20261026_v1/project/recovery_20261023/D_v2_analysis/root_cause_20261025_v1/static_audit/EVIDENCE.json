@@ -1,0 +1,1039 @@
+{
+  "scope": "saved contracts and static source; no PT payload, model import, GPU, inference or Test access",
+  "reused_B_receipt": "recovery_20261023\\B_training\\alpha025_retry1_20261024_v1\\CLOSEOUT_CHECKS_20261025_v1.json",
+  "reused_C_audit": "recovery_20261023\\C_training_config\\RECOVERY_REPORT.md",
+  "runs": [
+    {
+      "seed": 1,
+      "run_id": "21d2aaccb9e5490faba534f6b752fa98",
+      "identity_checks_reused": {
+        "effective_config": true,
+        "class_order": true,
+        "manifest": true,
+        "val_ids": true,
+        "initialization_head": true,
+        "initialization_backbone": true,
+        "empty_optimizer": true,
+        "transforms": true,
+        "recorded_versions": true,
+        "python_version": true,
+        "worker_rng_policy": true
+      },
+      "initial_classifier_sha256": "2e363c2d895d83b871e758a532cd2181b8f9fab65fcc621e6094387d59dfdf43",
+      "initial_optimizer_state_entries": 0,
+      "optimizer_group_count": 18,
+      "optimizer_named_tensor_count": 200,
+      "duplicate_optimizer_names": [],
+      "optimizer_initial_lrs": [
+        0.0001
+      ],
+      "optimizer_weight_decays": [
+        0.0,
+        0.05
+      ],
+      "stages_present": {
+        "stem.": true,
+        "stages.0.": true,
+        "stages.1.": true,
+        "stages.2.": true,
+        "stages.3.": true,
+        "head.": true
+      },
+      "classifier_group_entries": [
+        {
+          "group": 16,
+          "parameter_names": [
+            "head.norm.weight",
+            "head.norm.bias",
+            "head.fc.bias"
+          ],
+          "initial_lr": 0.0001,
+          "weight_decay": 0.0
+        },
+        {
+          "group": 17,
+          "parameter_names": [
+            "head.fc.weight"
+          ],
+          "initial_lr": 0.0001,
+          "weight_decay": 0.05
+        }
+      ],
+      "class_names": [
+        "AKIEC",
+        "BCC",
+        "BKL",
+        "DF",
+        "NV",
+        "VASC",
+        "MEL"
+      ],
+      "pretrain_identity": {
+        "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+        "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+        "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+        "revision": "508caf1bc24fd02c69d15778b994e808670dbc28",
+        "resolved_path": ".venv-skindetect\\hf_cache\\hub\\models--timm--convnextv2_tiny.fcmae_ft_in1k\\snapshots\\508caf1bc24fd02c69d15778b994e808670dbc28\\model.safetensors"
+      },
+      "training": {
+        "model": "convnextv2_tiny",
+        "initialization": "imagenet",
+        "normalization": "imagenet_mean_std",
+        "image_size": 512,
+        "batch_size": 8,
+        "gradient_accumulation": 8,
+        "epochs": 30,
+        "early_stopping_patience": 5,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.05,
+        "layer_decay": 1.0,
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.2,
+        "gradient_clip_norm": 1.0,
+        "class_balance_alpha": 0.25,
+        "num_workers": 4,
+        "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+        "min_epochs": 12,
+        "early_stopping": true,
+        "min_delta": 0.0,
+        "optimizer": "AdamW",
+        "loss": "cross_entropy",
+        "effective_batch_size": 64,
+        "amp": true,
+        "transform": "regularized_native",
+        "optimizer_grouping": "layer_decay",
+        "scheduler": {
+          "name": "cosine",
+          "eta_min": 1e-06
+        },
+        "sampling_method": "weighted_replacement"
+      },
+      "transforms": {
+        "train": "Compose(\n    RandomResizedCrop(size=(512, 512), scale=(0.7, 1.0), ratio=(0.75, 1.33), interpolation=bilinear, antialias=True)\n    RandomHorizontalFlip(p=0.5)\n    RandomVerticalFlip(p=0.5)\n    RandomRotation(degrees=[-25.0, 25.0], interpolation=nearest, expand=False, fill=0)\n    RandomApply(\n    p=0.8\n    ColorJitter(brightness=(0.78, 1.22), contrast=(0.78, 1.22), saturation=(0.8, 1.2), hue=(-0.03, 0.03))\n)\n    RandomGrayscale(p=0.05)\n    RandomApply(\n    p=0.15\n    GaussianBlur(kernel_size=(3, 3), sigma=(0.1, 1.5))\n)\n    RandomAutocontrast(p=0.1)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n    RandomErasing(p=0.15, scale=(0.02, 0.1), ratio=(0.3, 3.3), value=random, inplace=False)\n)",
+        "validation": "Compose(\n    Resize(size=(512, 512), interpolation=bilinear, max_size=None, antialias=True)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)"
+      },
+      "versions": {
+        "torch": "2.11.0+cu128",
+        "torchvision": "0.26.0+cu128",
+        "numpy": "1.26.4",
+        "Pillow": "10.4.0",
+        "timm": "1.0.30"
+      },
+      "recorded_source_hashes": {
+        "資料治理與泛化修復\\scripts\\train_regularized.py": "16b10d1f47601c5e79a3413cf2a6f3de56003c759aa99e23ed28c24006131509",
+        "資料治理與泛化修復\\scripts\\training_state.py": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498",
+        "資料治理與泛化修復\\scripts\\coverage_sampler.py": "bceed257aa8891eee279324f3335cc3aea6464fe5c1e840472657493f005b7d9",
+        "第二階段\\src\\stage2\\models.py": "5d23c92718c2539ba16195b24065b8eb7f08b7fd07a2bfe41dd2d4bf8f999657",
+        "第二階段\\src\\stage2\\engine.py": "19f265519880588537ea0f97a27810e922e2c7cc79c6e3cf82cfbb9b1f0b6c4b",
+        "第二階段\\src\\stage2\\metrics.py": "0bfa691ac0431db6e7bd8fc59d702b558f014e11cbaf30bc3f3c7ba3448d7ec1",
+        "資料治理與泛化修復\\scripts\\model_profiles.py": "9645ab66505bf0c7458090e4b0dad5fde70a020c7f7e65ec0ce14afdf8461b29",
+        "資料治理與泛化修復\\scripts\\v2_alpha025_contract.py": "2c9821df667f301c608ae3fa4072e66f311b2b3075e0e748145ad5818f54db05",
+        "資料治理與泛化修復\\scripts\\run_v2_alpha025.py": "ee5dfdea45235d58c629373cbc1e710d7776ae571bdc649efc95aee85dd0f88c",
+        "資料治理與泛化修復\\scripts\\v2_opt_contract.py": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1"
+      }
+    },
+    {
+      "seed": 2,
+      "run_id": "88e812db602549c8b6593c29a51e55c4",
+      "identity_checks_reused": {
+        "effective_config": true,
+        "class_order": true,
+        "manifest": true,
+        "val_ids": true,
+        "initialization_head": true,
+        "initialization_backbone": true,
+        "empty_optimizer": true,
+        "transforms": true,
+        "recorded_versions": true,
+        "python_version": true,
+        "worker_rng_policy": true
+      },
+      "initial_classifier_sha256": "50c04b7d001aa5a6a1432e7b360f0c65e12415dc124f10693aaa6f24df788a02",
+      "initial_optimizer_state_entries": 0,
+      "optimizer_group_count": 18,
+      "optimizer_named_tensor_count": 200,
+      "duplicate_optimizer_names": [],
+      "optimizer_initial_lrs": [
+        0.0001
+      ],
+      "optimizer_weight_decays": [
+        0.0,
+        0.05
+      ],
+      "stages_present": {
+        "stem.": true,
+        "stages.0.": true,
+        "stages.1.": true,
+        "stages.2.": true,
+        "stages.3.": true,
+        "head.": true
+      },
+      "classifier_group_entries": [
+        {
+          "group": 16,
+          "parameter_names": [
+            "head.norm.weight",
+            "head.norm.bias",
+            "head.fc.bias"
+          ],
+          "initial_lr": 0.0001,
+          "weight_decay": 0.0
+        },
+        {
+          "group": 17,
+          "parameter_names": [
+            "head.fc.weight"
+          ],
+          "initial_lr": 0.0001,
+          "weight_decay": 0.05
+        }
+      ],
+      "class_names": [
+        "AKIEC",
+        "BCC",
+        "BKL",
+        "DF",
+        "NV",
+        "VASC",
+        "MEL"
+      ],
+      "pretrain_identity": {
+        "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+        "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+        "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+        "revision": "508caf1bc24fd02c69d15778b994e808670dbc28",
+        "resolved_path": ".venv-skindetect\\hf_cache\\hub\\models--timm--convnextv2_tiny.fcmae_ft_in1k\\snapshots\\508caf1bc24fd02c69d15778b994e808670dbc28\\model.safetensors"
+      },
+      "training": {
+        "model": "convnextv2_tiny",
+        "initialization": "imagenet",
+        "normalization": "imagenet_mean_std",
+        "image_size": 512,
+        "batch_size": 8,
+        "gradient_accumulation": 8,
+        "epochs": 30,
+        "early_stopping_patience": 5,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.05,
+        "layer_decay": 1.0,
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.2,
+        "gradient_clip_norm": 1.0,
+        "class_balance_alpha": 0.25,
+        "num_workers": 4,
+        "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+        "min_epochs": 12,
+        "early_stopping": true,
+        "min_delta": 0.0,
+        "optimizer": "AdamW",
+        "loss": "cross_entropy",
+        "effective_batch_size": 64,
+        "amp": true,
+        "transform": "regularized_native",
+        "optimizer_grouping": "layer_decay",
+        "scheduler": {
+          "name": "cosine",
+          "eta_min": 1e-06
+        },
+        "sampling_method": "weighted_replacement"
+      },
+      "transforms": {
+        "train": "Compose(\n    RandomResizedCrop(size=(512, 512), scale=(0.7, 1.0), ratio=(0.75, 1.33), interpolation=bilinear, antialias=True)\n    RandomHorizontalFlip(p=0.5)\n    RandomVerticalFlip(p=0.5)\n    RandomRotation(degrees=[-25.0, 25.0], interpolation=nearest, expand=False, fill=0)\n    RandomApply(\n    p=0.8\n    ColorJitter(brightness=(0.78, 1.22), contrast=(0.78, 1.22), saturation=(0.8, 1.2), hue=(-0.03, 0.03))\n)\n    RandomGrayscale(p=0.05)\n    RandomApply(\n    p=0.15\n    GaussianBlur(kernel_size=(3, 3), sigma=(0.1, 1.5))\n)\n    RandomAutocontrast(p=0.1)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n    RandomErasing(p=0.15, scale=(0.02, 0.1), ratio=(0.3, 3.3), value=random, inplace=False)\n)",
+        "validation": "Compose(\n    Resize(size=(512, 512), interpolation=bilinear, max_size=None, antialias=True)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)"
+      },
+      "versions": {
+        "torch": "2.11.0+cu128",
+        "torchvision": "0.26.0+cu128",
+        "numpy": "1.26.4",
+        "Pillow": "10.4.0",
+        "timm": "1.0.30"
+      },
+      "recorded_source_hashes": {
+        "資料治理與泛化修復\\scripts\\train_regularized.py": "16b10d1f47601c5e79a3413cf2a6f3de56003c759aa99e23ed28c24006131509",
+        "資料治理與泛化修復\\scripts\\training_state.py": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498",
+        "資料治理與泛化修復\\scripts\\coverage_sampler.py": "bceed257aa8891eee279324f3335cc3aea6464fe5c1e840472657493f005b7d9",
+        "第二階段\\src\\stage2\\models.py": "5d23c92718c2539ba16195b24065b8eb7f08b7fd07a2bfe41dd2d4bf8f999657",
+        "第二階段\\src\\stage2\\engine.py": "19f265519880588537ea0f97a27810e922e2c7cc79c6e3cf82cfbb9b1f0b6c4b",
+        "第二階段\\src\\stage2\\metrics.py": "0bfa691ac0431db6e7bd8fc59d702b558f014e11cbaf30bc3f3c7ba3448d7ec1",
+        "資料治理與泛化修復\\scripts\\model_profiles.py": "9645ab66505bf0c7458090e4b0dad5fde70a020c7f7e65ec0ce14afdf8461b29",
+        "資料治理與泛化修復\\scripts\\v2_alpha025_contract.py": "2c9821df667f301c608ae3fa4072e66f311b2b3075e0e748145ad5818f54db05",
+        "資料治理與泛化修復\\scripts\\run_v2_alpha025.py": "ee5dfdea45235d58c629373cbc1e710d7776ae571bdc649efc95aee85dd0f88c",
+        "資料治理與泛化修復\\scripts\\v2_opt_contract.py": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1"
+      }
+    },
+    {
+      "seed": 3,
+      "run_id": "1fc8933da4aa4a25aa902729874cf894",
+      "identity_checks_reused": {
+        "effective_config": true,
+        "class_order": true,
+        "manifest": true,
+        "val_ids": true,
+        "initialization_head": true,
+        "initialization_backbone": true,
+        "empty_optimizer": true,
+        "transforms": true,
+        "recorded_versions": true,
+        "python_version": true,
+        "worker_rng_policy": true
+      },
+      "initial_classifier_sha256": "0e3ce1e836b32f2664930fdb20a880f59431165638fbb514b60e3db18d243a56",
+      "initial_optimizer_state_entries": 0,
+      "optimizer_group_count": 18,
+      "optimizer_named_tensor_count": 200,
+      "duplicate_optimizer_names": [],
+      "optimizer_initial_lrs": [
+        0.0001
+      ],
+      "optimizer_weight_decays": [
+        0.0,
+        0.05
+      ],
+      "stages_present": {
+        "stem.": true,
+        "stages.0.": true,
+        "stages.1.": true,
+        "stages.2.": true,
+        "stages.3.": true,
+        "head.": true
+      },
+      "classifier_group_entries": [
+        {
+          "group": 16,
+          "parameter_names": [
+            "head.norm.weight",
+            "head.norm.bias",
+            "head.fc.bias"
+          ],
+          "initial_lr": 0.0001,
+          "weight_decay": 0.0
+        },
+        {
+          "group": 17,
+          "parameter_names": [
+            "head.fc.weight"
+          ],
+          "initial_lr": 0.0001,
+          "weight_decay": 0.05
+        }
+      ],
+      "class_names": [
+        "AKIEC",
+        "BCC",
+        "BKL",
+        "DF",
+        "NV",
+        "VASC",
+        "MEL"
+      ],
+      "pretrain_identity": {
+        "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+        "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+        "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+        "revision": "508caf1bc24fd02c69d15778b994e808670dbc28",
+        "resolved_path": ".venv-skindetect\\hf_cache\\hub\\models--timm--convnextv2_tiny.fcmae_ft_in1k\\snapshots\\508caf1bc24fd02c69d15778b994e808670dbc28\\model.safetensors"
+      },
+      "training": {
+        "model": "convnextv2_tiny",
+        "initialization": "imagenet",
+        "normalization": "imagenet_mean_std",
+        "image_size": 512,
+        "batch_size": 8,
+        "gradient_accumulation": 8,
+        "epochs": 30,
+        "early_stopping_patience": 5,
+        "learning_rate": 0.0001,
+        "weight_decay": 0.05,
+        "layer_decay": 1.0,
+        "label_smoothing": 0.1,
+        "mixup_alpha": 0.2,
+        "gradient_clip_norm": 1.0,
+        "class_balance_alpha": 0.25,
+        "num_workers": 4,
+        "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+        "min_epochs": 12,
+        "early_stopping": true,
+        "min_delta": 0.0,
+        "optimizer": "AdamW",
+        "loss": "cross_entropy",
+        "effective_batch_size": 64,
+        "amp": true,
+        "transform": "regularized_native",
+        "optimizer_grouping": "layer_decay",
+        "scheduler": {
+          "name": "cosine",
+          "eta_min": 1e-06
+        },
+        "sampling_method": "weighted_replacement"
+      },
+      "transforms": {
+        "train": "Compose(\n    RandomResizedCrop(size=(512, 512), scale=(0.7, 1.0), ratio=(0.75, 1.33), interpolation=bilinear, antialias=True)\n    RandomHorizontalFlip(p=0.5)\n    RandomVerticalFlip(p=0.5)\n    RandomRotation(degrees=[-25.0, 25.0], interpolation=nearest, expand=False, fill=0)\n    RandomApply(\n    p=0.8\n    ColorJitter(brightness=(0.78, 1.22), contrast=(0.78, 1.22), saturation=(0.8, 1.2), hue=(-0.03, 0.03))\n)\n    RandomGrayscale(p=0.05)\n    RandomApply(\n    p=0.15\n    GaussianBlur(kernel_size=(3, 3), sigma=(0.1, 1.5))\n)\n    RandomAutocontrast(p=0.1)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n    RandomErasing(p=0.15, scale=(0.02, 0.1), ratio=(0.3, 3.3), value=random, inplace=False)\n)",
+        "validation": "Compose(\n    Resize(size=(512, 512), interpolation=bilinear, max_size=None, antialias=True)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)"
+      },
+      "versions": {
+        "torch": "2.11.0+cu128",
+        "torchvision": "0.26.0+cu128",
+        "numpy": "1.26.4",
+        "Pillow": "10.4.0",
+        "timm": "1.0.30"
+      },
+      "recorded_source_hashes": {
+        "資料治理與泛化修復\\scripts\\train_regularized.py": "16b10d1f47601c5e79a3413cf2a6f3de56003c759aa99e23ed28c24006131509",
+        "資料治理與泛化修復\\scripts\\training_state.py": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498",
+        "資料治理與泛化修復\\scripts\\coverage_sampler.py": "bceed257aa8891eee279324f3335cc3aea6464fe5c1e840472657493f005b7d9",
+        "第二階段\\src\\stage2\\models.py": "5d23c92718c2539ba16195b24065b8eb7f08b7fd07a2bfe41dd2d4bf8f999657",
+        "第二階段\\src\\stage2\\engine.py": "19f265519880588537ea0f97a27810e922e2c7cc79c6e3cf82cfbb9b1f0b6c4b",
+        "第二階段\\src\\stage2\\metrics.py": "0bfa691ac0431db6e7bd8fc59d702b558f014e11cbaf30bc3f3c7ba3448d7ec1",
+        "資料治理與泛化修復\\scripts\\model_profiles.py": "9645ab66505bf0c7458090e4b0dad5fde70a020c7f7e65ec0ce14afdf8461b29",
+        "資料治理與泛化修復\\scripts\\v2_alpha025_contract.py": "2c9821df667f301c608ae3fa4072e66f311b2b3075e0e748145ad5818f54db05",
+        "資料治理與泛化修復\\scripts\\run_v2_alpha025.py": "ee5dfdea45235d58c629373cbc1e710d7776ae571bdc649efc95aee85dd0f88c",
+        "資料治理與泛化修復\\scripts\\v2_opt_contract.py": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1"
+      }
+    }
+  ],
+  "small_source_identity_checks": [
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "expected_recorded_sha256": "16b10d1f47601c5e79a3413cf2a6f3de56003c759aa99e23ed28c24006131509",
+      "current_sha256": "16b10d1f47601c5e79a3413cf2a6f3de56003c759aa99e23ed28c24006131509",
+      "matches": true
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\training_state.py",
+      "expected_recorded_sha256": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498",
+      "current_sha256": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498",
+      "matches": true
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\coverage_sampler.py",
+      "expected_recorded_sha256": "bceed257aa8891eee279324f3335cc3aea6464fe5c1e840472657493f005b7d9",
+      "current_sha256": "bceed257aa8891eee279324f3335cc3aea6464fe5c1e840472657493f005b7d9",
+      "matches": true
+    },
+    {
+      "path": "第二階段\\src\\stage2\\models.py",
+      "expected_recorded_sha256": "5d23c92718c2539ba16195b24065b8eb7f08b7fd07a2bfe41dd2d4bf8f999657",
+      "current_sha256": "5d23c92718c2539ba16195b24065b8eb7f08b7fd07a2bfe41dd2d4bf8f999657",
+      "matches": true
+    },
+    {
+      "path": "第二階段\\src\\stage2\\engine.py",
+      "expected_recorded_sha256": "19f265519880588537ea0f97a27810e922e2c7cc79c6e3cf82cfbb9b1f0b6c4b",
+      "current_sha256": "19f265519880588537ea0f97a27810e922e2c7cc79c6e3cf82cfbb9b1f0b6c4b",
+      "matches": true
+    },
+    {
+      "path": "第二階段\\src\\stage2\\metrics.py",
+      "expected_recorded_sha256": "0bfa691ac0431db6e7bd8fc59d702b558f014e11cbaf30bc3f3c7ba3448d7ec1",
+      "current_sha256": "0bfa691ac0431db6e7bd8fc59d702b558f014e11cbaf30bc3f3c7ba3448d7ec1",
+      "matches": true
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "expected_recorded_sha256": "9645ab66505bf0c7458090e4b0dad5fde70a020c7f7e65ec0ce14afdf8461b29",
+      "current_sha256": "9645ab66505bf0c7458090e4b0dad5fde70a020c7f7e65ec0ce14afdf8461b29",
+      "matches": true
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\v2_alpha025_contract.py",
+      "expected_recorded_sha256": "2c9821df667f301c608ae3fa4072e66f311b2b3075e0e748145ad5818f54db05",
+      "current_sha256": "2c9821df667f301c608ae3fa4072e66f311b2b3075e0e748145ad5818f54db05",
+      "matches": true
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\run_v2_alpha025.py",
+      "expected_recorded_sha256": "ee5dfdea45235d58c629373cbc1e710d7776ae571bdc649efc95aee85dd0f88c",
+      "current_sha256": "ee5dfdea45235d58c629373cbc1e710d7776ae571bdc649efc95aee85dd0f88c",
+      "matches": true
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\v2_opt_contract.py",
+      "expected_recorded_sha256": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1",
+      "current_sha256": "8f71ba8bfd7924e2b01cbfb58aed58b3818e2d9d4ed18b42c67cedbba50a07d1",
+      "matches": true
+    }
+  ],
+  "anchors": [
+    {
+      "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "line": 75,
+      "text": "def construct_model(config, restore=False):",
+      "term": "def construct_model"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "line": 84,
+      "text": "head_keys = []",
+      "term": "head_keys ="
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "line": 90,
+      "text": "head_keys = ['head.fc.weight', 'head.fc.bias'] if name == 'convnextv2_tiny' else ['fc.weight', 'fc.bias']",
+      "term": "head_keys ="
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "line": 105,
+      "text": "missing, unexpected = model.load_state_dict(backbone, strict=False)",
+      "term": "load_state_dict(backbone"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "line": 151,
+      "text": "def optimizer_and_scheduler(model, config):",
+      "term": "def optimizer_and_scheduler"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "line": 158,
+      "text": "optimizer = torch.optim.AdamW(groups)",
+      "term": "optimizer = torch.optim.AdamW"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "line": 160,
+      "text": "optimizer = torch.optim.AdamW(model.parameters(), lr=training['learning_rate'],",
+      "term": "optimizer = torch.optim.AdamW"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\model_profiles.py",
+      "line": 168,
+      "text": "optimizer, T_max=training['epochs'], eta_min=training['scheduler']['eta_min'])",
+      "term": "T_max=training"
+    },
+    {
+      "path": "第二階段\\src\\stage2\\models.py",
+      "line": 9,
+      "text": "def build_model(name: str, pretrained: bool, num_classes: int = 7):",
+      "term": "def build_model"
+    },
+    {
+      "path": "第二階段\\src\\stage2\\models.py",
+      "line": 21,
+      "text": "return timm.create_model(",
+      "term": "timm.create_model"
+    },
+    {
+      "path": "第二階段\\src\\stage2\\models.py",
+      "line": 27,
+      "text": "def parameter_groups_with_layer_decay(model, base_lr: float, weight_decay: float, decay: float):",
+      "term": "def parameter_groups_with_layer_decay"
+    },
+    {
+      "path": "第二階段\\src\\stage2\\models.py",
+      "line": 31,
+      "text": "if not parameter.requires_grad:",
+      "term": "if not parameter.requires_grad"
+    },
+    {
+      "path": "第二階段\\src\\stage2\\models.py",
+      "line": 48,
+      "text": "no_decay = parameter.ndim == 1 or name.endswith(\".bias\")",
+      "term": "no_decay ="
+    },
+    {
+      "path": "第二階段\\src\\stage2\\models.py",
+      "line": 54,
+      "text": "def count_parameters(model):",
+      "term": "def count_parameters"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 51,
+      "text": "def load_governed_release(directory: Path, config: dict) -> tuple[Path, list[dict], dict]:",
+      "term": "def load_governed_release"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 80,
+      "text": "or row[\"label_name\"] != config[\"class_names\"][label]",
+      "term": "row[\"label_name\"]"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 114,
+      "text": "def build_transform(image_size: int, train: bool, random_erasing_p: float = 0.15):",
+      "term": "def build_transform"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 116,
+      "text": "raise RuntimeError('Invalid RandomErasing probability')",
+      "term": "RandomErasing"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 123,
+      "text": "transforms.RandomResizedCrop(image_size, scale=(0.70, 1.0), ratio=(0.75, 1.33)),",
+      "term": "RandomResizedCrop"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 133,
+      "text": "transforms.RandomErasing(p=random_erasing_p, scale=(0.02, 0.10), ratio=(0.3, 3.3), value=\"random\"),",
+      "term": "RandomErasing"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 173,
+      "text": "def sample_weights(rows: list[dict], alpha: float, source_shares: dict | None = None) -> tuple[list[float], dict]:",
+      "term": "def sample_weights"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 197,
+      "text": "def supported_source_metrics(logits: np.ndarray, targets: np.ndarray, supported: list[int]) -> dict:",
+      "term": "def supported_source_metrics"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 217,
+      "text": "def evaluate(model, loader, criterion, device, supported: list[int], description: str, amp_enabled=True) -> dict:",
+      "term": "def evaluate"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 218,
+      "text": "model.eval()",
+      "term": "model.eval()"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 234,
+      "text": "def train_epoch(model, loader, criterion, optimizer, scaler, device, accumulation: int, mixup_alpha: float, clip: float | None, amp_enabled=True, timing=None) -> float:",
+      "term": "def train_epoch"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 247,
+      "text": "mixed = lam * images + (1 - lam) * images[permutation]",
+      "term": "mixed ="
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 253,
+      "text": "loss = lam * criterion(logits, targets) + (1 - lam) * criterion(logits, target_b)",
+      "term": "loss = lam"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 259,
+      "text": "scaler.step(optimizer)",
+      "term": "scaler.step"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 409,
+      "text": "monitor_rows = stratified_limit(train_rows, min(1500, len(train_rows)), args.seed + 3)",
+      "term": "monitor_rows ="
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 525,
+      "text": "model = profile.construct_model(config, restore=args.resume).to(device)",
+      "term": "model = profile.construct_model"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 535,
+      "text": "criterion = nn.CrossEntropyLoss(label_smoothing=train_config[\"label_smoothing\"]).to(device)",
+      "term": "criterion ="
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 570,
+      "text": "'initial_classifier_sha256': hashlib.sha256(",
+      "term": "initial_classifier_sha256"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 614,
+      "text": "monitor = evaluate(model, monitor_loader, criterion, device, list(range(7)), \"訓練監測\", amp_enabled)",
+      "term": "monitor = evaluate"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 621,
+      "text": "robust_score = 0.5 * mean_score + 0.5 * worst_score",
+      "term": "robust_score ="
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\train_regularized.py",
+      "line": 630,
+      "text": "\"train_validation_gap\": gaps, \"learning_rate\": optimizer.param_groups[-1][\"lr\"],",
+      "term": "train_validation_gap"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\v2_alpha025_contract.py",
+      "line": 93,
+      "text": "def verify_initialization(inputs):",
+      "term": "def verify_initialization"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\v2_alpha025_contract.py",
+      "line": 95,
+      "text": "for key in ('initial_classifier_sha256','selected_train_record_ids','selected_validation_record_ids'):",
+      "term": "initial_classifier_sha256"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\v2_alpha025_contract.py",
+      "line": 97,
+      "text": "if inputs['initial_optimizer_state_entries'] != 0:raise RuntimeError('Optimizer inherited state')",
+      "term": "initial_optimizer_state_entries"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\v2_opt_contract.py",
+      "line": 177,
+      "text": "def best_metrics(result):",
+      "term": "def best_metrics"
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\v2_opt_contract.py",
+      "line": 180,
+      "text": "merged = [[sum(s['confusion_matrix'][i][j] for s in sources.values()) for j in range(7)] for i in range(7)]",
+      "term": "merged ="
+    },
+    {
+      "path": "資料治理與泛化修復\\scripts\\v2_opt_contract.py",
+      "line": 189,
+      "text": "macro_f1=statistics.mean(f1), combined_mel=recall[6])",
+      "term": "macro_f1=statistics.mean"
+    },
+    {
+      "path": "第二階段\\src\\stage2\\metrics.py",
+      "line": 6,
+      "text": "def metrics_from_logits(logits, targets, num_classes=7, ece_bins=15):",
+      "term": "def metrics_from_logits"
+    },
+    {
+      "path": "第二階段\\src\\stage2\\metrics.py",
+      "line": 12,
+      "text": "for target, prediction in zip(targets, predictions): matrix[target, prediction] += 1",
+      "term": "matrix[target, prediction]"
+    },
+    {
+      "path": "第二階段\\src\\stage2\\metrics.py",
+      "line": 21,
+      "text": "return {\"balanced_accuracy\": float(recalls.mean()), \"macro_f1\": float(f1.mean()),",
+      "term": "balanced_accuracy"
+    }
+  ],
+  "sampling_expectations_cited_not_recomputed": {
+    "HAM10000": {
+      "AKIEC": {
+        "train_count": 229,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.08545239826166345,
+          "global_draw_share": 0.02848413275388782,
+          "expected_draws_per_epoch": 538.8913075708036,
+          "normalized_per_image_draw_probability": 0.00012438485918728304
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.05554541716237717,
+          "global_draw_share": 0.01851513905412572,
+          "expected_draws_per_epoch": 350.2879157650045,
+          "normalized_per_image_draw_probability": 8.085213560753592e-05
+        },
+        "global_share_delta_pp": -0.9968993699762098,
+        "expected_draws_delta_per_epoch": -188.6033918057991
+      },
+      "BKL": {
+        "train_count": 769,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.15659204098279714,
+          "global_draw_share": 0.05219734699426571,
+          "expected_draws_per_epoch": 987.521607784513,
+          "normalized_per_image_draw_probability": 6.787691416679547e-05
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.13778957985316106,
+          "global_draw_share": 0.04592985995105369,
+          "expected_draws_per_epoch": 868.9470204139848,
+          "normalized_per_image_draw_probability": 5.972673595715695e-05
+        },
+        "global_share_delta_pp": -0.6267487043212019,
+        "expected_draws_delta_per_epoch": -118.5745873705282
+      },
+      "DF": {
+        "train_count": 80,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.05050699244657351,
+          "global_draw_share": 0.016835664148857836,
+          "expected_draws_per_epoch": 318.5139300322414,
+          "normalized_per_image_draw_probability": 0.00021044580186072294
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.025239986093318043,
+          "global_draw_share": 0.008413328697772681,
+          "expected_draws_per_epoch": 159.17176563316136,
+          "normalized_per_image_draw_probability": 0.00010516660872215851
+        },
+        "global_share_delta_pp": -0.8422335451085154,
+        "expected_draws_delta_per_epoch": -159.34216439908002
+      },
+      "NV": {
+        "train_count": 4692,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.3867991548255973,
+          "global_draw_share": 0.12893305160853244,
+          "expected_draws_per_epoch": 2439.284403381825,
+          "normalized_per_image_draw_probability": 2.747933751247494e-05
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.5349215860481685,
+          "global_draw_share": 0.17830719534938952,
+          "expected_draws_per_epoch": 3373.3938288151003,
+          "normalized_per_image_draw_probability": 3.800238605059453e-05
+        },
+        "global_share_delta_pp": 4.937414374085708,
+        "expected_draws_delta_per_epoch": 934.1094254332752
+      },
+      "VASC": {
+        "train_count": 98,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.05590099686363237,
+          "global_draw_share": 0.01863366562121079,
+          "expected_draws_per_epoch": 352.53031988768697,
+          "normalized_per_image_draw_probability": 0.0001901394451143958
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.029389430993408454,
+          "global_draw_share": 0.009796476997802818,
+          "expected_draws_per_epoch": 185.33954832143152,
+          "normalized_per_image_draw_probability": 9.996405099798793e-05
+        },
+        "global_share_delta_pp": -0.883718862340797,
+        "expected_draws_delta_per_epoch": -167.19077156625545
+      },
+      "MEL": {
+        "train_count": 779,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.15760690605080666,
+          "global_draw_share": 0.05253563535026889,
+          "expected_draws_per_epoch": 993.9216851917371,
+          "normalized_per_image_draw_probability": 6.74398399875082e-05
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.13913125874803317,
+          "global_draw_share": 0.04637708624934439,
+          "expected_draws_per_epoch": 877.4080947513465,
+          "normalized_per_image_draw_probability": 5.95341286897874e-05
+        },
+        "global_share_delta_pp": -0.6158549100924497,
+        "expected_draws_delta_per_epoch": -116.51359044039054
+      }
+    },
+    "BCN20000": {
+      "AKIEC": {
+        "train_count": 616,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.10629280504699258,
+          "global_draw_share": 0.035430935015664196,
+          "expected_draws_per_epoch": 670.3178595613509,
+          "normalized_per_image_draw_probability": 5.75177516488055e-05
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.08175058782758413,
+          "global_draw_share": 0.027250195942528043,
+          "expected_draws_per_epoch": 515.546457036688,
+          "normalized_per_image_draw_probability": 4.423733107553253e-05
+        },
+        "global_share_delta_pp": -0.8180739073136153,
+        "expected_draws_delta_per_epoch": -154.7714025246629
+      },
+      "BKL": {
+        "train_count": 943,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.1315132040040603,
+          "global_draw_share": 0.0438377346680201,
+          "expected_draws_per_epoch": 829.3661021842722,
+          "normalized_per_image_draw_probability": 4.648752350797466e-05
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.11250948054758887,
+          "global_draw_share": 0.037503160182529624,
+          "expected_draws_per_epoch": 709.522287493278,
+          "normalized_per_image_draw_probability": 3.977005321583205e-05
+        },
+        "global_share_delta_pp": -0.6334574485490476,
+        "expected_draws_delta_per_epoch": -119.84381469099424
+      },
+      "DF": {
+        "train_count": 91,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.04085396459867946,
+          "global_draw_share": 0.01361798819955982,
+          "expected_draws_per_epoch": 257.63871874747224,
+          "normalized_per_image_draw_probability": 0.00014964822197318484
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.019479885250010546,
+          "global_draw_share": 0.006493295083336848,
+          "expected_draws_per_epoch": 122.84664968164985,
+          "normalized_per_image_draw_probability": 7.135489102567965e-05
+        },
+        "global_share_delta_pp": -0.7124693116222971,
+        "expected_draws_delta_per_epoch": -134.79206906582237
+      },
+      "NV": {
+        "train_count": 3514,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.25387175814116764,
+          "global_draw_share": 0.08462391938038921,
+          "expected_draws_per_epoch": 1600.9999307575836,
+          "normalized_per_image_draw_probability": 2.4081934940349805e-05
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.30175652367483025,
+          "global_draw_share": 0.10058550789161008,
+          "expected_draws_per_epoch": 1902.977223801371,
+          "normalized_per_image_draw_probability": 2.8624219661812766e-05
+        },
+        "global_share_delta_pp": 1.596158851122087,
+        "expected_draws_delta_per_epoch": 301.97729304378754
+      },
+      "VASC": {
+        "train_count": 90,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.040628872171670126,
+          "global_draw_share": 0.013542957390556708,
+          "expected_draws_per_epoch": 256.2192108719424,
+          "normalized_per_image_draw_probability": 0.000150477304339519
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.01931911519548617,
+          "global_draw_share": 0.006439705065162057,
+          "expected_draws_per_epoch": 121.83278012780096,
+          "normalized_per_image_draw_probability": 7.155227850180064e-05
+        },
+        "global_share_delta_pp": -0.7103252325394651,
+        "expected_draws_delta_per_epoch": -134.38643074414142
+      },
+      "MEL": {
+        "train_count": 2519,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.21494512309165162,
+          "global_draw_share": 0.07164837436388387,
+          "expected_draws_per_epoch": 1355.515594590319,
+          "normalized_per_image_draw_probability": 2.8443181565654576e-05
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.23508584255648024,
+          "global_draw_share": 0.07836194751882675,
+          "expected_draws_per_epoch": 1482.5296851086832,
+          "normalized_per_image_draw_probability": 3.110835550568748e-05
+        },
+        "global_share_delta_pp": 0.6713573154942878,
+        "expected_draws_delta_per_epoch": 127.01409051836413
+      }
+    },
+    "PAD-UFES-20": {
+      "AKIEC": {
+        "train_count": 588,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.2879042440943058,
+          "global_draw_share": 0.0959680813647686,
+          "expected_draws_per_epoch": 1815.6201313400572,
+          "normalized_per_image_draw_probability": 0.00016321102272919832
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.3217967358674889,
+          "global_draw_share": 0.1072655786224963,
+          "expected_draws_per_epoch": 2029.3574819590076,
+          "normalized_per_image_draw_probability": 0.00018242445343961958
+        },
+        "global_share_delta_pp": 1.1297497257727704,
+        "expected_draws_delta_per_epoch": 213.73735061895036
+      },
+      "BKL": {
+        "train_count": 179,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.15884952461383828,
+          "global_draw_share": 0.052949841537946095,
+          "expected_draws_per_epoch": 1001.7580520564021,
+          "normalized_per_image_draw_probability": 0.0002958091706030508
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.13188287717850614,
+          "global_draw_share": 0.04396095905950204,
+          "expected_draws_per_epoch": 831.6973844467192,
+          "normalized_per_image_draw_probability": 0.00024559195005308403
+        },
+        "global_share_delta_pp": -0.8988882478444051,
+        "expected_draws_delta_per_epoch": -170.06066760968292
+      },
+      "DF": {
+        "train_count": 0,
+        "supported": false,
+        "alpha_050": null,
+        "alpha_025": null,
+        "note": "PAD unsupported class; N/A"
+      },
+      "NV": {
+        "train_count": 195,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.16579701590838244,
+          "global_draw_share": 0.05526567196946081,
+          "expected_draws_per_epoch": 1045.5712479902293,
+          "normalized_per_image_draw_probability": 0.0002834137024074913
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.14062890608086584,
+          "global_draw_share": 0.04687630202695528,
+          "expected_draws_per_epoch": 886.8527580479669,
+          "normalized_per_image_draw_probability": 0.0002403912924459245
+        },
+        "global_share_delta_pp": -0.8389369942505532,
+        "expected_draws_delta_per_epoch": -158.7184899422624
+      },
+      "VASC": {
+        "train_count": 0,
+        "supported": false,
+        "alpha_050": null,
+        "alpha_025": null,
+        "note": "PAD unsupported class; N/A"
+      },
+      "MEL": {
+        "train_count": 41,
+        "supported": true,
+        "alpha_050": {
+          "conditional_class_share_within_source": 0.07602410784471682,
+          "global_draw_share": 0.02534136928157227,
+          "expected_draws_per_epoch": 479.4333654380658,
+          "normalized_per_image_draw_probability": 0.0006180821775993239
+        },
+        "alpha_025": {
+          "conditional_class_share_within_source": 0.043665308467578184,
+          "global_draw_share": 0.014555102822526061,
+          "expected_draws_per_epoch": 275.36799029937055,
+          "normalized_per_image_draw_probability": 0.00035500250786648936
+        },
+        "global_share_delta_pp": -1.078626645904621,
+        "expected_draws_delta_per_epoch": -204.06537513869523
+      }
+    }
+  },
+  "sampling_expectations_source": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\SAMPLING_EXPOSURE.json",
+  "limitations": [
+    "Optimizer names are recorded trainable tensor names, not payload numel/gradient/update measurement.",
+    "B initialization checks cite pinned identity/head/source execution contract, not fresh independent byte comparison of encoder payload.",
+    "Expected sampling exposure is analytic expectation, not realized per-epoch class draws.",
+    "Mixed-source train_monitor BA minus source Val BA is not a matched-source generalization gap."
+  ]
+}

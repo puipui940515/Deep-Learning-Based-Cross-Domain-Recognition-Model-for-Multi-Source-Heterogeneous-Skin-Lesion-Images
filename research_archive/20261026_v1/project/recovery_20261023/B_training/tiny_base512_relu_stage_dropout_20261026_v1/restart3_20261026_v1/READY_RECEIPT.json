@@ -1,0 +1,11 @@
+{
+  "status": "ready_not_started",
+  "at": "2026-10-26T05:29:20.509527+00:00",
+  "gate_sha256": "1769708696f2673eaa253de60c926dc1df77c9c1c4c02ccaf46e14b7922c74f3",
+  "IO_validation": "six deeper isolated paths; native atomic/fsync/two-generation/index/best/restore checks passed",
+  "CPU_GPU_reexecuted": false,
+  "authorized_replacement_starts": 1,
+  "current_model_seed_tasks": 6,
+  "max_committed_epochs": 180,
+  "results": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1"
+}

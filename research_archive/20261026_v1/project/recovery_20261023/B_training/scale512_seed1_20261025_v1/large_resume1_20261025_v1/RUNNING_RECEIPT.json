@@ -1,0 +1,19 @@
+{
+  "status": "running",
+  "observed_local": "2026-10-25T21:40:05.9007735+08:00",
+  "run_id": "7c6b140d4ed442389852be8707d8e2c6",
+  "resumed_from_completed_epoch": 13,
+  "active_epoch": 14,
+  "verified_batches_at_least": 363,
+  "controller_pid": 4576,
+  "controller_outer_pid": 4692,
+  "trainer_pid": 14916,
+  "trainer_outer_pid": 17344,
+  "checkpoint_restore_receipt": "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume1_20261025_v1\\RESTORED_STATE.json",
+  "monitor": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\MONITOR.md",
+  "update_seconds": 15,
+  "last_monitor_update": "2026-10-25T21:39:57.728798+08:00",
+  "stdout": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\logs\\large_resume1_72bf60c4a3894c9f8c454294a5abecde.stdout.log",
+  "stderr": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\logs\\large_resume1_72bf60c4a3894c9f8c454294a5abecde.stderr.log",
+  "note": "launched and actual batches progressed; epoch14 not yet completed; no automatic second Resume"
+}

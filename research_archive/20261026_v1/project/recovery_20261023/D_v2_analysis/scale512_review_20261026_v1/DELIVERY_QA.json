@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "date_taipei": "2026-10-26",
+  "checks": [
+    {
+      "check": "numeric_242_passed",
+      "passed": true
+    },
+    {
+      "check": "all_small_inputs_still_unchanged",
+      "passed": true
+    },
+    {
+      "check": "three_models_not_three_independent_seeds",
+      "passed": true
+    },
+    {
+      "check": "full_disease_table",
+      "passed": true
+    },
+    {
+      "check": "PAD_DF_VASC_NA",
+      "passed": true
+    },
+    {
+      "check": "forty_unique_committed_epochs",
+      "passed": true
+    },
+    {
+      "check": "MEL_warning_preserved",
+      "passed": true
+    },
+    {
+      "check": "no_automatic_adoption_or_execution",
+      "passed": true
+    },
+    {
+      "check": "finite_work_without_wallcap",
+      "passed": true
+    },
+    {
+      "check": "one_fixed_job_sequence",
+      "passed": true
+    },
+    {
+      "check": "resume_limit_documented",
+      "passed": true
+    },
+    {
+      "check": "no_old_entry_blind_retry",
+      "passed": true
+    },
+    {
+      "check": "figures_exist",
+      "passed": true
+    },
+    {
+      "check": "original_decompositions_agree",
+      "passed": true
+    }
+  ],
+  "count": 14,
+  "artifacts": {
+    "analyze_saved.py": "123b6771e68962b6cf7ae195641c1e76421a168115b196ddf7882897924d51e4",
+    "B_NEXT_BATCH_DRAFT.md": "3c176777cd571ea6f5457424e060956fb64d5225f3c1a5be2c29c4cd7069813d",
+    "comparison.png": "436ed24794dcdd0710d8771c6ee870865678cece524de5ef1c8d4e86e50967b7",
+    "comparison.svg": "707be4165d5085377737df233d5099d2c77d6d52ec55375036cf1c07437c4470",
+    "disease_tp_recall.csv": "245ec25084dc803a8ae636cde4d130c4ec0f79479b149a509ec91fcd45cf3839",
+    "epoch_metrics.csv": "cc1d26a5c2daf9e6c3dd0bf8abf61aacec4d514fb308ead59169cb2305b6184a",
+    "make_figure.py": "b61176c206fdc4758a5e7570b60c2c8eff3fcc02de2bceec6df54fa7eccec004",
+    "model_metrics.csv": "be6c73fd7eb8b4e9ba2dcac4dd8a2150ad6c53fb4514f405291bb02826882161",
+    "NUMERIC_ANALYSIS.json": "e075709e2c9e6ed4d1ba31125b98e2479048d5d4bd06aa68631adfe8ca27d860",
+    "NUMERIC_QA.json": "d52bc10bd64f7145876bb24e4f1efb068afacd7407bd4d6420ff5e6893da7b43",
+    "REPORT.md": "85fec7c87d484827b43c851289a7d761fc6bedd6e3f9004cf8d42a958835cc06",
+    "saved_confusion_deltas.csv": "f668292a93efc7e2b061c852e5f824f918d950dc33ed16a13eb30f9356ac8c95",
+    "SOURCE_EVIDENCE.json": "cd99d2caeb5d6aad80c05a9a355f2524f4b98621d9fc05c61074063cb0379142",
+    "verify_delivery.py": "38dc82e3e11ad44b6e09f76f1064c6b7678d2cbc9cca78f27f39e40ce6cd93da",
+    "write_report.py": "ebd9ef6e657f003cef219d61a7bf9b52c258592c034af49a2093d0b5771c5f49"
+  },
+  "figure_visually_reviewed": true,
+  "scope": "Existing saved CPU outputs only; no models, training, inference, Test, install, download, thread message or formal-setting edits"
+}

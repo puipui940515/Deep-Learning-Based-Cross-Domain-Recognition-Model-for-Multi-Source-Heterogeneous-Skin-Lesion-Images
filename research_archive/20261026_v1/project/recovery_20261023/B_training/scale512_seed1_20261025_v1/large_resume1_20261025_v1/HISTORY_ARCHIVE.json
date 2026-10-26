@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-25T13:37:17.731009+00:00",
+  "root": "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume1_20261025_v1\\history_before",
+  "large_files": [
+    {
+      "source": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_large\\regularized_seed1\\best.pt",
+      "archive": "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume1_20261025_v1\\history_before\\runs\\v2in_scale512_large\\regularized_seed1\\best.pt",
+      "method": "NTFS hardlink; original atomic replacement/rotation cannot delete archived bytes"
+    },
+    {
+      "source": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_large\\regularized_seed1\\checkpoints\\epoch-0013-81822a02ce1649848ae54c11b4aac6f0.pt",
+      "archive": "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume1_20261025_v1\\history_before\\runs\\v2in_scale512_large\\regularized_seed1\\checkpoints\\epoch-0013-81822a02ce1649848ae54c11b4aac6f0.pt",
+      "method": "NTFS hardlink; original atomic replacement/rotation cannot delete archived bytes"
+    },
+    {
+      "source": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_large\\regularized_seed1\\checkpoints\\epoch-0012-1802e65867514831b1efc1eb992e8fa5.pt",
+      "archive": "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume1_20261025_v1\\history_before\\runs\\v2in_scale512_large\\regularized_seed1\\checkpoints\\epoch-0012-1802e65867514831b1efc1eb992e8fa5.pt",
+      "method": "NTFS hardlink; original atomic replacement/rotation cannot delete archived bytes"
+    }
+  ],
+  "original_failed_attempt_seconds": 17812.211623299983
+}

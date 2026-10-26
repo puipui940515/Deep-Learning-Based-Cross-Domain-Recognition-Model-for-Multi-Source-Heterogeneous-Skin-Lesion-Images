@@ -1,0 +1,57 @@
+{
+  "status": "ready_not_started",
+  "at": "2026-10-26T04:53:28.188867+00:00",
+  "execution_revision": "restart2_20261026_v1",
+  "gate_sha256": "8bf2ef65220174c791c959ead4976c18e5f6a0bf5bfe867527921d495cf97dcd",
+  "jobs": [
+    [
+      "tiny_seed1",
+      "v2in_tiny512_relu_stage_dropout",
+      1,
+      "tiny"
+    ],
+    [
+      "tiny_seed2",
+      "v2in_tiny512_relu_stage_dropout",
+      2,
+      "tiny"
+    ],
+    [
+      "tiny_seed3",
+      "v2in_tiny512_relu_stage_dropout",
+      3,
+      "tiny"
+    ],
+    [
+      "base_seed1",
+      "v2in_base512_relu_stage_dropout",
+      1,
+      "base"
+    ],
+    [
+      "base_seed2",
+      "v2in_base512_relu_stage_dropout",
+      2,
+      "base"
+    ],
+    [
+      "base_seed3",
+      "v2in_base512_relu_stage_dropout",
+      3,
+      "base"
+    ]
+  ],
+  "limits": {
+    "runs": 6,
+    "epochs": 180,
+    "max_epochs_per_run": 30,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+  },
+  "CPU_reused": true,
+  "GPU_actual_updates": {
+    "tiny": 1,
+    "base": 1
+  },
+  "results": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart2_20261026_v1"
+}

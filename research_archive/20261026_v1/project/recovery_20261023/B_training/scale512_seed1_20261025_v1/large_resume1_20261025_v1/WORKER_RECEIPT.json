@@ -1,0 +1,51 @@
+{
+  "status": "failed",
+  "run_id": "7c6b140d4ed442389852be8707d8e2c6",
+  "pid": 14916,
+  "resume": true,
+  "start_epoch": 13,
+  "next_epoch": 14,
+  "restored_components": {
+    "model": true,
+    "optimizer": true,
+    "scheduler": true,
+    "scaler": true,
+    "rng": true,
+    "sampler": true,
+    "loader_generators": true,
+    "history": true,
+    "best": true,
+    "early_stopping": true
+  },
+  "source_files_unchanged": true,
+  "persistent_worker_bitwise_replay_guaranteed": false,
+  "cuda_minimum_check": {
+    "elements": 4,
+    "passed": true,
+    "device": "NVIDIA GeForce RTX 5070",
+    "torch_version": "2.11.0+cu128",
+    "driver_after": "616.92",
+    "model_forward_calls": 0
+  },
+  "checkpoint": {
+    "file": "epoch-0013-81822a02ce1649848ae54c11b4aac6f0.pt",
+    "epoch": 13,
+    "sha256": "32457b3e0c75c43c7874ea5cab06a83ebf9207b3730ff8393efb98f87d2d11a9"
+  },
+  "checksum_and_full_contract_valid": true,
+  "loaded_best_epoch": 11,
+  "loaded_bad_epochs": 2,
+  "loaded_history_epochs": 13,
+  "loaded_current_lr": 6.079162869547907e-05,
+  "loaded_scaler": {
+    "scale": 16384.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000,
+    "_growth_tracker": 1840
+  },
+  "all_required_state_restored": true,
+  "error": "AttributeError(\"Can't get local object 'main.<locals>.optimizer_for_restore.<locals>.restore_scheduler'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume1_20261025_v1\\resume_worker.py\", line 139, in main\n    trainer.main()\n  File \"資料治理與泛化修復\\scripts\\train_regularized.py\", line 724, in main\n    run_training(args, output)\n  File \"資料治理與泛化修復\\scripts\\train_regularized.py\", line 674, in run_training\n    descriptor = store.commit(state)\n                 ^^^^^^^^^^^^^^^^^^^\n  File \"資料治理與泛化修復\\scripts\\training_state.py\", line 174, in commit\n    atomic_torch(path, state)\n  File \"資料治理與泛化修復\\scripts\\training_state.py\", line 43, in atomic_torch\n    atomic_write(path, lambda handle: torch.save(value, handle))\n  File \"資料治理與泛化修復\\scripts\\training_state.py\", line 28, in atomic_write\n    writer(handle)\n  File \"資料治理與泛化修復\\scripts\\training_state.py\", line 43, in <lambda>\n    atomic_write(path, lambda handle: torch.save(value, handle))\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \".venv-skindetect-recovery-20261023\\Lib\\site-packages\\torch\\serialization.py\", line 1004, in save\n    _save(\n  File \".venv-skindetect-recovery-20261023\\Lib\\site-packages\\torch\\serialization.py\", line 1254, in _save\n    pickler.dump(obj)\nAttributeError: Can't get local object 'main.<locals>.optimizer_for_restore.<locals>.restore_scheduler'\n",
+  "seconds": 1452.27222850002
+}

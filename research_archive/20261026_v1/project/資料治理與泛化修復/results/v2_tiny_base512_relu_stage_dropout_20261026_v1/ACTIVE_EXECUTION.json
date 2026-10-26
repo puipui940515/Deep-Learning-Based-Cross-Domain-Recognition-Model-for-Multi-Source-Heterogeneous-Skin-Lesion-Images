@@ -1,0 +1,6 @@
+{
+  "execution_revision": "restart1_20261026_v1",
+  "results": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart1_20261026_v1",
+  "status": "failed_gpu_preflight",
+  "at": "2026-10-26T04:27:13.692069+00:00"
+}

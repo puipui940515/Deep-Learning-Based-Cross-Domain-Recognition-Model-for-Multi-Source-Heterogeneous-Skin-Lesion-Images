@@ -1,0 +1,8 @@
+{
+  "elements": 4,
+  "passed": true,
+  "device": "NVIDIA GeForce RTX 5070",
+  "torch_version": "2.11.0+cu128",
+  "driver_after": "616.92",
+  "model_forward_calls": 0
+}

@@ -1,0 +1,56 @@
+{
+  "job_id": "20c4f0f524c74b34a6afc7da78565eb5",
+  "version": "v2_512_alpha025_20261024_v1",
+  "status": "failed",
+  "created_utc": "2026-10-24T11:30:04.650915+00:00",
+  "controller_pid": 3592,
+  "gate_sha256": "8ca2f1353aec40b455dd91ab6e42bb5bfc37caac0dd86ab015e49759400b9b0f",
+  "active": null,
+  "limits": {
+    "runs": 3,
+    "epochs": 90,
+    "max_epochs_per_run": 30,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+  },
+  "runs": {
+    "1": {
+      "status": "failed",
+      "command": [
+        ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "utf8",
+        "資料治理與泛化修復\\scripts\\train_regularized.py",
+        "--config",
+        "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\v2in_res512_alpha025.json",
+        "--seed",
+        "1",
+        "--manifest-release",
+        "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+        "--output-root",
+        "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\runs\\v2in_res512_alpha025",
+        "--require-cuda",
+        "--formal"
+      ],
+      "stdout": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\logs\\seed1_1dc91e11abe04c90ac01adc6a07d0855.stdout.log",
+      "stderr": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\logs\\seed1_1dc91e11abe04c90ac01adc6a07d0855.stderr.log",
+      "resume": false,
+      "started_utc": "2026-10-24T11:30:05.020025+00:00",
+      "pid": 12628,
+      "run_id": "d87cb2eef21d47fc8a408aa16b70e641",
+      "ended_utc": "2026-10-24T11:30:29.802893+00:00",
+      "exit_code": 1,
+      "attempt_receipt": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\attempts\\attempt_1dc91e11abe04c90ac01adc6a07d0855.json"
+    },
+    "2": {
+      "status": "pending"
+    },
+    "3": {
+      "status": "pending"
+    }
+  },
+  "updated_utc": "2026-10-24T11:30:29.805401+00:00",
+  "error": "resource_guard_commit8_or_ram4"
+}

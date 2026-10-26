@@ -1,0 +1,20 @@
+{
+  "base": {
+    "path": "weights/v2_scale512_seed1_20261025_v1/base/7b29800e499fdc06de5b612970f3384dc8d29ca5/model.safetensors",
+    "sha256": "ec152f1e375edc2b3dfac7a81155a449b4c5cbb7c5cf0b9494838f6c87518d73",
+    "source": "timm/convnextv2_base.fcmae_ft_in1k",
+    "revision": "7b29800e499fdc06de5b612970f3384dc8d29ca5"
+  },
+  "large": {
+    "path": "weights/v2_scale512_seed1_20261025_v1/large/774e71d83a0870798b626b0723ce0b6c08746b1b/model.safetensors",
+    "sha256": "193dfc02aebad3774dc16f7bcc8a24d3bd68f5e3da7a44a2269010010cb976d3",
+    "source": "timm/convnextv2_large.fcmae_ft_in1k",
+    "revision": "774e71d83a0870798b626b0723ce0b6c08746b1b"
+  },
+  "huge": {
+    "path": "weights/v2_scale512_seed1_20261025_v1/huge/79144cc49b295e1bb236f0c49be7747ddeecdde0/model.safetensors",
+    "sha256": "1330efa75dc4187aaed54f14a77a1faa424d51114bcd7df1cf774fb617525024",
+    "source": "timm/convnextv2_huge.fcmae_ft_in1k",
+    "revision": "79144cc49b295e1bb236f0c49be7747ddeecdde0"
+  }
+}

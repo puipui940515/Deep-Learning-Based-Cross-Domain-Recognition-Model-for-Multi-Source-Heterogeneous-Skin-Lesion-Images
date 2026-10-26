@@ -1,0 +1,1 @@
+本輪Base與Large單Seed訓練完成；Huge估算略過，Tiny引用舊結果。訓練完成，尚未判定採納。Large原CUDA失敗及Resume1存檔失敗均保留；修正與本次同Run第13輪Resume證據在B large_resume2_20261025_v1。完整結果／來源疾病／耗時／峰值見FINAL_RESULTS與各run result、metrics、Checkpoint。所有失敗attempt與成功Resume分開計帳，不與所含Epoch重複相加。交總控供D判讀，不自動換網站或追加實驗。

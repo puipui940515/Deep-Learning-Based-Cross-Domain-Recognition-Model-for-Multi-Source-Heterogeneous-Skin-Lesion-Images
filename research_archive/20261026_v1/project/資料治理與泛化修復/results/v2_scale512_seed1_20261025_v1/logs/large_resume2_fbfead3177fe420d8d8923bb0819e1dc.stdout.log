@@ -1,0 +1,14 @@
+AUTHORIZED_LARGE_RESUME2: native state restored; scheduler serialization passed; epoch13 -> epoch14; best11; bad_epochs2
+device=cuda train=18919 monitor=1500 seed=1
+抽樣設定={"expected_source_share": {"BCN20000": 0.3333333333333333, "HAM10000": 0.3333333333333333, "PAD-UFES-20": 0.3333333333333333}, "source_class_counts": {"BCN20000:0": 616, "BCN20000:1": 2448, "BCN20000:2": 943, "BCN20000:3": 91, "BCN20000:4": 3514, "BCN20000:5": 90, "BCN20000:6": 2519, "HAM10000:0": 229, "HAM10000:1": 360, "HAM10000:2": 769, "HAM10000:3": 80, "HAM10000:4": 4692, "HAM10000:5": 98, "HAM10000:6": 779, "PAD-UFES-20:0": 588, "PAD-UFES-20:1": 688, "PAD-UFES-20:2": 179, "PAD-UFES-20:4": 195, "PAD-UFES-20:6": 41}, "method": "source_balanced_class_smoothed_weighted_replacement", "unique_samples": 18919, "samples_per_epoch": 18919, "coverage_guarantee": "無；有放回抽樣", "max_repeats_per_sample_per_epoch": null}
+
+Epoch 14/30
+train_loss=0.5045 monitor_BA=0.9904 HAM10000_BA=0.7298 BCN20000_BA=0.5830 PAD-UFES-20_BA=0.7013 robust=0.6272 bad_epochs=3 epoch_seconds=1419.87
+
+Epoch 15/30
+train_loss=0.4960 monitor_BA=0.9951 HAM10000_BA=0.7863 BCN20000_BA=0.6119 PAD-UFES-20_BA=0.6894 robust=0.6539 bad_epochs=4 epoch_seconds=1342.26
+
+Epoch 16/30
+train_loss=0.4877 monitor_BA=0.9925 HAM10000_BA=0.7568 BCN20000_BA=0.6001 PAD-UFES-20_BA=0.7249 robust=0.6470 bad_epochs=5 epoch_seconds=1338.54
+停止：early_stopping，bad_epochs=5
+已儲存：資料治理與泛化修復\results\v2_scale512_seed1_20261025_v1\runs\v2in_scale512_large\regularized_seed1\result.json

@@ -1,0 +1,62 @@
+{
+  "observed": "2026-10-25T13:57:57.0369784+08:00",
+  "status": "running",
+  "job_id": "bd6e9fbf0b9e441996e79b98e3908183",
+  "controller_pid": 10028,
+  "active": {
+    "size": "base",
+    "candidate": "v2in_scale512_base",
+    "seed": 1,
+    "pid": 16332
+  },
+  "runs": {
+    "base": {
+      "status": "running",
+      "seed": 1,
+      "micro_batch": 2,
+      "accumulation": 32,
+      "reason": null,
+      "started_utc": "2026-10-25T13:54:10.192577+08:00",
+      "command": [
+        ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "utf8",
+        "資料治理與泛化修復\\scripts\\train_regularized.py",
+        "--config",
+        "資料治理與泛化修復\\configs\\v2_scale512_seed1_20261025_v1\\v2in_scale512_base.json",
+        "--seed",
+        "1",
+        "--manifest-release",
+        "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+        "--output-root",
+        "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_base",
+        "--require-cuda",
+        "--formal"
+      ],
+      "stdout": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\logs\\base_974582d409d444d9a4f4bf6df064718b.stdout.log",
+      "stderr": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\logs\\base_974582d409d444d9a4f4bf6df064718b.stderr.log",
+      "pid": 16332,
+      "run_id": "efc7718472e14007be0686800f5183c3"
+    },
+    "large": {
+      "status": "pending",
+      "seed": 1,
+      "micro_batch": 1,
+      "accumulation": 64,
+      "reason": null
+    },
+    "huge": {
+      "status": "skipped",
+      "seed": 1,
+      "micro_batch": null,
+      "accumulation": null,
+      "reason": "AdamW CUDA foreach static/transient lower bound exceeds currently free VRAM even before activations/autocast/context"
+    }
+  },
+  "monitor": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\MONITOR.md",
+  "refresh_seconds": 15,
+  "full_epoch_observed": false,
+  "resume": false
+}

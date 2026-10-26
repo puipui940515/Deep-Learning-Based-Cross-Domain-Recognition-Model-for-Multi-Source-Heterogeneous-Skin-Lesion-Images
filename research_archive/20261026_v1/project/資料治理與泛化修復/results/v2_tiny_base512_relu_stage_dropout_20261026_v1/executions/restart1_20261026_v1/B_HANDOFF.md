@@ -1,0 +1,1 @@
+restart1因Tiny單批GPU前檢非有限梯度停止。Tiny/Base CPU架構／權重鍵形狀／eval／Checkpoint往返均通過；真實Train8張前向8×7與Loss有限，backward後unscale梯度檢查失敗，未做optimizer.step；Base GPU及正式六run均未啟動。前檢未沿原loss/accum8縮放，是已確認的程式路徑差異，是否為唯一原因未證明，不能直接說新配方不可訓練。保存原與本次STOP／來源／收據，不自動重試或Resume。交總控核定後續，尚未採納。

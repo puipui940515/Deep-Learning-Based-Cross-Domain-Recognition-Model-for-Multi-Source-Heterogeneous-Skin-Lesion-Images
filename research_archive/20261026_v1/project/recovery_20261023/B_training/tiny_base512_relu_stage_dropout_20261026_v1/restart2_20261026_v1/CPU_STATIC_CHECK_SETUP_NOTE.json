@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-26T12:50:18.8462547+08:00",
+  "scope": "CPU static assertion setup only, before any GPU attempt",
+  "error": "AST checker used zero-based argument index 7 (MixUp) instead of 6 (accumulation)",
+  "observed": "production train_epoch call already passes gradient_accumulation at argument 6 correctly",
+  "correction": "fix assertion index only; no training/precheck math or acceptance criterion change",
+  "GPU_attempts": 0
+}

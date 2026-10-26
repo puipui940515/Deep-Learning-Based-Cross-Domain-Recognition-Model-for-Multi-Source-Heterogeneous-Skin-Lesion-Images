@@ -1,0 +1,29 @@
+{
+  "execution": "repair1_20261026_v1",
+  "authorized_scope": "Fix CPU checkpoint fixture with valid capture_rng/CPU Generators; reuse prior CPU architecture; new minimal native train_epoch GPU updates then one fresh serial six-job controller. No formal retry/Resume.",
+  "at_taipei": "2026-10-26T22:53:13.678927+08:00",
+  "preserved_root_files": {
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\STOP": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\state.json": "ea759c75710ae9fa6f364409827add8db3ed43fdecfc1139a64606c8a43699e8",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_tiny224_activation_dropout_ablation_20261026_v1\\MONITOR.md": "d54ee43c5e0636275c5d59dd1c39bff4ee917b42287217d2254c870febe99b9e",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\IO_VALIDATION.json": "502210b246720a8ea9ddaebe0133dd4f57fda399492b3971c323ccfb6482ca1b",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\STOPPED_RECEIPT.json": "7ec8f80ce65aa75d1d0a3fb35a253df6681fcfac524613c8420572eeaeab4a66"
+  },
+  "preexisting_cpu": {
+    "relu": {
+      "path": "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\CPU_relu.json",
+      "sha256": "fe99144501ae5e05c0a882e61204c9a0427750bbf5bcb6bd01e85f4626d1e769"
+    },
+    "dropout": {
+      "path": "recovery_20261023\\B_training\\tiny224_activation_dropout_ablation_20261026_v1\\CPU_dropout.json",
+      "sha256": "2796b94f90a915dafc9d296e7cd440cd7c4e5d39764d18e84b75f3aa5b981ff2"
+    }
+  },
+  "unchanged_training_sources": {
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\training_state.py": "b07c6b4882703ae27e784f9aeb3db8fea3fc8744b34b4401ac59c0cdc5729fec",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\train_regularized.py": "886cdc248374ac812db0917c8d05d25c2bc372d8178e996b08909a46c66c1ad0",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\model_profiles.py": "f3a32158b85c69da25f6c26b952eef19a12fb52975d41eca10ac7519071e0315",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\v2_tiny224_ablation.py": "371ce8b2e3c26ff473e39a2254dc5743d9f9868d37a238a899474b0843dd4d62",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\run_v2_tiny224_ablation.py": "a84f9542e2dedd514b7637ed35e1f51cc207766cea6968262767c29ac815519f"
+  }
+}

@@ -1,0 +1,5 @@
+AUTHORIZED_LARGE_RESUME: restored same run, epoch13 -> epoch14, best11, bad_epochs2
+device=cuda train=18919 monitor=1500 seed=1
+抽樣設定={"expected_source_share": {"BCN20000": 0.3333333333333333, "HAM10000": 0.3333333333333333, "PAD-UFES-20": 0.3333333333333333}, "source_class_counts": {"BCN20000:0": 616, "BCN20000:1": 2448, "BCN20000:2": 943, "BCN20000:3": 91, "BCN20000:4": 3514, "BCN20000:5": 90, "BCN20000:6": 2519, "HAM10000:0": 229, "HAM10000:1": 360, "HAM10000:2": 769, "HAM10000:3": 80, "HAM10000:4": 4692, "HAM10000:5": 98, "HAM10000:6": 779, "PAD-UFES-20:0": 588, "PAD-UFES-20:1": 688, "PAD-UFES-20:2": 179, "PAD-UFES-20:4": 195, "PAD-UFES-20:6": 41}, "method": "source_balanced_class_smoothed_weighted_replacement", "unique_samples": 18919, "samples_per_epoch": 18919, "coverage_guarantee": "無；有放回抽樣", "max_repeats_per_sample_per_epoch": null}
+
+Epoch 14/30

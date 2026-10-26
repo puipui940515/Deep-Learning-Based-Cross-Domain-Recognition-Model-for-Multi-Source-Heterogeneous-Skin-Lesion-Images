@@ -1,0 +1,118 @@
+{
+  "v2in_tiny224_relu_only": {
+    "pipeline_id": {
+      "original": "five_model_baseline_20261019_v1",
+      "candidate": "v2_tiny224_activation_dropout_ablation_20261026_v1"
+    },
+    "experiment": {
+      "original": {
+        "id": "convnextv2_tiny_imagenet",
+        "approval_status": "approved",
+        "weights": {
+          "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+          "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+          "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+          "revision": "508caf1bc24fd02c69d15778b994e808670dbc28"
+        },
+        "native_setting_sources": {
+          "資料治理與泛化修復/config.json": "3b8c5c1f788a5f0d51ef49f66d6d3ce2eeb81e5e537237759d7b330691dfccaf",
+          "benchmarks/convnextv2_batch_20261018_v1/REPORT.md": "3d7146d9744dc2f980d6f1af5d25edb48d3772d52d8a573b70f8be94dcf53082"
+        },
+        "confirmation_note": "Approved first-round controlled initialization baseline, 2026-10-19; native MLP/ResNet hyperparameters retained; V2 layer_decay=1.0; workers=4, AMP=True subject to GPU acceptance."
+      },
+      "candidate": {
+        "id": "v2in_tiny224_relu_only",
+        "approval_status": "approved",
+        "weights": {
+          "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+          "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+          "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+          "revision": "508caf1bc24fd02c69d15778b994e808670dbc28"
+        },
+        "native_setting_sources": {
+          "資料治理與泛化修復/config.json": "3b8c5c1f788a5f0d51ef49f66d6d3ce2eeb81e5e537237759d7b330691dfccaf",
+          "benchmarks/convnextv2_batch_20261018_v1/REPORT.md": "3d7146d9744dc2f980d6f1af5d25edb48d3772d52d8a573b70f8be94dcf53082"
+        },
+        "confirmation_note": "User authorized one Tiny224 scientific variable only, 2026-10-26; a8bee58861fd4878b48135c851f8aa90"
+      }
+    },
+    "architecture_modification": {
+      "original": null,
+      "candidate": {
+        "block_activation": "relu",
+        "relu_inplace": false,
+        "stage_output_dropout": 0.0,
+        "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+        "dropout_type": "elementwise",
+        "block_dropout": 0.0,
+        "head_dropout": 0.0,
+        "drop_path": 0.0
+      }
+    },
+    "optimization": {
+      "original": null,
+      "candidate": {
+        "version": "v2_tiny224_activation_dropout_ablation_20261026_v1",
+        "authorization_sha256": "0442c0b7dd22a36f6119473546abc127e7a171065e264ff6a5b44ef3c83bd03a"
+      }
+    }
+  },
+  "v2in_tiny224_stage_dropout01_only": {
+    "pipeline_id": {
+      "original": "five_model_baseline_20261019_v1",
+      "candidate": "v2_tiny224_activation_dropout_ablation_20261026_v1"
+    },
+    "experiment": {
+      "original": {
+        "id": "convnextv2_tiny_imagenet",
+        "approval_status": "approved",
+        "weights": {
+          "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+          "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+          "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+          "revision": "508caf1bc24fd02c69d15778b994e808670dbc28"
+        },
+        "native_setting_sources": {
+          "資料治理與泛化修復/config.json": "3b8c5c1f788a5f0d51ef49f66d6d3ce2eeb81e5e537237759d7b330691dfccaf",
+          "benchmarks/convnextv2_batch_20261018_v1/REPORT.md": "3d7146d9744dc2f980d6f1af5d25edb48d3772d52d8a573b70f8be94dcf53082"
+        },
+        "confirmation_note": "Approved first-round controlled initialization baseline, 2026-10-19; native MLP/ResNet hyperparameters retained; V2 layer_decay=1.0; workers=4, AMP=True subject to GPU acceptance."
+      },
+      "candidate": {
+        "id": "v2in_tiny224_stage_dropout01_only",
+        "approval_status": "approved",
+        "weights": {
+          "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+          "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+          "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+          "revision": "508caf1bc24fd02c69d15778b994e808670dbc28"
+        },
+        "native_setting_sources": {
+          "資料治理與泛化修復/config.json": "3b8c5c1f788a5f0d51ef49f66d6d3ce2eeb81e5e537237759d7b330691dfccaf",
+          "benchmarks/convnextv2_batch_20261018_v1/REPORT.md": "3d7146d9744dc2f980d6f1af5d25edb48d3772d52d8a573b70f8be94dcf53082"
+        },
+        "confirmation_note": "User authorized one Tiny224 scientific variable only, 2026-10-26; a8bee58861fd4878b48135c851f8aa90"
+      }
+    },
+    "architecture_modification": {
+      "original": null,
+      "candidate": {
+        "block_activation": "gelu",
+        "relu_inplace": false,
+        "stage_output_dropout": 0.1,
+        "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+        "dropout_type": "elementwise",
+        "block_dropout": 0.0,
+        "head_dropout": 0.0,
+        "drop_path": 0.0
+      }
+    },
+    "optimization": {
+      "original": null,
+      "candidate": {
+        "version": "v2_tiny224_activation_dropout_ablation_20261026_v1",
+        "authorization_sha256": "0442c0b7dd22a36f6119473546abc127e7a171065e264ff6a5b44ef3c83bd03a"
+      }
+    }
+  }
+}

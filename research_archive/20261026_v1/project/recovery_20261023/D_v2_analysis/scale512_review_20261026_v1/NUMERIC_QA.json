@@ -1,0 +1,977 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Tiny: completed_without_test",
+      "passed": true
+    },
+    {
+      "check": "Tiny: seed1",
+      "passed": true
+    },
+    {
+      "check": "Tiny: effective_training",
+      "passed": true
+    },
+    {
+      "check": "Tiny: fresh_optimizer",
+      "passed": true
+    },
+    {
+      "check": "Tiny: unique_complete_epochs",
+      "passed": true
+    },
+    {
+      "check": "Tiny: best_first_max",
+      "passed": true
+    },
+    {
+      "check": "Tiny: robust_formula",
+      "passed": true
+    },
+    {
+      "check": "TinyHAM10000: ba_supported",
+      "passed": true
+    },
+    {
+      "check": "TinyHAM10000: N",
+      "passed": true
+    },
+    {
+      "check": "TinyHAM10000AKIEC: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyHAM10000BCC: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyHAM10000BKL: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyHAM10000DF: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyHAM10000NV: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyHAM10000VASC: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyHAM10000MEL: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyBCN20000: ba_supported",
+      "passed": true
+    },
+    {
+      "check": "TinyBCN20000: N",
+      "passed": true
+    },
+    {
+      "check": "TinyBCN20000AKIEC: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyBCN20000BCC: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyBCN20000BKL: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyBCN20000DF: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyBCN20000NV: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyBCN20000VASC: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyBCN20000MEL: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyPAD-UFES-20: ba_supported",
+      "passed": true
+    },
+    {
+      "check": "TinyPAD-UFES-20: N",
+      "passed": true
+    },
+    {
+      "check": "TinyPAD-UFES-20AKIEC: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyPAD-UFES-20BCC: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyPAD-UFES-20BKL: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyPAD-UFES-20NV: recall",
+      "passed": true
+    },
+    {
+      "check": "TinyPAD-UFES-20MEL: recall",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_robust",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_accuracy",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_macro_f1",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_combined_mel",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "check": "Tiny: FINAL_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch1",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch2",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch3",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch4",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch5",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch6",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch7",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch8",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch9",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch10",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch11",
+      "passed": true
+    },
+    {
+      "check": "Tiny: BCN_worst_epoch12",
+      "passed": true
+    },
+    {
+      "check": "Base: completed_without_test",
+      "passed": true
+    },
+    {
+      "check": "Base: seed1",
+      "passed": true
+    },
+    {
+      "check": "Base: effective_training",
+      "passed": true
+    },
+    {
+      "check": "Base: fresh_optimizer",
+      "passed": true
+    },
+    {
+      "check": "Base: unique_complete_epochs",
+      "passed": true
+    },
+    {
+      "check": "Base: best_first_max",
+      "passed": true
+    },
+    {
+      "check": "Base: robust_formula",
+      "passed": true
+    },
+    {
+      "check": "BaseHAM10000: ba_supported",
+      "passed": true
+    },
+    {
+      "check": "BaseHAM10000: N",
+      "passed": true
+    },
+    {
+      "check": "BaseHAM10000AKIEC: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseHAM10000BCC: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseHAM10000BKL: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseHAM10000DF: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseHAM10000NV: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseHAM10000VASC: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseHAM10000MEL: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseBCN20000: ba_supported",
+      "passed": true
+    },
+    {
+      "check": "BaseBCN20000: N",
+      "passed": true
+    },
+    {
+      "check": "BaseBCN20000AKIEC: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseBCN20000BCC: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseBCN20000BKL: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseBCN20000DF: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseBCN20000NV: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseBCN20000VASC: recall",
+      "passed": true
+    },
+    {
+      "check": "BaseBCN20000MEL: recall",
+      "passed": true
+    },
+    {
+      "check": "BasePAD-UFES-20: ba_supported",
+      "passed": true
+    },
+    {
+      "check": "BasePAD-UFES-20: N",
+      "passed": true
+    },
+    {
+      "check": "BasePAD-UFES-20AKIEC: recall",
+      "passed": true
+    },
+    {
+      "check": "BasePAD-UFES-20BCC: recall",
+      "passed": true
+    },
+    {
+      "check": "BasePAD-UFES-20BKL: recall",
+      "passed": true
+    },
+    {
+      "check": "BasePAD-UFES-20NV: recall",
+      "passed": true
+    },
+    {
+      "check": "BasePAD-UFES-20MEL: recall",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_robust",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_accuracy",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_macro_f1",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_combined_mel",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "check": "Base: FINAL_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch1",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch2",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch3",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch4",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch5",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch6",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch7",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch8",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch9",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch10",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch11",
+      "passed": true
+    },
+    {
+      "check": "Base: BCN_worst_epoch12",
+      "passed": true
+    },
+    {
+      "check": "Large: completed_without_test",
+      "passed": true
+    },
+    {
+      "check": "Large: seed1",
+      "passed": true
+    },
+    {
+      "check": "Large: effective_training",
+      "passed": true
+    },
+    {
+      "check": "Large: fresh_optimizer",
+      "passed": true
+    },
+    {
+      "check": "Large: unique_complete_epochs",
+      "passed": true
+    },
+    {
+      "check": "Large: best_first_max",
+      "passed": true
+    },
+    {
+      "check": "Large: robust_formula",
+      "passed": true
+    },
+    {
+      "check": "LargeHAM10000: ba_supported",
+      "passed": true
+    },
+    {
+      "check": "LargeHAM10000: N",
+      "passed": true
+    },
+    {
+      "check": "LargeHAM10000AKIEC: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeHAM10000BCC: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeHAM10000BKL: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeHAM10000DF: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeHAM10000NV: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeHAM10000VASC: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeHAM10000MEL: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeBCN20000: ba_supported",
+      "passed": true
+    },
+    {
+      "check": "LargeBCN20000: N",
+      "passed": true
+    },
+    {
+      "check": "LargeBCN20000AKIEC: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeBCN20000BCC: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeBCN20000BKL: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeBCN20000DF: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeBCN20000NV: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeBCN20000VASC: recall",
+      "passed": true
+    },
+    {
+      "check": "LargeBCN20000MEL: recall",
+      "passed": true
+    },
+    {
+      "check": "LargePAD-UFES-20: ba_supported",
+      "passed": true
+    },
+    {
+      "check": "LargePAD-UFES-20: N",
+      "passed": true
+    },
+    {
+      "check": "LargePAD-UFES-20AKIEC: recall",
+      "passed": true
+    },
+    {
+      "check": "LargePAD-UFES-20BCC: recall",
+      "passed": true
+    },
+    {
+      "check": "LargePAD-UFES-20BKL: recall",
+      "passed": true
+    },
+    {
+      "check": "LargePAD-UFES-20NV: recall",
+      "passed": true
+    },
+    {
+      "check": "LargePAD-UFES-20MEL: recall",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_robust",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_accuracy",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_macro_f1",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_combined_mel",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_HAM10000:ba",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_HAM10000:AKIEC",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_HAM10000:BCC",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_HAM10000:BKL",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_HAM10000:DF",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_HAM10000:NV",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_HAM10000:VASC",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_HAM10000:MEL",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_BCN20000:ba",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_BCN20000:AKIEC",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_BCN20000:BCC",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_BCN20000:BKL",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_BCN20000:DF",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_BCN20000:NV",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_BCN20000:VASC",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_BCN20000:MEL",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_PAD-UFES-20:ba",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_PAD-UFES-20:AKIEC",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_PAD-UFES-20:BCC",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_PAD-UFES-20:BKL",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_PAD-UFES-20:NV",
+      "passed": true
+    },
+    {
+      "check": "Large: FINAL_PAD-UFES-20:MEL",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch1",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch2",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch3",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch4",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch5",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch6",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch7",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch8",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch9",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch10",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch11",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch12",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch13",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch14",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch15",
+      "passed": true
+    },
+    {
+      "check": "Large: BCN_worst_epoch16",
+      "passed": true
+    },
+    {
+      "check": "Base: same_selected_train_record_ids",
+      "passed": true
+    },
+    {
+      "check": "Base: same_selected_validation_record_ids",
+      "passed": true
+    },
+    {
+      "check": "Base: same_class_names",
+      "passed": true
+    },
+    {
+      "check": "Base: same_sources",
+      "passed": true
+    },
+    {
+      "check": "Base: same_effective_transforms",
+      "passed": true
+    },
+    {
+      "check": "Base: manifest_sha",
+      "passed": true
+    },
+    {
+      "check": "Large: same_selected_train_record_ids",
+      "passed": true
+    },
+    {
+      "check": "Large: same_selected_validation_record_ids",
+      "passed": true
+    },
+    {
+      "check": "Large: same_class_names",
+      "passed": true
+    },
+    {
+      "check": "Large: same_sources",
+      "passed": true
+    },
+    {
+      "check": "Large: same_effective_transforms",
+      "passed": true
+    },
+    {
+      "check": "Large: manifest_sha",
+      "passed": true
+    },
+    {
+      "check": "Base_minus_Tiny: source_decomposition",
+      "passed": true
+    },
+    {
+      "check": "Base_minus_Tiny: disease_decomposition",
+      "passed": true
+    },
+    {
+      "check": "Large_minus_Tiny: source_decomposition",
+      "passed": true
+    },
+    {
+      "check": "Large_minus_Tiny: disease_decomposition",
+      "passed": true
+    },
+    {
+      "check": "Large_minus_Base: source_decomposition",
+      "passed": true
+    },
+    {
+      "check": "Large_minus_Base: disease_decomposition",
+      "passed": true
+    },
+    {
+      "check": "attempts_total",
+      "passed": true
+    },
+    {
+      "check": "failed_attempts_total",
+      "passed": true
+    },
+    {
+      "check": "successful_resume_attempt_total",
+      "passed": true
+    },
+    {
+      "check": "resume2_success",
+      "passed": true
+    },
+    {
+      "check": "best_preceded_interruption",
+      "passed": true
+    },
+    {
+      "check": "no_bitwise_replay_claim",
+      "passed": true
+    },
+    {
+      "check": "Large_initial_head_same_micro1_micro2",
+      "passed": true
+    },
+    {
+      "check": "Base: config_runtime",
+      "passed": true
+    },
+    {
+      "check": "Large: config_runtime",
+      "passed": true
+    },
+    {
+      "check": "inputs_unchanged",
+      "passed": true
+    }
+  ],
+  "count": 242,
+  "no_models_or_gpu": true,
+  "no_inference_training_test": true,
+  "input_files_unchanged": true
+}

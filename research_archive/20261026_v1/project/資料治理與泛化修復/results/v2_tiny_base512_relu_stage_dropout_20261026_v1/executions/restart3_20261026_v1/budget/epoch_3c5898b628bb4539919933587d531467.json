@@ -1,0 +1,19 @@
+{
+  "id": "3c5898b628bb4539919933587d531467",
+  "candidate": "v2in_tiny512_relu_stage_dropout",
+  "seed": 2,
+  "run_id": "951d46aece144af2a7aa9dc6b0b0f145",
+  "epoch": 1,
+  "pid": 19180,
+  "started_utc": "2026-10-26T08:31:21.741264+00:00",
+  "started_unix": 1793003481.7412648,
+  "status": "completed",
+  "committed": true,
+  "seconds": 415.3752047000162,
+  "ended_utc": "2026-10-26T08:38:17.116918+00:00",
+  "checkpoint": {
+    "file": "epoch-0001-8571bcd8a31649e4adae596ff16645e7.pt",
+    "epoch": 1,
+    "sha256": "cb46bdb9615632adf5da63618b007c1e2272f464f671669de87c8e2e1ad37d61"
+  }
+}

@@ -1,0 +1,26 @@
+test_actual_windows_powershell_utf8_literal_roundtrip (__main__.RestoreTests.test_actual_windows_powershell_utf8_literal_roundtrip) ... ok
+test_no_added_ram4_startup_stop (__main__.RestoreTests.test_no_added_ram4_startup_stop) ... ok
+test_original_commit8_startup_guard (__main__.RestoreTests.test_original_commit8_startup_guard) ... ok
+test_original_gpu_startup_guards (__main__.RestoreTests.test_original_gpu_startup_guards) ... ok
+test_original_startup_conflicts_still_rejected (__main__.RestoreTests.test_original_startup_conflicts_still_rejected) ... ok
+test_original_whole_epoch_nonfinite_and_stop_preserved (__main__.RestoreTests.test_original_whole_epoch_nonfinite_and_stop_preserved) ... ok
+test_process_query_has_utf8_and_keeps_nonascii_conflict (__main__.RestoreTests.test_process_query_has_utf8_and_keeps_nonascii_conflict) ... ok
+test_query_decode_failure_not_empty_process_list (__main__.RestoreTests.test_query_decode_failure_not_empty_process_list) ... ok
+test_query_parse_failure_not_empty_process_list (__main__.RestoreTests.test_query_parse_failure_not_empty_process_list) ... ok
+test_running_loop_no_resource_threshold_or_process_gate (__main__.RestoreTests.test_running_loop_no_resource_threshold_or_process_gate) ... ok
+test_syntax_and_unbounded_time_retained (__main__.RestoreTests.test_syntax_and_unbounded_time_retained) ... ok
+test_train_epoch_calculations_equal_before_excluding_passive_timing (__main__.RestoreTests.test_train_epoch_calculations_equal_before_excluding_passive_timing) ... FAIL
+
+======================================================================
+FAIL: test_train_epoch_calculations_equal_before_excluding_passive_timing (__main__.RestoreTests.test_train_epoch_calculations_equal_before_excluding_passive_timing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "recovery_20261023\B_training\alpha025_stop_policy_restore_20261024_v1\check_restore.py", line 59, in test_train_epoch_calculations_equal_before_excluding_passive_timing
+    self.assertEqual(ast.dump(original,include_attributes=False),ast.dump(current,include_attributes=False))
+AssertionError: "Func[1512 chars]ody=[Assign(targets=[Tuple(elts=[Name(id='imag[5674 chars]=[])" != "Func[1512 chars]ody=[If(test=Compare(left=Name(id='timing', ct[6959 chars]=[])"
+Diff is 31171 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.325s
+
+FAILED (failures=1)

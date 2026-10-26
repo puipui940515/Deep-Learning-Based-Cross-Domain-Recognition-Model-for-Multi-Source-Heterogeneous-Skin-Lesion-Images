@@ -1,0 +1,1 @@
+本批在第一個Tiny CPU相容檢查停止，未做GPU前檢、未啟任何正式run。原因為B將timm自訂GELU誤認torch.nn.GELU；替換helper亦須修正。配置與比較契約已另版建立，尚未通過架構／映射／Checkpoint驗收。失敗收據、來源快照及STOP保留；原followup整批completed不變。依交辦失敗即停，不自動重試、Resume或借用派送token再啟動。供總控決定修復與重新驗證／執行範圍，B未聯絡其他Thread或改共用索引。

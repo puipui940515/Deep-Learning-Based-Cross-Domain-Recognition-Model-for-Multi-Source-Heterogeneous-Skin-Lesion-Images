@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "checks": [
+    "exact Resume1 factory reproduces scheduler serialization failure on CPU",
+    "new production observer verifies restored native objects without state_dict pollution",
+    "original CheckpointStore atomic commit/load, two generations and best export pass after observer",
+    "no model/optimizer/scheduler state_dict or load_state_dict instance overwrite in new worker"
+  ],
+  "old_failure": "AttributeError(\"Can't get local object 'optimizer_for_restore.<locals>.restore_scheduler'\")",
+  "fixture": "CPU Linear(2,2), four weights and two biases",
+  "expected_optimizer_entries": 2,
+  "observer": {
+    "model": true,
+    "optimizer": true,
+    "scheduler": true,
+    "scheduler_serialization": true,
+    "native_model_optimizer_scheduler_methods": true
+  },
+  "descriptor13": {
+    "file": "epoch-0013-62ee95d32cf14634954741964ef0bdf7.pt",
+    "epoch": 13,
+    "sha256": "fb41d31ca48b9cfdc6dcc840082f3eda6ed4fcbc0ce5bb17a9b911f903ad6b17"
+  },
+  "descriptor14": {
+    "file": "epoch-0014-22d66648a77940cca3684ff2f48ddd74.pt",
+    "epoch": 14,
+    "sha256": "d59bfb381f9756af8deb060a74d616e4e4a1a2ee9c8ea8b6a1260e6828f24d12"
+  },
+  "no_research_data": true,
+  "no_large_weight_load": true,
+  "no_gpu": true,
+  "old_source_sha256": "b2ac708b7ee4cc6150964554cc772eeabbf831822a591b024b3a57973ee055ba",
+  "new_worker_sha256": "ceb148cf800419782ad3f8fbf381b562cd8908f785c53f162a0376f79b397c51",
+  "seconds": 2.620292999985395,
+  "command": [
+    "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume2_20261025_v1\\check_serialization.py"
+  ],
+  "python": ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+  "torch": "2.11.0+cu128"
+}

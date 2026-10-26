@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-26T11:34:16.762107+08:00",
+  "status": "shared_sources_restored_exactly",
+  "files": {
+    "train_regularized.py": {
+      "current_sha256": "221b377d6f3ec1eef88dd4d64eefa669f61f9f23c8c5c7e0f5238e99b86528d6",
+      "before_sha256": "221b377d6f3ec1eef88dd4d64eefa669f61f9f23c8c5c7e0f5238e99b86528d6",
+      "byte_identical": true
+    },
+    "model_profiles.py": {
+      "current_sha256": "3eccf9580d594a3d49bc0e78b57246c2113ff41bdae2fb594e2937460f5cd446",
+      "before_sha256": "3eccf9580d594a3d49bc0e78b57246c2113ff41bdae2fb594e2937460f5cd446",
+      "byte_identical": true
+    }
+  },
+  "no_test_rerun": true
+}

@@ -1,0 +1,202 @@
+{
+  "status": "static_config_checks_passed",
+  "configuration_approved": true,
+  "model_or_runtime_acceptance": "not_performed",
+  "training_started": false,
+  "gpu_used": false,
+  "test_read": false,
+  "quality_reanalyzed": false,
+  "checks": [
+    {
+      "name": "D_v2_supplement_and_v2_1_present",
+      "passed": true
+    },
+    {
+      "name": "baseline_training_matches_run_inputs_seed1",
+      "passed": true
+    },
+    {
+      "name": "seed_and_data_contract_seed1",
+      "passed": true
+    },
+    {
+      "name": "baseline_training_matches_run_inputs_seed2",
+      "passed": true
+    },
+    {
+      "name": "seed_and_data_contract_seed2",
+      "passed": true
+    },
+    {
+      "name": "baseline_training_matches_run_inputs_seed3",
+      "passed": true
+    },
+    {
+      "name": "seed_and_data_contract_seed3",
+      "passed": true
+    },
+    {
+      "name": "all_three_saved_train_count_tables_identical",
+      "passed": true
+    },
+    {
+      "name": "train_count_sum_18919",
+      "passed": true
+    },
+    {
+      "name": "pinned_weights_equal",
+      "passed": true
+    },
+    {
+      "name": "weights_and_transforms_same_seed2",
+      "passed": true
+    },
+    {
+      "name": "weights_and_transforms_same_seed3",
+      "passed": true
+    },
+    {
+      "name": "sampling_formula_unchanged",
+      "passed": true
+    },
+    {
+      "name": "B_receipt_version_torch",
+      "passed": true
+    },
+    {
+      "name": "B_receipt_version_torchvision",
+      "passed": true
+    },
+    {
+      "name": "B_receipt_version_timm",
+      "passed": true
+    },
+    {
+      "name": "AdamW_recorded_defaults_match_D",
+      "passed": true
+    },
+    {
+      "name": "timm_variant_model_args_static_dict",
+      "passed": true
+    },
+    {
+      "name": "true_V2_Tiny_architecture",
+      "passed": true
+    },
+    {
+      "name": "only_one_scientific_training_diff",
+      "passed": true
+    },
+    {
+      "name": "baseline_preserved_data_definition",
+      "passed": true
+    },
+    {
+      "name": "baseline_preserved_class_names",
+      "passed": true
+    },
+    {
+      "name": "baseline_preserved_sources",
+      "passed": true
+    },
+    {
+      "name": "baseline_preserved_leakage",
+      "passed": true
+    },
+    {
+      "name": "baseline_preserved_profile_version",
+      "passed": true
+    },
+    {
+      "name": "baseline_preserved_formal_suite",
+      "passed": true
+    },
+    {
+      "name": "backbone_unchanged",
+      "passed": true
+    },
+    {
+      "name": "source_Train_count_HAM10000",
+      "passed": true
+    },
+    {
+      "name": "source_share_normalized_HAM10000_alpha_050",
+      "passed": true
+    },
+    {
+      "name": "source_share_normalized_HAM10000_alpha_025",
+      "passed": true
+    },
+    {
+      "name": "source_Train_count_BCN20000",
+      "passed": true
+    },
+    {
+      "name": "source_share_normalized_BCN20000_alpha_050",
+      "passed": true
+    },
+    {
+      "name": "source_share_normalized_BCN20000_alpha_025",
+      "passed": true
+    },
+    {
+      "name": "source_Train_count_PAD-UFES-20",
+      "passed": true
+    },
+    {
+      "name": "source_share_normalized_PAD-UFES-20_alpha_050",
+      "passed": true
+    },
+    {
+      "name": "source_share_normalized_PAD-UFES-20_alpha_025",
+      "passed": true
+    },
+    {
+      "name": "no_old_authorization_sha",
+      "passed": true
+    },
+    {
+      "name": "new_candidate_shape",
+      "passed": true
+    },
+    {
+      "name": "no_seconds_hard_limit",
+      "passed": true
+    },
+    {
+      "name": "HAM_BCN_NV_OR_not_PAD_OR",
+      "passed": true
+    },
+    {
+      "name": "sources_still_unchanged_before_write",
+      "passed": true
+    },
+    {
+      "name": "saved_unique_training_difference",
+      "passed": true
+    },
+    {
+      "name": "authorization_hash_readback",
+      "passed": true
+    },
+    {
+      "name": "old_files_unchanged_after_delivery",
+      "passed": true
+    }
+  ],
+  "source_files_unchanged": true,
+  "output_sha256": {
+    "AUTHORIZATION.md": "83eecd31687be5e48fa704155bab4a7358b61a9e94aaf2f7c3b8a81773d21ee9",
+    "DIFF_AND_SOURCES.json": "baf11917219bdb034753fe7225c1ba4ee5a83c07059c34e0aad0cb6af5e1a586",
+    "D_SPEC_GOVERNING_v2.md": "8a5a4a3ea4c9474959172bf452faf696fd27d7ebf36aa584dbd3ec9c14d9d03e",
+    "EVALUATION_CONTRACT.json": "8d327ff8a0c6f81c44abe3db60b28e376469e818734927552d14092d56ab80b1",
+    "HANDOFF_B.md": "5d901cc2994dc86833e6d4033bccbe9442c706e656488b7bf00aeb82fd8a2b2c",
+    "PLANNED_EFFECTIVE_CONTRACT.json": "d8df9611eead03716b14448f83d2bd18a68d0dbde94b7ca6482a7c4ec41d1eb2",
+    "SAMPLING_EXPOSURE.json": "1c19f63c973e9ff882f63809c170e64cb280afef37361250f86936e0b8fc661d",
+    "SAMPLING_SOURCE.txt": "8efda465112ac6acd4c4c654c16337647d5333d2b48da00bf1b29b561d36d7bc",
+    "suite.json": "7f8cb857be5fa8881e26f4594674dce8ed1824930c5b88c70680c1af95543e18",
+    "v2in_res512_alpha025.json": "f670c37eff1980d388da3a85bedfa8851b3e034c4f41ed043c1975c9c5b3f222"
+  },
+  "script": "recovery_20261023\\C_training_config\\build_alpha025_config_20261024_v1.py",
+  "script_sha256": "1511f33e23d5115af04b1eac4f80b8ecc3e8c40c728e8127cd4a5160ddf80925"
+}

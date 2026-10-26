@@ -1,0 +1,19 @@
+{
+  "status": "running",
+  "observed": "2026-10-25T23:03:49.616828+08:00",
+  "run_id": "7c6b140d4ed442389852be8707d8e2c6",
+  "completed_epochs": 13,
+  "active_epoch": 14,
+  "controller_pid": 19208,
+  "trainer_actual_pid": 23240,
+  "trainer_outer_pid": 5728,
+  "all_required_state_restored": true,
+  "scheduler_serialization_passed": true,
+  "formal_epoch14_checkpoint_not_yet_verified": true,
+  "monitor": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\MONITOR.md",
+  "update_seconds": 15,
+  "last_monitor_update": "2026-10-25T15:03:40.262507+00:00",
+  "stdout": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\logs\\large_resume2_fbfead3177fe420d8d8923bb0819e1dc.stdout.log",
+  "stderr": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\logs\\large_resume2_fbfead3177fe420d8d8923bb0819e1dc.stderr.log",
+  "progress": "訓練:   7%|▋         | 1283/18919 [01:57<22:22, 13.13batch/s]"
+}

@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "key": "Esteva2017",
+    "authors": "Esteva, A., Kuprel, B., Novoa, R. A., Ko, J., Swetter, S. M., Blau, H. M., & Thrun, S.",
+    "year": 2017,
+    "title": "Dermatologist-level classification of skin cancer with deep neural networks",
+    "publication": "Nature, 542, 115–118",
+    "doi": "10.1038/nature21056",
+    "url": "https://www.nature.com/articles/nature21056",
+    "verified_source": "https://pubmed.ncbi.nlm.nih.gov/28117445/"
+  },
+  {
+    "id": 2,
+    "key": "Tschandl2018",
+    "authors": "Tschandl, P., Rosendahl, C., & Kittler, H.",
+    "year": 2018,
+    "title": "The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions",
+    "publication": "Scientific Data, 5, 180161",
+    "doi": "10.1038/sdata.2018.161",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6091241/",
+    "verified_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6091241/"
+  },
+  {
+    "id": 3,
+    "key": "HernandezPerez2024",
+    "authors": "Hernández-Pérez, C., Combalia, M., Podlipnik, S., et al.",
+    "year": 2024,
+    "title": "BCN20000: Dermoscopic Lesions in the Wild",
+    "publication": "Scientific Data, 11, 641",
+    "doi": "10.1038/s41597-024-03387-w",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11183228/",
+    "verified_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11183228/"
+  },
+  {
+    "id": 4,
+    "key": "Pacheco2020",
+    "authors": "Pacheco, A. G. C., Lima, G. R., Salomão, A. S., et al.",
+    "year": 2020,
+    "title": "PAD-UFES-20: A skin lesion dataset composed of patient data and clinical images collected from smartphones",
+    "publication": "Data in Brief, 32, 106221",
+    "doi": "10.1016/j.dib.2020.106221",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7479321/",
+    "verified_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7479321/"
+  },
+  {
+    "id": 5,
+    "key": "He2016",
+    "authors": "He, K., Zhang, X., Ren, S., & Sun, J.",
+    "year": 2016,
+    "title": "Deep Residual Learning for Image Recognition",
+    "publication": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 770–778",
+    "doi": "",
+    "url": "https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html",
+    "verified_source": "https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf"
+  },
+  {
+    "id": 6,
+    "key": "Woo2023",
+    "authors": "Woo, S., Debnath, S., Hu, R., Chen, X., Liu, Z., Kweon, I. S., & Xie, S.",
+    "year": 2023,
+    "title": "ConvNeXt V2: Co-Designing and Scaling ConvNets With Masked Autoencoders",
+    "publication": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 16133–16142",
+    "doi": "",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Woo_ConvNeXt_V2_Co-Designing_and_Scaling_ConvNets_With_Masked_Autoencoders_CVPR_2023_paper.html",
+    "verified_source": "https://arxiv.org/abs/2301.00808"
+  },
+  {
+    "id": 7,
+    "key": "Deng2009",
+    "authors": "Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., & Fei-Fei, L.",
+    "year": 2009,
+    "title": "ImageNet: A Large-Scale Hierarchical Image Database",
+    "publication": "2009 IEEE Conference on Computer Vision and Pattern Recognition, 248–255",
+    "doi": "10.1109/CVPR.2009.5206848",
+    "url": "https://www.image-net.org/static_files/papers/imagenet_cvpr09.pdf",
+    "verified_source": "https://www.image-net.org/static_files/papers/imagenet_cvpr09.pdf"
+  },
+  {
+    "id": 8,
+    "key": "Yosinski2014",
+    "authors": "Yosinski, J., Clune, J., Bengio, Y., & Lipson, H.",
+    "year": 2014,
+    "title": "How transferable are features in deep neural networks?",
+    "publication": "Advances in Neural Information Processing Systems, 27, 3320–3328",
+    "doi": "",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2014/hash/532a2f85b6977104bc93f8580abbb330-Abstract.html",
+    "verified_source": "https://proceedings.neurips.cc/paper_files/paper/2014/hash/532a2f85b6977104bc93f8580abbb330-Abstract.html"
+  },
+  {
+    "id": 9,
+    "key": "Buda2018",
+    "authors": "Buda, M., Maki, A., & Mazurowski, M. A.",
+    "year": 2018,
+    "title": "A systematic study of the class imbalance problem in convolutional neural networks",
+    "publication": "Neural Networks, 106, 249–259",
+    "doi": "10.1016/j.neunet.2018.07.011",
+    "url": "https://arxiv.org/abs/1710.05381",
+    "verified_source": "https://scholars.duke.edu/publication/1308728"
+  },
+  {
+    "id": 10,
+    "key": "Brodersen2010",
+    "authors": "Brodersen, K. H., Ong, C. S., Stephan, K. E., & Buhmann, J. M.",
+    "year": 2010,
+    "title": "The Balanced Accuracy and Its Posterior Distribution",
+    "publication": "2010 20th International Conference on Pattern Recognition, 3121–3124",
+    "doi": "10.1109/ICPR.2010.764",
+    "url": "https://www.ong-home.my/papers/brodersen10post-balacc.pdf",
+    "verified_source": "https://www.ong-home.my/papers/brodersen10post-balacc.pdf"
+  },
+  {
+    "id": 11,
+    "key": "Torralba2011",
+    "authors": "Torralba, A., & Efros, A. A.",
+    "year": 2011,
+    "title": "Unbiased Look at Dataset Bias",
+    "publication": "2011 IEEE Conference on Computer Vision and Pattern Recognition, 1521–1528",
+    "doi": "",
+    "url": "https://people.csail.mit.edu/torralba/publications/datasets_cvpr11.pdf",
+    "verified_source": "https://people.csail.mit.edu/torralba/research/bias/"
+  }
+]

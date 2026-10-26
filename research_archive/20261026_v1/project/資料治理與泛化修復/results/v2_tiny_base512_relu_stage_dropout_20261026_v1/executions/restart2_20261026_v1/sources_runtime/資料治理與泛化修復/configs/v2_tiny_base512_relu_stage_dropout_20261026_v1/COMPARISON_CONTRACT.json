@@ -1,0 +1,94 @@
+{
+  "version": "v2_tiny_base512_relu_stage_dropout_20261026_v1",
+  "status": "prospective_comparison_contract_before_training",
+  "models": [
+    "tiny",
+    "base"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "ddof": 1,
+  "primary_contrast": "each modified model minus original same architecture 512 same Seed at its existing best",
+  "selection": "first highest Validation Robust; full original Monitor/Validation every epoch",
+  "required_metrics": [
+    "Robust",
+    "merged Accuracy",
+    "merged Macro-F1",
+    "all source BA",
+    "all supported disease TP/N/Recall",
+    "combined MEL",
+    "mean/sampleSD and paired delta"
+  ],
+  "baseline_files": {
+    "tiny": {
+      "1": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\result.json",
+      "2": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\result.json",
+      "3": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\result.json"
+    },
+    "base": {
+      "1": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_base\\regularized_seed1\\result.json",
+      "2": "資料治理與泛化修復\\results\\v2_scale512_followup_20261026_v1\\runs\\v2in_scale512_base_confirm\\regularized_seed2\\result.json",
+      "3": "資料治理與泛化修復\\results\\v2_scale512_followup_20261026_v1\\runs\\v2in_scale512_base_confirm\\regularized_seed3\\result.json"
+    }
+  },
+  "historical_protection_reference": {
+    "robust": {
+      "formula": "0.5 * mean(source BA) + 0.5 * min(source BA)",
+      "mean_delta_min": 0.01,
+      "strictly_positive_delta_seed_count_min": 2,
+      "each_seed_delta_min": -0.01
+    },
+    "mean_delta_min": {
+      "macro_f1": 0.0,
+      "accuracy": 0.0,
+      "BCN20000:ba": 0.0,
+      "HAM10000:ba": -0.01,
+      "PAD-UFES-20:ba": -0.01,
+      "HAM10000:NV": 0.0,
+      "BCN20000:NV": 0.0,
+      "PAD-UFES-20:NV": 0.0,
+      "BCN20000:DF": -0.03,
+      "BCN20000:BKL": -0.03,
+      "BCN20000:MEL": -0.03,
+      "BCN20000:VASC": -0.03,
+      "combined_mel": -0.01
+    },
+    "NV_strict_improvement": {
+      "at_least_one_strictly_positive_mean_delta_in": [
+        "HAM10000:NV",
+        "BCN20000:NV"
+      ],
+      "PAD_does_not_satisfy_this_OR": true,
+      "all_three_NV_mean_deltas_nonnegative": true
+    },
+    "other_supported_disease_mean_delta_min": -0.05,
+    "other_supported_disease_keys": [
+      "HAM10000:AKIEC",
+      "HAM10000:BCC",
+      "HAM10000:BKL",
+      "HAM10000:DF",
+      "HAM10000:VASC",
+      "HAM10000:MEL",
+      "BCN20000:AKIEC",
+      "BCN20000:BCC",
+      "PAD-UFES-20:AKIEC",
+      "PAD-UFES-20:BCC",
+      "PAD-UFES-20:BKL",
+      "PAD-UFES-20:MEL"
+    ]
+  },
+  "protection_source": "資料治理與泛化修復\\configs\\v2_512_alpha025_20261024_v1\\EVALUATION_CONTRACT.json",
+  "protection_source_sha256": "8d327ff8a0c6f81c44abe3db60b28e376469e818734927552d14092d56ab80b1",
+  "new_adoption_thresholds_created": false,
+  "interpretation": "D interprets complete three-Seed comparisons; thresholds preserved only as existing references, no automatic adoption",
+  "combined_change_not_separate_causality": true,
+  "cross_architecture_micro_mixup_limitation": true,
+  "PAD_DF_VASC": "N/A; unsupported",
+  "validation_repeatedly_used_exploratory": true,
+  "significance_claim": false,
+  "test_used": false,
+  "automatic_model_website_adoption": false
+}

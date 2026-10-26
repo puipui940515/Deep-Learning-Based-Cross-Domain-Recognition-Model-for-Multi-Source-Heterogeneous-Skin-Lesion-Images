@@ -1,0 +1,706 @@
+{
+  "date": "2026-10-25",
+  "scope": "Saved-history-only CPU derivation, no predictions/metrics/stopping replay",
+  "sources": [
+    {
+      "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\result.json",
+      "sha256": "3d7f4c4d7c8d5f789abad945d223d7e881053260bae2d637a35c988a57e60839",
+      "run_id": "1e32c15f7f13453983d2552608333e39",
+      "status": "completed",
+      "epochs": 12
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\result.json",
+      "sha256": "c2c25759b90b0131ae256524df73f8f6ba525674ca9a41e34c63cf85f6325daa",
+      "run_id": "596afe643c5e4362bb8332fcad252f9f",
+      "status": "completed",
+      "epochs": 15
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\result.json",
+      "sha256": "e33bd7d7dd8d8f93db5e5887b1bcbe9e446d9cafb134196496f832bc95bbb494",
+      "run_id": "16f68c2066fd44b4b280ed9e3760410c",
+      "status": "completed",
+      "epochs": 12
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\executions\\retry1_20261024_v1\\runs\\v2in_res512_alpha025\\regularized_seed1\\result.json",
+      "sha256": "52c14c5553130e6e836359ef131577ad4477002d0cb5f659ecf57803b091e32c",
+      "run_id": "21d2aaccb9e5490faba534f6b752fa98",
+      "status": "completed",
+      "epochs": 13
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\executions\\retry1_20261024_v1\\runs\\v2in_res512_alpha025\\regularized_seed2\\result.json",
+      "sha256": "1af1f307c6c1b5a484c61088719ea2ff6bff6ad2ab211396d520cfae642d0502",
+      "run_id": "88e812db602549c8b6593c29a51e55c4",
+      "status": "completed",
+      "epochs": 20
+    },
+    {
+      "path": "資料治理與泛化修復\\results\\v2_512_alpha025_20261024_v1\\executions\\retry1_20261024_v1\\runs\\v2in_res512_alpha025\\regularized_seed3\\result.json",
+      "sha256": "fe3d5453ad025103a30ceea9655a9dfeb59aded9a499f3f1ac449782328ed1fb",
+      "run_id": "1fc8933da4aa4a25aa902729874cf894",
+      "status": "completed",
+      "epochs": 12
+    }
+  ],
+  "runs": [
+    {
+      "group": "alpha050",
+      "seed": 1,
+      "run_id": "1e32c15f7f13453983d2552608333e39",
+      "best_epoch": 4,
+      "stop_epoch": 12,
+      "first": {
+        "epoch": 1,
+        "robust": 0.5442964382767557,
+        "train_augmented_mixup_loss": 1.299601585544046,
+        "monitor_loss": 1.115689825852712,
+        "monitor_ba": 0.6602879118577748,
+        "source_ba": {
+          "HAM10000": 0.5617496085625595,
+          "BCN20000": 0.48633565341111096,
+          "PAD-UFES-20": 0.7586864074535308
+        },
+        "source_loss": {
+          "HAM10000": 0.874727411473051,
+          "BCN20000": 1.1364107978678195,
+          "PAD-UFES-20": 0.8671668265439287
+        },
+        "lr": 0.0001
+      },
+      "best": {
+        "epoch": 4,
+        "robust": 0.6714827353661315,
+        "train_augmented_mixup_loss": 0.894837674318821,
+        "monitor_loss": 0.6302218619982402,
+        "monitor_ba": 0.9260050800178473,
+        "source_ba": {
+          "HAM10000": 0.786288516604628,
+          "BCN20000": 0.6303321374052585,
+          "PAD-UFES-20": 0.7212793459711268
+        },
+        "source_loss": {
+          "HAM10000": 0.7420423702990755,
+          "BCN20000": 1.0355389820081051,
+          "PAD-UFES-20": 0.8576264935203746
+        },
+        "lr": 9.757729755661011e-05
+      },
+      "last": {
+        "epoch": 12,
+        "robust": 0.6454896003859543,
+        "train_augmented_mixup_loss": 0.7177641068889095,
+        "monitor_loss": 0.49062081082661946,
+        "monitor_ba": 0.9835055949880076,
+        "source_ba": {
+          "HAM10000": 0.7790831215369164,
+          "BCN20000": 0.591111128381594,
+          "PAD-UFES-20": 0.729409967252433
+        },
+        "source_loss": {
+          "HAM10000": 0.795265462170256,
+          "BCN20000": 1.1674598628115431,
+          "PAD-UFES-20": 0.9057379065435144
+        },
+        "lr": 7.06334638322521e-05
+      },
+      "best_to_stop": {
+        "robust_delta_pp": -2.599313498017719,
+        "monitor_ba_delta_pp": 5.750051497016029,
+        "monitor_loss_delta": -0.1396010511716207,
+        "augmented_mixup_loss_delta": -0.17707356742991154,
+        "sources": {
+          "HAM10000": {
+            "ba_delta_pp": -0.7205395067711562,
+            "loss_delta": 0.05322309187118046
+          },
+          "BCN20000": {
+            "ba_delta_pp": -3.9221009023664544,
+            "loss_delta": 0.131920880803438
+          },
+          "PAD-UFES-20": {
+            "ba_delta_pp": 0.8130621281306261,
+            "loss_delta": 0.048111413023139815
+          }
+        }
+      },
+      "within_observed_history": {
+        "worst_source_counts": {
+          "HAM10000": 0,
+          "BCN20000": 12,
+          "PAD-UFES-20": 0
+        },
+        "monitor_at_best_minus_source_pp": {
+          "HAM10000": 13.971656341321935,
+          "BCN20000": 29.56729426125888,
+          "PAD-UFES-20": 20.472573404672055
+        },
+        "loss_min_epoch": {
+          "HAM10000": 10,
+          "BCN20000": 4,
+          "PAD-UFES-20": 3
+        },
+        "source_max_ba_epoch": {
+          "HAM10000": 7,
+          "BCN20000": 3,
+          "PAD-UFES-20": 9
+        },
+        "source_max_ba_value": {
+          "HAM10000": 0.8166611711438315,
+          "BCN20000": 0.6321075167831688,
+          "PAD-UFES-20": 0.7598498685484987
+        }
+      }
+    },
+    {
+      "group": "alpha050",
+      "seed": 2,
+      "run_id": "596afe643c5e4362bb8332fcad252f9f",
+      "best_epoch": 10,
+      "stop_epoch": 15,
+      "first": {
+        "epoch": 1,
+        "robust": 0.5968703712038859,
+        "train_augmented_mixup_loss": 1.300715188331348,
+        "monitor_loss": 1.008920697848002,
+        "monitor_ba": 0.7198805216798563,
+        "source_ba": {
+          "HAM10000": 0.6786733192644541,
+          "BCN20000": 0.5285391918437349,
+          "PAD-UFES-20": 0.7883921405839214
+        },
+        "source_loss": {
+          "HAM10000": 0.8839533795067605,
+          "BCN20000": 1.20774358900908,
+          "PAD-UFES-20": 0.8554606647431096
+        },
+        "lr": 0.0001
+      },
+      "best": {
+        "epoch": 10,
+        "robust": 0.6732853244492362,
+        "train_augmented_mixup_loss": 0.7427161809972026,
+        "monitor_loss": 0.5089069890975952,
+        "monitor_ba": 0.9761672725256313,
+        "source_ba": {
+          "HAM10000": 0.7673328244191467,
+          "BCN20000": 0.6248309205072623,
+          "PAD-UFES-20": 0.7730554402472211
+        },
+        "source_loss": {
+          "HAM10000": 0.898848315344212,
+          "BCN20000": 1.1595834554912887,
+          "PAD-UFES-20": 0.8748545328273049
+        },
+        "lr": 7.959536998847741e-05
+      },
+      "last": {
+        "epoch": 15,
+        "robust": 0.6616721049421928,
+        "train_augmented_mixup_loss": 0.6955336964220507,
+        "monitor_loss": 0.47036462354660036,
+        "monitor_ba": 0.9916672138221395,
+        "source_ba": {
+          "HAM10000": 0.8013441631910704,
+          "BCN20000": 0.6079439041253228,
+          "PAD-UFES-20": 0.7369128499607951
+        },
+        "source_loss": {
+          "HAM10000": 0.7596607656872019,
+          "BCN20000": 1.1058932618003026,
+          "PAD-UFES-20": 0.9146278828005248
+        },
+        "lr": 5.567415893174884e-05
+      },
+      "best_to_stop": {
+        "robust_delta_pp": -1.1613219507043415,
+        "monitor_ba_delta_pp": 1.5499941296508224,
+        "monitor_loss_delta": -0.038542365550994884,
+        "augmented_mixup_loss_delta": -0.04718248457515195,
+        "sources": {
+          "HAM10000": {
+            "ba_delta_pp": 3.401133877192364,
+            "loss_delta": -0.13918754965701008
+          },
+          "BCN20000": {
+            "ba_delta_pp": -1.6887016381939457,
+            "loss_delta": -0.053690193690986154
+          },
+          "PAD-UFES-20": {
+            "ba_delta_pp": -3.614259028642597,
+            "loss_delta": 0.03977334997321991
+          }
+        }
+      },
+      "within_observed_history": {
+        "worst_source_counts": {
+          "HAM10000": 0,
+          "BCN20000": 15,
+          "PAD-UFES-20": 0
+        },
+        "monitor_at_best_minus_source_pp": {
+          "HAM10000": 20.883444810648456,
+          "BCN20000": 35.133635201836896,
+          "PAD-UFES-20": 20.311183227841024
+        },
+        "loss_min_epoch": {
+          "HAM10000": 11,
+          "BCN20000": 4,
+          "PAD-UFES-20": 2
+        },
+        "source_max_ba_epoch": {
+          "HAM10000": 15,
+          "BCN20000": 4,
+          "PAD-UFES-20": 1
+        },
+        "source_max_ba_value": {
+          "HAM10000": 0.8013441631910704,
+          "BCN20000": 0.6325607076799787,
+          "PAD-UFES-20": 0.7883921405839214
+        }
+      }
+    },
+    {
+      "group": "alpha050",
+      "seed": 3,
+      "run_id": "16f68c2066fd44b4b280ed9e3760410c",
+      "best_epoch": 7,
+      "stop_epoch": 12,
+      "first": {
+        "epoch": 1,
+        "robust": 0.610918484376448,
+        "train_augmented_mixup_loss": 1.2887397750379597,
+        "monitor_loss": 0.9845786034266154,
+        "monitor_ba": 0.7474037929508867,
+        "source_ba": {
+          "HAM10000": 0.7145064875476976,
+          "BCN20000": 0.5617858009555946,
+          "PAD-UFES-20": 0.7038612148886122
+        },
+        "source_loss": {
+          "HAM10000": 0.8604990784475144,
+          "BCN20000": 1.170827043669246,
+          "PAD-UFES-20": 0.9463218183457097
+        },
+        "lr": 0.0001
+      },
+      "best": {
+        "epoch": 7,
+        "robust": 0.6718155530863428,
+        "train_augmented_mixup_loss": 0.7895499835893212,
+        "monitor_loss": 0.5570420614878336,
+        "monitor_ba": 0.9531614862019525,
+        "source_ba": {
+          "HAM10000": 0.7829073212396394,
+          "BCN20000": 0.6341772105414114,
+          "PAD-UFES-20": 0.7112771551127716
+        },
+        "source_loss": {
+          "HAM10000": 0.7938441052398784,
+          "BCN20000": 1.1815840462657894,
+          "PAD-UFES-20": 0.8972326230399216
+        },
+        "lr": 9.05463412215599e-05
+      },
+      "last": {
+        "epoch": 12,
+        "robust": 0.6146750234449407,
+        "train_augmented_mixup_loss": 0.7231203785872156,
+        "monitor_loss": 0.5075209278265636,
+        "monitor_ba": 0.9762375662389161,
+        "source_ba": {
+          "HAM10000": 0.7284861799989292,
+          "BCN20000": 0.5649289842638922,
+          "PAD-UFES-20": 0.6998480236151469
+        },
+        "source_loss": {
+          "HAM10000": 0.7739261035272416,
+          "BCN20000": 1.1875635584659665,
+          "PAD-UFES-20": 0.9394511645353293
+        },
+        "lr": 7.06334638322521e-05
+      },
+      "best_to_stop": {
+        "robust_delta_pp": -5.714052964140204,
+        "monitor_ba_delta_pp": 2.3076080036963598,
+        "monitor_loss_delta": -0.04952113366127009,
+        "augmented_mixup_loss_delta": -0.0664296050021056,
+        "sources": {
+          "HAM10000": {
+            "ba_delta_pp": -5.4421141240710185,
+            "loss_delta": -0.0199180017126368
+          },
+          "BCN20000": {
+            "ba_delta_pp": -6.924822627751926,
+            "loss_delta": 0.005979512200177117
+          },
+          "PAD-UFES-20": {
+            "ba_delta_pp": -1.14291314976247,
+            "loss_delta": 0.04221854149540771
+          }
+        }
+      },
+      "within_observed_history": {
+        "worst_source_counts": {
+          "HAM10000": 0,
+          "BCN20000": 12,
+          "PAD-UFES-20": 0
+        },
+        "monitor_at_best_minus_source_pp": {
+          "HAM10000": 17.025416496231315,
+          "BCN20000": 31.89842756605411,
+          "PAD-UFES-20": 24.188433108918094
+        },
+        "loss_min_epoch": {
+          "HAM10000": 4,
+          "BCN20000": 3,
+          "PAD-UFES-20": 2
+        },
+        "source_max_ba_epoch": {
+          "HAM10000": 4,
+          "BCN20000": 7,
+          "PAD-UFES-20": 2
+        },
+        "source_max_ba_value": {
+          "HAM10000": 0.809726687221683,
+          "BCN20000": 0.6341772105414114,
+          "PAD-UFES-20": 0.7790948295742817
+        }
+      }
+    },
+    {
+      "group": "alpha025",
+      "seed": 1,
+      "run_id": "21d2aaccb9e5490faba534f6b752fa98",
+      "best_epoch": 8,
+      "stop_epoch": 13,
+      "first": {
+        "epoch": 1,
+        "robust": 0.5032447692162283,
+        "train_augmented_mixup_loss": 1.2265494921802371,
+        "monitor_loss": 1.2625133775075277,
+        "monitor_ba": 0.5931519157338917,
+        "source_ba": {
+          "HAM10000": 0.5246815201121381,
+          "BCN20000": 0.4513628754521356,
+          "PAD-UFES-20": 0.6893355933766891
+        },
+        "source_loss": {
+          "HAM10000": 0.974999634192345,
+          "BCN20000": 1.2582510840669971,
+          "PAD-UFES-20": 0.8742190523992611
+        },
+        "lr": 0.0001
+      },
+      "best": {
+        "epoch": 8,
+        "robust": 0.6707810487068299,
+        "train_augmented_mixup_loss": 0.7695901968261266,
+        "monitor_loss": 0.5533497117360433,
+        "monitor_ba": 0.9548287916931464,
+        "source_ba": {
+          "HAM10000": 0.8210148248764165,
+          "BCN20000": 0.6222136442499318,
+          "PAD-UFES-20": 0.7148168903648355
+        },
+        "source_loss": {
+          "HAM10000": 0.7375876372481914,
+          "BCN20000": 1.125325077047972,
+          "PAD-UFES-20": 0.9530650574195234
+        },
+        "lr": 8.728566886113101e-05
+      },
+      "last": {
+        "epoch": 13,
+        "robust": 0.629341779729144,
+        "train_augmented_mixup_loss": 0.7046932278252082,
+        "monitor_loss": 0.4901648184458415,
+        "monitor_ba": 0.9861565748646602,
+        "source_ba": {
+          "HAM10000": 0.7615040132367064,
+          "BCN20000": 0.5731706188236289,
+          "PAD-UFES-20": 0.7218641898436419
+        },
+        "source_loss": {
+          "HAM10000": 0.7477768271210345,
+          "BCN20000": 1.1649574885301501,
+          "PAD-UFES-20": 0.9571761327453806
+        },
+        "lr": 6.579634122155988e-05
+      },
+      "best_to_stop": {
+        "robust_delta_pp": -4.143926897768591,
+        "monitor_ba_delta_pp": 3.1327783171513857,
+        "monitor_loss_delta": -0.06318489329020183,
+        "augmented_mixup_loss_delta": -0.06489696900091846,
+        "sources": {
+          "HAM10000": {
+            "ba_delta_pp": -5.951081163971017,
+            "loss_delta": 0.010189189872843119
+          },
+          "BCN20000": {
+            "ba_delta_pp": -4.90430254263029,
+            "loss_delta": 0.03963241148217822
+          },
+          "PAD-UFES-20": {
+            "ba_delta_pp": 0.7047299478806335,
+            "loss_delta": 0.004111075325857194
+          }
+        }
+      },
+      "within_observed_history": {
+        "worst_source_counts": {
+          "HAM10000": 0,
+          "BCN20000": 13,
+          "PAD-UFES-20": 0
+        },
+        "monitor_at_best_minus_source_pp": {
+          "HAM10000": 13.381396681672985,
+          "BCN20000": 33.26151474432146,
+          "PAD-UFES-20": 24.001190132831084
+        },
+        "loss_min_epoch": {
+          "HAM10000": 10,
+          "BCN20000": 2,
+          "PAD-UFES-20": 2
+        },
+        "source_max_ba_epoch": {
+          "HAM10000": 10,
+          "BCN20000": 8,
+          "PAD-UFES-20": 9
+        },
+        "source_max_ba_value": {
+          "HAM10000": 0.823348017756126,
+          "BCN20000": 0.6222136442499318,
+          "PAD-UFES-20": 0.7478234398782344
+        }
+      }
+    },
+    {
+      "group": "alpha025",
+      "seed": 2,
+      "run_id": "88e812db602549c8b6593c29a51e55c4",
+      "best_epoch": 15,
+      "stop_epoch": 20,
+      "first": {
+        "epoch": 1,
+        "robust": 0.5238374333500299,
+        "train_augmented_mixup_loss": 1.2595501984959645,
+        "monitor_loss": 1.1891665795644124,
+        "monitor_ba": 0.6050271886265872,
+        "source_ba": {
+          "HAM10000": 0.5983805975870211,
+          "BCN20000": 0.463525888087355,
+          "PAD-UFES-20": 0.6905404501637378
+        },
+        "source_loss": {
+          "HAM10000": 0.8482304912932376,
+          "BCN20000": 1.1280191117357985,
+          "PAD-UFES-20": 0.9183166758923591
+        },
+        "lr": 0.0001
+      },
+      "best": {
+        "epoch": 15,
+        "robust": 0.6492574339573229,
+        "train_augmented_mixup_loss": 0.6937120156999156,
+        "monitor_loss": 0.4777747609615326,
+        "monitor_ba": 0.9893709829677638,
+        "source_ba": {
+          "HAM10000": 0.771296437366472,
+          "BCN20000": 0.5923869055305316,
+          "PAD-UFES-20": 0.7547005442553388
+        },
+        "source_loss": {
+          "HAM10000": 0.7528181876590911,
+          "BCN20000": 1.1294116574191602,
+          "PAD-UFES-20": 0.9083062814760812
+        },
+        "lr": 5.567415893174884e-05
+      },
+      "last": {
+        "epoch": 20,
+        "robust": 0.6387946273461669,
+        "train_augmented_mixup_loss": 0.6697323813225566,
+        "monitor_loss": 0.4635063678423564,
+        "monitor_ba": 0.9956651399960775,
+        "source_ba": {
+          "HAM10000": 0.7559429418247182,
+          "BCN20000": 0.5822925196168506,
+          "PAD-UFES-20": 0.7476547437848807
+        },
+        "source_loss": {
+          "HAM10000": 0.7472069721589697,
+          "BCN20000": 1.141078106710844,
+          "PAD-UFES-20": 0.9390326679507388
+        },
+        "lr": 3.0366536167747885e-05
+      },
+      "best_to_stop": {
+        "robust_delta_pp": -1.0462806611156061,
+        "monitor_ba_delta_pp": 0.6294157028313707,
+        "monitor_loss_delta": -0.014268393119176215,
+        "augmented_mixup_loss_delta": -0.02397963437735895,
+        "sources": {
+          "HAM10000": {
+            "ba_delta_pp": -1.5353495541753803,
+            "loss_delta": -0.005611215500121447
+          },
+          "BCN20000": {
+            "ba_delta_pp": -1.0094385913681059,
+            "loss_delta": 0.011666449291683811
+          },
+          "PAD-UFES-20": {
+            "ba_delta_pp": -0.7045800470458108,
+            "loss_delta": 0.03072638647465764
+          }
+        }
+      },
+      "within_observed_history": {
+        "worst_source_counts": {
+          "HAM10000": 0,
+          "BCN20000": 20,
+          "PAD-UFES-20": 0
+        },
+        "monitor_at_best_minus_source_pp": {
+          "HAM10000": 21.80745456012918,
+          "BCN20000": 39.698407743723216,
+          "PAD-UFES-20": 23.4670438712425
+        },
+        "loss_min_epoch": {
+          "HAM10000": 7,
+          "BCN20000": 3,
+          "PAD-UFES-20": 2
+        },
+        "source_max_ba_epoch": {
+          "HAM10000": 7,
+          "BCN20000": 15,
+          "PAD-UFES-20": 11
+        },
+        "source_max_ba_value": {
+          "HAM10000": 0.8004913182275015,
+          "BCN20000": 0.5923869055305316,
+          "PAD-UFES-20": 0.7656421521147548
+        }
+      }
+    },
+    {
+      "group": "alpha025",
+      "seed": 3,
+      "run_id": "1fc8933da4aa4a25aa902729874cf894",
+      "best_epoch": 5,
+      "stop_epoch": 12,
+      "first": {
+        "epoch": 1,
+        "robust": 0.5296146452928445,
+        "train_augmented_mixup_loss": 1.2402841407543597,
+        "monitor_loss": 1.2025234643618266,
+        "monitor_ba": 0.612865121883544,
+        "source_ba": {
+          "HAM10000": 0.5743599988702514,
+          "BCN20000": 0.4851407524106252,
+          "PAD-UFES-20": 0.6627648632443153
+        },
+        "source_loss": {
+          "HAM10000": 0.8653157030014281,
+          "BCN20000": 1.1320738054324533,
+          "PAD-UFES-20": 0.918195138400114
+        },
+        "lr": 0.0001
+      },
+      "best": {
+        "epoch": 5,
+        "robust": 0.6692965649092816,
+        "train_augmented_mixup_loss": 0.8494524173791014,
+        "monitor_loss": 0.6166571516990662,
+        "monitor_ba": 0.9301527801332348,
+        "source_ba": {
+          "HAM10000": 0.76111967413242,
+          "BCN20000": 0.6274285928684541,
+          "PAD-UFES-20": 0.7449453438494535
+        },
+        "source_loss": {
+          "HAM10000": 0.7524496941490376,
+          "BCN20000": 1.0832125196390063,
+          "PAD-UFES-20": 0.9074782724621929
+        },
+        "lr": 9.572050015330873e-05
+      },
+      "last": {
+        "epoch": 12,
+        "robust": 0.6245446980122549,
+        "train_augmented_mixup_loss": 0.7216720795100862,
+        "monitor_loss": 0.5010654024283091,
+        "monitor_ba": 0.9801965748639173,
+        "source_ba": {
+          "HAM10000": 0.7622408095212962,
+          "BCN20000": 0.5601258140121645,
+          "PAD-UFES-20": 0.7445241225035746
+        },
+        "source_loss": {
+          "HAM10000": 0.759872224895244,
+          "BCN20000": 1.1613313891341752,
+          "PAD-UFES-20": 0.8733183718934844
+        },
+        "lr": 7.06334638322521e-05
+      },
+      "best_to_stop": {
+        "robust_delta_pp": -4.475186689702671,
+        "monitor_ba_delta_pp": 5.004379473068255,
+        "monitor_loss_delta": -0.1155917492707571,
+        "augmented_mixup_loss_delta": -0.12778033786901521,
+        "sources": {
+          "HAM10000": {
+            "ba_delta_pp": 0.11211353888762599,
+            "loss_delta": 0.007422530746206357
+          },
+          "BCN20000": {
+            "ba_delta_pp": -6.730277885628954,
+            "loss_delta": 0.07811886949516889
+          },
+          "PAD-UFES-20": {
+            "ba_delta_pp": -0.042122134587896376,
+            "loss_delta": -0.034159900568708546
+          }
+        }
+      },
+      "within_observed_history": {
+        "worst_source_counts": {
+          "HAM10000": 0,
+          "BCN20000": 12,
+          "PAD-UFES-20": 0
+        },
+        "monitor_at_best_minus_source_pp": {
+          "HAM10000": 16.90331060008148,
+          "BCN20000": 30.27241872647807,
+          "PAD-UFES-20": 18.52074362837812
+        },
+        "loss_min_epoch": {
+          "HAM10000": 8,
+          "BCN20000": 3,
+          "PAD-UFES-20": 12
+        },
+        "source_max_ba_epoch": {
+          "HAM10000": 8,
+          "BCN20000": 4,
+          "PAD-UFES-20": 3
+        },
+        "source_max_ba_value": {
+          "HAM10000": 0.8096958694810663,
+          "BCN20000": 0.6317996576896491,
+          "PAD-UFES-20": 0.7460872422858723
+        }
+      }
+    }
+  ],
+  "n_saved_epochs": 84,
+  "limits": [
+    "Train monitor is mixed source-class-stratified subset of 1500, not per-source training evaluation.",
+    "Augmented MixUp+LS training loss is not commensurate with eval monitor/Validation LS loss.",
+    "Monitor and source Validation use same deterministic eval transforms but different membership/composition.",
+    "Observed source maximum epochs are diagnostic only; never reselect deployed/best checkpoint by source.",
+    "Cannot infer an unobserved future peak or prove domain shift from a mixed monitor gap."
+  ]
+}

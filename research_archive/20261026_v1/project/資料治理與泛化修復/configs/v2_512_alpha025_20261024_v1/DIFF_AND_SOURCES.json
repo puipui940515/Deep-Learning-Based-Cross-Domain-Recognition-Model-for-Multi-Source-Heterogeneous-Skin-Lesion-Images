@@ -1,0 +1,62 @@
+{
+  "scientific_diff": [
+    {
+      "path": "/training/class_balance_alpha",
+      "before": 0.5,
+      "after": 0.25
+    }
+  ],
+  "all_candidate_json_differences": [
+    {
+      "path": "/experiment/confirmation_note",
+      "before": "Approved first-round controlled initialization baseline, 2026-10-19; native MLP/ResNet hyperparameters retained; V2 layer_decay=1.0; workers=4, AMP=True subject to GPU acceptance.",
+      "after": "Recipe approved by direct user instruction 2026-10-24; only alpha .5->.25 vs original 512. C configuration-only delivery; B compatibility/runtime acceptance pending. See AUTHORIZATION.md."
+    },
+    {
+      "path": "/experiment/id",
+      "before": "v2in_res512",
+      "after": "v2in_res512_alpha025"
+    },
+    {
+      "path": "/optimization/authorization_sha256",
+      "before": "a946ba701ceaf6ad5bddf1461f57a38a894a52d511d9de0ddb4d3389ce25e703",
+      "after": "83eecd31687be5e48fa704155bab4a7358b61a9e94aaf2f7c3b8a81773d21ee9"
+    },
+    {
+      "path": "/optimization/version",
+      "before": "v2_resolution_20261021_v1",
+      "after": "v2_512_alpha025_20261024_v1"
+    },
+    {
+      "path": "/pipeline_id",
+      "before": "five_model_baseline_20261019_v1",
+      "after": "v2_512_alpha025_20261024_v1"
+    },
+    {
+      "path": "/training/class_balance_alpha",
+      "before": 0.5,
+      "after": 0.25
+    }
+  ],
+  "inherited_metadata_note": "formal_suite.baseline_config_sha256 and experiment.native_setting_sources are historical origin identities only, not new authorization/runtime acceptance. Old data_definition.training_manifest string retained as provenance; formal_suite.manifest_release is effective.",
+  "source_sha256": {
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\v2in_res512.json": "190dab3b13fe74ce325077d902bca2619c91f0505c64dc213c888f4b37916aa9",
+    "D:\\SkinDetect_base\\recovery_20261023\\D_v2_analysis\\resolution_decision_20261024_v1\\DECISION.md": "6374cb686c07fa2c3033e84c4a3245c609541bed35758ddc7a81636bb219954d",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\run_inputs.json": "8366c03079ba04242593656ca4dc8052d53b174d67a9118c8c45c84ddd8cd057",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\result.json": "3d7f4c4d7c8d5f789abad945d223d7e881053260bae2d637a35c988a57e60839",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\run_inputs.json": "f13838dbb89b5a35d6a398fc1aff8e213ca22202c85a6582bd3f20ddd47675d0",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\result.json": "c2c25759b90b0131ae256524df73f8f6ba525674ca9a41e34c63cf85f6325daa",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\run_inputs.json": "e316e656a8c3c3e2019bdc0aa5bc546529dc0d2b3046c063290eb7ab40f0822a",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\result.json": "e33bd7d7dd8d8f93db5e5887b1bcbe9e446d9cafb134196496f832bc95bbb494",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\train_regularized.py": "5307539f6128219aa5cd9998fc74288f95eac1062b4206ba8b3480c349203610",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\model_profiles.py": "064a0b7720b7b3d5c17bc99a25d27b24ad3bba0b2d02bb626967551a514f21df",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\v2_resolution_contract.py": "412af64f771bf62af4c3be24bcbefccc1fc4a7c54cbd8c34d9fc7d070267ab0b",
+    "D:\\SkinDetect_base\\資料治理與泛化修復\\scripts\\training_state.py": "13b3ebdb3b43c4ffb8dd202912e035a4bfe745f44488b58ee242fd0928964498",
+    "D:\\SkinDetect_base\\第二階段\\src\\stage2\\models.py": "5d23c92718c2539ba16195b24065b8eb7f08b7fd07a2bfe41dd2d4bf8f999657",
+    "D:\\SkinDetect_base\\recovery_20261023\\B_training\\runtime.json": "ec533dbf3edf0de238ce179410cc550d08fd9f987489d8c745434ca2753fdb4a",
+    "D:\\SkinDetect_base\\.venv-skindetect-recovery-20261023\\Lib\\site-packages\\torch\\optim\\adamw.py": "b54164da70821c47d1e4753907d375eb252773bd034863b7804a943fbdfa837a",
+    "D:\\SkinDetect_base\\.venv-skindetect-recovery-20261023\\Lib\\site-packages\\timm\\models\\convnext.py": "84345f20872589a0ab62f1bbc8b3ad750863aece995bda28db2a8b35ca0897a6"
+  },
+  "candidate_base_path": "資料治理與泛化修復\\configs\\v2_resolution_20261021_v1\\v2in_res512.json",
+  "old_source_versions_not_reused_as_new_evidence": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-10-25T14:10:51.376256+08:00",
+  "status": "Base first complete epoch; study still running",
+  "run_id": "efc7718472e14007be0686800f5183c3",
+  "seed": 1,
+  "epoch": 1,
+  "micro_batch": 2,
+  "accumulation": 32,
+  "source": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_base\\regularized_seed1\\metrics_940124154cce4f67be1909557255f03f.jsonl",
+  "checkpoint_index": {
+    "format_version": 1,
+    "generations": [
+      {
+        "file": "epoch-0001-7f2ad692e6c34f9b8c53866885dd9903.pt",
+        "epoch": 1,
+        "sha256": "624cb502e461f254f92e6c94ecb25338df46ce9f1ec4c5870ef565595e935cb4"
+      }
+    ]
+  },
+  "checkpoint_exists": true,
+  "best_exists": true,
+  "best_bytes": 350917959,
+  "epoch_seconds": 807.3796653999889,
+  "train_seconds": 714.0543827000074,
+  "data_wait_seconds": 11.777464699203847,
+  "batch_processing_seconds": 702.2752268007898,
+  "train_monitor_seconds": 26.327419800014468,
+  "validation_seconds": 64.7242742999806,
+  "checkpoint_seconds": 2.218294299993431,
+  "train_images_per_second": 26.49518084107658,
+  "validation_images_per_second": 55.79050578866177,
+  "peak_allocated_gib": 3.769829273223877,
+  "peak_reserved_gib": 3.83203125,
+  "robust": 0.5122577377924281,
+  "remaining_to_min12_hours": 2.4669934220555216,
+  "remaining_to_max30_hours": 6.503891749055466,
+  "initial_optimizer_empty": true,
+  "device": "cuda",
+  "initialization_cost_caveat": "First epoch includes loader/CUDA warm-up; model initialization separately in attempt. Later rolling estimate excludes first epoch.",
+  "large_status": "pending",
+  "huge_status": "skipped_estimate",
+  "weights_rehashed_or_loaded_for_observation": false
+}

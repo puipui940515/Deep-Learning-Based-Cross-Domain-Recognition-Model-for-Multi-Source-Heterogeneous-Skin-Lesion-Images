@@ -1,0 +1,4182 @@
+{
+  "version": "v2_tiny_base512_relu_stage_dropout_20261026_v1",
+  "status": "paused",
+  "rows": {
+    "tiny_seed1": {
+      "status": "completed",
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 1,
+      "size": "tiny",
+      "micro_batch": 8,
+      "accumulation": 8,
+      "epochs_completed": 30,
+      "started_utc": "2026-10-26T05:30:44.055547+00:00",
+      "command": [
+        ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "utf8",
+        "資料治理與泛化修復\\scripts\\train_regularized.py",
+        "--config",
+        "資料治理與泛化修復\\configs\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\v2in_tiny512_relu_stage_dropout.json",
+        "--seed",
+        "1",
+        "--manifest-release",
+        "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+        "--output-root",
+        "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout",
+        "--require-cuda",
+        "--formal"
+      ],
+      "stdout": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\logs\\tiny_seed1_f431d0973f6a49d691f9c21993e3559d.stdout.log",
+      "stderr": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\logs\\tiny_seed1_f431d0973f6a49d691f9c21993e3559d.stderr.log",
+      "pid": 7532,
+      "run_id": "f49f7c0aa4644917839363f44e3d1d3d",
+      "best_epoch": 28,
+      "best_robust": 0.4826634148220117,
+      "ended_utc": "2026-10-26T08:31:11.432493+00:00",
+      "attempt_receipt": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\attempts\\attempt_f431d0973f6a49d691f9c21993e3559d.json",
+      "exit_code": 0,
+      "stop_reason": "max_epochs",
+      "metrics": {
+        "values": {
+          "robust": 0.4826634148220117,
+          "accuracy": 0.6410966491276655,
+          "macro_f1": 0.5030727261331104,
+          "combined_mel": 0.5553359683794467,
+          "HAM10000:ba": 0.5871250941292624,
+          "HAM10000:AKIEC": 0.2857142857142857,
+          "HAM10000:BCC": 0.7532467532467533,
+          "HAM10000:BKL": 0.3939393939393939,
+          "HAM10000:DF": 0.4444444444444444,
+          "HAM10000:NV": 0.841948310139165,
+          "HAM10000:VASC": 0.8636363636363636,
+          "HAM10000:MEL": 0.5269461077844312,
+          "BCN20000:ba": 0.43640213568008474,
+          "BCN20000:AKIEC": 0.1415929203539823,
+          "BCN20000:BCC": 0.7740112994350282,
+          "BCN20000:BKL": 0.09392265193370165,
+          "BCN20000:DF": 0.30303030303030304,
+          "BCN20000:NV": 0.6422287390029325,
+          "BCN20000:VASC": 0.5238095238095238,
+          "BCN20000:MEL": 0.5762195121951219,
+          "PAD-UFES-20:ba": 0.5632468520824685,
+          "PAD-UFES-20:AKIEC": 0.6222222222222222,
+          "PAD-UFES-20:BCC": 0.8493150684931506,
+          "PAD-UFES-20:BKL": 0.2727272727272727,
+          "PAD-UFES-20:NV": 0.7083333333333334,
+          "PAD-UFES-20:MEL": 0.36363636363636365
+        },
+        "diseases": {
+          "HAM10000": {
+            "AKIEC": {
+              "tp": 14,
+              "support": 49,
+              "recall": 0.2857142857142857
+            },
+            "BCC": {
+              "tp": 58,
+              "support": 77,
+              "recall": 0.7532467532467533
+            },
+            "BKL": {
+              "tp": 65,
+              "support": 165,
+              "recall": 0.3939393939393939
+            },
+            "DF": {
+              "tp": 8,
+              "support": 18,
+              "recall": 0.4444444444444444
+            },
+            "NV": {
+              "tp": 847,
+              "support": 1006,
+              "recall": 0.841948310139165
+            },
+            "VASC": {
+              "tp": 19,
+              "support": 22,
+              "recall": 0.8636363636363636
+            },
+            "MEL": {
+              "tp": 88,
+              "support": 167,
+              "recall": 0.5269461077844312
+            }
+          },
+          "BCN20000": {
+            "AKIEC": {
+              "tp": 16,
+              "support": 113,
+              "recall": 0.1415929203539823
+            },
+            "BCC": {
+              "tp": 274,
+              "support": 354,
+              "recall": 0.7740112994350282
+            },
+            "BKL": {
+              "tp": 17,
+              "support": 181,
+              "recall": 0.09392265193370165
+            },
+            "DF": {
+              "tp": 10,
+              "support": 33,
+              "recall": 0.30303030303030304
+            },
+            "NV": {
+              "tp": 438,
+              "support": 682,
+              "recall": 0.6422287390029325
+            },
+            "VASC": {
+              "tp": 11,
+              "support": 21,
+              "recall": 0.5238095238095238
+            },
+            "MEL": {
+              "tp": 189,
+              "support": 328,
+              "recall": 0.5762195121951219
+            }
+          },
+          "PAD-UFES-20": {
+            "AKIEC": {
+              "tp": 84,
+              "support": 135,
+              "recall": 0.6222222222222222
+            },
+            "BCC": {
+              "tp": 124,
+              "support": 146,
+              "recall": 0.8493150684931506
+            },
+            "BKL": {
+              "tp": 15,
+              "support": 55,
+              "recall": 0.2727272727272727
+            },
+            "NV": {
+              "tp": 34,
+              "support": 48,
+              "recall": 0.7083333333333334
+            },
+            "MEL": {
+              "tp": 4,
+              "support": 11,
+              "recall": 0.36363636363636365
+            }
+          }
+        },
+        "merged_confusion_matrix": [
+          [
+            114,
+            139,
+            11,
+            12,
+            14,
+            0,
+            7
+          ],
+          [
+            50,
+            456,
+            7,
+            14,
+            17,
+            11,
+            22
+          ],
+          [
+            46,
+            95,
+            97,
+            9,
+            70,
+            4,
+            80
+          ],
+          [
+            0,
+            26,
+            0,
+            18,
+            4,
+            0,
+            3
+          ],
+          [
+            13,
+            113,
+            45,
+            24,
+            1319,
+            12,
+            210
+          ],
+          [
+            0,
+            8,
+            0,
+            3,
+            1,
+            30,
+            1
+          ],
+          [
+            15,
+            50,
+            38,
+            2,
+            114,
+            6,
+            281
+          ]
+        ],
+        "best_epoch": 28,
+        "validation_by_source": {
+          "HAM10000": {
+            "balanced_accuracy": 0.5871250941292624,
+            "macro_f1": 0.5370405148762075,
+            "accuracy": 0.730718085106383,
+            "ece": 0.08626828052495883,
+            "recall_per_class": [
+              0.2857142857142857,
+              0.7532467532467533,
+              0.3939393939393939,
+              0.4444444444444444,
+              0.841948310139165,
+              0.8636363636363636,
+              0.5269461077844312
+            ],
+            "confusion_matrix": [
+              [
+                14,
+                29,
+                4,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                5,
+                58,
+                2,
+                2,
+                1,
+                4,
+                5
+              ],
+              [
+                14,
+                32,
+                65,
+                4,
+                22,
+                0,
+                28
+              ],
+              [
+                0,
+                6,
+                0,
+                8,
+                4,
+                0,
+                0
+              ],
+              [
+                4,
+                35,
+                28,
+                6,
+                847,
+                3,
+                83
+              ],
+              [
+                0,
+                2,
+                0,
+                0,
+                0,
+                19,
+                1
+              ],
+              [
+                4,
+                10,
+                24,
+                2,
+                38,
+                1,
+                88
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 1.0040508825728234,
+            "samples": 1504
+          },
+          "BCN20000": {
+            "balanced_accuracy": 0.43640213568008474,
+            "macro_f1": 0.39484942878226953,
+            "accuracy": 0.5578271028037384,
+            "ece": 0.06073495429478213,
+            "recall_per_class": [
+              0.1415929203539823,
+              0.7740112994350282,
+              0.09392265193370165,
+              0.30303030303030304,
+              0.6422287390029325,
+              0.5238095238095238,
+              0.5762195121951219
+            ],
+            "confusion_matrix": [
+              [
+                16,
+                62,
+                6,
+                12,
+                10,
+                0,
+                7
+              ],
+              [
+                28,
+                274,
+                4,
+                12,
+                12,
+                7,
+                17
+              ],
+              [
+                18,
+                56,
+                17,
+                5,
+                39,
+                4,
+                42
+              ],
+              [
+                0,
+                20,
+                0,
+                10,
+                0,
+                0,
+                3
+              ],
+              [
+                7,
+                69,
+                16,
+                18,
+                438,
+                9,
+                125
+              ],
+              [
+                0,
+                6,
+                0,
+                3,
+                1,
+                11,
+                0
+              ],
+              [
+                11,
+                39,
+                10,
+                0,
+                74,
+                5,
+                189
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 1.3570065297813059,
+            "samples": 1712
+          },
+          "PAD-UFES-20": {
+            "balanced_accuracy": 0.5632468520824685,
+            "macro_f1": 0.5559481093809452,
+            "accuracy": 0.660759493670886,
+            "ece": 0.08424771490322297,
+            "recall_per_class": [
+              0.6222222222222222,
+              0.8493150684931506,
+              0.2727272727272727,
+              0.0,
+              0.7083333333333334,
+              0.0,
+              0.36363636363636365
+            ],
+            "confusion_matrix": [
+              [
+                84,
+                48,
+                1,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                17,
+                124,
+                1,
+                0,
+                4,
+                0,
+                0
+              ],
+              [
+                14,
+                7,
+                15,
+                0,
+                9,
+                0,
+                10
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                9,
+                1,
+                0,
+                34,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                4,
+                0,
+                2,
+                0,
+                4
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "loss": 1.0990287987491754,
+            "samples": 395
+          }
+        }
+      },
+      "result": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed1\\result.json",
+      "receipt": {
+        "result.json": "b2716e142c0d3d40d3ffd36ed2e6098b484f7709756d6d1f6f5fde9c331dceb1",
+        "run_inputs.json": "6306ce49733e47cc14206769c23711e6fb566046c848fa4dd2a1d5b17b602e58",
+        "checkpoints/index.json": "eb1e33edad1585d7471d49a37ebf104a1c63a3ed8599b82f3514af45758d57ce"
+      },
+      "large_weight_integrity": "native CheckpointStore wrote and SHA-verified each generation; no redundant postrun large-file scan"
+    },
+    "tiny_seed2": {
+      "status": "completed",
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 2,
+      "size": "tiny",
+      "micro_batch": 8,
+      "accumulation": 8,
+      "epochs_completed": 30,
+      "started_utc": "2026-10-26T08:31:12.403160+00:00",
+      "command": [
+        ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "utf8",
+        "資料治理與泛化修復\\scripts\\train_regularized.py",
+        "--config",
+        "資料治理與泛化修復\\configs\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\v2in_tiny512_relu_stage_dropout.json",
+        "--seed",
+        "2",
+        "--manifest-release",
+        "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+        "--output-root",
+        "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout",
+        "--require-cuda",
+        "--formal"
+      ],
+      "stdout": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\logs\\tiny_seed2_4bb6eaf7620f40889a7f3b64fb450964.stdout.log",
+      "stderr": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\logs\\tiny_seed2_4bb6eaf7620f40889a7f3b64fb450964.stderr.log",
+      "pid": 15684,
+      "run_id": "951d46aece144af2a7aa9dc6b0b0f145",
+      "best_epoch": 28,
+      "best_robust": 0.5576580270910849,
+      "ended_utc": "2026-10-26T11:31:24.452035+00:00",
+      "attempt_receipt": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\attempts\\attempt_4bb6eaf7620f40889a7f3b64fb450964.json",
+      "exit_code": 0,
+      "stop_reason": "max_epochs",
+      "metrics": {
+        "values": {
+          "robust": 0.5576580270910849,
+          "accuracy": 0.6989753530877874,
+          "macro_f1": 0.5948696507619793,
+          "combined_mel": 0.5375494071146245,
+          "HAM10000:ba": 0.6455153688189057,
+          "HAM10000:AKIEC": 0.5918367346938775,
+          "HAM10000:BCC": 0.7142857142857143,
+          "HAM10000:BKL": 0.6,
+          "HAM10000:DF": 0.5,
+          "HAM10000:NV": 0.8906560636182903,
+          "HAM10000:VASC": 0.7727272727272727,
+          "HAM10000:MEL": 0.4491017964071856,
+          "BCN20000:ba": 0.5247970965454566,
+          "BCN20000:AKIEC": 0.4247787610619469,
+          "BCN20000:BCC": 0.6638418079096046,
+          "BCN20000:BKL": 0.2541436464088398,
+          "BCN20000:DF": 0.12121212121212122,
+          "BCN20000:NV": 0.7609970674486803,
+          "BCN20000:VASC": 0.8571428571428571,
+          "BCN20000:MEL": 0.5914634146341463,
+          "PAD-UFES-20:ba": 0.6012444075457773,
+          "PAD-UFES-20:AKIEC": 0.9481481481481482,
+          "PAD-UFES-20:BCC": 0.6095890410958904,
+          "PAD-UFES-20:BKL": 0.509090909090909,
+          "PAD-UFES-20:NV": 0.6666666666666666,
+          "PAD-UFES-20:MEL": 0.2727272727272727
+        },
+        "diseases": {
+          "HAM10000": {
+            "AKIEC": {
+              "tp": 29,
+              "support": 49,
+              "recall": 0.5918367346938775
+            },
+            "BCC": {
+              "tp": 55,
+              "support": 77,
+              "recall": 0.7142857142857143
+            },
+            "BKL": {
+              "tp": 99,
+              "support": 165,
+              "recall": 0.6
+            },
+            "DF": {
+              "tp": 9,
+              "support": 18,
+              "recall": 0.5
+            },
+            "NV": {
+              "tp": 896,
+              "support": 1006,
+              "recall": 0.8906560636182903
+            },
+            "VASC": {
+              "tp": 17,
+              "support": 22,
+              "recall": 0.7727272727272727
+            },
+            "MEL": {
+              "tp": 75,
+              "support": 167,
+              "recall": 0.4491017964071856
+            }
+          },
+          "BCN20000": {
+            "AKIEC": {
+              "tp": 48,
+              "support": 113,
+              "recall": 0.4247787610619469
+            },
+            "BCC": {
+              "tp": 235,
+              "support": 354,
+              "recall": 0.6638418079096046
+            },
+            "BKL": {
+              "tp": 46,
+              "support": 181,
+              "recall": 0.2541436464088398
+            },
+            "DF": {
+              "tp": 4,
+              "support": 33,
+              "recall": 0.12121212121212122
+            },
+            "NV": {
+              "tp": 519,
+              "support": 682,
+              "recall": 0.7609970674486803
+            },
+            "VASC": {
+              "tp": 18,
+              "support": 21,
+              "recall": 0.8571428571428571
+            },
+            "MEL": {
+              "tp": 194,
+              "support": 328,
+              "recall": 0.5914634146341463
+            }
+          },
+          "PAD-UFES-20": {
+            "AKIEC": {
+              "tp": 128,
+              "support": 135,
+              "recall": 0.9481481481481482
+            },
+            "BCC": {
+              "tp": 89,
+              "support": 146,
+              "recall": 0.6095890410958904
+            },
+            "BKL": {
+              "tp": 28,
+              "support": 55,
+              "recall": 0.509090909090909
+            },
+            "NV": {
+              "tp": 32,
+              "support": 48,
+              "recall": 0.6666666666666666
+            },
+            "MEL": {
+              "tp": 3,
+              "support": 11,
+              "recall": 0.2727272727272727
+            }
+          }
+        },
+        "merged_confusion_matrix": [
+          [
+            205,
+            47,
+            34,
+            3,
+            6,
+            1,
+            1
+          ],
+          [
+            129,
+            379,
+            22,
+            1,
+            21,
+            3,
+            22
+          ],
+          [
+            60,
+            34,
+            173,
+            7,
+            76,
+            4,
+            47
+          ],
+          [
+            12,
+            12,
+            2,
+            13,
+            10,
+            1,
+            1
+          ],
+          [
+            21,
+            45,
+            91,
+            5,
+            1447,
+            2,
+            125
+          ],
+          [
+            0,
+            6,
+            0,
+            0,
+            2,
+            35,
+            0
+          ],
+          [
+            32,
+            19,
+            64,
+            1,
+            117,
+            1,
+            272
+          ]
+        ],
+        "best_epoch": 28,
+        "validation_by_source": {
+          "HAM10000": {
+            "balanced_accuracy": 0.6455153688189057,
+            "macro_f1": 0.6254496525819062,
+            "accuracy": 0.7845744680851063,
+            "ece": 0.07910171641177419,
+            "recall_per_class": [
+              0.5918367346938775,
+              0.7142857142857143,
+              0.6,
+              0.5,
+              0.8906560636182903,
+              0.7727272727272727,
+              0.4491017964071856
+            ],
+            "confusion_matrix": [
+              [
+                29,
+                11,
+                7,
+                2,
+                0,
+                0,
+                0
+              ],
+              [
+                10,
+                55,
+                7,
+                1,
+                1,
+                2,
+                1
+              ],
+              [
+                16,
+                7,
+                99,
+                6,
+                26,
+                0,
+                11
+              ],
+              [
+                2,
+                1,
+                0,
+                9,
+                6,
+                0,
+                0
+              ],
+              [
+                4,
+                13,
+                43,
+                2,
+                896,
+                0,
+                48
+              ],
+              [
+                0,
+                3,
+                0,
+                0,
+                2,
+                17,
+                0
+              ],
+              [
+                10,
+                5,
+                30,
+                1,
+                46,
+                0,
+                75
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 0.8992296016596734,
+            "samples": 1504
+          },
+          "BCN20000": {
+            "balanced_accuracy": 0.5247970965454566,
+            "macro_f1": 0.5094676313054737,
+            "accuracy": 0.6214953271028038,
+            "ece": 0.05765922047698739,
+            "recall_per_class": [
+              0.4247787610619469,
+              0.6638418079096046,
+              0.2541436464088398,
+              0.12121212121212122,
+              0.7609970674486803,
+              0.8571428571428571,
+              0.5914634146341463
+            ],
+            "confusion_matrix": [
+              [
+                48,
+                32,
+                25,
+                1,
+                5,
+                1,
+                1
+              ],
+              [
+                71,
+                235,
+                12,
+                0,
+                15,
+                1,
+                20
+              ],
+              [
+                34,
+                24,
+                46,
+                1,
+                39,
+                4,
+                33
+              ],
+              [
+                10,
+                11,
+                2,
+                4,
+                4,
+                1,
+                1
+              ],
+              [
+                16,
+                28,
+                38,
+                3,
+                519,
+                1,
+                77
+              ],
+              [
+                0,
+                3,
+                0,
+                0,
+                0,
+                18,
+                0
+              ],
+              [
+                21,
+                13,
+                29,
+                0,
+                70,
+                1,
+                194
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 1.2771849910789561,
+            "samples": 1712
+          },
+          "PAD-UFES-20": {
+            "balanced_accuracy": 0.6012444075457773,
+            "macro_f1": 0.608660262186711,
+            "accuracy": 0.7088607594936709,
+            "ece": 0.08111782900291879,
+            "recall_per_class": [
+              0.9481481481481482,
+              0.6095890410958904,
+              0.509090909090909,
+              0.0,
+              0.6666666666666666,
+              0.0,
+              0.2727272727272727
+            ],
+            "confusion_matrix": [
+              [
+                128,
+                4,
+                2,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                48,
+                89,
+                3,
+                0,
+                5,
+                0,
+                1
+              ],
+              [
+                10,
+                3,
+                28,
+                0,
+                11,
+                0,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                4,
+                10,
+                0,
+                32,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                5,
+                0,
+                1,
+                0,
+                3
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "loss": 1.0878312963473646,
+            "samples": 395
+          }
+        }
+      },
+      "result": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout\\regularized_seed2\\result.json",
+      "receipt": {
+        "result.json": "4f40c5eaf540ae2e0b1c8647e7af75e3d673d6b89dd49ea0372944c760416d50",
+        "run_inputs.json": "1858932423502f52096e35f9bcd413657d57a80903d26cada9b748a35f8908a8",
+        "checkpoints/index.json": "b81c7a8e0cb77656fe46a5cfcd46fc71fcce0d57f61309fe65c0ebd773dadafe"
+      },
+      "large_weight_integrity": "native CheckpointStore wrote and SHA-verified each generation; no redundant postrun large-file scan"
+    },
+    "tiny_seed3": {
+      "status": "paused",
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 3,
+      "size": "tiny",
+      "micro_batch": 8,
+      "accumulation": 8,
+      "epochs_completed": 4,
+      "started_utc": "2026-10-26T11:31:25.337053+00:00",
+      "command": [
+        ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "utf8",
+        "資料治理與泛化修復\\scripts\\train_regularized.py",
+        "--config",
+        "資料治理與泛化修復\\configs\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\v2in_tiny512_relu_stage_dropout.json",
+        "--seed",
+        "3",
+        "--manifest-release",
+        "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+        "--output-root",
+        "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout",
+        "--require-cuda",
+        "--formal"
+      ],
+      "stdout": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\logs\\tiny_seed3_596149531ec54e8f8e8a28e63ace7940.stdout.log",
+      "stderr": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\logs\\tiny_seed3_596149531ec54e8f8e8a28e63ace7940.stderr.log",
+      "pid": 25688,
+      "run_id": "d920dd58fbc144ea96ab652d8eac526c",
+      "best_epoch": 1,
+      "best_robust": 0.1523809523809524,
+      "ended_utc": "2026-10-26T11:56:33.702305+00:00",
+      "attempt_receipt": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\attempts\\attempt_596149531ec54e8f8e8a28e63ace7940.json",
+      "exit_code": 0
+    },
+    "base_seed1": {
+      "status": "pending",
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 1,
+      "size": "base",
+      "micro_batch": 2,
+      "accumulation": 32,
+      "epochs_completed": 0
+    },
+    "base_seed2": {
+      "status": "pending",
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 2,
+      "size": "base",
+      "micro_batch": 2,
+      "accumulation": 32,
+      "epochs_completed": 0
+    },
+    "base_seed3": {
+      "status": "pending",
+      "candidate": "v2in_base512_relu_stage_dropout",
+      "seed": 3,
+      "size": "base",
+      "micro_batch": 2,
+      "accumulation": 32,
+      "epochs_completed": 0
+    }
+  },
+  "references": {
+    "original_tiny_seed1": {
+      "seed": 1,
+      "run_id": "1e32c15f7f13453983d2552608333e39",
+      "epochs_completed": 12,
+      "best_epoch": 4,
+      "micro_batch": 8,
+      "accumulation": 8,
+      "metrics": {
+        "values": {
+          "robust": 0.6714827353661315,
+          "accuracy": 0.7853780116311271,
+          "macro_f1": 0.7216270219417882,
+          "combined_mel": 0.5968379446640316,
+          "HAM10000:ba": 0.786288516604628,
+          "HAM10000:AKIEC": 0.7551020408163265,
+          "HAM10000:BCC": 0.9090909090909091,
+          "HAM10000:BKL": 0.8,
+          "HAM10000:DF": 0.7222222222222222,
+          "HAM10000:NV": 0.8946322067594433,
+          "HAM10000:VASC": 0.8181818181818182,
+          "HAM10000:MEL": 0.6047904191616766,
+          "BCN20000:ba": 0.6303321374052585,
+          "BCN20000:AKIEC": 0.5309734513274337,
+          "BCN20000:BCC": 0.8700564971751412,
+          "BCN20000:BKL": 0.5580110497237569,
+          "BCN20000:DF": 0.42424242424242425,
+          "BCN20000:NV": 0.8093841642228738,
+          "BCN20000:VASC": 0.6190476190476191,
+          "BCN20000:MEL": 0.600609756097561,
+          "PAD-UFES-20:ba": 0.7212793459711268,
+          "PAD-UFES-20:AKIEC": 0.837037037037037,
+          "PAD-UFES-20:BCC": 0.8424657534246576,
+          "PAD-UFES-20:BKL": 0.7090909090909091,
+          "PAD-UFES-20:NV": 0.8541666666666666,
+          "PAD-UFES-20:MEL": 0.36363636363636365
+        },
+        "diseases": {
+          "HAM10000": {
+            "AKIEC": {
+              "tp": 37,
+              "support": 49,
+              "recall": 0.7551020408163265
+            },
+            "BCC": {
+              "tp": 70,
+              "support": 77,
+              "recall": 0.9090909090909091
+            },
+            "BKL": {
+              "tp": 132,
+              "support": 165,
+              "recall": 0.8
+            },
+            "DF": {
+              "tp": 13,
+              "support": 18,
+              "recall": 0.7222222222222222
+            },
+            "NV": {
+              "tp": 900,
+              "support": 1006,
+              "recall": 0.8946322067594433
+            },
+            "VASC": {
+              "tp": 18,
+              "support": 22,
+              "recall": 0.8181818181818182
+            },
+            "MEL": {
+              "tp": 101,
+              "support": 167,
+              "recall": 0.6047904191616766
+            }
+          },
+          "BCN20000": {
+            "AKIEC": {
+              "tp": 60,
+              "support": 113,
+              "recall": 0.5309734513274337
+            },
+            "BCC": {
+              "tp": 308,
+              "support": 354,
+              "recall": 0.8700564971751412
+            },
+            "BKL": {
+              "tp": 101,
+              "support": 181,
+              "recall": 0.5580110497237569
+            },
+            "DF": {
+              "tp": 14,
+              "support": 33,
+              "recall": 0.42424242424242425
+            },
+            "NV": {
+              "tp": 552,
+              "support": 682,
+              "recall": 0.8093841642228738
+            },
+            "VASC": {
+              "tp": 13,
+              "support": 21,
+              "recall": 0.6190476190476191
+            },
+            "MEL": {
+              "tp": 197,
+              "support": 328,
+              "recall": 0.600609756097561
+            }
+          },
+          "PAD-UFES-20": {
+            "AKIEC": {
+              "tp": 113,
+              "support": 135,
+              "recall": 0.837037037037037
+            },
+            "BCC": {
+              "tp": 123,
+              "support": 146,
+              "recall": 0.8424657534246576
+            },
+            "BKL": {
+              "tp": 39,
+              "support": 55,
+              "recall": 0.7090909090909091
+            },
+            "NV": {
+              "tp": 41,
+              "support": 48,
+              "recall": 0.8541666666666666
+            },
+            "MEL": {
+              "tp": 4,
+              "support": 11,
+              "recall": 0.36363636363636365
+            }
+          }
+        },
+        "merged_confusion_matrix": [
+          [
+            210,
+            43,
+            27,
+            1,
+            4,
+            0,
+            12
+          ],
+          [
+            28,
+            501,
+            5,
+            0,
+            17,
+            0,
+            26
+          ],
+          [
+            35,
+            17,
+            272,
+            0,
+            38,
+            4,
+            35
+          ],
+          [
+            4,
+            9,
+            2,
+            27,
+            6,
+            0,
+            3
+          ],
+          [
+            8,
+            28,
+            65,
+            4,
+            1493,
+            2,
+            136
+          ],
+          [
+            1,
+            7,
+            0,
+            0,
+            1,
+            31,
+            3
+          ],
+          [
+            19,
+            13,
+            31,
+            4,
+            135,
+            2,
+            302
+          ]
+        ],
+        "best_epoch": 4,
+        "validation_by_source": {
+          "HAM10000": {
+            "balanced_accuracy": 0.786288516604628,
+            "macro_f1": 0.7778683410263346,
+            "accuracy": 0.8450797872340425,
+            "ece": 0.06892298983528224,
+            "recall_per_class": [
+              0.7551020408163265,
+              0.9090909090909091,
+              0.8,
+              0.7222222222222222,
+              0.8946322067594433,
+              0.8181818181818182,
+              0.6047904191616766
+            ],
+            "confusion_matrix": [
+              [
+                37,
+                6,
+                3,
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                2,
+                70,
+                0,
+                0,
+                0,
+                0,
+                5
+              ],
+              [
+                11,
+                2,
+                132,
+                0,
+                8,
+                0,
+                12
+              ],
+              [
+                2,
+                0,
+                1,
+                13,
+                2,
+                0,
+                0
+              ],
+              [
+                1,
+                8,
+                36,
+                1,
+                900,
+                0,
+                60
+              ],
+              [
+                1,
+                2,
+                0,
+                0,
+                1,
+                18,
+                0
+              ],
+              [
+                5,
+                0,
+                16,
+                2,
+                43,
+                0,
+                101
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 0.7420423702990755,
+            "samples": 1504
+          },
+          "BCN20000": {
+            "balanced_accuracy": 0.6303321374052585,
+            "macro_f1": 0.6465700635502287,
+            "accuracy": 0.7272196261682243,
+            "ece": 0.04213068246573445,
+            "recall_per_class": [
+              0.5309734513274337,
+              0.8700564971751412,
+              0.5580110497237569,
+              0.42424242424242425,
+              0.8093841642228738,
+              0.6190476190476191,
+              0.600609756097561
+            ],
+            "confusion_matrix": [
+              [
+                60,
+                23,
+                18,
+                1,
+                3,
+                0,
+                8
+              ],
+              [
+                9,
+                308,
+                4,
+                0,
+                13,
+                0,
+                20
+              ],
+              [
+                21,
+                12,
+                101,
+                0,
+                20,
+                4,
+                23
+              ],
+              [
+                2,
+                9,
+                1,
+                14,
+                4,
+                0,
+                3
+              ],
+              [
+                6,
+                19,
+                25,
+                3,
+                552,
+                1,
+                76
+              ],
+              [
+                0,
+                5,
+                0,
+                0,
+                0,
+                13,
+                3
+              ],
+              [
+                14,
+                13,
+                11,
+                2,
+                89,
+                2,
+                197
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 1.0355389820081051,
+            "samples": 1712
+          },
+          "PAD-UFES-20": {
+            "balanced_accuracy": 0.7212793459711268,
+            "macro_f1": 0.7299662523567757,
+            "accuracy": 0.810126582278481,
+            "ece": 0.049108489093320294,
+            "recall_per_class": [
+              0.837037037037037,
+              0.8424657534246576,
+              0.7090909090909091,
+              0.0,
+              0.8541666666666666,
+              0.0,
+              0.36363636363636365
+            ],
+            "confusion_matrix": [
+              [
+                113,
+                14,
+                6,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                17,
+                123,
+                1,
+                0,
+                4,
+                0,
+                1
+              ],
+              [
+                3,
+                3,
+                39,
+                0,
+                10,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                1,
+                4,
+                0,
+                41,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                4,
+                0,
+                3,
+                0,
+                4
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "loss": 0.8576264935203746,
+            "samples": 395
+          }
+        }
+      },
+      "result": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\result.json"
+    },
+    "original_tiny_seed2": {
+      "seed": 2,
+      "run_id": "596afe643c5e4362bb8332fcad252f9f",
+      "epochs_completed": 15,
+      "best_epoch": 10,
+      "micro_batch": 8,
+      "accumulation": 8,
+      "metrics": {
+        "values": {
+          "robust": 0.6732853244492362,
+          "accuracy": 0.752423151481584,
+          "macro_f1": 0.6971705803117861,
+          "combined_mel": 0.7391304347826086,
+          "HAM10000:ba": 0.7673328244191467,
+          "HAM10000:AKIEC": 0.5510204081632653,
+          "HAM10000:BCC": 0.8441558441558441,
+          "HAM10000:BKL": 0.806060606060606,
+          "HAM10000:DF": 0.7777777777777778,
+          "HAM10000:NV": 0.7932405566600398,
+          "HAM10000:VASC": 0.7727272727272727,
+          "HAM10000:MEL": 0.8263473053892215,
+          "BCN20000:ba": 0.6248309205072623,
+          "BCN20000:AKIEC": 0.49557522123893805,
+          "BCN20000:BCC": 0.8418079096045198,
+          "BCN20000:BKL": 0.5911602209944752,
+          "BCN20000:DF": 0.42424242424242425,
+          "BCN20000:NV": 0.7038123167155426,
+          "BCN20000:VASC": 0.6190476190476191,
+          "BCN20000:MEL": 0.698170731707317,
+          "PAD-UFES-20:ba": 0.7730554402472211,
+          "PAD-UFES-20:AKIEC": 0.8962962962962963,
+          "PAD-UFES-20:BCC": 0.8424657534246576,
+          "PAD-UFES-20:BKL": 0.7818181818181819,
+          "PAD-UFES-20:NV": 0.7083333333333334,
+          "PAD-UFES-20:MEL": 0.6363636363636364
+        },
+        "diseases": {
+          "HAM10000": {
+            "AKIEC": {
+              "tp": 27,
+              "support": 49,
+              "recall": 0.5510204081632653
+            },
+            "BCC": {
+              "tp": 65,
+              "support": 77,
+              "recall": 0.8441558441558441
+            },
+            "BKL": {
+              "tp": 133,
+              "support": 165,
+              "recall": 0.806060606060606
+            },
+            "DF": {
+              "tp": 14,
+              "support": 18,
+              "recall": 0.7777777777777778
+            },
+            "NV": {
+              "tp": 798,
+              "support": 1006,
+              "recall": 0.7932405566600398
+            },
+            "VASC": {
+              "tp": 17,
+              "support": 22,
+              "recall": 0.7727272727272727
+            },
+            "MEL": {
+              "tp": 138,
+              "support": 167,
+              "recall": 0.8263473053892215
+            }
+          },
+          "BCN20000": {
+            "AKIEC": {
+              "tp": 56,
+              "support": 113,
+              "recall": 0.49557522123893805
+            },
+            "BCC": {
+              "tp": 298,
+              "support": 354,
+              "recall": 0.8418079096045198
+            },
+            "BKL": {
+              "tp": 107,
+              "support": 181,
+              "recall": 0.5911602209944752
+            },
+            "DF": {
+              "tp": 14,
+              "support": 33,
+              "recall": 0.42424242424242425
+            },
+            "NV": {
+              "tp": 480,
+              "support": 682,
+              "recall": 0.7038123167155426
+            },
+            "VASC": {
+              "tp": 13,
+              "support": 21,
+              "recall": 0.6190476190476191
+            },
+            "MEL": {
+              "tp": 229,
+              "support": 328,
+              "recall": 0.698170731707317
+            }
+          },
+          "PAD-UFES-20": {
+            "AKIEC": {
+              "tp": 121,
+              "support": 135,
+              "recall": 0.8962962962962963
+            },
+            "BCC": {
+              "tp": 123,
+              "support": 146,
+              "recall": 0.8424657534246576
+            },
+            "BKL": {
+              "tp": 43,
+              "support": 55,
+              "recall": 0.7818181818181819
+            },
+            "NV": {
+              "tp": 34,
+              "support": 48,
+              "recall": 0.7083333333333334
+            },
+            "MEL": {
+              "tp": 7,
+              "support": 11,
+              "recall": 0.6363636363636364
+            }
+          }
+        },
+        "merged_confusion_matrix": [
+          [
+            204,
+            41,
+            31,
+            2,
+            1,
+            0,
+            18
+          ],
+          [
+            51,
+            486,
+            14,
+            1,
+            8,
+            4,
+            13
+          ],
+          [
+            27,
+            15,
+            283,
+            0,
+            24,
+            4,
+            48
+          ],
+          [
+            6,
+            5,
+            1,
+            28,
+            4,
+            0,
+            7
+          ],
+          [
+            8,
+            35,
+            63,
+            5,
+            1312,
+            7,
+            306
+          ],
+          [
+            0,
+            8,
+            0,
+            0,
+            2,
+            30,
+            3
+          ],
+          [
+            11,
+            16,
+            26,
+            1,
+            72,
+            6,
+            374
+          ]
+        ],
+        "best_epoch": 10,
+        "validation_by_source": {
+          "HAM10000": {
+            "balanced_accuracy": 0.7673328244191467,
+            "macro_f1": 0.7377356825523567,
+            "accuracy": 0.7925531914893617,
+            "ece": 0.04896023208824302,
+            "recall_per_class": [
+              0.5510204081632653,
+              0.8441558441558441,
+              0.806060606060606,
+              0.7777777777777778,
+              0.7932405566600398,
+              0.7727272727272727,
+              0.8263473053892215
+            ],
+            "confusion_matrix": [
+              [
+                27,
+                4,
+                8,
+                1,
+                0,
+                0,
+                9
+              ],
+              [
+                1,
+                65,
+                4,
+                0,
+                1,
+                3,
+                3
+              ],
+              [
+                5,
+                0,
+                133,
+                0,
+                7,
+                0,
+                20
+              ],
+              [
+                1,
+                1,
+                0,
+                14,
+                1,
+                0,
+                1
+              ],
+              [
+                3,
+                8,
+                38,
+                4,
+                798,
+                1,
+                154
+              ],
+              [
+                0,
+                3,
+                0,
+                0,
+                2,
+                17,
+                0
+              ],
+              [
+                1,
+                1,
+                8,
+                0,
+                19,
+                0,
+                138
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 0.898848315344212,
+            "samples": 1504
+          },
+          "BCN20000": {
+            "balanced_accuracy": 0.6248309205072623,
+            "macro_f1": 0.6185674541647627,
+            "accuracy": 0.6991822429906542,
+            "ece": 0.07262693625032689,
+            "recall_per_class": [
+              0.49557522123893805,
+              0.8418079096045198,
+              0.5911602209944752,
+              0.42424242424242425,
+              0.7038123167155426,
+              0.6190476190476191,
+              0.698170731707317
+            ],
+            "confusion_matrix": [
+              [
+                56,
+                24,
+                22,
+                1,
+                1,
+                0,
+                9
+              ],
+              [
+                30,
+                298,
+                9,
+                1,
+                5,
+                1,
+                10
+              ],
+              [
+                16,
+                13,
+                107,
+                0,
+                13,
+                4,
+                28
+              ],
+              [
+                5,
+                4,
+                1,
+                14,
+                3,
+                0,
+                6
+              ],
+              [
+                2,
+                22,
+                21,
+                1,
+                480,
+                6,
+                150
+              ],
+              [
+                0,
+                5,
+                0,
+                0,
+                0,
+                13,
+                3
+              ],
+              [
+                10,
+                14,
+                16,
+                1,
+                52,
+                6,
+                229
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 1.1595834554912887,
+            "samples": 1712
+          },
+          "PAD-UFES-20": {
+            "balanced_accuracy": 0.7730554402472211,
+            "macro_f1": 0.794552873524743,
+            "accuracy": 0.830379746835443,
+            "ece": 0.04321141454034793,
+            "recall_per_class": [
+              0.8962962962962963,
+              0.8424657534246576,
+              0.7818181818181819,
+              0.0,
+              0.7083333333333334,
+              0.0,
+              0.6363636363636364
+            ],
+            "confusion_matrix": [
+              [
+                121,
+                13,
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                20,
+                123,
+                1,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                6,
+                2,
+                43,
+                0,
+                4,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                5,
+                4,
+                0,
+                34,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                2,
+                0,
+                1,
+                0,
+                7
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "loss": 0.8748545328273049,
+            "samples": 395
+          }
+        }
+      },
+      "result": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\result.json"
+    },
+    "original_tiny_seed3": {
+      "seed": 3,
+      "run_id": "16f68c2066fd44b4b280ed9e3760410c",
+      "epochs_completed": 12,
+      "best_epoch": 7,
+      "micro_batch": 8,
+      "accumulation": 8,
+      "metrics": {
+        "values": {
+          "robust": 0.6718155530863428,
+          "accuracy": 0.7507615618942122,
+          "macro_f1": 0.6909568766310645,
+          "combined_mel": 0.6185770750988142,
+          "HAM10000:ba": 0.7829073212396394,
+          "HAM10000:AKIEC": 0.6530612244897959,
+          "HAM10000:BCC": 0.7792207792207793,
+          "HAM10000:BKL": 0.793939393939394,
+          "HAM10000:DF": 0.7222222222222222,
+          "HAM10000:NV": 0.8707753479125249,
+          "HAM10000:VASC": 0.9545454545454546,
+          "HAM10000:MEL": 0.7065868263473054,
+          "BCN20000:ba": 0.6341772105414114,
+          "BCN20000:AKIEC": 0.5132743362831859,
+          "BCN20000:BCC": 0.7853107344632768,
+          "BCN20000:BKL": 0.6022099447513812,
+          "BCN20000:DF": 0.3939393939393939,
+          "BCN20000:NV": 0.7111436950146628,
+          "BCN20000:VASC": 0.8571428571428571,
+          "BCN20000:MEL": 0.5762195121951219,
+          "PAD-UFES-20:ba": 0.7112771551127716,
+          "PAD-UFES-20:AKIEC": 0.8222222222222222,
+          "PAD-UFES-20:BCC": 0.8493150684931506,
+          "PAD-UFES-20:BKL": 0.6727272727272727,
+          "PAD-UFES-20:NV": 0.6666666666666666,
+          "PAD-UFES-20:MEL": 0.5454545454545454
+        },
+        "diseases": {
+          "HAM10000": {
+            "AKIEC": {
+              "tp": 32,
+              "support": 49,
+              "recall": 0.6530612244897959
+            },
+            "BCC": {
+              "tp": 60,
+              "support": 77,
+              "recall": 0.7792207792207793
+            },
+            "BKL": {
+              "tp": 131,
+              "support": 165,
+              "recall": 0.793939393939394
+            },
+            "DF": {
+              "tp": 13,
+              "support": 18,
+              "recall": 0.7222222222222222
+            },
+            "NV": {
+              "tp": 876,
+              "support": 1006,
+              "recall": 0.8707753479125249
+            },
+            "VASC": {
+              "tp": 21,
+              "support": 22,
+              "recall": 0.9545454545454546
+            },
+            "MEL": {
+              "tp": 118,
+              "support": 167,
+              "recall": 0.7065868263473054
+            }
+          },
+          "BCN20000": {
+            "AKIEC": {
+              "tp": 58,
+              "support": 113,
+              "recall": 0.5132743362831859
+            },
+            "BCC": {
+              "tp": 278,
+              "support": 354,
+              "recall": 0.7853107344632768
+            },
+            "BKL": {
+              "tp": 109,
+              "support": 181,
+              "recall": 0.6022099447513812
+            },
+            "DF": {
+              "tp": 13,
+              "support": 33,
+              "recall": 0.3939393939393939
+            },
+            "NV": {
+              "tp": 485,
+              "support": 682,
+              "recall": 0.7111436950146628
+            },
+            "VASC": {
+              "tp": 18,
+              "support": 21,
+              "recall": 0.8571428571428571
+            },
+            "MEL": {
+              "tp": 189,
+              "support": 328,
+              "recall": 0.5762195121951219
+            }
+          },
+          "PAD-UFES-20": {
+            "AKIEC": {
+              "tp": 111,
+              "support": 135,
+              "recall": 0.8222222222222222
+            },
+            "BCC": {
+              "tp": 124,
+              "support": 146,
+              "recall": 0.8493150684931506
+            },
+            "BKL": {
+              "tp": 37,
+              "support": 55,
+              "recall": 0.6727272727272727
+            },
+            "NV": {
+              "tp": 32,
+              "support": 48,
+              "recall": 0.6666666666666666
+            },
+            "MEL": {
+              "tp": 6,
+              "support": 11,
+              "recall": 0.5454545454545454
+            }
+          }
+        },
+        "merged_confusion_matrix": [
+          [
+            201,
+            39,
+            34,
+            2,
+            2,
+            1,
+            18
+          ],
+          [
+            61,
+            462,
+            24,
+            0,
+            9,
+            5,
+            16
+          ],
+          [
+            31,
+            9,
+            277,
+            2,
+            31,
+            5,
+            46
+          ],
+          [
+            4,
+            5,
+            4,
+            26,
+            5,
+            0,
+            7
+          ],
+          [
+            14,
+            28,
+            93,
+            1,
+            1393,
+            12,
+            195
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            39,
+            3
+          ],
+          [
+            20,
+            20,
+            39,
+            1,
+            108,
+            5,
+            313
+          ]
+        ],
+        "best_epoch": 7,
+        "validation_by_source": {
+          "HAM10000": {
+            "balanced_accuracy": 0.7829073212396394,
+            "macro_f1": 0.7708182158631681,
+            "accuracy": 0.831781914893617,
+            "ece": 0.07662018150164314,
+            "recall_per_class": [
+              0.6530612244897959,
+              0.7792207792207793,
+              0.793939393939394,
+              0.7222222222222222,
+              0.8707753479125249,
+              0.9545454545454546,
+              0.7065868263473054
+            ],
+            "confusion_matrix": [
+              [
+                32,
+                1,
+                9,
+                1,
+                0,
+                0,
+                6
+              ],
+              [
+                1,
+                60,
+                6,
+                0,
+                2,
+                4,
+                4
+              ],
+              [
+                6,
+                0,
+                131,
+                0,
+                11,
+                0,
+                17
+              ],
+              [
+                1,
+                0,
+                2,
+                13,
+                2,
+                0,
+                0
+              ],
+              [
+                1,
+                3,
+                34,
+                0,
+                876,
+                2,
+                90
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                21,
+                0
+              ],
+              [
+                0,
+                0,
+                13,
+                1,
+                33,
+                2,
+                118
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 0.7938441052398784,
+            "samples": 1504
+          },
+          "BCN20000": {
+            "balanced_accuracy": 0.6341772105414114,
+            "macro_f1": 0.6044402034982811,
+            "accuracy": 0.6717289719626168,
+            "ece": 0.043584064065228065,
+            "recall_per_class": [
+              0.5132743362831859,
+              0.7853107344632768,
+              0.6022099447513812,
+              0.3939393939393939,
+              0.7111436950146628,
+              0.8571428571428571,
+              0.5762195121951219
+            ],
+            "confusion_matrix": [
+              [
+                58,
+                19,
+                22,
+                1,
+                1,
+                1,
+                11
+              ],
+              [
+                40,
+                278,
+                17,
+                0,
+                6,
+                1,
+                12
+              ],
+              [
+                20,
+                7,
+                109,
+                2,
+                11,
+                5,
+                27
+              ],
+              [
+                3,
+                5,
+                2,
+                13,
+                3,
+                0,
+                7
+              ],
+              [
+                11,
+                20,
+                52,
+                1,
+                485,
+                9,
+                104
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                18,
+                3
+              ],
+              [
+                20,
+                19,
+                23,
+                0,
+                74,
+                3,
+                189
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 1.1815840462657894,
+            "samples": 1712
+          },
+          "PAD-UFES-20": {
+            "balanced_accuracy": 0.7112771551127716,
+            "macro_f1": 0.7226795202184866,
+            "accuracy": 0.7848101265822784,
+            "ece": 0.05912409939742995,
+            "recall_per_class": [
+              0.8222222222222222,
+              0.8493150684931506,
+              0.6727272727272727,
+              0.0,
+              0.6666666666666666,
+              0.0,
+              0.5454545454545454
+            ],
+            "confusion_matrix": [
+              [
+                111,
+                19,
+                3,
+                0,
+                1,
+                0,
+                1
+              ],
+              [
+                20,
+                124,
+                1,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                5,
+                2,
+                37,
+                0,
+                9,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                5,
+                7,
+                0,
+                32,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                3,
+                0,
+                1,
+                0,
+                6
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "loss": 0.8972326230399216,
+            "samples": 395
+          }
+        }
+      },
+      "result": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\result.json"
+    },
+    "original_base_seed1": {
+      "seed": 1,
+      "run_id": "efc7718472e14007be0686800f5183c3",
+      "epochs_completed": 12,
+      "best_epoch": 6,
+      "micro_batch": 2,
+      "accumulation": 32,
+      "metrics": {
+        "values": {
+          "robust": 0.6929063176731965,
+          "accuracy": 0.8022708391027417,
+          "macro_f1": 0.7422082714842024,
+          "combined_mel": 0.5177865612648221,
+          "HAM10000:ba": 0.7914110497782849,
+          "HAM10000:AKIEC": 0.7346938775510204,
+          "HAM10000:BCC": 0.8571428571428571,
+          "HAM10000:BKL": 0.793939393939394,
+          "HAM10000:DF": 0.7777777777777778,
+          "HAM10000:NV": 0.9582504970178927,
+          "HAM10000:VASC": 0.9090909090909091,
+          "HAM10000:MEL": 0.5089820359281437,
+          "BCN20000:ba": 0.662270718262447,
+          "BCN20000:AKIEC": 0.49557522123893805,
+          "BCN20000:BCC": 0.8813559322033898,
+          "BCN20000:BKL": 0.5027624309392266,
+          "BCN20000:DF": 0.5454545454545454,
+          "BCN20000:NV": 0.8768328445747801,
+          "BCN20000:VASC": 0.8095238095238095,
+          "BCN20000:MEL": 0.524390243902439,
+          "PAD-UFES-20:ba": 0.7169439832111065,
+          "PAD-UFES-20:AKIEC": 0.8296296296296296,
+          "PAD-UFES-20:BCC": 0.8698630136986302,
+          "PAD-UFES-20:BKL": 0.6181818181818182,
+          "PAD-UFES-20:NV": 0.8125,
+          "PAD-UFES-20:MEL": 0.45454545454545453
+        },
+        "diseases": {
+          "HAM10000": {
+            "AKIEC": {
+              "tp": 36,
+              "support": 49,
+              "recall": 0.7346938775510204
+            },
+            "BCC": {
+              "tp": 66,
+              "support": 77,
+              "recall": 0.8571428571428571
+            },
+            "BKL": {
+              "tp": 131,
+              "support": 165,
+              "recall": 0.793939393939394
+            },
+            "DF": {
+              "tp": 14,
+              "support": 18,
+              "recall": 0.7777777777777778
+            },
+            "NV": {
+              "tp": 964,
+              "support": 1006,
+              "recall": 0.9582504970178927
+            },
+            "VASC": {
+              "tp": 20,
+              "support": 22,
+              "recall": 0.9090909090909091
+            },
+            "MEL": {
+              "tp": 85,
+              "support": 167,
+              "recall": 0.5089820359281437
+            }
+          },
+          "BCN20000": {
+            "AKIEC": {
+              "tp": 56,
+              "support": 113,
+              "recall": 0.49557522123893805
+            },
+            "BCC": {
+              "tp": 312,
+              "support": 354,
+              "recall": 0.8813559322033898
+            },
+            "BKL": {
+              "tp": 91,
+              "support": 181,
+              "recall": 0.5027624309392266
+            },
+            "DF": {
+              "tp": 18,
+              "support": 33,
+              "recall": 0.5454545454545454
+            },
+            "NV": {
+              "tp": 598,
+              "support": 682,
+              "recall": 0.8768328445747801
+            },
+            "VASC": {
+              "tp": 17,
+              "support": 21,
+              "recall": 0.8095238095238095
+            },
+            "MEL": {
+              "tp": 172,
+              "support": 328,
+              "recall": 0.524390243902439
+            }
+          },
+          "PAD-UFES-20": {
+            "AKIEC": {
+              "tp": 112,
+              "support": 135,
+              "recall": 0.8296296296296296
+            },
+            "BCC": {
+              "tp": 127,
+              "support": 146,
+              "recall": 0.8698630136986302
+            },
+            "BKL": {
+              "tp": 34,
+              "support": 55,
+              "recall": 0.6181818181818182
+            },
+            "NV": {
+              "tp": 39,
+              "support": 48,
+              "recall": 0.8125
+            },
+            "MEL": {
+              "tp": 5,
+              "support": 11,
+              "recall": 0.45454545454545453
+            }
+          }
+        },
+        "merged_confusion_matrix": [
+          [
+            204,
+            55,
+            18,
+            0,
+            9,
+            0,
+            11
+          ],
+          [
+            37,
+            505,
+            15,
+            0,
+            11,
+            1,
+            8
+          ],
+          [
+            35,
+            23,
+            256,
+            2,
+            49,
+            3,
+            33
+          ],
+          [
+            2,
+            10,
+            0,
+            32,
+            6,
+            0,
+            1
+          ],
+          [
+            5,
+            28,
+            40,
+            5,
+            1601,
+            2,
+            55
+          ],
+          [
+            0,
+            4,
+            0,
+            0,
+            1,
+            37,
+            1
+          ],
+          [
+            20,
+            17,
+            21,
+            1,
+            180,
+            5,
+            262
+          ]
+        ],
+        "best_epoch": 6,
+        "validation_by_source": {
+          "HAM10000": {
+            "balanced_accuracy": 0.7914110497782849,
+            "macro_f1": 0.8017644853764053,
+            "accuracy": 0.875,
+            "ece": 0.03808633633944205,
+            "recall_per_class": [
+              0.7346938775510204,
+              0.8571428571428571,
+              0.793939393939394,
+              0.7777777777777778,
+              0.9582504970178927,
+              0.9090909090909091,
+              0.5089820359281437
+            ],
+            "confusion_matrix": [
+              [
+                36,
+                2,
+                7,
+                0,
+                1,
+                0,
+                3
+              ],
+              [
+                4,
+                66,
+                4,
+                0,
+                0,
+                0,
+                3
+              ],
+              [
+                10,
+                2,
+                131,
+                0,
+                20,
+                0,
+                2
+              ],
+              [
+                2,
+                0,
+                0,
+                14,
+                2,
+                0,
+                0
+              ],
+              [
+                2,
+                2,
+                22,
+                3,
+                964,
+                0,
+                13
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                20,
+                1
+              ],
+              [
+                4,
+                1,
+                10,
+                0,
+                66,
+                1,
+                85
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 0.7527863702716979,
+            "samples": 1504
+          },
+          "BCN20000": {
+            "balanced_accuracy": 0.662270718262447,
+            "macro_f1": 0.6687212859446093,
+            "accuracy": 0.7383177570093458,
+            "ece": 0.04726781920155996,
+            "recall_per_class": [
+              0.49557522123893805,
+              0.8813559322033898,
+              0.5027624309392266,
+              0.5454545454545454,
+              0.8768328445747801,
+              0.8095238095238095,
+              0.524390243902439
+            ],
+            "confusion_matrix": [
+              [
+                56,
+                32,
+                9,
+                0,
+                8,
+                0,
+                8
+              ],
+              [
+                18,
+                312,
+                11,
+                0,
+                7,
+                1,
+                5
+              ],
+              [
+                17,
+                20,
+                91,
+                2,
+                17,
+                3,
+                31
+              ],
+              [
+                0,
+                10,
+                0,
+                18,
+                4,
+                0,
+                1
+              ],
+              [
+                3,
+                22,
+                15,
+                2,
+                598,
+                1,
+                41
+              ],
+              [
+                0,
+                4,
+                0,
+                0,
+                0,
+                17,
+                0
+              ],
+              [
+                16,
+                15,
+                9,
+                1,
+                111,
+                4,
+                172
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 1.0629472942135045,
+            "samples": 1712
+          },
+          "PAD-UFES-20": {
+            "balanced_accuracy": 0.7169439832111065,
+            "macro_f1": 0.7417427960702101,
+            "accuracy": 0.8025316455696202,
+            "ece": 0.06640020086787933,
+            "recall_per_class": [
+              0.8296296296296296,
+              0.8698630136986302,
+              0.6181818181818182,
+              0.0,
+              0.8125,
+              0.0,
+              0.45454545454545453
+            ],
+            "confusion_matrix": [
+              [
+                112,
+                21,
+                2,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                15,
+                127,
+                0,
+                0,
+                4,
+                0,
+                0
+              ],
+              [
+                8,
+                1,
+                34,
+                0,
+                12,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                4,
+                3,
+                0,
+                39,
+                1,
+                1
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                2,
+                0,
+                3,
+                0,
+                5
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "loss": 0.9362399718429469,
+            "samples": 395
+          }
+        }
+      },
+      "result": "資料治理與泛化修復\\results\\v2_scale512_seed1_20261025_v1\\runs\\v2in_scale512_base\\regularized_seed1\\result.json"
+    },
+    "original_base_seed2": {
+      "seed": 2,
+      "run_id": "5e4892aab71a4cdab15858051da413f2",
+      "epochs_completed": 12,
+      "best_epoch": 6,
+      "micro_batch": 2,
+      "accumulation": 32,
+      "metrics": {
+        "values": {
+          "robust": 0.6522020505100913,
+          "accuracy": 0.7900858487953476,
+          "macro_f1": 0.7167798480514115,
+          "combined_mel": 0.5691699604743083,
+          "HAM10000:ba": 0.761448491647549,
+          "HAM10000:AKIEC": 0.5510204081632653,
+          "HAM10000:BCC": 0.8961038961038961,
+          "HAM10000:BKL": 0.806060606060606,
+          "HAM10000:DF": 0.6666666666666666,
+          "HAM10000:NV": 0.9274353876739563,
+          "HAM10000:VASC": 0.8181818181818182,
+          "HAM10000:MEL": 0.6646706586826348,
+          "BCN20000:ba": 0.605580418283811,
+          "BCN20000:AKIEC": 0.45132743362831856,
+          "BCN20000:BCC": 0.847457627118644,
+          "BCN20000:BKL": 0.580110497237569,
+          "BCN20000:DF": 0.3333333333333333,
+          "BCN20000:NV": 0.8357771260997068,
+          "BCN20000:VASC": 0.6666666666666666,
+          "BCN20000:MEL": 0.524390243902439,
+          "PAD-UFES-20:ba": 0.7294421382777547,
+          "PAD-UFES-20:AKIEC": 0.9259259259259259,
+          "PAD-UFES-20:BCC": 0.8493150684931506,
+          "PAD-UFES-20:BKL": 0.7090909090909091,
+          "PAD-UFES-20:NV": 0.7083333333333334,
+          "PAD-UFES-20:MEL": 0.45454545454545453
+        },
+        "diseases": {
+          "HAM10000": {
+            "AKIEC": {
+              "tp": 27,
+              "support": 49,
+              "recall": 0.5510204081632653
+            },
+            "BCC": {
+              "tp": 69,
+              "support": 77,
+              "recall": 0.8961038961038961
+            },
+            "BKL": {
+              "tp": 133,
+              "support": 165,
+              "recall": 0.806060606060606
+            },
+            "DF": {
+              "tp": 12,
+              "support": 18,
+              "recall": 0.6666666666666666
+            },
+            "NV": {
+              "tp": 933,
+              "support": 1006,
+              "recall": 0.9274353876739563
+            },
+            "VASC": {
+              "tp": 18,
+              "support": 22,
+              "recall": 0.8181818181818182
+            },
+            "MEL": {
+              "tp": 111,
+              "support": 167,
+              "recall": 0.6646706586826348
+            }
+          },
+          "BCN20000": {
+            "AKIEC": {
+              "tp": 51,
+              "support": 113,
+              "recall": 0.45132743362831856
+            },
+            "BCC": {
+              "tp": 300,
+              "support": 354,
+              "recall": 0.847457627118644
+            },
+            "BKL": {
+              "tp": 105,
+              "support": 181,
+              "recall": 0.580110497237569
+            },
+            "DF": {
+              "tp": 11,
+              "support": 33,
+              "recall": 0.3333333333333333
+            },
+            "NV": {
+              "tp": 570,
+              "support": 682,
+              "recall": 0.8357771260997068
+            },
+            "VASC": {
+              "tp": 14,
+              "support": 21,
+              "recall": 0.6666666666666666
+            },
+            "MEL": {
+              "tp": 172,
+              "support": 328,
+              "recall": 0.524390243902439
+            }
+          },
+          "PAD-UFES-20": {
+            "AKIEC": {
+              "tp": 125,
+              "support": 135,
+              "recall": 0.9259259259259259
+            },
+            "BCC": {
+              "tp": 124,
+              "support": 146,
+              "recall": 0.8493150684931506
+            },
+            "BKL": {
+              "tp": 39,
+              "support": 55,
+              "recall": 0.7090909090909091
+            },
+            "NV": {
+              "tp": 34,
+              "support": 48,
+              "recall": 0.7083333333333334
+            },
+            "MEL": {
+              "tp": 5,
+              "support": 11,
+              "recall": 0.45454545454545453
+            }
+          }
+        },
+        "merged_confusion_matrix": [
+          [
+            203,
+            40,
+            49,
+            0,
+            3,
+            0,
+            2
+          ],
+          [
+            53,
+            493,
+            15,
+            0,
+            10,
+            1,
+            5
+          ],
+          [
+            39,
+            25,
+            277,
+            0,
+            38,
+            3,
+            19
+          ],
+          [
+            1,
+            12,
+            4,
+            23,
+            11,
+            0,
+            0
+          ],
+          [
+            5,
+            39,
+            52,
+            1,
+            1537,
+            3,
+            99
+          ],
+          [
+            0,
+            10,
+            0,
+            0,
+            1,
+            32,
+            0
+          ],
+          [
+            11,
+            29,
+            47,
+            1,
+            129,
+            1,
+            288
+          ]
+        ],
+        "best_epoch": 6,
+        "validation_by_source": {
+          "HAM10000": {
+            "balanced_accuracy": 0.761448491647549,
+            "macro_f1": 0.7790979350910666,
+            "accuracy": 0.8663563829787234,
+            "ece": 0.05117930603480251,
+            "recall_per_class": [
+              0.5510204081632653,
+              0.8961038961038961,
+              0.806060606060606,
+              0.6666666666666666,
+              0.9274353876739563,
+              0.8181818181818182,
+              0.6646706586826348
+            ],
+            "confusion_matrix": [
+              [
+                27,
+                4,
+                17,
+                0,
+                1,
+                0,
+                0
+              ],
+              [
+                2,
+                69,
+                2,
+                0,
+                1,
+                1,
+                2
+              ],
+              [
+                5,
+                4,
+                133,
+                0,
+                18,
+                0,
+                5
+              ],
+              [
+                0,
+                1,
+                2,
+                12,
+                3,
+                0,
+                0
+              ],
+              [
+                1,
+                10,
+                22,
+                0,
+                933,
+                1,
+                39
+              ],
+              [
+                0,
+                3,
+                0,
+                0,
+                1,
+                18,
+                0
+              ],
+              [
+                2,
+                4,
+                15,
+                0,
+                35,
+                0,
+                111
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 0.7467274204926923,
+            "samples": 1504
+          },
+          "BCN20000": {
+            "balanced_accuracy": 0.605580418283811,
+            "macro_f1": 0.6265938802703357,
+            "accuracy": 0.7143691588785047,
+            "ece": 0.04160579005892823,
+            "recall_per_class": [
+              0.45132743362831856,
+              0.847457627118644,
+              0.580110497237569,
+              0.3333333333333333,
+              0.8357771260997068,
+              0.6666666666666666,
+              0.524390243902439
+            ],
+            "confusion_matrix": [
+              [
+                51,
+                26,
+                32,
+                0,
+                2,
+                0,
+                2
+              ],
+              [
+                33,
+                300,
+                11,
+                0,
+                7,
+                0,
+                3
+              ],
+              [
+                26,
+                18,
+                105,
+                0,
+                15,
+                3,
+                14
+              ],
+              [
+                1,
+                11,
+                2,
+                11,
+                8,
+                0,
+                0
+              ],
+              [
+                1,
+                25,
+                25,
+                1,
+                570,
+                0,
+                60
+              ],
+              [
+                0,
+                7,
+                0,
+                0,
+                0,
+                14,
+                0
+              ],
+              [
+                8,
+                25,
+                28,
+                1,
+                93,
+                1,
+                172
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 1.0873237293318054,
+            "samples": 1712
+          },
+          "PAD-UFES-20": {
+            "balanced_accuracy": 0.7294421382777547,
+            "macro_f1": 0.769918632437556,
+            "accuracy": 0.8278481012658228,
+            "ece": 0.06414264295250037,
+            "recall_per_class": [
+              0.9259259259259259,
+              0.8493150684931506,
+              0.7090909090909091,
+              0.0,
+              0.7083333333333334,
+              0.0,
+              0.45454545454545453
+            ],
+            "confusion_matrix": [
+              [
+                125,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                18,
+                124,
+                2,
+                0,
+                2,
+                0,
+                0
+              ],
+              [
+                8,
+                3,
+                39,
+                0,
+                5,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                3,
+                4,
+                5,
+                0,
+                34,
+                2,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                4,
+                0,
+                1,
+                0,
+                5
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "loss": 0.8717187456692321,
+            "samples": 395
+          }
+        }
+      },
+      "result": "資料治理與泛化修復\\results\\v2_scale512_followup_20261026_v1\\runs\\v2in_scale512_base_confirm\\regularized_seed2\\result.json"
+    },
+    "original_base_seed3": {
+      "seed": 3,
+      "run_id": "8001e75b4f034432bd4750a9cac48d4b",
+      "epochs_completed": 13,
+      "best_epoch": 8,
+      "micro_batch": 2,
+      "accumulation": 32,
+      "metrics": {
+        "values": {
+          "robust": 0.6680161452876725,
+          "accuracy": 0.7828856272500693,
+          "macro_f1": 0.7333407621038281,
+          "combined_mel": 0.5889328063241107,
+          "HAM10000:ba": 0.7931937993772776,
+          "HAM10000:AKIEC": 0.6326530612244898,
+          "HAM10000:BCC": 0.8701298701298701,
+          "HAM10000:BKL": 0.8484848484848485,
+          "HAM10000:DF": 0.7222222222222222,
+          "HAM10000:NV": 0.9075546719681908,
+          "HAM10000:VASC": 0.9545454545454546,
+          "HAM10000:MEL": 0.6167664670658682,
+          "BCN20000:ba": 0.6248395601170772,
+          "BCN20000:AKIEC": 0.3893805309734513,
+          "BCN20000:BCC": 0.7966101694915254,
+          "BCN20000:BKL": 0.56353591160221,
+          "BCN20000:DF": 0.5454545454545454,
+          "BCN20000:NV": 0.8299120234604106,
+          "BCN20000:VASC": 0.6666666666666666,
+          "BCN20000:MEL": 0.5823170731707317,
+          "PAD-UFES-20:ba": 0.7155448318804483,
+          "PAD-UFES-20:AKIEC": 0.8666666666666667,
+          "PAD-UFES-20:BCC": 0.8493150684931506,
+          "PAD-UFES-20:BKL": 0.7272727272727273,
+          "PAD-UFES-20:NV": 0.7708333333333334,
+          "PAD-UFES-20:MEL": 0.36363636363636365
+        },
+        "diseases": {
+          "HAM10000": {
+            "AKIEC": {
+              "tp": 31,
+              "support": 49,
+              "recall": 0.6326530612244898
+            },
+            "BCC": {
+              "tp": 67,
+              "support": 77,
+              "recall": 0.8701298701298701
+            },
+            "BKL": {
+              "tp": 140,
+              "support": 165,
+              "recall": 0.8484848484848485
+            },
+            "DF": {
+              "tp": 13,
+              "support": 18,
+              "recall": 0.7222222222222222
+            },
+            "NV": {
+              "tp": 913,
+              "support": 1006,
+              "recall": 0.9075546719681908
+            },
+            "VASC": {
+              "tp": 21,
+              "support": 22,
+              "recall": 0.9545454545454546
+            },
+            "MEL": {
+              "tp": 103,
+              "support": 167,
+              "recall": 0.6167664670658682
+            }
+          },
+          "BCN20000": {
+            "AKIEC": {
+              "tp": 44,
+              "support": 113,
+              "recall": 0.3893805309734513
+            },
+            "BCC": {
+              "tp": 282,
+              "support": 354,
+              "recall": 0.7966101694915254
+            },
+            "BKL": {
+              "tp": 102,
+              "support": 181,
+              "recall": 0.56353591160221
+            },
+            "DF": {
+              "tp": 18,
+              "support": 33,
+              "recall": 0.5454545454545454
+            },
+            "NV": {
+              "tp": 566,
+              "support": 682,
+              "recall": 0.8299120234604106
+            },
+            "VASC": {
+              "tp": 14,
+              "support": 21,
+              "recall": 0.6666666666666666
+            },
+            "MEL": {
+              "tp": 191,
+              "support": 328,
+              "recall": 0.5823170731707317
+            }
+          },
+          "PAD-UFES-20": {
+            "AKIEC": {
+              "tp": 117,
+              "support": 135,
+              "recall": 0.8666666666666667
+            },
+            "BCC": {
+              "tp": 124,
+              "support": 146,
+              "recall": 0.8493150684931506
+            },
+            "BKL": {
+              "tp": 40,
+              "support": 55,
+              "recall": 0.7272727272727273
+            },
+            "NV": {
+              "tp": 37,
+              "support": 48,
+              "recall": 0.7708333333333334
+            },
+            "MEL": {
+              "tp": 4,
+              "support": 11,
+              "recall": 0.36363636363636365
+            }
+          }
+        },
+        "merged_confusion_matrix": [
+          [
+            192,
+            38,
+            54,
+            0,
+            6,
+            0,
+            7
+          ],
+          [
+            51,
+            473,
+            24,
+            0,
+            10,
+            0,
+            19
+          ],
+          [
+            31,
+            17,
+            282,
+            1,
+            37,
+            3,
+            30
+          ],
+          [
+            1,
+            9,
+            3,
+            31,
+            7,
+            0,
+            0
+          ],
+          [
+            10,
+            25,
+            68,
+            2,
+            1516,
+            1,
+            114
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            1,
+            35,
+            5
+          ],
+          [
+            26,
+            13,
+            47,
+            3,
+            118,
+            1,
+            298
+          ]
+        ],
+        "best_epoch": 8,
+        "validation_by_source": {
+          "HAM10000": {
+            "balanced_accuracy": 0.7931937993772776,
+            "macro_f1": 0.7997982770635819,
+            "accuracy": 0.8563829787234043,
+            "ece": 0.05810552480969885,
+            "recall_per_class": [
+              0.6326530612244898,
+              0.8701298701298701,
+              0.8484848484848485,
+              0.7222222222222222,
+              0.9075546719681908,
+              0.9545454545454546,
+              0.6167664670658682
+            ],
+            "confusion_matrix": [
+              [
+                31,
+                1,
+                15,
+                0,
+                0,
+                0,
+                2
+              ],
+              [
+                1,
+                67,
+                4,
+                0,
+                2,
+                0,
+                3
+              ],
+              [
+                3,
+                0,
+                140,
+                1,
+                14,
+                0,
+                7
+              ],
+              [
+                1,
+                1,
+                2,
+                13,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                3,
+                29,
+                1,
+                913,
+                1,
+                58
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                21,
+                0
+              ],
+              [
+                3,
+                2,
+                23,
+                0,
+                36,
+                0,
+                103
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 0.7681457277070335,
+            "samples": 1504
+          },
+          "BCN20000": {
+            "balanced_accuracy": 0.6248395601170772,
+            "macro_f1": 0.6416940754726179,
+            "accuracy": 0.7108644859813084,
+            "ece": 0.049881712660168796,
+            "recall_per_class": [
+              0.3893805309734513,
+              0.7966101694915254,
+              0.56353591160221,
+              0.5454545454545454,
+              0.8299120234604106,
+              0.6666666666666666,
+              0.5823170731707317
+            ],
+            "confusion_matrix": [
+              [
+                44,
+                22,
+                36,
+                0,
+                6,
+                0,
+                5
+              ],
+              [
+                32,
+                282,
+                19,
+                0,
+                6,
+                0,
+                15
+              ],
+              [
+                24,
+                14,
+                102,
+                0,
+                15,
+                3,
+                23
+              ],
+              [
+                0,
+                8,
+                1,
+                18,
+                6,
+                0,
+                0
+              ],
+              [
+                9,
+                19,
+                33,
+                1,
+                566,
+                0,
+                54
+              ],
+              [
+                0,
+                2,
+                0,
+                0,
+                0,
+                14,
+                5
+              ],
+              [
+                22,
+                11,
+                21,
+                3,
+                79,
+                1,
+                191
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "loss": 1.1248951291439133,
+            "samples": 1712
+          },
+          "PAD-UFES-20": {
+            "balanced_accuracy": 0.7155448318804483,
+            "macro_f1": 0.7286859987773096,
+            "accuracy": 0.8151898734177215,
+            "ece": 0.04772016213266152,
+            "recall_per_class": [
+              0.8666666666666667,
+              0.8493150684931506,
+              0.7272727272727273,
+              0.0,
+              0.7708333333333334,
+              0.0,
+              0.36363636363636365
+            ],
+            "confusion_matrix": [
+              [
+                117,
+                15,
+                3,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                18,
+                124,
+                1,
+                0,
+                2,
+                0,
+                1
+              ],
+              [
+                4,
+                3,
+                40,
+                0,
+                8,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                6,
+                0,
+                37,
+                0,
+                2
+              ],
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                3,
+                0,
+                3,
+                0,
+                4
+              ]
+            ],
+            "metric_labels": [
+              0,
+              1,
+              2,
+              4,
+              6
+            ],
+            "loss": 0.9119481919687006,
+            "samples": 395
+          }
+        }
+      },
+      "result": "資料治理與泛化修復\\results\\v2_scale512_followup_20261026_v1\\runs\\v2in_scale512_base_confirm\\regularized_seed3\\result.json"
+    }
+  },
+  "formal_complete_epochs": 64,
+  "total_formal_attempt_seconds": 23147.763552399992,
+  "failed_attempt_seconds": 0,
+  "attempts": [
+    {
+      "job": "tiny_seed2",
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 2,
+      "command": [
+        ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "utf8",
+        "資料治理與泛化修復\\scripts\\train_regularized.py",
+        "--config",
+        "資料治理與泛化修復\\configs\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\v2in_tiny512_relu_stage_dropout.json",
+        "--seed",
+        "2",
+        "--manifest-release",
+        "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+        "--output-root",
+        "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout",
+        "--require-cuda",
+        "--formal"
+      ],
+      "schedule": {
+        "memory": {
+          "at": "2026-10-26T08:31:11.677062+00:00",
+          "commit_headroom_gib": 61.85981369018555,
+          "commit_limit_gib": 79.11309814453125,
+          "commit_used_gib": 17.253284454345703,
+          "available_ram_gib": 18.121475219726562
+        },
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 5070",
+          "utilization_percent": 0.0,
+          "used_mib": 1122.0,
+          "total_mib": 12227.0,
+          "free_mib": 11105.0,
+          "power_w": 24.67
+        },
+        "conflicts": [],
+        "free_disk_gib": 384.3445739746094
+      },
+      "resume": false,
+      "status": "exited",
+      "started_utc": "2026-10-26T08:31:12.403160+00:00",
+      "pid": 15684,
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 10812.039768999995,
+      "ended_utc": "2026-10-26T11:31:24.452035+00:00"
+    },
+    {
+      "job": "tiny_seed3",
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 3,
+      "command": [
+        ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "utf8",
+        "資料治理與泛化修復\\scripts\\train_regularized.py",
+        "--config",
+        "資料治理與泛化修復\\configs\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\v2in_tiny512_relu_stage_dropout.json",
+        "--seed",
+        "3",
+        "--manifest-release",
+        "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+        "--output-root",
+        "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout",
+        "--require-cuda",
+        "--formal"
+      ],
+      "schedule": {
+        "memory": {
+          "at": "2026-10-26T11:31:24.717643+00:00",
+          "commit_headroom_gib": 61.30085372924805,
+          "commit_limit_gib": 79.11309814453125,
+          "commit_used_gib": 17.812244415283203,
+          "available_ram_gib": 17.44298553466797
+        },
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 5070",
+          "utilization_percent": 1.0,
+          "used_mib": 1178.0,
+          "total_mib": 12227.0,
+          "free_mib": 11049.0,
+          "power_w": 26.06
+        },
+        "conflicts": [],
+        "free_disk_gib": 383.40250396728516
+      },
+      "resume": false,
+      "status": "exited",
+      "started_utc": "2026-10-26T11:31:25.337053+00:00",
+      "pid": 25688,
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 1508.3517951999966,
+      "ended_utc": "2026-10-26T11:56:33.701583+00:00"
+    },
+    {
+      "job": "tiny_seed1",
+      "candidate": "v2in_tiny512_relu_stage_dropout",
+      "seed": 1,
+      "command": [
+        ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+        "-B",
+        "-u",
+        "-X",
+        "utf8",
+        "資料治理與泛化修復\\scripts\\train_regularized.py",
+        "--config",
+        "資料治理與泛化修復\\configs\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\v2in_tiny512_relu_stage_dropout.json",
+        "--seed",
+        "1",
+        "--manifest-release",
+        "資料治理與泛化修復\\data\\governed_18979_20261018_v1",
+        "--output-root",
+        "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\runs\\v2in_tiny512_relu_stage_dropout",
+        "--require-cuda",
+        "--formal"
+      ],
+      "schedule": {
+        "memory": {
+          "at": "2026-10-26T05:30:43.731721+00:00",
+          "commit_headroom_gib": 61.475730895996094,
+          "commit_limit_gib": 79.11309814453125,
+          "commit_used_gib": 17.637367248535156,
+          "available_ram_gib": 17.559467315673828
+        },
+        "gpu": {
+          "name": "NVIDIA GeForce RTX 5070",
+          "utilization_percent": 1.0,
+          "used_mib": 1465.0,
+          "total_mib": 12227.0,
+          "free_mib": 10762.0,
+          "power_w": 28.65
+        },
+        "conflicts": [],
+        "free_disk_gib": 385.28667068481445
+      },
+      "resume": false,
+      "status": "exited",
+      "started_utc": "2026-10-26T05:30:44.055547+00:00",
+      "pid": 7532,
+      "exit_code": 0,
+      "reason": null,
+      "seconds": 10827.3719882,
+      "ended_utc": "2026-10-26T08:31:11.431493+00:00"
+    }
+  ],
+  "comparison_contract": "資料治理與泛化修復\\configs\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\COMPARISON_CONTRACT.json",
+  "tiny_summary_exists": false,
+  "base_summary_exists": false,
+  "automatic_model_adoption": false,
+  "test_used": false,
+  "prior_failed_formal_run": {
+    "run_id": "9b38f8536746431b84a42f25d307569b",
+    "result_root": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart2_20261026_v1",
+    "formal_attempt_seconds": 534.1421076999977,
+    "committed_epochs": 0,
+    "uncommitted_epoch_segments": [
+      {
+        "id": "14c70a89f5184ef78fef06d6ddb6b8ac",
+        "candidate": "v2in_tiny512_relu_stage_dropout",
+        "seed": 1,
+        "run_id": "9b38f8536746431b84a42f25d307569b",
+        "epoch": 1,
+        "pid": 11640,
+        "started_utc": "2026-10-26T04:53:58.717942+00:00",
+        "started_unix": 1792990438.717942,
+        "status": "interrupted",
+        "committed": false,
+        "seconds": 425.7672619819641,
+        "ended_utc": "2026-10-26T05:01:04.485204+00:00",
+        "reason": "trainer_exception",
+        "measurement": "wall_time_to_observed_failure_conservative_upper_bound"
+      }
+    ],
+    "resume_available": false
+  },
+  "authorized_replacement_start": true,
+  "original_model_seed_tasks": 6,
+  "max_total_formal_starts_including_prior_failure": 7,
+  "combined_formal_attempt_seconds_including_prior_failure": 23681.90566009999,
+  "accounting_note": "prior failed start separately recorded; current six model/seed tasks cap 180 committed epochs; epoch/phase seconds included in attempts, not added twice"
+}

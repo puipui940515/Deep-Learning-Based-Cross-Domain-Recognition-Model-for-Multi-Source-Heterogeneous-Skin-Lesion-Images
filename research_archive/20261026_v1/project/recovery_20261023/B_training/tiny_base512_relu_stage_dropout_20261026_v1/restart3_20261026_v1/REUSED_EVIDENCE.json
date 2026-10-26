@@ -1,0 +1,38 @@
+{
+  "status": "passed_reused",
+  "CPU": {
+    "tiny": {
+      "receipt": "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\restart1_20261026_v1\\CPU_tiny.json",
+      "sha256": "04eba3802daa15cc486d1bef4814909e2def288d7ffb5e3d4baa9102e02ce5ea",
+      "reexecuted": false
+    },
+    "base": {
+      "receipt": "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\restart1_20261026_v1\\CPU_base.json",
+      "sha256": "3ebdb712e08a2afe32d252a274e79c27fffce53342f90b10a22d9a0c4827bef6",
+      "reexecuted": false
+    }
+  },
+  "GPU": {
+    "tiny": {
+      "receipt": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart2_20261026_v1\\preflight\\tiny.json",
+      "sha256": "18b58f6b0abce5b95853b50eef18d7d04bdf4b3d7f0d2219d3b154e2f12ca65c",
+      "reexecuted": false
+    },
+    "base": {
+      "receipt": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart2_20261026_v1\\preflight\\base.json",
+      "sha256": "c73b4baff04914ca24fc3cf789a54a7e9de28aedcb5b0893d780866f333e9e40",
+      "reexecuted": false
+    }
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "timm": "1.0.30",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0"
+  },
+  "python": "3.12.10",
+  "architecture_and_native_training_unchanged": true,
+  "only_checkpoint_temporary_name_changed": true,
+  "new_GPU_prechecks": 0
+}

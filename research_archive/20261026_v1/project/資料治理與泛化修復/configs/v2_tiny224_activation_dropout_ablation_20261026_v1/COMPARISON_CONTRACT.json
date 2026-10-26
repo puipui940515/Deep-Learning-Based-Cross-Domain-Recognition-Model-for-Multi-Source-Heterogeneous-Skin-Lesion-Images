@@ -1,0 +1,87 @@
+{
+  "version": "v2_tiny224_activation_dropout_ablation_20261026_v1",
+  "scientific_groups": {
+    "relu": "only18BlockGELU_to_noninplaceReLU",
+    "dropout": "only4completeStage_elementwiseDropout0.1_originalGELU"
+  },
+  "references": "資料治理與泛化修復\\results\\baseline_20261019_v1\\runs\\convnextv2_tiny_imagenet",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "paired_same_seed": true,
+  "original_training": {
+    "model": "convnextv2_tiny",
+    "initialization": "imagenet",
+    "normalization": "imagenet_mean_std",
+    "image_size": 224,
+    "batch_size": 32,
+    "gradient_accumulation": 2,
+    "epochs": 30,
+    "early_stopping_patience": 5,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.05,
+    "layer_decay": 1.0,
+    "label_smoothing": 0.1,
+    "mixup_alpha": 0.2,
+    "gradient_clip_norm": 1.0,
+    "class_balance_alpha": 0.5,
+    "num_workers": 4,
+    "selection_metric": "0.5 * mean_source_balanced_accuracy + 0.5 * worst_source_balanced_accuracy",
+    "min_epochs": 12,
+    "early_stopping": true,
+    "min_delta": 0.0,
+    "optimizer": "AdamW",
+    "loss": "cross_entropy",
+    "effective_batch_size": 64,
+    "amp": true,
+    "transform": "regularized_native",
+    "optimizer_grouping": "layer_decay",
+    "scheduler": {
+      "name": "cosine",
+      "eta_min": 1e-06
+    },
+    "sampling_method": "weighted_replacement"
+  },
+  "original_class_names": [
+    "AKIEC",
+    "BCC",
+    "BKL",
+    "DF",
+    "NV",
+    "VASC",
+    "MEL"
+  ],
+  "data_version": "資料治理與泛化修復/data/governed_18979_20261018_v1",
+  "train": 18919,
+  "monitor": 1500,
+  "validation": 3611,
+  "pinned_weights": {
+    "path": ".venv-skindetect/hf_cache/hub/models--timm--convnextv2_tiny.fcmae_ft_in1k/snapshots/508caf1bc24fd02c69d15778b994e808670dbc28/model.safetensors",
+    "sha256": "fdfb4edfa5abb3b4ea29ab17e6fae5c117dc6cc32ecfb1d0726a156f40a4c1a5",
+    "source": "timm/convnextv2_tiny.fcmae_ft_in1k",
+    "revision": "508caf1bc24fd02c69d15778b994e808670dbc28"
+  },
+  "selection": "first strictly highest full Validation Robust",
+  "metrics": [
+    "robust",
+    "accuracy",
+    "macro_f1",
+    "all_source_balanced_accuracy",
+    "all_supported_source_disease_TP_support_recall"
+  ],
+  "unsupported_PAD_DF_VASC": "N/A, never zero-filled into supported-disease comparison",
+  "aggregation": "each group separately after its 3 completed Seeds; mean/sampleSD(ddof=1), paired deltas",
+  "incomplete_seeds_not_complete_three_seed_evidence": true,
+  "no_new_acceptance_thresholds": true,
+  "adoption": "master to D; no automatic model adoption",
+  "test_used": false,
+  "limits": {
+    "runs": 6,
+    "epochs": 180,
+    "max_epochs_per_run": 30,
+    "wall_clock_cap_seconds": null,
+    "time_limit_mode": "explicit_unbounded_elapsed_time_finite_workload"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "status": "approved_recipe_evaluation_contract_not_results",
+  "rule_source": {
+    "path": "recovery_20261023\\D_v2_analysis\\resolution_decision_20261024_v1\\DECISION.md",
+    "sha256": "6374cb686c07fa2c3033e84c4a3245c609541bed35758ddc7a81636bb219954d",
+    "governing_sections": [
+      "v2 section3/4",
+      "v2 final supplement",
+      "v2.1"
+    ]
+  },
+  "primary_contrast": "candidate minus same-Seed original v2in_res512",
+  "secondary_references": "existing 224/320 only; no retraining, epoch reselection, ensemble or threshold search",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "all_three_required": true,
+  "mean_and_sample_sd_ddof": 1,
+  "delta_units": "fractions; 0.01 = 1 pp",
+  "combine_conditions": "ALL must pass; evaluate only after all three completed, no quality cancellation of Seed3",
+  "robust": {
+    "formula": "0.5 * mean(source BA) + 0.5 * min(source BA)",
+    "mean_delta_min": 0.01,
+    "strictly_positive_delta_seed_count_min": 2,
+    "each_seed_delta_min": -0.01
+  },
+  "mean_delta_min": {
+    "macro_f1": 0.0,
+    "accuracy": 0.0,
+    "BCN20000:ba": 0.0,
+    "HAM10000:ba": -0.01,
+    "PAD-UFES-20:ba": -0.01,
+    "HAM10000:NV": 0.0,
+    "BCN20000:NV": 0.0,
+    "PAD-UFES-20:NV": 0.0,
+    "BCN20000:DF": -0.03,
+    "BCN20000:BKL": -0.03,
+    "BCN20000:MEL": -0.03,
+    "BCN20000:VASC": -0.03,
+    "combined_mel": -0.01
+  },
+  "NV_strict_improvement": {
+    "at_least_one_strictly_positive_mean_delta_in": [
+      "HAM10000:NV",
+      "BCN20000:NV"
+    ],
+    "PAD_does_not_satisfy_this_OR": true,
+    "all_three_NV_mean_deltas_nonnegative": true
+  },
+  "other_supported_disease_mean_delta_min": -0.05,
+  "other_supported_disease_keys": [
+    "HAM10000:AKIEC",
+    "HAM10000:BCC",
+    "HAM10000:BKL",
+    "HAM10000:DF",
+    "HAM10000:VASC",
+    "HAM10000:MEL",
+    "BCN20000:AKIEC",
+    "BCN20000:BCC",
+    "PAD-UFES-20:AKIEC",
+    "PAD-UFES-20:BCC",
+    "PAD-UFES-20:BKL",
+    "PAD-UFES-20:MEL"
+  ],
+  "required_outputs": [
+    "per-Seed and n3 mean/sampleSD Robust/Accuracy/Macro-F1/three-source BA",
+    "all source-supported disease TP/N/Recall with fixed per-Seed support",
+    "combined MEL",
+    "saved MEL->NV and DF->BCC counts, no per-image corrected/new claims without paired data",
+    "same-Seed primary deltas; original224/320 secondary reference",
+    "effective config/source/runtime/run_id/commands/epoch and checkpoint/timing/failure/guard evidence"
+  ],
+  "PAD_DF_VASC": "N/A; never zero Recall",
+  "validation_usage": "exploratory repeatedly used fixed Validation; no Test/external generalization or significance claims",
+  "on_rule_failure": "close sole candidate, no alpha retune/next candidate",
+  "automatic_model_or_website_adoption": false,
+  "comparators": {
+    "1": {
+      "result": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\result.json",
+      "run_inputs": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed1\\run_inputs.json"
+    },
+    "2": {
+      "result": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\result.json",
+      "run_inputs": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed2\\run_inputs.json"
+    },
+    "3": {
+      "result": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\result.json",
+      "run_inputs": "資料治理與泛化修復\\results\\v2_resolution_20261021_v1\\runs\\v2in_res512\\regularized_seed3\\run_inputs.json"
+    }
+  }
+}

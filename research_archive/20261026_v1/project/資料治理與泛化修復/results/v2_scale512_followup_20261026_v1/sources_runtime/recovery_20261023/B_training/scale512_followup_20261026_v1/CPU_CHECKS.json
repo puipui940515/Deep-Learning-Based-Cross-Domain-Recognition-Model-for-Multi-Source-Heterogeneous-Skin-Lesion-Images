@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    "train_regularized.py: AST unchanged after removing only new dispatch branches",
+    "model_profiles.py: AST unchanged after removing only new dispatch branches",
+    "prepare_batch.py: syntax passed",
+    "v2_scale_followup_contract.py: syntax passed",
+    "run_v2_scale_followup.py: syntax passed",
+    "v2in_scale512_base_confirm: exact recipe and forbidden change rejection",
+    "v2in_scale512_large_micro2: exact recipe and forbidden change rejection",
+    "prospective Base 31 numerical terms and Large n1 guard magnitudes copied unchanged; no n3 or NV OR imposed on Large",
+    "base_seed2: fresh seed/config/token/output admission, Resume rejection, saved data contract; seed2/3 accepted without Seed1 head equality",
+    "base_seed3: fresh seed/config/token/output admission, Resume rejection, saved data contract; seed2/3 accepted without Seed1 head equality",
+    "large_micro2_seed1: fresh seed/config/token/output admission, Resume rejection, saved data contract; seed2/3 accepted without Seed1 head equality",
+    "original-style epoch lease/STOP/90-epoch cap, sequence gaps, repeated epochs and different run IDs rejected in CPU fixture only"
+  ],
+  "model_runtime_imported": false,
+  "gpu_tests_repeated": false,
+  "old_serialization_receipt": "recovery_20261023\\B_training\\scale512_seed1_20261025_v1\\large_resume2_20261025_v1\\SERIALIZATION_CHECK.json",
+  "old_serialization_sha256": "fe99f1c2b7519263de61b5d35f3610bf7a550cda791deac456b05900428b5c33"
+}

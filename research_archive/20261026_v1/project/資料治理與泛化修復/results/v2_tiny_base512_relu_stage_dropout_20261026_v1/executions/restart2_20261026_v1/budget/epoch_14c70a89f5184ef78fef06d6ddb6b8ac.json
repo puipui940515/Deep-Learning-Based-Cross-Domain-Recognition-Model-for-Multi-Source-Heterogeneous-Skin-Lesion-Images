@@ -1,0 +1,16 @@
+{
+  "id": "14c70a89f5184ef78fef06d6ddb6b8ac",
+  "candidate": "v2in_tiny512_relu_stage_dropout",
+  "seed": 1,
+  "run_id": "9b38f8536746431b84a42f25d307569b",
+  "epoch": 1,
+  "pid": 11640,
+  "started_utc": "2026-10-26T04:53:58.717942+00:00",
+  "started_unix": 1792990438.717942,
+  "status": "interrupted",
+  "committed": false,
+  "seconds": 425.7672619819641,
+  "ended_utc": "2026-10-26T05:01:04.485204+00:00",
+  "reason": "trainer_exception",
+  "measurement": "wall_time_to_observed_failure_conservative_upper_bound"
+}

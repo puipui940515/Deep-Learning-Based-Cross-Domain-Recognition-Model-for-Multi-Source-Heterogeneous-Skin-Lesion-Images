@@ -1,0 +1,1 @@
+{"size": "base", "micro_batch": 8, "status": "passed", "steady_train_images_per_second": 16.808572603144704, "peak_allocated_bytes": 11411026944, "error": null}

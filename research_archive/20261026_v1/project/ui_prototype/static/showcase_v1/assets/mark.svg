@@ -1,0 +1,10 @@
+<!-- 【品牌圖示】SVG 是向量圖；viewBox 定義 48×48 的繪圖座標，放大不會像點陣圖失去清晰度。 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+<!-- 【底色】圓角矩形；fill 是填色，rx 是圓角半徑。 -->
+<rect width="48" height="48" rx="15" fill="#356250"/>
+<!-- 【線條群組】統一設定線色、粗細與端點；內部 path 的 d 是曲線座標，組成抽象紋理標誌。 -->
+<g fill="none" stroke="#eff4df" stroke-width="2.2" stroke-linecap="round">
+<path d="M13 24c0-7 4-12 11-12s12 5 12 12-5 12-12 12"/>
+<path d="M13 30c-4-12 14-21 18-9 2 7-5 13-11 9-7-4-1-14 5-10 4 3-2 8-5 5"/>
+</g>
+</svg>

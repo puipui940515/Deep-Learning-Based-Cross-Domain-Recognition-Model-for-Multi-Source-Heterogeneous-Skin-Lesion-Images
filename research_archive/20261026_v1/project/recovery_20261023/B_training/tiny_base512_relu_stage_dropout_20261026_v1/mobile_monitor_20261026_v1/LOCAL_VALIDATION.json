@@ -1,0 +1,19 @@
+{
+  "checked_local": "2026-10-26T15:24:04.894856+08:00",
+  "local_http_status": 200,
+  "source_monitor_contains_current_run": true,
+  "mobile_viewport_and_15_second_refresh": true,
+  "unauthorized_paths_return_404": true,
+  "actual_phone_connection_verified": false,
+  "external_mobile_data_access": false,
+  "windows_firewall_router_unchanged": true,
+  "server": {
+    "pid": 3608,
+    "url": "http://192.168.1.101:8768/fpbz5xX-h0jjm5f1fDHdOo7QEoP53XPq/",
+    "monitor": "資料治理與泛化修復\\results\\v2_tiny_base512_relu_stage_dropout_20261026_v1\\executions\\restart3_20261026_v1\\MONITOR.md",
+    "started_local": "2026-10-26T15:23:42.834561+08:00",
+    "access_scope": "same LAN only; no firewall/router/Windows changes",
+    "refresh_seconds": 15,
+    "read_only": true
+  }
+}

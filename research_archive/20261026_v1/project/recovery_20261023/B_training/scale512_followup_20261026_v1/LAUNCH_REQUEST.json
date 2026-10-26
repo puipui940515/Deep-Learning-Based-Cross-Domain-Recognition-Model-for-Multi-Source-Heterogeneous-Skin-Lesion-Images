@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-26T01:22:38.7661571+08:00",
+  "authorization": "User approved full three-job followup draft 2026-10-26",
+  "command": [
+    ".venv-skindetect-recovery-20261023\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "-X",
+    "utf8",
+    "資料治理與泛化修復\\scripts\\run_v2_scale_followup.py"
+  ],
+  "status": "launch_requested_once"
+}

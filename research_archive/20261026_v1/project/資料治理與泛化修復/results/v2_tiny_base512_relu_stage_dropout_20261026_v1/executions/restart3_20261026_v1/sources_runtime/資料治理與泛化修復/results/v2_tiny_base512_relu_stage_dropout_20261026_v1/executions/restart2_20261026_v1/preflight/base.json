@@ -1,0 +1,91 @@
+{
+  "size": "base",
+  "status": "passed",
+  "pid": 3968,
+  "formal_training": false,
+  "seed": 1,
+  "micro_batch": 2,
+  "accumulation": 32,
+  "real_train_images": 2,
+  "model_forwards": 1,
+  "optimizer_updates": 1,
+  "weights_reused_for_formal": false,
+  "benchmark": false,
+  "native_train_epoch": true,
+  "added_preAMP_gradient_stop": false,
+  "initial_classifier_sha256": "6271a799a429a3b0e82de648cb5c3547e2acceebb3f960b3f7e6ba82ad793afe",
+  "architecture_audit": {
+    "variant": {
+      "block_activation": "relu",
+      "relu_inplace": false,
+      "stage_output_dropout": 0.1,
+      "placement": "after_each_complete_stage_before_next_downsample_or_head_pool",
+      "dropout_type": "elementwise",
+      "block_dropout": 0.0,
+      "head_dropout": 0.0,
+      "drop_path": 0.0
+    },
+    "stage_depths": [
+      3,
+      3,
+      27,
+      3
+    ],
+    "relu_count": 36,
+    "grn_count": 36,
+    "stage_dropout_names": [
+      "stages.0.blocks.post_stage_dropout",
+      "stages.1.blocks.post_stage_dropout",
+      "stages.2.blocks.post_stage_dropout",
+      "stages.3.blocks.post_stage_dropout"
+    ],
+    "stage_dropout_count": 4,
+    "head_output_features": 7,
+    "feature_channels": [
+      128,
+      256,
+      512,
+      1024
+    ],
+    "trainable_parameters": 87699975,
+    "parameter_keys_unchanged": true,
+    "state_key_sha256": "496cf52a87167d0dfb3d487b0894dad643b12ab40addfefe59e097a8576fcf5a"
+  },
+  "data_version": "governed_18979_20261018_v1",
+  "input_shape": [
+    2,
+    3,
+    512,
+    512
+  ],
+  "device": "NVIDIA GeForce RTX 5070",
+  "train_transform": "Compose(\n    RandomResizedCrop(size=(512, 512), scale=(0.7, 1.0), ratio=(0.75, 1.33), interpolation=bilinear, antialias=True)\n    RandomHorizontalFlip(p=0.5)\n    RandomVerticalFlip(p=0.5)\n    RandomRotation(degrees=[-25.0, 25.0], interpolation=nearest, expand=False, fill=0)\n    RandomApply(\n    p=0.8\n    ColorJitter(brightness=(0.78, 1.22), contrast=(0.78, 1.22), saturation=(0.8, 1.2), hue=(-0.03, 0.03))\n)\n    RandomGrayscale(p=0.05)\n    RandomApply(\n    p=0.15\n    GaussianBlur(kernel_size=(3, 3), sigma=(0.1, 1.5))\n)\n    RandomAutocontrast(p=0.1)\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n    RandomErasing(p=0.15, scale=(0.02, 0.1), ratio=(0.3, 3.3), value=random, inplace=False)\n)",
+  "precheck_image_read_workers": 0,
+  "formal_workers_unchanged": 4,
+  "train_epoch_source_sha256": "4a2a1512a4e05b5c316512d784d7b9179c6fd6590a34c51a49e6e6546386f2b4",
+  "amp_scale_before": 65536.0,
+  "output_shape": [
+    2,
+    7
+  ],
+  "output_finite": true,
+  "output_device": "cuda:0",
+  "loss": 1.996596097946167,
+  "amp_scale_after": 65536.0,
+  "optimizer_state_entries": 380,
+  "required_optimizer_state_entries": 380,
+  "actual_AdamW_step": 1,
+  "backbone_updated": true,
+  "loss_divisor": 32,
+  "finite": true,
+  "not_full_accumulation_or_epoch": true,
+  "temporary_only": true,
+  "peak_allocated_bytes": 2654880256,
+  "peak_reserved_bytes": 2906652672,
+  "seconds": 8.836320299975341,
+  "command": [
+    "recovery_20261023\\B_training\\tiny_base512_relu_stage_dropout_20261026_v1\\restart2_20261026_v1\\gpu_compatibility.py",
+    "--size",
+    "base"
+  ]
+}
