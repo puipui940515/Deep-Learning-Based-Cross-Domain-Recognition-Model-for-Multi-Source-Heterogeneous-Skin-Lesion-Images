@@ -13,6 +13,7 @@ Deep Learning Based Cross-Domain Recognition Model for Multi-Source Heterogeneou
 - [專案架構](PROJECT_STRUCTURE.md)
 - [開發時間軸](README_專案開發時間軸.md)
 - [實驗譜系](SkinDetect_實驗譜系.html)
+- [實驗知識庫（CP-005 每個實驗與提案的目的、做法、結果、推論）](實驗知識庫/README.md)
 - [中文 UI 使用手冊](UI使用手冊.md)
 - [圖片版使用手冊（12 張 PNG）](UI使用手冊_圖片版/index.html)
 - [資料集來源與下載說明](docs/資料集下載說明.md)
