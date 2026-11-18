@@ -1,0 +1,892 @@
+{"src": "A0", "dst": "A1", "type": "僅提及", "reason": "A1 是讀出錯誤的案例，句中未說它直接改變 A0。", "evidence": "A0｜推論｜助理在 A1 犯了", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A2", "dst": "A0", "type": "推翻或更正", "reason": "A2 揭露少量目視下結論的問題，使 A0 目視宣稱降級。", "evidence": "A0｜推論｜單張目視、未量化", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A3", "dst": "A0", "type": "推翻或更正", "reason": "A3 量化證明 PAD 反轉率最低，更正 A0 的來源歸屬。", "evidence": "A0｜推論｜來源歸屬相反", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A0", "dst": "A4", "type": "引發", "reason": "A0 的目視宣稱引出反轉率檢驗，A4 接續排除量測混淆。", "evidence": "A4｜頁首｜源頭為 A0 的目視宣稱", "confidence": "中", "source": "Codex 判讀"}
+{"src": "A0", "dst": "D2", "type": "僅提及", "reason": "同名誤配：D2 指啟發式病灶框 bbox_D2，非八類準確率實驗頁。", "evidence": "A0｜做法｜`bbox_D2` 的 fallback 旗標", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "A0", "dst": "R0", "type": "支持", "reason": "A0 觀察到同一暗色啟發式失效，支持 R0 的目視失敗判斷。", "evidence": "A0｜推論｜與 G-R0 目視失敗同源", "confidence": "中", "source": "Codex 判讀"}
+{"src": "A1", "dst": "A0", "type": "僅提及", "reason": "頁首只交代兩者同夜進行，沒有指出因果或產物使用。", "evidence": "A1｜頁首｜同夜 A0", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A2", "dst": "A1", "type": "取代", "reason": "A1 讀出方式錯誤而作廢，改由 A2 的正確讀出版本取代。", "evidence": "A1｜頁首｜由 A2 取代", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A1", "dst": "E86", "type": "引發", "reason": "A1 曾因面積混淆作廢，因此 E86 明確避免面積主張。", "evidence": "A1｜推論｜該報告不做任何面積主張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A1", "dst": "R0", "type": "僅提及", "reason": "同名誤配：R0 指 GAP 頭分類模型，非病灶框品質閘門頁。", "evidence": "A1｜目的｜R0（GAP 頭）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "A2", "dst": "A3", "type": "沿用", "reason": "A3 使用 A2 的 LSE 讀出作為病灶位置代理。", "evidence": "A2｜頁首｜當成病灶位置代理", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A2", "dst": "A4", "type": "沿用", "reason": "A4 使用 A2 的 LSE 貢獻圖估計病灶位置。", "evidence": "A4｜做法｜病灶位置代理仍是", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A2", "dst": "B3", "type": "沿用", "reason": "B3 使用 A2 的 LSE 讀出檢驗有無病灶的判別能力。", "evidence": "A2｜頁首｜其 LSE 讀出被", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C2", "dst": "A2", "type": "僅比較", "reason": "C2 將 A2 的現行 LSE 讀出作為新異常軸的對照。", "evidence": "A2｜頁首｜C2 以它為舊軸對照", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A4", "dst": "A3", "type": "取代", "reason": "A3 的反轉率受孔徑混淆高估，改由 A4 修正版取代。", "evidence": "A3｜頁首｜被 A4 取代", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A3", "dst": "D2", "type": "僅提及", "reason": "同名誤配：D2 指暗色啟發式病灶框，非八類準確率實驗頁。", "evidence": "A3｜做法｜D2 框刻意不用", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "ADR-0001", "dst": "ADR-0007", "type": "沿用", "reason": "ADR-0007 沿用 ADR-0001 定義的主指標判斷介入成效。", "evidence": "ADR-0001｜頁首｜判準沿用本指標", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D1", "dst": "ADR-0001", "type": "引發", "reason": "D1 發現小格指標雜訊造成早停，促成 ge30 指標修訂。", "evidence": "D1｜推論｜此發現導致後來的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E116", "dst": "ADR-0001", "type": "支持", "reason": "E116 量出 pooled BA 代價，支持本指標存在整體表現取捨的判斷。", "evidence": "ADR-0001｜推論｜代價約 3.5pp", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0001", "dst": "E12", "type": "沿用", "reason": "E12 使用現行主指標重算舊 run，使不同版本可統一比較。", "evidence": "E12｜做法｜用現行 `src/metrics.py` 重算", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0001", "dst": "E16", "type": "沿用", "reason": "E16 依 ADR-0001 的現行指標重算舊 run 訓練曲線。", "evidence": "ADR-0001｜頁首｜用來重算舊 run", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0001", "dst": "E22", "type": "沿用", "reason": "E22 使用 ADR-0001 指標重算舊 run，統一清冊數值。", "evidence": "ADR-0001｜頁首｜用來重算舊 run", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "ADR-0001", "type": "支持", "reason": "E41 的掃描結果支持此 macro 指標應靠近平衡點操作的判斷。", "evidence": "ADR-0001｜推論｜最佳操作點靠近類別平衡點", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0001", "dst": "R0", "type": "僅提及", "reason": "同名誤配：R0 家族指分類訓練 run，非病灶框品質閘門頁。", "evidence": "ADR-0001｜做法｜最早 R0 家族用", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "ADR-0002", "dst": "ADR-0001", "type": "支持", "reason": "取樣後訓練分布與驗證原始分布不同，支持不用準確率選模。", "evidence": "ADR-0002｜限制｜所以選模指標不能用準確率", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0002", "dst": "ADR-0006", "type": "引發", "reason": "取樣規則限制 SCC 曝光，因此 ADR-0006 將保底取樣列為處置線索。", "evidence": "ADR-0002｜頁首｜缺陷的處置寫在 ADR-0006", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D1", "dst": "ADR-0002", "type": "沿用", "reason": "ADR-0002 沿用 D1 採用的取樣指數與修正後來源等權公式。", "evidence": "ADR-0002｜做法｜當天修正為", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D2", "dst": "ADR-0002", "type": "支持", "reason": "D2 的單來源限制支持不應只靠重抽 SCC 解決跨來源問題的判斷。", "evidence": "ADR-0002｜推論｜不會產生跨來源訊號", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E10", "dst": "ADR-0002", "type": "支持", "reason": "E10 先量到重複曝光差異，為取樣器副作用提供量化依據。", "evidence": "ADR-0002｜頁首｜先量到重複次數", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E20", "dst": "ADR-0002", "type": "支持", "reason": "E20 量出實際抽樣質量，支持 ADR-0002 對分布副作用的描述。", "evidence": "ADR-0002｜結果｜檔案佔比 vs e=1.0 實際佔比", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0002", "dst": "E23", "type": "引發", "reason": "SCC 被取樣規則卡住，因此 E23 設計 class_floor 保底。", "evidence": "ADR-0002｜頁首｜缺陷的處置", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E5", "dst": "ADR-0002", "type": "支持", "reason": "E5 的重複曝光數與後續獨立計算吻合，支持取樣副作用數字。", "evidence": "ADR-0002｜結果｜獨立對帳吻合", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0002", "dst": "R0", "type": "僅提及", "reason": "同名誤配：R0-BAL 指調整取樣指數的分類 run，非 R0 閘門頁。", "evidence": "ADR-0002｜做法｜改成 1.0（R0-BAL）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E11", "dst": "ADR-0003", "type": "引發", "reason": "E11 明文建議不放行，促使閘門退回並交由使用者知情重審。", "evidence": "ADR-0003｜結果｜助理事後才讀到 E11", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0003", "dst": "E11c", "type": "僅提及", "reason": "此處只記錄 E11c 在核准後補做，未說核准促成該分析。", "evidence": "ADR-0003｜頁首｜核准後補做的隨機抽樣", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0003", "dst": "E19", "type": "僅提及", "reason": "E19 的綠框只是用來說明未核准偵測框的使用限制。", "evidence": "ADR-0003｜做法｜例如 E19 貼紙圖上的綠框", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0003", "dst": "E56", "type": "前置", "reason": "必須先通過人工閘門才能訓練 R2-DET，供 E56 比較裁切效果。", "evidence": "ADR-0003｜結果｜核准後解鎖 `R2-DET`", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0003", "dst": "E60", "type": "前置", "reason": "人工核准是偵測裁切訓練的閘門，E60 才能取得裁切組對照。", "evidence": "ADR-0003｜做法｜閘門為 true", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E8", "dst": "ADR-0003", "type": "沿用", "reason": "ADR-0003 使用 E8 閘門檔與核准歷程記錄閘門狀態變化。", "evidence": "ADR-0003｜結果｜E8 閘門檔的 approval_history", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0005", "dst": "ADR-0004", "type": "推翻或更正", "reason": "ADR-0005 的棄答修正使 ADR-0004 不再能概括宣稱棄權無效。", "evidence": "ADR-0004｜推論｜對『修』成立，對『避』不成立", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0004", "dst": "ADR-0007", "type": "引發", "reason": "ADR-0004 確立模型端改善上限，促成後續尋找真正有效的介入。", "evidence": "ADR-0007｜目的｜有沒有任何介入真的過關", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0004", "dst": "E10", "type": "推翻或更正", "reason": "共錯診斷與正則化驗證更正 E10 將主因歸為過擬合的解讀。", "evidence": "ADR-0004｜頁首｜修正 E10 第 8.2 節", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E114", "dst": "ADR-0004", "type": "支持", "reason": "E114 當時觀察驗證指標未持續下滑，支持主要問題非過擬合的判斷。", "evidence": "ADR-0004｜推論｜沒有古典的過擬合樣態", "confidence": "中", "source": "Codex 判讀"}
+{"src": "ADR-0004", "dst": "E115", "type": "僅比較", "reason": "頁面只說 E115 曲線與主張相容，並明確否認它構成印證。", "evidence": "ADR-0004｜推論｜相容，但不是印證", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17", "dst": "ADR-0004", "type": "支持", "reason": "E17 發現不同模型大量共錯，支持錯誤主要具有系統性的判斷。", "evidence": "ADR-0004｜做法｜E17 用六個", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "ADR-0004", "type": "支持", "reason": "E18 加強正則化仍少有改善，支持縮小訓練驗證落差不是主處方。", "evidence": "ADR-0004｜結果｜只修掉 760 張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19", "dst": "ADR-0004", "type": "支持", "reason": "E19 的七模型共錯統計為 ADR-0004 的系統性錯誤判斷提供證據。", "evidence": "ADR-0005｜做法｜E19 七模型 718 張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "ADR-0004", "type": "支持", "reason": "E21 彙整共錯與正則化證據，支持 ADR-0004 的主因判斷。", "evidence": "E21｜推論｜主要問題不是過擬合", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "ADR-0004", "type": "推翻或更正", "reason": "E38 證明集成信心能避開共錯，更正 ADR-0004 的棄權決策。", "evidence": "ADR-0004｜推論｜所以第 2 條要改成", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0004", "dst": "E5", "type": "推翻或更正", "reason": "共錯與介入結果更正 E5 將訓練驗證落差解讀為直接正則化處方。", "evidence": "E5｜頁首｜解讀後來被", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E80", "dst": "ADR-0004", "type": "支持", "reason": "不同家族的 Swin 也少能修掉共錯，支持系統性錯誤並非家族特例。", "evidence": "ADR-0004｜推論｜43% 共錯率不是 ConvNeXt 的產物", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E89", "dst": "ADR-0004", "type": "支持", "reason": "Swin 改用 224 解析度仍未改變錯誤結構，支持原共錯判斷。", "evidence": "ADR-0004｜推論｜沒有改變錯誤結構", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0004", "dst": "R0", "type": "僅提及", "reason": "同名誤配：R0 s17／s42 指分類模型，非病灶框品質閘門頁。", "evidence": "ADR-0004｜做法｜R0 s17／s42", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "ADR-0005", "dst": "A1", "type": "僅提及", "reason": "清單將病灶面積混淆標為作廢並註記 A1，未寫明實質依賴。", "evidence": "ADR-0005｜結果｜病灶面積 confound（A1）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "ADR-0004", "dst": "ADR-0005", "type": "引發", "reason": "確立錯誤具有系統性後，ADR-0005 開始逐項排查候選解釋。", "evidence": "ADR-0005｜目的｜逐一檢查候選解釋", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0006", "dst": "ADR-0005", "type": "支持", "reason": "BKL 桶內異質性的數字支持排除旗標效應不等於標籤本體無問題。", "evidence": "ADR-0005｜推論｜BKL 拆開後確有問題", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0005", "dst": "ADR-0007", "type": "僅提及", "reason": "頁首只記互相引用，未交代兩頁之間的具體因果或使用關係。", "evidence": "ADR-0005｜頁首｜互相引用", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100", "dst": "ADR-0005", "type": "推翻或更正", "reason": "E100 找到內容重複與跨分割同圖，使原本排除洩漏與重複的判斷不成立。", "evidence": "ADR-0005｜推論｜資料洩漏 0 張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100b", "dst": "ADR-0005", "type": "推翻或更正", "reason": "E100b 驗證真重複及評估污染，更正原本無重複、無洩漏的判斷。", "evidence": "ADR-0005｜推論｜148 張 val_assess 影像", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0005", "dst": "E12", "type": "僅提及", "reason": "表格將作廢項目的證據指向 E12 修正附錄，未交代具體推導。", "evidence": "ADR-0005｜結果｜E12 修正附錄", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E17", "dst": "ADR-0005", "type": "沿用", "reason": "ADR-0005 使用 E17 定義的六模型共錯集進行解釋排查。", "evidence": "ADR-0005｜做法｜E17 六模型 760 張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19", "dst": "ADR-0005", "type": "支持", "reason": "E19 的分層數據支持 ADR-0005 排除多項共錯解釋。", "evidence": "ADR-0005｜推論｜在 E19 被自己的數據推翻", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "ADR-0005", "type": "支持", "reason": "E21 彙整已排除的解釋，為 ADR-0005 清單提供整理依據。", "evidence": "E21｜頁首｜寫成 ADR 0004、0005、0006", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E27", "dst": "ADR-0005", "type": "推翻或更正", "reason": "E27 量出原位鱗癌的錯判方向差異，使理由改為測得到但無收益。", "evidence": "ADR-0005｜推論｜理由從「測不到」改成", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "ADR-0005", "type": "推翻或更正", "reason": "E38 證明可藉棄答避開共錯，更正清單對棄權一概無效的判斷。", "evidence": "ADR-0005｜推論｜對「避」不成立", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0004", "dst": "ADR-0006", "type": "引發", "reason": "ADR-0004 限定模型端改善空間，促成對剩餘可操作線索的排序。", "evidence": "ADR-0006｜目的｜模型端介入的上限釘在", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0005", "dst": "ADR-0006", "type": "引發", "reason": "ADR-0005 排掉多數解釋，因此 ADR-0006 轉向整理剩餘線索。", "evidence": "ADR-0006｜目的｜排掉了大部分候選解釋", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0007", "dst": "ADR-0006", "type": "支持", "reason": "ADR-0007 彙整共享階梯結果，支持線索四沒有最佳切點的結論。", "evidence": "ADR-0006｜推論｜共享程度的階梯是平的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D2", "dst": "ADR-0006", "type": "支持", "reason": "D2 指出 SCC 只有單來源，支持先解決來源問題再考慮重跑的判斷。", "evidence": "ADR-0006｜推論｜多抽同一批圖不會產生跨來源訊號", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19", "dst": "ADR-0006", "type": "支持", "reason": "E19 量到 BKL 桶內差異與模糊比例差，支持保留這兩條線索。", "evidence": "E19｜推論｜站得住的兩件", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E20", "dst": "ADR-0006", "type": "支持", "reason": "E20 量出 SCC 抽樣質量上限，支持線索一的問題定義。", "evidence": "ADR-0006｜結果｜SCC 抽取佔比 3.12%", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "ADR-0006", "type": "支持", "reason": "E21 整理三條可量化線索，支持 ADR-0006 的研究方向排序。", "evidence": "E21｜結果｜可量化線索只剩", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E23", "dst": "ADR-0006", "type": "沿用", "reason": "ADR-0006 採用 E23 的 class_floor 設定與未啟用等價性驗證。", "evidence": "ADR-0006｜做法｜64,780 個權重逐位元相同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E24", "dst": "ADR-0006", "type": "支持", "reason": "E24 的弱類別診斷支持降低 SCC 保底取樣改善 F1 的預期。", "evidence": "ADR-0006｜推論｜F1 不會顯著改善", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E26", "dst": "ADR-0006", "type": "支持", "reason": "E26 的取捨分析支持提高召回可能犧牲精確率的事前判斷。", "evidence": "ADR-0006｜推論｜recall 會升、precision 會降", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E28", "dst": "ADR-0006", "type": "引發", "reason": "E28 同時改動共享表徵與 softmax，促成追加拆開歸因的共享線索。", "evidence": "ADR-0006｜做法｜同時拿掉共享表徵與共用 softmax", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0006", "dst": "E32", "type": "引發", "reason": "為拆開共享骨幹線索的混淆，將四級共享對照寫成 E32 事先登記。", "evidence": "ADR-0006｜做法｜寫成事先登記 E32", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E44", "dst": "ADR-0006", "type": "支持", "reason": "E44 完成共享階梯檢驗，支持線索四沒有最佳共享切點的結論。", "evidence": "ADR-0006｜頁首｜線索四已由 E44 等完成", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E70", "dst": "ADR-0006", "type": "支持", "reason": "E70 量到類別內異質性，支持線索二繼續檢查標籤桶結構。", "evidence": "ADR-0006｜推論｜E70 量到類別內異質性", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0006", "dst": "E71", "type": "引發", "reason": "BKL 桶異質性線索後續發展為 E71 的細分類標籤設計。", "evidence": "ADR-0006｜推論｜線索二的後續", "confidence": "中", "source": "Codex 判讀"}
+{"src": "ADR-0006", "dst": "E72", "type": "僅提及", "reason": "此處只回顧線索二後續的驗證通過與訓練狀態。", "evidence": "ADR-0006｜推論｜E72 等價性驗證六項通過", "confidence": "中", "source": "Codex 判讀"}
+{"src": "ADR-0006", "dst": "S0", "type": "僅提及", "reason": "同名誤配：S0 指共享階梯中的完全不共享專家配置，非來源分割盤點頁。", "evidence": "ADR-0006｜做法｜S0／S2／S3／S4 四級", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E36", "dst": "ADR-0007", "type": "支持", "reason": "E36 的集成增益區間不含零，支持將集成當作有效槓桿。", "evidence": "ADR-0007｜結果｜C14 貪婪（事先登記挑的）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36b", "dst": "ADR-0007", "type": "支持", "reason": "E36b 發現成本效益在兩模型轉折，支持成員兩個就好的決策。", "evidence": "E36b｜推論｜成員兩個就好", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36c", "dst": "ADR-0007", "type": "支持", "reason": "配對、留一與排除成員後仍有增益，支持集成效果具有穩健性。", "evidence": "E36c｜頁首｜支撐", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "ADR-0007", "type": "支持", "reason": "E38 發現集成幾乎修不了共錯，支持剩餘改善需離開模型端的判斷。", "evidence": "ADR-0007｜結果｜六模型共錯 760 張只修對 1 張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "ADR-0007", "type": "推翻或更正", "reason": "E40 查明沒有封存測試集，因此 ADR-0007 改寫確認與推翻條件。", "evidence": "ADR-0007｜推論｜已改寫為", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E43", "dst": "ADR-0007", "type": "支持", "reason": "E43 確認帶判決的介入已翻頭，支持原先否決判斷不用修改。", "evidence": "ADR-0007｜推論｜判決不需要修", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E44", "dst": "ADR-0007", "type": "推翻或更正", "reason": "E44 更正損失比較應讀的切分與判讀，但未改變集成主決策。", "evidence": "ADR-0007｜推論｜結論改為", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0007", "dst": "E45", "type": "僅提及", "reason": "頁首只將 E45 列為同日補充，未說明它改變哪項集成判斷。", "evidence": "ADR-0007｜頁首｜同日補充 E40–E45", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E81", "dst": "ADR-0007", "type": "支持", "reason": "跨家族對照未見可辨識增益，支持不再追求更佳單一架構的決策。", "evidence": "ADR-0007｜推論｜結論支持它", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E82", "dst": "ADR-0007", "type": "支持", "reason": "E82 重現 C10 增益且未證實加 Swin 有益，支持集成本身有效的判斷。", "evidence": "E82｜推論｜提升來自集成，不是來自異質性", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0007", "dst": "R0", "type": "僅提及", "reason": "同名誤配：R0 與 R0-AUG 指分類基準及增強 run，非病灶框閘門頁。", "evidence": "ADR-0007｜結果｜R0 的 0.6523", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "ADR-0007", "dst": "S0", "type": "僅提及", "reason": "同名誤配：S0 指八個一對多專家配置，非來源分割盤點頁。", "evidence": "ADR-0007｜結果｜八個一對多專家（S0）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "B3", "dst": "B0", "type": "引發", "reason": "B3 證明 LSE 集中度便宜路線失敗，因此建立第九類正常皮膚裁塊。", "evidence": "B0｜目的｜便宜路線失敗後", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C0", "dst": "B0", "type": "支持", "reason": "C0 的抽樣目視證據支持 B0 採用第四版裁塊。", "evidence": "C0｜結果｜24 張通過，僅 1 張可疑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B0", "dst": "C1", "type": "沿用", "reason": "C1 使用 B0 建立的正常皮膚裁塊驗證第九類學習效果。", "evidence": "B0｜頁首｜裁塊用於 C1、C2、C3", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B0", "dst": "C2", "type": "沿用", "reason": "C2 使用以 B0 裁塊訓練的第九類，檢驗新異常軸。", "evidence": "B0｜頁首｜裁塊用於 C1、C2、C3", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B0", "dst": "C3", "type": "沿用", "reason": "C3 使用 B0 裁塊所訓練的第九類異常軸檢驗兩軸合取。", "evidence": "B0｜頁首｜裁塊用於 C1、C2、C3", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B0", "dst": "D2", "type": "僅提及", "reason": "同名誤配：D2 指裁塊排除條件使用的啟發式病灶框，非八類準確率頁。", "evidence": "B0｜結果｜中央半區外＋D2 框排除", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "B2", "dst": "B1", "type": "推翻或更正", "reason": "B2 證明信心分數混入域偏移，因此更正 B1 的未知類別措辭。", "evidence": "B1｜推論｜不能把棄權寫成", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B1", "dst": "B3", "type": "僅提及", "reason": "B1 只把 B3 列為同夜實驗，未交代彼此依賴。", "evidence": "B1｜頁首｜同夜 B2、B3、B4", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B4", "dst": "B1", "type": "支持", "reason": "B4 另以同域界外樣本量測，支持 B1 假未知率不代表界外能力的限制。", "evidence": "B1｜限制｜不量真正的界外偵測能力", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E38", "dst": "B1", "type": "支持", "reason": "E38 顯示集成配合棄答能避開共錯，因此附條件支持 B1 的棄權方向。", "evidence": "B1｜推論｜棄答對「避開」共錯有效", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "B1", "dst": "R0", "type": "僅提及", "reason": "B1 使用的是基準訓練 run R0，與候選的閘門 R0 同名不同。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B1", "dst": "B2", "type": "沿用", "reason": "B2 使用 B1 在 val_select 訂出的門檻，因此沿用其設定。", "evidence": "B2｜做法｜沿用 B1", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B2", "dst": "B4", "type": "引發", "reason": "B2 發現 SCIN 測試混入域偏移，因此改做 B4 同域留類驗證。", "evidence": "B2｜推論｜下一步：留一類別", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B2", "dst": "D3", "type": "支持", "reason": "B2 量到臨床照的域偏移，因此作為 D3 評估外部資料風險的依據。", "evidence": "B2｜頁首｜D3 引用本結果", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B2", "dst": "R0", "type": "僅提及", "reason": "B2 的 R0 是訓練模型代號，與候選的病灶框閘門不同。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B2", "dst": "B3", "type": "支持", "reason": "B2 的域偏移陷阱支持 B3 排除 COCO、要求同域正常皮膚的決定。", "evidence": "B3｜推論｜與 B2 的域偏移陷阱相同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B3", "dst": "C0", "type": "引發", "reason": "B3 排除便宜路線並改走第九類，因此衍生 C0 的正常裁塊目視驗收。", "evidence": "B3｜推論｜無病灶要走正規版", "confidence": "中", "source": "Codex 判讀"}
+{"src": "B3", "dst": "C1", "type": "引發", "reason": "B3 決定增加正常皮膚第九類，因此 C1 驗證它是否真的學到。", "evidence": "B3｜推論｜逐格加第九類", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B4", "dst": "C3", "type": "僅比較", "reason": "兩頁模型與裁塊條件不同，因此 AUROC 只作跨 run 參考。", "evidence": "C3｜做法｜屬跨 run，只當參考", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B4", "dst": "R0", "type": "僅提及", "reason": "B4 的 R0-LOCO 是訓練 run，與候選的閘門 R0 不同。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B0", "dst": "C0", "type": "沿用", "reason": "C0 使用 B0 的裁塊計畫與抽樣腳本，留存各版本目視證據。", "evidence": "C0｜做法｜依裁塊計畫隨機抽 24 張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C0", "dst": "C1", "type": "前置", "reason": "C0 先驗收正常皮膚裁塊，通過的版本才用於 C1 第九類模型。", "evidence": "C0｜推論｜v4 採用，並據此訓練", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C0", "dst": "C2", "type": "前置", "reason": "C0 驗收的裁塊用於九類模型，因此是 C2 異常圖驗證的資料關卡。", "evidence": "C0｜頁首｜採用的裁塊用於 C1、C2、C3", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C0", "dst": "C3", "type": "前置", "reason": "C0 驗收的裁塊用於九類模型，因此先於 C3 兩軸驗證。", "evidence": "C0｜頁首｜採用的裁塊用於 C1、C2、C3", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C0", "dst": "D2", "type": "僅提及", "reason": "C0 的 D2 指啟發式病灶框，並非候選的八類 85% 可行性實驗。", "evidence": "C0｜結果｜D2 框排除", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C2", "dst": "C1", "type": "支持", "reason": "C2 發現第九類不提供格層級異常圖，支持 C1 將成功範圍限於影像層級。", "evidence": "C1｜推論｜不提供格層級異常圖", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C3", "dst": "C1", "type": "支持", "reason": "C3 發現異常軸對細微未知病灶反向，支持 C1 對第九類用途的限制。", "evidence": "C1｜推論｜對細微的未知病灶反向", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A2", "dst": "C2", "type": "沿用", "reason": "C2 沿用 A2 的評分方法與舊軸數字，評估新的第九類異常圖。", "evidence": "C2｜做法｜沿用 A2 的評分", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C1", "dst": "C2", "type": "支持", "reason": "C1 的高 AUROC 與低誤報，支持 C2 判定第九類的影像層級目標已達成。", "evidence": "C2｜推論｜C1：AUROC 0.953", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C2", "dst": "C3", "type": "前置", "reason": "C3 明列 C2 的異常軸驗證為前置，再檢查異常軸與不確定軸合取。", "evidence": "C3｜頁首｜前置 B4（留一類別）、C1、C2", "confidence": "中", "source": "Codex 判讀"}
+{"src": "B1", "dst": "C3", "type": "支持", "reason": "C3 引用 B1 的信心評分限制，支持其未知病灶路線總結。", "evidence": "C3｜推論｜信心評分器分不出", "confidence": "中", "source": "Codex 判讀"}
+{"src": "B2", "dst": "C3", "type": "支持", "reason": "B2 證明 SCIN 量到域偏移，支持 C3 排除該界外驗證路線的總結。", "evidence": "C3｜推論｜SCIN 界外量到的是域偏移", "confidence": "高", "source": "Codex 判讀"}
+{"src": "C1", "dst": "C3", "type": "前置", "reason": "C1 先驗證正常皮膚第九類成立，C3 再檢查它能否作未知病灶異常軸。", "evidence": "C3｜頁首｜前置 B4（留一類別）、C1、C2", "confidence": "中", "source": "Codex 判讀"}
+{"src": "C3", "dst": "R0", "type": "僅提及", "reason": "C3 提到的是 B4 的 R0-LOCO 訓練 run，並非閘門 R0。", "evidence": "C3｜做法｜R0-LOCO：GAP 頭", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D0", "dst": "D1", "type": "沿用", "reason": "D0 移除會製造黑線的彈性形變，D1 使用修正後的重增強設定。", "evidence": "D0｜頁首｜使用移除後的設定", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D0", "dst": "R0", "type": "僅提及", "reason": "D0 的 R0-AUG 與基準 R0 是訓練組別，並非候選的病灶框閘門。", "evidence": "D0｜結果｜基準 R0", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D1", "dst": "ADR-0002", "type": "支持", "reason": "D1 的兩 seed 結果促成採用指數 1.0，支持 ADR 記錄的現行取樣設定。", "evidence": "D1｜推論｜採用 sample_exponent=1.0", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D1", "dst": "D2", "type": "引發", "reason": "D1 發現小樣本格的指標雜訊造成早停，因此 D2 引入 ge30 選模。", "evidence": "D1｜推論｜此發現導致後來的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D1", "dst": "E12", "type": "沿用", "reason": "E12 讀取 D1 的 R0 與 R0-BAL logits，統一重算卷積成本比較。", "evidence": "E12｜做法｜一律從", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E16", "dst": "D1", "type": "推翻或更正", "reason": "E16 重算顯示 R0-BAL 到最後仍上升，證明 D1 的大致收斂判讀錯了。", "evidence": "D1｜推論｜應更正為「被預算切斷」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D1", "dst": "R0", "type": "僅提及", "reason": "D1 的基準 R0 是重跑的訓練模型，與候選的閘門 R0 不同。", "evidence": "D1｜做法｜基準 R0（新程式重跑）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D2", "dst": "D3", "type": "引發", "reason": "D2 顯示 AKIEC 與 SCC 召回落後，因此 D3 查核新資料與偵測裁切方案。", "evidence": "D3｜目的｜D2 顯示 R1 召回最低", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D2", "dst": "E1", "type": "沿用", "reason": "E1 使用 D2 的 R1 結果與混淆矩陣，檢定跨來源與資料量假設。", "evidence": "E1｜做法｜依據：R1", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D2", "dst": "E12", "type": "沿用", "reason": "E12 使用 D2 的 R1 logits，納入統一指標的卷積成本階梯。", "evidence": "E12｜做法｜R1（tiny@320, 1.0）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D2", "dst": "R0", "type": "僅提及", "reason": "D2 用的是 R0-BAL 訓練模型，並非候選的病灶框閘門 R0。", "evidence": "D2｜做法｜模型為 R0-BAL seed 17", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E1", "dst": "D3", "type": "引發", "reason": "E1 推論來源線索是瓶頸，因此促成 D3 優先偵測裁切的排序。", "evidence": "E1｜推論｜所以先做偵測裁切", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D3", "dst": "E6", "type": "引發", "reason": "D3 提出偵測裁切路線，因此 E6 先盤點可供分割器學習的遮罩。", "evidence": "E6｜頁首｜提出「偵測 → 緊貼病灶裁切", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D3", "dst": "E7", "type": "引發", "reason": "D3 提出偵測後裁切分類，因此 E7 訓練分割器產生全資料病灶框。", "evidence": "E7｜目的｜D3 提出", "confidence": "高", "source": "Codex 判讀"}
+{"src": "R0", "dst": "D3", "type": "支持", "reason": "R0 的啟發式框目視未通過，支持 D3 判定不能拿這些框訓練 YOLO。", "evidence": "D3｜結果｜拿來訓練 YOLO 等於蒸餾錯誤", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E1", "dst": "E10", "type": "引發", "reason": "E1 已指出張數不決定表現，因此 E10 進一步查類別真正的分界線。", "evidence": "E10｜目的｜E1 已說明張數不決定表現", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E12", "dst": "E1", "type": "推翻或更正", "reason": "E12 指出 R2 第 13 輪已走平，因此更正 E1 對延長訓練的判斷。", "evidence": "E12｜推論｜更正 E1 的說法", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E16", "dst": "E1", "type": "推翻或更正", "reason": "E16 以現行指標重算發現末輪最佳，因此修正 E1 的訓練時間判讀。", "evidence": "E1｜推論｜後來對第 3 部分的更正", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E43", "dst": "E1", "type": "支持", "reason": "E43 量到 R2 末段斜率很平，支持 E1 對延長預算收益有限的判斷。", "evidence": "E1｜推論｜幾乎都是平的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E1", "dst": "E5", "type": "引發", "reason": "E1 提出先量訓練集召回，因此 E5 執行訓練集推論檢定。", "evidence": "E1｜推論｜後者由 E5 執行", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E1", "dst": "E9", "type": "支持", "reason": "E1 的互相混淆數字支持 E9 判定調整份量會牽動共同決策邊界。", "evidence": "E9｜推論｜32 格共用同一個 8 路 softmax", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E1", "dst": "R0", "type": "僅提及", "reason": "E1 引用 E16 的訓練 run R0 曲線，與候選的閘門 R0 不同。", "evidence": "E1｜推論｜所有 run（R0、R0-BAL", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E10", "dst": "ADR-0005", "type": "僅提及", "reason": "E10 提到 ADR-0005 的後續修正，未寫明兩頁的實質依賴。", "evidence": "E10｜推論｜ADR-0005 修正", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E10", "dst": "ADR-0006", "type": "僅提及", "reason": "頁首僅列後續 ADR，未說明 E10 如何促成其決策。", "evidence": "E10｜頁首｜後續", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17", "dst": "E10", "type": "推翻或更正", "reason": "E17 的共錯檢定推翻 E10 的教科書式過擬合解釋。", "evidence": "E10｜推論｜後來被 E17／E18 推翻", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E10", "type": "推翻或更正", "reason": "加強正則化未帶來明確改善，更正了 E10 的對症處方。", "evidence": "E10｜推論｜增強與正則化直接對症", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19", "dst": "E10", "type": "支持", "reason": "E19 共錯率相近，支持 E10 原位鱗癌沒有比較難的判斷。", "evidence": "E10｜推論｜再確認「沒有比較難」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E27", "dst": "E10", "type": "支持", "reason": "E27 的 Wilson 區間支持 E10 發現的誤判方向差異。", "evidence": "E10｜推論｜確認方向差異成立", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "E10", "type": "推翻或更正", "reason": "集成信心能避開多數共錯，更正 E10 棄答無效的概括。", "evidence": "E10｜推論｜可以「避」掉大部分共錯", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E5", "dst": "E10", "type": "推翻或更正", "reason": "E5 量到高訓練召回，推翻 E10 表徵沒分出類別的解釋。", "evidence": "E10｜推論｜表徵根本沒把它分出來", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E10", "dst": "E70", "type": "僅提及", "reason": "只列細類別後續；E70 未明指由 E10 結果發起。", "evidence": "E10｜頁首｜E70–E72（細類別）", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E10", "dst": "E72", "type": "僅提及", "reason": "只列細類別後續，未說明 E72 使用 E10 的產物。", "evidence": "E10｜頁首｜E70–E72（細類別）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E10", "dst": "E8", "type": "僅比較", "reason": "以 E8 各類總張數核對 E10 表頭，未交代資料沿用。", "evidence": "E10｜限制｜與 E8 的全 manifest", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100", "dst": "E100b", "type": "引發", "reason": "因 E100 的雜湊命中組合可疑，所以 E100b 驗證真假重複。", "evidence": "E100b｜目的｜E100 的結果組合可疑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100", "dst": "E101", "type": "前置", "reason": "因去重須先找出候選重複群組，所以 E100 是 E101 的上游檢查。", "evidence": "E101｜頁首｜前置 E100、E100b", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E88", "dst": "E100", "type": "引發", "reason": "因 E88 發現位元組去重的盲點，所以 E100 改查影像內容。", "evidence": "E100｜目的｜像素相同但編碼不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100b", "dst": "E101", "type": "沿用", "reason": "因 E100b 產出驗證通過的重複對，所以 E101 用它建立去重群組。", "evidence": "E101｜做法｜只處理 E100b 雙門檻", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100b", "dst": "E91", "type": "推翻或更正", "reason": "E100b 證明重複污染墊高 E91 分數，將頭條 F1 更正為 0.6728。", "evidence": "E91｜推論｜0.6819 → 0.6728", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100b", "dst": "E98", "type": "推翻或更正", "reason": "因 E100b 查出評估污染，所以 E98 引用的頭條 F1 下修，AUC 未重算。", "evidence": "E98｜推論｜頭條 F1 從 0.6819 下修", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E101", "dst": "E120", "type": "僅提及", "reason": "因兩份 manifest 處理不同問題，所以後續排除測試集不表示採用 E101。", "evidence": "E101｜頁首｜與本檔是不同的處理", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E101", "dst": "E123", "type": "僅提及", "reason": "因 E101 去重檔未採用，所以 E123 成為標準不能視為取代該檔。", "evidence": "E101｜推論｜去重 manifest 未採用", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E90", "dst": "E101", "type": "沿用", "reason": "因 E101 保留既有排除狀態，所以其輸出包含 E90 排除的 68 列。", "evidence": "E101｜結果｜含 E90 已排除的 68 列", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E102", "dst": "ADR-0007", "type": "僅比較", "reason": "因解析度對照的結果不同，所以 E102 要求與 ADR 的噪聲帶結果並陳。", "evidence": "E102｜推論｜兩者要並陳", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E102", "dst": "E103", "type": "僅提及", "reason": "因 E102 僅記錄同日 E103 的銳利度發現，所以未建立實質依賴。", "evidence": "E102｜推論｜同日 E103 在模型輸入端量銳利度", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E102", "dst": "E142", "type": "引發", "reason": "因 E102 發現評估壓扁長寬比，所以 E142 檢驗只改推論的改善方式。", "evidence": "E142｜頁首｜前置 E102", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E89", "dst": "E102", "type": "支持", "reason": "因 E89 提供同骨幹解析度差，所以支持 E102 解析度可換分數的判斷。", "evidence": "E102｜推論｜最乾淨的一條正向證據", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E102", "dst": "E94", "type": "僅提及", "reason": "因 E102 僅列 E94 的壓方形前處理背景，所以未明示實質依賴。", "evidence": "E102｜頁首｜評估路徑是直接壓方形", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E103", "dst": "E102", "type": "僅提及", "reason": "因 E103 只將解析度稽核列為前置背景，所以未明示使用 E102 的產物。", "evidence": "E103｜頁首｜前置 E102（解析度稽核）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E103", "dst": "E105", "type": "引發", "reason": "因 E103 提出銳利度來源指紋假說，所以 E105 用模糊介入檢驗。", "evidence": "E105｜頁首｜檢驗 E103 提出的假說", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E103", "dst": "E122", "type": "支持", "reason": "因 E103 量到來源銳利度差，所以支持 E122 將其列為可減弱的差異。", "evidence": "E122｜結果｜來源間差 4.2 倍", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E96", "dst": "E103", "type": "支持", "reason": "因留一 BCN 幾乎不掉分，所以 E103 將其視為來源辨識假說的相容現象。", "evidence": "E103｜推論｜與 E96 留一 BCN", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E104", "dst": "E105", "type": "僅提及", "reason": "因兩個介入僅共用排程，所以不能據此建立因果或資料沿用關係。", "evidence": "E104｜頁首｜與 E105 同一排程", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E104", "dst": "E122", "type": "支持", "reason": "因 E104 未發現普遍邊框依賴，所以支持 E122 對既有證據的保留判斷。", "evidence": "E122｜結果｜沒有發現模型依賴它", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E104", "dst": "E94", "type": "推翻或更正", "reason": "E104 的遮罩對照否證 E94 原先捷徑宣稱所暗示的普遍邊緣依賴。", "evidence": "E94｜推論｜進一步否證", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E95", "dst": "E104", "type": "引發", "reason": "因 E95 只證明尺規被表徵，所以 E104 另以介入檢驗決策是否依賴它。", "evidence": "E104｜目的｜有表徵不等於決策靠它", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E104", "dst": "E96", "type": "僅提及", "reason": "因頁面只將 E96 列為參考，所以未建立具體依賴或支持關係。", "evidence": "E104｜頁首｜參考 E95", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E105", "dst": "E104", "type": "僅提及", "reason": "因兩者只是合併陳述不同捷徑的否定結果，所以未形成相互驗證。", "evidence": "E105｜推論｜兩個否定結果都應寫進報告", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E105", "dst": "E122", "type": "支持", "reason": "因 E105 未發現銳利度依賴，所以支持 E122 對該擴充證據限制的記錄。", "evidence": "E122｜結果｜E105：未發現模型依賴", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E106", "dst": "C1", "type": "僅提及", "reason": "因此處 C1 是 E117 的缺陷編號，所以與正常皮膚驗證頁 C1 無關。", "evidence": "E106｜推論｜列為缺陷 C1", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100b", "dst": "E106", "type": "推翻或更正", "reason": "因 E100b 查出重複污染，所以 E106 的 0.6819 須附更正值 0.6728。", "evidence": "E106｜限制｜去污染後為 0.6728", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E106", "dst": "E109", "type": "支持", "reason": "因 E106 顯示相同類別的混淆，所以支持 E109 對嚴重錯誤集中處的判讀。", "evidence": "E109｜推論｜與 E106 混淆矩陣一致", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E106", "dst": "E110", "type": "僅提及", "reason": "因兩頁描述同一模型，所以不能把超參數文件視為混淆矩陣的模型來源。", "evidence": "E106｜頁首｜模型同 E110", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E106", "dst": "E112", "type": "僅比較", "reason": "因 E112 只將 E106 的 AKIEC recall 與醫師文獻數字對照，所以屬比較。", "evidence": "E106｜推論｜與文獻中人類專家的 51.2%", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E106", "dst": "E113", "type": "沿用", "reason": "因 E113 使用與 E106 相同的資料和數字，所以只是換樣式重畫。", "evidence": "E113｜做法｜數字與 E106 相同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E106", "dst": "E117", "type": "支持", "reason": "因 E106 量到 BCN 黑色素瘤誤判為痣，所以支持 E117 列出該缺陷。", "evidence": "E106｜推論｜列為缺陷 C1", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E107", "dst": "D1", "type": "僅提及", "reason": "因為 D1 是 E117 的缺陷編號，所以不是引用類別平衡實驗。", "evidence": "E107｜頁首｜E117（缺陷 D1）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E102", "dst": "E107", "type": "引發", "reason": "因為稽核發現像素大量流失，所以提出高解析度訓練顯存探測。", "evidence": "E107｜目的｜ISIC 只保留 7.5% 像素", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E108", "dst": "E107", "type": "前置", "reason": "因為顯存探測須等 KAN 完成並釋放 GPU，所以完成訊號是排程閘門。", "evidence": "E107｜做法｜等 R2-KAN 寫出 result.json", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E107", "dst": "E117", "type": "支持", "reason": "因為 E107 因錯誤直譯器立即退出，所以支持排程靜默失敗的缺陷判定。", "evidence": "E117｜結果｜因 Python 環境錯誤立即退出", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E107", "dst": "E130", "type": "僅提及", "reason": "因為兩頁探測的變因不同，所以後來的 batch 實測只是相關工作索引。", "evidence": "E107｜推論｜不同的問題，不是 E107 的重跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E108", "dst": "C2", "type": "僅提及", "reason": "因為 C2 是 E117 的缺陷編號，所以不是引用第九類異常圖實驗。", "evidence": "E108｜頁首｜E117（缺陷 C2）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E108", "dst": "E117", "type": "支持", "reason": "因為放大分類頭後差距仍在噪聲帶內，所以支持分類頭不是瓶頸的判斷。", "evidence": "E108｜推論｜head 不是瓶頸", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E108", "dst": "E134", "type": "支持", "reason": "因為 KAN 的改善未超出噪聲，所以支持引用總表中分類頭不是瓶頸的判斷。", "evidence": "E134｜結果｜head 不是瓶頸", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100b", "dst": "E109", "type": "沿用", "reason": "因為 E109 使用既有污染與標籤衝突名單，所以能檢查嚴重錯誤是否命中。", "evidence": "E109｜做法｜自動交叉比對 E100b 兩份名單", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E109", "dst": "E106", "type": "支持", "reason": "因為嚴重錯例也集中於相近類別互錯，所以支持混淆矩陣的錯誤判讀。", "evidence": "E109｜推論｜與 E106 混淆矩陣一致", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E109", "dst": "E110", "type": "僅提及", "reason": "因為兩頁記錄同一個既有模型，所以共用模型不代表沿用文件產物。", "evidence": "E109｜頁首｜模型同 E106／E110", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E11", "dst": "ADR-0003", "type": "前置", "reason": "ADR 記錄 E11 是人工核准 G-DET 前應讀的阻擋報告。", "evidence": "ADR-0003｜頁首｜核准前應讀的阻擋報告", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E11b", "dst": "E11", "type": "支持", "reason": "隨機目視量到多病灶與墨跡，支持 E11 的裁切風險判斷。", "evidence": "E11｜結果｜人眼隨機樣本", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E11", "dst": "E11c", "type": "引發", "reason": "E11 建議擴大隨機樣本，促成 E11c 補做選項 A。", "evidence": "E11c｜目的｜先把隨機樣本加大", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E11", "dst": "E13", "type": "引發", "reason": "E11 的墨跡風險與隔離方案，促成 E13 測逐張辨識判據。", "evidence": "E13｜目的｜接受「先隔離再入場」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E56", "dst": "E11", "type": "支持", "reason": "PAD 裁切後兩切分皆退步，支持 E11 對裁切風險的警告。", "evidence": "E11｜推論｜兩個切分都退步約 2.5pp", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E11", "dst": "E57", "type": "引發", "reason": "E11 的墨跡風險結合 PAD 退步，促成 E57 產逐張標記。", "evidence": "E57｜目的｜墨圈是已知風險", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58", "dst": "E11", "type": "推翻或更正", "reason": "E58 指出目視計數可能漏掉淡色墨線，促使 E11 加註低估。", "evidence": "E11｜推論｜人眼墨跡計數可能偏低", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E11", "dst": "E59", "type": "引發", "reason": "E11 發現框受墨線界定，促成 E59 檢驗墨圈能否解釋退步。", "evidence": "E59｜目的｜從沒有被接起來驗證", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E7", "dst": "E11", "type": "沿用", "reason": "E11 使用 E7 偵測器遮罩與出框規則分析裁切風險。", "evidence": "E11｜做法｜查 `e7_detector.py`", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E8", "dst": "E11", "type": "引發", "reason": "使用者指出 E8 拼圖中的錯框，要求 E11 先查清裁切風險。", "evidence": "E11｜目的｜要求先查清楚", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100b", "dst": "E110", "type": "推翻或更正", "reason": "因為查到評估集重複污染，所以將模型頭條分數由 0.6819 下修為 0.6728。", "evidence": "E110｜限制｜去重後 0.6728", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E102", "dst": "E110", "type": "支持", "reason": "因為稽核量到長寬比壓縮，所以支持超參數文件揭露評估前處理缺陷。", "evidence": "E110｜推論｜這是 E102 量到", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E110", "dst": "E106", "type": "僅提及", "reason": "因為兩頁描述同一既有模型，所以此處只是標示模型一致。", "evidence": "E110｜頁首｜模型同 E106／E109", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E110", "dst": "E109", "type": "僅提及", "reason": "因為兩頁描述同一既有模型，所以此處只是標示模型一致。", "evidence": "E110｜頁首｜模型同 E106／E109", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "E110", "type": "支持", "reason": "因為盤點證實 seed 42 排程失敗，所以支持模型仍只有單一 seed 的限制。", "evidence": "E110｜限制｜seed 42 的排程靜默失敗", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E110", "dst": "E120", "type": "僅提及", "reason": "因為 E120 只用來定位 seed 42 停止的時段，所以不是 manifest 的實質關係。", "evidence": "E110｜限制｜見 E120 時段的紀錄", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E110", "type": "取代", "reason": "因為後續訓練改採 HC 作對照，所以取代 E110 所記模型的基準地位。", "evidence": "E110｜頁首｜改以排除官方測試集", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E111", "dst": "A2", "type": "僅提及", "reason": "因為 E111 只澄清先前誤引 A2 的讀出集中度，所以未建立實質依賴。", "evidence": "E111｜推論｜引的是讀出集中度（A2）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E111", "dst": "A4", "type": "僅提及", "reason": "因為 A4 是 E117 的 manifest 缺陷編號，所以不是引用遮罩反轉率實驗。", "evidence": "E111｜頁首｜缺陷 A4（兩代 manifest 混用）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E111", "dst": "ADR-0007", "type": "推翻或更正", "reason": "因為索引揭露集成增益來自舊 manifest，所以修正其適用於現行資料的判讀。", "evidence": "E111｜推論｜集成 +3.49pp 是在舊 manifest", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E111", "dst": "E117", "type": "支持", "reason": "因為索引查出兩代 manifest 混用，所以支持 E117 的缺陷 A4。", "evidence": "E111｜推論｜E117 據此列出缺陷 A4", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E111", "dst": "E118", "type": "僅提及", "reason": "因為只指出兩者同為可重建索引，所以未建立產物沿用或前置關係。", "evidence": "E111｜頁首｜同類的實驗目錄見 E118", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E112", "dst": "E106", "type": "僅比較", "reason": "因為文獻將醫師 AKIEC 敏感度與模型 recall 並列，所以是數字對照。", "evidence": "E112｜結果｜AKIEC recall 是 0.5263", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E120", "dst": "E112", "type": "推翻或更正", "reason": "因為建立排除測試集的 manifest，所以修正人機對照實際不可行的判斷。", "evidence": "E120｜推論｜推翻了 E112 當時", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E112", "type": "推翻或更正", "reason": "因為排除官方測試集並重訓，所以修正人機對照不可行的判斷。", "evidence": "E112｜推論｜後來被推翻", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E124", "dst": "E112", "type": "推翻或更正", "reason": "因為已在同組測試影像完成人機對照，所以推翻只能作數量級背景的判斷。", "evidence": "E112｜推論｜同一組 1,512 張上對照醫師", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E112", "dst": "E134", "type": "沿用", "reason": "因為引用總表彙整 E112 已整理的文獻，所以沿用其引用資料。", "evidence": "E134｜目的｜文獻散在 E15、E112", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E135", "dst": "E112", "type": "支持", "reason": "因為全文核對未在內文找到 BCC 分組，所以支持惡性定義仍待附錄核實的限制。", "evidence": "E112｜推論｜惡性分組在附錄，內文未列 BCC", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E112", "dst": "E96", "type": "僅提及", "reason": "因為只列出留一來源報告作相關引用，所以未說明其如何支持文獻判斷。", "evidence": "E112｜頁首｜E96（留一來源）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E113", "dst": "E110", "type": "僅提及", "reason": "因為只標示 recall 引用值相同，所以沒有新的驗證或產物沿用關係。", "evidence": "E113｜頁首｜逐類 recall 同 E110／E112", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E113", "dst": "E112", "type": "僅提及", "reason": "因為只標示 recall 引用值相同，所以沒有新的驗證或產物沿用關係。", "evidence": "E113｜頁首｜逐類 recall 同 E110／E112", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E114", "dst": "E115", "type": "引發", "reason": "因為確認無法補畫 validation loss，所以改用已記錄的 ECE 檢查校準走勢。", "evidence": "E115｜目的｜專案沒有 validation loss", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E116", "dst": "E114", "type": "推翻或更正", "reason": "因為 pooled BA 錯誤率在 ep10 後回升，所以修正沒有過擬合樣態的讀法。", "evidence": "E114｜推論｜在 ep10 觸底後一路回升", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E114", "dst": "E117", "type": "支持", "reason": "因為確認未記驗證 loss 且無逐 epoch 權重，所以支持缺陷 B6 與補記計劃。", "evidence": "E114｜推論｜列為缺陷 B6", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E115", "dst": "ADR-0004", "type": "僅比較", "reason": "因為只說校準結果與 ADR 相容且收回印證，所以沒有主張實證支持。", "evidence": "E115｜推論｜不是先前說的那種「印證」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E115", "dst": "E116", "type": "僅提及", "reason": "因為只標示下一篇曲線分析，所以未說明結果如何促成後續實驗。", "evidence": "E115｜頁首｜後續 E116", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E115", "dst": "E94", "type": "僅提及", "reason": "因為 E94 只是同類誤判教訓的歷史例子，所以沒有實驗因果關係。", "evidence": "E115｜推論｜第一次 E94 尺規", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E116", "dst": "ADR-0004", "type": "僅比較", "reason": "因為只界定新發現不推翻 ADR，所以未驗證其系統性錯誤主張。", "evidence": "E116｜推論｜不推翻 ADR-0004", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E116", "dst": "B1", "type": "僅提及", "reason": "因為 B1 指選模代價的缺陷編號，所以不是引用信心棄權實驗。", "evidence": "E116｜推論｜缺陷 B1（訓練目標與選模指標", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E116", "dst": "E115", "type": "僅提及", "reason": "因為只列為接續的曲線分析，所以沒有指出 ECE 結果被沿用或更正。", "evidence": "E116｜頁首｜接續 E114、E115", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E116", "dst": "E117", "type": "支持", "reason": "因為量到選模取捨的 pooled BA 代價，所以支持 E117 的缺陷 B1。", "evidence": "E116｜推論｜E117 將此列為缺陷 B1", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "A1", "type": "僅提及", "reason": "因為 A1 指只有單一 seed 的缺陷，所以不是空間頭區域圖實驗。", "evidence": "E117｜結果｜A1 只有 seed 17", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "A2", "type": "僅提及", "reason": "因為 A2 指評估污染的缺陷，所以不是 LSE 讀出比較實驗。", "evidence": "E117｜結果｜A2 val_assess 148 張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "A3", "type": "僅提及", "reason": "因為 A3 指同圖不同標籤的缺陷，所以不是啟發式遮罩實驗。", "evidence": "E117｜結果｜A3 同圖不同標籤 25 對", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "A4", "type": "僅提及", "reason": "因為 A4 指兩代 manifest 混用的缺陷，所以不是遮罩反轉率實驗。", "evidence": "E117｜結果｜A4 34 個 run 綁舊 manifest", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0006", "dst": "E117", "type": "支持", "reason": "因為 ADR 提供 SCC 取樣與 BKL 異質的數字，所以支持訓練缺陷盤點。", "evidence": "E117｜結果｜SCC 被取樣規則餓死", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0007", "dst": "E117", "type": "支持", "reason": "因為 ADR 的集成結果通過判準，所以支持盤點中唯一過關的是集成。", "evidence": "E117｜結果｜唯一過關的是集成", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "B1", "type": "僅提及", "reason": "因為 B1 指 pooled BA 選模代價，所以不是信心棄權實驗。", "evidence": "E117｜結果｜B1 pooled BA 選模代價", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "B2", "type": "僅提及", "reason": "因為 B2 指評估長寬比壓縮，所以不是 SCIN 界外疾病測試。", "evidence": "E117｜結果｜B2 評估壓扁長寬比", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "B3", "type": "僅提及", "reason": "因為 B3 指 ISIC 像素保留率，所以不是無病灶便宜路線實驗。", "evidence": "E117｜結果｜B3 ISIC 只保留 7.5% 像素", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "B4", "type": "僅提及", "reason": "因為 B4 指 SCC 取樣不足，所以不是留一類別界外偵測實驗。", "evidence": "E117｜結果｜B4 SCC 被取樣規則餓死", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "C1", "type": "僅提及", "reason": "因為 C1 指 BCN 黑色素瘤誤判，所以不是第九類正常皮膚驗證。", "evidence": "E117｜結果｜C1 BCN 黑色素瘤", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "C2", "type": "僅提及", "reason": "因為 C2 指架構改動落在噪聲內，所以不是第九類異常圖實驗。", "evidence": "E117｜結果｜C2 架構改動全在噪聲內", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "C3", "type": "僅提及", "reason": "因為 C3 指留一 PAD 的域泛化缺陷，所以不是兩軸合取實驗。", "evidence": "E117｜結果｜C3 留一 PAD 未見域", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "D1", "type": "僅提及", "reason": "因為 D1 指排程靜默失敗，所以不是類別平衡與重增強實驗。", "evidence": "E117｜結果｜D1 排程靜默失敗", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "D2", "type": "僅提及", "reason": "因為 D2 指磁碟空間不足，所以不是八類準確率天花板實驗。", "evidence": "E117｜結果｜D2 磁碟剩 13G", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "D3", "type": "僅提及", "reason": "同名誤配：D3 實指 E117 的「G-DET 未蓋章」缺陷編號，不是 D3 實驗頁。", "evidence": "E117｜結果｜D3 G-DET 未蓋章", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E100b", "dst": "E117", "type": "支持", "reason": "因為查出重複污染與標籤衝突，所以支持結果可信度缺陷的盤點。", "evidence": "E117｜結果｜0.6819 實為 0.6728", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E102", "dst": "E117", "type": "支持", "reason": "因為稽核量到像素損失與長寬比壓縮，所以支持前處理缺陷盤點。", "evidence": "E117｜結果｜B3 ISIC 只保留 7.5% 像素", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E112", "dst": "E117", "type": "支持", "reason": "因為查到官方測試影像大量進入既有資料，所以支持人機對照受污染的限制。", "evidence": "E117｜結果｜測試集 83.3% 已在我們的資料裡", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "E119", "type": "引發", "reason": "因為盤點發現磁碟僅剩 13G 並列入計劃，所以接著執行磁碟清理。", "evidence": "E119｜頁首｜起因為 E117 缺陷 D2", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E120", "dst": "E117", "type": "推翻或更正", "reason": "因為建立排除測試集的 manifest，所以修正人機對照比不了的判斷。", "evidence": "E117｜推論｜A6「人機對照比不了」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E117", "type": "推翻或更正", "reason": "因為排除官方測試集並重訓，所以修正人機對照比不了的判斷。", "evidence": "E117｜推論｜後來被推翻", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E124", "dst": "E117", "type": "推翻或更正", "reason": "因為實際在同組影像上完成人機對照，所以推翻 A6 的不可比較判斷。", "evidence": "E117｜推論｜同一組測試影像上與醫師對照", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E117", "type": "支持", "reason": "因為事實查核確認沒有封存測試集，所以支持結果可信度缺陷 A5。", "evidence": "E117｜結果｜A5 沒有實際的封存測試集", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E117", "dst": "E96", "type": "僅提及", "reason": "因為 PAD 降幅實出自 E96b、E96 僅轉述，所以保守記為引用提及。", "evidence": "E96｜推論｜後來 E96b 做留一 PAD", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E118", "dst": "E111", "type": "僅提及", "reason": "因為只指出同為可重建索引的設計理念，所以未建立產物沿用關係。", "evidence": "E118｜頁首｜同一設計理念", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E118", "dst": "E120", "type": "僅提及", "reason": "因為 E120 只是索引重建的時間定位，所以不是 manifest 的實質關係。", "evidence": "E118｜結果｜E120 時", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E119", "dst": "D2", "type": "僅提及", "reason": "因為 D2 指 E117 的磁碟缺陷，所以不是八類準確率天花板實驗。", "evidence": "E119｜頁首｜E117 缺陷 D2（磁碟剩 13G）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E119", "dst": "D3", "type": "僅提及", "reason": "因為只交代 SCIN 曾被評估但未採用，所以沒有沿用或實驗因果關係。", "evidence": "E119｜結果｜D3 評估過、未採用", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E11b", "dst": "E11c", "type": "複製", "reason": "E11c 換 seed 並擴大樣本，重做 E11b 的隨機目視估計。", "evidence": "E11c｜做法｜seed 20261104", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E13", "dst": "E11b", "type": "支持", "reason": "E13 分層估計與 E11b 墨跡率同範圍，提供另一方法的支持。", "evidence": "E11b｜推論｜與 15.6% 同範圍", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E58", "dst": "E11b", "type": "推翻或更正", "reason": "全量標記及後續抽查揭露漏判，促使 E11b 加註可能低估。", "evidence": "E11b｜限制｜E58 之後的更正", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E11b", "dst": "E8", "type": "推翻或更正", "reason": "隨機樣本量到墨跡 15.6%，推翻 E8 拼圖時未見墨圈風險的說法。", "evidence": "E11b｜推論｜推翻了 E8 拼圖時寫的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E11c", "dst": "E57", "type": "僅比較", "reason": "只比較兩者墨跡總比例，且明言總量吻合不代表逐張吻合。", "evidence": "E11c｜推論｜只是總量吻合", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58", "dst": "E11c", "type": "推翻或更正", "reason": "E58 全量標記引出漏判疑慮，使 E11c 加註計數可能偏低。", "evidence": "E11c｜頁首｜被 E58 標註「可能偏低」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58b", "dst": "E11c", "type": "推翻或更正", "reason": "E58b 抽查發現淡紫細線漏判，修正 E11c 墨跡估計的可信度。", "evidence": "E11c｜推論｜助理肉眼都會漏掉", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E11c", "dst": "E59", "type": "僅提及", "reason": "只補述墨圈未能解釋退步，且明言 E11c 所見機制未被否證。", "evidence": "E11c｜推論｜機制本身沒被否證", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E10", "dst": "E12", "type": "支持", "reason": "E10 的類別組成分析支持 E12 對 AKIEC 掉分的當時解釋。", "evidence": "E12｜推論｜是 E10 的類別組成問題", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E14", "dst": "E12", "type": "支持", "reason": "逐類對比與召回不一致，支持 E12 不加對比通道的判斷。", "evidence": "E12｜結果｜recall 卻是 0.871 與 0.641", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E16", "dst": "E12", "type": "推翻或更正", "reason": "E16 發現預算與卷積成本混雜，將 E12 歸因下修為無法分離。", "evidence": "E12｜推論｜兩個軸，無法分離", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E12", "dst": "E21", "type": "支持", "reason": "E12 的修正附錄提供共同預算數字，支持 E21 的截斷判斷。", "evidence": "E21｜結果｜共同預算 ep12", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E43", "dst": "E12", "type": "支持", "reason": "E43 重查確認預算未對齊，支持 E12 修正後的混雜警告。", "evidence": "E43｜推論｜預算沒有對齊", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E5", "dst": "E12", "type": "支持", "reason": "E5 的訓練驗證落差支持 E12 當時優先處理泛化的判斷。", "evidence": "E12｜推論｜主要矛盾仍是泛化", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E12", "dst": "R0", "type": "僅提及", "reason": "內文指訓練 run R0，與候選的 G-R0 閘門頁同名異物。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100b", "dst": "E120", "type": "沿用", "reason": "因為排除版 manifest 使用已驗證近似重複配對，所以沿用 E100b 的資料。", "evidence": "E120｜做法｜E100b 雙門檻驗證過的近似重複", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E120", "dst": "E121", "type": "引發", "reason": "因為排除版 manifest 無法由全域路徑逐 run 選用，所以促成覆寫機制實作。", "evidence": "E121｜目的｜必須讓 train.py 能", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E120", "type": "取代", "reason": "因為排除範圍擴大到各屆挑戰賽，所以停止 H18 並改用 HC manifest。", "evidence": "E120｜頁首｜被 E123 取代", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E120", "dst": "E124", "type": "前置", "reason": "因為 E120 建立官方測試清單與留出流程，所以提供 E124 人機評估的必要前置。", "evidence": "E120｜做法｜另寫測試清單（1,512 張", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E120", "dst": "E125", "type": "引發", "reason": "因為有 252 張測試影像原本不在磁碟，所以補下載後另做洩漏檢查。", "evidence": "E125｜目的｜有 252 張", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E121", "dst": "E123", "type": "沿用", "reason": "因為 HC 透過既有逐 run 覆寫功能指定資料，所以沿用 E121 的機制。", "evidence": "E121｜頁首｜改用同一套覆寫機制", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E121", "dst": "E128", "type": "沿用", "reason": "因為新 opt-in 驗證沿用既有 cfg 等價性檢查方式，所以延續 E121 的驗證設定。", "evidence": "E121｜頁首｜沿用同樣的等價性驗證法", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E102", "dst": "E122", "type": "引發", "reason": "因為稽核量到長寬比壓縮，所以構想表提出保持長寬比的前處理。", "evidence": "E122｜結果｜保持長寬比的前處理", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E103", "dst": "E122", "type": "引發", "reason": "因為來源間高頻能量差達 4.2 倍，所以列出隨機模糊與銳化構想。", "evidence": "E122｜結果｜來源間差 4.2 倍", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E122", "type": "沿用", "reason": "因為構想的後續訓練指定使用 HC manifest，所以沿用 E123 的資料設定。", "evidence": "E122｜結果｜之後所有訓練用 E123", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E122", "dst": "E127", "type": "引發", "reason": "因為 FDA 與隨機外框構想獲同意，所以登記對應的短跑實驗。", "evidence": "E122｜做法｜把第 1、2 項加入排程", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E122", "dst": "E128", "type": "引發", "reason": "因為要實作 FDA 與外框構想，所以需要驗證新增 opt-in 功能與預設等價性。", "evidence": "E122｜限制｜驗證預設行為不變", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E122", "dst": "E129", "type": "前置", "reason": "因為 E122 提供 FDA 原方法的引用依據，所以是 E129 比較視窗設定的前置。", "evidence": "E129｜頁首｜前置 E122（FDA 引用）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E122", "dst": "E132", "type": "引發", "reason": "因為先提出並同意 FDA 與外框構想，所以後續以短跑比較其效果。", "evidence": "E122｜推論｜E132 跑 20 epoch 短跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E122", "type": "支持", "reason": "因為補核 FDA 的正式發表會議，所以支持構想頁後補的書目資訊。", "evidence": "E122｜推論｜補核發表會議為 CVPR 2020", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E135", "dst": "E122", "type": "支持", "reason": "因為資料庫確認兩版本頁碼不同，所以支持引用時區分 IEEE 與 CVF 版本。", "evidence": "E122｜推論｜IEEE 版與 CVF 版頁碼不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E94", "dst": "E122", "type": "支持", "reason": "因為尺標捷徑主張已撤回，所以支持構想表不把它列為已證實的依賴。", "evidence": "E122｜結果｜尺標捷徑主張已撤回", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E122", "dst": "E96", "type": "僅提及", "reason": "因為 E122 引用的 PAD 降幅實出自 E96b，所以未建立與 E96 的實質依賴。", "evidence": "E96｜推論｜後來 E96b 做留一 PAD", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E100b", "dst": "E123", "type": "沿用", "reason": "E123 使用 E100b 驗證過的重複配對，據此排除近似重複。", "evidence": "E123｜限制｜只用 E100b 驗證過的配對", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E124", "type": "前置", "reason": "E123 先留出醫師研究測試集，E124 才能進行人機對照。", "evidence": "E124｜目的｜已把它從訓練與驗證中留出", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E125", "type": "沿用", "reason": "E125 使用 E123 的 manifest，檢查補下載影像是否與訓練驗證資料洩漏。", "evidence": "E125｜目的｜所用 manifest", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E127", "type": "沿用", "reason": "E127 的四個短跑全部使用 E123 產出的排除版 manifest。", "evidence": "E127｜做法｜全部用 E123", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E132", "type": "沿用", "reason": "E132 比較的短跑使用 E123 manifest，沿用其資料排除設定。", "evidence": "E132｜做法｜E123 manifest", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E112", "dst": "E124", "type": "沿用", "reason": "E124 使用 E112 整理的醫師數字，作為人機對照資料。", "evidence": "E124｜做法｜醫師數字取自 E112", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E125", "dst": "E124", "type": "沿用", "reason": "E124 使用 E125 的洩漏清單，另算剔除同病灶影像的成績。", "evidence": "E125｜做法｜輸出供 E124 使用的清單", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E124", "dst": "E135", "type": "僅提及", "reason": "E124 引述 E135 的核對進度，但附錄分組仍未核實，無法認定已更正定義。", "evidence": "E135｜推論｜仍未核到", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100b", "dst": "E125", "type": "沿用", "reason": "E125 採用 E100b 相同的 dHash 與 RMS 雙門檻檢查重複影像。", "evidence": "E125｜做法｜與 E100b 相同的雙門檻", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E125", "dst": "E143", "type": "沿用", "reason": "E143 把 E125 找出的同病灶資料收進 flags 表。", "evidence": "E125｜頁首｜flags 表收錄本結果", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E123", "dst": "E126", "type": "前置", "reason": "E123 確立留出測試集，E126 據此審查預訓練資料是否洩漏。", "evidence": "E126｜目的｜是否包含 E123 留出的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E126", "dst": "E127", "type": "引發", "reason": "E126 查證後選定 ImageNet-22k，促成 E127 登記對照短跑。", "evidence": "E127｜目的｜E126 選定的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E126", "dst": "E128", "type": "引發", "reason": "E126 選定 ImageNet-22k 對照，促成 E128 驗證其權重載入功能。", "evidence": "E126｜頁首｜E128（22k 權重載入驗證）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E126", "dst": "E132", "type": "引發", "reason": "E126 導向 ImageNet-22k 對照，E132 隨後實測其短跑表現。", "evidence": "E126｜頁首｜結論導向 ImageNet-22k 對照", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E126", "dst": "E141", "type": "僅提及", "reason": "E126 補述 E141 的逐類診斷，沒有說該結果驗證或推翻權重查證結論。", "evidence": "E126｜推論｜E141 指出 IN22K", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E128", "dst": "E127", "type": "前置", "reason": "E128 驗證通過是 E127 套用新程式與啟動短跑的閘門。", "evidence": "E128｜推論｜三個功能都是真正的 opt-in", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E129", "dst": "E127", "type": "推翻或更正", "reason": "E129 比較影像偽結構後，修正 E127 尚未啟動的 FDA 設定。", "evidence": "E127｜做法｜把 FDA 改為 fda_radius 1", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E127", "dst": "E131", "type": "沿用", "reason": "E131 複用 E127 四個短跑設定，只調整 batch 與梯度累積。", "evidence": "E131｜做法｜只差 batch_size 8 → 16", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E127", "dst": "E132", "type": "沿用", "reason": "E132 使用 E127 四個短跑的結果，製作逐 epoch 對比。", "evidence": "E127｜結果｜逐 epoch 比較", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E127", "dst": "E133", "type": "沿用", "reason": "E133 合併 E127 的 FDA 與 FRAME 設定，建立兩者同開的短跑。", "evidence": "E133｜做法｜與 FDA 只差 frame_prob", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E127", "dst": "E136", "type": "僅提及", "reason": "E127 只在後續清單列出 E136，未寫明兩頁有直接產物承接。", "evidence": "E127｜頁首｜E136（P29）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E128", "dst": "E129", "type": "引發", "reason": "E128 範例圖出現假團塊與色斑，促成 E129 比較並調整 FDA 設定。", "evidence": "E128｜推論｜因此做了 E129", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E128", "dst": "E132", "type": "前置", "reason": "E128 驗證新功能並套用新程式後，FDA 與 FRAME 短跑才能正確執行。", "evidence": "E128｜推論｜必須在套用新程式後才能開", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E122", "dst": "E129", "type": "沿用", "reason": "E129 沿著 E122 記錄的 FDA 方法，調整低頻互換的視窗與混合設定。", "evidence": "E129｜頁首｜E122（FDA 引用）", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E129", "dst": "E132", "type": "沿用", "reason": "E132 的 FDA 短跑使用 E129 修正後的半徑與隨機混合設定。", "evidence": "E129｜推論｜此設定的 FDA 短跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E13", "dst": "E15", "type": "支持", "reason": "E13 墨跡率與判據偏差，支持 E15 對墨跡捷徑風險的討論。", "evidence": "E15｜結果｜E11／E13 估 PAD 墨跡率", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E13", "dst": "E19", "type": "沿用", "reason": "E19 沿用 E13 的色差判據，比較共錯與全對影像。", "evidence": "E13｜推論｜用同一判據比較", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E13", "dst": "E21", "type": "支持", "reason": "E13 尚未實作形態學判據，支持 E21 將此列為未完成事項。", "evidence": "E21｜結果｜形態學墨跡偵測器", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E5", "dst": "E13", "type": "支持", "reason": "E5 量到高重複曝光，支持 E13 對移除訓練影像成本的警告。", "evidence": "E13｜結果｜一個 epoch 被抽 85.3 次", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E130", "dst": "E127", "type": "僅提及", "reason": "E130 僅指認 E127 是 batch 8 短跑，未說採用其產物或結果。", "evidence": "E130｜頁首｜E127（batch 8 的短跑）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E130", "dst": "E131", "type": "推翻或更正", "reason": "E130 顯示 batch 16 沒有變快，使用者因此撤回 E131 的 batch 16 做法。", "evidence": "E131｜結果｜回 batch 8，續跑基準", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E130", "dst": "E138", "type": "僅比較", "reason": "E130 只並列 E138 的時間分布，對照 GPU 已滿載的解讀。", "evidence": "E130｜推論｜此處只並列", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E131", "dst": "E132", "type": "僅提及", "reason": "E131 只交代後續短跑回到 batch 8，E132 未使用其 batch 16 設定。", "evidence": "E131｜推論｜之後所有短跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E132", "dst": "E133", "type": "引發", "reason": "單獨短跑呈現 FDA 與外框的來源互補訊號，促成 E133 測試兩者同開。", "evidence": "E133｜目的｜看兩者合併能否互補", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E136", "dst": "E132", "type": "沿用", "reason": "E132 納入 E136 的 P29 短跑資料，擴充對比曲線與結果表。", "evidence": "E132｜做法｜後來陸續加入", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E132", "dst": "E141", "type": "沿用", "reason": "E141 使用 E132 所整理的短跑結果，進一步拆解來源與類別效應。", "evidence": "E141｜目的｜這次拆到類別層級", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E122", "dst": "E133", "type": "沿用", "reason": "E133 使用 E122 的 FDA 與外框構想，測試兩種擴充同時作用。", "evidence": "E133｜頁首｜E122（構想與文獻）", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E129", "dst": "E133", "type": "沿用", "reason": "E133 使用 E129 修正的 FDA 半徑與混合設定，再加入隨機外框。", "evidence": "E133｜做法｜radius 1、lambda_max 1.0", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E133", "dst": "E134", "type": "僅比較", "reason": "E133 引用 E134 列出的單獨短跑成績與雜訊帶，作為合併效果的對照。", "evidence": "E133｜結果｜E134 引用的 seed 17", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E133", "dst": "E136", "type": "引發", "reason": "E133 合併效果變差，促成 E136 降低擴充機率以區分兩種原因。", "evidence": "E133｜推論｜就是為了分開這兩者", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E133", "dst": "E141", "type": "沿用", "reason": "E141 使用 E133 的 FDAFRAME 結果，分析逐類效應。", "evidence": "E141｜頁首｜用到 E133", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "ADR-0001", "type": "僅提及", "reason": "E134 將文獻對應到選模指標決策，未提出新的驗證或修改。", "evidence": "E134｜結果｜選用 worst-source 指標的理由", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D3", "dst": "E134", "type": "沿用", "reason": "E134 收集 D3 中散落的文獻，整理為引用與實驗對照資料。", "evidence": "E134｜目的｜文獻散在", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E1", "type": "僅提及", "reason": "E134 只把 E1 列為 Zech 文獻的對應實驗，未建立新的因果判斷。", "evidence": "E134｜結果｜ADR-0001、E1、E9、E96", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E108", "dst": "E134", "type": "沿用", "reason": "E134 收錄 E108 的 KAN 成績，作為文獻與實驗結果的對照資料。", "evidence": "E134｜結果｜E108、R2-KAN", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E11", "type": "僅提及", "reason": "E134 將 E11 列入手術墨跡文獻的對應實驗，未另作驗證。", "evidence": "E134｜結果｜E11、E13、E56、E59b", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E12", "type": "僅提及", "reason": "E134 將 E12 列為 ConvNeXt 的對應實驗，表中 IN22K 數字未歸於 E12。", "evidence": "E134｜結果｜全部 run、E12、E126", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E120", "type": "僅提及", "reason": "E134 只將 E120 列入醫師研究文獻的實驗對應，未使用其舊 manifest。", "evidence": "E134｜結果｜E112、E120、E123、E124", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E122", "dst": "E134", "type": "沿用", "reason": "E134 收集 E122 的 FDA 文獻紀錄，彙成引用與實驗對照資料。", "evidence": "E134｜目的｜E122、E126、D3", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E123", "type": "僅提及", "reason": "E134 將 E123 列入人機對照的文獻對應，未使用其 manifest 執行實驗。", "evidence": "E134｜結果｜E112、E120、E123、E124", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E124", "dst": "E134", "type": "沿用", "reason": "E134 收錄 E124 的模型與醫師數字，作為文獻對照表的結果資料。", "evidence": "E134｜結果｜七類平均敏感度 0.776", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E126", "dst": "E134", "type": "沿用", "reason": "E134 收集 E126 的預訓練模型文獻，彙成引用與實驗對照資料。", "evidence": "E134｜目的｜E122、E126、D3", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E129", "type": "僅提及", "reason": "E134 將 E129 列為 FDA 對應實驗，表內成績來自訓練 run 而非其目視比較。", "evidence": "E134｜結果｜E122、E129", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E13", "type": "僅提及", "reason": "E134 將 E13 列入手術墨跡文獻的對應實驗，未另作驗證。", "evidence": "E134｜結果｜E11、E13、E56、E59b", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E133", "dst": "E134", "type": "沿用", "reason": "E134 在 E133 完成後收錄其成績，補上原先尚無結果的項目。", "evidence": "E134｜推論｜後來 E133 跑完", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E135", "dst": "E134", "type": "推翻或更正", "reason": "E135 核對資料庫後補齊並修正 E134 的書目，書目內容改以 E135 為準。", "evidence": "E134｜頁首｜被 E135 補核與更正書目", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E15", "type": "推翻或更正", "reason": "E134 補出 E15 漏列的 Bissoto 書目，並要求下修未核實的百分比說法。", "evidence": "E134｜推論｜E15 的 C15 漏列的書目", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E25", "type": "僅提及", "reason": "E134 將 E25 及其既有結論列入 logit adjustment 的引用對應。", "evidence": "E134｜結果｜Logit adjustment", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E56", "type": "僅提及", "reason": "E134 將 E56 列入手術墨跡文獻的對應實驗，未另作驗證。", "evidence": "E134｜結果｜E11、E13、E56、E59b", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E59b", "type": "僅提及", "reason": "E134 將 E59b 列入手術墨跡文獻的對應實驗，未另作驗證。", "evidence": "E134｜結果｜E11、E13、E56、E59b", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E9", "type": "僅提及", "reason": "E134 只把 E9 列為 Zech 文獻的對應實驗，未建立新的因果判斷。", "evidence": "E134｜結果｜ADR-0001、E1、E9、E96", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E134", "dst": "E96", "type": "僅提及", "reason": "E134 只把 E96 列為 Zech 文獻的對應實驗，未建立新的因果判斷。", "evidence": "E134｜結果｜ADR-0001、E1、E9、E96", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E136", "dst": "E141", "type": "沿用", "reason": "E141 使用 E136 的 P29 短跑結果，分析逐類效應。", "evidence": "E141｜頁首｜用到 E133、E136", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E137", "dst": "E122", "type": "僅提及", "reason": "E137 頁首將 E122 列為前置，正文未寫明直接依賴或產物承接。", "evidence": "E137｜頁首｜前置 E122、E133", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E137", "dst": "E133", "type": "僅提及", "reason": "E137 只將 E133 列為 FDA 系列前置，未說其結果促成成對訓練。", "evidence": "E137｜頁首｜E133（FDA 系列）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E137", "dst": "E138", "type": "僅提及", "reason": "兩頁只因 GPU 排程被一起提到，沒有資料或結果上的依賴。", "evidence": "E137｜推論｜GPU 先給 E138 與 E139", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E137", "dst": "E139", "type": "沿用", "reason": "E139 以 E137 暫存版程式為基礎，再加入減法實驗的開關。", "evidence": "E139｜做法｜E137 暫存版＋兩個 opt-in", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E138", "dst": "E144", "type": "引發", "reason": "E138 只量到 GPU 計算總占比，促成 E144 再拆解矩陣乘法等核心時間。", "evidence": "E138｜推論｜於是做了 E144", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E139", "dst": "E141", "type": "沿用", "reason": "E141 使用 E139 的 BARE 與 NOREG 結果，拆解逐類效應。", "evidence": "E141｜頁首｜E139（BARE、NOREG）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E1", "dst": "E14", "type": "支持", "reason": "E1 的來源線索數字支持 E14 提出來源色調正規化的剩餘動機。", "evidence": "E14｜推論｜來源線索 TVD 0.53", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E10", "dst": "E14", "type": "引發", "reason": "E10 排除資料量解釋，促成 E14 檢查弱類別是否對比較低。", "evidence": "E14｜目的｜對比是下一個該排除", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E14", "dst": "E16", "type": "僅提及", "reason": "只說 E16 對 E12 的修正不影響對比結論，未建立直接因果。", "evidence": "E14｜頁首｜對比結論不受影響", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E140", "dst": "E139", "type": "僅比較", "reason": "E140 拿 E139 的基準 seed 差距當雜訊參考，對照推論精度差異。", "evidence": "E140｜推論｜E139 記錄的雜訊參考", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E140", "dst": "E142", "type": "僅提及", "reason": "E140 只說與 E142 共用健全性檢查，未寫明程式或資料承接。", "evidence": "E140｜頁首｜與 E142 共用健全性檢查", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E143", "dst": "E142", "type": "推翻或更正", "reason": "E143 的全量長寬比統計更正 E142 門檻檔中舊抽樣的背景比例。", "evidence": "E143｜推論｜全量統計取代先前 n=200", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E100b", "dst": "E143", "type": "沿用", "reason": "E143 將 E100b 的同圖與異標籤稽核結果收進 flags 表。", "evidence": "E143｜做法｜E100b 同圖不同標籤", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E101", "dst": "E143", "type": "沿用", "reason": "E143 使用 E101 的去重排除資料建立旗標，未將去重 manifest 改為訓練版本。", "evidence": "E143｜做法｜E101 去重排除", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E15", "dst": "A1", "type": "僅提及", "reason": "A1 是文獻表的容量條目編號，並非空間頭評分實驗。", "evidence": "E15｜結果｜A1 容量足以背下訓練集", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E15", "dst": "A2", "type": "僅提及", "reason": "A2 是文獻表的學習順序條目，並非 LSE 讀出實驗。", "evidence": "E15｜結果｜A2 先學模式後背雜訊", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E15", "dst": "A3", "type": "僅提及", "reason": "A3 是長尾記憶的條目編號，並非啟發式遮罩實驗。", "evidence": "E15｜結果｜A3 長尾記憶是必要的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E15", "dst": "A4", "type": "僅提及", "reason": "A4 是正則化不足的條目編號，並非孔徑 confound 實驗。", "evidence": "E15｜結果｜A4 正則化不足", "confidence": "高", "source": "Codex 判讀"}
+{"src": "B2", "dst": "E15", "type": "支持", "reason": "B2 的域偏移判定支持 E15 將分布位移與過擬合分開討論。", "evidence": "E15｜結果｜SCIN 是 domain shift", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E15", "dst": "B3", "type": "僅提及", "reason": "E15 只說 B3 系列在測病灶外脈絡，未交代具體結果或實質依賴。", "evidence": "E15｜結果｜R0S-N、B3 系列在測", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E1", "dst": "E15", "type": "支持", "reason": "E1 的來源線索量測支持 E15 把來源指紋列為專題風險。", "evidence": "E15｜結果｜E1 TVD 0.53", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E10", "dst": "E15", "type": "支持", "reason": "E10 排除資料量主因，支持 E15 對有效樣本不足解釋的限制。", "evidence": "E15｜結果｜已排除資料量為主要解釋", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E11", "dst": "E15", "type": "支持", "reason": "E11 發現偵測框跟隨墨跡，支持 E15 對裁切鎖入捷徑的警告。", "evidence": "E15｜推論｜偵測框會跟著墨跡走", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E12", "dst": "E15", "type": "支持", "reason": "E12 當時的曲線走平判讀被 E15 用作先學模式後背雜訊的對照。", "evidence": "E15｜結果｜R2 第 13 epoch 走平", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E15", "dst": "E134", "type": "沿用", "reason": "E134 收攏 E15 的既有文獻，建立引用與實驗對照。", "evidence": "E134｜目的｜過去的文獻散在 E15", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E15", "dst": "E17", "type": "引發", "reason": "E15 區分不同成因與處方，促使 E17 用共錯檢定辨別成因。", "evidence": "E17｜目的｜四種成因，處方完全不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E15", "type": "支持", "reason": "訓練召回下降而驗證不動，符合 E15 預測的必要記憶失敗模式。", "evidence": "E15｜推論｜第 3 點預測的失敗模式", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19", "dst": "E15", "type": "推翻或更正", "reason": "E19 更正 E15 當時把 family 桶視為共錯原因的判斷。", "evidence": "E15｜限制｜E19 推翻 family 桶論點", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E15", "dst": "E20", "type": "僅提及", "reason": "E20 是文獻表的雙下降條目，頁面明言不是實驗編號。", "evidence": "E15｜結果｜不是實驗編號", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E5", "dst": "E15", "type": "支持", "reason": "E5 的高訓練召回及重複曝光數字，支持 E15 的記憶機制討論。", "evidence": "E15｜結果｜B7 重取樣造成重複曝光", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E15", "dst": "E9", "type": "僅提及", "reason": "只在引用清單列出 E9，未交代其支持哪項判斷。", "evidence": "E15｜頁首｜引用", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E15", "dst": "R0", "type": "僅提及", "reason": "指標雜訊條目中的 R0 是訓練 run，並非 G-R0 閘門。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E16", "type": "沿用", "reason": "E16 的結果表直接採用 E18 第六節重畫後的最佳點與末值。", "evidence": "E16｜結果｜取自 E18 第 6 節", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E16", "dst": "E21", "type": "支持", "reason": "E16 的逐 epoch 重算支持 E21 A8 的預算截斷判斷。", "evidence": "E21｜結果｜E12 追記、E16", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E16", "dst": "E22", "type": "沿用", "reason": "E22 沿用 E16 的最佳 epoch 等於最後 epoch 判準標記截斷。", "evidence": "E22｜頁首｜E16（預算截斷判準）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E43", "dst": "E16", "type": "支持", "reason": "末段斜率重查確認截斷存在，支持 E16 發現並限縮其實際影響。", "evidence": "E16｜推論｜預算截斷是真的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E16", "dst": "R0", "type": "僅提及", "reason": "曲線表中的 R0 是分類器訓練 run，並非候選的閘門實驗。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17b", "dst": "E17", "type": "支持", "reason": "val_select 與 val_assess 共錯比例相近，支持 E17 排除選模假象。", "evidence": "E17b｜推論｜選模程序不是共錯的原因", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17c", "dst": "E17", "type": "支持", "reason": "E17c 提供未參與選模的共錯數據，支撐 E17 主結論。", "evidence": "E17c｜目的｜主要數字的出處", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E17", "type": "支持", "reason": "正則化只修掉 760 張中的 42 張，符合 E17 的共錯難動預測。", "evidence": "E17｜推論｜預測成立", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19", "dst": "E17", "type": "推翻或更正", "reason": "E19 發現類別共線與相同錯誤率，推翻 E17 推薦的兩條資料方向。", "evidence": "E17｜推論｜被自己的數據推翻", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17", "dst": "E21", "type": "支持", "reason": "E17 的共錯與混淆結果支撐 E21 A1、A3 的問題總結。", "evidence": "E21｜結果｜錯誤是系統性的（E17）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "E17", "type": "推翻或更正", "reason": "集成信心能避開共錯，將 E17 棄權無效限縮為 R2 自己的信心。", "evidence": "E17｜推論｜只對 R2 自己的信心成立", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17", "dst": "E5", "type": "推翻或更正", "reason": "共錯檢定顯示主要問題非過擬合，更正 E5 對訓練驗證落差的解讀。", "evidence": "E5｜頁首｜被 E17／E18／ADR-0004 推翻", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E80", "dst": "E17", "type": "支持", "reason": "非 ConvNeXt 模型仍難修共錯，支持 E17 結論不限於同家族模型。", "evidence": "E17｜推論｜不是 ConvNeXt 的產物", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17", "dst": "R0", "type": "僅提及", "reason": "六模型中的 R0 指訓練 run，並非 G-R0 閘門頁。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17b", "dst": "E17c", "type": "複製", "reason": "E17c 換成未參與選模的切分重做共錯檢定，以確認選模不是原因。", "evidence": "E17c｜目的｜重做 E17 的共錯檢定", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17b", "dst": "E18", "type": "僅提及", "reason": "E17b 頁首只列被 E18 引用，未說明使用哪些數據或程式。", "evidence": "E17b｜頁首｜被 E18、E38 引用", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E17b", "dst": "E38", "type": "僅提及", "reason": "E17b 頁首只列被 E38 引用，未說明使用哪些數據或程式。", "evidence": "E17b｜頁首｜被 E18、E38 引用", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E17b", "dst": "R0", "type": "僅提及", "reason": "對錯疊加使用訓練 run R0，與閘門 R0 同名異物。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100", "dst": "E17c", "type": "推翻或更正", "reason": "E100 找到 train 與 val_assess 同圖重複，更正切分完全乾淨的認知。", "evidence": "E17c｜推論｜本切分並非完全乾淨", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17c", "dst": "E18", "type": "沿用", "reason": "E18 以 E17c 的 760 張共錯集計算正則化修復數。", "evidence": "E18｜做法｜760 張共錯集的修復數", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17c", "dst": "E21", "type": "支持", "reason": "E17c 的共錯拆解與天花板數字支撐 E21 的系統性錯誤總結。", "evidence": "E38｜目的｜依據是 E17c", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17c", "dst": "E38", "type": "複製", "reason": "E38 用獨立管線重算共錯，確認 E17c 數字與對齊管線一致。", "evidence": "E17c｜推論｜以獨立管線重算", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17c", "dst": "E80", "type": "複製", "reason": "E80 重算六模型共錯集作對帳，再加入異家族模型檢驗。", "evidence": "E17c｜推論｜與 E17c 完全一致", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17c", "dst": "R0", "type": "僅提及", "reason": "讀取的是訓練 run R0 的 logits，並非 G-R0 閘門產物。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "A2", "type": "僅提及", "reason": "此處 A2 是 E21 的正則化總結條目，並非空間頭讀出實驗。", "evidence": "E18｜頁首｜E21 A2", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E19", "type": "沿用", "reason": "E19 使用納入 R2-REG 後的七模型共錯集，分析驗證集問題。", "evidence": "E19｜目的｜七個模型含 R2-REG", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E20", "type": "僅提及", "reason": "只列 E20 為後續，未說明 E18 如何促成資料分布盤點。", "evidence": "E18｜頁首｜後續 E19、E20", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E21", "type": "支持", "reason": "E18 的區間與召回變化支撐 E21 A2 對正則化效果的總結。", "evidence": "E21｜結果｜正則化沒用且削必要記憶", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E5", "type": "推翻或更正", "reason": "正則化主要降低訓練召回，更正 E5 認為正則化直接對症的解讀。", "evidence": "E5｜頁首｜增強與正則化直接對症", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "R0", "type": "僅提及", "reason": "種子噪音取自訓練 run R0，並非候選的 G-R0 閘門實驗。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E100", "dst": "E19", "type": "推翻或更正", "reason": "E100 找到跨切分真重複，因此更正 E19 無洩漏、無重複的判斷。", "evidence": "E19｜推論｜無洩漏、無重複因此不成立", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E19", "type": "引發", "reason": "E18 確認加入正則化模型後仍有共同錯誤，因此 E19 追查驗證集因素。", "evidence": "E19｜目的｜七個模型含 R2-REG", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19b", "dst": "E19", "type": "沿用", "reason": "E19 使用 E19b 產出的三張貼紙，因此能進行目視檢查。", "evidence": "E19｜做法｜三張 12 格貼紙供目視", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19c", "dst": "E19", "type": "支持", "reason": "E19c 量到共錯組模糊比例較高，因此支持 E19 的影像模糊結論。", "evidence": "E19c｜推論｜模糊站得住", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19", "dst": "E21", "type": "支持", "reason": "E19 的次類與品質分析提供證據，因此支撐 E21 的 BKL 異質與模糊判斷。", "evidence": "E21｜結果｜BKL 桶異質（E19）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E27", "dst": "E19", "type": "推翻或更正", "reason": "E27 測得顯著錯誤方向，因此將 E19 的無證據說法修正為測得到但無收益。", "evidence": "E27｜推論｜理由從「測不到」改成", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E70", "dst": "E19", "type": "推翻或更正", "reason": "E70 測得原位鱗癌偏向 SCC 的顯著差異，因此補正 E19 的無證據說法。", "evidence": "E19｜推論｜差 +15.51pp", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19b", "dst": "E19c", "type": "引發", "reason": "貼紙觀察不能代表母體比例，因此 E19c 將 E19b 的印象量化檢定。", "evidence": "E19c｜目的｜把貼紙印象變成可檢定的數字", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E13", "dst": "E19c", "type": "沿用", "reason": "E19c 使用 E13 的顏色門檻，因此以藍色像素比例作為量測指標。", "evidence": "E19c｜做法｜(B−R) > 20 的像素比例", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E19c", "dst": "E21", "type": "支持", "reason": "E19c 的模糊比例差異提供量化證據，因此支撐 E21 的 A6 判斷。", "evidence": "E21｜結果｜約 99 張佔共錯 14%", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E20", "dst": "A4", "type": "僅提及", "reason": "原句的 A4 是 E21 表格列號，因此不能連成遮罩實驗 A4 的實質關係。", "evidence": "E20｜頁首｜E21 A4／A7", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E20", "type": "支持", "reason": "E18 顯示正則化削掉重複小格的訓練召回，因此支撐 E20 的必要記憶解讀。", "evidence": "E20｜推論｜R2-REG 削掉訓練召回的對象", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E19", "dst": "E20", "type": "支持", "reason": "E19 顯示 BKL 次類行為不同，因此支持 E20 指出八類彙總的限制。", "evidence": "E20｜限制｜BKL 次類行為差很多", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E20", "dst": "E20b", "type": "沿用", "reason": "E20b 讀取 E20 的分布 JSON，因此將既有計算結果繪成圖。", "evidence": "E20b｜做法｜讀 E20_實際訓練分布.json", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E20", "dst": "E21", "type": "支持", "reason": "E20 算出 SCC 抽取佔比與覆蓋率，因此支撐 E21 的 A4、A7 判斷。", "evidence": "E21｜結果｜SCC 被取樣器卡住（E20）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E20", "dst": "E23", "type": "引發", "reason": "E20 發現 SCC 抽樣被結構性限制，因此引出 E23 的類別保底實驗。", "evidence": "E20｜頁首｜引出 E23／R2-SCC", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E20", "dst": "E24", "type": "僅提及", "reason": "E24 質疑 E20 引出的 SCC 加抽方向，但未撤回。", "evidence": "E20｜推論｜拉高 SCC 是錯方向", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E20", "dst": "E26", "type": "僅提及", "reason": "E26 質疑 E20 引出的 SCC 加抽方向，但未撤回。", "evidence": "E20｜推論｜拉高 SCC 是錯方向", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E20", "dst": "E5", "type": "支持", "reason": "E20 推算每張抽取 85.26 次，因此支持 E5 量到的 85.3 次數字。", "evidence": "E20｜結果｜85.26 與 E5 量到的 85.3 吻合", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E20", "dst": "R0", "type": "僅提及", "reason": "此處 R0 指訓練基準的取樣設定，因此與同名閘門頁沒有實質關係。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "A1", "type": "僅提及", "reason": "E21 的 A1 多指表格列號，另提 A1 作廢，未寫明實質依賴。", "evidence": "E21｜結果｜病灶面積 confound（A1 作廢）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E21", "dst": "A2", "type": "僅提及", "reason": "原句 A2 是 E21 的正則化結論列號，因此與空間頭讀出實驗無實質關係。", "evidence": "E21｜結果｜正則化沒用且削必要記憶（E18）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "A3", "type": "僅提及", "reason": "原句 A3 是 E21 的視覺重疊列號，因此與遮罩實驗 A3 無實質關係。", "evidence": "E21｜結果｜MEL↔NV 是真實視覺重疊（E17）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "A4", "type": "僅提及", "reason": "原句 A4 是 E21 的 SCC 抽樣列號，因此與遮罩實驗 A4 無實質關係。", "evidence": "E21｜結果｜SCC 被取樣器卡住（E20）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "E10", "type": "僅提及", "reason": "E21 將 E10 列入彙整範圍，但未標出其支撐的具體判斷。", "evidence": "E21｜目的｜把 E5、E10–E20 的結論收攏", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E100", "dst": "E21", "type": "推翻或更正", "reason": "E100 找到跨切分真重複，因此推翻 E21 已排除洩漏與重複的判斷。", "evidence": "E21｜推論｜依 manifest 旗標的判斷不成立", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E21", "type": "推翻或更正", "reason": "E36 的集成取得顯著進步，因此更正 E21 尚未兌現模型端空間的盤點。", "evidence": "E21｜推論｜集成已吃掉其中 1.59pp", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "E21", "type": "推翻或更正", "reason": "E38 區分集成信心與單模型信心，因此將 E21 棄權救不了的說法加上條件。", "evidence": "E21｜推論｜對集成信心不成立", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "E5", "type": "僅提及", "reason": "E21 將 E5 列入彙整範圍，但未標出其支撐的具體判斷。", "evidence": "E21｜目的｜把 E5、E10–E20 的結論收攏", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E80", "dst": "E21", "type": "支持", "reason": "E80 換用 Swin 仍看到共錯現象，因此支持 E21 的系統性錯誤判斷。", "evidence": "E21｜推論｜43% 共錯率不是 ConvNeXt 的產物", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "R0", "type": "僅提及", "reason": "原句 R0-BAL 是訓練 run，因此與同名 R0 閘門頁沒有實質關係。", "evidence": "E21｜結果｜R0-BAL 20 epoch 重跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E22", "dst": "D2", "type": "僅提及", "reason": "原句 D2 指已否決的病灶框閘門，因此與八類達標實驗 D2 無實質關係。", "evidence": "R0｜推論｜依賴 D2 的 R3／R4／R6", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E22b", "dst": "E22", "type": "支持", "reason": "E22b 證明新舊讀法的舊數值一致，因此支持 E22 擴充清冊而不改舊數字。", "evidence": "E22b｜結果｜不一致｜0", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E22", "dst": "E44", "type": "僅提及", "reason": "E22 只交代 E44 階梯未跨前處理界線，因此沒有提供新的階梯結論證據。", "evidence": "E22｜結果｜E44 的階梯不受影響", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E45", "dst": "E22", "type": "支持", "reason": "E45 查出 draft 前處理變更，因此支撐 E22 將 run 分成兩群的紀錄。", "evidence": "E22｜結果｜把 run 切成兩群", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E22", "dst": "R0", "type": "僅提及", "reason": "清冊列出的是 R0 系列訓練 run，因此與同名 R0 閘門頁沒有實質關係。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E22b", "dst": "R0", "type": "僅提及", "reason": "驗證表的 R0 是舊 schema 訓練 run，因此與同名閘門頁沒有實質關係。", "evidence": "E22b｜結果｜舊 schema run 數", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0006", "dst": "E23", "type": "引發", "reason": "ADR-0006 將 SCC 取樣列為可測線索，因此 E23 選擇以保底開關驗證。", "evidence": "E23｜目的｜三條線索裡最便宜的一條", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E23", "dst": "E17", "type": "僅提及", "reason": "E23 只援引既有上限界定範圍，因此未對 E17 提供新的實證支持。", "evidence": "E23｜限制｜不影響 E17／E18", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E23", "dst": "E18", "type": "僅提及", "reason": "E23 只援引既有上限界定範圍，因此未對 E18 提供新的實證支持。", "evidence": "E23｜限制｜模型端介入上限 10.39pp", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "E23", "type": "支持", "reason": "E21 盤點 R2 缺少重複種子，因此支撐 E23 無同結構噪音基線的限制。", "evidence": "E23｜限制｜沒有同結構的噪音基線", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E22", "dst": "E23", "type": "前置", "reason": "E23 頁首明列 E22 為前置，因此依頁面記為必要先行項目。", "evidence": "E23｜頁首｜前置 ADR-0002", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E23", "dst": "E24", "type": "僅提及", "reason": "E24 質疑 E23 的 SCC 加抽方向，但未撤回。", "evidence": "E23｜推論｜助理一度決定讓它跑完", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E23", "dst": "E26", "type": "僅提及", "reason": "E26 質疑 E23 的 SCC 加抽方向，但未撤回。", "evidence": "E23｜推論｜助理一度決定讓它跑完", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E23", "dst": "E28", "type": "僅提及", "reason": "E23 曾與 E28 搶 GPU，並為其停跑，但未寫明實質依賴。", "evidence": "E23｜推論｜為了讓出 GPU 給 E28 而停掉", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E36", "dst": "E23", "type": "推翻或更正", "reason": "E36 時段指出加抽不能補跨來源訊號，因此修正 E23 的重跑建議。", "evidence": "E23｜推論｜建議不要重跑 R2-SCC", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E24", "dst": "E17", "type": "僅提及", "reason": "E24 只援引既有上限界定偏置分析範圍，因此未重新驗證 E17。", "evidence": "E24｜限制｜不影響 E17 的模型端上限", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E24", "dst": "E19", "type": "支持", "reason": "E24 也發現 BCN 的 AKIEC 表現特別差，因此支持 E19 的來源弱點觀察。", "evidence": "E24｜推論｜與 E19 的發現吻合", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E24", "dst": "E23", "type": "僅提及", "reason": "E24 質疑 E23 的 SCC 加抽方向，但未撤回。", "evidence": "E24｜推論｜把 SCC 抽樣拉高是錯方向", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E25", "dst": "E24", "type": "支持", "reason": "E25 的偏置結果符合事前診斷，因此支持 E24 對三個弱類別的區分。", "evidence": "E24｜推論｜三次獨立驗證都對", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E26", "dst": "E24", "type": "支持", "reason": "E26 的取捨曲線符合事前診斷，因此支持 E24 不宜繼續推高 SCC 的判斷。", "evidence": "E26｜推論｜與 E24／E25 一致", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E26b", "dst": "E24", "type": "支持", "reason": "E26b 的三類結果符合事前預測，因此支持 E24 的 recall／precision 診斷。", "evidence": "E26b｜推論｜事前就全部預測對了", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E24", "dst": "E27", "type": "引發", "reason": "E24 發現弱類別群互相混淆，因此 E27 進一步檢查是否為同病不同程度。", "evidence": "E24｜推論｜後來 E27 進一步檢查", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E24", "dst": "R0", "type": "僅提及", "reason": "原句對照的是訓練 run R0，因此與候選 R0 閘門頁沒有比較關係。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E25", "dst": "E17", "type": "僅提及", "reason": "E25 只援引既有上限界定偏置分析範圍，因此未重新驗證 E17。", "evidence": "E25｜限制｜不突破 E17 的模型端上限", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E25", "dst": "E23", "type": "僅提及", "reason": "E25 質疑 E23 的 SCC 加抽方向，但未撤回。", "evidence": "E25｜推論｜方向錯誤的三條證據之一", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E25", "dst": "E26", "type": "引發", "reason": "E25 的優化目標未直接照顧弱類別，因此 E26 改以弱類別目標畫取捨曲線。", "evidence": "E26｜目的｜不是專門照顧弱類別的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E25", "dst": "E26b", "type": "引發", "reason": "E25 逐類偏置有八個自由度，因此 E26b 改測三弱類共用單一偏置。", "evidence": "E26b｜目的｜逐類自由偏置有八個自由度", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E25", "type": "支持", "reason": "E36 時段補充 softmax 分數已同尺度，因此支持 E25 的先驗調整無收益判斷。", "evidence": "E25｜推論｜本來就在同一尺度上", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E25", "dst": "E37", "type": "僅提及", "reason": "E25 只在時段括註列出 E37，因此未建立 E37 對本頁結果的直接因果。", "evidence": "E25｜頁首｜E36 時段（E37、E41）", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E25", "type": "支持", "reason": "E41 顯示最佳操作點靠近平衡點，因此支持 E25 校準到自然先驗無益的解讀。", "evidence": "E41｜推論｜兩次獨立 τ 掃描都是噪音", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E25", "dst": "R0", "type": "僅提及", "reason": "原句 R0 是 softmax 訓練模型，因此與同名 R0 閘門頁沒有實質關係。", "evidence": "E25｜推論｜全是 softmax", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E26", "dst": "E17", "type": "僅提及", "reason": "E26 只援引既有上限界定偏置分析範圍，因此未重新驗證 E17。", "evidence": "E26｜限制｜不突破 E17 的 10.39pp 上限", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E26", "dst": "E26b", "type": "引發", "reason": "E26 展示多目標取捨與統一偏置曲線，因此 E26b 進一步在選擇集挑單一偏置。", "evidence": "E26b｜目的｜E26 的目標各有取捨", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E27", "dst": "E28", "type": "引發", "reason": "E27 提出模型行為符合病程譜的證據，因此 E28 設計獨立專家作進一步檢驗。", "evidence": "E28｜目的｜驗證 E27", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E27", "dst": "E29", "type": "複製", "reason": "E29 改用八個獨立專家重驗病程譜，因此是對 E27 的跨模型條件複驗。", "evidence": "E27｜推論｜用八個獨立的一對多專家複驗", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E28", "dst": "E17", "type": "僅提及", "reason": "E28 只援引既有上限界定範圍，因此未對 E17 提供新的上限檢定。", "evidence": "E28｜限制｜不改變 E17 的模型端上限", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E28", "dst": "E29", "type": "沿用", "reason": "E29 使用 E28 訓練的八個專家與預登記判準，因此能執行互燒與梯度檢定。", "evidence": "E29｜做法｜八個專家來自 E28", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E28", "dst": "E30", "type": "沿用", "reason": "E30 使用 E28 的八個專家與事前門檻，因此能裁決 MoE 可行性。", "evidence": "E30｜做法｜八個 E28 專家", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E28", "dst": "E31", "type": "前置", "reason": "E31 要求八類專家全部完成才執行，因此 E28 訓練完成是其必要閘門。", "evidence": "E31｜做法｜八類未齊時不執行", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E28", "dst": "E32", "type": "引發", "reason": "E28 同時改動共享表徵與輸出競爭而無法歸因，因此 E32 設計共享階梯拆解。", "evidence": "E32｜目的｜兩件事", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E28", "dst": "E33", "type": "沿用", "reason": "E33 評估 E28 訓練的八個專家，因此能與多類別模型對照精確率及 BA。", "evidence": "E33｜頁首｜前置 E28", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34", "dst": "E28", "type": "推翻或更正", "reason": "E34 以共享骨幹對照分離因素，因此更正 E28 專家失利的表面歸因。", "evidence": "E34｜推論｜不是預算不足，是失去共享特徵", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E28", "dst": "R0", "type": "僅提及", "reason": "原句比較的是訓練基準 R0，因此與候選 R0 閘門頁沒有比較關係。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E29", "dst": "E17", "type": "僅提及", "reason": "E29 只援引既有上限界定範圍，因此未對 E17 提供新的上限檢定。", "evidence": "E29｜限制｜不改變 E17 的模型端上限", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E29", "dst": "E30", "type": "僅提及", "reason": "兩頁是同批專家的不同分析，因此僅列為同組並未建立相互依賴。", "evidence": "E29｜頁首｜同組 E30、E31、E33", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E31", "dst": "E29", "type": "支持", "reason": "E31 顯示 DF 假陽最多來自 NV，因此支持 E29 尾端誤判有證據的補充判讀。", "evidence": "E29｜推論｜NV 160 張最多", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E29", "dst": "E32", "type": "引發", "reason": "E29 的專家失利仍有預算與結構歸因疑問，因此 E32 設計共享階梯拆解。", "evidence": "E32｜目的｜不管結果往哪邊倒都無法歸因", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E29", "dst": "E33", "type": "僅提及", "reason": "兩頁是同批專家的不同分析，因此僅列為同組並未建立相互依賴。", "evidence": "E29｜頁首｜同組 E30、E31、E33", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34", "dst": "E29", "type": "推翻或更正", "reason": "E34 更正 R0 曝光量並控制每頭預算，因此將 E29 的失利主因改為缺少共享特徵。", "evidence": "E29｜推論｜後來 E34 更正", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E29", "dst": "R0", "type": "僅提及", "reason": "原句對照的是訓練 run R0，因此與候選 R0 閘門頁沒有比較關係。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E30", "dst": "E17", "type": "僅提及", "reason": "E30 僅重申既有上限，沒有重新驗證 E17。", "evidence": "E30｜限制｜不改變 E17 的模型端上限", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E30", "dst": "E29", "type": "僅提及", "reason": "兩頁僅列為同組分析，共同被更正不代表彼此更正。", "evidence": "E30｜頁首｜同組 E29、E31、E33", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E30", "dst": "E31", "type": "僅提及", "reason": "E30 僅將 E31 列為同組，沒有交代實質依賴。", "evidence": "E30｜頁首｜同組 E29、E31、E33", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E30", "dst": "E32", "type": "引發", "reason": "因 MoE 未過可行性門檻，E30 建議改做共享骨幹歸因。", "evidence": "E30｜推論｜建議的下一步不是 MoE", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E30", "dst": "E33", "type": "僅提及", "reason": "E30 僅將 E33 列為同組，沒有交代實質依賴。", "evidence": "E30｜頁首｜同組 E29、E31、E33", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E30", "dst": "E34", "type": "引發", "reason": "因 MoE 可行性未過關，E30 將共享骨幹 E34 列為下一步。", "evidence": "E30｜頁首｜建議的下一步 E32／E34", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E30", "dst": "E36", "type": "僅比較", "reason": "兩頁對照專家路由與多模型平均，成功與否屬不同方法。", "evidence": "E30｜推論｜不是本頁的專家路由", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E30", "type": "推翻或更正", "reason": "E41 查出組合器 D 先驗符號反了，更正公式但不改總結論。", "evidence": "E30｜推論｜組合器 D 的符號反了", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E30", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指八個專家，與來源盤點 S0 頁同名不同義。", "evidence": "S0｜頁首｜與本頁同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E31", "dst": "B1", "type": "僅提及", "reason": "E31 僅提議接 B1 評估棄答，明言當時尚未比較。", "evidence": "E31｜推論｜值不值得拿來棄答當時沒有比", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E28", "dst": "E31", "type": "沿用", "reason": "因 E28 完成八個專家，E31 才能分析各頭分數與混淆矩陣。", "evidence": "E31｜做法｜等八類完成才跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E31", "dst": "E30", "type": "支持", "reason": "E31 量到大量多頭共燒，支持 E30 組合器難以整合分數的判斷。", "evidence": "E31｜推論｜也是 E30 組合器追不上的原因", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E31", "dst": "E33", "type": "僅提及", "reason": "兩頁僅列為同組，沒有交代彼此產物的使用。", "evidence": "E31｜頁首｜同組 E29、E30、E33", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E32", "dst": "E17", "type": "僅提及", "reason": "E32 僅聲明不改既有上限，沒有重新驗證 E17。", "evidence": "E32｜限制｜不改變 E17 的模型端上限", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E32", "type": "沿用", "reason": "因 E18 提供種子噪音量級，E32 將它用作差異判讀門檻。", "evidence": "E32｜做法｜種子噪音帶內一律當沒差", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "E32", "type": "沿用", "reason": "因噪音帶出處包含 E21，E32 沿用該數值制定判讀門檻。", "evidence": "E32｜推論｜噪音帶的出處是 E18／E21", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E32", "dst": "E34", "type": "前置", "reason": "因 E32 先定義 S4 與判準，E34 才依該設計執行。", "evidence": "E34｜目的｜執行 E32 階梯中資訊量最大的一格", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34b", "dst": "E32", "type": "支持", "reason": "E34b 的校準結果支持 E32 所整理的 S4 與基準難分高低。", "evidence": "E32｜結果｜校準後與 R0 分不出高低", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E32", "dst": "E36", "type": "沿用", "reason": "因 E32 定義共享階梯，E36 時段沿用設計完成 S3 與 S2。", "evidence": "E32｜推論｜E36 時段仍做完", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E32", "dst": "E44", "type": "前置", "reason": "因 E32 先定義階梯與判準，E44 才能執行並裁決共享程度。", "evidence": "E32｜頁首｜執行 E34（S4）、E44（S3／S2）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E32", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指多類別模型，與病灶框閘門 R0 頁不是同一實驗。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E32", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指 E28 八個專家，與來源盤點 S0 頁同名不同義。", "evidence": "E32｜做法｜整個骨幹 ×8（即 E28）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E33", "dst": "E29", "type": "僅提及", "reason": "E33 僅列同組與共用報告位置，未交代對 E29 的實質依賴。", "evidence": "E33｜頁首｜同組 E29、E30、E31", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E33", "dst": "E30", "type": "僅提及", "reason": "共用合併報告不代表兩頁有因果或產物沿用關係。", "evidence": "E33｜頁首｜結果收在 E29_E30 合併報告", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E33", "dst": "E31", "type": "僅提及", "reason": "E33 僅將 E31 列為同組，未交代兩者實質依賴。", "evidence": "E33｜頁首｜同組 E29、E30、E31", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34", "dst": "E17", "type": "僅提及", "reason": "E34 僅聲明不改既有上限，沒有重新驗證 E17。", "evidence": "E34｜限制｜不改變 E17 的模型端上限", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E34", "type": "支持", "reason": "E18 的噪音量級支持 E34 對微小差距不可過度解讀的限制。", "evidence": "E34｜限制｜都在種子噪音量級", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E28", "dst": "E34", "type": "引發", "reason": "因 E28 同時拿掉兩個因素，E34 補跑共享骨幹以分離成因。", "evidence": "E34｜目的｜分離 E28 同時拿掉的兩個因素", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34", "dst": "E34b", "type": "引發", "reason": "因 E34 發現排序好但決策差的矛盾，E34b 才探索免訓練校準。", "evidence": "E34｜限制｜看到矛盾後才做的事後探索", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34", "dst": "E35", "type": "沿用", "reason": "因 E34 產出 S4，E35 沿用其分數繪製四個 arm 的比較曲線。", "evidence": "E35｜做法｜用原始 sigmoid", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E34", "type": "取代", "reason": "因歷史對照不乾淨，E36 時段改用同腳本配對 2×2 取代它。", "evidence": "E34｜推論｜取代歷史 R0 對照", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E37", "dst": "E34", "type": "取代", "reason": "因 E34 歷史對照有混雜，E37 以同腳本配對 2×2 取代比較。", "evidence": "E34｜頁首｜比較後來被配對 2×2 取代", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34", "dst": "E44", "type": "沿用", "reason": "因 E34 已提供階梯兩端，E44 沿用其結果補齊階梯比較。", "evidence": "E44｜目的｜E34 只跑了階梯的兩端", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45", "dst": "E34", "type": "推翻或更正", "reason": "E45 查出前處理變更，更正 E34 對照可直接歸因的前提。", "evidence": "E34｜推論｜跨界線的比較之一", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45c", "dst": "E34", "type": "推翻或更正", "reason": "E45c 量化前處理影響並釘出界線，修正 E34 對照的可比性。", "evidence": "E45c｜推論｜跨界線的是 E34 的 S4 − R0", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指基準模型，與病灶框閘門 R0 頁同名但不同。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指八個獨立專家，與來源盤點 S0 頁同名不同義。", "evidence": "S0｜頁首｜八個一對多專家 arm", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E30", "dst": "E34b", "type": "沿用", "reason": "因 E30 已定義三種免訓練組合器，E34b 將它們套到 S4。", "evidence": "E34b｜做法｜把 E30 的三種免訓練校準套到 S4", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34b", "dst": "E35", "type": "沿用", "reason": "因 E34b 產出 S4-D 校準分數，E35 用它跨頭比較風險與覆蓋率。", "evidence": "E35｜做法｜用校準後分數（S4-D）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34b", "dst": "E36", "type": "沿用", "reason": "因 E34b 產出 S4-D，E36 將其加入集成池與混合棄答。", "evidence": "E36｜做法｜S4-D（S4 減 log(pos_weight)）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E37", "dst": "E34b", "type": "支持", "reason": "E37 發現校準可追平高預算 S4F，支持 E34b 的操作點解釋。", "evidence": "E34b｜推論｜追平了 3 倍計算量", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E34b", "type": "推翻或更正", "reason": "E41 更正校準機制：作用是拉回過度平衡，而非還原真實先驗。", "evidence": "E34b｜推論｜不是「校準到真實先驗」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34b", "dst": "R0", "type": "僅提及", "reason": "比較中的 R0 是基準模型，與病灶框閘門 R0 頁不是同一實驗。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E34b", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指八個專家模型，與來源盤點 S0 頁同名不同義。", "evidence": "S0｜頁首｜與本頁同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E35", "dst": "E21", "type": "僅比較", "reason": "原句對照兩頁棄答判斷的表面矛盾，實際釐清者是 E38。", "evidence": "E35｜推論｜與 E21「棄權救不了」的矛盾", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E35", "dst": "E34", "type": "推翻或更正", "reason": "E35 掃遍門檻後，將 E34 的資訊取不出來收緊為單一門檻皆無效。", "evidence": "E35｜推論｜在任何單一門檻下都取不出來", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E35", "dst": "E36", "type": "引發", "reason": "因 E35 發現排序與決策反轉，E36 檢驗集成及混合棄答能否利用它。", "evidence": "E36｜目的｜E35 的反轉能不能換成一個真的更好的模型", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36b", "dst": "E35", "type": "推翻或更正", "reason": "E36b 發現集成後 S4-D 排序失去優勢，修正 E35 的棄答選模建議。", "evidence": "E35｜推論｜集成之後 S4-D 的信心排序不再有優勢", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E35", "dst": "E38", "type": "引發", "reason": "因 E35 的棄答有效與舊判斷衝突，E38 進一步量化兩者差異。", "evidence": "E38｜目的｜兩個看起來打架的結論", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E35", "dst": "E39", "type": "僅提及", "reason": "E35 僅將 E39 列為後續圖表，E39 明列的數值來源另有其頁。", "evidence": "E35｜頁首｜E39（成本效益與風險覆蓋率圖）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E35", "type": "支持", "reason": "E40 查明沒有封存測試集，支持 E35 缺少獨立確認的限制。", "evidence": "E35｜限制｜沒有在別的集合確認", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E35", "dst": "R0", "type": "僅提及", "reason": "曲線中的 R0 指多類別模型，與病灶框閘門 R0 頁同名但不同。", "evidence": "E35｜做法｜R0（多類別 tiny@224，e=0.5）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E35", "dst": "S0", "type": "僅提及", "reason": "曲線中的 S0 指八個獨立專家，與來源盤點 S0 頁同名不同義。", "evidence": "E35｜做法｜S0（八個獨立專家）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "C1", "type": "僅提及", "reason": "原句 C1 是組合器編號與 R2 單體，並非第九類驗證 C1 頁。", "evidence": "E36｜結果｜R2（C1）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E17", "type": "支持", "reason": "E36 整理集成幾乎修不了共錯，支持 E17 對系統性錯誤的判斷。", "evidence": "E36｜推論｜集成修不了 E17 的 760 張共錯", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E34", "dst": "E36", "type": "引發", "reason": "因 E34 歷史對照不乾淨，E36 登記同腳本 CE／BCE 配對實驗。", "evidence": "E36｜目的｜E34 對 R0 的比較不乾淨", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36b", "dst": "E36", "type": "推翻或更正", "reason": "E36b 發現集成本身修好信心問題，修正 E36 對 C15 的解讀。", "evidence": "E36｜推論｜E36b 修正為集成本身就修掉信心問題", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36c", "dst": "E36", "type": "支持", "reason": "E36c 發現多數配對皆有增益，支持 E36 的集成有效結論。", "evidence": "E36c｜結果｜36 個配對贏過 R2", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E37", "type": "前置", "reason": "因 E36 在跑格子前登記事先判準，E37 依此執行配對 2×2。", "evidence": "E37｜目的｜跑任何一格前就定好", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "E36", "type": "支持", "reason": "E38 量到共錯只修對一張，支持 E36 對集成增益來源的判斷。", "evidence": "E36｜推論｜E38：只修對 1 張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E36", "type": "推翻或更正", "reason": "E40 查明沒有封存測試集，推翻 E36 可用該集合確認的前提。", "evidence": "E36｜頁首｜有封存測試集可確認", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E44", "dst": "E36", "type": "推翻或更正", "reason": "E44 指出損失判決讀錯切分，更正 E36 對共用 softmax 的結案判斷。", "evidence": "E44｜推論｜E36／E37 的「共用 softmax 不是槓桿」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E46", "type": "僅提及", "reason": "E36 僅將 E46 列在同時段頁面範圍，沒有明示兩者實質關係。", "evidence": "E36｜頁首｜同時段 E40–E46", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E82", "dst": "E36", "type": "支持", "reason": "E82 重現 C10 指標與顯著增益，支持 E36 的集成結論。", "evidence": "E82｜結果｜C10 重現成功", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "R0", "type": "僅提及", "reason": "集成池中的 R0 指模型 run，與病灶框閘門 R0 頁同名但不同。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "S0", "type": "僅提及", "reason": "集成池中的 S0 指八個專家，與來源盤點 S0 頁同名不同義。", "evidence": "E36｜做法｜S0（八個專家）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36b", "dst": "E36c", "type": "引發", "reason": "因 E36b 最佳子集皆含 R2-REG，E36c 檢查排除它後是否仍有增益。", "evidence": "E36c｜目的｜R2-REG 出現在每個大小的最佳子集裡", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36b", "dst": "E38", "type": "引發", "reason": "因 E36b 顯示集成棄答有效，E38 追查它與共錯無法修復是否矛盾。", "evidence": "E38｜目的｜E35／E36b：棄答很有用", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36b", "dst": "E39", "type": "沿用", "reason": "因 E36b 產出子集與成本數值，E39 使用它們繪製成本效益圖。", "evidence": "E39｜頁首｜數值來自 e36b／e36c／e38", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E36b", "type": "支持", "reason": "E40 查明缺少獨立集合，支持 E36b 結論尚無外部確認的限制。", "evidence": "E36b｜限制｜沒有真正沒被看過的集合可以確認", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36b", "dst": "R0", "type": "僅提及", "reason": "成本表中的 R0 是模型系列，與病灶框閘門 R0 頁同名但不同。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36b", "dst": "S0", "type": "僅提及", "reason": "成本表中的 S0 指八個專家模型，與來源盤點 S0 頁同名不同義。", "evidence": "S0｜頁首｜與本頁同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36c", "dst": "E38", "type": "僅提及", "reason": "兩頁僅列為同時段分析，沒有交代彼此產物或結論的依賴。", "evidence": "E36c｜頁首｜同時段 E38、E39", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36c", "dst": "E39", "type": "沿用", "reason": "因 E36c 產出配對分布，E39 使用這些數值繪製成本效益圖。", "evidence": "E39｜頁首｜E36c（36 個配對）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E36c", "type": "支持", "reason": "E40 盤點重複讀取評估集，支持 E36c 仍受分岔路徑影響的限制。", "evidence": "E36c｜限制｜仍受分岔路徑影響（E40）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36c", "dst": "R0", "type": "僅提及", "reason": "配對表中的 R0 指訓練模型，與病灶框閘門 R0 頁同名但不同。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36c", "dst": "S0", "type": "僅提及", "reason": "配對中的 S0 指八個專家，與來源盤點 S0 頁同名不同義。", "evidence": "S0｜頁首｜與本頁同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E37", "dst": "E37b", "type": "引發", "reason": "因 E37 改動訓練腳本以執行 2×2，E37b 依規定驗證預設行為等價。", "evidence": "E37b｜目的｜E37 為了跑 2×2 改了", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E37", "type": "支持", "reason": "E40 盤點多支分析讀取評估集，支持 E37 對分岔路徑風險的限制。", "evidence": "E40｜結果｜e37：2 個 arm × 4 種校準", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E37", "dst": "E41", "type": "引發", "reason": "因 E37 發現 S4 校準有明顯增益，E41 追查其他 sigmoid arm 是否也受益。", "evidence": "E41｜目的｜E37 發現 S4 的校準值 +4.13pp", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E37", "dst": "E43", "type": "引發", "reason": "因 E37 量到預算增益，E43 回頭檢查其他 arm 的預算是否對齊。", "evidence": "E37｜推論｜回頭檢查其他 arm 的預算是否對齊", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E44", "dst": "E37", "type": "推翻或更正", "reason": "E44 證明損失判決讀錯切分，改判選擇面上 CE 較好。", "evidence": "E37｜推論｜違反「選擇在 val_select」的協定", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E37", "dst": "R0", "type": "僅提及", "reason": "目的中的 R0 指基準模型，與病灶框閘門 R0 頁同名但不同。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E32", "dst": "E37b", "type": "沿用", "reason": "因 E32 已列階梯參數量，E37b 使用該表檢查 S3／S2 建構。", "evidence": "E37b｜做法｜參數量對 E32 表", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E37b", "dst": "E44", "type": "前置", "reason": "因 E37b 先驗證 S2／S3 建構正確，E44 才能使用它們完成階梯實驗。", "evidence": "E44｜頁首｜E37b（S2／S3 建構驗證）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "A1", "type": "僅提及", "reason": "原句指 E21 的 A1 小節，並非空間頭評分頁，屬同名誤連。", "evidence": "E38｜目的｜E21_目前問題總結.md", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17", "dst": "E38", "type": "沿用", "reason": "因為要重建共錯集，所以 E38 使用 E17 的六個模型。", "evidence": "E38｜做法｜用 E17 那六個模型重算", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17c", "dst": "E38", "type": "前置", "reason": "因為共錯拆解須先確認集合正確，所以以 E17c 的 760 張作檢查。", "evidence": "E38｜結果｜重算共錯 760 張，與 E17c 一致", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "E36", "type": "僅比較", "reason": "因為兩者討論修錯與避錯的不同效果，所以並列釐清主張範圍。", "evidence": "E38｜推論｜E35／E36 講的是「避」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E38", "dst": "E39", "type": "沿用", "reason": "因為 E39 要畫棄答成分圖，所以使用 E38 的共錯拆解數值。", "evidence": "E39｜頁首｜數值來自 e36b／e36c／e38", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E38", "type": "支持", "reason": "因為 E40 盤點多次讀取，所以支持 E38 對評估保留性的限制。", "evidence": "E38｜限制｜當天被多支分析讀過", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E39", "type": "推翻或更正", "reason": "因為多次讀取有分岔路徑風險，所以更正最佳子集數字的引用方式。", "evidence": "E39｜推論｜改以「九個等權平均」為代表", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E39", "dst": "E42", "type": "僅提及", "reason": "因為相關輸出只是檔名沿用 E39，所以不能視為圖表分析的因果關係。", "evidence": "E39｜結果／同名檔｜檔名沿用 E39，內容不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E43", "dst": "E39", "type": "支持", "reason": "因為 E43 查出 R1 的選模與預算問題，所以支持不宜單獨引用的限制。", "evidence": "E39｜限制｜R1 單獨的成績有兩個問題", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E39", "dst": "E45", "type": "僅提及", "reason": "因為 E45 說明的是同名推論檔，所以此處只是辨識檔案來源。", "evidence": "E39｜結果／同名檔｜檔名沿用 E39，內容不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E39", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指分類模型 arm，並非病灶框閘門頁，屬同名誤連。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E120", "type": "僅提及", "reason": "因為只補述後來依使用者要求建立保留資料，未明言由 E40 促成。", "evidence": "E40｜推論｜使用者要求排除 ISIC 官方測試集", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E123", "type": "僅提及", "reason": "因為只補述後來擴大排除官方測試集，未明言由 E40 促成。", "evidence": "E40｜推論｜後來的發展", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E41", "type": "沿用", "reason": "因為 E40 揭露評估集反覆讀取，所以 E41 採用不讀 val_assess 的紀律。", "evidence": "E41｜做法｜val_assess 讀取 0 次", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E43", "type": "沿用", "reason": "因為 E40 要求節制評估集讀取，所以 E43 的既有 history 分析不讀它。", "evidence": "E40｜推論｜刻意做到 val_assess 讀取 0 次", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E44", "type": "沿用", "reason": "因為 E40 揭露反覆讀取風險，所以 E44 採用讀取次數紀錄。", "evidence": "E40｜頁首｜影響 E41、E44、E46、E47、E50", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E46", "type": "沿用", "reason": "因為 E40 揭露反覆讀取風險，所以 E46 採用讀取次數紀錄。", "evidence": "E46｜做法｜val_assess 讀 1 次", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E47", "type": "支持", "reason": "因為 E40 確認沒有封存測試集，所以支持 E47 的圖表評估限制。", "evidence": "E47｜限制｜沒有封存測試集（E40）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E50", "type": "沿用", "reason": "因為 E40 揭露反覆讀取風險，所以 E50 採用讀取次數紀錄。", "evidence": "E50｜做法｜val_assess 讀 1 次", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E18", "type": "僅比較", "reason": "因為校準增益需判斷量級，所以拿 E18 的種子波動作對照。", "evidence": "E41｜結果｜種子噪音帶是 1.68–3.69pp", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E21", "type": "僅比較", "reason": "因為校準增益需判斷量級，所以拿 E21 彙整的種子噪音作對照。", "evidence": "E41｜結果｜出自 E18／E21", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E24", "type": "僅比較", "reason": "因為兩次校準增益皆小，所以並列比較其量級，未構成重做關係。", "evidence": "E41｜推論｜兩次獨立 τ 掃描都是噪音", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E29", "type": "支持", "reason": "因為 S0 校準僅有噪音量級增益，所以支持 E29 原始 argmax 的判斷。", "evidence": "E41｜推論｜E29／E30…結論不受影響", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E32", "type": "僅提及", "reason": "因為只是撤回錯誤的噪音帶出處，並未更正 E32 的內容。", "evidence": "E41｜限制｜出處原本誤標為 E32", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E36", "type": "推翻或更正", "reason": "因為 S0 校準增益只有噪音量級，所以推翻 E36 的校準假象猜測。", "evidence": "E41｜推論｜E36 第 3.4 節那句同日修正", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指分類模型基準，並非病灶框閘門頁，屬同名誤連。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指八個獨立專家，並非來源分割盤點頁，屬同名誤連。", "evidence": "S0｜頁首｜八個一對多專家 arm", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36b", "dst": "E42", "type": "引發", "reason": "因為要驗證集成數字並交付推論腳本，所以 E42 進行端到端比對。", "evidence": "E42｜目的｜驗證 e36／e36b 的數字", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45", "dst": "E42", "type": "推翻或更正", "reason": "因為 batch 掃描翻不了 R0 的錯誤，所以推翻 E42 的 batch 診斷。", "evidence": "E42｜推論｜真正原因是未提交的 Image.draft", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45b", "dst": "E42", "type": "推翻或更正", "reason": "因為關閉 draft 後 R0 差異歸零，所以證明 E42 的 batch 歸因錯誤。", "evidence": "E45b｜推論｜一個要關 draft、一個要開", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E42", "dst": "E45c", "type": "引發", "reason": "因為端到端比對揭露前處理差異，所以後續量化其嚴重度與時間線。", "evidence": "E45c｜目的｜E45c 問嚴重度", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E49", "dst": "E42", "type": "推翻或更正", "reason": "因為超大影像在偵測裁切下造成崩潰，所以更正 E42 的無須改動判斷。", "evidence": "E49｜推論｜這次在 crop=detect 下它們真的造成崩潰", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E42", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指分類模型成員，並非病灶框閘門頁，屬同名誤連。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45", "dst": "E43", "type": "支持", "reason": "因為 draft 能解釋端到端與 history 的差值，所以支持 E43 數字差異的歸因。", "evidence": "E43｜推論｜差 0.11pp，來自 draft", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E43", "dst": "E50", "type": "前置", "reason": "因為總表需納入 R1 重跑結果，所以 E43 的診斷與重跑是前置工作。", "evidence": "E50｜頁首｜E43（R1 重跑）", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E43", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指分類模型基準，並非病灶框閘門頁，屬同名誤連。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E44", "dst": "E18", "type": "僅比較", "reason": "因為要衡量新種子波動，所以 E44 與 E18 的既有噪音帶比較。", "evidence": "E44｜推論｜低於既有 1.68–3.69pp 帶的上緣", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E44", "dst": "E21", "type": "僅比較", "reason": "因為要檢查門檻是否保守，所以比較 E21 噪音帶與新種子波動。", "evidence": "E44｜推論｜用那個帶當門檻偏保守", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E32", "dst": "E44", "type": "沿用", "reason": "因為 E44 執行共享階梯，所以沿用 E32 登記的 S2、S3 設計與設定。", "evidence": "E32｜結果｜S3、S2（E36 時段、E44）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E46", "dst": "E44", "type": "推翻或更正", "reason": "因為兩切分的地板分屬 BCN 與 ISIC，所以更正 E44 只攻 BCN 的建議。", "evidence": "E44｜推論｜兩者實質並列，所以兩個都要打", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E44", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指完全獨立專家 arm，並非來源分割盤點頁，屬同名誤連。", "evidence": "S0｜頁首｜與本頁同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45", "dst": "E44", "type": "支持", "reason": "因為階梯 arm 全在相同前處理側，所以支持 E44 比較未受跨界線混淆。", "evidence": "E45｜推論｜E44 階梯全在同一側，內部一致", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45b", "dst": "E45", "type": "支持", "reason": "因為關閉 draft 能消除 R0 差異，所以支持 E45 對真正原因的結論。", "evidence": "E45b｜推論｜H3 成立", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45c", "dst": "E45", "type": "支持", "reason": "因為量出影響量與 run 時間線，所以支持 E45 對嚴重度及分群的結論。", "evidence": "E45｜結果｜嚴重度…詳見 E45c", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E94", "dst": "E45", "type": "支持", "reason": "因為後續更正仍記載評估使用 draft，所以支持 E45 對其持續存在的註記。", "evidence": "E45｜推論｜評估路徑仍包含 im.draft", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指分類模型 run，並非病灶框閘門頁，屬同名誤連。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指八個獨立專家，並非來源分割盤點頁，屬同名誤連。", "evidence": "S0｜頁首｜與本頁同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45c", "dst": "E45b", "type": "推翻或更正", "reason": "因為分層普查發現高解析 ISIC 仍會縮小，所以更正 E45b 的惰性說法。", "evidence": "E45b｜推論｜「640／768 不縮」是過度簡化", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45b", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指分類模型 run，並非病灶框閘門頁，屬同名誤連。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45c", "dst": "E22", "type": "推翻或更正", "reason": "因為 ISIC 在各尺寸仍可能被 draft 縮小，所以修正 E22 的前處理清冊。", "evidence": "E45c｜推論｜已修…E22 9.6", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45c", "dst": "E44", "type": "支持", "reason": "因為階梯 arm 全在 draft 後，所以支持 E44 內部比較的前處理一致性。", "evidence": "E45c｜推論｜E44 階梯全在 draft 後，內部一致", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E46", "dst": "E45c", "type": "支持", "reason": "因為 E46 確認 BCN 是交付地板之一，所以支持優先檢查其前處理影響。", "evidence": "E45c｜目的｜BCN20000 最重要", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45c", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指分類模型權重，並非病灶框閘門頁，屬同名誤連。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45c", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指 OVR 八個專家，並非來源分割盤點頁，屬同名誤連。", "evidence": "E45c｜結果｜OVR（S0 的八個專家）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E46", "type": "沿用", "reason": "因為要拆解交付集成的地板，所以 E46 沿用 E36 的九 arm 池與 C10 程式。", "evidence": "E46｜做法｜組合器 C10…程式逐字照抄", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E46", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指專家模型 arm，並非來源分割盤點頁，屬同名誤連。", "evidence": "S0｜頁首｜八個一對多專家 arm", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E47", "type": "沿用", "reason": "因為簡報圖需呈現既定集成，所以 E47 照抄 E36 的池子與組合程式。", "evidence": "E47｜做法｜載入與組合逐字照抄", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E47", "dst": "E48", "type": "沿用", "reason": "因為簡報需嵌入既有四張圖，所以 E48 使用 E47 的圖檔。", "evidence": "E48｜目的｜與 E47 的四張圖組成", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E47", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指池內分類模型，並非病灶框閘門頁，屬同名誤連。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E47", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指池內專家模型，並非來源分割盤點頁，屬同名誤連。", "evidence": "S0｜頁首｜與本頁同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E49", "dst": "D2", "type": "僅提及", "reason": "原句 D2 指啟發式病灶框，並非八類 85% 可達性頁，屬同名誤連。", "evidence": "E49｜做法｜detect 與 D2 兩套框", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E5", "dst": "E9", "type": "前置", "reason": "E9 必須先知道訓練召回是否已接近飽和，才能決定削減版分配器是否值得做。", "evidence": "E5｜頁首｜削減版動態分配器以它為前提", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E50", "type": "沿用", "reason": "因為總表需列出集成對照，所以 E50 使用 E36 的九個等權組合設定。", "evidence": "E50｜頁首｜E36（集成 C10）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E37", "dst": "E50", "type": "沿用", "reason": "因為要彙整既有結構，所以 E50 使用 E37 相關 arm 的存檔重新計分。", "evidence": "E50｜做法｜從既有存檔的 logits／scores 重算", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E40", "dst": "E50", "type": "支持", "reason": "因為 E40 確認沒有封存測試集，所以支持 E50 對表中成績的限制。", "evidence": "E50｜限制｜沒有封存測試集（E40）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E41", "dst": "E50", "type": "支持", "reason": "因為 E41 顯示 S4 校準仍可增益，所以支持總表原始 argmax 非最佳操作點的限制。", "evidence": "E50｜限制｜S4 經校準可再高", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E44", "dst": "E50", "type": "沿用", "reason": "因為總表需涵蓋共享階梯與種子複製，所以使用 E44 相關 arm 的存檔。", "evidence": "E50｜做法｜從既有存檔的 logits／scores 重算", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E50", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指分類模型結構，並非病灶框閘門頁，屬同名誤連。", "evidence": "R0｜頁首｜與基準訓練 run「R0」同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E50", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指八個專家結構，並非來源分割盤點頁，屬同名誤連。", "evidence": "S0｜頁首｜與本頁同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E45", "dst": "E51", "type": "支持", "reason": "因為 E45 揭露模型跨前處理界線，所以支持 E51 對歸因受混淆的限制。", "evidence": "E51｜限制｜R0／R1 在 draft 之前跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E50", "dst": "E51", "type": "前置", "reason": "因為要檢查各結構特點是否造成差異，所以先以 E50 結構總表界定分析對象。", "evidence": "E51｜頁首｜前置 E50（結構總表）", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E51", "dst": "R0", "type": "僅提及", "reason": "原句 R0 指 SD-001 分類基準，並非病灶框閘門頁，屬同名誤連。", "evidence": "E51｜做法｜SD-001 R0", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E51", "dst": "S0", "type": "僅提及", "reason": "原句 S0 指 SD-010 八個專家，並非來源分割盤點頁，屬同名誤連。", "evidence": "E51｜做法｜SD-010 S0", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E52", "dst": "E53", "type": "引發", "reason": "因為試標顯示 Codex 較弱，所以 E53 將它定位為第二意見而非標註來源。", "evidence": "E52｜推論｜角色是驗證，不是標註", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E52", "dst": "E55", "type": "支持", "reason": "因為試標顯示 Codex 較弱，所以支持 E55 將其框大小差異視為線索而非定論。", "evidence": "E55｜推論｜所以只是線索不是定論", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E8", "dst": "E52", "type": "前置", "reason": "因為需先有偵測框審查與對照框，所以 E8 是 E52 試標比較的前置。", "evidence": "E52｜頁首｜前置 E8（偵測框審查）", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E53", "dst": "E11", "type": "僅比較", "reason": "因為要檢查已知墨圈失效模式，所以對照 E11 案例，未因小樣本未見而推翻它。", "evidence": "E53｜推論｜n=30 不足以說該失效模式不存在", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E53", "dst": "E54", "type": "引發", "reason": "因為發現偵測框偏大可能削弱裁切，所以 E54 量化實際放大量。", "evidence": "E53｜推論｜後來由 E54、E55 量化", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E53", "dst": "E55", "type": "沿用", "reason": "因為要判斷 BCN 框大是否來自偵測器，所以 E55 使用 E53 的 Codex 框作對照。", "evidence": "E55｜做法｜以 E53 的 Codex 框當對照", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E8", "dst": "E53", "type": "引發", "reason": "因為 E8 發現 BCN 與 PAD 無遮罩真值，所以 E53 改用獨立第二意見交叉驗證。", "evidence": "E53｜目的｜遮罩覆蓋率是 0%", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E54", "dst": "E55", "type": "引發", "reason": "因為 E54 發現大量影像沒有放大，所以 E55 掃描 k 值。", "evidence": "E55｜目的｜37.7% 的影像 zoom ≤ 1", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E54", "dst": "E56", "type": "支持", "reason": "因為 E54 量到裁切介入偏弱，所以支持 E56 保留效果判讀的但書。", "evidence": "E56｜推論｜依 E54／E55 事先寫下的但書", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E60", "dst": "E54", "type": "推翻或更正", "reason": "E60 加強裁切仍未改善成績，排除了 E54 提出的介入太弱解釋。", "evidence": "E54｜推論｜排除了「介入太弱」這個解釋", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E55", "dst": "E53", "type": "僅比較", "reason": "因為 E55 以 E53 的框作大小對照，所以此處主要是基準比較。", "evidence": "E55｜做法｜以 E53 的 Codex 框當對照", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E55", "dst": "E56", "type": "支持", "reason": "因為 E55 顯示 k=1.5 介入偏弱，所以支持 E56 限縮效果結論。", "evidence": "E56｜推論｜依 E54／E55 事先寫下的但書", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E55", "dst": "E60", "type": "沿用", "reason": "因為 E55 算出 k=1.0 的幾何設定，所以 E60 採此設定重跑。", "evidence": "E60｜目的｜k=1.0 是 E55 算出的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E49", "dst": "E56", "type": "前置", "reason": "因為 E49 修正裁切畫布問題，E56 的 R2-DET 才能重跑。", "evidence": "E56｜頁首｜R2-DET 才能重跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E53", "dst": "E56", "type": "支持", "reason": "因為 E53 發現偵測框偏大，所以支持 E56 對裁切介入偏弱的判斷。", "evidence": "E56｜頁首｜k=1.5 介入很弱", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E56", "dst": "E57", "type": "引發", "reason": "因為 E56 發現 PAD 裁切後退步，所以 E57 建立墨圈篩選器以供檢驗。", "evidence": "E57｜目的｜先做一個便宜的顏色篩選", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E56", "dst": "E59", "type": "引發", "reason": "因為 E56 發現 PAD 兩切分皆退步，所以 E59 檢驗是否由墨圈造成。", "evidence": "E59｜目的｜害處是不是集中在有墨圈的影像", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E60", "dst": "E56", "type": "推翻或更正", "reason": "E60 加強裁切仍未改善成績，修正 E56 保留的介入太弱但書。", "evidence": "E56｜推論｜排除了「介入太弱」的但書", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E56", "dst": "E81", "type": "僅提及", "reason": "因為 E81 只將 E56 列為第一組單變數對照，所以是歷史定位。", "evidence": "E81｜目的｜第一組是 E56 的 crop", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E57", "dst": "E11b", "type": "僅提及", "reason": "因為 E57 只在頁首列出 E11b 的墨跡率背景，所以未建立實質依賴。", "evidence": "E57｜頁首｜E11／E11b／E11c（PAD 墨跡率）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E11c", "dst": "E57", "type": "引發", "reason": "因為 E11c 量到墨跡比例而未驗證模型影響，所以 E57 建立逐張篩選。", "evidence": "E57｜目的｜從沒驗證過它真的影響模型行為", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58", "dst": "E57", "type": "取代", "reason": "因為 E57 篩選器召回率過低，所以改以 E58 的逐張標記取代。", "evidence": "E57｜頁首｜由 E58 的 Codex 逐張標記取代", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58b", "dst": "E57", "type": "推翻或更正", "reason": "E58b 目視確認 E57 漏掉淡紫筆跡，也把非墨跡誤標為墨跡。", "evidence": "E57｜推論｜掉出門檻", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E57", "dst": "E59", "type": "引發", "reason": "因為 E57 規劃用驗過的標記比較模型，所以後續形成 E59。", "evidence": "E57｜做法｜後來分別成為 E58、E59", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58", "dst": "E52", "type": "僅比較", "reason": "因為 E58 只比較墨跡辨識與 E52 標框的任務難度，所以是任務對照。", "evidence": "E58｜目的｜比 E52 的「框在哪」容易得多", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58b", "dst": "E58", "type": "支持", "reason": "因為 E58b 目視確認漏標與誤報，所以支持 E58 對篩選器品質的判斷。", "evidence": "E58｜推論｜篩選器的低召回率是真的", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58", "dst": "E59", "type": "沿用", "reason": "因為 E58 產出逐張墨跡標記，所以 E59 使用它切分有墨與無墨組。", "evidence": "E59｜做法｜墨跡標記：E58 的 Codex 逐張標記", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58", "dst": "E59b", "type": "沿用", "reason": "因為 E58 產出墨跡標記，所以 E59b 沿用它重做差中差。", "evidence": "E59b｜做法｜E58 的 Codex 墨跡標記", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58b", "dst": "E11b", "type": "推翻或更正", "reason": "因為 E58b 發現淡紫細線容易漏判，所以將 E11b 的墨跡率改註可能偏低。", "evidence": "E58b｜推論｜所以兩者可能偏低", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58", "dst": "E58b", "type": "沿用", "reason": "因為 E58 產出混淆矩陣，所以 E58b 依其分組抽樣目視。", "evidence": "E58b｜做法｜以 E58 的混淆矩陣分三組", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E58b", "dst": "E59", "type": "支持", "reason": "因為 E58b 抽查發現 Codex 標記含誤報，所以支持 E59 對標記雜訊的限制。", "evidence": "E59｜限制｜可能有三到四成是誤報", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E59", "dst": "E11b", "type": "僅提及", "reason": "因為 E59 轉述 E58 系列的低估提醒，所以未自行更正 E11b 的數字。", "evidence": "E59｜推論｜詳見 E58、E58b", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E59", "dst": "E11c", "type": "僅提及", "reason": "因為 E59 轉述 E58 系列的低估提醒，所以未自行更正 E11c 的數字。", "evidence": "E59｜推論｜詳見 E58、E58b", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E54", "dst": "E59", "type": "支持", "reason": "因為 E54 顯示 k=1.5 裁切偏弱，所以支持 E59 對陰性結果的限制。", "evidence": "E59｜限制｜k=1.5 下裁切本身很弱", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E55", "dst": "E59", "type": "支持", "reason": "因為 E55 顯示 k=1.5 裁切偏弱，所以支持 E59 對陰性結果的限制。", "evidence": "E59｜限制｜k=1.5 下裁切本身很弱", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E59", "dst": "E59b", "type": "複製", "reason": "因為 E59 只測 k=1.5，所以 E59b 改用 k=1.0 重做同一差中差。", "evidence": "E59b｜目的｜在更強的介入下重做同一個差中差", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E59", "dst": "E60", "type": "僅提及", "reason": "因為 E59 只將 E60 列為後續，所以未說明兩者的實質依賴。", "evidence": "E59｜頁首｜後續 E59b、E60", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E59", "dst": "E65", "type": "僅提及", "reason": "因為 E65 只重述墨圈已排除且退步原因未解，所以未建立新的因果。", "evidence": "E65｜推論｜墨圈假說已被 E59／E59b 否證", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E60", "dst": "E59b", "type": "沿用", "reason": "因為 E60 提供 k=1.0 的模型結果，所以 E59b 使用該 run 做子群分析。", "evidence": "E59b｜做法｜R2-DET_c00c24e5_seed17", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E59b", "dst": "E65", "type": "僅提及", "reason": "因為頁面明說深度結果未接上退步原因，所以只並列後續發現。", "evidence": "E59b｜推論｜沒有接上這個退步的原因", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E6", "dst": "ADR-0003", "type": "支持", "reason": "E6 發現 BCN／PAD 沒有遮罩真值，支持 ADR 要求人核准視覺閘門。", "evidence": "E6｜推論｜唯一的關卡是人工視覺稽核", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E6", "dst": "D3", "type": "推翻或更正", "reason": "E6 比對發現 ISIC 遮罩不屬 HAM，因此更正 D3 對遮罩來源的說法。", "evidence": "E6｜推論｜抓到 D3 的一個錯誤", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E6", "dst": "E7", "type": "沿用", "reason": "E7 使用 E6 下載並確認切分的遮罩，訓練病灶分割器。", "evidence": "E6｜頁首｜用這些遮罩訓練偵測器", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E6", "dst": "E8", "type": "引發", "reason": "E6 發現 BCN／PAD 無遮罩可驗，因此 E8 加入人工視覺稽核。", "evidence": "E8｜目的｜沒有遮罩真值可驗", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E60", "dst": "E65", "type": "僅提及", "reason": "因為 E65 只並列裁切退步與深度收益，所以沒有證明兩者的因果。", "evidence": "E65｜推論｜PAD 一直在偵測裁切下退步", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E61", "dst": "A1", "type": "僅提及", "reason": "因為 A1 在此是色彩恆常性的家族代號，所以沒有指向 A1 實驗頁。", "evidence": "E61｜做法｜A1 色彩恆常性", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E61", "dst": "A2", "type": "僅提及", "reason": "因為 A2 在此是 CLAHE 的家族代號，所以沒有指向 A2 實驗頁。", "evidence": "E61｜做法｜A2 CLAHE", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E61", "dst": "A3", "type": "僅提及", "reason": "因為 A3 在此是極端對比拉伸的代號，所以沒有指向 A3 實驗頁。", "evidence": "E61｜做法｜A3 極端對比拉伸", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E61", "dst": "A4", "type": "僅提及", "reason": "因為 A4 在此是 Lab 色彩特徵代號，所以沒有指向 A4 實驗頁。", "evidence": "E61｜做法｜A4 Lab a*/b*", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E61", "dst": "B1", "type": "僅提及", "reason": "因為 B1 在此是 Sobel 特徵代號，所以沒有指向 B1 實驗頁。", "evidence": "E61｜做法｜B1 Sobel 梯度能量", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E61", "dst": "B2", "type": "僅提及", "reason": "因為 B2 在此是 LBP 特徵代號，所以沒有指向 B2 實驗頁。", "evidence": "E61｜做法｜B2 LBP", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E61", "dst": "B3", "type": "僅提及", "reason": "因為 B3 在此是 DoG 特徵代號，所以沒有指向 B3 實驗頁。", "evidence": "E61｜做法｜B3 DoG 帶通", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E62", "dst": "E61", "type": "推翻或更正", "reason": "E62 看見高光與投影，推翻 E61 排除表面起伏特徵的理由。", "evidence": "E61｜推論｜排除 C 類的理由站不住", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E63", "dst": "E61", "type": "取代", "reason": "因為 E61 漏收 C 類，所以 E63 補上重跑並取代舊版。", "evidence": "E61｜頁首｜被 E63 取代", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E61", "dst": "E64", "type": "僅提及", "reason": "因為 E61 只將 E64 列為後續，所以未說明直接因果或產物沿用。", "evidence": "E61｜頁首｜E64、E65", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E61", "dst": "E65", "type": "僅提及", "reason": "因為 E61 只將 E65 列為後續，所以未說明直接因果或產物沿用。", "evidence": "E61｜頁首｜E64、E65", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E62", "dst": "E63", "type": "引發", "reason": "因為 E62 發現立體線索，所以 E63 將 C 類加入特徵檯。", "evidence": "E62｜推論｜C 類因此上檯", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E62", "dst": "E64", "type": "僅提及", "reason": "因為 E64 的直接動機來自 E63，所以 E62 在此僅是同系列背景。", "evidence": "E64｜目的｜E63 用八類最差來源評 C 類", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E65", "dst": "E62", "type": "推翻或更正", "reason": "E65 發現 BCN、HAM 的深度辨識近乎亂猜，細化 E62 之後的立體訊號說法。", "evidence": "E65｜推論｜修正了 E62 之後的說法", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E62b", "dst": "E62", "type": "僅提及", "reason": "因為頁面只稱兩項看圖工作同步，且未記錄用途，所以無法建立實質依賴。", "evidence": "E62b｜限制｜用途與抽圖方式均無紀錄", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E62b", "dst": "E64", "type": "僅提及", "reason": "因為 E62b 只連結 E64 的景深說法，且用途無紀錄，所以未建立實質依賴。", "evidence": "E62b｜限制｜用途與抽圖方式均無紀錄", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E62b", "dst": "E65", "type": "僅提及", "reason": "因為 E62b 只連結 E65 的景深說法，且用途無紀錄，所以未建立實質依賴。", "evidence": "E62b｜限制｜用途與抽圖方式均無紀錄", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E63", "dst": "A1", "type": "僅提及", "reason": "因為 A1 在此是色彩恆常性的家族代號，所以沒有指向 A1 實驗頁。", "evidence": "E63｜結果｜A1 色彩恆常性", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E63", "dst": "A2", "type": "僅提及", "reason": "因為 A2 在此是 CLAHE 的家族代號，所以沒有指向 A2 實驗頁。", "evidence": "E63｜結果｜A2 CLAHE", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E63", "dst": "A3", "type": "僅提及", "reason": "因為 A3 在此是極端對比特徵代號，所以沒有指向 A3 實驗頁。", "evidence": "E63｜結果｜A3 極端對比", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E63", "dst": "A4", "type": "僅提及", "reason": "因為 A4 在此是 Lab 色彩特徵代號，所以沒有指向 A4 實驗頁。", "evidence": "E63｜結果｜A4 Lab a*/b*", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E63", "dst": "B1", "type": "僅提及", "reason": "因為 B1 在此是 Sobel 特徵代號，所以沒有指向 B1 實驗頁。", "evidence": "E63｜結果｜B1 Sobel", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E63", "dst": "B2", "type": "僅提及", "reason": "因為 B2 在此是 LBP 特徵代號，所以沒有指向 B2 實驗頁。", "evidence": "E63｜結果｜B2 LBP", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E63", "dst": "B3", "type": "僅提及", "reason": "因為 B3 在此是 DoG 特徵代號，所以沒有指向 B3 實驗頁。", "evidence": "E63｜結果｜B3 DoG", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E63", "dst": "E64", "type": "引發", "reason": "因為 E63 的八類評分不足以檢驗起伏假說，所以 E64 改做針對性檢定。", "evidence": "E63｜推論｜因此接著做 E64 的針對性檢定", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E63", "dst": "E65", "type": "引發", "reason": "因為 E63 的全域統計不足以判定深度價值，所以 E65 改測單目深度。", "evidence": "E63｜推論｜E65 的單目深度模型", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E64", "dst": "E65", "type": "支持", "reason": "因為 E64 也發現 PAD 有起伏特徵增量，所以支持 E65 的來源相關判斷。", "evidence": "E65｜推論｜獨立佐證：E64 的手工起伏線索", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E65", "dst": "E56", "type": "僅提及", "reason": "因為 E65 只並列深度收益與裁切退步，所以沒有解釋 E56 的退步原因。", "evidence": "E65｜推論｜PAD 一直在偵測裁切下退步", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E65", "dst": "E61", "type": "僅提及", "reason": "因為 E65 只在頁首列 E61 為前置背景，所以未說明具體實質依賴。", "evidence": "E65｜頁首｜前置 E61、E62、E63、E64", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E65", "dst": "E66", "type": "沿用", "reason": "因為 E65 已產出深度特徵快取，所以 E66 直接使用它測試閘門。", "evidence": "E66｜做法｜全部用 E65 快取的深度特徵", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E65", "dst": "E67", "type": "前置", "reason": "因為 E67 將 E65 的深度特徵列為前置，所以以其作為後續檢驗基礎。", "evidence": "E67｜頁首｜前置 E65（深度特徵）", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E66", "dst": "E67", "type": "引發", "reason": "因為 E66 的按張閘門失敗，所以 E67 改測翻轉等變性作為信心估計。", "evidence": "E67｜目的｜E66 留下唯一未測的版本", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E67", "dst": "D1", "type": "僅提及", "reason": "因為 D1 在此是原圖深度圖變數，所以沒有指向 D1 實驗頁。", "evidence": "E67｜目的｜D1 = MiDaS(原圖)", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E67", "dst": "D2", "type": "僅提及", "reason": "因為 D2 在此是鏡像圖深度變數，所以沒有指向 D2 實驗頁。", "evidence": "E67｜目的｜D2 = MiDaS(鏡像圖)", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0007", "dst": "E68", "type": "沿用", "reason": "因為 ADR-0007 定義 C10 集成，所以 E68 沿用該組合拆解指標。", "evidence": "E68｜做法｜C10 九個等權平均", "confidence": "高", "source": "Codex 判讀"}
+{"src": "D2", "dst": "E68", "type": "支持", "reason": "因為 D2 的等召回天花板低於目標，所以支持 E68 判斷閾值不足以達標。", "evidence": "E68｜推論｜瓶頸在特徵、不在閾值", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E68", "type": "沿用", "reason": "因為 E68 要拆細既有 C10，所以沿用 E36 的載入與組合方式。", "evidence": "E68｜做法｜與 E36 完全相同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E82", "dst": "E68", "type": "支持", "reason": "因為 E82 重現 C10 為 0.6890，所以支持 E68 的集成數值。", "evidence": "E68｜頁首｜數值後被 E82 重現", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E68", "dst": "R0", "type": "僅提及", "reason": "因為內文 R0 是訓練模型代號，所以與候選的病灶框閘門頁無實質關係。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E68", "dst": "S0", "type": "僅提及", "reason": "因為集成成員 S0 是專家 arm，所以與候選的來源盤點頁無實質關係。", "evidence": "S0｜頁首｜同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E5", "dst": "E69", "type": "引發", "reason": "因為 E5 顯示模型已記住訓練資料，所以 E69 改驗便宜難度代理。", "evidence": "E69｜目的｜自身信心是記憶強度不是難度", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E65", "dst": "E69", "type": "沿用", "reason": "因為 E65 已快取 RGB 特徵，所以 E69 直接用來訓練難度代理。", "evidence": "E69｜做法｜用 E65 快取的 42 維", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E66", "dst": "E69", "type": "引發", "reason": "因為 E66 揭露全體相關可能來自層間差異，所以 E69 加做類別內與來源內控制。", "evidence": "E69｜做法｜E66 學到的教訓", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E69", "dst": "R0", "type": "僅提及", "reason": "因為內文談的是 R0-LOCO 訓練條件，所以與候選的 R0 閘門頁無實質關係。", "evidence": "E69｜目的｜R0-LOCO 與 R0S-LOCO-N", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E1", "dst": "E7", "type": "引發", "reason": "E1 推論模型使用來源線索，因此 E7 產生病灶框以支援移除這些線索。", "evidence": "E7｜目的｜E1 推論模型用了", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E7", "dst": "E53", "type": "沿用", "reason": "E53 使用 E7 產出的 bbox_detect 框，與獨立第二意見交叉驗證。", "evidence": "E53｜做法｜與 bbox_detect.json 的框算 IoU", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E7", "dst": "E54", "type": "沿用", "reason": "E54 使用 E7 產出的偵測框，計算全資料裁切放大倍率。", "evidence": "E54｜做法｜只讀影像檔頭與", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E7", "dst": "E55", "type": "沿用", "reason": "E55 使用 E7 產出的偵測框，掃描 k 並比較裁切倍率及框大小。", "evidence": "E55｜做法｜比較四個來源的偵測框面積", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E7", "dst": "E56", "type": "沿用", "reason": "E56 的 R2-DET 使用 E7 產出的病灶框，檢驗偵測裁切效果。", "evidence": "E7｜頁首｜用框裁切訓練輸入的 R2-DET", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E7", "dst": "E60", "type": "沿用", "reason": "E60 沿用 E7 的偵測框，以不同 k 比較偵測裁切效果。", "evidence": "E7｜頁首｜k=1.5 與 k=1.0", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E7", "dst": "E8", "type": "沿用", "reason": "E8 使用 E7 的全資料偵測框，計算稽核統計並製作審查拼圖。", "evidence": "E8｜結果｜全部 86,534 個框", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17", "dst": "E70", "type": "引發", "reason": "因為 E17 的最大錯誤區塊含非 family 的 NV，所以 E70 直接檢驗異質性解釋。", "evidence": "E70｜目的｜NV 是 exact 類別", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E46", "dst": "E70", "type": "前置", "reason": "因為 E70 將 E46 的錯誤定位列為前置，所以以此背景檢驗類別內異質性。", "evidence": "E70｜頁首｜前置 E17、E46", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E70", "dst": "E71", "type": "引發", "reason": "因為 E70 量出部分類別的亞型差異，所以 E71 據此設計細分類。", "evidence": "E70｜推論｜E71 依此設計細分類", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E70", "dst": "E72", "type": "引發", "reason": "因為 E70 的發現促成細分類實作，所以後續 E72 驗證該改動的等價性。", "evidence": "E70｜頁首｜後續 E71／E72", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E85", "dst": "E70", "type": "支持", "reason": "因為 E85 在同類同來源內仍發現 BKL、MEL 亞型偏難，所以支持 E70 的部分異質性結論。", "evidence": "E70｜推論｜同一格子內再驗", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E71", "dst": "E72", "type": "前置", "reason": "因為先有 E71 的設計與實作，E72 才有細分類程式改動可驗證。", "evidence": "E72｜目的｜E71 的設計實作進 train.py", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E71", "dst": "E73", "type": "前置", "reason": "因為 E71 的設計被實作成 R2-FINE，E73 才能分析該訓練的停滯情形。", "evidence": "E73｜頁首｜前置 E71／E72", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E72", "dst": "E73", "type": "前置", "reason": "因為 E72 驗證通過後才開跑 R2-FINE，E73 才有訓練曲線可分析。", "evidence": "E72｜推論｜驗證後開跑 R2-FINE", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E73", "dst": "E79", "type": "沿用", "reason": "因為 E73 已建立停滯判準，所以 E79 沿用並通用化為多 run 工具。", "evidence": "E73｜頁首｜判準後來被通用化", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E75", "dst": "E74", "type": "支持", "reason": "因為 E75 量出小樣本會改變計分類別，所以支持 E74 的來源分數不可直接比較。", "evidence": "E75｜推論｜掉出 ≥30 的分母", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E76", "dst": "E74", "type": "支持", "reason": "因為 E76 確認 PAD 分數未涵蓋 MEL，所以支持 E74 對跨來源比較的限制。", "evidence": "E76｜推論｜分數完全沒有涵蓋 MEL", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E74", "dst": "E81", "type": "僅提及", "reason": "因為僅 E74 頁首稱 E81 引用分母提醒，E81 未寫明使用方式，所以記為僅提及。", "evidence": "E74｜頁首｜後續 E81／E83 引用", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E74", "dst": "E83", "type": "僅提及", "reason": "因為僅 E74 頁首稱 E83 引用分母提醒，E83 未寫明實質依賴，所以記為僅提及。", "evidence": "E74｜頁首｜分母不同不可直接比", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E75", "dst": "E76", "type": "引發", "reason": "因為 E75 的重抽仍解釋不了 PAD 優勢，所以 E76 進一步拆解剩餘差距。", "evidence": "E76｜目的｜要把剩下的差距交代清楚", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0004", "dst": "E77", "type": "引發", "reason": "因為 ADR-0004 要求不同家族檢驗共錯，所以 E77 先量 Swin 的實作可行性。", "evidence": "E77｜目的｜真正不同的家族", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E77", "dst": "ADR-0007", "type": "僅提及", "reason": "因為 E77 只把 ADR-0007 列為背景，所以沒有據此證實或更正集成決策。", "evidence": "E77｜頁首｜背景 ADR-0004、ADR-0007", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E77", "dst": "E78", "type": "引發", "reason": "因為 E77 確認 Swin 可行並促成骨幹改動，所以 E78 驗證既有行為不變。", "evidence": "E77｜推論｜據此修改 models.py", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E77", "dst": "E80", "type": "前置", "reason": "因為 E77 確認 Swin 可行並促成訓練，E80 才有跨家族模型可檢驗共錯。", "evidence": "E80｜頁首｜前置 E77／E78", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E77", "dst": "E83", "type": "支持", "reason": "因為 E77 量到 224 的運算成本較低，所以支持 E83 對較低解析度成本的判斷。", "evidence": "E77｜推論｜比 384 便宜 2.9 倍", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E77", "dst": "E89", "type": "前置", "reason": "因為 E77 促成 Swin 骨幹支援，E89 才能以 224 版檢驗視窗幾何假設。", "evidence": "E77｜推論｜加入 swin_t", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E78", "dst": "E73", "type": "僅提及", "reason": "因為 E78 只記載改動使 R2-FINE 無法續跑，未更正 E73 的停滯判斷，所以記為僅提及。", "evidence": "E78｜推論｜--resume 從此永久失效", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E79", "dst": "D2", "type": "僅提及", "reason": "因為 E79 只說明排除 D2 的召回目標，所以沒有沿用或重新檢驗該目標。", "evidence": "E79｜目的｜每類召回 0.85 不畫", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E18", "dst": "E79", "type": "沿用", "reason": "因為 E79 要以噪音帶設定判讀目標，所以沿用 E18 所引述的種子噪音範圍。", "evidence": "E79｜目的｜種子噪音帶 1.68–3.69pp", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E21", "dst": "E79", "type": "沿用", "reason": "因為 E79 需要可主張改善的門檻，所以沿用 E21 彙整的種子噪音帶。", "evidence": "E79｜目的｜種子噪音帶 1.68–3.69pp", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E79", "dst": "E81", "type": "沿用", "reason": "因為 E79 提供通用進度工具，所以 E81 的 R2-SWIN 分析使用該工具。", "evidence": "E79｜頁首｜被用於 E81／E83", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E79", "dst": "E83", "type": "沿用", "reason": "因為 E79 提供曲線及停滯判準，所以 E83 使用它分析 R2-SWIN。", "evidence": "E79｜頁首｜被用於 E81／E83", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E79", "dst": "E89", "type": "沿用", "reason": "因為 E79 已提供通用停滯工具，所以 E89 的 R2-SWIN224 分析使用它。", "evidence": "E79｜頁首｜E89（R2-SWIN224）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E79", "dst": "E91", "type": "沿用", "reason": "因為 E79 提供進度與停滯判準，所以 E91 使用它分析長訓練曲線。", "evidence": "E79｜頁首｜E91（R2-REG-LONG）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "ADR-0003", "dst": "E8", "type": "前置", "reason": "E8 的閘門核准必須遵守 ADR 的人核准規則，腳本只能產生 false。", "evidence": "E8｜做法｜腳本只寫 false", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E11", "dst": "E8", "type": "推翻或更正", "reason": "E11 證明極端拼圖不能估墨圈比例，更正 E8 的墨圈風險未出現判讀。", "evidence": "E8｜推論｜後來 E11 更正", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E8", "dst": "E11c", "type": "僅提及", "reason": "E11c 是閘門已核准後補做的抽樣，未成為 E8 當次核准的前提。", "evidence": "E11c｜目的｜閘門在", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E8", "dst": "E56", "type": "前置", "reason": "E8 的 G-DET 核准解鎖 crop=detect，E56 才能執行 R2-DET 對照。", "evidence": "ADR-0003｜結果｜核准後解鎖", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E8", "dst": "E60", "type": "前置", "reason": "E8 核准的 G-DET 是偵測裁切訓練閘門，因此 E60 的裁切對照依賴它。", "evidence": "E8｜目的｜決定 crop=detect", "confidence": "高", "source": "Codex 判讀"}
+{"src": "R0", "dst": "E8", "type": "引發", "reason": "R0 曾把框黏在孔徑邊緣，因此 E8 將此失敗模式列為稽核重點。", "evidence": "E8｜做法｜R0 那次的失敗模式", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E17b", "dst": "E80", "type": "沿用", "reason": "因為 E17b 已產出六模型全錯集合，所以 E80 直接沿用作為交集分析對象。", "evidence": "E80｜做法｜全錯集合沿用 E17b，不重算", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E80", "dst": "E17c", "type": "支持", "reason": "因為 E80 確認六模型全錯仍為 760 張，所以支持 E17c 的共錯集數值。", "evidence": "E80｜結果｜與 E17c 的 all_wrong 完全一致", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E80", "dst": "E18", "type": "僅比較", "reason": "因為 E80 以 R2-REG 作同家族對照，所以只是比較 Swin 的共錯修掉率。", "evidence": "E80｜做法｜同家族對照：R2-REG", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E78", "dst": "E80", "type": "前置", "reason": "因為 E78 驗證新骨幹可用並完成開跑設定，E80 才能分析 Swin 訓練結果。", "evidence": "E78｜推論｜check-only 通過", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E80", "dst": "E81", "type": "僅提及", "reason": "因為頁面只把 E81 列為同批分析，所以未建立兩者的因果或資產沿用關係。", "evidence": "E80｜頁首｜同批 E81、E82", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E80", "dst": "E82", "type": "僅提及", "reason": "因為頁面只將 E82 列為同批分析，所以沒有證據顯示 E80 促成 E82。", "evidence": "E80｜頁首｜同批 E81、E82", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E80", "dst": "E84", "type": "前置", "reason": "因為 E80 先確立七模型共錯對象，E84 才接續檢查這批錯誤的特異性。", "evidence": "E84｜頁首｜前置 E80", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E80", "dst": "E85", "type": "僅比較", "reason": "因為兩頁使用不同預測定義計算混淆對，所以只核對數字差異而未互相推翻。", "evidence": "E80｜限制｜是定義不同，不是矛盾", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E80", "dst": "E88", "type": "僅提及", "reason": "因為 E80 只註明其數字包含 E88 發現的純白圖，所以未因此改寫數值或結論。", "evidence": "E80｜推論｜E80 的數字含這批影像", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E80", "dst": "E89", "type": "複製", "reason": "因為 E89 要確認改解析度是否改變共錯，所以以 224 版重做 E80 的重疊檢定。", "evidence": "E89｜做法｜照 E80 的做法再算一次", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E80", "dst": "R0", "type": "僅提及", "reason": "因為內文 R0 是 ConvNeXt 訓練模型，所以與候選的病灶框閘門頁無實質關係。", "evidence": "R0｜頁首｜與基準訓練 run 同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E81", "dst": "E56", "type": "僅提及", "reason": "因為 E81 只提到 E56 是先前的單變數對照，所以未使用其結果回答換骨幹問題。", "evidence": "E81｜目的｜第一組是 E56 的 crop", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E77", "dst": "E81", "type": "前置", "reason": "因為 E77 確認 Swin 可行並促成新增骨幹，E81 才能完成換骨幹對照。", "evidence": "E81｜頁首｜前置 E77／E78", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E78", "dst": "E81", "type": "前置", "reason": "因為 E78 驗證骨幹改動並確認 R2-SWIN 設定，E81 才能比較該 run 與 R2。", "evidence": "E78｜推論｜與 R2 的差異只有 backbone", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E81", "dst": "E80", "type": "僅提及", "reason": "因為 E81 只將 E80 列為同批分析，所以未建立兩者的主要因果關係。", "evidence": "E81｜頁首｜同批 E80、E82", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E81", "dst": "E82", "type": "引發", "reason": "因為 E81 發現雙模型平均的分數較高，所以引出 E82 測試將 Swin 加入 C10。", "evidence": "E81｜推論｜集成的觀察引出了事後分析", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E83", "dst": "E81", "type": "推翻或更正", "reason": "E83 證明 E81 所稱只換家族的對照也改了參數量，修正其單變數解讀。", "evidence": "E81｜推論｜同時改了家族與參數量", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E89", "dst": "E81", "type": "支持", "reason": "因為 224 版換家族仍無可辨識優勢，所以 E89 支持 E81 的換家族無效果判斷。", "evidence": "E81｜推論｜換家族在這個任務上就是沒有效果", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E36", "dst": "E82", "type": "沿用", "reason": "因為 E82 要測試擴充 C10，所以沿用 E36 的集成定義與池子建構程式。", "evidence": "E82｜做法｜池子建構逐行照搬", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E82", "dst": "E44", "type": "支持", "reason": "因為 E82 的選擇面高分在報告面反降，所以支持 E44 對挑錯切分下結論的警示。", "evidence": "E82｜推論｜正是 E44 第 4 節那個教訓", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E82", "dst": "E80", "type": "僅提及", "reason": "因為 E82 只用 E80 說明哪些分析曾事先登記，所以沒有沿用其結果或受其發現引發。", "evidence": "E82｜目的｜事先登記的只有 E80 與 E81", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E82", "dst": "E89", "type": "引發", "reason": "因為 E82 暴露事後挑集成組合的問題，所以 E89 決定不再自行搜尋集成組合。", "evidence": "E89｜推論｜就是 E82 踩過的坑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E82", "dst": "R0", "type": "僅提及", "reason": "因為 C10 成員 R0 是訓練模型，所以與候選的病灶框閘門頁無實質關係。", "evidence": "R0｜頁首｜同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E82", "dst": "S0", "type": "僅提及", "reason": "因為 C10 成員 S0 是一對多專家 arm，所以與候選的來源盤點頁無實質關係。", "evidence": "S0｜頁首｜八個一對多專家 arm", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E89", "dst": "E83", "type": "推翻或更正", "reason": "因為修好視窗幾何後指標反降，所以 E89 否證 E83 將幾何不匹配視為瓶頸的假設。", "evidence": "E83｜推論｜後來 E89 否證乙", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E91", "dst": "E83", "type": "推翻或更正", "reason": "因為末段變平與學習率退火糾纏，所以後續長訓練分析修正 E83 的預算解讀。", "evidence": "E83｜推論｜紀錄修正甲", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84b", "dst": "E84", "type": "推翻或更正", "reason": "因為 E84b 發現富集大多來自類別與來源，所以更正 E84 對屬性訊號的解讀。", "evidence": "E84｜推論｜富集幾乎全是類別、來源的影子", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84", "dst": "E84c", "type": "沿用", "reason": "因為 E84 已產出檢定 JSON，所以 E84c 直接讀取結果繪圖而不重算。", "evidence": "E84c｜做法｜只讀 E84 與 E84b JSON", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E85", "dst": "E84", "type": "推翻或更正", "reason": "因為 E85 發現全錯圖集中於約 480 個群，所以修正將 E84 的 699 張視為獨立難例的解讀。", "evidence": "E84｜限制｜699 張不是 699 個獨立難例", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84", "dst": "E86", "type": "引發", "reason": "因為 E84 已分析 metadata 層的錯誤特異性，所以 E86 接著檢查影像本身的特徵。", "evidence": "E86｜目的｜這一輪往下一層", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E88", "dst": "E84", "type": "推翻或更正", "reason": "因為純白圖可能被模型僥倖猜中，所以 E88 揭露 E84 只看全錯集合的方法盲點。", "evidence": "E84｜推論｜指出方法上的盲點", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84", "dst": "R0", "type": "僅提及", "reason": "因為內文 R0 是七模型分析中的訓練模型，所以與候選的閘門頁無實質關係。", "evidence": "R0｜頁首｜與基準訓練 run 同名但不同", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84b", "dst": "A1", "type": "僅比較", "reason": "因為兩者都涉及混淆因素，所以 E84b 只以 A1 的面積問題作方法類比。", "evidence": "E84b｜目的｜A1（面積）都踩過同一種坑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84b", "dst": "E74", "type": "僅比較", "reason": "因為兩者都涉及組成造成的表面差異，所以 E84b 以 E74 的分母問題作類比。", "evidence": "E84b｜目的｜E74／E75（分母）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84b", "dst": "E75", "type": "僅比較", "reason": "因為 E75 的分母效應也是混淆案例，所以 E84b 用它類比屬性富集的解讀風險。", "evidence": "E84b｜目的｜都踩過同一種坑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84b", "dst": "E84c", "type": "沿用", "reason": "因為 E84b 已產出混淆檢查 JSON，所以 E84c 直接沿用數值繪圖。", "evidence": "E84c｜做法｜只讀 E84 與 E84b JSON", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84b", "dst": "E85", "type": "引發", "reason": "因為 E84b 發現 label 與 source 已有高 AUC，所以 E85 接著拆解兩者的貢獻。", "evidence": "E84b｜推論｜E85 接著回答", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84", "dst": "E85", "type": "引發", "reason": "因為 E84 發現錯誤高度集中，所以 E85 進一步追查特異性的來源。", "evidence": "E85｜目的｜E84 量到錯誤高度集中", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E85b", "dst": "E85", "type": "推翻或更正", "reason": "因為 E85 原版全域打散混入類別效應，所以 E85b 改用類別內打散修正檢定。", "evidence": "E85b｜目的｜那個 p 值裡混了類別效應", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E85", "dst": "E86", "type": "引發", "reason": "因為 E85 已定位 metadata 層的特異性來源，所以 E86 接著檢驗影像本身特徵。", "evidence": "E86｜目的｜已經走完 metadata 那一層", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E88", "dst": "E85", "type": "推翻或更正", "reason": "因為純白圖會被偶然猜中而排除，所以 E88 揭露 E85 只分析全錯集合的盲點。", "evidence": "E85｜限制｜看不到 64 張純白影像", "confidence": "高", "source": "Codex 判讀"}
+{"src": "A1", "dst": "E86", "type": "支持", "reason": "因 A1 的面積比較已作廢，所以支持 E86 不作面積主張的決定。", "evidence": "E86｜頁首｜所以本實驗不做面積主張", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E17c", "dst": "E86", "type": "支持", "reason": "因 E17c 顯示共錯圖信心較高，所以支持 E86 自信答錯的判讀。", "evidence": "E86｜推論｜共錯圖的平均信心 0.768", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E84b", "dst": "E86", "type": "引發", "reason": "因 E84b 已處理 metadata 富集的混淆，所以 E86 接著追查影像特徵。", "evidence": "E86｜目的｜已經走完 metadata 那一層", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E86", "dst": "E86b", "type": "引發", "reason": "因 E86 發現全錯圖色彩較均勻，所以引出 E86b 的非典型個體假說。", "evidence": "E86｜推論｜引出 E86b 的假設", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E86", "dst": "E86c", "type": "沿用", "reason": "因 E86c 只讀 E86 的報告與配對樣本，所以沿用數據而未重算統計。", "evidence": "E86c｜目的｜不重算任何統計", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E87", "dst": "E86", "type": "推翻或更正", "reason": "E87 發現貼紙等會污染全圖色彩值，修正 E86 數值可視為純病灶量測的解讀。", "evidence": "E86｜推論｜不是純病灶色彩", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E86", "dst": "E88", "type": "引發", "reason": "因 E86 快取提供純白影像線索，所以引出 E88 的全資料掃描。", "evidence": "E86｜頁首｜快取裡發現純白影像的線索", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E86b", "dst": "E86c", "type": "沿用", "reason": "因 E86c 直接讀取既有 JSON，所以沿用 E86b 的數值結論繪圖。", "evidence": "E86c｜目的｜只讀 `reports/` 的 JSON", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E87", "dst": "E86b", "type": "支持", "reason": "因 E87 目視錯圖像預測類，所以支持 E86b 的數值方向。", "evidence": "E86b｜推論｜與本實驗的數值方向一致", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E88", "dst": "E87", "type": "推翻或更正", "reason": "E88 證明純白圖壓低 R2 的 BCC F1，更正 E87 所稱的虛增。", "evidence": "E87｜推論｜是壓低 BCC 的 F1", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E88", "dst": "E90", "type": "引發", "reason": "因 E88 找到退化影像並提出處置，所以使用者指示 E90 排除。", "evidence": "E88｜推論｜使用者後來指示「先排除」", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E88", "dst": "R0", "type": "僅提及", "reason": "因表格的 R0 是分類模型名稱，所以與病灶框閘門實驗 R0 無關。", "evidence": "E88｜結果｜R0-BAL s42", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E89", "dst": "ADR-0007", "type": "支持", "reason": "因跨家族與解析度差仍在噪聲帶內，所以支持停止尋找更好單一架構。", "evidence": "E89｜推論｜跨家族證據", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E82", "dst": "E89", "type": "支持", "reason": "因 E82 已暴露事後挑集成的問題，所以支持 E89 暫不再撈組合的決定。", "evidence": "E89｜推論｜就是 E82 踩過的坑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E89", "dst": "E88", "type": "僅提及", "reason": "因 E89 評估仍含純白圖，所以引用 E88 註明資料限制，未使用其掃描產物。", "evidence": "E89｜限制｜數字含 E88 找到的 64 張純白圖", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E89", "dst": "E90", "type": "僅提及", "reason": "因 E90 排除發生在 E89 評估之後，所以此處只交代分母變動的時序。", "evidence": "E89｜限制｜之後 E90 才把它們排除", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E9", "dst": "ADR-0002", "type": "僅提及", "reason": "E9 只稱與 ADR-0002 屬同一套取樣機制，未交代實質依賴。", "evidence": "E9｜頁首｜同一套機制", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E9", "dst": "R0", "type": "僅提及", "reason": "E9 談的是基準訓練 run 的可比性，並非候選的病灶框閘門 R0。", "evidence": "E9｜推論｜R0／R1／R2", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E90", "dst": "E100", "type": "僅提及", "reason": "因兩頁分別處理純白與內容重複，所以此處只交代後續另查的範圍。", "evidence": "E90｜限制｜後來由 E100／E100b 另查", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E90", "dst": "E100b", "type": "僅提及", "reason": "因 E90 只排除純白影像，所以另提 E100b 處理重複與標籤衝突。", "evidence": "E90｜限制｜只排除純白影像", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E90", "dst": "E8", "type": "僅提及", "reason": "因 E90 交代 manifest 變動使舊核准不適用，所以此處僅記錄對 E8 的影響。", "evidence": "E90｜推論｜G-DET 的核准綁在舊 manifest", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E90", "dst": "E91", "type": "沿用", "reason": "因 E90 已更新資料切分，所以 E91 使用排除後的 manifest 與新分母。", "evidence": "E90｜推論｜在排除生效後開跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E90", "dst": "E93", "type": "引發", "reason": "因 E90 改變 manifest 使舊權重無法續跑，所以促成 E93 的可刪判定。", "evidence": "E93｜頁首｜使舊 last.pt 永遠不能續跑", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E90", "dst": "R0", "type": "僅提及", "reason": "因 G-R0 本來未核准且此次未更新，所以只列為刻意不修改的紀錄。", "evidence": "E90｜做法｜G-R0 本來就未核准", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E91", "dst": "E116", "type": "沿用", "reason": "因 E116 要量化選模代價，所以使用 E91 的逐 epoch 混淆矩陣重算曲線。", "evidence": "E116｜做法｜從 progress.json 裡逐 epoch", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E91", "dst": "E94", "type": "沿用", "reason": "因 E91 產出最佳模型，所以 E94 使用其 ep51 權重繪製歸因圖。", "evidence": "E94｜做法｜best.pt（ep51）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E91", "dst": "E97", "type": "沿用", "reason": "因 E91 提供最佳模型權重，所以 E97 交付包以該權重準備推論。", "evidence": "E97｜做法｜權重：R2-REG-LONG", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E91", "dst": "E98", "type": "沿用", "reason": "因 E91 產出最佳模型 logits，所以 E98 讀取存檔繪製 ROC。", "evidence": "E98｜做法｜只讀既有 `val_assess_logits.npz`", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E91", "dst": "E99", "type": "沿用", "reason": "因 E99 要與組員對照，所以使用 E91 模型的既有評估 logits。", "evidence": "E99｜做法｜只讀既有 logits", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E92", "dst": "E90", "type": "僅提及", "reason": "因 E92 引用 E90 作為 run_id 曾失效的背景，所以未建立工具開發的因果。", "evidence": "E92｜頁首｜manifest 變動使 run_id 失效", "confidence": "高", "source": "Codex 判讀（經 Claude 回答提問）"}
+{"src": "E92", "dst": "E93", "type": "引發", "reason": "因 E92 所涉程式修改改變雜湊，所以 E93 判定舊 last.pt 無法續跑並清理。", "evidence": "E93｜頁首｜code_sha256 變動", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E93", "dst": "E88", "type": "僅提及", "reason": "因實際改 manifest 的是 E90，所以此處提 E88 只是辨識被排除影像的來源。", "evidence": "E93｜做法｜排除 E88 的 68 張時變過", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E94", "dst": "E95", "type": "引發", "reason": "因使用者指出 E94 的 Grad-CAM 並非特徵本體，所以 E95 改畫 activation。", "evidence": "E95｜目的｜比較像是注意力而不是特徵圖", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E94", "dst": "E97", "type": "引發", "reason": "因 E94 曾用錯前處理，所以 E97 加入重算 logits 的自我驗證規則。", "evidence": "E94｜推論｜E97 起執行", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E96", "dst": "E96b", "type": "沿用", "reason": "因 E96b 要測跨模態泛化，所以沿用 E96 腳本與方法改為留一 PAD。", "evidence": "E96b｜做法｜`e96_loco_paired.py`", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E96b", "dst": "E100", "type": "僅提及", "reason": "因兩者只是並列支持第三項瓶頸判斷，所以未形成彼此支持或因果。", "evidence": "E96b｜推論｜並列為", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E97", "dst": "E99", "type": "僅提及", "reason": "因 E97 未產出外部預測，所以與 E99 只連結外部名單背景。", "evidence": "E99｜頁首｜外部名單，同為 N=3,611", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E98", "dst": "E99", "type": "沿用", "reason": "因 E99 需要我方 ROC 作對照，所以接續使用 E98 的 ROC 結果。", "evidence": "E99｜頁首｜前置 E98（我方 ROC）", "confidence": "中", "source": "Codex 判讀"}
+{"src": "E99", "dst": "B3", "type": "僅提及", "reason": "因此處 B3 是 EfficientNet 架構名稱，所以與無病灶實驗頁 B3 無關。", "evidence": "E99｜做法｜EfficientNet-B3", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E99", "dst": "E120", "type": "僅提及", "reason": "因 E120 的發現只被補列為可比性背景，所以未證明 E99 的比較結論錯誤。", "evidence": "E99｜限制｜原始紀錄未在 E99 中討論", "confidence": "高", "source": "Codex 判讀"}
+{"src": "E99", "dst": "E97", "type": "僅提及", "reason": "因僅記錄相同外部名單張數，且 E97 無預測結果，所以未構成資料沿用。", "evidence": "E99｜頁首｜外部名單，同為 N=3,611", "confidence": "高", "source": "Codex 判讀"}
+{"src": "P0", "dst": "R0", "type": "僅提及", "reason": "P0 原句指基準訓練 run R0，並非候選的 G-R0 閘門頁，不能連成前置。", "evidence": "P0｜頁首｜R0（基準訓練）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "S0", "dst": "P0", "type": "前置", "reason": "P0 需要 S0 盤點後建立的四來源專用分割，才能量測新 val_select 探針。", "evidence": "P0｜頁首｜前置 S0、CP-005 專用分割", "confidence": "高", "source": "Codex 判讀"}
+{"src": "R0", "dst": "D0", "type": "僅提及", "reason": "R0 原句的 D0 是中心固定框方法，並非候選的重增強抽樣實驗。", "evidence": "R0｜目的｜中心固定框（D0）", "confidence": "高", "source": "Codex 判讀"}
+{"src": "R0", "dst": "D2", "type": "僅提及", "reason": "R0 原句的 D2 是啟發式病灶框方法，並非候選的八類達標可行性實驗。", "evidence": "R0｜目的｜用啟發式 D2", "confidence": "高", "source": "Codex 判讀"}
+{"src": "S0", "dst": "ADR-0002", "type": "支持", "reason": "因為 S0 確認 SCC 僅存在於 ISIC，所以支持取樣器會限制其曝光的判斷。", "evidence": "ADR-0002｜推論｜SCC 只存在於 ISIC", "confidence": "高", "source": "Codex 判讀"}
+{"src": "S0", "dst": "ADR-0007", "type": "僅提及", "reason": "因為兩頁的 S0 同名不同義，所以此處只是提醒讀者區分。", "evidence": "S0｜頁首｜與本頁同名不同義", "confidence": "高", "source": "Codex 判讀"}
+{"src": "S0", "dst": "D1", "type": "支持", "reason": "因為 S0 確認 SCC 僅在 ISIC，所以支持 D1 對 SCC 曝光偏低的解釋。", "evidence": "D1｜做法｜因為只有 ISIC 有它", "confidence": "高", "source": "Codex 判讀"}
+{"src": "S0", "dst": "D2", "type": "支持", "reason": "因為 S0 確認其他三來源沒有 SCC，所以支持 D2 的資料組成存在結構性阻礙。", "evidence": "D2｜推論｜其餘三個來源 0 張", "confidence": "高", "source": "Codex 判讀"}
+{"src": "S0", "dst": "D3", "type": "支持", "reason": "因為 S0 顯示 SCC 僅有一個來源，所以支持 D3 引入外部 SCC 資料的建議。", "evidence": "D3｜推論｜SCC 只存在於一個來源", "confidence": "高", "source": "Codex 判讀"}
