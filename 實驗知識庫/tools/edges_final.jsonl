@@ -890,3 +890,6 @@
 {"cid": "C1169", "src": "S0", "dst": "D1", "type": "支持", "reason": "因為 S0 確認 SCC 僅在 ISIC，所以支持 D1 對 SCC 曝光偏低的解釋。", "evidence": "D1｜做法｜因為只有 ISIC 有它", "confidence": "高", "source": "Codex 判讀"}
 {"cid": "C1170", "src": "S0", "dst": "D2", "type": "支持", "reason": "因為 S0 確認其他三來源沒有 SCC，所以支持 D2 的資料組成存在結構性阻礙。", "evidence": "D2｜推論｜其餘三個來源 0 張", "confidence": "高", "source": "Codex 判讀"}
 {"cid": "C1171", "src": "S0", "dst": "D3", "type": "支持", "reason": "因為 S0 顯示 SCC 僅有一個來源，所以支持 D3 引入外部 SCC 資料的建議。", "evidence": "D3｜推論｜SCC 只存在於一個來源", "confidence": "高", "source": "Codex 判讀"}
+{"cid": "C9001", "src": "HC2", "dst": "E123", "type": "推翻或更正", "reason": "HC2 發現 E123 的 HC manifest 有 HAM 與 ISIC 共用病灶編號造成的跨切分洩漏，排除 642 列修正。", "evidence": "HC2｜目的｜都有這個問題", "confidence": "高", "source": "Claude 整理"}
+{"cid": "C9002", "src": "G1", "dst": "G2", "type": "引發", "reason": "G1 確認熱區高度集中後，才進一步檢查熱區型態與哪些因素有關。", "evidence": "G2｜目的｜G1 確認熱區很集中之後", "confidence": "高", "source": "Claude 整理"}
+{"cid": "C9003", "src": "HC2", "dst": "G1", "type": "前置", "reason": "G1 的 HC v2 重跑使用 HC2 的 seed 17 基準權重。", "evidence": "G1｜做法｜另用 HC v2 seed 17 重跑", "confidence": "高", "source": "Claude 整理"}

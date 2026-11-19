@@ -968,5 +968,20 @@
 "title": "S0　來源×分割×八類盤點：原始分割無法做四來源選模",
 "date": "2026-10-06（檔內 generated_at；實驗索",
 "status": "完成；狀態碼 `S0_COMPLETE_PROTOCOL_DECISION_REQUIRED`，導致建立 CP-005 專用分割"
+},
+"HC2": {
+"title": "HC2　HC v2 manifest：修正跨來源同病灶切分洩漏，並重跑 20 epoch 基準",
+"date": "2026-11-18",
+"status": "完成（manifest、seed 17 基準）；seed 42 進行中"
+},
+"G1": {
+"title": "G1　Grad-CAM 熱區只佔病灶一小塊：集中度、覆蓋率與遮蔽實驗",
+"date": "2026-11-18",
+"status": "完成（描述性）"
+},
+"G2": {
+"title": "G2　Grad-CAM 熱區與哪些因素有關：九個推測，以及 ISIC 貼片捷徑",
+"date": "2026-11-18",
+"status": "完成（探索性）"
 }
 }
