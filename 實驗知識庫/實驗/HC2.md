@@ -1,7 +1,7 @@
 # HC2　HC v2 manifest：修正跨來源同病灶切分洩漏，並重跑 20 epoch 基準
 
-- 日期：2026-11-18 ～ 2026-11-19
-- 狀態：manifest 完成並經獨立驗證；seed 17 基準完成；seed 42 進行中（第 15 epoch 存檔後依排程暫停）
+- 日期：2026-11-18 ～ 2026-11-20
+- 狀態：manifest 完成並經獨立驗證；seed 17、42 基準完成
 - 相關：修正 E123 的 HC manifest；提案 P032（登記與判定門檻）、P033（HC v2 泛化落差）、P029／P007／P031（改在 HC v2 上跑）、P011（同樣有洩漏）
 
 ## 目的
@@ -60,12 +60,37 @@ HC v2 seed 17 在 val_assess 的各類召回與 one-vs-rest AUC：
 
 整體：top-1／2／3 準確率 0.817／0.919／0.952，macro AUC 0.931。
 
+**seed 42 基準（best epoch 19）**
+
+| | val_select 最差 macro-F1_ge30 | val_assess 最差 macro-F1_ge30 | val_assess 最差來源 balanced accuracy | val_assess 平均來源 balanced accuracy |
+|---|---|---|---|---|
+| HC v2 seed 42 | 0.6799 | 0.6487 | 0.6044 | 0.7063 |
+| HC（修正前）seed 42 | 0.6822 | 0.6676 | 0.6238 | 0.7099 |
+
+val_assess 各來源 balanced accuracy：
+
+| | BCN | HAM | ISIC | PAD |
+|---|---|---|---|---|
+| HC v2 seed 42 | 0.6044 | 0.7546 | 0.6937 | 0.7727 |
+| HC（修正前）seed 42 | 0.6238 | 0.7662 | 0.6912 | 0.7583 |
+
+兩個 seed 都是 BCN 最差。
+
+**兩個 seed 平均（val_assess，同一批 8,369 張）**
+
+| | 最差來源 macro-F1_ge30 | 最差來源 balanced accuracy | 平均來源 balanced accuracy |
+|---|---|---|---|
+| HC v2 | 0.6565 | 0.6141 | 0.7076 |
+| HC（修正前） | 0.6649 | 0.6136 | 0.7129 |
+| 差（pp） | -0.84 | +0.06 | -0.53 |
+
 ## 推論
 - 修正前的 manifest 讓同一個病灶同時出現在訓練與評估裡。**P032 之前的所有數字都量在有洩漏的 manifest 上**，包括本知識庫多數實驗頁。
   - 洩漏對分數的影響有多大，目前還沒量化。
   - 同一份 manifest 內的相對比較（例如消融）仍可參考，但絕對數字不要與 HC v2 的結果並列。
 - 同一批 val_assess 影像上，HC v2 seed 17 的最差來源 balanced accuracy 高 2.05pp，平均低 0.71pp，PAD 降最多（只有 221 張）。
-  - 只有一個 seed，差距在 seed 雜訊量級內（見 README「讀數字前要知道的事」第 4 點），要等 seed 42。
+  - 加上 seed 42 後方向不一致：seed 17 的最差來源指標 HC v2 較高，seed 42 則較低。兩個 seed 平均，最差來源 macro-F1_ge30 -0.84pp、最差來源 balanced accuracy +0.06pp、平均來源 balanced accuracy -0.53pp，都在 seed 雜訊量級內（見 README「讀數字前要知道的事」第 4 點）。
+  - 所以不能說「修正洩漏讓分數下降」或「上升」；只能說兩個 seed 下差異不大。
 - 之後的實驗（P029、P007、P031、P034、P035）一律以 HC v2 的 R2-HC2-S20 seed 17／42 為對照。
 
 ## 限制
@@ -84,4 +109,4 @@ HC v2 seed 17 在 val_assess 的各類召回與 one-vs-rest AUC：
 <!-- 族譜:結束 -->
 
 ## 來源檔案
-`模型改進/reports/P032_判定門檻.json`、`P032_病灶合併manifest.json`、`P032_獨立驗證.md`、`cp005_split_hc_v2.json`；`audit/p032_lesion_merge_manifest.py`、`audit/p032_verify_codex.py`；`results/R2-HC2-S20_e421390c_seed17/result.json`、`val_assess_logits.npz`。
+`模型改進/reports/P032_判定門檻.json`、`P032_病灶合併manifest.json`、`P032_獨立驗證.md`、`cp005_split_hc_v2.json`；`audit/p032_lesion_merge_manifest.py`、`audit/p032_verify_codex.py`；`results/R2-HC2-S20_e421390c_seed17/`、`R2-HC2-S20_e421390c_seed42/` 的 `result.json`、`val_assess_logits.npz`。
